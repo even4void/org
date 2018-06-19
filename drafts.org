@@ -1,0 +1,36 @@
+* Agile Data Science
+
+After reading a lot of papers and books on Agile methodology, and in particular
+Agile principles applied to data science, I came to the conclusion that I was
+not that far from the principled ways when I was working as a medical
+statistician. As far as I am concerned, I always felt like the guys with whom I
+was working on a project must be kept informed of the progress of my report in
+real time, even if it was only a rough draft or when little has changed since
+the previsous version.
+
+"Researchers and data scientists, who work on longer timelines than agile
+sprints typically allow, generate data daily—albeit not in a “publishable”
+state. In Agile Big Data, there is no unpublishable state. The rest of the team
+must see weekly, if not daily (or more often), updates in the state of the data.
+This kind of engagement with researchers is essential to unifying the team and
+enabling product management. That means publishing intermediate
+results—incomplete data, the scraps of analysis".
+cite:jurney-2014-agile-data-scien
+
+As a matter of fact, data scientists and decision makers or business men do not
+work on the same time frame. As someone used to say for programmers, data
+scientists will generally need to three to four hours on a project, without
+being interrupted by short or longer last minute meetings. 
+
++ FIXME: check for the reference about programmers 
++ TODO: Jurney exposes similar concerns in § "Agile Environments: Engineering Productivity".
+
+References:
+
+- [[https://www.datascience.com/blog/agile-data-science][Taking an Agile Approach to Data Science]]
+- [[https://www.quora.com/Is-the-agile-approach-applicable-in-data-science-projects][Is the agile approach applicable in data science projects?]]
+- [[http://2016.agileturas.lt/vilnius/wp-content/uploads/2016/10/5.3-2-Waclaw-Kusnierszyk-Agile-Data-Science.pdf][Agile Data Science]]
+
+
+
+

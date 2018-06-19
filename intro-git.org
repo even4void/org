@@ -1,0 +1,26 @@
+#+TITLE:        Premiers pas avec Git
+#+AUTHOR:       Christophe Lalanne
+#+EMAIL:        ch.lalanne@gmail.com
+#+STARTUP:      align fold noindent hideblocks
+#+OPTIONS:      H:3 num:nil toc:2
+#+SETUPFILE:    _assets/theme-even.setup
+
+#+BEGIN_abstract
+Article abstract goes here.
+#+END_abstract
+
+
+* Présentation de Git
+
+** Les systèmes de contôle de révision
+
+À quoi servent donc les sytèmes de révision ou de version ?
+
+Dans un projet de développement informatique ou même lors de la rédaction d'un document (rapport scientifique, documentation technique, etc.), il est assez fréquent de procéder par étapes. L'édition est généralement incrémentale et on ajoute des éléments au fur et à mesure, avec de temps en temps des retours en arrière : on supprime des éléments que l'on venait d'ajouter récemment et on recommence à partir d'un état antérieur. Parfois, on souhaite même annuler un ensemble de modifications et repartir d'une version précédente du document ou du fichier de code. C'est un des premiers aspects des sytèmes de révision : pouvoir consigner l'historique des modifications apportées à un ou plusieurs fichiers et avoir la possibilité de revenir à des étapes précédentes à l'aide de cet historique. Si un simple fichier texte d'historique, comme par exemple un fichier =Changelog=, permet de consigner les différentes modifications apportées à un document, cela ne permet pas de revenir à un état antérieur du document à moins de refaire toutes les étapes en sens inverse, une par une.
+
+Un autre cas de figure consiste à travailler à plusieurs sur un même ensemble de fichiers.
+
+D'où l'idée de recourir à un système de contrôle de révision. Les systèmes [[https://subversion.apache.org][Subversion]], [[https://git-scm.com][Git]] ou [[https://www.mercurial-scm.org][Mercurial]] permettent à la fois le suivi des modifications d'un ensemble de fichier et le travail collaboratif.
+
+
+[https://chris.beams.io/posts/git-commit/][How to Write a Git Commit Message]

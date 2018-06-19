@@ -1,0 +1,314 @@
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='/Users/chl/Documents/Drafts/org1.css'/>
+
+* [[/Users/chl/Documents/Papers/gosset-1908-probab-error-mean.pdf][gosset-1908-probab-error-mean]] - The Probable Error of a Mean
+ :PROPERTIES:
+ :Custom_ID: gosset-1908-probab-error-mean
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gosset-1908-probab-error-mean.pdf
+ :END:
+R =datasets::sleepstudy=
+
+Extra R code (Frank Harrell, [[/Users/chl/Documents/Papers/harrell-2017-biost-biomed-resear.pdf][harrell-2017-biost-biomed-resear]])
+
+#+NAME: sleepstudy
+#+BEGIN_SRC R  
+drug1 = c(.7, -1.6, -.2, -1.2, -.1, 3.4, 3.7, .8, 0, 2) 
+drug2 = c(1.9, .8, 1.1, .1, -.1, 4.4, 5.5, 1.6, 4.6, 3.4)
+d = data.frame(Drug=c(rep('Drug 1', 10), rep('Drug 2', 10), rep('Difference', 10)), 
+               extra=c(drug1 , drug2 , drug2 - drug1))
+w = data.frame(drug1, drug2, diff=drug2 - drug1)
+ggplot(d, aes(x=Drug, y=extra)) + 
+geom_boxplot(col='lightyellow1', alpha=.3, width=.5) + 
+geom_dotplot(binaxis='y', stackdir='center', position='dodge') + 
+stat_summary(fun.y=mean, geom="point", col='red', shape=18, size=5) + 
+geom_segment(data=w, aes(x='Drug 1', xend='Drug 2', y=drug1, yend=drug2), col=gray(.8)) +
+geom_segment(data=w, aes(x='Drug 1', xend='Difference', y=drug1, yend=drug2 - drug1), col=gray(.8)) +
+xlab('') + ylab('Extra Hours of Sleep') + coord_flip()
+#+END_SRC
+
+* [[/Users/chl/Documents/Papers/avati-2017-improv-palliat.pdf][avati-2017-improv-palliat]] - Improving Palliative Care with Deep Learning
+ :PROPERTIES:
+ :Custom_ID: avati-2017-improv-palliat
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/avati-2017-improv-palliat.pdf
+ :END:
+See Frank Harrell's blog post: http://www.fharrell.com/post/medml/
+
+#+BEGIN_QUOTE
+As with any retrospective study not based on an inception cohort with a well-defined “time zero”, it is tricky to define a time zero and somewhat easy to have survival bias and other sampling biases sneak into the analysis. The ML algorithm required division of patients into “positive” and “negative” cases, something not required by regression models. “Positive” cases must have at least 12 months of previous data in the health system, weeding out patients who died quickly. “Negative” cases must have been alive for at least 12 months from the prediction date. It is also not clear how variable censoring times were handled. In standard statistical model, patients entering the system just before the data analysis have short follow-up and are right-censored early, but still contribute some information.
+#+END_QUOTE
+
+* [[/Users/chl/Documents/Papers/efron-1986-boots-method.pdf][efron-1986-boots-method]] - Bootstrap Methods for Standard Errors, Confidence Intervals, and Other Measures of Statistical Accuracy
+ :PROPERTIES:
+ :Custom_ID: efron-1986-boots-method
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/efron-1986-boots-method.pdf
+ :END:
+From the Stata Manual [R] on "bootstrap":
+cite:efron-1986-boots-method describe an alternative to Satterthwaite’s approximation that estimates the ASL by bootstrapping the statistic from the test of equal means. Their idea is to recenter the two samples to the combined sample mean so that the data now conform to the null hypothesis but that the variances within the samples remain unchanged.
+
+#+NAME: auto
+#+BEGIN_SRC Stata  
+summarize mpg, meanonly
+scalar omean = r(mean)
+summarize mpg if foreign==0, meanonly
+replace mpg = mpg - r(mean) + scalar(omean) if foreign==0
+summarize mpg if foreign==1, meanonly
+replace mpg = mpg - r(mean) + scalar(omean) if foreign==1
+by foreign, sort: summarize mpg
+keep mpg foreign
+set seed 1
+bootstrap t=r(t), rep(1000) strata(foreign) saving(bsauto2) nodots: ttest mpg, by(foreign) unequal
+#+END_SRC
+
+See also cite:hesterberg-2014-what-teach and Patrick Burns note on resampling (http://www.burns-stat.com/documents/tutorials/the-statistical-bootstrap-and-other-resampling-methods-2/).
+
+* [[/Users/chl/Documents/Papers/jurney-2014-agile-data-scien.pdf][jurney-2014-agile-data-scien]] - Agile Data Science
+ :PROPERTIES:
+ :Custom_ID: jurney-2014-agile-data-scien
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jurney-2014-agile-data-scien.pdf
+ :END:
+Keywords: scalability, NoSQL (Hadoop and MongoDB), cloud computing, big data, data intuition
+Interesting use of personal email data
+
+"In Agile Big Data, a small team of generalists uses scalable, high-level tools and cloud computing to iteratively refine data into increasingly higher states of value. We embrace a software stack leveraging cloud computing, distributed systems, and platforms as a service. Then we use this stack to iteratively publish the intermediate results of even our most in-depth research to snowball value from simple records to predictions and actions that create value and let us capture some of it to turn data into dollars."
+
+See also https://www.oreilly.com/ideas/a-manifesto-for-agile-data-science
+
+Sidenote: There is an example of using the Enron SQL database (Chapter 2, § "SQL").
+
+* [[/Users/chl/Documents/Papers/meier-2015-livin-clojur.pdf][meier-2015-livin-clojur]] - Living Clojure
+ :PROPERTIES:
+ :Custom_ID: meier-2015-livin-clojur
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/meier-2015-livin-clojur.pdf
+ :END:
+See [[https://howistart.org/posts/clojure/1/index.html][How I start]].
+
+* [[/Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf][allen-2016-haskel-progr]] - Haskell Programming from First Principles
+ :PROPERTIES:
+ :Custom_ID: allen-2016-haskel-progr
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf
+ :END:
+One of the best book I read about Haskell, and on functional programming more generally.
+
+A short remark about typography: this book is typesetted using LaTeX; however, the verbatim and math elements appear a bit too small in my view.
+
+* [[/Users/chl/Documents/Papers/blandy-2015-why-rust.pdf][blandy-2015-why-rust]] - Why Rust?
+ :PROPERTIES:
+ :Custom_ID: blandy-2015-why-rust
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/blandy-2015-why-rust.pdf
+ :END:
+Rust, like Python, JS or Ruby, is a type safe language with immutable variables by default, but it also allows the use of ~unsafe~ code and ~mut~ able variables. Moreover, "Rust’s particular form of type safety guarantees that concurrent code is free of data races, catching any misuse of mutexes or other synchronization primitives at compile time, and permitting a much less adversarial stance towards exploiting parallelism." In addition, Rust guarantees memory safety thru three key promises: no null pointer dereferences, no dangling pointers and no buffer overruns.
+
+Rust offers a flexible macro system (not covered in this short review); see the [[https://doc.rust-lang.org/1.7.0/book/macros.html][official documentation]] or the [[https://rustbyexample.com/macros.html][Rust by Example]]. There are also /generic/ types and functions, like C++ templates, except that in Rust we must specifiy the type of the argument ~T~ (~Ord~ in the example below):
+
+#+BEGIN_SRC rust
+fn min<T: Ord>(a: T, b: T) -> T {
+  if a <= b { a } else { b }
+}
+#+END_SRC
+
+Note that "Rust compiles generic functions by producing a copy of their code specialized for the exact types they’re applied to."
+
+Rust enumerated types can be viewed as kind of /algebric datatypes/ (equivalent to "tagged union" in C):
+
+#+BEGIN_SRC  rust
+enum Option<T> {
+  None,
+  Some(T) 
+}
+
+fn safe_div(n: i32, d: i32) -> Option<i32> {
+  if d == 0 {
+    return None;
+  }
+  return Some(n / d);
+}
+
+// We need to check either variant of the enumerated type
+match safe_div(num, denom) {
+        None => println!("No quotient."),
+        Some(v) => println!("quotient is {}", v)
+}
+#+END_SRC
+
+See other examples of use regarding memory safety.
+
+Iterators and traits, the later being a "collection of functionality that a type can implement"), pp. 11-17.
+
+#+BEGIN_SRC rust
+// https://stackoverflow.com/a/45283083
+// Iterators are lazy and process each element only once.
+fn main() {
+  let v1 = (0u32..9).filter(|x| x % 2 == 0).map(|x| x.pow(2)).collect::<Vec<_>>();
+  let v2 = (1..10).filter(|x| x % 2 == 0).collect::<Vec<u32>>();
+
+  println!("{:?}", v1); 
+  println!("{:?}", v2); 
+}
+#+END_SRC
+
+TODO: Read the remaining book.
+
+Some additional pointers:
+- Rust book: [[https://doc.rust-lang.org/book/][The Rust Programming Language]]
+- Evan Miller's review: [[https://www.evanmiller.org/a-taste-of-rust.html][A Taste of Rust]]
+- Jeroen Ooms (@opencpu): [[https://github.com/jeroen/hellorust][Hello Rust]] (Minimal Example of Calling Rust from R using Cargo)
+
+* [[/Users/chl/Documents/Papers/rochester-2013-clojur-data.pdf][rochester-2013-clojur-data]] - Clojure Data Analysis Cookbook
+ :PROPERTIES:
+ :Custom_ID: rochester-2013-clojur-data
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/rochester-2013-clojur-data.pdf
+ :END:
+A book from the Packt Publishing group.
+
+Actually, this is the first book by [[http://www.ericrochester.com][Eric Rochester]]. The second covers more advanced techniques and was published one year later: cite:rochester-2014-master-clojur. The [[https://github.com/erochest/clj-data-analysis][website for the book]] includes data used throughout the book, nothing more, but be aware there are a lot of datasets.
+
+"This book is for programmers or data scientists who are familiar with Clojure and want to use it in their data analysis processes."
+
+The first chapter describes various ways to import data (flat files, local database and RDF data), mostly using Incanter backend. I would prefer the author start with more basic tool before dwelling into specialized libraries, especially since [[https://github.com/incanter/incanter][Incanter]] looks almost defunct nowadays (the last blog entry I found said that it was [[https://data-sorcery.org/2016/02/01/incanter-1-5-7/][version 1.5.7, Feb 2016]]). Anyway, this provides a good overview of Incanter's facilities to process external data and convert them in array form, and R or Lispstat users should feel at home. However, starting with Chapter 2 the author will use the [[https://github.com/clojure/data.csv][data.csv]] library.
+
+* [[/Users/chl/Documents/Papers/higginbotham-2015-clojur-brave-true.pdf][higginbotham-2015-clojur-brave-true]] - Clojure for the Brave and True
+ :PROPERTIES:
+ :Custom_ID: higginbotham-2015-clojur-brave-true
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/higginbotham-2015-clojur-brave-true.pdf
+ :END:
+The book was published on [[http://leanpub.com/clojure-for-the-brave-and-true][Leanpub]] a while ago but it is not for sale anymore. I don't remember where I got a PDF version of the book, but there is also a website, [[https://www.braveclojure.com][Brave Clojure]], where the book can be read online for free.
+
+The first chapters are all about setting up a working environment for writing Clojure code, and it happens to be Emacs + [[https://cider.readthedocs.org/][Cider]]. The Clojure version currently used in the book is 1.6 (alpha3), with Leiningen as the build tool for Clojure projects (+ Clojure 1.5.1 for =lein repl=).
+
+Overall, the presentation is clear although it remains a bit rough (I mean like in draft mode) with lot of external links to learn more.
+
+* [[/Users/chl/Documents/Papers/dorie-2018-autom.pdf][dorie-2018-autom]] - Automated versus do-it-yourself methods for causal inference: Lessons learned from a data analysis competition
+ :PROPERTIES:
+ :Custom_ID: dorie-2018-autom
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/dorie-2018-autom.pdf
+ :END:
+Focus on semi-parametric and nonparametric causal inference methodology, with a particular emphasis on the comparison between 30 different approaches through the "[[https://docs.google.com/document/d/1p5xdeJVY5GdBC2ar_3wVjaboph0PemXulnMD5OojOCI/edit][causal inference data analysis competition]]", hosted during the [[http://jenniferhill7.wixsite.com/acic-2016][2016 Atlantic Causal Inference Conference Competition]].
+
+Some caveats when assessing causal inference methods: (1) few methods compared and unfair comparisons, (2) testing grounds not calibrated to "real life", and (3) file drawer effect. The later ressembles what is commonly impacting meta-analytical studies. It reminds me of a critic of machine elarning algorithms that are always developed and calibrated on exiting data sets, like those available on UCI, with reference to existing benchmarks---hence inducing a confirmation bias---and that would probably perform poorly on real life data (I didn't find the reference). See also this online article, [[https://www.mckinsey.com/business-functions/risk/our-insights/controlling-machine-learning-algorithms-and-their-biases][Controlling machine-learning algorithms and their biases]], by Tobias Baer and Vishnu Kamalnath, regarding human biases.
+
+ 
+
+See also: [[/Users/chl/Documents/Papers/middleton-2016-bias-amplif.pdf][middleton-2016-bias-amplif]].
+
+*Sidenote*: Omitted variable bias
+
+Suppose the true model is $Y = \alpha_0 + \alpha_1 X + \alpha_2 Z + u$, and we estimate $Y = \beta_0 + \beta_1X + u$. Then the omitted variable can be considered as a function of $X$ in a conditional regression $Z = \gamma_0 + \gamma_1 X + w$. So we have estimated
+
+\begin{align*}
+Y & = \beta_0 + \beta_1 X + \beta_2 (\gamma_0 + \gamma_1 X + w) + u \\
+  & = (\beta_0 + \beta_2\gamma_0) + (\beta_1 + \gamma_1\beta_2)X + (\beta_2w + u)
+\end{align*}
+
+Unless $\beta_2 = 0$, $\mathbb E(\hat\beta_1) = \beta_1 + \beta_2\left(\frac{\sum xz}{\sum x^2}\right) \neq 0$, which means that the coeffiient of $X$ picks up the part of the influence of $Z$ that was correlated with $X$.
+
+* [[/Users/chl/Documents/Papers/wicherts-2017-weak-spots.pdf][wicherts-2017-weak-spots]] - The weak spots in contemporary science (and how to fix them)
+ :PROPERTIES:
+ :Custom_ID: wicherts-2017-weak-spots
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wicherts-2017-weak-spots.pdf
+ :END:
+Objectives: demonstrate that the pluridisciplinar crisis in science can mainly be accounted for by observer bias, publication bias, misuse of degrees of freedom in statistical analysis of data combined to low statistical power, and errors in the reporting of results.
+
+Up to 90% of positive results reported in psychology or psychiatry.
+
+HARKing: /Hypothesizing after Results are Known/---much like "data fishing", or to a lesser extent "data dredging".
+
+Ioannidis's work on reproductibility and misuse of statistical hypothesis testing framework: cite:ioannidis-2005-why-most, cite:ioannidis-2008-why-most, cite:munafo-2017-manif-reprod-scien.
+
+* [[/Users/chl/Documents/Papers/middleton-2016-bias-amplif.pdf][middleton-2016-bias-amplif]] - Bias Amplification and Bias Unmasking
+ :PROPERTIES:
+ :Custom_ID: middleton-2016-bias-amplif
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/middleton-2016-bias-amplif.pdf
+ :END:
+
+* [[/Users/chl/Documents/Papers/laan-2006-target-maxim.pdf][laan-2006-target-maxim]] - Targeted Maximum Likelihood Learning
+ :PROPERTIES:
+ :Custom_ID: laan-2006-target-maxim
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/laan-2006-target-maxim.pdf
+ :END:
+
+See [[/Users/chl/Documents/Papers/koenker-2016-tmle.pdf][koenker-2016-tmle]] for a good tutorial, as well as this slide deck for Stata: [[https://www.stata.com/meeting/uk17/slides/uk17_Luque-Fernandez.pdf][Ensemble Learning Targeted Maximum Likelihood Estimation for Stata Users]].
+ 
+* [[/Users/chl/Documents/Papers/kazil-2016-data-wrang-python.pdf][kazil-2016-data-wrang-python]] - Data Wrangling with Python
+ :PROPERTIES:
+ :Custom_ID: kazil-2016-data-wrang-python
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kazil-2016-data-wrang-python.pdf
+ :END:
+
+Relatively self-paced introduction to Python data structures and programming. In order to motivate the reader, the authors said that he/she would understand the following three lines by the end of chapter 2, and I believe this should be true even for people who know close to nothing to programming.
+
+#+BEGIN_SRC python
+import sys
+import pprint
+pprint.pprint(sys.path)
+#+END_SRC
+
+#+BEGIN_QUOTE
+You just learned how to program. Programming is not about memorizing everything; rather, it is about troubleshooting when things go awry.
+#+END_QUOTE
+
+* [[/Users/chl/Documents/Papers/conery-2016-impos-handb.pdf][conery-2016-impos-handb]] - The Imposter's Handbook
+ :PROPERTIES:
+ :Custom_ID: conery-2016-impos-handb
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/conery-2016-impos-handb.pdf
+ :END:
+
+[[file:~/Sites/aliquote/content/post/imposter-handbook.md][review published on aliquote.org]]
+[[https://github.com/imposters-handbook/sample-code][Source code on Github]] (JS, C#, Bash, SQL)
+
+* [[/Users/chl/Documents/Papers/bueno-2013-matur-optim.pdf][bueno-2013-matur-optim]] - Mature Optimization Handbook
+ :PROPERTIES:
+ :Custom_ID: bueno-2013-matur-optim
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bueno-2013-matur-optim.pdf
+ :END:
+See the review on ~aliquote.org~: [[file:~/Sites/aliquote/content/post/mature-optimization-handbook.md][mature-optimization-handbook.md]].
+
+* [[/Users/chl/Documents/Papers/ripley-2002-statis-method.pdf][ripley-2002-statis-method]] - Statistical methods need software: a view of statistical computing
+ :PROPERTIES:
+ :Custom_ID: ripley-2002-statis-method
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ripley-2002-statis-method.pdf
+ :END:
+#+begin_quote
+Let’s not kid ourselves: the most widely used piece of software for statistics is Excel.
+#+end_quote
+
+* [[/Users/chl/Documents/Papers/mccullagh-2002-what-statis-model.pdf][mccullagh-2002-what-statis-model]] - What is a statistical model
+ :PROPERTIES:
+ :Custom_ID: mccullagh-2002-what-statis-model
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/mccullagh-2002-what-statis-model.pdf
+ :END:
+From [[https://www.johndcook.com/blog/2018/04/14/categorical-data-analysis/][John D Cook's blog]].
+
+The author suggests that "most authors do not offer a precise mathematical definition of a statistical model", and gives 12 examples of ill-posed statitsical models from an inferential perspective.
+
+Starting page 1232 ff., it is all about category theory!
+
+#+begin_quote
+The thesis of this paper is that the logic of every statistical model is founded, implicitly or explicitly, on categories of morphisms of the relevant spaces. The purpose of a category is to ensure that the families of distributions on different sample spaces are logically related to one another and to ensure that the meaning of a parameter is retained from one family to another.
+#+end_quote
+
+* [[/Users/chl/Documents/Papers/hailperin-1999-concr-abstr.pdf][hailperin-1999-concr-abstr]] - Concrete abstractions: an introduction to computer science using scheme
+ :PROPERTIES:
+ :Custom_ID: hailperin-1999-concr-abstr
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hailperin-1999-concr-abstr.pdf
+ :END:
+TODO Post a review on [[http://aliquote.org]].
+
+* [[/Users/chl/Documents/Papers/laaksonen-2017-compet-progr-handb.pdf][laaksonen-2017-compet-progr-handb]] - Competitive programmer’s handbook
+ :PROPERTIES:
+ :Custom_ID: laaksonen-2017-compet-progr-handb
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/laaksonen-2017-compet-progr-handb.pdf
+ :END:
+ When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike @conery-2016-impos-handb, it has more running code, and in a decent language (C++ 11). I wrote a little trasncript in  Python 3.x: [[~/Documents/Blocks/competitive.py]] and a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on http://aliquote.org.
+* [[/Users/chl/Documents/Papers/stein-2017-elemen-number-theor.pdf][stein-2017-elemen-number-theor]] - Elementary number theory: primes, congruences, and secrets
+ :PROPERTIES:
+ :Custom_ID: stein-2017-elemen-number-theor
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/stein-2017-elemen-number-theor.pdf
+ :END:
+**** TODO Add a few words in [[file:number-theory.org]]
+* [[/Users/chl/Documents/Papers/valliant-2018-survey-weigh.pdf][valliant-2018-survey-weigh]] - Survey weights: a step-by-step guide to calculation
+ :PROPERTIES:
+ :Custom_ID: valliant-2018-survey-weigh
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/valliant-2018-survey-weigh.pdf
+ :END:
+This is a small book from Stata Press which discusses the construction and use of survey weights in probabilistic and non-probabilistic samples.
+
+FIXME Provide more details
