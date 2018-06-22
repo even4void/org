@@ -1,0 +1,5 @@
+#+TITLE: links
+
+* Bookmarks
+** http://www.packal.org :apple:
+** https://onlinecourses.science.psu.edu/stat507/ :statistics:epidemiology:

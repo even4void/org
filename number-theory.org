@@ -26,11 +26,22 @@ def gcd(a, b):
 As can be seen, to define a function we use the =def= keyword, provide a name to the function (here, =gcd=) followed by its expected parameters into brackets. The body of the function follows the colon on a new line. In this case, it is composed of an if-statement where we test if the reminder is zero, otherwise we call the function again with =a= replaced by =b % a= (the reminder of =b // a=). The =return= keyword is used at the end of a function to indicate what value to return. In this case, this is a recursive call to the function with updated parameters. Python is dynamically typed, meaning that we do not need to specify the type of input variable or returned value.
 
 The above function can also be rewritten as a simple λ function:
-#+BEGIN_SRC python
+
+#+BEGIN_SRC python :session
 gcd = lambda a,b: a if not b else gcd(b, a % b)
 #+END_SRC
 
+#+RESULTS:
+
 The statement =if not b= is a shorthand for =b is not None=.
+
+#+BEGIN_SRC python :session
+gcd(27, 3)
+#+END_SRC
+
+#+RESULTS:
+: 3
+
 
 
 ** Finding prime numbers

@@ -1,0 +1,71 @@
+#+TITLE: scratchpad
+
+* R Notebook
+
+#+BEGIN_SRC R :results output org
+library(ascii)
+options(asciiType = "org")
+library(Hmisc)
+ascii(describe(ToothGrowth))
+#+END_SRC
+
+
+* Lisp Notebook
+
+#+BEGIN_SRC emacs-lisp
+(+ 1 3)
+#+END_SRC
+
+
+* Python Notebook
+
+#+BEGIN_SRC python :results output
+key = "Babel"
+print("Hello %s" % (key))
+#+END_SRC
+
+From [[https://programmingpraxis.com/2018/04/13/third-biggest-number/][Programming Praxis]].
+
+Originally, the task is to "Write a program to read ten numbers input by the user and write the third largest of those ten numbers." I choose to replace user input with random integers.
+
+This amounts to draw a reandom sequence of 10 values, sort them in descending order and select the 3rd value. We can safely ignore any ties in the list. With Python 3.6, it would be interesting to try the [[https://docs.python.org/3.6/library/secrets.html#module-secrets][secrets]] module.
+
+#+BEGIN_SRC python :results output
+from random import seed, randint
+seed(101)
+x = sorted([randint(1, 10) for i in range(0, 9)], reverse=True)
+print("Answer = value %s in sequence %s" % (x[2], x))
+#+END_SRC
+
+#+RESULTS:
+: Answer = value 7 in sequence [10, 10, 7, 6, 5, 3, 3, 3, 2]
+
+Now, in Clojure:
+
+#+BEGIN_SRC clojure
+(def x (sort > (take 10 (repeatedly #(rand-int 10)))))
+(let [[a b c] x]
+    (println x)
+    (println c))
+#+END_SRC
+
+#+RESULTS:
+: (9 9 9 9 8 6 6 2 0 0)
+: 9
+
+This does not allow to fix the seed while keeping the laziness (see [[https://kotka.de/blog/2009/11/Taming_the_Bound_Seq.html][Taming the Bound Seq]]). Here is an [[https://stackoverflow.com/a/22460517][alternative solution]] from Stack Overflow:
+
+#+BEGIN_SRC clojure
+(ns example.show
+  (:require [clojure.data.generators :as g]))
+
+(defn rand-seq [seed]
+  (let [r (java.util.Random. seed)]
+    (repeatedly #(binding [g/*rnd* r]
+                   (inc (g/uniform 0 10))))))
+
+(take 10 (rand-seq 42))
+#+END_SRC
+
+It is weird that we cannot set the seed of PRNGs unless we use ~data.generators~. In CL, we have ~random-state~.
+See [[https://dcatteeu.github.io/article/2014/07/31/random-numbers/][Random Numbers in Common Lisp]].
