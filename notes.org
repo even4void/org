@@ -306,4 +306,10 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Better than Spark? What's the difference? See the xgboost project. 
  [2018-06-18 Lun 19:48]
  http://flink.apache.org/
+** See how it is going wrt. existing implementation. Also related: https://github.com/danking/racket-ml. 
+ [2018-06-21 Jeu 09:46]
+ https://github.com/mkierzenka/Racket_NumericalMethods
+** Good starter kit for git collaboration. See also (more recent): https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
+ [2018-06-22 Ven 11:08]
+ https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267
 * Notes
