@@ -1,14 +1,7 @@
 #+TITLE:        Premiers pas avec Git
-#+AUTHOR:       Christophe Lalanne
-#+EMAIL:        ch.lalanne@gmail.com
-#+STARTUP:      align fold noindent hideblocks
-#+OPTIONS:      H:3 num:nil toc:2
-#+SETUPFILE:    _assets/theme-even.setup
-
-#+BEGIN_abstract
-Article abstract goes here.
-#+END_abstract
-
+#+LANGUAGE: fr
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="worg.css" />
+#+OPTIONS: H:3 num:nil toc:t \n:nil ':t @:t ::t |:t ^:nil -:t f:t *:t TeX:t skip:nil d:nil html-style:nil html-postamble:nil tags:not-in-toc
 
 * Présentation de Git
 
@@ -23,4 +16,31 @@ Un autre cas de figure consiste à travailler à plusieurs sur un même ensemble
 D'où l'idée de recourir à un système de contrôle de révision. Les systèmes [[https://subversion.apache.org][Subversion]], [[https://git-scm.com][Git]] ou [[https://www.mercurial-scm.org][Mercurial]] permettent à la fois le suivi des modifications d'un ensemble de fichier et le travail collaboratif.
 
 
+
+** Interface graphique et ligne de commande
+
+
+* Travail solo
+
+Même si Git est avant tout pensé pour un travail collaboratif, il est tout à fait possible d'utilsier Git localement pour gérer un projet en solo. Il peut s'agir de suivre les modifications apportées à un ou plusieurs documents texte ou à du code source. Les avantages de Git sont ceux que procurent tout système de suivi de révision : il est possible d'archiver et d'annoter chaque avancée du projet (/commit/), d'isoler des portions spécifiques des documents ou du code (/branch/), voire d'assigner des étiquettes (/tag/) à certaines étapes.
+
+L'initialisation d'un dépôt Git est assez simple. En ligne de commande, il suffit de naviguer dans le répertoire du projet et d'initialiser le suivi Git dans ce répertoire. La commande =git init= se charge de créer un répertoire masqué, =.git=, dans lequel seront consignés l'historique de révision et des images intermédiaires des différents objets (documents texte, images, code, etc.) soumis au suivi.
+
+#+BEGIN_SRC bash
+cd project
+git init .
+#+END_SRC
+
+
 [https://chris.beams.io/posts/git-commit/][How to Write a Git Commit Message]
+
+
+https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs
+http://bsara.github.io/git-grapher/
+
+
+* Fork-and-Branch
+
+https://www.atlassian.com/git/tutorials/comparing-workflows
+https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
+https://sandofsky.com/blog/git-workflow.html
