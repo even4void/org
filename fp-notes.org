@@ -1,0 +1,9 @@
+
+
+* CS 3110 Fall 2017: Data Structures and Functional Programming
+
+URL: https://www.cs.cornell.edu/courses/cs3110/2017fa/
+
+The key linguistic abstraction of functional languages is the /mathematical function/. A function maps an input to an output; for the same input, it always produces the same output. That is, mathematical functions are stateless: they do not maintain any extra information or state that persists between usages of the function. Functions are first-class: you can use them as input to other functions, and produce functions as output. Expressing everything in terms of functions enables a uniform and simple programming model that is easier to reason about than the procedures and methods found in other families of languages.
+
+OCaml is a statically-typed and type-safe programming language, featuring algebric datatypes, type inference, parametric polymorphism, garbage collection, and modules.

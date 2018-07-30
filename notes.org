@@ -312,4 +312,393 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Good starter kit for git collaboration. See also (more recent): https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
  [2018-06-22 Ven 11:08]
  https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267
+** Stata histogram with survey weights 
+ [2018-06-22 Ven 16:45]
+ https://stackoverflow.com/questions/32121901/stata-density-distribution-functions-with-survey-data
+** NHANES dataset for Stata 
+ [2018-06-22 Ven 23:30]
+ https://www.icpsr.umich.edu/icpsrweb/NACDA/series/39
+** Anlysis of NHANES dataset in Stata
+ [2018-06-22 Ven 23:32]
+ https://stats.idre.ucla.edu/stata/seminars/applied-svy-stata13/
+** Nice summary of some Stata commands for test and modeling
+ [2018-06-26 Mar 10:14]
+ http://nepaldevelopment.pbworks.com/w/page/61335021/STATA%3A%20Quick%20Command%20Reference
+** Security and ML in Python @ssi.gouv.fr 
+ [2018-06-27 Mer 18:44]
+ https://github.com/ANSSI-FR/SecuML
+** Is it better than cquery? 
+ [2018-07-04 Mer 21:06]
+ https://github.com/MaskRay/ccls
+** Useful tips for scientific computing using floats in Racket 
+ [2018-07-05 Jeu 10:38]
+ https://stackoverflow.com/questions/16009143/scientific-notation-conversion-scheme
+** Interesting tutorials on numerical methods. 
+ [2018-07-05 Jeu 13:01]
+ https://math.la.asu.edu/~dajones/
+** Now that it reaches version 1.0 I should try BeakerX gain 
+ [2018-07-06 Ven 12:32]
+ http://beakerx.com/
+** Useful add-ons for Stata twoway 
+ [2018-07-07 Sam 10:08]
+ https://stats.idre.ucla.edu/stata/faq/graph/njc-stata-plots/
+** Is this why I get so blurry font rendering with my HP external monitor? 
+ [2018-07-07 Sam 11:30]
+ https://apple.stackexchange.com/questions/299820/font-smoothing-in-high-sierra/300025
+** Operating Systems: From 0 to 1 
+ [2018-07-10 Mar 08:37]
+ https://tuhdo.github.io/os01/
+** Interesting minimalistic theme and concept (albeit for VS Code) 
+ [2018-07-13 Ven 20:22]
+ https://github.com/tonsky/vscode-theme-alabaster
+** Clojure DSL for Apacke Spark 
+ [2018-07-16 Lun 08:08]
+ https://github.com/yieldbot/flambo
+** Interesting links on stat libs for Clojure 
+ [2018-07-16 Lun 08:12]
+ https://www.reddit.com/r/Clojure/comments/6kjdrk/is_there_an_actively_developed_stats_library_for/
+** Reread this when I will be more proficient using core Clojure
+ [2018-07-16 Lun 15:28]
+ https://github.com/nathanmarz/specter
+** Useful ressource on mathematical statistics 
+ [2018-07-17 Mar 18:39]
+ http://math.usu.edu/symanzik/
+** Petit traité de Lisp en français 
+ [2018-07-19 Jeu 09:33]
+ http://dept-info.labri.fr/~strandh/Teaching/Programmation-Symbolique/Common/Book/Dir.html
+** Clojure and AWS Lambda 
+ [2018-07-21 Sam 07:02]
+ https://aws.amazon.com/fr/blogs/compute/clojure/
+** Getting Started on Heroku with Clojure 
+ [2018-07-21 Sam 07:02]
+ https://devcenter.heroku.com/articles/getting-started-with-clojure
+** Interesting approach for managing Git projects
+ [2018-07-29 Dim 17:18]
+ https://github.com/git-up/GitUp
+** I should try this at some point 
+ [2018-07-29 Dim 18:06]
+ https://github.com/deadc0de6/dotdrop
+** Base 16 shell color 
+ [2018-07-29 Dim 18:12]
+ https://github.com/chriskempson/base16-shell
 * Notes
+** [2006-07-09 Dim] C Tips
+
+*Puissance de 2 :*
+
+#+BEGIN_SRC c
+int PowerOfTwo (unsigned i)
+{
+    /*
+     * Returns TRUE if "i" is a power of 2 (has only one bit on).
+     * Doesn't work for i == 0 (returns TRUE).
+     */
+
+    return ((i - 1) & i) == 0;
+}
+#+END_SRC
+
+*Parité d'un entier :* 
+
+Knuth, =rng-double.c=, http://www-cs-faculty.stanford.edu/~knuth/
+
+#+BEGIN_SRC c
+#define is_odd(s) ((s)&1)
+#+END_SRC
+
+*Comptage de bit sets :*
+
+#+BEGIN_SRC c
+count = 0;
+while (testnum) {
+    testnum &= testnum - 1;
+    count++;
+}
+#+END_SRC
+
+*Signer un entier ou non :*
+
+Bad:   =int i;   /* For positive numbers */=
+Good:  =unsigned int i;=
+
+For some operations, the compiler has to generate extra code to check for negative numbers, etc. You can avoid that if you know for sure that the number will never be negative.
+
+*Boucle :*
+
+/Bad/ 
+
+#+BEGIN_SRC c
+for (i = 0; i < 10; i++) {
+    printf ("Hello ");  /* Body loop does not use "i" */
+}
+#+END_SRC
+
+/Good/ 
+
+#+BEGIN_SRC c
+for (i = 10; i > 0; i--) {
+    printf ("Hello ");  /* Body loop does not use "i" */
+}
+#+END_SRC
+
+It is easier for the compiler to compare against zero than against 10 (or a more complex expression involving variables). Count backwards if you don't care about the loop variable. Use for =(i=9; i>=0; i--)= if you don't case about the direction of the loop variable (e.g., clearing an array), but make sure to use a signed integer.
+
+*Macro :*
+
+(1) /Bad/   =#define sqr(x)   (x*x)=
+(2) /Bad/   =#define sqr(x)   (x)*(x)=
+(3) /Good/  =#define sqr(x)   ((x)*(x))=
+
+(1) Since the parameter is expanded textually, you'll get incorrect results if, say, =sqr(a+b)= is called.
+(2) You want the pseudo-function =sqr()= to be atomic in case it is used next to another operator of equal or greater precedence. For example, the expressions =a/sqr(b= would be incorrect in the bad case.
+
+*Ordre d'évaluation :*
+
+/Bad/   =i = (getchar () << 8) | getchar ();=
+/Good/  =i = getchar () << 8;=
+      i |= getchar ();
+
+You're not guaranteed anything about the order of evaluation, so the getchar's may actually be called in the wrong order. Split the calls up to be sure. The only operators that guarantee that the left side will be evaluated before the right are =&&=, =||=, and comma (=,=).
+
+Comparaison de nombres réels :
+
+/Bad/    =double x, y;  if (x==y) ...=
+/Good/   =double x, y;  if (fabs (x - y) < EPS) ...=
+/Better/ =double x, y;  if (-EPS < x - y && x - y < EPS) ...=
+
+Don't compare floats or doubles to each other for equality because they are unlikely to be exactly the same. Use a small epsilon, such as 0.0001, for comparison. The value of =EPS= depends on the size of the reals and the application itself. The second good method avoids a function call but is messy and should be put in a macro.
+
+Voir aussi http://www.faqs.org/faqs/C-faq/faq/, 14.5 ; Knuth Sec. 4.2.2 pp. 217-8.
+
+*Utilisation du =goto= :*
+
+#+BEGIN_SRC c
+   for (i = 0; i < 128; i++ ) {
+        for (j = 0; j < 128; j++) {
+            if (a[i][j] == 5) {
+                goto found;
+            }
+        }
+    }
+    printf ("Not found.\n");
+    return;
+found:
+    printf ("Found at %d, %d\n", i, j);
+#+END_SRC
+
+*Pointeurs :*
+
+/Bad/   =i = *(s + j);=
+/Good/  =i = s[j];=
+
+The code is equally fast and is more clear. Remember that "=a[b]=" is semantically equivalent to "=*((a) + (b))=".
+
+*Variables et fonctions locales :*
+
+/Bad/   =int done;=
+/Bad/   =void copy() ...=
+/Good/  =static int done;=
+/Good/  =static void copy() ...=
+
+If a global variable or function is only needed by one object file, then make it static to reduce the size of the symbol table and the possibilities of conflicts, and to give the compiler more information for optimizations.
+
+** [2006-07-09 Dim] For scope in C
+
+http://www.codecomments.com/archive376-2005-8-579427.html
+
+Keith Wiley <kwiley@cs.unm.edu> wrote:
+ > Xcode gives a lot of warnings and errors that I can't decipher. What's
+ > this one mean:
+ >
+ > "matches this 'i' under ISO standard rules"
+ >
+ > Notice that it isn't even a properly formed sentence. The warning occurs
+ > on a line like this:
+ >
+ > for (unsigned int i = 0; i < condRules->size(); i++)
+ >
+ > where condRules is a pointer to a vector. Other places in my code I do
+ > things very similar to this without getting a warning.
+ 
+ This probably occurs in a situation like this:
+ 
+ int i;
+ ....
+ for(int i = 0; ... )
+ { ... }
+ 
+ func(i);
+ 
+ You have declared two different i's here, and it's not clear which one of
+ them is being referred to on the last line. In fact, it's so unclear that
+ Microsoft's C++ compiler acted differently from all the other compilers
+ for quite a long time, and bound you to the wrong one.
+ 
+ Of course, it's hard to say for sure if this is your problem without
+ seeing more of the surrounding code.
+ 
+ It should also go without saying that this has nothing to do with
+ Objective-C.
+ 
+ --
+ Michael Ash
+ Rogue Amoeba Software
+
+------------------------------------
+In article <1125025156.153462@nfs-db1.segnet.com>,
+ Michael Ash <mike@mikeash.com> wrote:
+ 
+ > This probably occurs in a situation like this:
+ >
+ > int i;
+ > ...
+ > for(int i = 0; ... )
+ > { ... }
+ >
+ > func(i);
+ >
+ > You have declared two different i's here, and it's not clear which one of
+ > them is being referred to on the last line.
+ 
+ Yes, it is clear:
+ - In ANSI C, this is an error.
+ - In ISO C++, this is correct code. The declaration of the int in the
+ for loop goes out of scope at the end of the loop.
+ 
+ > In fact, it's so unclear that Microsoft's C++ compiler acted differently from
+ > all the other compilers for quite a long time, and bound you to the wrong
+ > one.
+ 
+ I am fairly sure that Microsoft's C++ compiler following the C standard
+ in this. The workaround I frequently used was:
+ 
+ {for( int i = 0; ...)
+ {
+ ...
+ }}
+ 
+ This keeps all compilers happy, and does not require the replacement of
+ index variables after copy-pasting some code.
+ 
+ > It should also go without saying that this has nothing to do with
+ > Objective-C.
+ 
+ I am not sure about that. Last time I checked, gcc on the Mac did both C
+ and C++ for-loop scoping correctly. If that is correct,the original
+ poster can not get this error in C or C++ code => It is likely that it
+ is Objective-C or Objective-C++ code.
+ 
+ It could well be a specific error message for Objective-C++ code because
+ of this inconsistency between C and C++ for loop scoping. Objective-C++
+ can not do for loop scoping correctly in both the C and the C++ sense.
+ 
+ Reinder
+-------------------------------
+
+** [2006-07-09 Dim] Running R in batch mode: =/usr/bin/nice 19 R --no-save BATCH $1.R -o a.out &=
+** [2008-03-21 Ven] Paired comparisons
+
+Sylvia G. Roch, Angela M. Sternburgh, Pat M. Caputo (2007) Absolute vs Relative Performance Rating Formats: Implications for fairness and organizational justice 
+International Journal of Selection and Assessment 15 (3) , 302–316 doi:10.1111/j.1468-2389.2007.00390.x 
+
+James Monroe Stewart1 and Carol Barach1
+A brief memory strategy with distinctive features
+Revue	Journal of Psycholinguistic Research
+Éditeur	Springer Netherlands
+ISSN	0090-6905 (Print) 1573-6555 (Online)
+Numéro	Volume 9, Number 4 / juillet 1980
+DOI	10.1007/BF01067451
+Pages	391-406
+
+A Bayesian paired comparison approach for relative accident probability assessment with covariate information
+
+P. Szweda, b, , J. Rene van Dorpb, , , J.R.W. Merrickc, , T.A. Mazzuchib,  and A. Singhb,  
+European Journal of Operational Research 
+Volume 169, Issue 1, 16 February 2006, Pages 157-177
+
+D. Amnon Silverstein
+Hewlett Packard Laboratories, 1501 Page Mill Road, Palo Alto, California 94304
+Joyce E. Farrell
+Efficient method for paired comparison
+Journal of Electronic Imaging -- April 2001 -- Volume 10, Issue 2, pp. 394-398
+
+Gordon Crawford, Cindy Williams, 1985
+The Analysis of Subjective Judgment Matrices
+RAND Report
+
+** [2009-07-14 Mar] DSC 2009 conference
+There was a lot of interesting stuff presented this year at the DSC conference. But first of all, let's look at some pictures of Copenhagen, which has very nice lakes and parks.
+
+Contrary to the annual UseR! conference (which I attended too), the DSC conference targets a much smaller audience and it is (supposed to be) more oriented toward R development and new programming methodology. Also, other languages may be presented, and this was the case of Common Lisp.
+
+There were two or three talks that turned around S3/S4 classes. Briefly, S4 class is the new interface to R objects, starting from R 2.8.
+
+It should be noted that from a programming perspective, R objects are mutable and functions are generic methods, as H. Wickham remained in his talk. A nice overview of programming language is provided in Programming paradigms for Dummies: What every programmer should know, available on Peter Van Roy website. Also, John M. Chambers discussed the way S3 and S4 classes may be used in a safer manner. A longer article is available on his website: Developments in Class Inheritance and Method Selection (http://stat.stanford.edu/~jmc4/classInheritance.pdf).
+
+As stated in the on-line help for "methods" in the "base" package, what are called methods are simply generic function, which may not be visible to the user. Most of the time, we can access the R code using a call to =getAnywhere()=. 
+
+=> methods(summary)= returns all S3 (and possibly S4) methods. From the help system, we have:
+
+#+BEGIN_QUOTE
+     This scheme is called _S3_ (S version 3).  For new projects, it is
+     recommended to use the more flexible and robust _S4_ scheme
+     provided in the 'methods' package.  Functions can have both S3 and
+     S4 methods, and function 'showMethods' will list the S4 methods
+     (possibly none).
+#+END_QUOTE
+
+The S4 scheme tries to circumvent some of the cons of the S3 scheme, and all related stuff is located in the "Methods" package. 
+
+An instance of a user-or system-defined class is created using the new() operator, much like in Java. For instance, suppose we define the following class:
+
+#+BEGIN_SRC R
+setClass("Complex", representation(real="numeric",image="numeric"))
+#+END_SRC
+
+We decide to repesent complex numbers by a couple of real values. In S4 terminology, it has two slots.
+
+The usual arithmetic operators are now members of an S4 class ('Arith') and methods can be developed for them. Let's look what it gives with our 'Complex' class.
+
+Christophe Genolini offers a gentle introduction to R programming with S4 and relevant OO concepts.
+
+** [2010-05-24 Lun] Borsboom
+(...) So, once again we see that the fundamental tension that Lord and
+Novick have introduced through their axiomatic treatment of test
+theory is constructed in such a way that it always works, but at the
+price of losing the natural interpretation of true scores and random
+error, as reflecting a stable characteristic and unsystematic
+variation respectively, is philosophically untenable. A
+philosophically acceptable interpretation of these concepts, as
+products of the imagination which refer to recurrent dispositions in a
+counterfactual state of affairs, is psychologically unattractive.
+Classical test theory systematically falls between these two stools.
+
+It is my understanding that few, if any, researchers in psychology
+conceive of psychological constructs in a way that would justify the
+use of classical test theory as an appropriate measurement model. Why,
+then, is the classical test theory model so immensely successful?
+
+D. Borsboom, Measuring the Mind, Conceptual Issues in Contemporary
+Psychometrics, Cambridge University Press, 2005, pp. 46–47.
+
+** [2018-07-19 Jeu] Fizzbuzz in Racket with pattern matching: 
+
+#+BEGIN_SRC racket
+(define (fizzbuzz? n)
+  (match (list (remainder n 3) (remainder n 5))
+    [(list 0 0) 'fizzbuzz]
+    [(list 0 _) 'fizz]
+    [(list _ 0) 'buzz]
+    [_          #f]))
+#+END_SRC
+
+In Clojure:
+
+#+BEGIN_SRC clojure
+(->> [(cycle [:fizz :_ :_])
+      (cycle [:buzz :_ :_ :_ :_])]
+     (apply map vector)
+     (take 25))
+#+END_SRC
+
+See Stuart Sierra, https://stuartsierra.com/2018/07/06/threading-with-style

@@ -1,4 +1,4 @@
-#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='/Users/chl/Documents/Drafts/org1.css'/>
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='worg.css'/>
 
 * [[/Users/chl/Documents/Papers/gosset-1908-probab-error-mean.pdf][gosset-1908-probab-error-mean]] - The Probable Error of a Mean
  :PROPERTIES:
@@ -311,4 +311,10 @@ TODO Post a review on [[http://aliquote.org]].
  :END:
 This is a small book from Stata Press which discusses the construction and use of survey weights in probabilistic and non-probabilistic samples.
 
-FIXME Provide more details
+
+* [[/Users/chl/Documents/Papers/chen-2003-statis-comput-datab.pdf][chen-2003-statis-comput-datab]] - Statistical computing and databases: distributed computing near the data
+ :PROPERTIES:
+ :Custom_ID: chen-2003-statis-comput-datab
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/chen-2003-statis-comput-datab.pdf
+ :END:
+Old stuff but interesting ideas (part of them are now materialized in the dplyr/dbi packages) like performing the data-intensive but algorithmically less sophisticated operations in the database and send back the results to the statistical package which is responsible for the algorithmic flow. The software design includes a CORBA architecture coupled to [[https://www.csm.ornl.gov/pvm/][PVM]] for managing parallel computations.

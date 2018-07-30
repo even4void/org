@@ -3,3 +3,4 @@
 ** TODO [[file:~/Documents/Papers/objc/Advanced-Swift-Nov-2017.pdf][Advanced Swift]]                                               :review:
 ** TODO Survey Weights: A Step-by-Step Guide to Calculation          :review:
 ** TODO [[file:~/Documents/Papers/peters-2017-elemen-causal-infer.pdf][Elements of Causal Inference]]                                 :review:
+** TODO Install and configure cquery                                  :emacs:

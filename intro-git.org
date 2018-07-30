@@ -44,3 +44,9 @@ http://bsara.github.io/git-grapher/
 https://www.atlassian.com/git/tutorials/comparing-workflows
 https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
 https://sandofsky.com/blog/git-workflow.html
+
+
+https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows#Integration-Manager-Workflow
+http://developmentalmadness.com/2016/02/16/git-collaborate-using-pull-requests/
+
+https://stackoverflow.com/a/14681796
