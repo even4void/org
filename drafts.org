@@ -34,3 +34,47 @@ References:
 
 
 
+
+* OCaml
+
+I played with OCaml during the last two weeks or so. I used the following online courses which I must admit are really well organized: [[https://cs.uwaterloo.ca/~plragde/flaneries/FDS/][Functional Data Structures]] (FDS) and [[https://www.cs.cornell.edu/courses/cs3110/2017fa/][Data Structures and Functional Programming]] (DSFP).
+
+In DSFP, the author suggests that to learn a new programming language (PL), there are a couple of aspects that we need to focus on, including: syntax, semantics, idioms, libraries, and tools. Concentrating on semantics and idioms is the most important aspect to learning a new PL since it amounts to understand what the program really does and what are good design patterns for using that particular language.
+
+OCaml is a statically-typed and type-safe programming language, featuring algebric datatypes, type inference, parametric polymorphism, garbage collection, and modules. It is one of the successor of ML, which was devised after Lisp itself in the 60's. It is interesting to study the design of this language especially for those that are into Scala these days, and more generally to get a deep understanding of what we might call a principled approach to functional programming.
+
+Note that the following expression does not evaluate to 2 as it simply doesn't type check: (However, the compiler is able to perform type inference.)
+
+#+BEGIN_SRC ocaml
+if 22=0 then "bear" else 2
+#+END_SRC
+
+Importantly, a function is a value which is clearly apparent when using anonymous functions, also called lambda expressions: (mostly like in Clojure but with a simpler syntax)
+
+#+BEGIN_SRC ocaml
+let inc = fun x -> x+1 
+let inc x = x+1
+#+END_SRC
+
+Ironically, while I hate the piping approach that is being popularized in R, OCaml also has a pipeline operator. Instead of =f e=, we can write =e |> f=, so that =5 |> inc |> square= computes the square of 5+1 (36, as in =square(inc 5)=, provided =inc= and =square= are implemented beforehand. 
+
+Type inference is performed automagically by the compiler. So, instead of specifying the type of each variable, it would be possible to omit all type annotations in the following example:
+
+#+BEGIN_SRC ocaml
+(* requires: y>=0 *)
+(* returns: x to the power of y *)
+let rec pow (x:int) (y:int) : int = 
+  if y=0 then 1 
+  else x * pow x (y-1)
+#+END_SRC
+
+OCaml also allows to define mutually recursive functions, e.g.:
+
+#+BEGIN_SRC ocaml
+let rec even n = 
+  n=0 || odd (n-1) 
+and odd n = 
+  n<>0 && even (n-1);;
+#+END_SRC
+
+It is worth noting that it is safer to always exit the "toplevel" (=utop=) when testing or debugging.
