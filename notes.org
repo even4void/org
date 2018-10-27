@@ -384,6 +384,18 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Teach yourself programming in ten years 
  [2018-07-30 Lun 21:19]
  http://norvig.com/21-days.html
+** Successor of window-purpose 
+ [2018-10-03 Wed 18:24]
+ https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Bspacemacs/spacemacs-purpose
+** Interesting tool to manage Github repo from the command line
+ [2018-10-03 Wed 18:27]
+ http://myusuf3.github.io/octogit/
+** Meow Hash algorithm; see also https://github.com/bodil/meowhash-rs
+ [2018-10-22 Mon 19:29]
+ https://mollyrocket.com/meowhash
+** Interesting config for org and Hugo 
+ [2018-10-27 Sat 17:43]
+ https://www.shanesveller.com/blog/2018/02/13/blogging-with-org-mode-and-ox-hugo/
 * Notes
 ** [2006-07-09 Dim] C Tips
 
