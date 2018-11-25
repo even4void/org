@@ -396,6 +396,15 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Interesting config for org and Hugo 
  [2018-10-27 Sat 17:43]
  https://www.shanesveller.com/blog/2018/02/13/blogging-with-org-mode-and-ox-hugo/
+** Blot on your local machine 
+ [2018-11-20 Tue 20:49]
+ https://github.com/davidmerfield/Blot
+** Interesting cheatsheet for Org babel
+ [2018-11-20 Tue 20:59]
+ https://necromuralist.github.io/posts/org-babel-cheat-sheet/
+** Interesting list of algorithms implemented in different languages 
+ [2018-11-23 Fri 17:55]
+ https://github.com/Thuva4/Algorithms
 * Notes
 ** [2006-07-09 Dim] C Tips
 

@@ -22,6 +22,172 @@ If this post appears on the micro section, then my configuration for =ox-hugo= s
 :END:
 Yet another alternative to mangaging Hugo posts via Org: [[https://www.shanesveller.com/blog/2018/02/13/blogging-with-org-mode-and-ox-hugo/][Blogging with org-mode and ox-hugo]]. =#emacs=
 
+** DONE End of Prison Break
+   CLOSED: [2018-10-28 Sun 08:42]
+:PROPERTIES:
+:EXPORT_FILE_NAME: prison-break-season-5
+:END:
+We are done with [[https://en.wikipedia.org/wiki/Prison_Break][Prison Break]], Season 5.
+** DONE Starting The Wire
+   CLOSED: [2018-10-29 Mon 10:07]
+:PROPERTIES:
+:EXPORT_FILE_NAME: the-wire-season-1
+:END:
+Here we are: We just started watching [[https://en.wikipedia.org/wiki/The_Wire][The Wire]], Season 1.
+
+** DONE On the raise and fall of AI
+   CLOSED: [2018-10-31 Wed 08:38]
+:PROPERTIES:
+:EXPORT_FILE_NAME: on-the-raise-and-fall-of-ai
+:END:
+A few months ago I read an [[https://macwright.org/2018/02/25/remember-the-winter.html][interesting]] post by Tom MacWright on the raise and
+fall (and raise again) of AI. Now, I came across the following thread that
+sounds like we also need to consider [[https://en.wikipedia.org/wiki/Reinforcement_learning][RL]], which I learned about twenty
+years ago. Go figure.
+
+[[/img/IMG_0422.jpeg]]
+
+** DONE How Lisp Became God's Own Programming Language
+   CLOSED: [2018-10-31 Wed 10:36]
+:PROPERTIES:
+:EXPORT_FILE_NAME: how-lisp-became-gods-own-programming-language
+:END:
+[[https://twobithistory.org/2018/10/14/lisp.html][How Lisp Became God's Own Programming Language]]: Interesting overview of Lisp
+development and why the language itself continues to fascinate people. =#lisp=
+
+** DONE Julia: Dynamism and Performance Reconciled by Design
+   CLOSED: [2018-10-31 Wed 10:41]
+:PROPERTIES:
+:EXPORT_FILE_NAME: julia-new-article
+:END:
+Remember that paper from 2012 on Julia as a [[https://arxiv.org/abs/1209.5145][Fast Dynamic Language for Technical
+Computing]]? Now, Julia 0.6.2 is extensively described in this recent article:
+[[http://janvitek.org/pubs/oopsla18b.pdf][Julia: Dynamism and Performance Reconciled by Design]] (PDF). Interestingly, Julia
+relies on at least 6 different PLs. =#julia=
+
+** DONE Manuel d’analyse spatiale
+   CLOSED: [2018-11-01 Thu 20:25]
+:PROPERTIES:
+:EXPORT_FILE_NAME: manuel-analyse-spatiale
+:END:
+/Manuel d’analyse spatiale: Théorie et mise en oeuvre pratique avec R/ (Insee
+Méthodes n° 131, octobre 2018). Be aware this is a [[https://www.insee.fr/fr/information/3635442][400-page long PDF file]] (28
+Mo), so plan accordingly. (h/t [[https://twitter.com/freakonometrics/status/1057261724561272832][@freakonometrics]]) =#rstats= =#fr=
+
+** DONE The Killing Season 1
+   CLOSED: [2018-11-02 Fri 08:10]
+:PROPERTIES:
+:EXPORT_FILE_NAME: the-killing-season-one
+:END:
+Season 1 of [[https://en.wikipedia.org/wiki/The_Killing_(Danish_TV_series)][The Killing]] is over. Hopefully, the next season is about to start.
+** DONE The Killing Season 2
+   CLOSED: [2018-11-07 Wed 21:23]
+:PROPERTIES:
+:EXPORT_FILE_NAME: the-killing-season-two
+:END:
+Welcome to season 2 of [[https://en.wikipedia.org/wiki/The_Killing_(Danish_TV_series)][The Killing]]! Also, I just had to reboot my
+Macbook--Mojave upgrade--after 37 days uptime with the same Emacs running in the
+background. 
+** DONE 37
+   CLOSED: [2018-11-08 Thu 18:01]
+:PROPERTIES:
+:EXPORT_FILE_NAME: 37
+:END:
+"The numbers 111, 222, 333, 444, 555, 666, 777, 888, and 999 are all evenly
+divisible by 37, leaving no remainder." (via
+[@pickover](https://twitter.com/pickover/status/1057092080449806336)) Using base
+10 notation, a three-digit number, say $aaa$, can be written as $100\cdots a +
+10\cdot a + a = a \cdot (100 + 10 + 1) = a \cdot 111$. Clearly, 111 is a divisor
+of $aaa$ ($111 = 37\times 3$), but also of 222, 333, $\ldots$ Hence, all three-digit
+numbers that are multiple of 111 will fit the bill.
+** DONE Vikings
+   CLOSED: [2018-11-20 Tue 10:40]
+:PROPERTIES:
+:EXPORT_FILE_NAME: vikings
+:END:
+It is snowing, slowly but surely. BTW, we started watching [[https://www.imdb.com/title/tt2306299/][Vikings]] last week as
+soon as we were done with [[https://www.imdb.com/title/tt0306414/][The Wire]] (Season 1).
+** DONE CLI tools for data munging
+   CLOSED: [2018-11-20 Tue 10:48]
+:PROPERTIES:
+:EXPORT_FILE_NAME: cli-tools
+:END:
+If you are like me a long time user of command-line tools for data munging, you
+will probably find some useful utilities on this post: [[https://ileriseviye.wordpress.com/2018/07/10/data-processing-resources-command-line-interface-cli-for-csv-tsv-json-and-xml/][Data Processing
+Resources: Command-line Interface (CLI) for CSV, TSV, JSON, and XML]].
+** DONE Foundations of Data Science
+   CLOSED: [2018-11-20 Tue 10:48]
+:PROPERTIES:
+:EXPORT_FILE_NAME: foundations-data-science
+:END:
+I just came across this new book: [[https://www.cs.cornell.edu/jeh/book.pdf][Foundations of Data Science]] (PDF, 479 pp.). It
+looks great and furthermore this is one of those rare books which provides an
+original approach to data science and machine learning from rigorous
+(mathematical) arguments. Other resources are provided in the following [[https://twitter.com/yminsky/status/1064713458774622209][Twitter
+thread]].
+** DONE The asshole survival guide 
+   CLOSED: [2018-11-20 Tue 20:56]
+:PROPERTIES:
+:EXPORT_FILE_NAME: asshole-survival
+:END: 
+And don't even look back!
+
+[[/img/IMG_0450.jpeg]]
+
+** DONE Removing Org-babel RESULTS blocks
+   CLOSED: [2018-11-20 Tue 21:37]
+:PROPERTIES:
+:EXPORT_FILE_NAME: org-babel-cleanup
+:END:
+I don't know if there's a better solution, but this is [[https://lists.gnu.org/archive/html/emacs-orgmode/2012-08/msg00934.html][working very well]] in my
+case. =#org=
+
+** DONE Competitive Algorithmic problems
+   CLOSED: [2018-11-21 Wed 20:42]
+:PROPERTIES:
+:EXPORT_FILE_NAME: comp-programming
+:END:
+Want to test your competitive programming skills? Take a look at this Bachelor's
+Thesis: [[https://upcommons.upc.edu/bitstream/handle/2117/113325/memoria.pdf][Analysis and solution of a collection of algorithmic problems]] (by Rafael
+Eusebio López Martínez).
+
+#+BEGIN_QUOTE
+In competitive programming, one has to use knowledge in algorithms and data structures to find solutions to algorithmic problems, then put those a ideas into a correct computer program that solves the problem within given time and memory constraints. This activity involves learning about a wide range of complex data structures and algorithms, and many hours of training.
+#+END_QUOTE
+
+See also my review of the [[http://aliquote.org/post/the-competitive-programmer-s-handbook/][Competitive Programmer's Handbook]].
+
+** DONE Update stata book
+   CLOSED: [2018-11-22 Thu 11:20]
+:PROPERTIES:
+:EXPORT_FILE_NAME: stata-sk-update-nov-2018
+:END:
+Quick update on Stata online book. Check it on the [[/articles/stata-sk/][dedicated page]] or on [[https://github.com/chlalanne/stata-sk][GitHub]].
+
+** DONE Request Map
+   CLOSED: [2018-11-22 Thu 11:26]
+:PROPERTIES:
+:EXPORT_FILE_NAME: request-map
+:END:
+Here is the [[http://requestmap.herokuapp.com/render/181101_JQ_dc1d0c4d1751abf0bce859d5c7da027e][Request Map]] for this website. Still a lot of external dependencies
+that I could get rid of.
+
+[[/img/2018-11-22-11-23-18.png]]
+
+** DONE Last episode of The Killing 2
+   CLOSED: [2018-11-22 Thu 20:08]
+:PROPERTIES:
+:EXPORT_FILE_NAME: last-ep-the-killing-season-2
+:END:
+Last episode of [[https://en.wikipedia.org/wiki/The_Killing_(Danish_TV_series)][The Killing]] 2 planned for tonight.
+
+** DONE Vikings 2
+   CLOSED: [2018-11-25 Sun 11:01]
+:PROPERTIES:
+:EXPORT_FILE_NAME: vikings-season-2
+:END:
+The first season of [[https://www.imdb.com/title/tt2306299/][Vikings]] is finally over. Let's start season 2.
+
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
 # Local Variables:
