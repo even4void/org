@@ -188,6 +188,391 @@ Last episode of [[https://en.wikipedia.org/wiki/The_Killing_(Danish_TV_series)][
 :END:
 The first season of [[https://www.imdb.com/title/tt2306299/][Vikings]] is finally over. Let's start season 2.
 
+** DONE Sleef
+   CLOSED: [2018-11-26 Mon 21:36]
+:PROPERTIES:
+:EXPORT_FILE_NAME: sleef
+:END:
+[[https://sleef.org][SLEEF: A Vectorized Math Library]]. 
+
+#+BEGIN_QUOTE
+It implements vectorized versions of all C99 real floating point math
+functions. It can utilize SIMD instructions of modern processors. SLEEF is
+designed to fully utilize SIMD computation by reducing the use of conditional
+branches and scatter/gather memory access.
+#+END_QUOTE
+
+It looks interesting even if I am not going to use it any time soon. (Other than
+the short vector math library [[https://twitter.com/fsfodx/status/1066471314532257792][available in clang]]). 
+
+** DONE Harrell's take on ML
+   CLOSED: [2018-11-26 Mon 21:51]
+:PROPERTIES:
+:EXPORT_FILE_NAME: harrell-ml
+:END:
+Frank Harrell started hosting [[http://www.fharrell.com/][his own blog]] several months ago, and I followed
+his posts once in a while, that is almost every time I see something new on
+Twitter. His [[https://twitter.com/f2harrell/status/1066351423443664896][last annoucement]] is about a talk he will give at the Johns Hopkins
+Department of Biostatistics, which appears to be a mix of his [[http://www.fharrell.com/tags/machine-learning/][latest posts on
+this topic]]. I wish I could attend his talk as I did for his RMS workshop in
+Ottawa some years ago.
+
+Please note that my [[https://twitter.com/chlalanne][last tweet or retweet]] is from October. Don't expect any
+other news from me--I will only bookmark tweets that I found interesting while
+the liking option is still available. If the "like" feature is going to
+disappear, then it means I will definitely forget about Twitter.
+
+** DONE Writing a PhD thesis in Org mode
+   CLOSED: [2018-11-26 Mon 21:54]
+:PROPERTIES:
+:EXPORT_FILE_NAME: phd-thesis-org
+:END:
+[[https://write.as/dani/writing-a-phd-thesis-with-org-mode][Writing a PhD thesis with Org Mode]]. Because why not? (h/t [[http://irreal.org][irreal]]) =#org=
+** DONE Vikings 3
+   CLOSED: [2018-12-08 Sat 10:03]
+:PROPERTIES:
+:EXPORT_FILE_NAME: vikings-3
+:END:
+Time for [[https://www.imdb.com/title/tt2306299/][Vikings]] 3 now.
+
+** DONE Vayres bis
+   CLOSED: [2018-12-14 Fri 20:48]
+:PROPERTIES:
+:EXPORT_FILE_NAME: vayres-bis
+:END:
+Back from another trip to my aunt's house.
+
+[[/img/IMG_0489.jpg]]
+
+** DONE Subgroup analysis
+   CLOSED: [2018-12-14 Fri 20:54]
+:PROPERTIES:
+:EXPORT_FILE_NAME: subgroup-analysis
+:END:
+Why most positive subgroup analyses are false?
+
+[[/img/F2.medium.jpg]]
+
+*Source:* BMJ 2018; 363 doi: https://doi.org/10.1136/bmj.k4245
+
+** DONE Current draft folder
+   CLOSED: [2018-12-14 Fri 21:06]
+:PROPERTIES:
+:EXPORT_FILE_NAME: draft-status
+:END:
+I can't believe how many drafts I've been able to keep for more than six months. 
+
+#+BEGIN_EXAMPLE
+% ack "draft\s?[:=] true" content/post/*.md | wc -l
+       8
+#+END_EXAMPLE
+
+** DONE Intro to linear algebra
+   CLOSED: [2018-12-15 Sat 21:21]
+:PROPERTIES:
+:EXPORT_FILE_NAME: intro-linear-algebra
+:END:
+Added to my reading list: [[http://vmls-book.stanford.edu/vmls.pdf][Introduction to Applied Linear Algebra]] (PDF, 473 pp.).
+Note that it also comes with a [[http://vmls-book.stanford.edu/vmls-julia-companion.pdf][Julia companion textbook]]. (h/t [[https://twitter.com/carlcarrie/status/1073835210880499712][@carlcarrie]])
+
+** DONE Winter is coming
+   CLOSED: [2018-12-15 Sat 21:24]
+:PROPERTIES:
+:EXPORT_FILE_NAME: winter-is-coming
+:END:
+Winter is coming.
+
+[[/img/IMG_0492.jpg]]
+
+** DONE Vikings 3
+   CLOSED: [2018-12-18 Sat 14:03]
+:PROPERTIES:
+:EXPORT_FILE_NAME: vikings-3-end
+:END:
+[[https://www.imdb.com/title/tt2306299/][Vikings]] 3 done.
+
+** DONE Stile Project
+   CLOSED: [2018-12-19 Wed 21:05]
+:PROPERTIES:
+:EXPORT_FILE_NAME: stile-project
+:END:
+Today I listened to an old compilation of audio track (MP3) from the Velvet that I was burning twenty years ago. At that time it was kind of my collage period and I created many CD covers and photo montages. I felt sad to learn that the [[https://en.wikipedia.org/wiki/Stile_Project][Stile Project]], from which I had printed one of the images, is now completely defunct and the domain name is now hosting a porn website.
+
+[[/img/IMG_0499.jpeg]]
+
+** DONE The Killing 3
+   CLOSED: [2018-12-19 Wed 21:07]
+:PROPERTIES:
+:EXPORT_FILE_NAME: killing-3
+:END:
+I just finished [[https://en.wikipedia.org/wiki/The_Killing_(Danish_TV_series)][The Killing]], season 3. I don't know if the next version is available on the Apple TV. Will check.
+** DONE Population Genetics
+   CLOSED: [2018-12-19 Wed 21:09]
+:PROPERTIES:
+:EXPORT_FILE_NAME: pop-genetics
+:END:
+Just found this little gem on population genetics : [[https://github.com/cooplab/popgen-notes/blob/master/release_popgen_notes.pdf][Population and Quantitative Genetics]] (PDF, 205 pp.).
+** DONE Crafting interpreters
+   CLOSED: [2018-12-31 Mon 15:17]
+:PROPERTIES:
+:EXPORT_FILE_NAME: crafting-interpreters
+:END:
+[[http://www.craftinginterpreters.com][Crafting interpreters]]. A handbook for making programming languages.
+
+** DONE Living room
+   CLOSED: [2018-12-31 Mon 21:07]
+:PROPERTIES:
+:EXPORT_FILE_NAME: living-room
+:END:
+Yet another pix of my living room.
+
+[[/img/IMG_0517.jpg]]
+
+** DONE Convex optimisation
+   CLOSED: [2019-01-01 Tue 11:16]
+:PROPERTIES:
+:EXPORT_FILE_NAME: convex-optimisation
+:END:
+Ryan Tibshirani has nice course on [[http://www.stat.cmu.edu/~ryantibs/convexopt/][Convex Optimization]]. If you are interested in
+Machine Learning or Convex Optimization, you should really take a look at this
+course.
+
+** DONE Algorithms
+   CLOSED: [2019-01-02 Wed 15:13]
+:PROPERTIES:
+:EXPORT_FILE_NAME: algorithms
+:END:
+[[http://jeffe.cs.illinois.edu/teaching/algorithms/][Algorithms]] by Jeff
+Erickson. A PDF (448 pp.) and online material. Nice.
+** DONE Vikings 4
+   CLOSED: [2019-01-02 Wed 21:04]
+:PROPERTIES:
+:EXPORT_FILE_NAME: vikings-4
+:END:
+We are done with [[https://www.imdb.com/title/tt2306299/][Vikings]] 4. Starting [[https://www.imdb.com/title/tt2661044/][The 100]].
+
+** DONE Econometrics books
+   CLOSED: [2019-01-04 Sun 20:19]
+:PROPERTIES:
+:EXPORT_FILE_NAME: econometrics-books
+:END:
+Two interesting ressources for econometrics-related stuff: [[https://www.econometrics-with-r.org][Introduction to
+Econometrics with R]], and [[https://www.economodel.com/time-series-analysis][Time Series Analysis]].
+
+** DONE Cryptography book
+   CLOSED: [2019-01-06 Sun 20:20]
+:PROPERTIES:
+:EXPORT_FILE_NAME: applied-cryptobook
+:END:
+[[https://toc.cryptobook.us][A Graduate Course in Applied Cryptography]].
+
+** DONE Trying out Netflix
+   CLOSED: [2019-01-07 Mon 21:26]
+:PROPERTIES:
+:EXPORT_FILE_NAME: trying-out-netflix
+:END:
+Just trying out Netflix (again!) with [[https://en.wikipedia.org/wiki/Black_Mirror][Black Mirror]], season 1.
+
+** DONE TablePlus
+   CLOSED: [2019-01-09 Wed 19:21]
+:PROPERTIES:
+:EXPORT_FILE_NAME: table-plus
+:END:
+It looks like it is still "free to use, forever", but there's now pricing option for [[https://tableplus.io][TablePlus]].
+
+** DONE Emacs in review (2018)
+   CLOSED: [2019-01-09 Wed 19:31]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-in-review-2018
+:END:
+A few days ago, while reading RSS feed for the [[http://irreal.org/blog/][irreal]] blog I found the following
+nice post: [[https://diego.codes/post/emacs-2018][Emacs in 2018: My Year in Review]]. Although my first thought was that
+the author was using Spacemacs, it is indeed vanilla Emacs with a specific
+modeline, which is actually built using [[https://github.com/tarsius/minions][minions]] and [[https://github.com/tarsius/moody][moody]]. See also [[https://manuel-uberti.github.io/emacs/2018/03/10/moody-and-minions/][Beauty lies
+in the segments of the mode line]]. =#emacs=
+
+** DONE ML and visualisation
+   CLOSED: [2019-01-09 Wed 19:41]
+:PROPERTIES:
+:EXPORT_FILE_NAME: ML-and-visualisation
+:END:
+[[https://explained.ai/decision-tree-viz/index.html][How to visualize decision trees]]. A nice tutorial and overview of existing
+solutions for visualizing decision trees. The illustrations are really of great
+quality, as well as the [[https://explained.ai][other articles]]. For other related projects, see, e.g.,
+[[http://www.r2d3.us][A visual introduction to machine learning]], [[https://seeing-theory.brown.edu][Seeing theory]], or even articles
+published on [[https://distill.pub][Distill]]. 
+
+** DONE Chill pasta
+   CLOSED: [2019-01-10 Thu 20:32]
+:PROPERTIES:
+:EXPORT_FILE_NAME: chill-pasta
+:END:
+Hot off the kitchen:
+
+[[/img/IMG_0528.jpg]]
+
+** DONE Data Science & Racket
+   CLOSED: [2019-01-11 Fri 10:30]
+:PROPERTIES:
+:EXPORT_FILE_NAME: data-science-racket
+:END:
+Interesting find of the day: [[https://github.com/n3mo/data-science][Data Science Tooling For Racket]]. =#scheme=
+
+** DONE Swift numerics
+   CLOSED: [2019-01-11 Fri 10:31]
+:PROPERTIES:
+:EXPORT_FILE_NAME: swift-numerics
+:END:
+Currently reading: [[https://www.fast.ai/2019/01/10/swift-numerics/][High Performance Numeric Programming with Swift: Explorations
+and Reflections]]. =#swift=
+
+** DONE Centaur Emacs
+   CLOSED: [2019-01-11 Fri 10:54]
+:PROPERTIES:
+:EXPORT_FILE_NAME: centaur-emacs
+:END:
+[[https://seagle0128.github.io/.emacs.d/][Centaur Emacs - A Fancy and Fast Emacs Configuration]]. Not interested in
+switching from Spacemacs, but in case someone like fancy modeline. (Note that
+[[https://github.com/seagle0128/doom-modeline][doom-modeline]] is now part of Spacemacs default settings, at least the develop
+branch.) =#emacs=
+
+** DONE Emacs and doom-modeline
+   CLOSED: [2019-01-11 Fri 11:09]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-modeline
+:END:
+Here is how I tweak my `doom-modeline` to enhance simplicity and functionality:
+(This assumes that the [[https://github.com/tarsius/minions][minions]] package is installed.)
+
+[[/img/2019-01-11-20-51-15.png]]
+
+** DONE Emacs and git-gutter
+   CLOSED: [2019-01-15 Tue 20:08]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-git-gutter-fringe
+:END:
+Wanna customize your fringe with Git markers similar to [[https://github.com/hlissner/doom-emacs][doom emacs]]? Add this to
+your =init.el= file:
+
+#+BEGIN_EXAMPLE
+  (with-eval-after-load 'flycheck
+    (setq flycheck-indication-mode 'right-fringe))
+  (with-eval-after-load 'git-gutter-fringe
+    (fringe-helper-define 'git-gutter-fr:added '(center repeated) "XXX.....")
+    (fringe-helper-define 'git-gutter-fr:modified '(center repeated) "XXX.....")
+    (fringe-helper-define 'git-gutter-fr:deleted '(center repeated) "XXX....."))
+#+END_EXAMPLE
+
+** DONE Netflix hijacked
+   CLOSED: [2019-01-15 Tue 21:24]
+:PROPERTIES:
+:EXPORT_FILE_NAME: netflix-hijacked
+:END:
+Ah, I just noticed that my Netflix account has been hijacked two hours ago.
+Thanks Netflix for asking me to give you the 8 last digits of my credit card
+just to confirm that it is me in order to delete my account without confirming
+it by email! (I did not give them btw.) Goodbye /Black Mirror/ then.
+
+** DONE Stata EDA
+   CLOSED: [2019-01-16 Wed 18:31]
+:PROPERTIES:
+:EXPORT_FILE_NAME: stata-eda
+:END:
+Stata for Exploratory Data Analysis with the [[https://wbuchanan.github.io/eda/about/][eda]] package ([[https://wbuchanan.github.io/stataConference2018][slides]]). I should really give
+it a try at some point. =#stata=
+
+** DONE Vit D and Saturated fats
+   CLOSED: [2019-01-16 Wed 21:19]
+:PROPERTIES:
+:EXPORT_FILE_NAME: vit-d-sat-fat
+:END:
+Ok, hold on! It looks like [[https://www.nejm.org/doi/full/10.1056/NEJMoa1809944][Vitamin D]] may not have so much an impact on cancer, 
+heart disease, or stroke (via [[https://www.outsideonline.com/2380751/sunscreen-sun-exposure-skin-cancer-science][John Gruber]]'s blog). Likewise,
+[[https://www.ncbi.nlm.nih.gov/pubmed/27680091][saturated fats]] may not be so much associated to CVD (via [[https://lemire.me/blog/2019/01/12/science-and-technology-links-january-12th-2019/][Daniel Lemire]]'s
+blog). Great news! Sall we simply replace vitamin D supplements with porn
+burgers? 
+
+** DONE Gmail leaked
+   CLOSED: [2019-01-17 Thu 20:58]
+:PROPERTIES:
+:EXPORT_FILE_NAME: gmail-leaked
+:END:
+Today I learnt that my Gmail account has been compromised in (at least) 7 data
+leaks over the past few years. If you feel concerned as well, [[https://monitor.firefox.com][check yours]]!
+
+** DONE Every little bit helps
+   CLOSED: [2019-01-17 Thu 21:03]
+:PROPERTIES:
+:EXPORT_FILE_NAME: every-little-bit
+:END:
+[[https://m.signalvnoise.com/every-little-bit-helps/][Every little bit helps]].
+
+#+BEGIN_QUOTE
+It’s not all or nothing. Something counts. Something works.
+#+END_QUOTE
+
+I hope too.
+
+** DONE Commento
+   CLOSED: [2019-01-19 Sat 20:22]
+:PROPERTIES:
+:EXPORT_FILE_NAME: commento
+:END:
+If you are looking for a lightweight and more user privacy-friendly alternative
+to Disqus, maybe you should take a look at [[https://commento.io][Commento]] (via [[https://www.rousette.org.uk/archives/trying-out-commento/][BSAG]]). I'm not sure
+this service will last forever and I am not expecting so much comments on this
+random site so I'll skip my turn but having an alternative to Disqus is still
+interesting. 
+
+** DONE Twitter new nickname
+   CLOSED: [2019-01-19 Sat 21:14]
+:PROPERTIES:
+:EXPORT_FILE_NAME: twitter-nickname
+:END:
+I finally changed my [[https://twitter.com/even4void][Twitter nickname]]. Not sure if I will be posting anything
+more than the past months, though. If it can prevent from being referenced
+in a search engine, that's fine. 
+
+** DONE The 100 almost done
+   CLOSED: [2019-01-19 Sat 21:23]
+:PROPERTIES:
+:EXPORT_FILE_NAME: the-100-almost-done
+:END:
+We are nearing the end of the first season of [[https://en.wikipedia.org/wiki/The_100_(TV_series)][The 100]].
+
+** DONE Data Science with Julia
+   CLOSED: [2019-01-20 Sun 09:46]
+:PROPERTIES:
+:EXPORT_FILE_NAME: data-science-julia
+:END:
+Today's findings: [[https://www.crcpress.com/Data-Science-with-Julia/McNicholas-Tait/p/book/9781138499980][Data Science with Julia]] (via [[https://twitter.com/ucfagls/status/1086794603762798595][@ucfagls]]);
+[[https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf][Natural Language Processing]] (via [[https://twitter.com/ml_review/status/1086410100842160128][@ml_review]]).
+
+** DONE Goodbye Tweetbot
+   CLOSED: [2019-01-20 Sun 19:23]
+:PROPERTIES:
+:EXPORT_FILE_NAME: goodbye-tweetbot
+:END:
+Goodbye [[/post/tweetbot-3/][Tweetbot]]. I think most desktop app for Twitter are dead. I'll keep using
+the iPhone app while it is still live, and a browser because why not after all!
+
+** DONE Discrete Math and FP
+   CLOSED: [2019-01-20 Sun 19:32]
+:PROPERTIES:
+:EXPORT_FILE_NAME: discrete-math-and-fp
+:END:
+I know nothing about Coq but I am happy that courses like [[http://www.cs.pomona.edu/~michael/courses/csci054s18/][Discrete Mathematics
+and Functional Programming]] are still available for free. (via [[https://twitter.com/Jose_A_Alonso/status/1086973529302728706][@Jose_A_Alonso]])
+
+** TODO Bayesian blogging
+:PROPERTIES:
+:EXPORT_FILE_NAME: bayesian-blogging
+:END:
+[[https://xcelab.net/rm/statistical-rethinking/][Statistical Rethinking]] is still on my reading list (I know the second edition is
+ready to be sold but I bought the hard copy of the first edition two years ago),
+but I was reminded of Richard's nice blog posts like [[http://elevanth.org/blog/2017/11/28/build-a-better-markov-chain/][Markov Chains: Why Walk
+When You Can Flow?]], thanks to [[https://twitter.com/kaz_yos/status/1086967755692277760][@kaz_yos]].
+
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
 # Local Variables:

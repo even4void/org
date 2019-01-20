@@ -405,6 +405,9 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Interesting list of algorithms implemented in different languages 
  [2018-11-23 Fri 17:55]
  https://github.com/Thuva4/Algorithms
+** Interesting tutorials on Racket  
+ [2019-01-15 Tue 19:31]
+ https://courses.cs.washington.edu/courses/cse341/12au/index.html
 * Notes
 ** [2006-07-09 Dim] C Tips
 
