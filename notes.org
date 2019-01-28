@@ -408,6 +408,12 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Interesting tutorials on Racket  
  [2019-01-15 Tue 19:31]
  https://courses.cs.washington.edu/courses/cse341/12au/index.html
+** Useful tricks to configure iCloud and Gmail using isync 
+ [2019-01-25 Fri 10:30]
+ https://ict4g.net/adolfo/notes/2014/12/27/EmacsIMAP.html
+** Another nice tutorial on setting up mu4e 
+ [2019-01-25 Fri 11:52]
+ http://cachestocaches.com/2017/3/complete-guide-email-emacs-using-mu-and-/
 * Notes
 ** [2006-07-09 Dim] C Tips
 

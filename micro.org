@@ -564,7 +564,8 @@ the iPhone app while it is still live, and a browser because why not after all!
 I know nothing about Coq but I am happy that courses like [[http://www.cs.pomona.edu/~michael/courses/csci054s18/][Discrete Mathematics
 and Functional Programming]] are still available for free. (via [[https://twitter.com/Jose_A_Alonso/status/1086973529302728706][@Jose_A_Alonso]])
 
-** TODO Bayesian blogging
+** DONE Bayesian blogging
+   CLOSED: [2019-01-20 Sun 20:02]
 :PROPERTIES:
 :EXPORT_FILE_NAME: bayesian-blogging
 :END:
@@ -572,6 +573,195 @@ and Functional Programming]] are still available for free. (via [[https://twitte
 ready to be sold but I bought the hard copy of the first edition two years ago),
 but I was reminded of Richard's nice blog posts like [[http://elevanth.org/blog/2017/11/28/build-a-better-markov-chain/][Markov Chains: Why Walk
 When You Can Flow?]], thanks to [[https://twitter.com/kaz_yos/status/1086967755692277760][@kaz_yos]].
+
+** DONE Github nickname
+   CLOSED: [2019-01-20 Sun 21:14]
+:PROPERTIES:
+:EXPORT_FILE_NAME: github-nickname
+:END:
+Next to my Twitter account, I also updated my [[https://github.com/even4void][Github nickname]], btw.
+
+** DONE New in SQLite
+   CLOSED: [2019-01-20 Sun 22:02]
+:PROPERTIES:
+:EXPORT_FILE_NAME: new-in-sqlite
+:END:
+[[http://link.oreilly.com/wMbSQ7rFW0000nc300O0H0b][SQLite in 2018: A state of the art SQL dialect]].
+
+** DONE Yesterday's cooking
+   CLOSED: [2019-01-20 Sun 22:08]
+:PROPERTIES:
+:EXPORT_FILE_NAME: yesterday-cooking
+:END:
+Yesterday was cooking time!
+
+[[/img/IMG_0538.jpg]]
+
+** DONE It's snowing again
+   CLOSED: [2019-01-22 Wed 11:14]
+:PROPERTIES:
+:EXPORT_FILE_NAME: snowing-again
+:END:
+Some snow in the morning!
+
+[[/img/IMG_0541.jpg]]
+
+** DONE In the land of Void
+   CLOSED: [2019-01-22 Wed 23:38]
+:PROPERTIES:
+:EXPORT_FILE_NAME: in-the-land-of-void
+:END:
+I'm talking in a vacuum among millions of users. That's what's extraordinary
+with the internet.
+
+** DONE Hard time for the kids
+   CLOSED: [2019-01-23 Wed 20:24]
+:PROPERTIES:
+:EXPORT_FILE_NAME: hard-time-for-kids
+:END:
+Hard time for the kids! While it has been shown that [[https://www.nature.com/articles/s41562-018-0506-1][digital technologies]] may
+not be so much associated with well-being, teenagers also [[https://t.co/v4eq3EffMJ][need more
+sleep]].
+
+** DONE Emacs resource pack
+   CLOSED: [2019-01-23 Wed 20:26]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-resource-pack
+:END:
+Whenever I am looking for something about Emacs I am pretty sure I will end up
+reading one of [[https://irreal.org/blog][Irreal]] blog posts. This time, I was wondering what's the better
+way to sync an iCloud account using mu4e. Not that I am not happy with Apple
+Mail, but I like having the possibility to work exclusively with Emacs, or to
+process a bunch of emails using my preferred text-based workflow. The [[https://irreal.org/blog/?p=6119][solution]]
+that seems to be working involves =mbsync=, and this looks perfectly fine to me
+since I gave up on [[https://www.offlineimap.org][OfflineIMAP]] and switched to =mbsync= last year. =#emacs=
+
+** DONE Free photo organizer
+   CLOSED: [2019-01-23 Wed 20:36]
+:PROPERTIES:
+:EXPORT_FILE_NAME: mylio
+:END:
+I don't have very strong requests from a photo manager other than allowing me to
+browse them, and maybe tag or annotate them from time to time. Hence Apple
+Photos meets my expectations. However, I understand that others may have more
+refined requirements and many apps are available on the market. [[https://www.baty.net][Jack Baty]]
+probably tested them all. In a [[https://www.baty.blog/2019/mylio-as-a-photo-organizer][recent post]], he suggested [[https://mylio.com][Mylio]] which looks like
+a nice way to manage digital content without any cloud backend. I may try it at
+some point.
+
+** DONE Telegram and Amazon
+   CLOSED: [2019-01-24 Thu 12:01]
+:PROPERTIES:
+:EXPORT_FILE_NAME: telegram-and-amazon
+:END:
+Got rid of Telegram, Mendeley, Zotero, Bitly, Tumblr, Last.fm, and lastly,
+Amazon (member since 2002!). What's next? 
+
+** DONE Mu4e now even better
+   CLOSED: [2019-01-24 Thu 12:07]
+:PROPERTIES:
+:EXPORT_FILE_NAME: mu4e-even-better
+:END:
+I was just reading [[https://vxlabs.com/2017/02/07/mu4e-0-9-18-e-mailing-with-emacs-now-even-better/][mu4e 0.9.18: E-Mailing with Emacs now even better]], and I
+thought that I was a heavy user of mu4e too, but that was before they introduce
+"contexts" and threaded views. I should really update my Emacs config. =#emacs=
+
+** DONE Agenda app
+   CLOSED: [2019-01-24 Thu 21:31]
+:PROPERTIES:
+:EXPORT_FILE_NAME: agenda-app
+:END:
+Is it worth the time to investigate into this new app (2018 Apple Design Award
+Winner) that I bookmarked back in December? Or should I just stand by Org mode?
+
+[[/img/2018-12-14-21-09-06.png]]
+
+** DONE Emacs and mu4e
+   CLOSED: [2019-01-25 Fri 14:55]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-mu4e-2019
+:END:
+I'm finally done with configuring =mu4e= for Emacs with icloud and the server that
+runs this site. If only I haven't forgot to update my =.authinfo= credentials...
+=#emacs= 
+
+[[/img/2019-01-25-14-33-51.png]]
+
+** DONE Twittering mode
+   CLOSED: [2019-01-25 Fri 14:55]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-twitter
+:END:
+While were are talking about Emacs, why not reading some feeds from Twitter
+directly there? =#emacs=
+
+[[/img/2019-01-25-14-40-25.png]]
+
+** DONE Jazz chill
+   CLOSED: [2019-01-25 Fri 14:57]
+:PROPERTIES:
+:EXPORT_FILE_NAME: jazz-chill
+:END:
+Same playlist of Jazz Chill from Apple. Love it so much.
+
+[[/img/2019-01-25-14-56-09.png]]
+
+** DONE On Writing
+   CLOSED: [2019-01-28 Mon 08:59]
+:PROPERTIES:
+:EXPORT_FILE_NAME: on-writing
+:END:
+Some thoughful ideas there: [[https://sivers.org/dj][Benefits of a daily diary and topic journals]]. (via
+[[https://micro.baty.net/2019/01/27/derek-sivers-benefits.html][Jack Baty]])
+
+** DONE Git cleanup
+   CLOSED: [2019-01-28 Mon 09:06]
+:PROPERTIES:
+:EXPORT_FILE_NAME: git-cleanup
+:END:
+How to [[https://medium.freecodecamp.org/how-to-free-up-space-on-your-developer-mac-f542f66ddfb][clean merged branches]] from all your Git repos? (Assuming they all live in
+the same master directory.):
+
+#+BEGIN_SRC
+for d in */; do cd $d; echo WORKING ON $d; git branch --merged master \
+  | grep -v "\* master" | xargs -n 1 git branch -d; cd ..; done
+#+END_SRC
+
+** DONE VS Code vs. Emacs
+   CLOSED: [2019-01-28 Mon 09:16]
+:PROPERTIES:
+:EXPORT_FILE_NAME: vscode-vs-emacs
+:END:
+[[https://krsoninikhil.github.io/2018/12/15/easy-moving-from-vscode-to-emacs/][Easy Moving From Vscode To Emacs]]. In which we learn that even a few
+functionalities out of Emacs can make a developper happy. =#emacs=
+
+** DONE C and Scheme
+   CLOSED: [2019-01-28 Mon 09:17]
+:PROPERTIES:
+:EXPORT_FILE_NAME: c-and-scheme
+:END:
+I find it interesting that these days we can still find [[https://home.adelphi.edu/~siegfried/cs270/notes.html][introductory courses]] on
+both C and Scheme. =#scheme=
+** DONE Emacs and LispStats
+   CLOSED: [2019-01-28 Mon 10:51]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-xlispstat
+:END:
+Well, nobody seems to care about [[https://github.com/emacs-ess/ESS/issues/154][xlispstat support]] anymore. Just got a weird
+error when trying to load some old code from UCLA, notwithstanding the fact that
+Spacemacs/ESS actually autoload Julia mode. =#emacs=
+
+#+BEGIN_EXAMPLE
+File mode specification error: ... ess-20190126.1259/ess-site.elc 
+failed to define function XLS-mode)
+#+END_EXAMPLE
+
+** DONE Interactive SICP
+   CLOSED: [2019-01-28 Mon 10:56]
+:PROPERTIES:
+:EXPORT_FILE_NAME: interactive-sicp
+:END:
+[[http://xuanji.appspot.com/isicp/][Structure and Interpretation of Computer Programs Interactive Version]]. =#scheme=
 
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
