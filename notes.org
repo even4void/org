@@ -414,6 +414,9 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Another nice tutorial on setting up mu4e 
  [2019-01-25 Fri 11:52]
  http://cachestocaches.com/2017/3/complete-guide-email-emacs-using-mu-and-/
+** Nice custom functions for mu4e and org-mode 
+ [2019-01-29 Tue 08:59]
+ https://gitlab.com/ambrevar/dotfiles/blob/master/.emacs.d/lisp/init-mu4e.el
 * Notes
 ** [2006-07-09 Dim] C Tips
 

@@ -5,6 +5,6 @@
 ** TODO Install and configure cquery + lsp-rust                       :emacs:
 ** TODO Read and review cite:leiss-2007-progr-compan                 :review:  
 ** TODO Read and review cite:friedman-2008-essen-progr-languag       :review:
-** TODO Cleanup draft posts (see % ack "draft\s?[:=] true" content/post/*.md)
+** STAR Cleanup draft posts (see % ack "draft\s?[:=] true" content/post/*.md)
 ** TODO Check Summer readings (Getting Clojure, Git, etc.)           :review:
 ** TODO Read and review cite:meent-2018-introd-probab-progr          :review:

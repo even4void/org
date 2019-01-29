@@ -761,7 +761,87 @@ failed to define function XLS-mode)
 :PROPERTIES:
 :EXPORT_FILE_NAME: interactive-sicp
 :END:
-[[http://xuanji.appspot.com/isicp/][Structure and Interpretation of Computer Programs Interactive Version]]. =#scheme=
+[[http://xuanji.appspot.com/isicp/][Structure and Interpretation of Computer Programs Interactive Version]]. Together
+with [[http://www.composingprograms.com][Composing Programs]] I think this is one of the most beautiful interactive
+textbook I found on the internet in years. =#scheme= =#python=
+
+** DONE On getting things done
+   CLOSED: [2019-01-28 Mon 20:23]
+:PROPERTIES:
+:EXPORT_FILE_NAME: on-getting-things-done
+:END:
+I've been hanging around in this apartment for two years without going out or
+seeing anyone, except a few friends. I guess that's one way to look at Getting
+Things Done, without regard to the details and without really having to
+accomplish anything.
+
+** DONE Occupied
+   CLOSED: [2019-01-28 Mon 21:18]
+:PROPERTIES:
+:EXPORT_FILE_NAME: occupied
+:END:
+Please take note! I'm trying out [[https://itunes.apple.com/fr/station/alternative/ra.985484166][iTunes Radio]] but the next two TV shows will be
+[[https://itunes.apple.com/fr/tv-season/occupied-lint%C3%A9grale-des-saisons-1-2-vost/id1339687553][Occupied]] and [[https://itunes.apple.com/fr/tv-season/the-expanse-saison-1/id1439508091][The Expanse]] for sure.
+
+** DONE Elfeed
+   CLOSED: [2019-01-28 Mon 21:50]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-elfeed
+:END:
+It looks like [[https://github.com/skeeto/elfeed][Elfeed]] is way more handy than it was, thanks to [[https://github.com/remyhonig/elfeed-org][elfeed-org]] to
+handle OPML files.
+
+#+BEGIN_QUOTE
+As far as I know, outside of Elfeed there does not exist an extensible,
+text-file configured, power-user web feed client that can handle a reasonable
+number of feeds. The existing clients I've tried are missing some important
+capability that limits its usefulness to me. 
+#+END_QUOTE
+
+Note that Spacemacs uses the key combination =g r= to update the live feed, not =G=
+as mentioned in Chris' [[https://nullprogram.com/blog/2013/09/04/][tutorial]]. =#emacs=
+** DONE The pillars of FP
+   CLOSED: [2019-01-29 Tue 09:12]
+:PROPERTIES:
+:EXPORT_FILE_NAME: pillars-fp
+:END:
+[[https://sigma.software/about/media/pillars-functional-programming-part-1][The Pillars of Functional Programming]] (via [[https://twitter.com/gappy3000/status/1089970365609201664][@gappy3000]]).
+** DONE Scientific Racket
+   CLOSED: [2019-01-29 Tue 09:54]
+:PROPERTIES:
+:EXPORT_FILE_NAME: scientific-racket
+:END:
+I am looking for solid libraries to perform numerical computation (other than
+the [[http://planet.racket-lang.org/package-source/williams/science.plt/3/1/planet-docs/science/using.html][Science Collection]] which has been partly integrated already), and more
+generally scientific computing, using Racket. I got a few hits from my search
+engines but this is mostly old and unmaintained stuff (e.g., [[https://github.com/danking/racket-ml][racket-ml]],
+[[https://github.com/n3mo/data-science][data-science]]). This [[https://scicomp.stackexchange.com/questions/1454/using-unconventional-programming-languages-for-scientific-computation][SE thread]] is worth a read although the replies mainly point
+to Julia. BTW, note that Tamas K. Papp stopped using CL for scientific
+computation (and also switched to Julia) for [[https://tpapp.github.io/post/common-lisp-to-julia/][specific reasons]]. =#scheme=
+
+** DONE The Emacs C API
+   CLOSED: [2019-01-29 Tue 09:58]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-c-api
+:END:
+[[https://irreal.org/blog/?p=7794][The Emacs C API]]. =#emacs=
+
+** DONE Puzzles, Games & Algorithms
+   CLOSED: [2019-01-29 Tue 10:01]
+:PROPERTIES:
+:EXPORT_FILE_NAME: puzzles-and-games
+:END:
+[[http://www.cs.uvm.edu/~rsnapp/teaching/cs32/index.html][Puzzles, Games & Algorithms]]. It reminds me that games and UI design are very
+good examples to learn a programming language.
+
+** DONE Now
+   CLOSED: [2019-01-29 Tue 19:40]
+:PROPERTIES:
+:EXPORT_FILE_NAME: now-playing
+:END:
+Now playing:
+
+[[/img/2019-01-29-19-38-38.png]]
 
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
