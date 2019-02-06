@@ -843,6 +843,202 @@ Now playing:
 
 [[/img/2019-01-29-19-38-38.png]]
 
+** DONE Desktop pix
+   CLOSED: [2019-01-29 Tue 21:24]
+:PROPERTIES:
+:EXPORT_FILE_NAME: desktop-pix
+:END:
+You can say what you want, but in the end you should admit that my current
+workspace is all about minimalism. ([[/img/2019-01-29-21-13-20-full.png][Full size version]])
+
+[[/img/2019-01-29-21-13-20.png]]
+
+** DONE Macbeer
+   CLOSED: [2019-01-29 Tue 21:26]
+:PROPERTIES:
+:EXPORT_FILE_NAME: macbeer
+:END:
+Great! Guess who just almost flooded his new keyboard with beer... [[/post/mb-keyboard/][Remember
+this]]? I guess it's time to watch a TV show and let the Macbook rest.
+
+** DONE Stata 13 MP
+   CLOSED: [2019-01-29 Tue 21:56]
+:PROPERTIES:
+:EXPORT_FILE_NAME: stata-13-mp
+:END:
+Look, we can still install Stata 13 (MP) on Mojave. Great job guys! =#stata=
+
+[[/img/2019-01-29-21-50-00.png]]
+
+[[/img/2019-01-29-21-53-12.png]]
+
+** DONE Partir ou rester
+   CLOSED: [2019-01-29 Tue 22:04]
+:PROPERTIES:
+:EXPORT_FILE_NAME: partir-ou-rester
+:END:
+#+BEGIN_QUOTE
+Faut-il partir ? Rester ? Si tu peux rester, reste ; Pars, s’il le faut.
+
+-- Baudelaire, /Les fleurs du mal/
+#+END_QUOTE
+
+** DONE Whisky
+   CLOSED: [2019-01-29 Tue 22:12]
+:PROPERTIES:
+:EXPORT_FILE_NAME: whisky
+:END:
+My cat has gone way long ago now, but let's leave a trace here.
+
+[[/img/100_6754.jpg]]
+
+** DONE Nice Beamer theme
+   CLOSED: [2019-02-02 Sat 19:02]
+:PROPERTIES:
+:EXPORT_FILE_NAME: nice-beamer-theme
+:END:
+Cleaning up some old stuff on my HD and just found this [[https://github.com/Witiko/fibeamer][nice Beamer template]]: My
+preferred one is the [[https://github.com/Witiko/fibeamer/blob/master/test/mu/expected-fi-lualatex.pdf]["fi" variant]]. =#latex=
+** DONE Tropical geometry of statistical models
+   CLOSED: [2019-02-02 Sat 19:18]
+:PROPERTIES:
+:EXPORT_FILE_NAME: tropical-geometry-statistical-models
+:END:
+[[https://www.pnas.org/content/101/46/16132.abstract][Tropical geometry of statistical models]]. At least, the conclusion is very
+understandable:
+
+#+BEGIN_QUOTE
+The algebraic representation for graphical models with hidden variables leads
+naturally to an interpretation of a parameterized model as a point on an
+algebraic variety. Marginal probabilities are coordinates of points on the
+variety. Varieties can be tropicalized, and the statistical meaning is that the
+MAP prob- abilities (calculated with logarithms of the parameters) can be
+interpreted as coordinates of points on the positive part of the tropical
+variety.
+#+END_QUOTE
+
+** DONE Homebrew 2.0
+   CLOSED: [2019-02-03 Sun 09:04]
+:PROPERTIES:
+:EXPORT_FILE_NAME: homebrew-2
+:END:
+Just doing my little technical care and weekly backup. [[https://brew.sh/2019/02/02/homebrew-2.0.0/][Homebrew 2 is out]].
+
+#+BEGIN_EXAMPLE
+~  brew --version
+Homebrew 2.0.0
+Homebrew/homebrew-core (git revision 175af; last commit 2019-02-02)
+Homebrew/homebrew-cask (git revision 05a81; last commit 2019-02-02)
+#+END_EXAMPLE
+
+[[/img/2019-02-03-20-21-00.png]]
+
+** DONE Lisp and numerics
+   CLOSED: [2019-02-03 Sun 20:38]
+:PROPERTIES:
+:EXPORT_FILE_NAME: lisp-magicl
+:END:
+After [[https://tpapp.github.io/post/orphaned-lisp-libraries/][Tamás K. Papp's CL libraries]], I discovered this new library for numerical
+computing in the Lisp world: [[https://github.com/rigetti/magicl][MAGICL]]. =#lisp= 
+
+** DONE loneliness
+   CLOSED: [2019-02-03 Sun 20:53]
+:PROPERTIES:
+:EXPORT_FILE_NAME: loneliness
+:END:
+Home alone again...
+
+[[/img/IMG_0521.jpg]]
+
+** DONE Julia 1.1
+   CLOSED: [2019-02-04 Mon 18:46]
+:PROPERTIES:
+:EXPORT_FILE_NAME: julia-1-1
+:END:
+Updating my global dist for the newly released v1.1 of [[https://julialang.org][Julia]]. Installing
+packages is much easier (e.g. [[http://gadflyjl.org][Gadfly]]) and smoother compared to the preceding
+versions (prior to v1). Only caveat is that rendering plot via Gadfly is kind of
+slow, especially compared to other graphing engines (R, Gnuplot, Mathematica, or
+even Stata). =#julia=
+
+** DONE Gmail cleanup
+   CLOSED: [2019-02-04 Mon 20:02]
+:PROPERTIES:
+:EXPORT_FILE_NAME: gmail-cleanup-round2
+:END:
+Just throw out more than 30k messages from my Gmail account. I have a local
+copy, so no worries, but the Google team will have a harder time to analyze it.
+Incidentally, I just came across a [[https://defn.io/2019/02/04/bye-bye-google/][new testimony]] from people tired of Google.
+
+Last round shown below:
+
+[[/img/2019-02-04-20-00-09.png]]
+
+BTW, did you know that Google actually stores everything you buy based on
+payment or shipping receipts? 
+
+** DONE Magithub
+   CLOSED: [2019-02-04 Mon 20:56]
+:PROPERTIES:
+:EXPORT_FILE_NAME: magithub-in-trouble
+:END:
+[[https://github.com/vermiculus/magithub/][Magithub]] (soon, [[https://github.com/magit/forge][forge]]) is now part of Spacemacs/[[http://develop.spacemacs.org/layers/+source-control/github/README.html][magit]]. No need to add further
+configuration to your =init.el=. Today I was trying to send an issue for on one of
+my repo and I figured out that there's [[https://github.com/magit/ghub/issues/81][some trouble]] at the moment. =#emacs=
+
+** DONE Rust and Arrow
+   CLOSED: [2019-02-05 Tue 17:47]
+:PROPERTIES:
+:EXPORT_FILE_NAME: rust-and-arrow
+:END:
+[[https://arrow.apache.org][Apache Arrow]] and [[https://github.com/wesm/feather][Feather]] are two interesting projects that I think should be
+available in data science-related PLs. Recently, Rust joined the list, at least
+regarding Arrow: [[http://arrow.apache.org/blog/2019/02/04/datafusion-donation/][DataFusion: A Rust-native Query Engine for Apache Arrow]]. =#rust=
+
+** DONE Hacker Tools
+   CLOSED: [2019-02-05 Tue 17:58]
+:PROPERTIES:
+:EXPORT_FILE_NAME: hacker-tools
+:END:
+[[https://hacker-tools.github.io][Hacker Tools]]: A user-friendly introduction to various command line utilities,
+editors and VCS. (via [[https://twitter.com/newsycombinator/status/1092709841431347200][@newsycombinator]])
+
+** DONE Stata gtools
+   CLOSED: [2019-02-05 Tue 17:59]
+:PROPERTIES:
+:EXPORT_FILE_NAME: stata-gtools
+:END:
+A [[https://twitter.com/nickchk/status/1092191876260589568][recent tweet]] reminded me of [[https://github.com/mcaceresb/stata-gtools][gtools]], a Stata package that aims to speed up
+built-in command for data wrangling. I should give it a go. =#stata=
+
+** DONE Spacemacs search-auto
+   CLOSED: [2019-02-05 Tue 21:10]
+:PROPERTIES:
+:EXPORT_FILE_NAME: spacemacs-search
+:END:
+I am not very lucky with Spacemacs these days. Now, =SPC-/= to search project for
+text (aka, =spacemacs/search-project-auto=) is no longer working. Not funny, trust
+me. =#emacs=
+** DONE Spacemacs upgrade
+   CLOSED: [2019-02-06 Wed 20:56]
+:PROPERTIES:
+:EXPORT_FILE_NAME: spacemacs-upgrade
+:END:
+Back to a fully functional Spacemacs, after a complete reinstall. Some minor
+ annoyances with MELPA actually, but nothing serious; fixed a weird bug with the
+ =ocaml= layer, since I learned that the =syntax-version= layer should come before
+ =ocaml=, but otherwise everything is fine. Also, I'm trying to go all Helm
+ instead of Ivy. =#emacs=
+
+** DONE Stata and UTF8
+   CLOSED: [2019-02-07 Thu 09:37]
+:PROPERTIES:
+:EXPORT_FILE_NAME: stata-utf8
+:END:
+Fun fact: I saved a database from Stata 15 in old format (i.e., compatible with
+Stata 13). I cannot view unicode characters in Stata GUI, but it works perfectly
+fine when run through Emacs/ESS! =#stata=
+
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
 # Local Variables:
