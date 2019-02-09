@@ -8,3 +8,5 @@
 ** STAR Cleanup draft posts (see % ack "draft\s?[:=] true" content/post/*.md)
 ** TODO Check Summer readings (Getting Clojure, Git, etc.)           :review:
 ** TODO Read and review cite:meent-2018-introd-probab-progr          :review:
+** TODO Read cite:soicher-2004-algor-mathem
+** TODO Algebric Statistics (cite:zimmermann-2015-algeb-statis and cite:sullivant-2010-algeb-statis)

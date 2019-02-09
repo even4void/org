@@ -1039,6 +1039,82 @@ Fun fact: I saved a database from Stata 15 in old format (i.e., compatible with
 Stata 13). I cannot view unicode characters in Stata GUI, but it works perfectly
 fine when run through Emacs/ESS! =#stata=
 
+** DONE Stata vs R
+   CLOSED: [2019-02-07 Thu 18:15]
+:PROPERTIES:
+:EXPORT_FILE_NAME: stata-versus-r
+:END:
+After attending months of Twitter discussion about what could be the best
+software--R or Python--for data science several months ago, this is now the time
+of the R vs. Stata debate, [[https://twitter.com/jepusto/status/1092255032500764673][here]] and [[https://twitter.com/jeremyfreese/status/1093209317317038081][there]]. Arguably, Stata is a paid software
+and does not offer the same scripting facilities than R for some tasks, mainly
+non-statistical tasks. However, what's the point? Did anyone ever mentioned the
+fact that Stata has a GUI which completely mimics the command-line operations,
+so that people afraid of typing commands or just interested in running a
+logistic regression on a well-formed dataset can just do it in under a minute?
+It is slow with some estimators or optimization approaches (e.g., =gglamm=), and
+we had to wait a bit long to get full support for unicode and XLS, better
+graphical rendering, etc. But the versioning system allows to repoduce any
+result prior to the current version of Stata. And it does interact very well
+with Stan and R, too. The question is not which software is better, the real
+question is who's the end user? =#rstats= =#stata=
+
+** DONE Vol de nuit
+   CLOSED: [2019-02-07 Thu 18:18]
+:PROPERTIES:
+:EXPORT_FILE_NAME: vol-de-nuit
+:END:
+Found a new playlist on [[https://itunes.apple.com/fr/playlist/vol-de-nuit/pl.faeb447ec5a341ef83e7e65189bd1c63][Apple Music]].
+
+[[/img/2019-02-07-18-16-27.png]]
+
+** DONE Keyboard or mouse
+   CLOSED: [2019-02-07 Thu 20:39]
+:PROPERTIES:
+:EXPORT_FILE_NAME: keyboard-or-mouse
+:END:
+Today I was reading Jack Baty's latest posts and I noticed an interesting
+[[https://www.baty.blog/2019/saving-time-with-emacs-or-not][micro-post]] about keyboard versus mouse usage.
+
+#+BEGIN_QUOTE
+The stopwatch consistently proves mousing is faster than keyboarding.
+#+END_QUOTE
+
+I think this deserves two additional remarks. First, it depends on the task at
+hand: For instance, even if I prefer reading email with Apple Mail I use mu4e
+under Emacs because I find it more convenient for bulk actions like archiving or
+deleting a bunch of messages. Think of it a little: You just have to use your
+preferred movement keys or the arrow keys and strike a key, and it's all done!
+Likewise, for text editing or interacting with an REPL, I found Emacs
+keybindings much more powerful than any combination of custom Services or even
+TextExpander, together with using a mouse. I believe Vim users would agree as
+well. Second, this does not account for people not using a mouse at all. I for
+one have always been very happy with Macbook trackpad, and I come a lot slower
+when I have to use a mouse, notwithstanding the fact that it is very bad
+practice for the elbow and wrist. For most movement, I use the trackpad and I do
+not worry much about Emacs or Vim keybindings, because there I am faster with
+the trackpad. Hence, we should better clearly state what actions are better
+performed using a mouse before claiming than the mouse win over the keyboard.
+
+** DONE How to blog
+   CLOSED: [2019-02-08 Fri 17:04]
+:PROPERTIES:
+:EXPORT_FILE_NAME: how-to-blog
+:END:
+[[https://macwright.org/2019/02/06/how-to-blog.html][How to blog]]. Nice take by Tom MacWright. I don't have a very strict schedule.
+However, I've been trying to post more or less regularly in recent years
+(sometimes even just links of Twitter bookmarks), specifically to avoid letting
+my blog die. 
+
+** DONE How to GH
+   CLOSED: [2019-02-08 Fri 17:09]
+:PROPERTIES:
+:EXPORT_FILE_NAME: how-to-github
+:END:
+Just found what I think is one of the best concise tutorial on "[[https://www.gun.io/blog/how-to-github-fork-branch-and-pull-request][How to GitHub]]"
+if you are looking to collaborate on a common repository. As always, it works
+best when you read the [[https://magit.vc/manual/magit/][Magit manual]] and check what's available there.
+
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
 # Local Variables:

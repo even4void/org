@@ -30,6 +30,16 @@ Five aspects to learning a PL: syntax, *semantics*, *idioms*, libraries, tools.
 
 URL: https://cs.uwaterloo.ca/~plragde/flaneries/FDS/
 
+* Programming Languages
+
+URL: https://courses.cs.washington.edu/courses/cse341/12au
+
+Racket /versus/ Lisp: not purely functional (why?), lexically scoped.
+
+* Survey of Programming Languages
+
+URL: https://home.adelphi.edu/~siegfried/cs270/notes.html
+
 * Misc
 
 ** Common Lisp

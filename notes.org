@@ -417,6 +417,9 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Nice custom functions for mu4e and org-mode 
  [2019-01-29 Tue 08:59]
  https://gitlab.com/ambrevar/dotfiles/blob/master/.emacs.d/lisp/init-mu4e.el
+** Biomedical Data Science (R and Bioconductor) 
+ [2019-02-05 Tue 08:43]
+ http://genomicsclass.github.io/book/
 * Notes
 ** [2006-07-09 Dim] C Tips
 
