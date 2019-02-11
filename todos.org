@@ -2,11 +2,15 @@
 ** TODO Read and review [[file:~/Documents/Papers/objc/Advanced-Swift-Nov-2017.pdf][Advanced Swift]]                               :review:
 ** TODO Survey Weights: A Step-by-Step Guide to Calculation          :review:
 ** TODO Read and review cite:peters-2017-elemen-causal-infer         :review:
-** TODO Install and configure cquery + lsp-rust                       :emacs:
+** DONE Install and configure cquery + lsp-rust                       :emacs:
+   CLOSED: [2019-02-10 Sun 13:44]
 ** TODO Read and review cite:leiss-2007-progr-compan                 :review:  
 ** TODO Read and review cite:friedman-2008-essen-progr-languag       :review:
-** STAR Cleanup draft posts (see % ack "draft\s?[:=] true" content/post/*.md)
+** STAR Cleanup draft posts (see % ack "draft\s?[:=] true" content/post/*.md) :blog:
 ** TODO Check Summer readings (Getting Clojure, Git, etc.)           :review:
 ** TODO Read and review cite:meent-2018-introd-probab-progr          :review:
 ** TODO Read cite:soicher-2004-algor-mathem
-** TODO Algebric Statistics (cite:zimmermann-2015-algeb-statis and cite:sullivant-2010-algeb-statis)
+** STAR Read and review [[/Users/chl/Documents/Papers/watson-2016-lovin-common-lisp.pdf][watson-2016-lovin-common-lisp]]                :review:
+** TODO Configure and learn to use org-agenda                         :emacs:
+
+* Projects

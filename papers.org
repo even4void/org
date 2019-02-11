@@ -1,5 +1,3 @@
-#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='worg.css'/>
-
 * [[/Users/chl/Documents/Papers/gosset-1908-probab-error-mean.pdf][gosset-1908-probab-error-mean]] - The Probable Error of a Mean
  :PROPERTIES:
  :Custom_ID: gosset-1908-probab-error-mean
@@ -328,3 +326,36 @@ Useful packages and config for Lisp editing:
 - https://github.com/Shougo/deoplete.nvim
 - https://github.com/kovisoft/slimv
 - https://blog.venanti.us/clojure-vim/
+* [[/Users/chl/Documents/Papers/watson-2016-lovin-common-lisp.pdf][watson-2016-lovin-common-lisp]] - Loving Common Lisp
+ :PROPERTIES:
+ :Custom_ID: watson-2016-lovin-common-lisp
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/watson-2016-lovin-common-lisp.pdf
+ :END:
+GitHub: https://github.com/mark-watson/loving-common-lisp (Depends on [[https://github.com/mmaul/clml][clml]]), cloned locally in [[~/sandbox]].
+
+There are still some proof-reading lacking here and there but overall it is quite readable. The very first part of the book is all about data types in Common Lisp. All examples are illustrated using SBCL.
+
+The author does not explain the differences between [[https://stackoverflow.com/q/8927741][defvar, defparameter, setf and setq]], although they are used a lot interchangeably at the beginning of the book. Treatment of lists is pretty standard (=car= and =cdr=, =cons= and =append=, =last= and =nth=, etc.). An interesting example regarding shared structure in list is provided:
+
+#+BEGIN_SRC lisp
+(setq x '(0 0 0 0))
+(setq y (list x x x x))
+(setf (nth 2 (nth 1 y)) 'x)
+x
+y
+(setq z '((0 0 0 0) (0 0 0 0) (0 0 0 0)))
+(setf z (nth 2 (nth 1 z)) 'x)
+z
+#+END_SRC
+
+Beyond lists, vectors and arrays (=make-array,= or =vector= and =make-sequence=) are more efficient data structure when the number of elements is large. Beware that CL for scientific computing cannot be fast, portable, and convenient [[https://tpapp.github.io/post/common-lisp-to-julia/][all at the same time]]. Notice that an array can "contain" any values, and thus mixing integers with float is allowed by the language.
+
+#+BEGIN_SRC lisp
+(defvar y (make-array '(2 3) :initial-element 1))
+(setf (aref y 1 2) 3.14159)
+y
+#+END_SRC
+
+Operations on string (=concatenate=, =search=, =subseq= and =string-*=) and the fine distinction between =eq=, =eql=, and =equal=. See also http://doc.norang.ca/lisp.html. For strings, we should prefer =string==. Instead of =nth=, we use =char= to extract a given character in a string.
+
+Hash tables

@@ -1115,6 +1115,157 @@ Just found what I think is one of the best concise tutorial on "[[https://www.gu
 if you are looking to collaborate on a common repository. As always, it works
 best when you read the [[https://magit.vc/manual/magit/][Magit manual]] and check what's available there.
 
+** DONE A Computational Approach to Statistical Learning
+   CLOSED: [2019-02-09 Sat 16:34]
+:PROPERTIES:
+:EXPORT_FILE_NAME: comp-appr-stat-learn
+:END:
+A few days ago, I noticed someone citing [[http://www.comp-approach.com][A Computational Approach to Statistical
+Learning]] on Twitter. I no longer buy statistical books so I can't tell if it is
+worth a read, but I note that the author of the R package [[https://cran.r-project.org/web/packages/bigmemory/index.html][bigmemory]] is one of
+the co-authors. 
+
+** DONE GNU Coreutils Cheat Sheet
+   CLOSED: [2019-02-09 Sat 16:37]
+:PROPERTIES:
+:EXPORT_FILE_NAME: gnu-coreutils
+:END:
+[[https://catonmat.net/gnu-coreutils-cheat-sheet][GNU Coreutils Cheat Sheet]]. (via [[https://twitter.com/UnixToolTip/status/1093202728329900034][@UnixToolTip]])
+
+** DONE Org mode versus Markdown
+   CLOSED: [2019-02-09 Sat 16:48]
+:PROPERTIES:
+:EXPORT_FILE_NAME: orgmode-vs-markdown
+:END:
+The more I use Org for authoring simple or more complex text documents, the more
+I like. I like to think of it as Markdown with better markup for links, code
+blocks, tables, and references, and of course there's Emacs inline preview.
+Except for collaborating with colleagues or drafting short RMarkdown documents,
+I mostly stopped using Markdown these days. Maybe I should just revisit some old
+Md files and just [[https://emacs.stackexchange.com/a/41619][convert them to Org]].
+
+#+BEGIN_SRC emacs-lisp
+(defun markdown-convert-buffer-to-org ()
+    "Convert the current buffer's content from markdown to orgmode format."
+    (interactive)
+    (shell-command-on-region (point-min) (point-max)
+                             (format "pandoc -f markdown -t org -o %s"
+                                     (concat (file-name-sans-extension (buffer-file-name)) ".org"))))
+#+END_SRC
+
+See also: [[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][Org-Mode Is One of the Most Reasonable Markup Languages to Use for
+Text]].
+
+** DONE Mastering Emacs
+   CLOSED: [2019-02-09 Sat 20:09]
+:PROPERTIES:
+:EXPORT_FILE_NAME: mastering-emacs
+:END:
+I still read /Mastering Emacs/ from time to time. Recently, I was just checking
+an article on [[https://masteringemacs.org/article/re-builder-interactive-regexp-builder][regular expression]]. I have been using Emacs for about 15 years and
+I am afraid that now I would be far more comfortable with most key chords after
+two or three years of [[http://spacemacs.org][Spacemacs]]. This is not that I really like modal editing--I
+don't like it at all in fact--but the consistent key bindings conveyed via
+[[https://github.com/justbur/emacs-which-key][which-key]] and the configuration layers for most packages make it a really
+pleasant tool to use on a daily basis. I've come to have only Emacs on my
+desktop. No more [[https://iterm2.com][iTerm2]] or [[http://marked2app.com][Marked2]] or even Desktop icons. =#emacs=
+
+** DONE The 100 Season 4
+   CLOSED: [2019-02-09 Sat 20:20]
+:PROPERTIES:
+:EXPORT_FILE_NAME: the-100-season-4
+:END:
+Let's start Season 4 of [[https://en.wikipedia.org/wiki/The_100_(TV_series)][The 100]] in a few minutes.
+
+** DONE Machine Learning Refined
+   CLOSED: [2019-02-10 Sun 11:32]
+:PROPERTIES:
+:EXPORT_FILE_NAME: machine-learning-refined
+:END:
+[[http://mlrefined.wixsite.com/home-page][Machine Learning Refined]], with nice [[https://jermwatt.github.io/mlrefined/][blog posts]] by Jeremy Watt & Reza Borhani.
+
+** DONE Racket ML
+   CLOSED: [2019-02-10 Sun 11:47]
+:PROPERTIES:
+:EXPORT_FILE_NAME: racket-ml
+:END:
+Just found [[https://docs.racket-lang.org/rml-core/index.html][Racket Machine Learning – Core]]. =#scheme=
+
+** DONE Jupyter book
+   CLOSED: [2019-02-10 Sun 21:31]
+:PROPERTIES:
+:EXPORT_FILE_NAME: jupyter-book
+:END:
+After Jupyter notebook, we now get [[https://jupyter.org/jupyter-book/guide/01_overview.html][Jupyter book]]. Looks like a serious
+alternative to RMarkdown/Gitbook (aka [[https://bookdown.org][bookdown]]).
+=#python=
+** DONE Hook
+   CLOSED: [2019-02-11 Mon 09:04]
+:PROPERTIES:
+:EXPORT_FILE_NAME: hook-app
+:END:
+Yet another mind-mapping tool if you are not ued to Emacs Org mode: [[https://hookproductivity.com][Hook]]. (via
+[[https://www.baty.blog/2019/hook-links-your-digital-life][Jack Baty]])
+
+** DONE Blood cells and aging
+   CLOSED: [2019-02-11 Mon 13:27]
+:PROPERTIES:
+:EXPORT_FILE_NAME: blood-cells-aging
+:END:
+Interesting read. (via [[https://lemire.me/blog/2019/02/09/science-and-technology-links-february-9th-2019/][Daniel Lemire]])
+
+#+begin_quote
+Though we age, it is unclear how our bodies keep track of the time (assuming they do). [[https://onlinelibrary.wiley.com/doi/full/10.1111/acel.12897][Researchers claim that our blood cells could act as time keepers]]. When you transplant organs from a donor, they typically behave according to the age of the recipient. However, blood cells are an exception: they keep the same age as the donor. What would happen if we were to replace all blood cells in your body with younger or older ones?
+#+end_quote
+** DONE Emacs SLY
+   CLOSED: [2019-02-11 Mon 14:16]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-sly
+:END:
+While I usually run Slime for little Lisp hacking, I noticed that [[https://stackoverflow.com/a/51284086][serious people]]
+are looking at [[https://github.com/joaotavora/sly][SLY]], the Sylvester the Cat's Common Lisp IDE for Emacs. It looks
+like there is even a [[https://github.com/mfiano/common-lisp-sly][Spacemacs layer]]. =#emacs= =#lisp=
+
+** DONE Staying with Common Lisp
+   CLOSED: [2019-02-11 Mon 14:24]
+:PROPERTIES:
+:EXPORT_FILE_NAME: staying-with-common-lisp
+:END:
+[[https://www.michaelfiano.com/posts/Staying-with-Common-Lisp.html][Staying with Common Lisp]]. Safe no move perhaps? On a related note, here is an
+enlightening discussion about Racket vs. Lisp: [[https://fare.livejournal.com/188429.html][Why I haven't jumped ship from
+Common Lisp to Racket (just yet)]]. =#lisp= =#scheme=
+
+** DONE Portacle app
+   CLOSED: [2019-02-11 Mon 14:31]
+:PROPERTIES:
+:EXPORT_FILE_NAME: portacle-app
+:END:
+#+BEGIN_QUOTE
+[[https://portacle.github.io][Portacle]] is a complete IDE for Common Lisp that you can take with you on a USB
+stick.
+#+END_QUOTE
+
+If you are looking for a quick solution, here it is. Otherwise, learn Emacs for
+good. =#emacs= 
+
+** DONE Overnight
+   CLOSED: [2019-02-11 Mon 21:19]
+:PROPERTIES:
+:EXPORT_FILE_NAME: overnight
+:END:
+Overnight...
+
+[[/img/IMG_0562.jpg]]
+
+** DONE GTD again
+   CLOSED: [2019-02-11 Mon 21:34]
+:PROPERTIES:
+:EXPORT_FILE_NAME: overnight
+:END:
+Another nice article about [[https://www.rousette.org.uk/archives/juggling-projects-with-org-mode/][GTD by BSAG]]. I enjoy reading her blog posts, and I
+really love her website design. Funny thing: I was just reading some [[https://bzg.fr/org-gtd.html/][old posts]]
+written by Bastien Guerry on Org mode.
+
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
 # Local Variables:

@@ -420,6 +420,18 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Biomedical Data Science (R and Bioconductor) 
  [2019-02-05 Tue 08:43]
  http://genomicsclass.github.io/book/
+** Three algorithms with Python code for Gradient descent. See also http://ruder.io/optimizing-gradient-descent/ and https://jermwatt.github.io/mlrefined/. 
+ [2019-02-10 Sun 11:35]
+ https://www.hackerearth.com/blog/machine-learning/3-types-gradient-descent-algorithms-small-large-data-sets/
+** Ninety-Nine Lisp Problems 
+ [2019-02-10 Sun 14:06]
+ https://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html
+** Difference between setq and setf in Common Lisp 
+ [2019-02-11 Mon 10:57]
+ https://stackoverflow.com/questions/869529/difference-between-set-setq-and-setf-in-common-lisp
+** Interesting library for math computing 
+ [2019-02-11 Mon 13:53]
+ https://github.com/mfiano/gamebox-math
 * Notes
 ** [2006-07-09 Dim] C Tips
 

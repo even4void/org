@@ -1,10 +1,7 @@
 #+TITLE:        Emacs pour l'impatient
-#+AUTHOR:       Christophe Lalanne
-#+EMAIL:        ch.lalanne@gmail.com
 #+STARTUP:      align fold noindent hideblocks
 #+OPTIONS:      H:3 num:nil toc:2
 #+SETUPFILE:    _assets/theme-even.setup
-#+SEQ_TODO:     TODO(t) INPROGRESS(i) WAITING(w@) | DONE(d) CANCELED(c@)
 
 #+BEGIN_abstract
 Article abstract goes here.
@@ -397,7 +394,7 @@ FICHIERS                             | TAMPONS
 ^x^f:trouver un fichier              | ^x^b:lister les tampons
 ^x^s:sauver un fichier               | ^xb :choisir un tampon
 ^x^w:ecrire                          | ^xk :tuer un tampon
-                                     | ^xa :ajouter a la fin d'un tampon
+                                     | ^xa :ajouter a la fin d'un tampon |
 ^xi :  inserer un fichier            | ESC x insert-buffer:inserer un tampon
 -----------------------------------------------------------------------------
 COMPILATION     		     | FENETRES
