@@ -1260,12 +1260,28 @@ Overnight...
 ** DONE GTD again
    CLOSED: [2019-02-11 Mon 21:34]
 :PROPERTIES:
-:EXPORT_FILE_NAME: overnight
+:EXPORT_FILE_NAME: gtd-again
 :END:
 Another nice article about [[https://www.rousette.org.uk/archives/juggling-projects-with-org-mode/][GTD by BSAG]]. I enjoy reading her blog posts, and I
 really love her website design. Funny thing: I was just reading some [[https://bzg.fr/org-gtd.html/][old posts]]
 written by Bastien Guerry on Org mode.
 
+** DONE disk.frame
+   CLOSED: [2019-02-12 Tue 08:37]
+:PROPERTIES:
+:EXPORT_FILE_NAME: disk-frame
+:END:
+[[https://github.com/xiaodaigh/disk.frame][disk.frame]] is a new (=dplyr=-compliant) R package to manipulate structured tabular
+data that doesn't fit into RAM, in the spirit of [[https://dask.org][Dask]] for Python. =#rstats= 
+
+** DONE Caches to caches
+   CLOSED: [2019-02-12 Tue 08:45]
+:PROPERTIES:
+:EXPORT_FILE_NAME: caches-to-caches
+:END:
+I've been following [[http://gjstein.com][Greg Stein]] on [[http://www.cachestocaches.com][Caches to caches]] for a long time now, because
+the site has such a [[http://www.cachestocaches.com/2015/8/technologies-behind-caches-caches/][beautiful design]] and useful material on Emacs and Org mode.
+Recently they published a series of [[http://www.cachestocaches.com/category/machine-learning/][posts on AI and ML]].
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
 # Local Variables:

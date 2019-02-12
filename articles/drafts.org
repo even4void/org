@@ -78,3 +78,28 @@ and odd n =
 #+END_SRC
 
 It is worth noting that it is safer to always exit the "toplevel" (=utop=) when testing or debugging.
+
+* GitHub
+
+** Synchronize fork and upstream
+
+*Scenario:* fork a foreign repository on your own GitHub account, clone into your local HD, and update to latest commit from foreign (upstream) repository.
+
+https://help.github.com/articles/syncing-a-fork/
+
+git fetch upstream
+git checkout master
+git merge upstream/master
+git push
+
+** Update user repository
+
+*Scenario:* When you change your username, you must update your own fork by pointing to the new repository.
+
+https://help.github.com/articles/changing-a-remote-s-url/
+
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+** Create branch and submit PR
+
+https://stackoverflow.com/questions/42641355/git-collaborate-on-branch
+https://www.gun.io/blog/how-to-github-fork-branch-and-pull-request

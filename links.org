@@ -1,7 +1,0 @@
-#+TITLE: links
-
-* Bookmarks
-** http://www.packal.org :apple:
-** https://onlinecourses.science.psu.edu/stat507/ :statistics:epidemiology:
-** https://www.johndcook.com/blog/2018/06/13/heegner-numbers/ :math:
-** Talk on robust estimation :stata:
