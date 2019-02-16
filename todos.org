@@ -13,4 +13,9 @@
 ** STAR Read and review [[/Users/chl/Documents/Papers/watson-2016-lovin-common-lisp.pdf][watson-2016-lovin-common-lisp]]                :review:
 ** TODO Configure and learn to use org-agenda                         :emacs:
 
+** TODO Cleanup todos from projects
+** TODO Add epub's to BibTeX file 
+** TODO Setup Gmail with catchup univ.paris-diderot.fr                 :work:
+** TODO Setup working lab diary                                        :work:
+** TODO Check SVD in Racket (https://docs.racket-lang.org/math/matrices.html) :racket:
 * Projects

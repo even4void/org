@@ -432,6 +432,36 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Interesting library for math computing 
  [2019-02-11 Mon 13:53]
  https://github.com/mfiano/gamebox-math
+** Google Calendar With Org-Mode 
+ [2019-02-12 Tue 20:42]
+ http://jameswilliams.be/blog/2016/01/11/Taming-Your-GCal.html
+** Lisp and bioinformatics 
+ [2019-02-13 Wed 13:45]
+ https://omicsomics.blogspot.com/2017/09/why-is-lisp-so-rare-in-bioinformatics.html
+** Performance and types in Lisp 
+ [2019-02-13 Wed 19:12]
+ https://blog.30dor.com/2014/03/21/performance-and-types-in-lisp/
+** Org babel reference card 
+ [2019-02-13 Wed 19:32]
+ https://org-babel.readthedocs.io/en/latest/
+** Phylogenetic Network Software 
+ [2019-02-15 Fri 09:36]
+ http://www.fluxus-engineering.com/sharenet.htm
+** How to read MD5 hash efficiently in Python 2/3. See also https://stackoverflow.com/a/20014805
+ [2019-02-16 Sat 11:02]
+ https://stackoverflow.com/questions/1131220/get-md5-hash-of-big-files-in-python/40961519#40961519
+** Introduction to ML with Common Lisp 
+ [2019-02-16 Sat 12:57]
+ https://gorkovchanin.wordpress.com/2017/07/21/introduction-to-ml-with-common-lisp/
+** BioJulia packages. See also https://julialang.org/blog/2015/10/biojulia-sequence-analysis
+ [2019-02-16 Sat 14:07]
+ https://biojulia.net/
+** What's the most efficient file format for the storage of DNA sequences? 
+ [2019-02-16 Sat 14:09]
+ https://bioinformatics.stackexchange.com/questions/1/whats-the-most-efficient-file-format-for-the-storage-of-dna-sequences
+** Check these new estimators and the [[https://github.com/neurospin/pylearn-parsimony][parsimony]] package 
+ [2019-02-16 Sat 20:47]
+ http://neurospin.github.io/pylearn-parsimony/tutorials.html
 * Notes
 ** [2006-07-09 Dim] C Tips
 

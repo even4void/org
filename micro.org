@@ -1281,7 +1281,114 @@ data that doesn't fit into RAM, in the spirit of [[https://dask.org][Dask]] for 
 :END:
 I've been following [[http://gjstein.com][Greg Stein]] on [[http://www.cachestocaches.com][Caches to caches]] for a long time now, because
 the site has such a [[http://www.cachestocaches.com/2015/8/technologies-behind-caches-caches/][beautiful design]] and useful material on Emacs and Org mode.
-Recently they published a series of [[http://www.cachestocaches.com/category/machine-learning/][posts on AI and ML]].
+Recently they published a series of
+[[http://www.cachestocaches.com/category/machine-learning/][posts on AI and
+ML]].
+** DONE Lisp and bioinformatics
+   CLOSED: [2019-02-13 Wed 13:48]
+:PROPERTIES:
+:EXPORT_FILE_NAME: lisp-bioinformatics
+:END:
+One of the first hit when looking for "Lisp and bioinformatics" on the internet:
+[[https://academic.oup.com/bib/article/19/3/537/2769437][How the strengths of Lisp-family languages facilitate building complex and
+flexible bioinformatics applications]]. =#lisp=
+** DONE GTD and procrastination
+   CLOSED: [2019-02-13 Wed 21:27]
+:PROPERTIES:
+:EXPORT_FILE_NAME: gtd-and-procrastination
+:END:
+Not sure how we can think of GTD when we spend about one hour cleaning up
+defunct stuff on our HD, but sure we are close...
+** DONE Why the 3
+   CLOSED: [2019-02-13 Wed 21:34]
+:PROPERTIES:
+:EXPORT_FILE_NAME: why-three
+:END:
+Why the 3? Earlier in the morning I was reading one of the latest posts published by
+John D. Cook about [[https://www.johndcook.com/blog/2019/02/12/dose-escalation/][dose finding studies]]. I am well aware of the [[/post/cross-over-trials][3+3 design]].
+Incidentally, I attended a meeting yesterday where a PhD student was presenting
+his work in microbiology, and they used triplicates. It is interesting that the
+same 3 seems like a magic number here, but it is not the same. Maybe I should
+drop a note in a few days.
+
+** DONE Occupied halfway
+   CLOSED: [2019-02-14 Thu 21:27]
+:PROPERTIES:
+:EXPORT_FILE_NAME: occupied-halfway
+:END:
+I'm halfway thru my new TV show ([[https://en.wikipedia.org/wiki/Occupied][Occupied]]), but I'm struggling to motivate
+myself to move forward right now, even to watch TV right now. Besides that, I'm
+finally getting a job back. Let's just hope I don't go back to the hospital too
+soon. =#self=
+
+** DONE How to secure your iPhone
+   CLOSED: [2019-02-15 Fri 09:27]
+:PROPERTIES:
+:EXPORT_FILE_NAME: secured-iphone
+:END:
+[[https://www.computerworld.com/article/3339618/apple-ios/how-to-stay-as-private-as-possible-on-apples-ipad-and-iphone.html][How to stay as private as possible on Apple's iPad and iPhone]]. (via
+[[https://irreal.org/blog/?p=7838][Irreal]])
+** DONE Causal inference book
+   CLOSED: [2019-02-15 Fri 09:41]
+:PROPERTIES:
+:EXPORT_FILE_NAME: causal-inference-book
+:END:
+[[https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/2015/][Causal Inference Book]], Python code hosted [[https://github.com/jrfiedler/causal_inference_python_code][on GitHub]] (by the author of the [[https://github.com/jrfiedler/stata-kernel][Stata
+kernel]]). (via [[https://twitter.com/kaz_yos/status/1096117519335780352][@kaz_yos]]) 
+
+** DONE Probability and Statistics: a simulation-based introduction
+   CLOSED: [2019-02-16 Sat 09:02]
+:PROPERTIES:
+:EXPORT_FILE_NAME: prob-and-stats-carpenter
+:END:
+[[https://github.com/bob-carpenter/prob-stats][Probability and Statistics: a simulation-based introduction]], by Bob Carpenter. I
+like it when there are instructions for those like me who do not want to install
+RStudio to build the book. =#rstats=
+
+** DONE ROpenSci package management
+   CLOSED: [2019-02-16 Sat 09:04]
+:PROPERTIES:
+:EXPORT_FILE_NAME: ropensci-pkg
+:END:
+Useful tips to build and manage R packages: [[https://ropensci.github.io/dev_guide/][rOpenSci Packages: Development,
+Maintenance, and Peer Review]]. =#rstats=
+
+** DONE Julia performance
+   CLOSED: [2019-02-16 Sat 13:51]
+:PROPERTIES:
+:EXPORT_FILE_NAME: julia-performance
+:END:
+I haven't yet embraced the full power of Julia for data munging, but surely [[http://janvitek.org/pubs/oopsla18b.pdf][this
+article]] is a gem to understand the language at a deeper level. =#julia=
+
+** DONE Algorithms in Bioinformatics
+   CLOSED: [2019-02-16 Sat 14:07]
+:PROPERTIES:
+:EXPORT_FILE_NAME: algorithms-bioinformatics
+:END:
+[[https://www.comp.nus.edu.sg/~ksung/algo_in_bioinfo/][Algorithms in Bioinformatics: A Practical Introduction]]. (via [[https://stackoverflow.com/q/4311487][SO]])
+
+** DONE Large Text Compression Benchmark
+   CLOSED: [2019-02-16 Sat 14:14]
+:PROPERTIES:
+:EXPORT_FILE_NAME: large-text-compression-benchmark
+:END:
+An analysis of lossless data compression programs: [[http://mattmahoney.net/dc/text.html][Large Text Compression
+Benchmark]]. (via [[https://bioinformatics.stackexchange.com/q/1][SO]]--it looks it is the very first question on the beta site)
+
+#+BEGIN_QUOTE
+The amount of genomic sequence data being generated and made available through
+public databases continues to increase at an ever-expanding rate. Downloading,
+copying, sharing and manipulating these large datasets are becoming difficult
+and time consuming for researchers. We need to consider using advanced
+compression techniques as part of a standard data format for genomic data. The
+inherent structure of genome data allows for more efficient lossless compression
+than can be obtained through the use of generic compression programs. We apply a
+series of techniques to James Watson's genome that in combination reduce it to a
+mere 4MB, small enough to be sent as an email attachment.
+-- [[https://academic.oup.com/bioinformatics/article/25/2/274/218156][Human genomes as email attachments]]
+#+END_QUOTE
+
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
 # Local Variables:
