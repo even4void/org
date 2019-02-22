@@ -6,7 +6,7 @@
 #+HUGO_CUSTOM_FRONT_MATTER: type "tweet"
 #+AUTHOR:
 
-* Micro                                                  
+* Micro [168/168]                                                 
 
 ** DONE Writing Hugo blog in Org
    CLOSED: [2018-10-27 Sat 18:24]
@@ -1388,6 +1388,256 @@ series of techniques to James Watson's genome that in combination reduce it to a
 mere 4MB, small enough to be sent as an email attachment.
 -- [[https://academic.oup.com/bioinformatics/article/25/2/274/218156][Human genomes as email attachments]]
 #+END_QUOTE
+
+** DONE Racket data frames
+   CLOSED: [2019-02-17 Sun 08:51]
+:PROPERTIES:
+:EXPORT_FILE_NAME: racket-data-structures
+:END:
+Look. Even Racket has some support for statistical data structure like [[https://alex-hhh.github.io/2018/08/racket-data-frame.html][data
+frames]]. In addition, here is an essential read if you want to get started with
+common data structures: [[https://alex-hhh.github.io/2019/02/racket-data-structures.html][An Overview of Common Racket Data Structures]]. =#scheme=
+
+** DONE Little update about stata-sk
+   CLOSED: [2019-02-17 Sun 12:07]
+:PROPERTIES:
+:EXPORT_FILE_NAME: little-update-stata-sk
+:END:
+Again, I'm slowly updating [[/articles/stata-sk][stata-sk]]. It took me a while to reset the publishing
+system to use Stata 13 MP instead of Stata 15 since I no longer get a free
+license for it. This will probably be my last textbook on Stata. =#stata=
+** DONE Python for Epidemiologists
+   CLOSED: [2019-02-17 Sun 17:56]
+:PROPERTIES:
+:EXPORT_FILE_NAME: python-for-epidemiologists
+:END:
+[[https://github.com/pzivich/Python-for-Epidemiologists][Python for Epidemiologists]], feat. [[https://github.com/pzivich/zEpid][zEpid]] which I just discover right now. =#python=
+
+#+BEGIN_QUOTE
+A few highlights: basic epidemiology calculations, easily create functional form
+assessment plots, easily create effect measure plots, generate and conduct
+diagnostic tests. Implemented estimators include; inverse probability of
+treatment weights, inverse probability of censoring weights, inverse
+probabilitiy of missing weights, augmented inverse probability weights,
+time-fixed g-formula, Monte Carlo g-formula, Iterative conditional g-formula,
+and targeted maximum likelihood (TMLE).
+#+END_QUOTE
+
+Note that =lifelines= requires Matplotlib 2.2.3 but the latest release, as
+upgraded when installing =zepid=, is 3.0.2. How nice!
+
+** DONE Stata and Merlin
+   CLOSED: [2019-02-17 Sun 18:05]
+:PROPERTIES:
+:EXPORT_FILE_NAME: stata-merlin
+:END:
+[[https://www.mjcrowther.co.uk/software/merlin/][merlin - a unified framework for data-analysis]], and many other interesting
+packages by the [[https://www.mjcrowther.co.uk/#software][same author]] or [[https://pclambert.net/#teaching][other coworker]]. =#stata=
+
+** DONE ML and Clojure
+   CLOSED: [2019-02-17 Sun 18:15]
+:PROPERTIES:
+:EXPORT_FILE_NAME: clojure-xgboost
+:END:
+[[https://www.rdisorder.eu/2018/12/03/machine-learning-clojure-xgboost/][Machine learning in Clojure with XGBoost]]. Note that there are bindings for the
+[[https://github.com/dmlc/xgboost/tree/master/demo][awesome xgboost]] in various other languages (Python, Julia, R), not just the JVM.
+=#clojure=
+
+#+BEGIN_QUOTE
+Python didn't become the leader in the field because it's inherently better or
+more performant, but because of scikit-learn, pandas and so on. While as
+Clojurists we don't really need pandas (dataframes) or similar stuff (everything
+is just a map, or if you care more about memory and performance a record) we
+don't have something like scikit-learn that makes really easy to train many kind
+of machine learning models and somewhat easier to deploy them.
+#+END_QUOTE
+
+** DONE Cleaning Dropbox
+   CLOSED: [2019-02-17 Sun 18:34]
+:PROPERTIES:
+:EXPORT_FILE_NAME: dropbox-cleaning
+:END:
+Just cleanup a little bit more my Dropbox (6 Go of data, reports and papers
+accumulated along 8 years!).
+
+** DONE Acorn and Retrobatch
+   CLOSED: [2019-02-17 Sun 20:19]
+:PROPERTIES:
+:EXPORT_FILE_NAME: acorn-and-retrobatch
+:END:
+I don't have any big needs in terms of image processing, and I am generally
+happy with ImageMagick. However, [[https://flyingmeat.com/acorn/][Acorn]] and [[https://flyingmeat.com/retrobatch/][Retrobatch]] (h/t [[http://brettterpstra.com/2019/02/06/retrobatch-node-based-image-processing/][Brett Terpstra]]) look
+pretty nice. 
+
+** DONE 150 micro-org-post
+   CLOSED: [2019-02-17 Sun 20:29]
+:PROPERTIES:
+:EXPORT_FILE_NAME: 150-org-post
+:END:
+I am about to exceed the 150th micro-posts in my Org file. (Other posts are
+published from the terminal directly.) I added a little cookie to keep track of
+the number of entries, although a little harder path would be to write some
+[[https://emacs.stackexchange.com/a/10247][elisp code]]. =#org=
+
+[[/img/2019-02-17-20-26-29.png]]
+
+** DONE Dash app
+   CLOSED: [2019-02-18 Mon 18:50]
+:PROPERTIES:
+:EXPORT_FILE_NAME: dash-app
+:END:
+I am reading the Racket guide again, this time using [[https://kapeli.com/dash][Dash]] only. It's amazing how
+convenient this application is, especially for navigating between text and
+function definitions, which by default are all hyperlinked thanks to the
+Scribble documentation system. =#scheme=
+
+** DONE First day at the new lab
+   CLOSED: [2019-02-18 Mon 18:55]
+:PROPERTIES:
+:EXPORT_FILE_NAME: first-day-lab
+:END:
+Today was my first day at my new lab. Everything went fine, despite a very bad
+night. At least I have been able to go back home without too much dizziness or
+paresthesia in the legs (I don't know where this one comes from). Guess what:
+For the first time in 10 years, I am able to connect my Macbook on the network!
+=#self=
+
+** DONE Git leaders
+   CLOSED: [2019-02-18 Mon 19:00]
+:PROPERTIES:
+:EXPORT_FILE_NAME: git-leaders
+:END:
+[[http://www.modernemacs.com/post/pretty-magit/][Pretty Magit - Integrating commit leaders]]. I have been using Git [[https://news.ycombinator.com/item?id=13889155][leaders]] for
+almost two years, but now I realize that I completely forgot about them.
+
+** DONE Today's lunch
+   CLOSED: [2019-02-19 Tue 20:14]
+:PROPERTIES:
+:EXPORT_FILE_NAME: today-s-lunch
+:END:
+Today's lunch:
+
+[[/img/IMG_0566.jpg]]
+
+** DONE Diving into molecular biology
+   CLOSED: [2019-02-19 Tue 20:25]
+:PROPERTIES:
+:EXPORT_FILE_NAME: diving-into-comp-biol
+:END:
+Diving into computational molecular biology. It's a fun world after all,
+especially compared to medical statistics. I am trying to devise a reliable
+workflow for taking notes and using a live notebook, mostly inspired from my [[http://aliquote.org/post/notes-taking-workflow/][old
+setup]], but basically it's all about Org files with tags and "TODO items",
+including a diary and =helm-bibtex= for managing my bibliography. Nothing fancy,
+but it just has to do the job right after all.
+
+** DONE Two handy org commands
+   CLOSED: [2019-02-20 Wed 10:51]
+:PROPERTIES:
+:EXPORT_FILE_NAME: two-handy-org-commands
+:END:
+Two handy org commands: =org-journal-new-scheduled-entry= can be used to schedule
+future entries in [[https://github.com/bastibe/org-journal][org-journal]] (see discussion [[https://bastibe.de/2018-04-02-scheduling-future-todos-in-org-journal.html][here]]); =org-tree-to-indirect-buffer=
+is a good alternative to =org-narrow-to-subtree= sometimes. =#org=
+
+** DONE Jupytext
+   CLOSED: [2019-02-20 Wed 19:55]
+:PROPERTIES:
+:EXPORT_FILE_NAME: jupytext
+:END:
+After [[https://jupyter.org/jupyter-book/intro][jupyter-book]], there is now [[https://github.com/mwouts/jupytext][jupytext]] (via [[https://twitter.com/marcwouts/status/1097946788118564866][@marcwouts]]). Looks like we now
+have a serious competitor to RStudio. =#python=
+
+** DONE Transmit and Dropbox
+   CLOSED: [2019-02-20 Wed 20:08]
+:PROPERTIES:
+:EXPORT_FILE_NAME: transmit-and-dropbox
+:END:
+I disabled Dropbox syncing on my Mac for a long time now, but I realized
+yesterday that [[https://www.panic.com/transmit/][Transmit]] allows to connect to Dropbox very easily now. Even if I
+no longer use Dropbox these days, that may be a very good option for the future.
+
+** DONE Discrete Stochastic Processes
+   CLOSED: [2019-02-20 Wed 20:30]
+:PROPERTIES:
+:EXPORT_FILE_NAME: discrete-stochastic-processes
+:END:
+[[https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-262-discrete-stochastic-processes-spring-2011/course-notes/][Discrete Stochastic Processes]]. It's amazing how many excellent tutorials can be
+found on the MIT OpenCourseWare.
+
+** DONE Bastien Guerry and Marie Kondō
+   CLOSED: [2019-02-21 Thu 14:47]
+:PROPERTIES:
+:EXPORT_FILE_NAME: bastien-guerry-marie-kondo
+:END:
+[[https://speakerdeck.com/bzg/merlin-mann-et-marie-kondo-sont-dans-une-boite-demails][Merlin Mann et Marie Kondō sont dans une d'emails]], by Bastien Guerry. Nice
+summary of the situation regarding emails. I already deleted 30k+
+mails in one pass so I know what batch processing is.
+
+** DONE MacJournal app
+   CLOSED: [2019-02-21 Thu 18:51]
+:PROPERTIES:
+:EXPORT_FILE_NAME: macjournal-app
+:END:
+Didn't know there was such a thing: [[https://welcometosherwood.wordpress.com/2019/02/18/macjournal-still-the-best-notebook-for-macos/][MacJournal]] (via [[https://www.baty.blog/2019/whydya-do-it-steve][Jack Baty]]). Whether you are
+interested in this app or not, the author provides a nice discussion of the pros
+and cons of keeping a diary vs. a journal, and on the importance of meta data.
+
+** DONE How to install Mathematica packages
+   CLOSED: [2019-02-21 Thu 19:04]
+:PROPERTIES:
+:EXPORT_FILE_NAME: installing-mathematica-package
+:END:
+Despite the useful utility under the "File" menu, my attempt at installing a
+Mathematica package properly failed miserably this morning. I ended up
+copying/pasting the wole archive into =~/Library/Mathematica/Applications=.
+Anyway, this worked and I am now able to plot phylogenetic trees!
+
+[[/img/2019-02-21-19-02-43.pngg]]
+
+** DONE wc and newlines
+   CLOSED: [2019-02-22 Fri 07:46]
+:PROPERTIES:
+:EXPORT_FILE_NAME: wc-and-newlines
+:END:
+Didn't know either: Beware that =wc= counts newlines, and not lines. (via [[https://irreal.org/blog/?p=7857][Irreal]])
+
+** DONE Stephen Wolfram's life 
+   CLOSED: [2019-02-22 Fri 18:05]
+  :PROPERTIES:
+  :EXPORT_FILE_NAME: stephen-wolfram-life
+  :END:
+Stephen Wolfram reflecting on his "productive" and digital life. [[https://blog.stephenwolfram.com/2019/02/seeking-the-productive-life-some-details-of-my-personal-infrastructure/][What a man]]!
+
+** DONE Yet another org-powered website
+   CLOSED: [2019-02-22 Fri 18:46]
+:PROPERTIES:
+:EXPORT_FILE_NAME: another-org-site
+:END:
+Yet another [[https://joshrollinswrites.com/blogging/drafting_a_post/][org-powered website]]. This makes me think that I added a little
+=org-capture= template to write those [[/post/blogging-with-ox-hugo][micro-posts]] without having to open my
+=micro.org= file. =#org=
+
+#+BEGIN_SRC emacs-lisp
+("b" "Blog post" entry (file+headline "~/org/micro.org" "Micro")
+     "** TODO %?\n:PROPERTIES:\n:EXPORT_FILE_NAME:\n:END:\n%^g\n" 
+     :empty-lines 1)
+#+END_SRC
+
+** DONE Emacs and CircleCi 
+   CLOSED: [2019-02-22 Fri 18:56]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-circleci
+:END:
+Emacs [[https://github.com/sshaw/build-status][build-status]]: a nice package that allows to monitor build on Travis or
+CircleCI. =#emacs=
+
+** DONE Interpretable Machine Learning
+   CLOSED: [2019-02-22 Fri 18:56]
+:PROPERTIES:
+:EXPORT_FILE_NAME: interpretable-machine-learning
+:END:
+The [[https://christophm.github.io/interpretable-ml-book/][first edition]] of /Interpretable Machine Learning/ is out. (via [[https://twitter.com/ChristophMolnar/status/1098604325562138624][@ChristophMolnar]])
 
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
