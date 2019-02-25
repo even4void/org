@@ -1,4 +1,4 @@
-* Tasks
+* Tasks [5/21]
 ** TODO Read and review [[file:~/Documents/Papers/objc/Advanced-Swift-Nov-2017.pdf][Advanced Swift]]                               :review:
 ** TODO Survey Weights: A Step-by-Step Guide to Calculation          :review:
 ** TODO Read and review cite:peters-2017-elemen-causal-infer         :review:
@@ -6,16 +6,30 @@
    CLOSED: [2019-02-10 Sun 13:44]
 ** TODO Read and review cite:leiss-2007-progr-compan                 :review:  
 ** TODO Read and review cite:friedman-2008-essen-progr-languag       :review:
-** STAR Cleanup draft posts (see % ack "draft\s?[:=] true" content/post/*.md) :blog:
+** STAR Draft posts (see % ack "draft\s?[:=] true" content/post/*.md)  :blog:
 ** TODO Check Summer readings (Getting Clojure, Git, etc.)           :review:
 ** TODO Read and review cite:meent-2018-introd-probab-progr          :review:
 ** TODO Read cite:soicher-2004-algor-mathem
 ** STAR Read and review [[/Users/chl/Documents/Papers/watson-2016-lovin-common-lisp.pdf][watson-2016-lovin-common-lisp]]                :review:
-** TODO Configure and learn to use org-agenda                         :emacs:
+** DONE Configure and learn to use org-agenda                         :emacs:
+   CLOSED: [2019-02-21 Thu 07:42]
 
-** TODO Cleanup todos from projects
+** DONE Cleanup todos from projects
+   CLOSED: [2019-02-19 Tue 09:27]
 ** TODO Add epub's to BibTeX file 
-** TODO Setup Gmail with catchup univ.paris-diderot.fr                 :work:
-** TODO Setup working lab diary                                        :work:
-** TODO Check SVD in Racket (https://docs.racket-lang.org/math/matrices.html) :racket:
-* Projects
+** TODO Setup Gmail with catchup univ-paris-diderot.fr                 :work:
+** DONE Setup working lab diary                                        :work:
+   CLOSED: [2019-02-18 Mon 17:19]
+** TODO Check [[https://docs.racket-lang.org/math/matrices.html][SVD in Racket]]                                          :racket:
+** DONE Cleanup Trash folder
+   CLOSED: [2019-02-21 Thu 07:49]
+** TODO Implement JC69 model in Mathematica 
+** TODO Write blog post about Jukes-Cantor model using Mathematica     :blog:
+** STAR Read and review cite:kun-2018-progr-introd-mathem            :review: 
+* Projects [1/5]
+** DONE Install and test samtools, bedtools, bowtie2, MuMmer        :bioinfo:
+   CLOSED: [2019-02-19 Tue 16:12]
+** TODO Read [[/Users/chl/Documents/Papers/yang-2006-comput-molec-evolut.pdf][yang-2006-comput-molec-evolut]], Part II                 :bioinfo:
+** STAR R packages [[https://cran.r-project.org/web/packages/ape/index.html][ape]] ([[http://ape-package.ird.fr][www]]), [[https://cran.r-project.org/web/packages/apTreeshape/index.html][apTreeshape]], [[https://cran.r-project.org/web/packages/phytools/index.html][phytools]] and [[https://cran.r-project.org/web/packages/phangorn/index.html][phangorn]]    :bioinfo:
+** TODO Coursera [[https://www.coursera.org/specializations/bioinformatics][Bioinformatics]] (+ [[https://www.coursera.org/learn/algorithms-on-strings][Algorithms on Strings]])           :bioinfo:
+** TODO Read cite:choudhuri-2014-bioin-begin                        :bioinfo:  

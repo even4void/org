@@ -1,4 +1,37 @@
 * Diary
 ** 2019
 *** 2019-02 February
-**** 2019-02-13 Wednesday
+**** 2019-02-18 Monday
+***** Reading about "Phylogenetic networks"
+    <2019-02-18 Mon 11:16> 
+[[https://en.wikipedia.org/wiki/Phylogenetic_network][Wikipedia]]
+***** TODO Fetch and archive bib entries [2/6]
+    <2019-02-18 Mon 12:34>
+- [X] [[http://www.splitstree.org][SplitsTree4]], [[/Users/chl/Documents/Papers/huson-2006-applic-phylog.pdf][huson-2006-applic-phylog]], [[/Users/chl/Documents/Papers/huson-2011-survey-combin.pdf][huson-2011-survey-combin]]
+- [ ] Arenas M, Valiente G, Posada D (2008). "Characterization of reticulate networks based on the coalescent with recombination". Mol. Biol. Evol. 25 (12): 2517–20.
+- [ ] Schliep, Klaus; Potts, Alastair J.; Morrison, David A.; Grimm, Guido W.; Fitzjohn, Richard (2017). "Intertwining phylogenetic trees and networks". Methods in Ecology and Evolution. 8 (10): 1212–1220.
+- [ ] Arenas, M; Patricio, M; Posada, D; Valiente, G (2010) Characterization of phylogenetic networks with NetTest. BMC Bioinformatics 11: 268
+- [X] Package R [[https://cran.r-project.org/web/packages/phangorn/][phangorn]]
+- [ ] lowest common ancestor (LCA) algorithm? Huson, H.; A. Auch; Ji Qi; S. C. Schuster (2007). "MEGAN Analysis of Metagenomic Data". Genome Research. 17 (3): 377–386.
+**** 2019-02-19 Tuesday
+***** Reading about "Phylogeny using R"
+    <2019-02-19 Tue 10:35>
+Books: [[/Users/chl/Documents/Papers/paradis-2012-analy-phylog.pdf][paradis-2012-analy-phylog]], [[/Users/chl/Documents/Papers/lemey-2009-phylog-handb.pdf][lemey-2009-phylog-handb]], [[/Users/chl/Documents/Papers/felsenstein-2004-infer-phylog.pdf][felsenstein-2004-infer-phylog]]
+Getting familiar with R package [[https://cran.r-project.org/package=ape][ape]]: file:~/cwd/phylo/ape-tests.r and file:~/cwd/phylo/notes.org
+**** 2019-02-20 Wednesday
+***** Refresher on genomics and molecular biology
+    <2019-02-20 Wed 09:07>
+Reading courses from [[https://www.ihes.fr/~carbone/teaching.htm][Alessandra Carbone]] (LIP6)
+
+**** 2019-02-21 Thursday
+***** Studying models of DNA substitution and sofwtare implementation
+    <2019-02-21 Thu 09:31>
+R packages, PhyML software, Jukes-Cantor model
+Some little experiments with building a sample tree from [[file:~/sandbox/phyml/examples/nucleic]] and visaulizing it using R (=ggtree=) or Mathematica (phylogenetics package)
+**** 2019-02-25 Monday
+***** Bioinformatics tools 
+    <2019-02-25 Mon 9:57>
+    Install Java 11 to work with Artemis (don't forget to set up JAVA_HOME, e.g. =export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home/=), fetch some data from the local server, try to align different sequences using =mafft=.
+*****  Work on website for taxonomy
+    <2019-02-25 Mon 11:59>
+    Install Flask and learn to build a small website using Python and a MySQL backend. Unfortunately, nothing's installed on the local server. 

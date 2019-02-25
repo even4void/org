@@ -462,6 +462,90 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Check these new estimators and the [[https://github.com/neurospin/pylearn-parsimony][parsimony]] package 
  [2019-02-16 Sat 20:47]
  http://neurospin.github.io/pylearn-parsimony/tutorials.html
+** Emacs for Travis CI 
+ [2019-02-17 Sun 09:06]
+ https://github.com/flycheck/emacs-travis
+** IPython kernel for Racket 
+ [2019-02-17 Sun 09:15]
+ https://github.com/ppaml-op3/iracket
+** Set Forklift as the default file manager. See also [[https://johnscullen.com/how-to-make-forklift-3-the-default-file-viewer/][How to make ForkLift 3 the default file viewer]]
+ [2019-02-18 Mon 12:11]
+ https://apple.stackexchange.com/questions/45809/set-forklift-as-default-file-viewer/45831#45831
+** Resources for Population Genetics in R 
+ [2019-02-19 Tue 10:53]
+ https://github.com/emmanuelparadis/popgenInfo
+** Phylogenetic trees in Python 
+ [2019-02-19 Tue 12:20]
+ https://github.com/Zsailer/phylogenetics/blob/master/docs/index.rst
+** Trees in SQL. See also https://www.postgresql.org/docs/9.0/ltree.html 
+ [2019-02-19 Tue 12:21]
+ https://communities.bmc.com/docs/DOC-9902
+** Software for bayesian phylogeny 
+ [2019-02-20 Wed 07:42]
+ http://nbisweden.github.io/MrBayes/download.html
+** Galaxy Pasteur 
+ [2019-02-20 Wed 07:43]
+ https://galaxy.pasteur.fr/?form=dnapars
+** Tips on using org-journal 
+ [2019-02-20 Wed 09:11]
+ https://bastibe.de/2018-04-02-scheduling-future-todos-in-org-journal.html
+** Classification of genome data with n-gram models using Mathematica 
+ [2019-02-20 Wed 10:51]
+ https://mathematicaforprediction.wordpress.com/tag/markov-chains/
+** Markov Chains and evolution 
+ [2019-02-20 Wed 10:56]
+ https://math.la.asu.edu/~jtaylor/teaching/Spring2015/APM504/APM504.html
+** A Biologist's Guide to Mathematical Modeling with Mathematica applications 
+ [2019-02-20 Wed 11:14]
+ http://www.zoology.ubc.ca/biomath/
+** Programming with strings in Mathematica 
+ [2019-02-20 Wed 12:43]
+ https://www.mathematica-journal.com/2013/04/strings/
+** Writing fast Mathematica code 
+ [2019-02-21 Thu 10:28]
+ https://blog.wolfram.com/2011/12/07/10-tips-for-writing-fast-mathematica-code/
+** Sample matehmatica notebooks for biology 
+ [2019-02-21 Thu 10:30]
+ http://theory.bio.uu.nl/sb/wiskunde/Mathematica/
+** Phylogenetic trees in Mathematica 
+ [2019-02-21 Thu 11:40]
+ https://mathematica.stackexchange.com/questions/126496/how-to-work-with-phylogenetic-trees
+** Various courses on stochastic processes 
+ [2019-02-21 Thu 12:51]
+ https://math.la.asu.edu/~jtaylor/courses.html
+** Functional programming in Mathematica 
+ [2019-02-23 Sat 08:52]
+ https://reference.wolfram.com/language/guide/FunctionalProgramming.html
+** How to handle simple and complex rules in Timing App 
+ [2019-02-23 Sat 10:33]
+ https://timingapp.com/help/rules
+** Processing and visualization tools for quantitative MRI data using Mathematica 
+ [2019-02-24 Sun 09:33]
+ https://github.com/mfroeling/QMRITools
+** Nice posts by Pearly Spencer on Stata 
+ [2019-02-25 Mon 09:08]
+ https://stackoverflow.com/search?q=user%3A8682794+%5Bstata%5D+program
+** Internet guide to Stata 
+ [2019-02-25 Mon 09:37]
+ http://wlm.userweb.mwn.de/Stata/
+** Tutoriel Perl et DBI 
+ [2019-02-25 Mon 11:55]
+ https://djibril.developpez.com/tutoriels/perl/perl-dbi/
+** Tutorial on Flask and MySQL 
+ [2019-02-25 Mon 12:15]
+ https://code.tutsplus.com/tutorials/creating-a-web-app-from-scratch-using-python-flask-and-mysql--cms-22972
+** Algorithms for computational biology 
+ [2019-02-25 Mon 18:03]
+ https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-algorithms-for-computational-biology-spring-2005/
+** PHASE manual including discussion of phylogenetic theory 
+ [2019-02-25 Mon 18:35]
+ http://bioinf.man.ac.uk/resources/phase/manual/node1.html
+** Interesting blog 
+ [2019-02-25 Mon 18:54]
+ http://johnhawks.net/
+** Finding subsequences in strings 
+ [2019-02-25 Mon 20:50]
+ https://www.geeksforgeeks.org/given-two-strings-find-first-string-subsequence-second/
 * Notes
 ** [2006-07-09 Dim] C Tips
 
@@ -783,3 +867,26 @@ In Clojure:
 #+END_SRC
 
 See Stuart Sierra, https://stuartsierra.com/2018/07/06/threading-with-style
+* Meetings
+** MEET with J.-M. Dauget                                           :MEETING:
+  :LOGBOOK:
+  CLOCK: [2019-02-18 Mon 10:05]--[2019-02-18 Mon 10:40] =>  0:35
+  :END:
+  Présentation serveur de calcul (db locale protéine NCBI, logiciels, etc.), serveur web
+  Patrick Fuchs ([[http://www.dsimb.inserm.fr/~fuchs/][www]]) : Cours Python, stage 2 fois/an sur Paris-Diderot
+  Logiciels en cours d'installation : [[https://sourceforge.net/projects/gapfiller/][Gapfiller]], [[https://sourceforge.net/projects/ratt/][RATT]], [[http://sanger-pathogens.github.io/Artemis/Artemis/][Artemis]]
+  <2019-02-18 Mon>
+* MEET with P. Silar                                                :MEETING:
+  :LOGBOOK:
+  CLOCK: [2019-02-19 Tue 09:52]--[2019-02-19 Tue 10:30] =>  0:38
+  :END:
+Présentation des cultures de champignons, culture sur bois et boite de pétri, aspects génétiques (taille génome, nombre de gènes, etc.)
+<2019-02-19 Tue>
+* MEET with P. Silar & J.-M. Dauget                                 :MEETING:
+  :LOGBOOK:
+  CLOCK: [2019-02-22 Fri 10:04]--[2019-02-22 Fri 11:19] =>  1:15
+  :END:
+<2019-02-22 Fri>
+Discussion sur projet à venir :
+- extraire région ITS de l'ensemble des espèces "valides" des sordariales à partir de Genbank (récupérer toutes les séquences, réaliser un blast pour confirmer la présence de l'ITS bordés ou non des primers PCR, isoler les séquences)
+- utiliser PhyML pour construire un arbre en deux étapes : (1) itération sur les régions les plus conservées, avec bootstrap ; (2) deuxième passe sur les régions les plus variables pour affiner la classification dans les branches terminales

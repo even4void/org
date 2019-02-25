@@ -6,7 +6,7 @@
 #+HUGO_CUSTOM_FRONT_MATTER: type "tweet"
 #+AUTHOR:
 
-* Micro [168/168]                                                 
+* Micro [179/179]                                                 
 
 ** DONE Writing Hugo blog in Org
    CLOSED: [2018-10-27 Sat 18:24]
@@ -1602,7 +1602,7 @@ Anyway, this worked and I am now able to plot phylogenetic trees!
 :END:
 Didn't know either: Beware that =wc= counts newlines, and not lines. (via [[https://irreal.org/blog/?p=7857][Irreal]])
 
-** DONE Stephen Wolfram's life 
+** DONE Stephen Wolfram's life
    CLOSED: [2019-02-22 Fri 18:05]
   :PROPERTIES:
   :EXPORT_FILE_NAME: stephen-wolfram-life
@@ -1624,7 +1624,7 @@ Yet another [[https://joshrollinswrites.com/blogging/drafting_a_post/][org-power
      :empty-lines 1)
 #+END_SRC
 
-** DONE Emacs and CircleCi 
+** DONE Emacs and CircleCi
    CLOSED: [2019-02-22 Fri 18:56]
 :PROPERTIES:
 :EXPORT_FILE_NAME: emacs-circleci
@@ -1638,6 +1638,110 @@ CircleCI. =#emacs=
 :EXPORT_FILE_NAME: interpretable-machine-learning
 :END:
 The [[https://christophm.github.io/interpretable-ml-book/][first edition]] of /Interpretable Machine Learning/ is out. (via [[https://twitter.com/ChristophMolnar/status/1098604325562138624][@ChristophMolnar]])
+
+** DONE Statistical Thinking for the 21st Century
+   CLOSED: [2019-02-23 Sat 08:02]
+:PROPERTIES:
+:EXPORT_FILE_NAME: statsthinking21
+:END:
+[[http://statsthinking21.org][Statistical Thinking for the 21st Century]]. =#rstats=
+
+** DONE Building a Docker image for R
+   CLOSED: [2019-02-23 Sat 08:26]
+:PROPERTIES:
+:EXPORT_FILE_NAME: custom-build-rocker
+:END:
+While I appreciate that there are so [[https://hub.docker.com/r/rocker/tidyverse/][useful Docker images]] available, I think I
+will need to build a more lightweight one if I want to stay on CircleCI free
+plan. Hopefully, it looks like [[http://www.russpoldrack.org/2018/11/automated-web-site-generation-using.html][someone]] already had the same idea.  =#rstats=
+
+** DONE Stata 13 and Graph2pdf
+   CLOSED: [2019-02-23 Sat 17:56]
+:PROPERTIES:
+:EXPORT_FILE_NAME: stata13-gph2pdf
+:END:
+When you insist on your CLI-based workflow (reproducibility, text-based, etc.
+you know...) and you realize that Stata 13 does not recognize =graph export=
+with a PDF backend (while Stata 15 does) from a Terminal. Back to Encapsulated
+PostScript then, like in the 90s! =#stata=
+
+** DONE Done with The 100
+   CLOSED: [2019-02-23 Sat 20:34]
+:PROPERTIES:
+:EXPORT_FILE_NAME: end-the-100
+:END:
+And we are finally done with [[https://www.imdb.com/title/tt2661044/][The 100]]. Looking forward to looking to [[https://en.wikipedia.org/wiki/The_Expanse_(TV_series)][The Expanse]]
+during winter holidays.
+
+** DONE Ecological causes of uneven diversification
+   CLOSED: [2019-02-23 Sat 20:51]
+:PROPERTIES:
+:EXPORT_FILE_NAME: ecological-causes-diversification
+:END:
+[[https://www.biorxiv.org/content/10.1101/504803v1][Ecological causes of uneven diversification and richness in the mammal tree of
+life]]. (via [[https://twitter.com/rlmcelreath/status/1099297356229627905][@rlmcelreath]]) =#biorxiv=
+
+** DONE Caret tutorial
+   CLOSED: [2019-02-23 Sat 20:51]
+:PROPERTIES:
+:EXPORT_FILE_NAME: caret-tutorial
+:END:
+It's been a while since I haven't run any ML model using [[https://topepo.github.io/caret/index.html][caret]], especially since
+Max Kuhn engaged in the RStudio team to develop a brand new ML pipeline in the
+name of the tidy new wave: [[https://github.com/tidymodels/tidymodels][tidymodels]], then [[https://tidymodels.github.io/parsnip/][parsnip]] ([[https://r-medicine.com/talks/Kuhn.pdf][slides]] near here). Anyway,
+here is a [[https://www.machinelearningplus.com/machine-learning/caret-package/][good tutorial]] if you want to get started with =caret=. (via
+[[https://twitter.com/R_Programming/status/1099138097437003776][@R_Programming]]) =#rstats=
+
+** DONE Upgrading Java 8 in Mojave
+   CLOSED: [2019-02-25 Mon 10:50]
+:PROPERTIES:
+:EXPORT_FILE_NAME: upgrading-jave
+:END:
+This moment when you realize that you are stuck with Java 8 on your OS... Two
+options: use Homebrew (=brew cask install java=) or [[https://solarianprogrammer.com/2018/09/28/installing-openjdk-macos/][proceed manually]]. I think I
+will love bioinformatics tools.
+
+** DONE Emacs flush-lines
+   CLOSED: [2019-02-25 Mon 12:21]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-flush-lines
+:END:
+[[https://stackoverflow.com/a/26492924][How to delete empty lines in a file by Emacs?]] Useful to clean up an HTML page
+with lot of extra blank lines. =#emacs=
+
+#+begin_example
+M-x flush-lines RET ^[[:space:]]*$ RET
+#+end_example
+
+** DONE On not using org-journal
+   CLOSED: [2019-02-25 Mon 18:23]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-org-journal
+:END:
+I am still unsure how best to use [[https://github.com/bastibe/org-journal][org-journal]]. I already use a "diary" file
+where I bookmark important stages of my working day. This way, I get a nice
+summary with =org-agenda=. Obviously, I could do exactly the same using
+=org-journal=, but I was thinking that it could also be used to record my posts on
+the main site: (1) I would be writing using Org mode directly, (2) I would get a
+searchable archive from Emacs directly (and more convenient than =deft=), and (3)
+that would be just cool. =#emacs=
+
+** DONE Occupied (last two episodes)
+   CLOSED: [2019-02-25 Mon 20:30]
+:PROPERTIES:
+:EXPORT_FILE_NAME: occupied-ending-first-season
+:END:
+I'm almost done with Occupied. I initially thought I would be able to finish the
+last two episodes of the first season this evening, but I'm so tired (I'm up
+since 4am) that I'm afraid I won't be able to stand up for long.
+
+** DONE Permalinks on the micro blog
+   CLOSED: [2019-02-25 Mon 20:38]
+:PROPERTIES:
+:EXPORT_FILE_NAME: enabling-permalinks
+:END:
+I just added permalinks in this section (here, a small hash symbol near the
+date). I was missing a way to link to previous micro-posts.
 
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:

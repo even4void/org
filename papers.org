@@ -301,7 +301,7 @@ TODO Post a review on [[http://aliquote.org]].
  :Custom_ID: stein-2017-elemen-number-theor
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/stein-2017-elemen-number-theor.pdf
  :END:
-**** TODO Add a few words in [[file:number-theory.org]]
+**** TODO Add a few words in [[file:articles/number-theory.org]]
 * [[/Users/chl/Documents/Papers/valliant-2018-survey-weigh.pdf][valliant-2018-survey-weigh]] - Survey weights: a step-by-step guide to calculation
  :PROPERTIES:
  :Custom_ID: valliant-2018-survey-weigh
@@ -359,3 +359,12 @@ y
 Operations on string (=concatenate=, =search=, =subseq= and =string-*=) and the fine distinction between =eq=, =eql=, and =equal=. See also http://doc.norang.ca/lisp.html. For strings, we should prefer =string==. Instead of =nth=, we use =char= to extract a given character in a string.
 
 Hash tables
+* [[/Users/chl/Documents/Papers/yu-2018-two-method.pdf][yu-2018-two-method]] - Two methods for mapping and visualizing associated data on phylogeny using ggtree
+ :PROPERTIES:
+ :Custom_ID: yu-2018-two-method
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/yu-2018-two-method.pdf
+ :END:
+Two packages: [[http://bioconductor.org/packages/ggtree][ggtree]] for mapping and visualization, and [[http://bioconductor.org/packages/treeio][treeio]] for data parsing ([[https://github.com/GuangchuangYu/treeio][Github]])
+Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
+
+NEXT Letunic I, Bork P. 2007. Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation. Bioinformatics 23:127–128.
