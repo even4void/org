@@ -546,6 +546,90 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Finding subsequences in strings 
  [2019-02-25 Mon 20:50]
  https://www.geeksforgeeks.org/given-two-strings-find-first-string-subsequence-second/
+** Is there an actively developed stats library for Clojure? 
+ [2019-02-26 Tue 07:57]
+ https://www.reddit.com/r/Clojure/comments/6kjdrk/is_there_an_actively_developed_stats_library_for/
+** Concatenates FASTA formatted files to one "phyml" (PHYLIP) formatted file 
+ [2019-02-26 Tue 09:47]
+ https://github.com/nylander/catfasta2phyml
+** Handling phylogenomic data 
+ [2019-02-26 Tue 09:53]
+ http://odiogosilva.github.io/TriFusion/
+** FASTA to sequential PHYLIP format converter 
+ [2019-02-26 Tue 09:57]
+ http://aligner.azurewebsites.net/
+** SSE3 support on macOS Macbook
+ [2019-02-26 Tue 10:13]
+ https://stackoverflow.com/questions/45917280/mac-osx-minumum-support-sse-version
+** Elegant operations on matrix rows and columns 
+ [2019-02-26 Tue 13:01]
+ https://mathematica.stackexchange.com/questions/3069/elegant-operations-on-matrix-rows-and-columns
+** Useful tips for Mathjax 
+ [2019-02-26 Tue 20:05]
+ https://yutsumura.com/mathjax-in-wordpress/
+** Nice tutorial on deploying a Flask app on Heroku 
+ [2019-02-27 Wed 11:07]
+ https://medium.com/the-andela-way/deploying-a-python-flask-app-to-heroku-41250bda27d0
+** How to setup a Git mirror to have Travis CI working on Bitbucket 
+ [2019-02-27 Wed 16:48]
+ https://pythonwise.blogspot.com/2012/05/using-travis-ci-with-bitbucket.html
+** Travis tutorial 
+ [2019-02-27 Wed 18:10]
+ https://docs.travis-ci.com/user/tutorial/
+** How to setup Travis CI with GH pages and Hugo 
+ [2019-02-27 Wed 20:16]
+ https://axdlog.com/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/
+** Netlify setup 
+ [2019-02-27 Wed 20:28]
+ https://www.netlify.com/docs/cli/
+** Heroku and Python/Flask 
+ [2019-02-28 Thu 09:53]
+ https://coderwall.com/p/pstm1w/deploying-a-flask-app-at-heroku
+** Codekit: Build websites faster and better 
+ [2019-02-28 Thu 09:55]
+ https://codekitapp.com/index.html
+** A template to get your Flask app running on Heroku as fast as possible 
+ [2019-02-28 Thu 09:56]
+ https://github.com/zachwill/flask_heroku
+** Making a Flask app using a PostgreSQL database and deploying to Heroku 
+ [2019-02-28 Thu 10:02]
+ http://blog.sahildiwan.com/posts/flask-and-postgresql-app-deployed-on-heroku/
+** Postgres guide 
+ [2019-02-28 Thu 17:38]
+ http://postgresguide.com/
+** Getting started with Docker on a Mac 
+ [2019-02-28 Thu 19:38]
+ https://docs.docker.com/docker-for-mac/
+** Another nice tutorial on Flask 
+ [2019-03-04 Mon 10:50]
+ https://realpython.com/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/
+** Another tutorial on Flask + Postgresql 
+ [2019-03-04 Mon 10:55]
+ https://blog.theodo.fr/2017/03/developping-a-flask-web-app-with-a-postresql-database-making-all-the-possible-errors/
+** Flask 101 
+ [2019-03-04 Mon 10:58]
+ https://www.blog.pythonlibrary.org/2017/12/12/flask-101-getting-started/
+** Difference between pipvenv and virtualenv 
+ [2019-03-04 Mon 11:25]
+ https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe
+** Python + Postgresql tutorials 
+ [2019-03-04 Mon 16:50]
+ http://www.postgresqltutorial.com/postgresql-python/
+** Python and alembic 
+ [2019-03-04 Mon 17:58]
+ https://overiq.com/flask-101/database-migrations-with-alembic/
+** IMDb data and SQL 
+ [2019-03-06 Wed 07:43]
+ https://www.decisivedata.net/blog/import-data-from-multiple-csv-files-using-bulk-insert
+** PostgreSQL and bash Stuff 
+ [2019-03-06 Wed 10:22]
+ https://www.manniwood.com/postgresql_and_bash_stuff/index.html
+** Drawing Graphs Directly in Psql 
+ [2019-03-06 Wed 16:08]
+ http://akorotkov.github.io/blog/2016/06/09/psql-graph/
+** Turn your PostgreSQL queries into Charts 
+ [2019-03-07 Thu 08:09]
+ https://github.com/dimitri/pgcharts
 * Notes
 ** [2006-07-09 Dim] C Tips
 
@@ -867,26 +951,3 @@ In Clojure:
 #+END_SRC
 
 See Stuart Sierra, https://stuartsierra.com/2018/07/06/threading-with-style
-* Meetings
-** MEET with J.-M. Dauget                                           :MEETING:
-  :LOGBOOK:
-  CLOCK: [2019-02-18 Mon 10:05]--[2019-02-18 Mon 10:40] =>  0:35
-  :END:
-  Présentation serveur de calcul (db locale protéine NCBI, logiciels, etc.), serveur web
-  Patrick Fuchs ([[http://www.dsimb.inserm.fr/~fuchs/][www]]) : Cours Python, stage 2 fois/an sur Paris-Diderot
-  Logiciels en cours d'installation : [[https://sourceforge.net/projects/gapfiller/][Gapfiller]], [[https://sourceforge.net/projects/ratt/][RATT]], [[http://sanger-pathogens.github.io/Artemis/Artemis/][Artemis]]
-  <2019-02-18 Mon>
-* MEET with P. Silar                                                :MEETING:
-  :LOGBOOK:
-  CLOCK: [2019-02-19 Tue 09:52]--[2019-02-19 Tue 10:30] =>  0:38
-  :END:
-Présentation des cultures de champignons, culture sur bois et boite de pétri, aspects génétiques (taille génome, nombre de gènes, etc.)
-<2019-02-19 Tue>
-* MEET with P. Silar & J.-M. Dauget                                 :MEETING:
-  :LOGBOOK:
-  CLOCK: [2019-02-22 Fri 10:04]--[2019-02-22 Fri 11:19] =>  1:15
-  :END:
-<2019-02-22 Fri>
-Discussion sur projet à venir :
-- extraire région ITS de l'ensemble des espèces "valides" des sordariales à partir de Genbank (récupérer toutes les séquences, réaliser un blast pour confirmer la présence de l'ITS bordés ou non des primers PCR, isoler les séquences)
-- utiliser PhyML pour construire un arbre en deux étapes : (1) itération sur les régions les plus conservées, avec bootstrap ; (2) deuxième passe sur les régions les plus variables pour affiner la classification dans les branches terminales

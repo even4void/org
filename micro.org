@@ -6,7 +6,7 @@
 #+HUGO_CUSTOM_FRONT_MATTER: type "tweet"
 #+AUTHOR:
 
-* Micro [179/179]                                                 
+* Micro [206/206]                                                 
 
 ** DONE Writing Hugo blog in Org
    CLOSED: [2018-10-27 Sat 18:24]
@@ -1731,7 +1731,7 @@ that would be just cool. =#emacs=
 :PROPERTIES:
 :EXPORT_FILE_NAME: occupied-ending-first-season
 :END:
-I'm almost done with Occupied. I initially thought I would be able to finish the
+I'm almost done with [[https://en.wikipedia.org/wiki/Occupied][Occupied]]. I initially thought I would be able to finish the
 last two episodes of the first season this evening, but I'm so tired (I'm up
 since 4am) that I'm afraid I won't be able to stand up for long.
 
@@ -1742,6 +1742,243 @@ since 4am) that I'm afraid I won't be able to stand up for long.
 :END:
 I just added permalinks in this section (here, a small hash symbol near the
 date). I was missing a way to link to previous micro-posts.
+
+** DONE Compiling oss software again
+   CLOSED: [2019-02-26 Tue 09:26]
+:PROPERTIES:
+:EXPORT_FILE_NAME: compiling-oss-software-again
+:END:
+[[/post/building-r-2-12/][Long time no see]]. I have been compiling several pieces of bioinformatics
+software lately. No issues whatsoever, except for a few glitch with [[https://www.boost.org][boost]]
+libraries. 
+
+** DONE On the rise and fall of Mathematica
+   CLOSED: [2019-02-26 Tue 17:23]
+:PROPERTIES:
+:EXPORT_FILE_NAME: mathematica-still-live
+:END:
+A few days ago, I read a thread on [[https://www.biostars.org/][Biostars]] (which I haven't consulted in a
+while) on the use of [[https://www.biostars.org/p/172862/][Wolfram mathematica in bioinformatics]], and I wondered why
+people are so critical of this software. The same applies to Stata (if you see
+the recent flame on Twitter, you know what I mean), albeit in this case there's
+not even [[https://blog.stephenwolfram.com/2019/02/seeking-the-productive-life-some-details-of-my-personal-infrastructure/][this man]] behind it.
+
+** DONE Mathematica implementations of ML algorithms
+   CLOSED: [2019-02-26 Tue 17:53]
+:PROPERTIES:
+:EXPORT_FILE_NAME: mathematica-and-machine-learning
+:END:
+[[https://github.com/antononcube/MathematicaForPrediction][Mathematica implementations of machine learning algorithms used for prediction
+and personalization]].
+
+#+begin_quote
+This open source project is for Mathematica implementations of statistical and
+machine learning algorithms that can be used for data analysis, prediction, and
+recommendation systems.
+#+end_quote
+
+Note that the Github repository also includes Lua, Java and R code. The
+companion website is [[https://mathematicaforprediction.wordpress.com][Mathematica for prediction algorithms]].
+
+** DONE First hit on Sacha Chua newsletter
+   CLOSED: [2019-02-26 Tue 21:32]
+:PROPERTIES:
+:EXPORT_FILE_NAME: sacha-chua-newsletter
+:END:
+I think this is the first time this site is [[http://sachachua.com/blog/2019/02/2019-02-18-emacs-news/][referenced]] in [[http://sachachua.com/blog/][Sacha Chua]] excellent
+Emacs newsletter. 
+
+** DONE Done with Occupied
+   CLOSED: [2019-02-27 Wed 07:21]
+:PROPERTIES:
+:EXPORT_FILE_NAME: occupied-end
+:END:
+I'm finally done with [[https://en.wikipedia.org/wiki/Occupied][Occupied]].
+
+** DONE Great Emacs config and packages
+   CLOSED: [2019-02-27 Wed 09:25]
+:PROPERTIES:
+:EXPORT_FILE_NAME: great-emacs-config
+:END:
+Look, I read two of the latest newletters by Sacha Chua and I already learned
+about two new Org features: [[https://github.com/akirak/org-reverse-datetree/blob/master/README.org][org-reverse-datetree]] and [[https://github.com/tsdye/org-bib-template][org-bib-template]]. Moreover,
+I didn't know that there were such thing as meta repository for [[https://github.com/MilesMcBain/esscss/blob/master/README.md][ESS users]]. =#emacs=
+
+** DONE ELisp and linear algebra
+   CLOSED: [2019-02-27 Wed 09:26]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-and-linear-algebra
+:END:
+[[http://kitchingroup.cheme.cmu.edu/blog/2017/07/21/Linear-algebra-in-Emacs-using-MKL-and-dynamic-modules/][Linear algebra in Emacs using MKL and dynamic modules]]. =#emacs=
+
+** DONE Trying to configure Travis CI
+   CLOSED: [2019-02-27 Wed 18:15]
+:PROPERTIES:
+:EXPORT_FILE_NAME: configuring-travis-ci
+:END:
+Trying out Travis CI for a Bookdown project. I'm already at the third failure
+and it starts to be painful. =#rstats=
+
+** DONE Immersive math
+   CLOSED: [2019-02-28 Thu 07:33]
+:PROPERTIES:
+:EXPORT_FILE_NAME: immersive-math
+:END:
+[[http://immersivemath.com/ila/index.html][Immersive Linear Algebra]]. =#maths=
+
+** DONE Anatomy of a logistic growth curve
+   CLOSED: [2019-02-28 Thu 07:46]
+:PROPERTIES:
+:EXPORT_FILE_NAME: logistic-growth-curve
+:END:
+[[https://www.tjmahr.com/anatomy-of-a-logistic-growth-curve/][Anatomy of a logistic growth curve]], by Tristan Mahr. Nice looking visualization
+and clearly a non mathy but well put explanation of the logistic curve. I wish I
+read this earlier, when I started teaching psychometrics. =#rstats=
+
+** DONE Elisp cheatsheet
+   CLOSED: [2019-02-28 Thu 08:03]
+:PROPERTIES:
+:EXPORT_FILE_NAME: elisp-cheatsheet
+:END:
+This [[https://github.com/alhassy/ElispCheatSheet/blob/master/CheatSheet.pdf][Elisp cheatsheet]] (PDF) is really great. =#emacs=
+
+** DONE Principles and Techniques of Data Science
+   CLOSED: [2019-02-28 Thu 09:25]
+:PROPERTIES:
+:EXPORT_FILE_NAME: principles-and-techniques-data-science
+:END:
+[[https://www.textbook.ds100.org][Principles and Techniques of Data Science]]. Nice ressource to have! It's been
+written using [[https://jupyter.org/jupyter-book/intro][Jupyter book]], btw. =#python=
+
+** DONE First website with Python+Flask
+   CLOSED: [2019-02-28 Thu 18:31]
+:PROPERTIES:
+:EXPORT_FILE_NAME: flask-website
+:END:
+Today was my first attempt at building a Flask site, using a boilerplate
+Bootstrap theme, and a Postgresql backend. Done. On reflection, I wonder why I
+continue to maintain PHP websites. 
+
+** DONE How to load bigish data in R
+   CLOSED: [2019-02-28 Thu 19:56]
+:PROPERTIES:
+:EXPORT_FILE_NAME: big-data-and-R
+:END:
+Prompted by a recent [[https://twitter.com/vb_jens/status/1100510466269310976][Twitter question]], I was about to benchmark some R packages
+to process large files. However, there already seems to be a very nice post
+about this: [[https://waterdata.usgs.gov/blog/formats/][Working with pretty big data in R]]. =#rstats=
+
+** DONE When it starts at the end
+   CLOSED: [2019-02-28 Thu 20:33]
+:PROPERTIES:
+:EXPORT_FILE_NAME: when-it-starts-at-the-end
+:END:
+Okay, so it looks like we started with season 2 of The Expanse instead of season 1.
+Great! That may well explain why we didn't understand anything during the first
+episodes. 
+
+** DONE Syn and wordsmith-mode
+   CLOSED: [2019-03-05 Tue 07:37]
+:PROPERTIES:
+:EXPORT_FILE_NAME: syn-and-wordsmith-mode
+:END:
+[[https://github.com/stephencelis/syn/blob/master/README.markdown][syn]] uses OS X's natural language processing tools to tokenize and highlight
+text. Nice utility to add to my writing stack. It is used by Emacs
+[[https://github.com/istib/wordsmith-mode][wordsmith-mode]]. =#emacs=
+
+** DONE dbplot and modeldb
+   CLOSED: [2019-03-05 Tue 11:51]
+:PROPERTIES:
+:EXPORT_FILE_NAME: dbplot-and-modeldb
+:END:
+It's astonishing how much work has been done regarding working with database
+using R. We now have [[https://db.rstudio.com/dbplot/][dbplot]] and [[https://github.com/edgararuiz/modeldb][modeldb]] (not to be confused with [[https://github.com/mitdbg/modeldb][this one]]). (via
+[[https://twitter.com/theotheredgar/status/1102574034993274880][@theotheredgar]]) =#rstats=
+
+** DONE Latex and fontawesome
+   CLOSED: [2019-03-05 Tue 11:54]
+:PROPERTIES:
+:EXPORT_FILE_NAME: latex-fontawesome
+:END:
+I haven't written a single line of Latex in a long time, but it looks like we
+now get [[https://fontawesome.com][Font Awesome]] for free in our TeX distribution. (via [[https://twitter.com/kaz_yos/status/1102663844722368512][@kaz_yos]])
+
+** DONE Mean and median bias reduction in GLMs
+   CLOSED: [2019-03-05 Tue 12:36]
+:PROPERTIES:
+:EXPORT_FILE_NAME: brglm2-package
+:END:
+Just added to my Papers list: [[https://link.springer.com/article/10.1007%2Fs11222-019-09860-6][Mean and median bias reduction in generalized
+linear models]]. See also the [[https://cran.r-project.org/package=brglm2][brglm2]] R package. =#rstats=
+
+** DONE Yet another Org config
+   CLOSED: [2019-03-05 Tue 13:01]
+:PROPERTIES:
+:EXPORT_FILE_NAME: another-org-mode-todo-blog
+:END:
+I guess I just found [[http://www.johnborwick.com/2019/02/23/org-todo-setup.html][another org-powered user]]! =#emacs=
+
+** DONE Working with large data files
+   CLOSED: [2019-03-05 Tue 14:40]
+:PROPERTIES:
+:EXPORT_FILE_NAME: working-with-large-data-files
+:END:
+As I am using Postgresql a lot these days, I thought I would import a large CSV
+file (1 Go) to see if I can play with in-database tools from [[https://db.rstudio.com/dplyr/][dplyr & Co]]. I will
+probably need this for work so it's worth the effort. I started with a Stata
+file that I read using [[https://haven.tidyverse.org][haven]], and I converted it to a CSV using
+=data.table::fwrite=. This already eated up all my RAM. Now, I'm using [[https://csvkit.readthedocs.io/][csvkit]] to
+import the CSV file into a Postgresql local database. Well, it says a lot about
+the process:
+
+[[/img/2019-03-05-14-34-55.png]]
+
+** DONE Doing work as it shows up
+   CLOSED: [2019-03-06 Wed 07:19]
+:PROPERTIES:
+:EXPORT_FILE_NAME: doing-work-as-it-shows-up
+:END:
+[[http://www.johnborwick.com/2019/02/21/doing-work-as-it-shows-up.html][Doing work as it shows up]].
+
+** DONE Gnomon
+   CLOSED: [2019-03-06 Wed 10:06]
+:PROPERTIES:
+:EXPORT_FILE_NAME: gnomon
+:END:
+Better than =time=? [[https://github.com/paypal/gnomon][gnomon]] is a command line utility to prepend timestamp
+information to the standard output of another command.
+
+** DONE Vim within Emacs
+   CLOSED: [2019-03-06 Wed 14:21]
+:PROPERTIES:
+:EXPORT_FILE_NAME: vim-within-emacs
+:END:
+[[http://cachestocaches.com/2016/12/vim-within-emacs-anecdotal-guide/][Vim within Emacs]]: A very good read even if you're not versed into [[http://spacemacs.org][Spacemacs]].
+=#emacs= 
+
+** DONE Natural Gradient Descent
+   CLOSED: [2019-03-06 Wed 19:24]
+:PROPERTIES:
+:EXPORT_FILE_NAME: natural-gradient-descent
+:END:
+[[https://wiseodd.github.io/techblog/2018/03/14/natural-gradient/][Natural Gradient Descent]]. Be sure to check the [[https://wiseodd.github.io/techblog/][rest of the site]]. I just added it
+to my RSS reader.
+
+** DONE Rash
+   CLOSED: [2019-03-07 Thu 07:54]
+:PROPERTIES:
+:EXPORT_FILE_NAME: rash
+:END:
+[[https://rash-lang.org][Rash]] - The Reckless Racket Shell. (via [[https://twitter.com/NlightNFotis/status/1102975169587486720][@NlightNFotis]]) =#scheme=
+
+** DONE Viewing Matrices & Probability as Graphs
+   CLOSED: [2019-03-07 Thu 07:57]
+:PROPERTIES:
+:EXPORT_FILE_NAME: matrices-as-graphs
+:END:
+[[https://www.math3ma.com/blog/matrices-probability-graphs][Viewing Matrices & Probability as Graphs]]. With great illustrations. For those
+interested in catgeory theory, the other posts are worth a look too. See, e.g.
+this [[https://arxiv.org/pdf/1809.05923.pdf][booklet on arXiv]] (PDF, 50 pp.). =#maths=
 
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:

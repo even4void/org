@@ -32,6 +32,119 @@ Some little experiments with building a sample tree from [[file:~/sandbox/phyml/
 ***** Bioinformatics tools 
     <2019-02-25 Mon 9:57>
     Install Java 11 to work with Artemis (don't forget to set up JAVA_HOME, e.g. =export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home/=), fetch some data from the local server, try to align different sequences using =mafft=.
-*****  Work on website for taxonomy
+***** Work on website for taxonomy
     <2019-02-25 Mon 11:59>
-    Install Flask and learn to build a small website using Python and a MySQL backend. Unfortunately, nothing's installed on the local server. 
+    Install Flask and learn to build a small website using Python and a MySQL backend. Unfortunately, nothing's installed on the local server.
+**** 2019-02-26 Tuesday
+***** Phylogenetic software 
+    <2019-02-26 Tue 09:58>
+Multi Fasta to PHYLIP converter, [[https://cme.h-its.org/exelixis/web/software/raxml/index.html][RAxML]] (cite:stamatakis-2014-raxml) versus [[http://www.atgc-montpellier.fr/phyml/][PhyML]], [[http://nbisweden.github.io/MrBayes/][MrBayes]], [[http://dendroscope.org][Dendroscope]]
+
+- www search "likelihood-based phylogenetic tree inference"
+- [[http://blog.geneious.com/post/84886619339/which-tree-builder-should-i-use-making-the-most][Which Tree Builder Should I Use?]]
+- [[https://en.wikipedia.org/wiki/Low-density_parity-check_code][Low-density parity-check code]]
+- TODO Read cite:izquierdo-carrasco-2011-algor 
+- TODO Check [[http://evolution.genetics.washington.edu/phylip][PHYLIP]] tools
+- TODO Cleanup [[~/cwd/phylo/tmp/]]
+**** 2019-02-27 Wednesday
+***** Fungi website 
+    <2019-02-27 Wed 10:41>
+Looking for Python+Flash websites and deployment options (Netlify, Now, Heroku)
+Bootstrap themes and CDN
+Trying to configure Travis CI with Github
+**** 2019-02-28 Thursday
+*****  Drawing phylogenetic tree
+    <2019-02-28 Thu 09:43>
+Reviewing existing solutions in D3js:
+
+- [[https://observablehq.com/@d3/d3-collapsible-tree][observablehq]]
+- [[https://bitbucket.org/caseywdunn/phylogeny-d3/src/master/][phylogeny-d3]]
+- [[https://github.com/vibbits/phyd3/][phyd3]] ([[https://academic.oup.com/bioinformatics/article/33/18/2946/3835380][Bioinformatics]] paper)
+
+https://genome.jgi.doe.gov/mycocosm/species-tree/tree;zWw8an?organism=sordariomycetes
+
+Is it possible to get values directly from a Postgres db, e.g. [[https://stackoverflow.com/q/32054463][SO]]. Otherwise we will have to serialize using JSON from the DB itself.
+
+Other [[https://realpython.com/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/][Flask apps using Postgres]]
+
+    From: [[file:~/org/todos.org::*Drawing%20phylogenetic%20tree%20with%20D3.js%20(%5B%5Bhttps://observablehq.com/@d3/d3-collapsible-tree%5D%5Bwww%5D%5D)][Drawing phylogenetic tree with D3.js]]
+*** 2019-03 March
+**** 2019-03-04 Monday
+***** Fungi website: Dev version
+    <2019-03-04 Mon 09:31>
+Fix broken URL when generating table + Add [[https://bootstrap-table.com/][bootstrap-table]] + extensions
+***** Fungi website: Prod version
+    <2019-03-04 Mon 10:47>
+Update project to work with Heroku
+**** 2019-03-05 Tuesday
+***** Fungi website : Dev version 
+    <2019-03-05 Tue 10:02>
+Create new db (=fungi/_taxa=), add form and refactor code.
+
+* Meetings
+** MEET with J.-M. Dauget                                           :MEETING:
+  :LOGBOOK:
+  CLOCK: [2019-02-18 Mon 10:05]--[2019-02-18 Mon 10:40] =>  0:35
+  :END:
+  Présentation serveur de calcul (db locale protéine NCBI, logiciels, etc.), serveur web
+  Patrick Fuchs ([[http://www.dsimb.inserm.fr/~fuchs/][www]]) : Cours Python, stage 2 fois/an sur Paris-Diderot
+  Logiciels en cours d'installation : [[https://sourceforge.net/projects/gapfiller/][Gapfiller]], [[https://sourceforge.net/projects/ratt/][RATT]], [[http://sanger-pathogens.github.io/Artemis/Artemis/][Artemis]]
+  <2019-02-18 Mon>
+** MEET with P. Silar                                               :MEETING:
+  :LOGBOOK:
+  CLOCK: [2019-02-19 Tue 09:52]--[2019-02-19 Tue 10:30] =>  0:38
+  :END:
+Présentation des cultures de champignons, culture sur bois et boite de pétri, aspects génétiques (taille génome, nombre de gènes, etc.)
+<2019-02-19 Tue>
+** MEET with P. Silar & J.-M. Dauget                                :MEETING:
+  :LOGBOOK:
+  CLOCK: [2019-02-22 Fri 10:04]--[2019-02-22 Fri 11:19] =>  1:15
+  :END:
+<2019-02-22 Fri>
+Discussion sur projet à venir :
+- extraire région ITS de l'ensemble des espèces "valides" des sordariales à partir de Genbank (récupérer toutes les séquences, réaliser un blast pour confirmer la présence de l'ITS bordés ou non des primers PCR, isoler les séquences)
+- utiliser PhyML pour construire un arbre en deux étapes : (1) itération sur les régions les plus conservées (58S), avec bootstrap ; (2) deuxième passe sur les régions les plus variables pour affiner la classification dans les branches terminales
+** MEET with P. Silar                                               :MEETING:
+  :LOGBOOK:
+  CLOCK: [2019-02-27 Wed 09:50]--[2019-02-27 Wed 10:31] =>  0:41
+  :END:
+<2019-02-27 Wed>
+Discussion autour du projet de site web de taxonomy des champignons
+
+Famille : 
+Cephalothecaceae
+Chaetomiaceae
+Helminthosphaeriaceae
+Lasiosphaeriaceae I
+Lasiosphaeriaceae II
+Lasiosphaeriaceae III
+Lasiosphaeriaceae IV
+Lasiosphaeriaceae IS
+Sordariaceae
+unknown
+
+Nom officiel : Genre/Espèce/Mycobank number
+
+Référence description originale
+Image description originale
+Référence validation du nom
+
+Synonymes
+Références synonymes
+
+Description
+Images additionnelles
+fructification péridium asques ascospores anamorphe
+mycélium sur M2, autres milieux
+
+Séquences
+génome sequence ? Y/N GenBank/JGI URL
+ITS	complete ? Y/N GenBank accession Curated sequence
+18S (LSU)	complete ? Y/N
+28S (SSU)	complete ? Y/N
+
+https://www-s.life.illinois.edu/pyrenos/searches/new
+http://www.ascofrance.com/base-de-donnees?valide=1&filter=none
+http://www.mycobank.org/BioloMICS.aspx?TableKey=14682616000000067&Rec=22233&Fields=All
+http://archive.fieldmuseum.org/research_collections/botany/botany_sites/ascomycete/peetwebpages/peettitle.htm
+https://unite.ut.ee/
