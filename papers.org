@@ -368,3 +368,18 @@ Two packages: [[http://bioconductor.org/packages/ggtree][ggtree]] for mapping an
 Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 NEXT Letunic I, Bork P. 2007. Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation. Bioinformatics 23:127–128.
+* [[/Users/chl/Documents/Papers/bradley-2018-what-categ-theor.pdf][bradley-2018-what-categ-theor]] - What is category theory
+ :PROPERTIES:
+ :Custom_ID: bradley-2018-what-categ-theor
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bradley-2018-what-categ-theor.pdf
+ :END:
+Main blog: https://www.math3ma.com
+Level: graduate student
+
+Category Theory used to reshape and reformulate problems within pure mathematics, including topology, homotopy theory and algebraic geometry, and it has various applications in /chemistry/, neuroscience, systems biology, /natural language processing/, causality, network theory, dynamical systems, and database theory. 
+
+Two central themes: 
+
+- functorial semantics: C → D ≈ interpretation of C within D; syntax (grammar in NLP) refers to rules for putting things together and semantics (meaning) refers to the meaning of those things.
+
+- compositionality

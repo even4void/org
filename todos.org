@@ -1,4 +1,4 @@
-* Tasks [8/27]
+* Tasks [9/43]
 ** TODO Read and review [[file:~/Documents/Papers/objc/Advanced-Swift-Nov-2017.pdf][Advanced Swift]]                               :review:
 ** TODO Survey Weights: A Step-by-Step Guide to Calculation          :review:
 ** TODO Read and review cite:peters-2017-elemen-causal-infer         :review:
@@ -37,11 +37,24 @@
 
 ** TODO Blog post "Postico App"                                        :blog:
 ** TODO Racket & apache drill/parquet
-** TODO Racket & postgresql/redis (see also [[https://github.com/dimitri/pgcharts][pgcharts]])
+** TODO Racket & [[https://docs.racket-lang.org/db/][postgresql]]/redis (see also [[https://github.com/dimitri/pgcharts][pgcharts]])
 ** TODO Clojure h2o/weka
 ** TODO [[https://agate.readthedocs.io/en/1.6.1/][agate]] versus pandas?
-** TODO Read cite:bradley-2018-what-categ-theor
-** TODO Read and review cite:fontaine-2017-master-postg and cite:danjou-2018-serious-python :review:
+** STAR Read cite:bradley-2018-what-categ-theor
+** TODO Read and review cite:fontaine-2017-master-postg              :review:
+** TODO Read and review cite:danjou-2018-serious-python              :review:
+** TODO Post book review "Think Bayes" + application Stata/Stan
+** TODO Post Apache Drill                                              :blog:
+** TODO Post book review "Agile Data Science"                          :blog:
+** TODO Emacs pour l'impatient
+** TODO Post Wizard Mac                                                :blog:
+** TODO Post Mata Book                                                 :blog:
+** TODO Post Texpad                                                    :blog:
+** TODO Post book Pragmatic functional anthology
+                    :blog:
+** DONE Install Python [[http://etetoolkit.org/docs/2.3/tutorial/tutorial_ncbitaxonomy.html][ete toolkit]]                                  :bioinfo:
+   CLOSED: [2019-03-12 Tue 09:17]
+** TODO Study GBIF project and databases                            :bioinfo:
 * Projects [2/7]
 ** DONE Install and test samtools, bedtools, bowtie2, MuMmer        :bioinfo:
    CLOSED: [2019-02-19 Tue 16:12]
@@ -55,3 +68,4 @@
 ** TODO Mac app for redis
 ** TODO Mac app for apache Drill
 ** TODO Stata dct to psql converter
+** TODO Download Mycobank data                                      :bioinfo:

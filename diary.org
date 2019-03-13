@@ -70,16 +70,39 @@ Other [[https://realpython.com/flask-by-example-part-2-postgres-sqlalchemy-and-a
     From: [[file:~/org/todos.org::*Drawing%20phylogenetic%20tree%20with%20D3.js%20(%5B%5Bhttps://observablehq.com/@d3/d3-collapsible-tree%5D%5Bwww%5D%5D)][Drawing phylogenetic tree with D3.js]]
 *** 2019-03 March
 **** 2019-03-04 Monday
-***** Fungi website: Dev version
+***** Fungi website (dev)
     <2019-03-04 Mon 09:31>
 Fix broken URL when generating table + Add [[https://bootstrap-table.com/][bootstrap-table]] + extensions
-***** Fungi website: Prod version
+***** Fungi website (prod)
     <2019-03-04 Mon 10:47>
 Update project to work with Heroku
 **** 2019-03-05 Tuesday
-***** Fungi website : Dev version 
+***** Fungi website (dev) 
     <2019-03-05 Tue 10:02>
 Create new db (=fungi/_taxa=), add form and refactor code.
+**** 2019-03-07 Thursday
+***** Fungi website (dev) 
+    <2019-03-07 Thu 10:19>
+Refactor code, add inline editing and update edit form
+**** 2019-03-08 Friday
+***** Fungi website (dev) 
+    <2019-03-08 Fri 09:41>
+Update forms + ressource handling
+**** 2019-03-11 Monday
+***** Fungi website (dev) 
+    <2019-03-11 Mon 09:30>
+Add login page + refactor code (=models.py=, =forms.py= and =routes.py=)
+**** 2019-03-12 Tuesday
+***** Mycobank  
+    <2019-03-12 Tue 11:43>
+Retrieving and parsing 'Sordariales' data from MB database
+**** 2019-03-13 Wednesday
+***** Mycobank crawler 
+    <2019-03-13 Wed 09:39>
+ Refactor Python code and start testing on larger download sets
+***** Fungi website (dev) 
+    <2019-03-13 Wed 13:51>
+Update data structure to account for new _taxa db 
 
 * Meetings
 ** MEET with J.-M. Dauget                                           :MEETING:
@@ -148,3 +171,22 @@ http://www.ascofrance.com/base-de-donnees?valide=1&filter=none
 http://www.mycobank.org/BioloMICS.aspx?TableKey=14682616000000067&Rec=22233&Fields=All
 http://archive.fieldmuseum.org/research_collections/botany/botany_sites/ascomycete/peetwebpages/peettitle.htm
 https://unite.ut.ee/
+** MEET with P. Silar                                               :MEETING:
+   :LOGBOOK:
+   CLOCK: [2019-03-08 Fri 10:23]--[2019-03-08 Fri 11:04] =>  0:41
+   :END:
+<2019-03-08 Fri>
+Projet Fungi website
+
+- gestion des synonymes (à partir de Mycobank) ; prévoir un champ edit par synonyme avec bouton "+" pour ajouter un nombre variable de synonymes (tous en hyperliens sur mycobnak ou local)
+- scraper site Mycobank pour pré-remplir la base de données ; voir aussi les données http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=100818 (permet d'indexer par MB id) et mycothèque
+- images : description originale + autres images ; prévoir de stocker les images par dossier (nom dossier = MB id), avec caption et blank image si pas disponible ou pas libre de droit
+- ajouter quality rating (bonne correspondance ou pas entre description originale et données actuelles)
+** MEET with lab                                                    :MEETING:
+   :LOGBOOK:
+   CLOCK: [2019-03-12 Tue 09:30]--[2019-03-12 Tue 11:30] =>  2:00
+   :END:
+<2019-03-12 Tue>
+- crédits
+- locaux
+- projet Sordariales (séquençagae + site web)

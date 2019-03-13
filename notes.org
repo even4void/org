@@ -630,6 +630,33 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Turn your PostgreSQL queries into Charts 
  [2019-03-07 Thu 08:09]
  https://github.com/dimitri/pgcharts
+** Haskell programming from manu.el 
+ [2019-03-07 Thu 09:44]
+ https://github.com/manuel-uberti/haskell-programming
+** Modern R with the tidyverse 
+ [2019-03-07 Thu 10:08]
+ https://b-rodrigues.github.io/modern_R/
+** How to Build a Machine Learning App from Scratch 
+ [2019-03-08 Fri 09:24]
+ https://camtsmith.com/articles/2017-10/naive-bayes-text-classification
+** Netlify vs Heroku 
+ [2019-03-08 Fri 12:07]
+ https://linuxhint.com/netlify_vs_heroku/
+** How to Type Common Symbols and Special Characters in Mac OS X 
+ [2019-03-08 Fri 12:19]
+ https://www.chriswrites.com/how-to-type-common-symbols-and-special-characters-in-os-x/
+** Yet another Flask tutorial with login and Heroku 
+ [2019-03-11 Mon 07:49]
+ https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-v-user-logins
+** Taxonomic trees in SQL 
+ [2019-03-12 Tue 07:35]
+ http://gbif.blogspot.com/2012/06/taxonomic-trees-in-postgresql.html
+** Managing local biological databases with the BioSQL module 
+ [2019-03-12 Tue 07:41]
+ https://biopython.org/wiki/BioSQL
+** BeautifulSoup: removing tags 
+ [2019-03-12 Tue 19:10]
+ https://kaijento.github.io/2017/03/30/beautifulsoup-removing-tags/
 * Notes
 ** [2006-07-09 Dim] C Tips
 

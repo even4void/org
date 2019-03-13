@@ -6,7 +6,7 @@
 #+HUGO_CUSTOM_FRONT_MATTER: type "tweet"
 #+AUTHOR:
 
-* Micro [206/206]                                                 
+* Micro [226/226]                                                 
 
 ** DONE Writing Hugo blog in Org
    CLOSED: [2018-10-27 Sat 18:24]
@@ -1979,6 +1979,185 @@ to my RSS reader.
 [[https://www.math3ma.com/blog/matrices-probability-graphs][Viewing Matrices & Probability as Graphs]]. With great illustrations. For those
 interested in catgeory theory, the other posts are worth a look too. See, e.g.
 this [[https://arxiv.org/pdf/1809.05923.pdf][booklet on arXiv]] (PDF, 50 pp.). =#maths=
+
+** DONE Exterminate Magit buffers
+   CLOSED: [2019-03-07 Thu 09:39]
+:PROPERTIES:
+:EXPORT_FILE_NAME: exterminate-magit-buffers
+:END:
+[[https://manuel-uberti.github.io/emacs/2018/02/17/magit-bury-buffer/][Exterminate Magit buffers]]: Quite useful tip if like me you happen to kill your
+Magit buffers by hand. =#emacs=
+** DONE Advent of Code in Lisp
+   CLOSED: [2019-03-07 Thu 18:07]
+:PROPERTIES:
+:EXPORT_FILE_NAME: advent-of-code-lisp
+:END:
+Nice. I spent some time checking Dimitri Fontaine's Github repo, in particular
+his [[https://github.com/dimitri/AdventOfCode][advent of code]] in Common Lisp. I am currently reading [[https://masteringpostgresql.com][his book]] on
+PostgreSQL, but I couldn't resist reading some Lisp code after lunch.
+
+** DONE The Expanse Season 1 ending
+   CLOSED: [2019-03-07 Thu 18:09]
+:PROPERTIES:
+:EXPORT_FILE_NAME: the-expanse-season-1
+:END:
+So it seems that we will be done with [[https://en.wikipedia.org/wiki/The_Expanse_(TV_series)][The Expanse]], Season 1, tonight.
+
+** DONE 7 Unix Commands Every Data Scientist Should Know
+   CLOSED: [2019-03-07 Thu 18:13]
+:PROPERTIES:
+:EXPORT_FILE_NAME: yet-another-unix-toolbet-for-data-scientist
+:END:
+[[http://neowaylabs.github.io/programming/unix-shell-for-data-scientists/][7 Unix Commands Every Data Scientist Should Know]]. I lost track of the number of
+blog posts I read where the title includes "un*x commands that (data) scientists
+should know." I expect that soon or later mastering deep learning techniques will
+be a mandatory skill as well. Anyway, this gentle tutorial is well tied up, so
+go read it if you want to refresh your memory.
+
+** DONE Macbook 12″
+   CLOSED: [2019-03-07 Thu 20:21]
+:PROPERTIES:
+:EXPORT_FILE_NAME: macbook-12
+:END:
+I'm in my third year with the [[https://en.wikipedia.org/wiki/MacBook_(2015–present)][12-inch Macbook]] (generously offered by SB). It is
+certainly the best laptop I got in 13 years. Sometimes I feel like I miss the
+tiny pulsing light (aka sleep indicator) that we used to have on older metallic
+aluminum body ones. Well, we have backlit keyboard now, even if it is like a
+butterfly keyboard ;-)
+
+** DONE Timing stats
+   CLOSED: [2019-03-07 Thu 20:24]
+:PROPERTIES:
+:EXPORT_FILE_NAME: timing-stats
+:END:
+Clearly, I'm not that active in the early afternoon. Either because of the lunch
+break or the half-life of my medication... Anyway, [[https://timingapp.com][Timing]] is the best time
+tracking app I've seen in a while.
+
+[[/img/2019-03-07-20-08-50.png]]
+
+** DONE Today's lunch
+   CLOSED: [2019-03-10 Sun 12:48]
+:PROPERTIES:
+:EXPORT_FILE_NAME: today-s-lunch-02
+:END:
+Today's lunch:
+
+[[/img/IMG_0598.jpg]]
+
+** DONE Random sampling on a d-sphere and d-ball
+   CLOSED: [2019-03-10 Sun 19:00]
+:PROPERTIES:
+:EXPORT_FILE_NAME: random-sampling-d-sphere
+:END:
+[[http://extremelearning.com.au/how-to-generate-uniformly-random-points-on-n-spheres-and-n-balls/][Generating Uniformly Random points on a d-sphere and d-ball]]. (via
+@Atabey_Kaygun)
+
+** DONE A chill intro to causal inference
+   CLOSED: [2019-03-10 Sun 19:03]
+:PROPERTIES:
+:EXPORT_FILE_NAME: intro-causal-inference
+:END:
+I forgot about [[https://osf.io][OSF]]. Here is a nice read: [[https://osf.io/mhqcb/][A chill intro to causal inference via
+propensity scores]]. Not only do we have a 16 page-long PDF, but also the
+accompagnying source files! (via [[https://twitter.com/george_berry/status/1104486971110555649][@george_berry]])
+
+** DONE Beginner's guide to Travis-CI for R
+   CLOSED: [2019-03-10 Sun 19:10]
+:PROPERTIES:
+:EXPORT_FILE_NAME: travis-ci-and-rstats
+:END:
+I wish I had read this [[https://juliasilge.com/blog/beginners-guide-to-travis/][nice post on Travis-CI]], by Julia Silge, before I struggle
+myself with Travis and R. Unrelated but also interesting post: [[https://juliasilge.com/blog/tensorflow-generation/][Tensorflow, Jane
+Austen, and Text Generation]]. =#rstats=
+
+#+begin_quote
+Understanding how text generation works with deep learning and TensorFlow has
+been very helpful for me as I wrap my brain around these techniques more
+broadly. And that’s good, because exactly how practical of a skill is this,
+right?! I mean, who needs to generate new text from an existing corpus in their
+day job?
+#+end_quote
+
+** DONE Marine sponges
+   CLOSED: [2019-03-10 Sun 19:16]
+:PROPERTIES:
+:EXPORT_FILE_NAME: marine-sponges
+:END:
+Lovely work by [[https://twitter.com/aschinchon/status/1104426818348765184][@aschinchon]]! There's more to see on his blog, e.g. [[https://fronkonstin.com/2019/02/01/mandalaxies/][Mandalaxies]].
+
+[[/img/2019-03-10-19-12-03.png]]
+
+** DONE Pragmatic Emacs
+   CLOSED: [2019-03-11 Mon 14:12]
+:PROPERTIES:
+:EXPORT_FILE_NAME: pragmatic-emacs
+:END:
+Sadly, there's not such a steady flow on [[http://pragmaticemacs.com][Pragmatic Emacs]]. =#emacs=
+
+** DONE Python and Emacs sort imports
+   CLOSED: [2019-03-11 Mon 19:38]
+:PROPERTIES:
+:EXPORT_FILE_NAME: python-emacs-sort-import
+:END:
+TIL. There's a nice option when you edit Python code under Emacs which consists in sorting automagically all =import= statement. In most cases, it works great, however there are some edge cases. E.g., it is common in Flask applications to have =import= defined after initializing the app itself, because of cicular imports. Hopefully, it is possible to override the default settings and to add a local directory variable, as recommended on Spacemacs website (=SPC f v d=). =#emacs=
+
+** DONE The value of owning more books than you can read
+   CLOSED: [2019-03-11 Mon 20:30]
+:PROPERTIES:
+:EXPORT_FILE_NAME: value-of-owning-more-books
+:END:
+[[https://t.co/SKZFqqbNKe][The value of owning more books than you can read]]. I have thousands of books in my home, many of which are more than 20 years old. From time to time it seems to me that's all I have left. I've read them all except the last ones I bought. However, I can understand what it's like to contemplate all that we still have to learn.
+
+** DONE Mathematical Recreations
+   CLOSED: [2019-03-12 Tue 18:25]
+:PROPERTIES:
+:EXPORT_FILE_NAME: mathematical-recreations
+:END:
+[[http://www.gutenberg.org/ebooks/26839][Mathematical Recreations and Essays]], by W. W. Rouse Ball. (Note that the PDF is nicely hyper-linked!)
+
+#+begin_quote
+Another common trick is to throw twenty cards on to a table in ten couples, and ask someone to select one couple. The cards are then taken up, and dealt out in a certain manner into four rows each containing five cards. If the rows which contain the given cards are indicated, the cards selected are known at once.
+#+end_quote
+
+** DONE Python split vs. partition
+   CLOSED: [2019-03-12 Tue 21:36]
+:PROPERTIES:
+:EXPORT_FILE_NAME: python-split-vs-partition
+:END:
+TIL Better to use =partition= rather than =split= when you want to convert a 'string' to a 'dict' based on the first occurence of a specific delimiter (as in =.split(..., 1)=). Note that unlike =split=, the delimiter is kept and you probably [[https://stackoverflow.com/a/21568360][don't want to keep it]]. =#python=
+
+** DONE Best take on imperative vs. functionnal approach
+   CLOSED: [2019-03-12 Tue 21:40]
+:PROPERTIES:
+:EXPORT_FILE_NAME: imperative-or-functional
+:END:
+Here is the best take I found on [[http://forum.ulisp.com/t/what-are-the-advantages-disadvantages-of-ulisp-vs-c-c/313/3][imperative vs. functionnal approach using Lisp]]. =#lisp=
+
+** DONE MacJournal
+   CLOSED: [2019-03-13 Wed 08:14]
+:PROPERTIES:
+:EXPORT_FILE_NAME: macjournal
+:END:
+[[https://danschimpf.com][MacJournal 7]] is now free. I will stay by Org for managing my text files, but
+it's good to know anyway. (via [[https://micro.baty.net/2019/03/12/it-seems-that.html][Jack Baty]])
+
+** DONE Yeah, like it's rock'n roll
+   CLOSED: [2019-03-13 Wed 21:43]
+:PROPERTIES:
+:EXPORT_FILE_NAME: sigaps-rule-them-all
+:END:
+Exactement, comme dans une épicerie. Et il faut voir ce que cela donne avec le
+bétail dedans... =#fr=
+
+[[/img/2019-03-13-21-37-22.png]]
+
+** DONE Great time with HN
+   CLOSED: [2019-03-13 Wed 21:45]
+:PROPERTIES:
+:EXPORT_FILE_NAME: hn-news
+:END:
+HN on the spotlight: [[https://twitter.com/newsycombinator/status/1105815934525194242][Spotify to Apple]] and [[https://twitter.com/newsycombinator/status/1105861240591736832][Google and DuckDuckGo]].
 
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
