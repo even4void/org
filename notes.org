@@ -657,6 +657,15 @@ http://www.statsref.com/StatsRefSample.pdf
 ** BeautifulSoup: removing tags 
  [2019-03-12 Tue 19:10]
  https://kaijento.github.io/2017/03/30/beautifulsoup-removing-tags/
+** Skip List vs. Binary Search Tree 
+ [2019-03-15 Fri 10:10]
+ https://stackoverflow.com/questions/256511/skip-list-vs-binary-search-tree
+** Org export html options 
+ [2019-03-16 Sat 09:35]
+ https://orgmode.org/manual/Export-settings.html
+** Old good Emacs tutor 
+ [2019-03-18 Mon 11:06]
+ https://www.tuteurs.ens.fr/unix/editeurs/emacs.html
 * Notes
 ** [2006-07-09 Dim] C Tips
 

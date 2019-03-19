@@ -31,7 +31,7 @@
 ** STAR Read and review cite:kun-2018-progr-introd-mathem            :review: 
 ** TODO Review the state of the art and bindings for Apache Arrow
 ** TODO Cleanup Keychain and passwords
-** TODO Benchmark =data.table::fread=, sparklyr, and lazy loading of dataframe
+** TODO Benchmark =data.table::fread=, =sparklyr=, and lazy loading of data frame
 ** TODO Racket statistics (tutorial)
 ** TODO Jupyter book pysml
 
@@ -55,7 +55,9 @@
 ** DONE Install Python [[http://etetoolkit.org/docs/2.3/tutorial/tutorial_ncbitaxonomy.html][ete toolkit]]                                  :bioinfo:
    CLOSED: [2019-03-12 Tue 09:17]
 ** TODO Study GBIF project and databases                            :bioinfo:
-* Projects [2/7]
+** TODO Read cite:buffalo-2015-bioin-data-skill                     :bioinfo: 
+** TODO Read cite:smith-2012-essen-statis
+* Projects [3/12]
 ** DONE Install and test samtools, bedtools, bowtie2, MuMmer        :bioinfo:
    CLOSED: [2019-02-19 Tue 16:12]
 ** TODO Read [[/Users/chl/Documents/Papers/yang-2006-comput-molec-evolut.pdf][yang-2006-comput-molec-evolut]], Part II                 :bioinfo:
@@ -68,4 +70,6 @@
 ** TODO Mac app for redis
 ** TODO Mac app for apache Drill
 ** TODO Stata dct to psql converter
-** TODO Download Mycobank data                                      :bioinfo:
+** DONE Download Mycobank data                                      :bioinfo:
+   CLOSED: [2019-03-13 Wed 11:11]
+** TODO Workshop RNASeq, e.g. [[https://www.bioconductor.org/help/course-materials/2011/RNASeqChIPSeq/][Bioconductor]]                          :bioinfo:

@@ -5,14 +5,15 @@
 ***** Reading about "Phylogenetic networks"
     <2019-02-18 Mon 11:16> 
 [[https://en.wikipedia.org/wiki/Phylogenetic_network][Wikipedia]]
-***** TODO Fetch and archive bib entries [2/6]
-    <2019-02-18 Mon 12:34>
+***** DONE Fetch and archive bib entries [6/6]
+      CLOSED: [2019-03-15 Fri 12:01]
+
 - [X] [[http://www.splitstree.org][SplitsTree4]], [[/Users/chl/Documents/Papers/huson-2006-applic-phylog.pdf][huson-2006-applic-phylog]], [[/Users/chl/Documents/Papers/huson-2011-survey-combin.pdf][huson-2011-survey-combin]]
-- [ ] Arenas M, Valiente G, Posada D (2008). "Characterization of reticulate networks based on the coalescent with recombination". Mol. Biol. Evol. 25 (12): 2517–20.
-- [ ] Schliep, Klaus; Potts, Alastair J.; Morrison, David A.; Grimm, Guido W.; Fitzjohn, Richard (2017). "Intertwining phylogenetic trees and networks". Methods in Ecology and Evolution. 8 (10): 1212–1220.
-- [ ] Arenas, M; Patricio, M; Posada, D; Valiente, G (2010) Characterization of phylogenetic networks with NetTest. BMC Bioinformatics 11: 268
+- [X] Arenas M, Valiente G, Posada D (2008). "Characterization of reticulate networks based on the coalescent with recombination". Mol. Biol. Evol. 25 (12): 2517–20.
+- [X] Schliep, Klaus; Potts, Alastair J.; Morrison, David A.; Grimm, Guido W.; Fitzjohn, Richard (2017). "Intertwining phylogenetic trees and networks". Methods in Ecology and Evolution. 8 (10): 1212–1220.
+- [X] Arenas, M; Patricio, M; Posada, D; Valiente, G (2010) Characterization of phylogenetic networks with NetTest. BMC Bioinformatics 11: 268
 - [X] Package R [[https://cran.r-project.org/web/packages/phangorn/][phangorn]]
-- [ ] lowest common ancestor (LCA) algorithm? Huson, H.; A. Auch; Ji Qi; S. C. Schuster (2007). "MEGAN Analysis of Metagenomic Data". Genome Research. 17 (3): 377–386.
+- [X] lowest common ancestor (LCA) algorithm? Huson, H.; A. Auch; Ji Qi; S. C. Schuster (2007). "MEGAN Analysis of Metagenomic Data". Genome Research. 17 (3): 377–386.
 **** 2019-02-19 Tuesday
 ***** Reading about "Phylogeny using R"
     <2019-02-19 Tue 10:35>
@@ -43,9 +44,11 @@ Multi Fasta to PHYLIP converter, [[https://cme.h-its.org/exelixis/web/software/r
 - www search "likelihood-based phylogenetic tree inference"
 - [[http://blog.geneious.com/post/84886619339/which-tree-builder-should-i-use-making-the-most][Which Tree Builder Should I Use?]]
 - [[https://en.wikipedia.org/wiki/Low-density_parity-check_code][Low-density parity-check code]]
-- TODO Read cite:izquierdo-carrasco-2011-algor 
-- TODO Check [[http://evolution.genetics.washington.edu/phylip][PHYLIP]] tools
-- TODO Cleanup [[~/cwd/phylo/tmp/]]
+
+TODO
+- [ ] Read cite:izquierdo-carrasco-2011-algor 
+- [ ] Check [[http://evolution.genetics.washington.edu/phylip][PHYLIP]] tools
+- [X] Cleanup [[~/cwd/phylo/tmp/]]
 **** 2019-02-27 Wednesday
 ***** Fungi website 
     <2019-02-27 Wed 10:41>
@@ -102,8 +105,30 @@ Retrieving and parsing 'Sordariales' data from MB database
  Refactor Python code and start testing on larger download sets
 ***** Fungi website (dev) 
     <2019-03-13 Wed 13:51>
-Update data structure to account for new _taxa db 
-
+Update data structure to account for new _taxa db
+**** 2019-03-14 Thursday
+***** Fungi website (dev)
+    <2019-03-14 Thu 09:07>
+Update forms and templates to reflect recent changes in DB structure
+**** 2019-03-15 Friday
+***** Readings 
+    <2019-03-15 Fri 11:06>
+cite:buffalo-2015-bioin-data-skill and papers on phylogenetic reconstruction and phylogenetic networks
+**** 2019-03-18 Monday
+***** Add genome to local server 
+    <2019-03-18 Mon 09:47>
+Use =makeblastdb= instead of =formatdb= with =Chaetosphaeriaceae-sp-FL1790.fasta= + add lalanne to sudoers
+***** Readings
+    <2019-03-18 Mon 10:37>
+cite:buffalo-2015-bioin-data-skill
+**** 2019-03-19 Tuesday
+***** Reading 
+    <2019-03-19 Tue 09:37>
+cite:bruneau-2018-clust-packag  
+[[https://github.com/pycogent/pycogent][PyCogent]], [[https://en.wikipedia.org/wiki/Sequence_clustering][Sequence clustering]], [[http://weizhongli-lab.org/cd-hit/][cd-hit]] (installed locally [[~/git/sandbox/cdhit]]), blastclust which is now [[https://github.com/soedinglab/MMseqs2][MMseq2s]] (installed via Homebrew).
+***** Statistical analysis of biomasses (Valérie) 
+    <2019-03-19 Tue 11:08>
+Recoding XLS sheet ([[~/cwd/biomasses]])  
 * Meetings
 ** MEET with J.-M. Dauget                                           :MEETING:
   :LOGBOOK:
@@ -190,3 +215,37 @@ Projet Fungi website
 - crédits
 - locaux
 - projet Sordariales (séquençagae + site web)
+** MEET with P. Silar                                               :MEETING:
+   :LOGBOOK:
+   CLOCK: [2019-03-14 Thu 10:58]--[2019-03-14 Thu 11:10] =>  0:12
+   :END:
+<2019-03-14 Thu>
+Formation RNASeq de type TP pour 3-4 personnes, sans background statistique, avec outils type Galaxy.
+Contenu : assemblage, mapping
+Durée : 3-4 séances d'1h30
+** MEET with J.-M. Dauget                                           :MEETING:
+   :LOGBOOK:
+   CLOCK: [2019-03-15 Fri 10:02]--[2019-03-15 Fri 10:48] =>  0:46
+   :END:
+<2019-03-15 Fri>
+Présentation du dépôt de nouveau génome sur le serveur/site web
+Scripts de sauvegarde journalière et hebdomadaire
+** MEET with P. Silar                                               :MEETING:
+   :LOGBOOK:
+   CLOCK: [2019-03-18 Mon 14:25]--[2019-03-18 Mon 15:00] =>  0:35
+   :END:
+<2019-03-18 Mon>
+Test de classification combiné à phylogénie sur les 158 séquences ITS
+
++--+            +-----------+            +--+
+|  |------------|           |------------|  |
++--+            +-----------+            +--+
+^^^^^^        ^^^^^^^^^^^^^^^^^        ^^^^^^   
+
+Trouver séquence start/stop à partir de "podospora setosa debuchi" sur NCBI (nucl)
+
+1. réaliser classification automatique sur l'ensemble de la séquence (distance de Hamming, bootstrap ?)
+2. construire arbre phylogénétique sur les 3 parties conservées, en débordant de 2 à 10 nucléotides de chaque côté
+3. raffiner arbre phylogénétique avec les 2 parties variables (aux bords stricts)
+
+Voir article de [[http://www.genetics.org/content/genetics/206/2/717.full.pdf][Dujon 2017]] (cf. fig. 6)

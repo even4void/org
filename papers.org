@@ -383,3 +383,19 @@ Two central themes:
 - functorial semantics: C → D ≈ interpretation of C within D; syntax (grammar in NLP) refers to rules for putting things together and semantics (meaning) refers to the meaning of those things.
 
 - compositionality
+* [[/Users/chl/Documents/Papers/schliep-2017-inter.pdf][schliep-2017-inter]] - Intertwining phylogenetic trees and networks
+ :PROPERTIES:
+ :Custom_ID: schliep-2017-inter
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/schliep-2017-inter.pdf
+ :END:
+Bifurcating tree hypothesis ([[https://academic.oup.com/sysbio/article/62/3/479/1648670][Mindell 2013]]): the "tree of life" metaphor works well as a strictly bifurcating tree in the absence of reticulate evolution, which results from hybridization, lineage merger, and lateral gene transfer. If this does not hold, phylogenetic networks should be used instead.
+
+[[https://www.phangorn.org][Phangorn]] R package (+ [[https://cran.r-project.org/web/packages/ape/index.html][ape]]): "support value" (nonparametric bootstrap support: Felsenstein 1985; Bayesian posterior probabilities: Rannala & Yang 1996; internode certainty: Salichos, Sta- matakis & Rokas 2014); see also Draper, Hedenäs & Grimm 2007.
+* [[/Users/chl/Documents/Papers/buffalo-2015-bioin-data-skill.pdf][buffalo-2015-bioin-data-skill]] - Bioinformatics data skills: reproducible and robust research with open source tools
+ :PROPERTIES:
+ :Custom_ID: buffalo-2015-bioin-data-skill
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/buffalo-2015-bioin-data-skill.pdf
+ :END:
+
+[[https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?][Sequence Read Archive]]
+forensic bioinformatics ([[https://projecteuclid.org/euclid.aoas/1267453942][Baggerly and Coombes 2009]])
