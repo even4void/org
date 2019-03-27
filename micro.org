@@ -6,7 +6,7 @@
 #+HUGO_CUSTOM_FRONT_MATTER: type "tweet"
 #+AUTHOR:
 
-* Micro [245/245]                                                 
+* Micro [272/272]                                                 
 
 ** DONE Writing Hugo blog in Org
    CLOSED: [2018-10-27 Sat 18:24]
@@ -2344,6 +2344,272 @@ Little flowers to go with today's sunshine:
 I have been seriously thinking of subscribing to [[https://nordvpn.com][NordVPN]] during the last few
 months. On further inspection, there was a good deal for the 3-year subscription
 plan. Now, it's done.
+
+** DONE Today's lunch
+   CLOSED: [2019-03-19 Tue 15:33]
+:PROPERTIES:
+:EXPORT_FILE_NAME: lunch-for-today
+:END:
+A bit late (3pm), but delightful:
+
+[[/img/IMG_0607.jpg]]
+
+** DONE Elsevier on the road to OA
+   CLOSED: [2019-03-19 Tue 18:33]
+:PROPERTIES:
+:EXPORT_FILE_NAME: elsevier-oa
+:END:
+Lovely.
+
+[[/img/IMG_0608.jpeg]]
+
+** DONE Slate API
+   CLOSED: [2019-03-19 Tue 21:20]
+:PROPERTIES:
+:EXPORT_FILE_NAME: slate-api-doc
+:END:
+[[https://github.com/lord/slate][Slate]] "helps you create beautiful, intelligent, responsive API documentation." It
+reminds me of the whole stack of [[https://rtomayko.github.io/rocco/rocco.html][racco]] (probably dead), [[http://ashkenas.com/docco/][docco]] (sill live) & Co.
+Slate is used in [[https://kimh.github.io/clojure-by-example/#about][Clojure by Example]], a site that offers an original and very
+instructive approach to learning the basics of the Clojure language. 
+** DONE Performance of Error Estimators for Classification
+   CLOSED: [2019-03-19 Tue 21:25]
+:PROPERTIES:
+:EXPORT_FILE_NAME: performance-of-error-estimators
+:END:
+[[https://pdfs.semanticscholar.org/2069/96c188d29db75a3f81a20aa67b76effe631f.pdf][Performance of Error Estimators for Classification]] (PDF). Always good to be
+remembered of how important error estimation is in statistical modeling,
+especially with small samples. Remember [[http://www.fharrell.com/post/stat-ml/][Frank Harrell]]'s post?
+
+** DONE Occupied ending
+   CLOSED: [2019-03-19 Tue 21:31]
+:PROPERTIES:
+:EXPORT_FILE_NAME: occupied-3ep-left
+:END:
+So I only have three episodes left before I finish my last TV series, [[https://itunes.apple.com/fr/tv-season/occupied-lint%C3%A9grale-des-saisons-1-2-vost/id1339687553][Occupied]].
+
+** DONE bioawk
+   CLOSED: [2019-03-21 Thu 14:26]
+:PROPERTIES:
+:EXPORT_FILE_NAME: bioawk
+:END:
+TIL There are several flavours of =awk= lurking around on the internet. Here is
+[[https://github.com/lh3/bioawk][bioawk]], a bioinformatics-aware =awk= program.
+** DONE Sudoku solver in Scheme
+   CLOSED: [2019-03-21 Thu 14:29]
+:PROPERTIES:
+:EXPORT_FILE_NAME: sudoku-scheme
+:END:
+[[https://codereview.stackexchange.com/questions/151749/sudoku-solver-in-racket][Sudoku solver]] written in more or less 30 lines of Racket code. =#scheme=
+** DONE Moving to a World Beyond "p < 0.05"
+   CLOSED: [2019-03-21 Thu 14:32]
+:PROPERTIES:
+:EXPORT_FILE_NAME: the-earth-is-round
+:END:
+[[https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913][Moving to a World Beyond "p < 0.05"]]. Or maybe the earth isn't just round. (via [[https://twitter.com/kaz_yos/status/1108667061448962048][@kaz_yos]])
+
+** DONE Foundations of Machine Learning
+   CLOSED: [2019-03-21 Thu 14:34]
+:PROPERTIES:
+:EXPORT_FILE_NAME: foundations-machine-learning
+:END:
+[[https://cs.nyu.edu/~mohri/mlbook/][Foundations of Machine Learning]]. Never heard of it before I spotted [[https://twitter.com/gappy3000/status/1108350497000435714][@gappy3000]] tweet.
+
+** DONE Backup
+   CLOSED: [2019-03-21 Thu 21:24]
+:PROPERTIES:
+:EXPORT_FILE_NAME: backup-arq
+:END:
+I was just reading some of [[https://rakhim.org][Rackhim]]'s posts. He's the author of the recent [[https://emacscast.org/about/][EmacsCast]].
+The one on [[https://rakhim.org/2016/11/backup/][backups]] is quite interesting. I use [[https://www.arqbackup.com/][Arq]] (Thx [[https://twitter.com/fonnesbeck][@fonnesbeck]]!) daily
+since 5 years or so and I have been happy with that only one solution to backup
+my personal and work-related data. I no longer use cloud fronts like Dropbox,
+except for already anonymised stuff I don't get care enough to bother with privacy.
+
+** DONE What is Data Science after all
+   CLOSED: [2019-03-21 Thu 21:32]
+:PROPERTIES:
+:EXPORT_FILE_NAME: what-is-data-science
+:END:
+What is Data Science after all? I never liked this term, and I consider myself
+as a statistician, or better a data craftsman, because I mostly spend my time
+dealing with data after all. Stephanie C. Hicks & Roger D. Peng wrote a nice
+article, [[https://arxiv.org/abs/1903.07639v1][Elements and Principles of Data Analysis]], which I believe provides
+quite an honest account of DS-related stuff:
+
+#+begin_quote
+Data science is the science and design of (1) actively creating a question to
+inves- tigate a hypothesis with data, (2) connecting that question with the
+collection of appro- priate data and the application of appropriate methods,
+algorithms, computational tools or languages in a data analysis, and (3)
+communicating and making decisions based on new or already established knowledge
+derived from the data and data analysis.
+#+end_quote
+
+** DONE Knuth on mathematical writing
+   CLOSED: [2019-03-21 Thu 21:34]
+:PROPERTIES:
+:EXPORT_FILE_NAME: mathematical-writing
+:END:
+Too late to start re-reading Don Knuth's excellent book on
+[[http://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf][Mathematical Writing]] (PDF), but I will definitively do it in a few days.
+
+** DONE On the simplicity of working with a Terminal
+   CLOSED: [2019-03-21 Thu 21:42]
+:PROPERTIES:
+:EXPORT_FILE_NAME: mu-and-email
+:END:
+On the simplicity of working with a Terminal: processing 44K of mails in less
+than 2 seconds.
+
+[[/img/2019-03-21-21-39-30.png]]
+
+** DONE Charlatan and wakefield packages
+   CLOSED: [2019-03-22 Fri 10:11]
+:PROPERTIES:
+:EXPORT_FILE_NAME: wakefield-package
+:END:
+Interesting to know: The [[https://github.com/trinker/wakefield][wakefield]] R packages allows to quickly generate random
+data sets. I learned about that while reading David Gohel's [[https://davidgohel.github.io/budapestbi2017/r4bi/slides.html#1][Using R as a BI
+tool]]. =#rstats= 
+
+** DONE An Introduction to Applied Bioinformatics
+   CLOSED: [2019-03-22 Fri 10:26]
+:PROPERTIES:
+:EXPORT_FILE_NAME: intro-applied-bioinformatics
+:END:
+[[http://readiab.org][An Introduction to Applied Bioinformatics]]: An interesting online textbook that I
+found while browsing the [[https://github.com/biocore/scikit-bio][scikit-bio]]
+Python package on Github. =#python=
+** DONE Scientists rise up against statistical significance
+   CLOSED: [2019-03-22 Fri 12:20]
+:PROPERTIES:
+:EXPORT_FILE_NAME: scientists-rise-up-against-statistical-significance
+:END:
+[[https://www.nature.com/articles/d41586-019-00857-9][Scientists rise up against statistical significance]]. Together with 
+[[https://www.tandfonline.com/doi/full/10.1080/00031305.2019.1583913][Moving to a World Beyond "p < 0.05"]], it is probably time to rethink statistical
+significance and embrace the world of uncertainty instead. As Stephen Seen [[/post/dicing-with-death/][once
+said]]: 
+
+#+begin_quote
+We can predict nothing with certainty but we can predict how uncertain our
+predictions will be, on average that is. Statistics is the science that tells us
+how.
+#+end_quote
+
+** DONE Sedgewick's algorithms
+   CLOSED: [2019-03-25 Mon 07:19]
+:PROPERTIES:
+:EXPORT_FILE_NAME: sedgewick-algorithms
+:END:
+Here is the [[https://t.co/U7s1UbkkiF][fourth edition]] of /Algorithms/, by Sedgewick & Wayne, a definitive book to have after
+Knuth's monumental work and the Cormen et al. (via
+[[https://twitter.com/TechSparx/status/1109530322004307968][@TechSparx]])
+** DONE Beautiful dataviz exhibit
+   CLOSED: [2019-03-25 Mon 20:24]
+:PROPERTIES:
+:EXPORT_FILE_NAME: dataviz-infographics
+:END:
+What a [[http://janezhang.ca/posts/designto-2019/][beautiful artistic work]] at the crossroads between dataviz and
+infographics, by
+[[https://twitter.com/janezhgw/status/1108898417898676224][@janezhgw]].
+=#dataviz=
+** DONE Functional programming explained for the pragmatic programmer
+   CLOSED: [2019-03-25 Mon 20:29]
+:PROPERTIES:
+:EXPORT_FILE_NAME: functional-programming-for-the-pragmatic
+:END:
+[[https://codurance.com/2018/08/09/the-functional-style-part-1/][Functional programming explained for the pragmatic programmer]]. Nice take. Maybe
+it would have been easier to focus on C versus Common Lisp before addressing the
+case of hybrid languages. (via HN)
+** DONE Lost in translation
+   CLOSED: [2019-03-25 Mon 20:34]
+:PROPERTIES:
+:EXPORT_FILE_NAME: lost-in-translation
+:END:
+Even if I have only increased the length of my working days by 2 hours in 1
+month (currently 9am to 3pm), I definitely stay out of work for a good 2 or 3
+hours once I get home. I guess I just have to live with that for the moment.
+It's probably time to finish [[https://itunes.apple.com/fr/tv-season/occupied-lint%C3%A9grale-des-saisons-1-2-vost/id1339687553][Occupied]] before the beer finishes me off. =#self=
+
+** DONE Scott's World*
+   CLOSED: [2019-03-26 Tue 08:25]
+:PROPERTIES:
+:EXPORT_FILE_NAME: scott-world
+:END:
+[[http://www.complexity-explorables.org/explorables/scotts-world/][Scott's World*]], and more animations to see on [[http://www.complexity-explorables.org][Complexity Explorables]].
+
+** DONE Hugo slim theme
+   CLOSED: [2019-03-26 Tue 18:36]
+:PROPERTIES:
+:EXPORT_FILE_NAME: hugo-slim-theme
+:END:
+I like minimal theme, hence the Hugo them I choose last year. However, I just
+found an even more minimalist theme:
+[[https://github.com/oblitum/hugo-theme-slim][slim]].
+** DONE Mojave 10.14.4
+   CLOSED: [2019-03-26 Tue 21:09]
+:PROPERTIES:
+:EXPORT_FILE_NAME: mojave-upgrade
+:END:
+Got a [[https://support.apple.com/kb/DL1994?locale=fr_FR][little upgrade]] under the hood in the morning:
+
+[[/img/2019-03-26-21-00-42.png]]
+
+Nothing really new, though, except perhaps the "more editorial highlights on a
+single page in the Browse tab" in iTunes.
+
+** DONE Which TV show to watch next
+   CLOSED: [2019-03-26 Tue 21:14]
+:PROPERTIES:
+:EXPORT_FILE_NAME: which-tv-show-to-watch
+:END:
+Well, I'm done for good with [[https://itunes.apple.com/fr/tv-season/occupied-lint%C3%A9grale-des-saisons-1-2-vost/id1339687553][Occupied]], my list of TV series is out of stock, and
+I have no idea what to look for. I guess I'm good at reading books and watching
+Minecraft gamers on Twitch. 
+** DONE Social cooling
+   CLOSED: [2019-03-27 Wed 11:22]
+:PROPERTIES:
+:EXPORT_FILE_NAME: social-cooling
+:END:
+Les données conduisent au [[https://socialcooling.fr][refroidissement social]]. =#fr=
+
+** DONE Qwant search engine
+   CLOSED: [2019-03-27 Wed 13:22]
+:PROPERTIES:
+:EXPORT_FILE_NAME: qwant-search-engine
+:END:
+Never heard of [[https://www.qwant.com][Qwant]] before, but it looks like a good alternative to Google or Bing.
+
+** DONE Still no idea
+   CLOSED: [2019-03-27 Wed 21:17]
+:PROPERTIES:
+:EXPORT_FILE_NAME: still-no-idea
+:END:
+Still no idea which TV series to watch, nor what to look for in this evening.
+So I'll keep posting (not so) random links that have been hanging around on my
+iPhone for weeks:
+
+- [[https://www.economodel.com/time-series-analysis][Time Series Analysis]], by Kevin Kotzé
+- [[https://github.com/vsbuffalo/devnotes/wiki/Feather,-CSV,-or-Rdata][Feather, CSV, or Rdata]], by Vince Buffalo
+- [[https://pandas-dev.github.io/pandas2/][pandas 2.0 Design Documents]], by the Pandas team
+- [[https://newonlinecourses.science.psu.edu/stat510/node/76/][Intervention Analysis]], from the PennState Eberly College of Science
+- [[http://stevenrosenberg.net/blog/programming/lisp/][If not SICP, then what? Maybe HTDP?]], by Steven Rosenberg
+- [[https://github.com/rigetti/magicl/blob/master/README.md][Matrix Algebra proGrams In Common Lisp]], by Rigetti Computing
+- [[https://blog.davisvaughan.com/2019/03/02/now-you-c-me/][Now You C Me]], by Davis Vaughan
+- [[http://www.johnborwick.com/2019/02/26/codex-seraphinianus.html][Codex Seraphinianus]], by John Borwick
+- [[https://stackoverflow.com/a/38536279][Reading large CSV files in R]], on SO
+- [[https://github.com/dimitri/AdventOfCode?files=1][Advent of Code]] in Lisp, by Dimitri Fontaine
+- Marijn Haverbeke's [[http://marijnhaverbeke.nl][homepage]]
+- [[http://biostat.mc.vanderbilt.edu/wiki/pub/Main/CourseBios312/covariates.pdf][Modern Regression Analysis]] (PDF), by James C. Slaughter
+- [[https://onlinelibrary.wiley.com/doi/full/10.1002/sim.5991][Variance reduction in randomised trials by inverse probability weighting using
+  the propensity score]], by Williamson et al.
+- David Gohel's [[https://github.com/davidgohel][Github account]]
+- [[https://discourse.datamethods.org/t/should-we-ignore-covariate-imbalance-and-stop-presenting-a-stratified-table-one-for-randomized-trials/547][Should we ignore covariate imbalance and stop presenting a stratified ‘table
+  one’ for randomized trials?]], on Frank Harrell's Discourse
+- A [[https://github.com/cggh/scikit-allel][Python package]] for exploring and analysing genetic variation data
+- [[http://donw.io/post/github-comments/][Replacing Disqus with Github Comments]], by Don Williamson
+
 
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:

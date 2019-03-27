@@ -128,7 +128,55 @@ cite:bruneau-2018-clust-packag
 [[https://github.com/pycogent/pycogent][PyCogent]], [[https://en.wikipedia.org/wiki/Sequence_clustering][Sequence clustering]], [[http://weizhongli-lab.org/cd-hit/][cd-hit]] (installed locally [[~/git/sandbox/cdhit]]), blastclust which is now [[https://github.com/soedinglab/MMseqs2][MMseq2s]] (installed via Homebrew).
 ***** Statistical analysis of biomasses (Valérie) 
     <2019-03-19 Tue 11:08>
-Recoding XLS sheet ([[~/cwd/biomasses]])  
+Recoding XLS sheet ([[~/cwd/biomasses]])
+**** 2019-03-20 Wednesday
+***** Figures biomasses 
+    <2019-03-20 Wed 10:08>
+[[~/cwd/biomasses/main.r]]
+Sent to Valérie Cc Philippe  
+***** Sequence clustering 
+    <2019-03-20 Wed 11:14>
+cite:steinegger-2017-mmseq
+cite:steinegger-2018-clust
+Check results from [[https://github.com/soedinglab/mmseqs2/wiki][mmseq]] ([[~/cwd/class-its/mmseqs-results/clusterRes_cluster.tsv]]) against MAFFT and Jalview
+
+#+begin_src shell 
+mmseqs easy-cluster sordariales-its-sample.fa clusterRes tmp  
+#+end_src
+
+DONE Compare to CD-HIT
+See also [[https://en.wikipedia.org/wiki/Sequence_alignment][sequence alignment]]
+**** 2019-03-21 Thursday
+***** Readings
+    <2019-03-21 Thu 09:55>
+cite:buffalo-2015-bioin-data-skill
+
+**** 2019-03-22 Friday
+***** Sequence clustering (con't)
+    <2019-03-22 Fri 09:05>
+Use of mafft and cd-hit to reproduce online web results
+Note that cd-hit gives more interesting results apparently but the only parameter we can really control is the sequence identity threshold.
+After reexamining the results of mafft I wonder why the sequence does not start at the 18S? Is this because the 18S and 28S are incomplete in the ref sequence from Debuchi, even if the sequence itself is longer than the one I have?
+***** Check BLAST databases 
+    <2019-03-22 Fri 10:20>
+[[https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download][Blast software and Database]]
+What would it cost to create a web server?
+**** 2019-03-25 Monday
+***** Clustering of Chaetosphaeriales 
+    <2019-03-25 Mon 10:23>
+Clustering with CD-HIT of a mix of Chaetosphaeriales and Sordariales
+***** Python code for ITS clipping
+    <2019-03-25 Mon 13:08>
+Implement fuzzy matching to locate begin/end primers on ITS sequences.
+**** 2019-03-26 Tuesday
+***** Maintenance mode
+    <2019-03-26 Tue 13:10>
+Upgrade to Mojave 10.4.4 + Xcode
+**** 2019-03-27 Wednesday
+***** Readings
+    <2019-03-27 Wed 09:48>
+Mutation models, Markov chains and stochastic process in phylogenetic tree inference
+
 * Meetings
 ** MEET with J.-M. Dauget                                           :MEETING:
   :LOGBOOK:
@@ -249,3 +297,26 @@ Trouver séquence start/stop à partir de "podospora setosa debuchi" sur NCBI (n
 3. raffiner arbre phylogénétique avec les 2 parties variables (aux bords stricts)
 
 Voir article de [[http://www.genetics.org/content/genetics/206/2/717.full.pdf][Dujon 2017]] (cf. fig. 6)
+** MEET with P. Silar & J.-M. Dauget                                :MEETING:
+   :LOGBOOK:
+   CLOCK: [2019-03-25 Mon 10:00]--[2019-03-25 Mon 10:20] =>  0:20
+   :END:
+<2019-03-25 Mon>
+- clip des ITS (begin: AGGATCA)
+- vérifier synonyme (séquence identique)
+- éliminer si 25 % ITS manquant
+- clustering Chaetosphaeriales + Sordariales (hypothèse: Chaetosphaeriales est un ordre ajouté)
+** MEET with F. Leclerc & A. Olivier                                :MEETING:
+   :LOGBOOK:
+   CLOCK: [2019-03-26 Tue 11:00]--[2019-03-26 Tue 11:50] =>  0:50
+   :END:
+<2019-03-26 Tue>
+Présentation du projet DREAMS et des travaux en cours (incluant stagiaire 5 semaines).
+Visite de la plateforme de recueil des données et présentation des scripts de traitements de données (ImageJ + Python 2).
+Discussion avec Eric Herbert des scripts Python (migration vers Python 3 possible si MAJ des dépendances networkx).
+** MEET with P. Silar                                               :MEETING:
+   :LOGBOOK:
+   CLOCK: [2019-03-26 Tue 11:55]--[2019-03-26 Tue 12:05] =>  0:10
+   :END:
+<2019-03-26 Tue>
+Discussion du problème de clipping pour les données chaetosphaeriales. Solution = réaliser un alignement multiple dans un premier temps, puis clipper les séquences trop longues lorsque c'est possible.

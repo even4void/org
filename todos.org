@@ -1,4 +1,4 @@
-* Tasks [9/43]
+* Tasks [12/47]
 ** TODO Read and review [[file:~/Documents/Papers/objc/Advanced-Swift-Nov-2017.pdf][Advanced Swift]]                               :review:
 ** TODO Survey Weights: A Step-by-Step Guide to Calculation          :review:
 ** TODO Read and review cite:peters-2017-elemen-causal-infer         :review:
@@ -16,7 +16,8 @@
 
 ** DONE Cleanup todos from projects
    CLOSED: [2019-02-19 Tue 09:27]
-** TODO Add epub's to BibTeX file 
+** CANC Add epub's to BibTeX file 
+   CLOSED: [2019-03-20 Wed 08:12]
 ** CANC Setup Gmail with catchup univ-paris-diderot.fr                 :work:
    CLOSED: [2019-02-26 Tue 09:43]
 ** DONE Setup working lab diary                                        :work:
@@ -33,7 +34,8 @@
 ** TODO Cleanup Keychain and passwords
 ** TODO Benchmark =data.table::fread=, =sparklyr=, and lazy loading of data frame
 ** TODO Racket statistics (tutorial)
-** TODO Jupyter book pysml
+** CANC Jupyter book pysml
+   CLOSED: [2019-03-20 Wed 14:46]
 
 ** TODO Blog post "Postico App"                                        :blog:
 ** TODO Racket & apache drill/parquet
@@ -50,13 +52,17 @@
 ** TODO Post Wizard Mac                                                :blog:
 ** TODO Post Mata Book                                                 :blog:
 ** TODO Post Texpad                                                    :blog:
-** TODO Post book Pragmatic functional anthology
-                    :blog:
+** DONE Post book Pragmatic functional anthology                       :blog:
+   CLOSED: [2019-03-10 Sun 21:11]                    
 ** DONE Install Python [[http://etetoolkit.org/docs/2.3/tutorial/tutorial_ncbitaxonomy.html][ete toolkit]]                                  :bioinfo:
    CLOSED: [2019-03-12 Tue 09:17]
 ** TODO Study GBIF project and databases                            :bioinfo:
-** TODO Read cite:buffalo-2015-bioin-data-skill                     :bioinfo: 
+** STAR Read cite:buffalo-2015-bioin-data-skill                     :bioinfo: 
 ** TODO Read cite:smith-2012-essen-statis
+** TODO [[http://biocluster.ucr.edu/~rkaundal/workshops/R_mar2016/RNAseq.html][NGS sequence analysis with R / Bioconductor: RNA-Seq workflow]]
+** TODO Racket smith-waterman algorithm
+** TODO Racket [[https://genome.sph.umich.edu/wiki/SAM#What_is_a_CIGAR.3F][CIGAR]] coding
+** TODO Read [[https://github.com/gigasquid/speech-acts-classifier][speech-acts-classifier]]
 * Projects [3/12]
 ** DONE Install and test samtools, bedtools, bowtie2, MuMmer        :bioinfo:
    CLOSED: [2019-02-19 Tue 16:12]
@@ -68,8 +74,9 @@
    CLOSED: [2019-03-05 Tue 12:43]
 ** TODO Drawing phylogenetic tree with D3.js
 ** TODO Mac app for redis
+** TODO Create Racket package like [[https://github.com/davidgohel/fpeek][fpeek]]
 ** TODO Mac app for apache Drill
-** TODO Stata dct to psql converter
+** TODO Stata dct to psql converter ([[https://github.com/mrdwab/StataDCTutils][www]])
 ** DONE Download Mycobank data                                      :bioinfo:
    CLOSED: [2019-03-13 Wed 11:11]
 ** TODO Workshop RNASeq, e.g. [[https://www.bioconductor.org/help/course-materials/2011/RNASeqChIPSeq/][Bioconductor]]                          :bioinfo:

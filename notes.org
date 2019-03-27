@@ -666,6 +666,78 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Old good Emacs tutor 
  [2019-03-18 Mon 11:06]
  https://www.tuteurs.ens.fr/unix/editeurs/emacs.html
+** A DNA Sequence Alignment/Map (SAM) library for Common Lisp 
+ [2019-03-20 Wed 13:27]
+ https://github.com/keithj/cl-sam
+** Little Book of R for Bioinformatics 
+ [2019-03-20 Wed 13:33]
+ https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/
+** Validated, scalable, community developed variant calling, RNA-seq and small RNA analysis 
+ [2019-03-20 Wed 13:52]
+ https://github.com/bcbio/bcbio-nextgen
+** A DNA Sequence Alignment/Map (SAM) library for Clojure 
+ [2019-03-20 Wed 13:53]
+ https://chrovis.github.io/cljam/
+** scikit-bio is an open-source, BSD-licensed, Python package providing data structures, algorithms, and educational resources for bioinformatics. 
+ [2019-03-20 Wed 14:04]
+ https://github.com/biocore/scikit-bio
+** Machine learning with clojure in 2018 
+ [2019-03-22 Fri 10:13]
+ https://www.reddit.com/r/Clojure/comments/7w5ceh/machine_learning_with_clojure_in_2018/
+** Binary search tree in Racket 
+ [2019-03-22 Fri 10:13]
+ https://learningtogetolder.wordpress.com/2013/08/14/creating-a-binary-search-tree-in-racket/
+** Cigar encoding 
+ [2019-03-22 Fri 10:15]
+ https://genome.sph.umich.edu/wiki/SAM#What_is_a_CIGAR.3F
+** Longest Common Subsequence using Scheme 
+ [2019-03-22 Fri 10:16]
+ https://programmingpraxis.com/2009/06/09/longest-common-subsequence/
+** Sequence Manipulation Suite 
+ [2019-03-22 Fri 10:17]
+ https://www.bioinformatics.org/sms2/
+** Check Lispy for Python inline evaluation 
+ [2019-03-22 Fri 11:08]
+ https://github.com/abo-abo/lispy/
+** ThinkStats in Clojure ([[https://metail.com/technology/think-stats-in-clojure-i/][www]]) 
+ [2019-03-23 Sat 08:44]
+ https://github.com/ray1729/thinkstats
+** Awk tutorial 
+ [2019-03-23 Sat 08:45]
+ http://www.grymoire.com/Unix/Awk.html
+** Essential AWK Commands for Next Generation Sequence Analysis 
+ [2019-03-25 Mon 12:44]
+ http://bioinformatics.cvr.ac.uk/blog/category/awk/
+** sed and awk for genomics 
+ [2019-03-25 Mon 12:45]
+ https://genomebio.org/sed-awk/
+** Most Commonly used Awk by Bioinformatician 
+ [2019-03-25 Mon 12:45]
+ http://bioinformaticsonline.com/pages/view/2573/most-commonly-used-awk-by-bioinformatician
+** Bioinformatics one-liners 
+ [2019-03-25 Mon 12:46]
+ https://github.com/stephenturner/oneliners
+** Lecture notes on Complex Systems in Biology 
+ [2019-03-26 Tue 13:25]
+ http://rocs.hu-berlin.de/complexsys2018/lectures/
+** Hugo slim theme 
+ [2019-03-26 Tue 15:03]
+ https://github.com/oblitum/hugo-theme-slim
+** Zeit now examples 
+ [2019-03-26 Tue 18:43]
+ https://github.com/zeit/now-examples
+** How to migrate old networkx code 
+ [2019-03-26 Tue 18:43]
+ https://networkx.github.io/documentation/stable/release/migration_guide_from_1.x_to_2.0.html
+** Krigging 
+ [2019-03-27 Wed 09:36]
+ https://desktop.arcgis.com/fr/arcmap/10.3/tools/3d-analyst-toolbox/how-kriging-works.htm
+** Comparing different approaches to evolutionary simulations 
+ [2019-03-27 Wed 13:57]
+ http://slideviewer.herokuapp.com/github/yoavram/ipython-notebooks/blob/master/simulation%20frameworks.ipynb#/
+** Interesting courses 
+ [2019-03-27 Wed 14:20]
+ http://www.peterbeerli.com/classes/index.php?title=Main_Page
 * Notes
 ** [2006-07-09 Dim] C Tips
 
