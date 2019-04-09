@@ -6,7 +6,7 @@
 #+HUGO_CUSTOM_FRONT_MATTER: type "tweet"
 #+AUTHOR:
 
-* Micro [272/272]                                                 
+* Micro [306/306]                                                 
 
 ** DONE Writing Hugo blog in Org
    CLOSED: [2018-10-27 Sat 18:24]
@@ -2610,6 +2610,331 @@ iPhone for weeks:
 - A [[https://github.com/cggh/scikit-allel][Python package]] for exploring and analysing genetic variation data
 - [[http://donw.io/post/github-comments/][Replacing Disqus with Github Comments]], by Don Williamson
 
+** DONE GWAS analysis in Julia
+   CLOSED: [2019-03-28 Thu 08:08]
+:PROPERTIES:
+:EXPORT_FILE_NAME: gwas-in-julia
+:END:
+I remember the time when I was using PLINK to perform genome-wide analysis,
+before I switched to David Clayton's excellent =snpMatrix= R package. Now, it
+looks like some folks are interested in
+[[https://github.com/reworkhow/JWAS.jl][using Julia]] for this stuff. =#julia=
+** DONE A successful Git branching model
+   CLOSED: [2019-03-28 Thu 08:14]
+:PROPERTIES:
+:EXPORT_FILE_NAME: git-branching
+:END:
+[[https://nvie.com/posts/a-successful-git-branching-model/][A successful Git branching model]]. See also [[https://barro.github.io/2016/02/a-succesful-git-branching-model-considered-harmful/][What is wrong with this]]. Personally,
+I found that the Atom team has a pretty [[https://blog.atom.io/2015/10/21/introducing-the-atom-beta-channel.html][nice setup]] for working with stable and
+beta version. 
+
+relies on 
+** DONE Typing is not the problem
+   CLOSED: [2019-03-29 Fri 09:31]
+:PROPERTIES:
+:EXPORT_FILE_NAME: typing-is-not-the-problem
+:END:
+[[https://macwright.org/2015/01/19/typing-is-not-the-problem.html][Typing is not the problem]]. Nice take! This came just after reading Tom's [[https://macwright.org/2019/03/28/oss-at-scale.html][last
+post]], where I also learned about [[https://www.conventionalcommits.org/en/v1.0.0-beta.3/][conventional commits]]. The latter reminds me
+that at some point I was using some ideas from [[http://www.modernemacs.com/post/pretty-magit/][Modern Emacs]] to highlight commit
+leaders. 
+
+** DONE The Computer Language Benchmarks Game
+   CLOSED: [2019-03-29 Fri 09:33]
+:PROPERTIES:
+:EXPORT_FILE_NAME: computer-language-benchmarks-game
+:END:
+[[https://benchmarksgame-team.pages.debian.net/benchmarksgame/][The Computer Language Benchmarks Game]]. (via [[https://lemire.me/blog/2019/03/26/hasty-comparison-skylark-arm-versus-skylake-intel/][Daniel Lemire]])
+
+** DONE Seqotron
+   CLOSED: [2019-03-29 Fri 10:03]
+:PROPERTIES:
+:EXPORT_FILE_NAME: seqotron-app
+:END:
+Nice finding today! Just when I thought I would need to write a full macOS
+native app for viewing Fasta files or MAFFT-aligned sequences, I found it
+[[https://github.com/4ment/seqotron][already exists]], and it's so much faster and prettier than [[http://www.jalview.org][Jalview]]. Thank you so
+much [[https://4ment.github.io/][Mathieu Fourment]]! =#bioinfo=
+
+** DONE Eglot and LSP
+   CLOSED: [2019-03-29 Fri 10:27]
+:PROPERTIES:
+:EXPORT_FILE_NAME: eglot-emacs
+:END:
+I'm quite happy actually with how Spacemacs handles LSP for various modes I make
+regularly use of (Python, JS, C), thanks to the wonderful [[https://github.com/emacs-lsp/lsp-mode][lsp-mode]]. Today, I
+discovered that there's another "universal" package, [[https://github.com/joaotavora/eglot][eglot]], for dealing with all
+available servers. (via [[https://twitter.com/hillelogram/status/1111422101078958080][@hillelogram]]) =#emacs=
+
+** DONE Numerical Tours
+   CLOSED: [2019-03-29 Fri 17:57]
+:PROPERTIES:
+:EXPORT_FILE_NAME: numerical-tours
+:END:
+[[http://www.numerical-tours.com][Numerical Tours of Data Sciences]], feat.
+Python, Julia and R.
+** DONE Grav CMS
+   CLOSED: [2019-03-29 Fri 18:02]
+:PROPERTIES:
+:EXPORT_FILE_NAME: grav-cms
+:END:
+[[https://getgrav.org][Grav -- a modern flat-file CMS]]. If you're looking for an alternative to Jekyll
+or Hugo, there's probably some good stuff behind this open-source project. (via
+[[https://brettterpstra.com/2019/03/29/web-excursions-for-march-29-2019/][Brett Terpstra]])
+
+** DONE Emacs eshell
+   CLOSED: [2019-03-29 Fri 20:14]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-eshell
+:END:
+I'm trying to use Eshell more consistently since a few days. [[https://masteringemacs.org/article/complete-guide-mastering-eshell][Mastering Emacs]] is
+(as always) quite useful in this respect. After having tried some custom
+settings, including those found on [[http://www.modernemacs.com/post/custom-eshell/][Modern Emacs]], I finally choose the full-featured
+[[https://github.com/xuchunyang/eshell-git-prompt][eshell-git-prompt]]. =#emacs=
+
+** DONE Remote pbcopy on OS X systems
+   CLOSED: [2019-03-30 Sat 08:59]
+:PROPERTIES:
+:EXPORT_FILE_NAME: pbcopy-ssh
+:END:
+[[https://brettterpstra.com/2014/02/19/remote-pbcopy-on-os-x-systems/][Remote pbcopy on OS X systems]]. Nice tip, as always.
+
+** DONE Privacy
+   CLOSED: [2019-04-01 Mon 19:24]
+:PROPERTIES:
+:EXPORT_FILE_NAME: privacy-io
+:END:
+#+begin_quote
+You are being watched. Private and state-sponsored organizations are monitoring
+and recording your online activities. [[https://www.privacytools.io/#top][privacytools.io]] provides knowledge and
+tools to protect your privacy against global mass surveillance.
+#+end_quote
+
+** DONE Argon Design System
+   CLOSED: [2019-04-01 Mon 19:28]
+:PROPERTIES:
+:EXPORT_FILE_NAME: argon-design-system
+:END:
+Built on top of Bootstrap, the [[https://github.com/creativetimofficial/argon-design-system/blob/master/README.md][Argon Design System]] comes with hundred of full
+featured components and is compatible with mainstream browsers. And the
+[[https://demos.creative-tim.com/argon-design-system/docs/getting-started/overview.html][documentation]] is gorgeous.
+
+** DONE Borage pix
+   CLOSED: [2019-04-01 Mon 19:30]
+:PROPERTIES:
+:EXPORT_FILE_NAME: borage-pix
+:END:
+The borage has finally bloomed again!
+
+[[/img/IMG_0627.jpg]]
+
+** DONE Emacs jupyter
+   CLOSED: [2019-04-01 Mon 19:58]
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-jupyter
+:END:
+I don't really like editing code in a browser. This is why I rarely use Jupyter
+notebooks. Likewise, I found that the Emacs [[https://github.com/tkf/emacs-ipython-notebook][EIN]] package was clunky. This was
+years ago, and I don't think the project has evolved so much in the recent
+years. TIL there's a new interface to communicate with Jupyter kernels:
+[[https://github.com/dzop/emacs-jupyter][emacs-jupyter]]. =#emacs=
+** DONE 1000 posts
+   CLOSED: [2019-04-01 Mon 20:02]
+:PROPERTIES:
+:EXPORT_FILE_NAME: 1000-posts
+:END:
+This is the 1000th post! 💪👈
+
+#+begin_example
+Building sites … 
+                   |  EN   
++------------------+------+
+  Pages            | 1000  
+  Paginator pages  |  160  
+  Non-page files   |    0  
+  Static files     |  617  
+  Processed images |    0  
+  Aliases          |   34  
+  Sitemaps         |    1  
+  Cleaned          |    0  
+
+Total in 2825 ms
+#+end_example
+
+** DONE Visual Statistics. Use R!
+   CLOSED: [2019-04-01 Mon 21:38]
+:PROPERTIES:
+:EXPORT_FILE_NAME: visual-statistics-using-r
+:END:
+[[https://cran.r-project.org/doc/contrib/Shipunov-visual_statistics.pdf][Visual Statistics. Use R!]] (PDF, 429 pp.) =#rstats=
+
+[[/img/2019-04-01-21-35-06.png]]
+
+** DONE Beta-blockers are so much fun
+   CLOSED: [2019-04-01 Mon 21:41]
+:PROPERTIES:
+:EXPORT_FILE_NAME: on-beta-blocking
+:END:
+Beta-blockers are so much fun. I just stayed out of it for almost four hours
+after I got home from work. And it's been going on for weeks. Time for another
+beer I guess. 
+
+** DONE Another screenshot in the dark night
+   CLOSED: [2019-04-01 Mon 22:06]
+:PROPERTIES:
+:EXPORT_FILE_NAME: another-screenshot-in-the-dark-night
+:END:
+Another screenshot in the dark night...
+
+[[/img/2019-04-01-22-03-27.png]]
+
+** DONE xsv
+   CLOSED: [2019-04-03 Wed 08:06]
+:PROPERTIES:
+:EXPORT_FILE_NAME: xsv
+:END:
+Another command-line utility to deal with flat files: [[https://github.com/BurntSushi/xsv][xsv]] (available on
+Homebrew). 
+
+** DONE Normal random number generator in R
+   CLOSED: [2019-04-03 Wed 08:09]
+:PROPERTIES:
+:EXPORT_FILE_NAME: runif-rstats
+:END:
+Oldie but goodie: [[https://stat.ethz.ch/pipermail/r-devel/2006-May/037527.html][normal random number generator in R]]. (via
+[[https://twitter.com/BrodieGaslam/status/1113204074919419905][@BrodieGaslam]])
+=#rstats=
+** DONE Tutoriel Emacs
+   CLOSED: [2019-04-03 Wed 19:39]
+:PROPERTIES:
+:EXPORT_FILE_NAME: tutoriel-emacs
+:END:
+Un [[http://frougon.net/writings/emacs-tut/index.html][excellent tutoriel]]
+Emacs en français ! =#emacs= =#fr=
+** DONE GitUp
+   CLOSED: [2019-04-03 Wed 19:45]
+:PROPERTIES:
+:EXPORT_FILE_NAME: gitup-app
+:END:
+I somehow forgot about [[https://gitup.co][GitUp]]. A simple =git log= and more Magit when required, and
+I'm generally done with tracking what I've done. Of course, this is because I
+mostly work alone. Anyway, I like it when you have a such a clean and minimal UI
+which helps to visualize at a glance (or even act on) a full Git repo. 
+
+** DONE Convert images to LaTeX
+   CLOSED: [2019-04-03 Wed 19:54]
+:PROPERTIES:
+:EXPORT_FILE_NAME: mathpix-app
+:END:
+Convert images to LaTeX using [[https://mathpix.com][Mathpix]] snipping tool. Maybe one day I will learn
+that I was wrong about the way I wrote some equations. A little test
+demonstrated that it works right out of the box with simple expressions:
+
+[[/img/2019-04-03-19-49-25.png]]
+
+Mine was, in this particular case:
+
+#+begin_example
+$$ \hat f(x) = \frac{1}{nb}\sum_{j=1}^n K\left(\frac{x-x_j}{b}\right) $$
+#+end_example
+
+** DONE Statistics for Hackers
+   CLOSED: [2019-04-03 Wed 21:17]
+:PROPERTIES:
+:EXPORT_FILE_NAME: statistics-for-hackers
+:END:
+[[http://christopherroach.com/articles/statistics-for-hackers/][Statistics for Hackers]]. Be sure to also check the GH repo of the author, e.g.
+[[https://github.com/chrisalbon/code_py][code_py]]. =#python= 
+
+** DONE Paint Splatters in Perl
+   CLOSED: [2019-04-05 Fri 21:12]
+:PROPERTIES:
+:EXPORT_FILE_NAME: paint-splatters-in-perl
+:END:
+[[http://colinm.org/sigbovik/][93% of Paint Splatters are Valid Perl Programs]]. So funny that you probably
+have to read the paper as well.
+
+[[/img/49fc93c0cffe62b9acc25c2d7cf0e22d.jpg]]
+
+
+
+** DONE Let's Build a Simple Database
+   CLOSED: [2019-04-06 Sat 09:21]
+:PROPERTIES:
+:EXPORT_FILE_NAME: building-database-in-clang
+:END:
+[[https://cstack.github.io/db_tutorial/][Writing a sqlite clone from scratch in C]]. I already learned a lot of cool stuff
+by reading part of this tutorial. I'm eager to learn more. =#database= =#clang=
+
+** DONE Bulma
+   CLOSED: [2019-04-06 Sat 10:12]
+:PROPERTIES:
+:EXPORT_FILE_NAME: bulma-css-framework
+:END:
+TIL about [[https://bulma.io][Bulma]], which is a free, open source CSS framework based on Flexbox.
+Looks like a solid and lightweight alternative to Bootstrap.
+
+** DONE Python for Epidemiologists
+   CLOSED: [2019-04-06 Sat 18:15]
+:PROPERTIES:
+:EXPORT_FILE_NAME: python-for-epidemiologists
+:END:
+[[https://github.com/pzivich/Python-for-Epidemiologists][Python for Epidemiologists]]: Tutorial in Python targeted at Epidemiologists. Over
+the last few years, I came across several attempts at bringing the Python
+statistical ecosystem to the Epi domain. Now trying this one. =#python=
+
+** DONE Foundations of Data Science
+   CLOSED: [2019-04-06 Sat 18:17]
+:PROPERTIES:
+:EXPORT_FILE_NAME: foundations-of-data-science
+:END:
+[[https://www.cl.cam.ac.uk/teaching/1819/DataSci/notes0.pdf][IB Foundations of Data Science]] (PDF, 106 pp.). Yet another textbook for learning
+DS "quickly". Beware, it relies on Python and is quite mathy.
+
+** DONE Eisvogel
+   CLOSED: [2019-04-06 Sat 19:32]
+:PROPERTIES:
+:EXPORT_FILE_NAME: eisvogel-pandoc-template
+:END:
+I saw this [[https://github.com/Wandmalfarbe/pandoc-latex-template/blob/master/README.md][pandoc LaTeX template]] popping out on Twitter yesterday. I remember
+trying it out at some point when I was looking for some good hand crafted
+templates for R/statistical reports. At that time, many people were also using
+the [[https://github.com/matze/mtheme][Metropolis]] theme for building slides. I wrote custom templates for both
+situations, finally.
+
+** DONE Porn burger
+   CLOSED: [2019-04-07 Sun 19:13]
+:PROPERTIES:
+:EXPORT_FILE_NAME: porn-burger
+:END:
+Friday burger party for my son:
+
+[[/img/IMG_0633.jpg]]
+
+** DONE Rethinking my dotfiles setup
+   CLOSED: [2019-04-07 Sun 19:34]
+:PROPERTIES:
+:EXPORT_FILE_NAME: dotfiles-setup
+:END:
+Recently, on BSAG's website: [[https://www.rousette.org.uk/archives/rethinking-my-dotfiles-setup/][Rethinking my dotfiles setup]]. Every time it seems I
+learn a new thing about the open source world when reading her blog posts.
+
+** DONE Eight Obscure Bash Options You Might Want to Know About
+   CLOSED: [2019-04-08 Mon 14:26]
+:PROPERTIES:
+:EXPORT_FILE_NAME: eight-bash-tricks
+:END:
+[[https://zwischenzugs.com/2019/04/03/eight-obscure-bash-options-you-might-want-to-know-about][Eight Obscure Bash Options You Might Want to Know About]]. (via O'Reilly
+Programming Newletter)
+** DONE Nothing fancy on Twitter today
+   CLOSED: [2019-04-08 Mon 21:05]
+:PROPERTIES:
+:EXPORT_FILE_NAME: no-news-on-twitter
+:END:
+Nothing fancy on Twitter today. The web UI is just poor shit. Try to go back in
+your browser history, and a different series of posts appears on the very same
+page you landed on just a few seconds before. Oh, and did you ever manage to
+find an old posts of yours?
 
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:

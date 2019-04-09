@@ -738,6 +738,60 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Interesting courses 
  [2019-03-27 Wed 14:20]
  http://www.peterbeerli.com/classes/index.php?title=Main_Page
+** Modern Regression Analysis 
+ [2019-03-28 Thu 11:40]
+ http://biostat.mc.vanderbilt.edu/wiki/Main/CourseBios312
+** Bayesian Evolutionary Analysis by Sampling Trees 
+ [2019-03-29 Fri 10:42]
+ https://github.com/CompEvol/beast2
+** Emacs EShell Parameters 
+ [2019-03-29 Fri 20:02]
+ https://github.com/howardabrams/dot-files/blob/master/emacs-eshell.org
+** Remote pbcopy on OS X systems 
+ [2019-03-31 Sun 08:45]
+ https://brettterpstra.com/2014/02/19/remote-pbcopy-on-os-x-systems/
+** Remote access for macOS 
+ [2019-03-31 Sun 08:56]
+ https://setapp.com/how-to/how-to-access-your-mac-remotely
+** Tutorial on Python package 
+ [2019-04-01 Mon 08:44]
+ https://python-packaging.readthedocs.io/en/latest/
+** Virtualbox and postgresql 
+ [2019-04-01 Mon 15:32]
+ http://grismar.net/2011/07/22/virtualbox_running_postgresql/
+** Creating a minimal Ubuntu VirtualBox image 
+ [2019-04-01 Mon 15:38]
+ https://matschaffer.com/2011/06/minimal-ubuntu-virtualbox/
+**  Installing Ubuntu on VirtualBox 
+ [2019-04-02 Tue 14:55]
+ https://henricasanova.github.io/VirtualBoxUbuntuHowTo.html
+** Interesting library to find or manage OSS projects 
+ [2019-04-03 Wed 09:32]
+ https://libraries.io/
+** Docker vs. Vagrant 
+ [2019-04-03 Wed 11:24]
+ https://www.upguard.com/articles/docker-vs-vagrant
+** Zappa -- Serverless Python 
+ [2019-04-03 Wed 12:54]
+ https://github.com/Miserlou/Zappa
+** Running Jupyter Lab as a Desktop Application 
+ [2019-04-03 Wed 21:07]
+ http://christopherroach.com/articles/jupyterlab-desktop-app/
+** Setting up a local web server on macOS 10.14 “Mojave” 
+ [2019-04-03 Wed 21:27]
+ https://discussions.apple.com/docs/DOC-13841
+** CD-HIT sequence identity 
+ [2019-04-04 Thu 14:39]
+ https://www.drive5.com/usearch/manual9/cd_hit_id.html
+** Generators and iterables in Python 
+ [2019-04-08 Mon 09:54]
+ https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
+** ShinyStudio 
+ [2019-04-08 Mon 13:05]
+ https://github.com/dm3ll3n/ShinyStudio
+** Fast multi-line FASTA/Q reader in several programming languages 
+ [2019-04-08 Mon 13:25]
+ https://github.com/lh3/readfq
 * Notes
 ** [2006-07-09 Dim] C Tips
 

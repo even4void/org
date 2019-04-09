@@ -1,4 +1,4 @@
-* Tasks [12/47]
+* Tasks [13/52]
 ** TODO Read and review [[file:~/Documents/Papers/objc/Advanced-Swift-Nov-2017.pdf][Advanced Swift]]                               :review:
 ** TODO Survey Weights: A Step-by-Step Guide to Calculation          :review:
 ** TODO Read and review cite:peters-2017-elemen-causal-infer         :review:
@@ -57,12 +57,16 @@
 ** DONE Install Python [[http://etetoolkit.org/docs/2.3/tutorial/tutorial_ncbitaxonomy.html][ete toolkit]]                                  :bioinfo:
    CLOSED: [2019-03-12 Tue 09:17]
 ** TODO Study GBIF project and databases                            :bioinfo:
-** STAR Read cite:buffalo-2015-bioin-data-skill                     :bioinfo: 
+** DONE Read cite:buffalo-2015-bioin-data-skill                     :bioinfo:
+   CLOSED: [2019-04-08 Mon 13:09]
 ** TODO Read cite:smith-2012-essen-statis
 ** TODO [[http://biocluster.ucr.edu/~rkaundal/workshops/R_mar2016/RNAseq.html][NGS sequence analysis with R / Bioconductor: RNA-Seq workflow]]
+** TODO Workshop RNASeq, e.g. [[https://www.bioconductor.org/help/course-materials/2011/RNASeqChIPSeq/][Bioconductor]]                          :bioinfo:
+
 ** TODO Racket smith-waterman algorithm
 ** TODO Racket [[https://genome.sph.umich.edu/wiki/SAM#What_is_a_CIGAR.3F][CIGAR]] coding
 ** TODO Read [[https://github.com/gigasquid/speech-acts-classifier][speech-acts-classifier]]
+** TODO Find /Beautiful Testing/
 * Projects [3/12]
 ** DONE Install and test samtools, bedtools, bowtie2, MuMmer        :bioinfo:
    CLOSED: [2019-02-19 Tue 16:12]
@@ -79,4 +83,5 @@
 ** TODO Stata dct to psql converter ([[https://github.com/mrdwab/StataDCTutils][www]])
 ** DONE Download Mycobank data                                      :bioinfo:
    CLOSED: [2019-03-13 Wed 11:11]
-** TODO Workshop RNASeq, e.g. [[https://www.bioconductor.org/help/course-materials/2011/RNASeqChIPSeq/][Bioconductor]]                          :bioinfo:
+** TODO Python CSVY
+** TODO Mac app for viewing Fasta and Mafft (See [[https://github.com/4ment/seqotron/][seqotron]])

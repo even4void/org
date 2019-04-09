@@ -176,7 +176,43 @@ Upgrade to Mojave 10.4.4 + Xcode
 ***** Readings
     <2019-03-27 Wed 09:48>
 Mutation models, Markov chains and stochastic process in phylogenetic tree inference
-
+**** 2019-03-28 Thursday
+***** Reading 
+    <2019-03-28 Thu 09:35>
+Coalescence theory  
+***** Heatmap POC 
+    <2019-03-28 Thu 10:45>
+Wrote small R script to draw an heatmpa-like plot for Sylvie & Sarah  
+    From: [[file:~/cwd/sylvie-edc/edc.r][file:~/cwd/sylvie-edc/edc.r]]
+***** Fungi website (dev) 
+    <2019-03-28 Thu 13:12>
+Minor update on forms and =app.py=.
+**** 2019-03-29 Friday
+***** Check chaetosphaeriales data
+    <2019-03-29 Fri 09:36>
+Some data mining to understand why clustering doesn't work right out of the box
+    From: file:~/cwd/class-its/chaetosphaeriales/clust.py
+***** Reading 
+    <2019-03-29 Fri 10:38>
+Keep reading on molecular biology and evolution, including coalescence theory
+*** 2019-04 April
+**** 2019-04-01 Monday
+***** Fungi website (dev) 
+    <2019-04-01 Mon 09:51>
+Update forms and components
+***** ITS clustering 
+    <2019-04-01 Mon 11:51>
+Finish sequence alignment + cut before and after primers (=full_aligned_cut.fa=)
+**** 2019-04-03 Wednesday
+***** Fungi website (dev) 
+    <2019-04-03 Wed 11:07>
+Fix broken edit/new facilities; update forms with =render_field()=
+***** R coding session with Delphine 
+    <2019-04-03 Wed 09:45>
+RStudio setup + ggplot2
+***** Complete RITME/ANSES STAT5 practicals 
+    <2019-04-03 Wed 13:10>
+Finish up practical 1 and wrote solutions 1 to 5
 * Meetings
 ** MEET with J.-M. Dauget                                           :MEETING:
   :LOGBOOK:
