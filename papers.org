@@ -196,8 +196,7 @@ Y & = \beta_0 + \beta_1 X + \beta_2 (\gamma_0 + \gamma_1 X + w) + u \\
   & = (\beta_0 + \beta_2\gamma_0) + (\beta_1 + \gamma_1\beta_2)X + (\beta_2w + u)
 \end{align*}
 
-Unless $\beta_2 = 0$, $\mathbb E(\hat\beta_1) = \beta_1 + \beta_2\left(\frac{\sum xz}{\sum x^2}\right) \neq 0$, which means that the coeffiient of $X$ picks up the part of the influence of $Z$ that was correlated with $X$.
-
+Unless $\beta_2 = 0$, $\mathbb E(\hat\beta_1) = \beta_1 + \beta_2\left(\frac{\sum xz}{\sum x^2}\right) \neq 0$, which means that the coefficient of $X$ picks up the part of the influence of $Z$ that was correlated with $X$.
 * [[/Users/chl/Documents/Papers/wicherts-2017-weak-spots.pdf][wicherts-2017-weak-spots]] - The weak spots in contemporary science (and how to fix them)
  :PROPERTIES:
  :Custom_ID: wicherts-2017-weak-spots
@@ -302,13 +301,6 @@ TODO Post a review on [[http://aliquote.org]].
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/stein-2017-elemen-number-theor.pdf
  :END:
 **** TODO Add a few words in [[file:articles/number-theory.org]]
-* [[/Users/chl/Documents/Papers/valliant-2018-survey-weigh.pdf][valliant-2018-survey-weigh]] - Survey weights: a step-by-step guide to calculation
- :PROPERTIES:
- :Custom_ID: valliant-2018-survey-weigh
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/valliant-2018-survey-weigh.pdf
- :END:
-This is a small book from Stata Press which discusses the construction and use of survey weights in probabilistic and non-probabilistic samples.
-
 * [[/Users/chl/Documents/Papers/chen-2003-statis-comput-datab.pdf][chen-2003-statis-comput-datab]] - Statistical computing and databases: distributed computing near the data
  :PROPERTIES:
  :Custom_ID: chen-2003-statis-comput-datab

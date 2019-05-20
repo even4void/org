@@ -1,4 +1,4 @@
-* Tasks [13/52]
+* Tasks [14/61]
 ** TODO Read and review [[file:~/Documents/Papers/objc/Advanced-Swift-Nov-2017.pdf][Advanced Swift]]                               :review:
 ** TODO Survey Weights: A Step-by-Step Guide to Calculation          :review:
 ** TODO Read and review cite:peters-2017-elemen-causal-infer         :review:
@@ -41,6 +41,7 @@
 ** TODO Racket & apache drill/parquet
 ** TODO Racket & [[https://docs.racket-lang.org/db/][postgresql]]/redis (see also [[https://github.com/dimitri/pgcharts][pgcharts]])
 ** TODO Clojure h2o/weka
+** TODO Blog post review of clj data science books                     :blog:
 ** TODO [[https://agate.readthedocs.io/en/1.6.1/][agate]] versus pandas?
 ** STAR Read cite:bradley-2018-what-categ-theor
 ** TODO Read and review cite:fontaine-2017-master-postg              :review:
@@ -67,21 +68,38 @@
 ** TODO Racket [[https://genome.sph.umich.edu/wiki/SAM#What_is_a_CIGAR.3F][CIGAR]] coding
 ** TODO Read [[https://github.com/gigasquid/speech-acts-classifier][speech-acts-classifier]]
 ** TODO Find /Beautiful Testing/
-* Projects [3/12]
-** DONE Install and test samtools, bedtools, bowtie2, MuMmer        :bioinfo:
-   CLOSED: [2019-02-19 Tue 16:12]
-** TODO Read [[/Users/chl/Documents/Papers/yang-2006-comput-molec-evolut.pdf][yang-2006-comput-molec-evolut]], Part II                 :bioinfo:
-** STAR R packages [[https://cran.r-project.org/web/packages/ape/index.html][ape]] ([[http://ape-package.ird.fr][www]]), [[https://cran.r-project.org/web/packages/apTreeshape/index.html][apTreeshape]], [[https://cran.r-project.org/web/packages/phytools/index.html][phytools]] and [[https://cran.r-project.org/web/packages/phangorn/index.html][phangorn]]    :bioinfo:
-** TODO Coursera [[https://www.coursera.org/specializations/bioinformatics][Bioinformatics]] (+ [[https://www.coursera.org/learn/algorithms-on-strings][Algorithms on Strings]])           :bioinfo:
-** TODO Read cite:choudhuri-2014-bioin-begin                        :bioinfo:  
-** DONE Setup Netlify and Heroku
-   CLOSED: [2019-03-05 Tue 12:43]
-** TODO Drawing phylogenetic tree with D3.js
+** DONE Fix broken Hugo theme
+   CLOSED: [2019-04-12 Fri 13:25]
 ** TODO Mac app for redis
 ** TODO Create Racket package like [[https://github.com/davidgohel/fpeek][fpeek]]
 ** TODO Mac app for apache Drill
 ** TODO Stata dct to psql converter ([[https://github.com/mrdwab/StataDCTutils][www]])
+** TODO Python CSVY
+** TODO Read cite:needham-2019-graph-algor
+** TODO Read cite:ripley-2002-statis-data-minin
+* Projects [10/15]
+** DONE Install and test samtools, bedtools, bowtie2, MuMmer        :bioinfo:
+   CLOSED: [2019-02-19 Tue 16:12]
+** STAR Read cite:yang-2006-comput-molec-evolut (Part II)           :bioinfo:
+** TODO Read cite:lemey-2009-phylog-handb                           :bioinfo: 
+** DONE Read cite:schmidt-2002-tree-puzzl                           :bioinfo:
+   CLOSED: [2019-04-15 Mon 14:45]
+** DONE R packages [[https://cran.r-project.org/web/packages/ape/index.html][ape]] ([[http://ape-package.ird.fr][www]]), [[https://cran.r-project.org/web/packages/apTreeshape/index.html][apTreeshape]], [[https://cran.r-project.org/web/packages/phytools/index.html][phytools]] and [[https://cran.r-project.org/web/packages/phangorn/index.html][phangorn]]    :bioinfo:
+   CLOSED: [2019-04-09 Tue 08:03]
+** TODO Coursera [[https://www.coursera.org/specializations/bioinformatics][Bioinformatics]] (+ [[https://www.coursera.org/learn/algorithms-on-strings][Algorithms on Strings]])           :bioinfo:
+** TODO Read cite:choudhuri-2014-bioin-begin                        :bioinfo:  
+** DONE Setup Netlify and Heroku                                       :code:
+   CLOSED: [2019-03-05 Tue 12:43]
+** TODO Drawing phylogenetic tree with D3.js                           :code:
 ** DONE Download Mycobank data                                      :bioinfo:
    CLOSED: [2019-03-13 Wed 11:11]
-** TODO Python CSVY
-** TODO Mac app for viewing Fasta and Mafft (See [[https://github.com/4ment/seqotron/][seqotron]])
+** CANC Mac app for viewing Fasta and Mafft (See [[https://github.com/4ment/seqotron/][seqotron]])          :bioinfo:
+   CLOSED: [2019-04-13 Sat 20:06]
+** DONE Read cite:castresana-2000-selec-conser                      :bioinfo:
+   CLOSED: [2019-04-15 Mon 13:28]
+** DONE Read cite:talavera-2007-improv-phylog                       :bioinfo:
+   CLOSED: [2019-04-15 Mon 15:25]
+** DONE Read cite:goldman-2000-likel-based                            :stats:
+CLOSED: [2019-05-17 Ven 10:10]
+** DONE Read cite:efron-1996-boots-confid                             :stats:
+   CLOSED: [2019-04-17 Wed 10:05]

@@ -762,7 +762,7 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Creating a minimal Ubuntu VirtualBox image 
  [2019-04-01 Mon 15:38]
  https://matschaffer.com/2011/06/minimal-ubuntu-virtualbox/
-**  Installing Ubuntu on VirtualBox 
+** Installing Ubuntu on VirtualBox 
  [2019-04-02 Tue 14:55]
  https://henricasanova.github.io/VirtualBoxUbuntuHowTo.html
 ** Interesting library to find or manage OSS projects 
@@ -792,6 +792,81 @@ http://www.statsref.com/StatsRefSample.pdf
 ** Fast multi-line FASTA/Q reader in several programming languages 
  [2019-04-08 Mon 13:25]
  https://github.com/lh3/readfq
+** Interesting R package for descriptive statistics 
+ [2019-04-09 Tue 13:59]
+ https://cran.r-project.org/web/packages/summarytools/index.html
+** Analysis of ESS data using R 
+ [2019-04-09 Tue 14:00]
+ http://asdfree.com/european-social-survey-ess.html
+** Emacs and Git 
+ [2019-04-10 Wed 09:45]
+ http://alexott.net/en/writings/emacs-vcs/EmacsGit.html
+** Netlify dev 
+ [2019-04-10 Wed 13:07]
+ https://www.netlify.com/products/dev/
+** Eve (after LightTable) 
+ [2019-04-10 Wed 13:07]
+ http://witheve.com/
+** Fuzzy String Comparison 
+ [2019-04-11 Thu 07:54]
+ https://stackoverflow.com/questions/10383044/fuzzy-string-comparison
+** Rose for genetic substitution model simulation
+ [2019-04-11 Thu 07:54]
+ https://popmodels.cancercontrol.cancer.gov/gsr/packages/rose/
+** Computational Genomics and Molecular Biology 
+ [2019-04-15 Mon 11:51]
+ https://www.cs.cmu.edu/~durand/03-711/2015/Lectures/
+** Simply Scheme: Introducing Computer Science 
+ [2019-04-15 Mon 13:34]
+ https://people.eecs.berkeley.edu/~bh/ss-toc2.html
+** A short mathematica course 
+ [2019-04-15 Mon 13:52]
+ http://j-star.org/mathematica_course.html
+** Higher level tools for working with CSV data and files in Clojure 
+ [2019-04-15 Mon 13:54]
+ https://github.com/metasoarous/semantic-csv
+** SCons for data science and compbio 
+ [2019-04-15 Mon 14:38]
+ https://www.metasoarous.com/scons-for-data-science-and-compbio/
+** Gogs -- Un service git auto-hébergé sans-douleur
+ [2019-04-16 Tue 10:50]
+ https://gogs.io/
+** A successful Git branching model 
+ [2019-04-16 Tue 11:30]
+ https://nvie.com/posts/a-successful-git-branching-model/
+** How to GitHub: Fork, Branch, Track, Squash and Pull Request 
+ [2019-04-16 Tue 11:30]
+ https://www.gun.io/blog/how-to-github-fork-branch-and-pull-request
+** Teaching material: Data analytics and visualization 
+ [2019-04-17 Wed 09:45]
+ https://www.yan-holtz.com/teaching
+** Documented Anomaly in Recent Versions of the BLASTN Algorithm and a Complete Reanalysis of Chimpanzee and Human Genome-Wide DNA Similarity Using Nucmer and LASTZ 
+ [2019-04-17 Wed 09:46]
+ https://answersingenesis.org/genetics/dna-similarities/blastn-algorithm-anomaly/
+** Interesting approach to learning Racket 
+ [2019-04-18 Thu 11:05]
+ https://artyom.me/learning-racket-1
+** Counsel, Ivy and Co.
+[2019-05-08 Mer 08:31]
+https://truthseekers.io/lessons/how-to-use-ivy-swiper-counsel-in-emacs-for-noobs/
+** Markdown and Vim
+[2019-05-11 Sam 19:17]
+https://jdhao.github.io/2019/01/15/markdown_edit_preview_nvim/
+** Brian Ripley's talks
+[2019-05-17 Ven 10:35]
+http://www.stats.ox.ac.uk/~ripley/talks.html
+** Rich book classes in Latex
+[2019-05-17 Ven 11:34]
+https://tex.stackexchange.com/questions/134215/where-can-i-find-some-rich-book-classes
+** Matthias Felleisen homepage
+[2019-05-20 Lun 09:59]
+https://felleisen.org/matthias/
+** Random numbers in Scheme
+[2019-05-20 Lun 11:25]
+https://stackoverflow.com/questions/14674165/scheme-generate-random
+** Programming Praxis Amazon Interview Question, part 2
+[2019-05-20 Lun 11:52]
+https://thornydev.blogspot.com/2012/12/programming-praxis-amazon-interview.html
 * Notes
 ** [2006-07-09 Dim] C Tips
 

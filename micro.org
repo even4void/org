@@ -6,7 +6,7 @@
 #+HUGO_CUSTOM_FRONT_MATTER: type "tweet"
 #+AUTHOR:
 
-* Micro [306/306]                                                 
+* Micro [310/310]                                                 
 
 ** DONE Writing Hugo blog in Org
    CLOSED: [2018-10-27 Sat 18:24]
@@ -2857,7 +2857,6 @@ have to read the paper as well.
 [[/img/49fc93c0cffe62b9acc25c2d7cf0e22d.jpg]]
 
 
-
 ** DONE Let's Build a Simple Database
    CLOSED: [2019-04-06 Sat 09:21]
 :PROPERTIES:
@@ -2935,6 +2934,51 @@ Nothing fancy on Twitter today. The web UI is just poor shit. Try to go back in
 your browser history, and a different series of posts appears on the very same
 page you landed on just a few seconds before. Oh, and did you ever manage to
 find an old posts of yours?
+
+** DONE Hugo update broke my website
+   CLOSED: [2019-04-12 Fri 14:18]
+:PROPERTIES:
+:EXPORT_FILE_NAME: hugo-update
+:END:
+Great. Just when I was trying to recompile my Hugo website I noticed that the
+0.54->0.55 upgrade just broke everything! And we can see [[https://github.com/gohugoio/hugo/issues/4117#issuecomment-475810894][comments like this]]. I
+don't care about performance issue or variable name changes or even Go itself. I
+just want a tool to build my static pages, using an old theme that I customized
+to my liking. Anyway, since I no time to fix the Go code for the modified
+template I use, let's go back to the previous release (0.54 has SHA
+=6c0c7919de42ee5d629d3a9786fb111f4498dab3=) and pin it for good!
+
+#+begin_src shell
+brew uninstall hugo
+brew install https://bit.ly/2UxujU1
+brew pin hugo
+#+end_src
+
+** DONE Great Python ressources
+   CLOSED: [2019-04-12 Fri 18:45]
+:PROPERTIES:
+:EXPORT_FILE_NAME: python-ressources
+:END:
+[[http://www.composingprograms.com][Composing Programs]] and [[http://www.labri.fr/perso/nrougier/from-python-to-numpy/][From Python to Numpy]] are two of the most invaluable
+ressources I know if you want to learn Python for real. =#python=
+
+** DONE Exit DataCamp
+   CLOSED: [2019-04-12 Fri 18:48]
+:PROPERTIES:
+:EXPORT_FILE_NAME: exit-datacamp
+:END:
+Folllowing the recent scandal around DataCamp, I think [[https://www.dataquest.io][DataQuest]] and [[https://exercism.io][Exercism]]
+remain good online training centers for anyone eager to learn.
+
+** DONE Week-end misc.
+   CLOSED: [2019-04-14 Sun 19:27]
+:PROPERTIES:
+:EXPORT_FILE_NAME: week-end-misc
+:END:
+Week-end miscellanies...
+
+[[/img/IMG_0634.jpg]]
+
 
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
