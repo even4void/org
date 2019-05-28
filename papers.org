@@ -323,7 +323,7 @@ Useful packages and config for Lisp editing:
  :Custom_ID: watson-2016-lovin-common-lisp
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/watson-2016-lovin-common-lisp.pdf
  :END:
-GitHub: https://github.com/mark-watson/loving-common-lisp (Depends on [[https://github.com/mmaul/clml][clml]]), cloned locally in [[~/sandbox]].
+GitHub: https://github.com/mark-watson/loving-common-lisp (Depends on [[https://github.com/mmaul/clml][clml]]), cloned locally in [[~/git/sandbox]].
 
 There are still some proof-reading lacking here and there but overall it is quite readable. The very first part of the book is all about data types in Common Lisp. All examples are illustrated using SBCL.
 
@@ -350,7 +350,7 @@ y
 
 Operations on string (=concatenate=, =search=, =subseq= and =string-*=) and the fine distinction between =eq=, =eql=, and =equal=. See also http://doc.norang.ca/lisp.html. For strings, we should prefer =string==. Instead of =nth=, we use =char= to extract a given character in a string.
 
-Hash tables
+Hash tables are to be preferred when lists (coupled with =assoc=) are long. Main functions are =gethash=, =make-hash-table=, and =maphash=. Updating values in a hash table is done using =remhash= or =clrhash=. Note that these functions can modify their arguments, much like =setf= or =setq=, but the latter are macros and not functions.
 * [[/Users/chl/Documents/Papers/yu-2018-two-method.pdf][yu-2018-two-method]] - Two methods for mapping and visualizing associated data on phylogeny using ggtree
  :PROPERTIES:
  :Custom_ID: yu-2018-two-method

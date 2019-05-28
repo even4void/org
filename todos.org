@@ -1,35 +1,37 @@
-* Tasks [14/61]
-** TODO Read and review [[file:~/Documents/Papers/objc/Advanced-Swift-Nov-2017.pdf][Advanced Swift]]                               :review:
-** TODO Survey Weights: A Step-by-Step Guide to Calculation          :review:
-** TODO Read and review cite:peters-2017-elemen-causal-infer         :review:
-** DONE Install and configure cquery + lsp-rust                       :emacs:
+* Tasks [17/62]
+** TODO Read and review [[file:~/Documents/Papers/objc/Advanced-Swift-Nov-2017.pdf][Advanced Swift]]                                        :review:
+** TODO Survey Weights: A Step-by-Step Guide to Calculation                   :review:
+** TODO Read and review cite:peters-2017-elemen-causal-infer                  :review:
+** DONE Install and configure cquery + lsp-rust                               :emacs:
    CLOSED: [2019-02-10 Sun 13:44]
-** TODO Read and review cite:leiss-2007-progr-compan                 :review:  
-** TODO Read and review cite:friedman-2008-essen-progr-languag       :review:
-** STAR Draft posts (see % ack "draft\s?[:=] true" content/post/*.md)  :blog:
-** STAR Check Summer readings (Getting Clojure, Git, etc.)           :review:
-** TODO Read and review cite:meent-2018-introd-probab-progr          :review:
+** TODO Read and review cite:leiss-2007-progr-compan                          :review:
+** TODO Read and review cite:friedman-2008-essen-progr-languag                :review:
+** STAR Draft posts (see % ack "draft\s?[:=] true" content/post/*.md)         :blog:
+** DONE Check Summer readings (Getting Clojure, Git, etc.)                    :review:
+CLOSED: [2019-05-22 Mer 07:39]
+** TODO Read and review cite:meent-2018-introd-probab-progr                   :review:
 ** TODO Read cite:soicher-2004-algor-mathem
-** STAR Read and review [[/Users/chl/Documents/Papers/watson-2016-lovin-common-lisp.pdf][watson-2016-lovin-common-lisp]]                :review:
-** DONE Configure and learn to use org-agenda                         :emacs:
+** DONE Read and review [[/Users/chl/Documents/Papers/watson-2016-lovin-common-lisp.pdf][watson-2016-lovin-common-lisp]]                         :review:
+CLOSED: [2019-05-24 Ven 14:16]
+** DONE Configure and learn to use org-agenda                                 :emacs:
    CLOSED: [2019-02-21 Thu 07:42]
 
 ** DONE Cleanup todos from projects
    CLOSED: [2019-02-19 Tue 09:27]
 ** CANC Add epub's to BibTeX file 
    CLOSED: [2019-03-20 Wed 08:12]
-** CANC Setup Gmail with catchup univ-paris-diderot.fr                 :work:
+** CANC Setup Gmail with catchup univ-paris-diderot.fr                        :work:
    CLOSED: [2019-02-26 Tue 09:43]
-** DONE Setup working lab diary                                        :work:
+** DONE Setup working lab diary                                               :work:
    CLOSED: [2019-02-18 Mon 17:19]
-** TODO Check [[https://docs.racket-lang.org/math/matrices.html][SVD in Racket]]                                          :racket:
+** TODO Check [[https://docs.racket-lang.org/math/matrices.html][SVD in Racket]]                                                   :racket:
 ** DONE Cleanup Trash folder
    CLOSED: [2019-02-21 Thu 07:49]
 ** DONE Implement JC69 model in Mathematica 
    CLOSED: [2019-02-26 Tue 19:41]
-** DONE Write blog post about Jukes-Cantor model using Mathematica     :blog:
+** DONE Write blog post about Jukes-Cantor model using Mathematica            :blog:
    CLOSED: [2019-02-26 Tue 19:42]
-** STAR Read and review cite:kun-2018-progr-introd-mathem            :review: 
+** STAR Read and review cite:kun-2018-progr-introd-mathem                     :review:
 ** TODO Review the state of the art and bindings for Apache Arrow
 ** TODO Cleanup Keychain and passwords
 ** TODO Benchmark =data.table::fread=, =sparklyr=, and lazy loading of data frame
@@ -37,33 +39,33 @@
 ** CANC Jupyter book pysml
    CLOSED: [2019-03-20 Wed 14:46]
 
-** TODO Blog post "Postico App"                                        :blog:
+** DONE Blog post "Postico App"                                               :blog:
+CLOSED: [2019-05-22 Mer 07:39]
 ** TODO Racket & apache drill/parquet
 ** TODO Racket & [[https://docs.racket-lang.org/db/][postgresql]]/redis (see also [[https://github.com/dimitri/pgcharts][pgcharts]])
 ** TODO Clojure h2o/weka
-** TODO Blog post review of clj data science books                     :blog:
+** TODO Blog post review of clj data science books                            :blog:
 ** TODO [[https://agate.readthedocs.io/en/1.6.1/][agate]] versus pandas?
 ** STAR Read cite:bradley-2018-what-categ-theor
-** TODO Read and review cite:fontaine-2017-master-postg              :review:
-** TODO Read and review cite:danjou-2018-serious-python              :review:
+** TODO Read and review cite:fontaine-2017-master-postg                       :review:
+** STAR Read and review cite:danjou-2018-serious-python                       :review:
 ** TODO Post book review "Think Bayes" + application Stata/Stan
-** TODO Post Apache Drill                                              :blog:
-** TODO Post book review "Agile Data Science"                          :blog:
+** TODO Post Apache Drill                                                     :blog:
+** TODO Post book review "Agile Data Science"                                 :blog:
 ** TODO Emacs pour l'impatient
-** TODO Post Wizard Mac                                                :blog:
-** TODO Post Mata Book                                                 :blog:
-** TODO Post Texpad                                                    :blog:
-** DONE Post book Pragmatic functional anthology                       :blog:
+** TODO Post Wizard Mac                                                       :blog:
+** TODO Post Mata Book                                                        :blog:
+** TODO Post Texpad                                                           :blog:
+** DONE Post book Pragmatic functional anthology                              :blog:
    CLOSED: [2019-03-10 Sun 21:11]                    
-** DONE Install Python [[http://etetoolkit.org/docs/2.3/tutorial/tutorial_ncbitaxonomy.html][ete toolkit]]                                  :bioinfo:
+** DONE Install Python [[http://etetoolkit.org/docs/2.3/tutorial/tutorial_ncbitaxonomy.html][ete toolkit]]                                            :bioinfo:
    CLOSED: [2019-03-12 Tue 09:17]
-** TODO Study GBIF project and databases                            :bioinfo:
-** DONE Read cite:buffalo-2015-bioin-data-skill                     :bioinfo:
+** TODO Study GBIF project and databases                                      :bioinfo:
+** DONE Read cite:buffalo-2015-bioin-data-skill                               :bioinfo:
    CLOSED: [2019-04-08 Mon 13:09]
 ** TODO Read cite:smith-2012-essen-statis
 ** TODO [[http://biocluster.ucr.edu/~rkaundal/workshops/R_mar2016/RNAseq.html][NGS sequence analysis with R / Bioconductor: RNA-Seq workflow]]
-** TODO Workshop RNASeq, e.g. [[https://www.bioconductor.org/help/course-materials/2011/RNASeqChIPSeq/][Bioconductor]]                          :bioinfo:
-
+** TODO Workshop RNASeq, e.g. [[https://www.bioconductor.org/help/course-materials/2011/RNASeqChIPSeq/][Bioconductor]]                                    :bioinfo:
 ** TODO Racket smith-waterman algorithm
 ** TODO Racket [[https://genome.sph.umich.edu/wiki/SAM#What_is_a_CIGAR.3F][CIGAR]] coding
 ** TODO Read [[https://github.com/gigasquid/speech-acts-classifier][speech-acts-classifier]]
@@ -77,29 +79,30 @@
 ** TODO Python CSVY
 ** TODO Read cite:needham-2019-graph-algor
 ** TODO Read cite:ripley-2002-statis-data-minin
+** STAR Read cite:dybvig-2003-schem-progr-languag                             :scheme:
 * Projects [10/15]
-** DONE Install and test samtools, bedtools, bowtie2, MuMmer        :bioinfo:
+** DONE Install and test samtools, bedtools, bowtie2, MuMmer                  :bioinfo:
    CLOSED: [2019-02-19 Tue 16:12]
-** STAR Read cite:yang-2006-comput-molec-evolut (Part II)           :bioinfo:
-** TODO Read cite:lemey-2009-phylog-handb                           :bioinfo: 
-** DONE Read cite:schmidt-2002-tree-puzzl                           :bioinfo:
+** STAR Read cite:yang-2006-comput-molec-evolut (Part II)                     :bioinfo:
+** TODO Read cite:lemey-2009-phylog-handb                                     :bioinfo:
+** DONE Read cite:schmidt-2002-tree-puzzl                                     :bioinfo:
    CLOSED: [2019-04-15 Mon 14:45]
-** DONE R packages [[https://cran.r-project.org/web/packages/ape/index.html][ape]] ([[http://ape-package.ird.fr][www]]), [[https://cran.r-project.org/web/packages/apTreeshape/index.html][apTreeshape]], [[https://cran.r-project.org/web/packages/phytools/index.html][phytools]] and [[https://cran.r-project.org/web/packages/phangorn/index.html][phangorn]]    :bioinfo:
+** DONE R packages [[https://cran.r-project.org/web/packages/ape/index.html][ape]] ([[http://ape-package.ird.fr][www]]), [[https://cran.r-project.org/web/packages/apTreeshape/index.html][apTreeshape]], [[https://cran.r-project.org/web/packages/phytools/index.html][phytools]] and [[https://cran.r-project.org/web/packages/phangorn/index.html][phangorn]] :bioinfo:
    CLOSED: [2019-04-09 Tue 08:03]
-** TODO Coursera [[https://www.coursera.org/specializations/bioinformatics][Bioinformatics]] (+ [[https://www.coursera.org/learn/algorithms-on-strings][Algorithms on Strings]])           :bioinfo:
-** TODO Read cite:choudhuri-2014-bioin-begin                        :bioinfo:  
-** DONE Setup Netlify and Heroku                                       :code:
+** TODO Coursera [[https://www.coursera.org/specializations/bioinformatics][Bioinformatics]] (+ [[https://www.coursera.org/learn/algorithms-on-strings][Algorithms on Strings]]) :bioinfo:
+** TODO Read cite:choudhuri-2014-bioin-begin                                  :bioinfo:
+** DONE Setup Netlify and Heroku                                              :code:
    CLOSED: [2019-03-05 Tue 12:43]
-** TODO Drawing phylogenetic tree with D3.js                           :code:
-** DONE Download Mycobank data                                      :bioinfo:
+** TODO Drawing phylogenetic tree with D3.js                                  :code:
+** DONE Download Mycobank data                                                :bioinfo:
    CLOSED: [2019-03-13 Wed 11:11]
-** CANC Mac app for viewing Fasta and Mafft (See [[https://github.com/4ment/seqotron/][seqotron]])          :bioinfo:
+** CANC Mac app for viewing Fasta and Mafft (See [[https://github.com/4ment/seqotron/][seqotron]]) :bioinfo:
    CLOSED: [2019-04-13 Sat 20:06]
-** DONE Read cite:castresana-2000-selec-conser                      :bioinfo:
+** DONE Read cite:castresana-2000-selec-conser                                :bioinfo:
    CLOSED: [2019-04-15 Mon 13:28]
-** DONE Read cite:talavera-2007-improv-phylog                       :bioinfo:
+** DONE Read cite:talavera-2007-improv-phylog                                 :bioinfo:
    CLOSED: [2019-04-15 Mon 15:25]
-** DONE Read cite:goldman-2000-likel-based                            :stats:
+** DONE Read cite:goldman-2000-likel-based                                    :stats:
 CLOSED: [2019-05-17 Ven 10:10]
-** DONE Read cite:efron-1996-boots-confid                             :stats:
+** DONE Read cite:efron-1996-boots-confid                                     :stats:
    CLOSED: [2019-04-17 Wed 10:05]

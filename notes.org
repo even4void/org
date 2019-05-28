@@ -867,6 +867,21 @@ https://stackoverflow.com/questions/14674165/scheme-generate-random
 ** Programming Praxis Amazon Interview Question, part 2
 [2019-05-20 Lun 11:52]
 https://thornydev.blogspot.com/2012/12/programming-praxis-amazon-interview.html
+** The Scheme Programming Language
+[2019-05-20 Lun 19:26]
+https://www.scheme.com/tspl4/
+** Simulating Brownian motion in R
+[2019-05-22 Mer 10:22]
+http://phytools.org/eqg/Exercise_4.1/
+** Simulated ecosystems
+[2019-05-22 Mer 13:19]
+https://jobtalle.com/simulated_ecosystems.html
+** Interesting repos in Clojure. See also the blog.
+[2019-05-24 Ven 13:50]
+https://github.com/eigenhombre
+** Lisp Notes and Handouts
+[2019-05-27 Lun 10:18]
+http://www.covingtoninnovations.com/mc/LispNotes/
 * Notes
 ** [2006-07-09 Dim] C Tips
 
