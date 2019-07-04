@@ -882,6 +882,72 @@ https://github.com/eigenhombre
 ** Lisp Notes and Handouts
 [2019-05-27 Lun 10:18]
 http://www.covingtoninnovations.com/mc/LispNotes/
+** Static Generative Art Setup for Clojure
+[2019-05-29 Mer 14:02]
+http://marvelous-code.com/uncategorized/static-generative-art-setup-for-clojure/
+** Immutability with normal JavaScript objects and arrays
+[2019-05-31 Ven 13:22]
+https://github.com/immerjs/immer
+** Typescript and Emacs
+[2019-05-31 Ven 18:41]
+http://redgreenrepeat.com/2018/05/04/typescript-in-emacs/
+** Various string metrics in Lisp
+[2019-06-01 Sam 08:31]
+https://github.com/cbaggers/mk-string-metrics
+** Yet another Emacs configuration
+[2019-06-01 Sam 20:23]
+https://lthms.xyz/emacs.d
+** Nice generative algorithm to draw hyphae
+[2019-06-03 Lun 10:04]
+https://inconvergent.net/generative/hyphae/
+** Dual boot macOS/Ubuntu
+[2019-06-04 Mar 11:46]
+https://www.lifewire.com/dual-boot-linux-and-mac-os-4125733
+** Useful Awk tips and tricks
+[2019-06-06 Jeu 10:59]
+http://www.grymoire.com/Unix/Awk.html
+** Check blog posts and course materials
+[2019-06-06 Jeu 10:59]
+http://matt.might.net/#teaching
+** Processing.js Quick Start
+[2019-06-13 Jeu 10:21]
+http://processingjs.org/articles/jsQuickStart.html
+** A gentle introduction to persistent homology
+[2019-06-13 Jeu 10:35]
+https://christian.bock.ml/posts/persistent_homology/
+** Historical map of Cognitive Science
+[2019-06-13 Jeu 10:45]
+http://www.riedlanna.com/cognitivesciencemap.html
+** Differences between Processing.js and P5.js
+[2019-06-13 Jeu 10:56]
+https://www.sitepoint.com/processing-js-vs-p5-js-whats-difference/
+** Growth Modeling of filamentous fungi 
+[2019-06-14 Ven 10:22]
+http://2018.igem.org/Team:DTU-Denmark/GrowthModelling
+** Solutions to Ninety-Nine Lisp Problems 
+[2019-06-17 Lun 10:34]
+http://www.informatimago.com/develop/lisp/l99/
+** C programming Solved Programs/Examples with Solutions 
+[2019-06-17 Lun 15:10]
+https://www.includehelp.com/c-programming-examples-solved-c-programs.aspx
+** Predator-Prey Modeling in Clojure
+[2019-06-19 Mer 15:04]
+https://markbastian.github.io/posts-output/2015-04-28-predator-prey/
+** Exercises in Clojure with Commentary
+[2019-06-19 Mer 15:13]
+https://markbastian.github.io/posts-output/2015-05-27-exercises/
+** Trees, Quil and Random
+[2019-06-20 Jeu 10:36]
+http://nbeloglazov.com/2015/05/18/trees-quil-and-random.html
+** How to get 64 bit integer in common lisp?
+[2019-06-21 Ven 10:10]
+https://stackoverflow.com/questions/8674982/how-to-get-64-bit-integer-in-common-lisp
+** (gnu) common lisp: features and functions
+[2019-06-21 Ven 10:13]
+http://www.csci.viu.ca/~wesselsd/courses/csci330/code/lisp/
+** Nested for loops in R and Racket
+[2019-07-04 Jeu 13:41]
+https://www.travishinkelman.com/post/for-loop-r-racket/
 * Notes
 ** [2006-07-09 Dim] C Tips
 

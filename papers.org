@@ -351,6 +351,45 @@ y
 Operations on string (=concatenate=, =search=, =subseq= and =string-*=) and the fine distinction between =eq=, =eql=, and =equal=. See also http://doc.norang.ca/lisp.html. For strings, we should prefer =string==. Instead of =nth=, we use =char= to extract a given character in a string.
 
 Hash tables are to be preferred when lists (coupled with =assoc=) are long. Main functions are =gethash=, =make-hash-table=, and =maphash=. Updating values in a hash table is done using =remhash= or =clrhash=. Note that these functions can modify their arguments, much like =setf= or =setq=, but the latter are macros and not functions.
+
+#+begin_quote
+Functional programming means that we avoid maintaining state inside of functions and treat data as immutable.
+#+end_quote
+
+Recall that read-only objects are inherently thread safe.
+
+Lisp functions: =defun=, keywords (=&aux=, =&optional=, =&key=), =let= special operator for local bindings, =lambda= and =funcall=.
+
+#+BEGIN_SRC lisp
+(defvar f1 #'(lambda (x) (+ x 1)))
+(funcall f1 100)
+#+END_SRC
+
+A closure is a function that references an outer lexically scoped variable, which typically happens when functions are defined inside =let= forms (see p. 47).
+
+The =dotimes= and =dolist= macros are close to Stata =forvalues= and =foreach= instructions. The =do= macro is more general:
+
+#+BEGIN_SRC lisp
+(do ((i 0 (1+ i)))
+    ((> i 3) "value-of-do-loop")
+  (print i))
+#+END_SRC
+
+
+Input (=*standard-input*=) and output (=*standard-output*=) of Lisp data is handled using streams, and the =with-open-file= macro. Note that it is possible to use =make-pathname= to build a proper absolute or relative path, instead of using (quoted) strings. Here is a typical example of reading a file line by line:
+
+#+BEGIN_SRC lisp
+(defun readline ()
+  "Read a maximum of 1000 expressions from the file 'test.dat'"
+  (with-open-file
+    (input-stream "test.dat" :direction :input)
+    (dotimes (i 1000)
+      (let ((x (read-line input-stream nil nil)))
+        (if (null x) (return))
+        (format t "next line in file: ~S~%" x)))))
+#+END_SRC
+
+The rest of the book describes some application of web and network programming using CLOS classes and various packages (=drakma=, =hunchentoot=). The chapter of querying database is also interesting.
 * [[/Users/chl/Documents/Papers/yu-2018-two-method.pdf][yu-2018-two-method]] - Two methods for mapping and visualizing associated data on phylogeny using ggtree
  :PROPERTIES:
  :Custom_ID: yu-2018-two-method
@@ -391,3 +430,26 @@ Bifurcating tree hypothesis ([[https://academic.oup.com/sysbio/article/62/3/479/
 
 [[https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?][Sequence Read Archive]]
 forensic bioinformatics ([[https://projecteuclid.org/euclid.aoas/1267453942][Baggerly and Coombes 2009]])
+* [[/Users/chl/Documents/Papers/danjou-2018-serious-python.pdf][danjou-2018-serious-python]] - Serious Python
+ :PROPERTIES:
+ :Custom_ID: danjou-2018-serious-python
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/danjou-2018-serious-python.pdf
+ :END:
+Nice book to understand the underside of Python, especially regarding package import and path management. Note that this will not teach you Python programming, but it will certainly be helpful to better understand Python, think about design patterns, and how to develop your own projects. Each chapter provides a discussion of important topics in project development, and a brief interview by core developers is provided at the end. Note that some chapters are very specific of some aspects of Python programming, or PL more generally. For instance, chapter 4 deals with timestamp and the importance of timezone.
+I learned a few things about packaging, and in particular the number of modules that were developed before =pip=, namely (in chronological order): =distutils=, =setuptools=, =distribute=, =distutils2=, =packaging=, and =distlib=. The latter may eventually replace =setuptools=.
+* [[/Users/chl/Documents/Papers/casillas-2017-molec-popul-genet.pdf][casillas-2017-molec-popul-genet]] - Molecular Population Genetics
+ :PROPERTIES:
+ :Custom_ID: casillas-2017-molec-popul-genet
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/casillas-2017-molec-popul-genet.pdf
+ :END:
+Driving forces for /evolution/:
+
+- natural selection: (ignoring effects of genetic drift) classical (homozygous loci for the wild-type allele) vs. balance (polymorphic loci) hypothesis, which requires to be able to estimate genetic diversity in populations. This has successively be done using allozyme polymorphisms (inconclusive results due to limitations of protein electrophoresis), nucleotide sequence data (using restriction enzymes, before PCR and automated Sanger sequencing), and genome variation.
+  
+- genetic drift,
+  
+- mutation,
+  
+- recombination,
+  
+- gene flux.

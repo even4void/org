@@ -1,4 +1,4 @@
-* Tasks [17/62]
+* Tasks [22/64]
 ** TODO Read and review [[file:~/Documents/Papers/objc/Advanced-Swift-Nov-2017.pdf][Advanced Swift]]                                        :review:
 ** TODO Survey Weights: A Step-by-Step Guide to Calculation                   :review:
 ** TODO Read and review cite:peters-2017-elemen-causal-infer                  :review:
@@ -6,7 +6,8 @@
    CLOSED: [2019-02-10 Sun 13:44]
 ** TODO Read and review cite:leiss-2007-progr-compan                          :review:
 ** TODO Read and review cite:friedman-2008-essen-progr-languag                :review:
-** STAR Draft posts (see % ack "draft\s?[:=] true" content/post/*.md)         :blog:
+** DONE Draft posts (see % ack "draft\s?[:=] true" content/post/*.md)         :blog:
+CLOSED: [2019-05-31 Ven 20:58]
 ** DONE Check Summer readings (Getting Clojure, Git, etc.)                    :review:
 CLOSED: [2019-05-22 Mer 07:39]
 ** TODO Read and review cite:meent-2018-introd-probab-progr                   :review:
@@ -48,8 +49,10 @@ CLOSED: [2019-05-22 Mer 07:39]
 ** TODO [[https://agate.readthedocs.io/en/1.6.1/][agate]] versus pandas?
 ** STAR Read cite:bradley-2018-what-categ-theor
 ** TODO Read and review cite:fontaine-2017-master-postg                       :review:
-** STAR Read and review cite:danjou-2018-serious-python                       :review:
-** TODO Post book review "Think Bayes" + application Stata/Stan
+** DONE Read and review cite:danjou-2018-serious-python                       :review:
+CLOSED: [2019-06-01 Sam 08:21]
+** DONE Post book review "Think Bayes" + application Stata/Stan
+CLOSED: [2019-06-01 Sam 08:20]
 ** TODO Post Apache Drill                                                     :blog:
 ** TODO Post book review "Agile Data Science"                                 :blog:
 ** TODO Emacs pour l'impatient
@@ -69,7 +72,8 @@ CLOSED: [2019-05-22 Mer 07:39]
 ** TODO Racket smith-waterman algorithm
 ** TODO Racket [[https://genome.sph.umich.edu/wiki/SAM#What_is_a_CIGAR.3F][CIGAR]] coding
 ** TODO Read [[https://github.com/gigasquid/speech-acts-classifier][speech-acts-classifier]]
-** TODO Find /Beautiful Testing/
+** DONE Find /Beautiful Testing/
+CLOSED: [2019-05-29 Mer 15:45]
 ** DONE Fix broken Hugo theme
    CLOSED: [2019-04-12 Fri 13:25]
 ** TODO Mac app for redis
@@ -78,8 +82,11 @@ CLOSED: [2019-05-22 Mer 07:39]
 ** TODO Stata dct to psql converter ([[https://github.com/mrdwab/StataDCTutils][www]])
 ** TODO Python CSVY
 ** TODO Read cite:needham-2019-graph-algor
-** TODO Read cite:ripley-2002-statis-data-minin
+** STAR Read cite:ripley-2002-statis-data-minin
 ** STAR Read cite:dybvig-2003-schem-progr-languag                             :scheme:
+** TODO Cleanup Gmail/Archives                                                :emacs:
+** DONE Find /Perl Cookbook/
+CLOSED: [2019-06-04 Mar 12:55]
 * Projects [10/15]
 ** DONE Install and test samtools, bedtools, bowtie2, MuMmer                  :bioinfo:
    CLOSED: [2019-02-19 Tue 16:12]
