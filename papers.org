@@ -8,16 +8,16 @@ R =datasets::sleepstudy=
 Extra R code (Frank Harrell, [[/Users/chl/Documents/Papers/harrell-2017-biost-biomed-resear.pdf][harrell-2017-biost-biomed-resear]])
 
 #+NAME: sleepstudy
-#+BEGIN_SRC R  
-drug1 = c(.7, -1.6, -.2, -1.2, -.1, 3.4, 3.7, .8, 0, 2) 
+#+BEGIN_SRC R
+drug1 = c(.7, -1.6, -.2, -1.2, -.1, 3.4, 3.7, .8, 0, 2)
 drug2 = c(1.9, .8, 1.1, .1, -.1, 4.4, 5.5, 1.6, 4.6, 3.4)
-d = data.frame(Drug=c(rep('Drug 1', 10), rep('Drug 2', 10), rep('Difference', 10)), 
+d = data.frame(Drug=c(rep('Drug 1', 10), rep('Drug 2', 10), rep('Difference', 10)),
                extra=c(drug1 , drug2 , drug2 - drug1))
 w = data.frame(drug1, drug2, diff=drug2 - drug1)
-ggplot(d, aes(x=Drug, y=extra)) + 
-geom_boxplot(col='lightyellow1', alpha=.3, width=.5) + 
-geom_dotplot(binaxis='y', stackdir='center', position='dodge') + 
-stat_summary(fun.y=mean, geom="point", col='red', shape=18, size=5) + 
+ggplot(d, aes(x=Drug, y=extra)) +
+geom_boxplot(col='lightyellow1', alpha=.3, width=.5) +
+geom_dotplot(binaxis='y', stackdir='center', position='dodge') +
+stat_summary(fun.y=mean, geom="point", col='red', shape=18, size=5) +
 geom_segment(data=w, aes(x='Drug 1', xend='Drug 2', y=drug1, yend=drug2), col=gray(.8)) +
 geom_segment(data=w, aes(x='Drug 1', xend='Difference', y=drug1, yend=drug2 - drug1), col=gray(.8)) +
 xlab('') + ylab('Extra Hours of Sleep') + coord_flip()
@@ -43,7 +43,7 @@ From the Stata Manual [R] on "bootstrap":
 cite:efron-1986-boots-method describe an alternative to Satterthwaite’s approximation that estimates the ASL by bootstrapping the statistic from the test of equal means. Their idea is to recenter the two samples to the combined sample mean so that the data now conform to the null hypothesis but that the variances within the samples remain unchanged.
 
 #+NAME: auto
-#+BEGIN_SRC Stata  
+#+BEGIN_SRC Stata
 summarize mpg, meanonly
 scalar omean = r(mean)
 summarize mpg if foreign==0, meanonly
@@ -110,7 +110,7 @@ Rust enumerated types can be viewed as kind of /algebric datatypes/ (equivalent 
 #+BEGIN_SRC  rust
 enum Option<T> {
   None,
-  Some(T) 
+  Some(T)
 }
 
 fn safe_div(n: i32, d: i32) -> Option<i32> {
@@ -138,8 +138,8 @@ fn main() {
   let v1 = (0u32..9).filter(|x| x % 2 == 0).map(|x| x.pow(2)).collect::<Vec<_>>();
   let v2 = (1..10).filter(|x| x % 2 == 0).collect::<Vec<u32>>();
 
-  println!("{:?}", v1); 
-  println!("{:?}", v2); 
+  println!("{:?}", v1);
+  println!("{:?}", v2);
 }
 #+END_SRC
 
@@ -183,7 +183,7 @@ Focus on semi-parametric and nonparametric causal inference methodology, with a 
 
 Some caveats when assessing causal inference methods: (1) few methods compared and unfair comparisons, (2) testing grounds not calibrated to "real life", and (3) file drawer effect. The later ressembles what is commonly impacting meta-analytical studies. It reminds me of a critic of machine elarning algorithms that are always developed and calibrated on exiting data sets, like those available on UCI, with reference to existing benchmarks---hence inducing a confirmation bias---and that would probably perform poorly on real life data (I didn't find the reference). See also this online article, [[https://www.mckinsey.com/business-functions/risk/our-insights/controlling-machine-learning-algorithms-and-their-biases][Controlling machine-learning algorithms and their biases]], by Tobias Baer and Vishnu Kamalnath, regarding human biases.
 
- 
+
 
 See also: [[/Users/chl/Documents/Papers/middleton-2016-bias-amplif.pdf][middleton-2016-bias-amplif]].
 
@@ -223,7 +223,7 @@ Ioannidis's work on reproductibility and misuse of statistical hypothesis testin
  :END:
 
 See [[/Users/chl/Documents/Papers/koenker-2016-tmle.pdf][koenker-2016-tmle]] for a good tutorial, as well as this slide deck for Stata: [[https://www.stata.com/meeting/uk17/slides/uk17_Luque-Fernandez.pdf][Ensemble Learning Targeted Maximum Likelihood Estimation for Stata Users]].
- 
+
 * [[/Users/chl/Documents/Papers/kazil-2016-data-wrang-python.pdf][kazil-2016-data-wrang-python]] - Data Wrangling with Python
  :PROPERTIES:
  :Custom_ID: kazil-2016-data-wrang-python
@@ -407,9 +407,9 @@ NEXT Letunic I, Bork P. 2007. Interactive Tree Of Life (iTOL): an online tool fo
 Main blog: https://www.math3ma.com
 Level: graduate student
 
-Category Theory used to reshape and reformulate problems within pure mathematics, including topology, homotopy theory and algebraic geometry, and it has various applications in /chemistry/, neuroscience, systems biology, /natural language processing/, causality, network theory, dynamical systems, and database theory. 
+Category Theory used to reshape and reformulate problems within pure mathematics, including topology, homotopy theory and algebraic geometry, and it has various applications in /chemistry/, neuroscience, systems biology, /natural language processing/, causality, network theory, dynamical systems, and database theory.
 
-Two central themes: 
+Two central themes:
 
 - functorial semantics: C → D ≈ interpretation of C within D; syntax (grammar in NLP) refers to rules for putting things together and semantics (meaning) refers to the meaning of those things.
 
@@ -445,11 +445,61 @@ I learned a few things about packaging, and in particular the number of modules 
 Driving forces for /evolution/:
 
 - natural selection: (ignoring effects of genetic drift) classical (homozygous loci for the wild-type allele) vs. balance (polymorphic loci) hypothesis, which requires to be able to estimate genetic diversity in populations. This has successively be done using allozyme polymorphisms (inconclusive results due to limitations of protein electrophoresis), nucleotide sequence data (using restriction enzymes, before PCR and automated Sanger sequencing), and genome variation.
-  
+
 - genetic drift,
-  
+
 - mutation,
-  
+
 - recombination,
-  
+
 - gene flux.
+* [[/Users/chl/Documents/Papers/altenhoff-2019-oma.pdf][altenhoff-2019-oma]] - OMA standalone: orthology inference among public and custom genomes and transcriptomes
+ :PROPERTIES:
+ :Custom_ID: altenhoff-2019-oma
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/altenhoff-2019-oma.pdf
+ :END
+ Orthology resources: [[http://eggnogdb.embl.de][eggNOG]], [[http://www.ensembl.org/info/docs/api/compara/index.html][Ensembl Compara]], [[http://inparanoid.sbc.su.se][InParanoid]], [[https://omictools.com/mbgd-tool][MBGD]], [[https://www.orthodb.org][OrthoDB]], [[https://orthomcl.org/orthomcl/][OrthoMCL]], [[http://www.pantherdb.org/genes/][PANTHER]], [[http://phylomedb.org][PhylomeDB]], and [[https://omabrowser.org/oma/home/][OMA]].
+ OMA [[https://omabrowser.org/standalone/][standalone app]], available /via/ Homebrew.
+ Orthologous and paralogous genes are two types of homologous genes, that is, genes that arise from a common DNA ancestral sequence. Orthologous genes diverged after a speciation event, while paralogous genes diverge from one another within a species. Put another way, the terms orthologous and paralogous describe the relationships between genetic sequence divergence and gene products associated with speciation or genetic duplication. ([[https://sciencing.com/difference-between-orthologous-paralogous-genes-18612.html][The difference between orthologous & paralogous genes]])
+* [[/Users/chl/Documents/Papers/cormen-2013-algor-unloc.pdf][cormen-2013-algor-unloc]] - Algorithms Unlocked
+ :PROPERTIES:
+ :Custom_ID: cormen-2013-algor-unloc
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/cormen-2013-algor-unloc.pdf
+ :END:
+#+begin_quote
+We want two things from a computer algorithm: given an input to a problem, it should always produce a correct solution to the problem, and it should use com- putational resources efficiently while doing so.
+#+end_quote
+- exact vs. approximate solution (e.g., RSA and large prime numbers)
+- focusing on the order of growth of the running time as a function of the input size
+- algorithms described in plain English, and not in pseudo-code like in CLRS
+* [[/Users/chl/Documents/Papers/flatt-2019-racket-guide.pdf][flatt-2019-racket-guide]] - The Racket Guide
+ :PROPERTIES:
+ :Custom_ID: flatt-2019-racket-guide
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/flatt-2019-racket-guide.pdf
+ :END:
+* [[/Users/chl/Documents/Papers/friedman-1995-littl-schem.pdf][friedman-1995-littl-schem]] - The Little Schemer
+ :PROPERTIES:
+ :Custom_ID: friedman-1995-littl-schem
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/friedman-1995-littl-schem.pdf
+ :END:
+ Beautiful book, very different from SICP in that it focus on basic building blocks (=car=, =cdr=, =cons=, =eq?=, etc.) and use a very pragmatic approach to understanding the structuration and interpretation of forms and s-expr. The penultimate goal of this book (4th ed., after the original /Little Lisper/) is to learn to think in a functional way. The ten commandments are worth keeping in mind for that very specific purpose:
+
+    1. When recurring on a list of atoms, =lat=, ask two questions about it: =(null? lat)= and =else=. When recurring on a number, =n=, ask two questions about it: =(zero? n)= and =else=. When recurring on a list of s-expr, =l=, ask three questions about it: =(null? l)=, =(atom? (car l))=, and =else=.
+    2. Use =cons= to build lists.
+    3. When building a list, describe the first typical element, and then =cons= it into the natural recursion.
+    4. Always change at least one argument while recurring. When recurring on a list of atoms, =lat=, use =(cdr lat)=. When recurring on a number, =n=, use =(sub1 n)=. And when recurring on a list of s-expr, =l=, use =(car l)= and =(cdr l)= if neither =(null? l)= nor =(atom? (car l))= are true.
+       It must be changed to be closer to termination. The changing argument must be tested in the termination condition: when using =cdr=, test termination with =null?=, and when using =sub1=, test termination with =zero?=.
+    5. When building a value with =÷=, always use 0 for the value of the terminating line, for adding 0 does not change the value of an addition. When building a value with =x=, always use 1 for the value of the terminating line, for multiplying by 1 does not change the value of a multiplication. When building a value with =cons=, always consider =()= for the value of the terminating line.
+    6. Simplify only after the function is correct.
+    7. Recur on the subparts that are of the same nature:
+       - on the sublists of a list;
+       - on the subexpressions of an arithmetic expression.
+    8. Use help functions to abstract from representations.
+    9. Abstract common patterns with a new function.
+    10. Build functions to collect more than one value at a time.
+* [[/Users/chl/Documents/Papers/kleppmann-2016-desig-data.pdf][kleppmann-2016-desig-data]] - Designing Data-Intensive Applications
+ :PROPERTIES:
+ :Custom_ID: kleppmann-2016-desig-data
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/kleppmann-2016-desig-data.pdf
+ :END:
+ Review by [[https://henrikwarne.com/2019/07/27/book-review-designing-data-intensive-applications/][Henrik Warne]].

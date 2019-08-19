@@ -1,4 +1,4 @@
-* Tasks [22/64]
+* Tasks [22/65]
 ** TODO Read and review [[file:~/Documents/Papers/objc/Advanced-Swift-Nov-2017.pdf][Advanced Swift]]                                        :review:
 ** TODO Survey Weights: A Step-by-Step Guide to Calculation                   :review:
 ** TODO Read and review cite:peters-2017-elemen-causal-infer                  :review:
@@ -19,7 +19,7 @@ CLOSED: [2019-05-24 Ven 14:16]
 
 ** DONE Cleanup todos from projects
    CLOSED: [2019-02-19 Tue 09:27]
-** CANC Add epub's to BibTeX file 
+** CANC Add epub's to BibTeX file
    CLOSED: [2019-03-20 Wed 08:12]
 ** CANC Setup Gmail with catchup univ-paris-diderot.fr                        :work:
    CLOSED: [2019-02-26 Tue 09:43]
@@ -28,7 +28,7 @@ CLOSED: [2019-05-24 Ven 14:16]
 ** TODO Check [[https://docs.racket-lang.org/math/matrices.html][SVD in Racket]]                                                   :racket:
 ** DONE Cleanup Trash folder
    CLOSED: [2019-02-21 Thu 07:49]
-** DONE Implement JC69 model in Mathematica 
+** DONE Implement JC69 model in Mathematica
    CLOSED: [2019-02-26 Tue 19:41]
 ** DONE Write blog post about Jukes-Cantor model using Mathematica            :blog:
    CLOSED: [2019-02-26 Tue 19:42]
@@ -60,7 +60,7 @@ CLOSED: [2019-06-01 Sam 08:20]
 ** TODO Post Mata Book                                                        :blog:
 ** TODO Post Texpad                                                           :blog:
 ** DONE Post book Pragmatic functional anthology                              :blog:
-   CLOSED: [2019-03-10 Sun 21:11]                    
+   CLOSED: [2019-03-10 Sun 21:11]
 ** DONE Install Python [[http://etetoolkit.org/docs/2.3/tutorial/tutorial_ncbitaxonomy.html][ete toolkit]]                                            :bioinfo:
    CLOSED: [2019-03-12 Tue 09:17]
 ** TODO Study GBIF project and databases                                      :bioinfo:
@@ -87,23 +87,23 @@ CLOSED: [2019-05-29 Mer 15:45]
 ** TODO Cleanup Gmail/Archives                                                :emacs:
 ** DONE Find /Perl Cookbook/
 CLOSED: [2019-06-04 Mar 12:55]
-* Projects [10/15]
+** TODO Read and review cite:cormen-2013-algor-unloc                          :review:
+* Projects [10/17]
 ** DONE Install and test samtools, bedtools, bowtie2, MuMmer                  :bioinfo:
    CLOSED: [2019-02-19 Tue 16:12]
 ** STAR Read cite:yang-2006-comput-molec-evolut (Part II)                     :bioinfo:
 ** TODO Read cite:lemey-2009-phylog-handb                                     :bioinfo:
 ** DONE Read cite:schmidt-2002-tree-puzzl                                     :bioinfo:
    CLOSED: [2019-04-15 Mon 14:45]
-** DONE R packages [[https://cran.r-project.org/web/packages/ape/index.html][ape]] ([[http://ape-package.ird.fr][www]]), [[https://cran.r-project.org/web/packages/apTreeshape/index.html][apTreeshape]], [[https://cran.r-project.org/web/packages/phytools/index.html][phytools]] and [[https://cran.r-project.org/web/packages/phangorn/index.html][phangorn]] :bioinfo:
+** DONE R packages [[https://cran.r-project.org/web/packages/ape/index.html][ape]] ([[http://ape-package.ird.fr][www]]), [[https://cran.r-project.org/web/packages/apTreeshape/index.html][apTreeshape]], [[https://cran.r-project.org/web/packages/phytools/index.html][phytools]] and [[https://cran.r-project.org/web/packages/phangorn/index.html][phangorn]]              :bioinfo:
    CLOSED: [2019-04-09 Tue 08:03]
-** TODO Coursera [[https://www.coursera.org/specializations/bioinformatics][Bioinformatics]] (+ [[https://www.coursera.org/learn/algorithms-on-strings][Algorithms on Strings]]) :bioinfo:
 ** TODO Read cite:choudhuri-2014-bioin-begin                                  :bioinfo:
 ** DONE Setup Netlify and Heroku                                              :code:
    CLOSED: [2019-03-05 Tue 12:43]
 ** TODO Drawing phylogenetic tree with D3.js                                  :code:
 ** DONE Download Mycobank data                                                :bioinfo:
    CLOSED: [2019-03-13 Wed 11:11]
-** CANC Mac app for viewing Fasta and Mafft (See [[https://github.com/4ment/seqotron/][seqotron]]) :bioinfo:
+** CANC Mac app for viewing Fasta and Mafft (See [[https://github.com/4ment/seqotron/][seqotron]])                    :bioinfo:
    CLOSED: [2019-04-13 Sat 20:06]
 ** DONE Read cite:castresana-2000-selec-conser                                :bioinfo:
    CLOSED: [2019-04-15 Mon 13:28]
@@ -113,3 +113,12 @@ CLOSED: [2019-06-04 Mar 12:55]
 CLOSED: [2019-05-17 Ven 10:10]
 ** DONE Read cite:efron-1996-boots-confid                                     :stats:
    CLOSED: [2019-04-17 Wed 10:05]
+** TODO [rust] libc
+** TODO [racket] trie
+** TODO [rust] permutation
+* Lab [1/4]
+** TODO Check server and configure ssh keys
+** TODO Check and update ITS data
+** DONE Configure screen + keyboard
+CLOSED: [2019-08-19 Lun 14:08]
+** TODO Prepare NGS + Galaxy handout for September
