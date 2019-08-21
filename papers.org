@@ -503,3 +503,28 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :INTERLEAVE_PDF:/Users/chl/Documents/Papers/kleppmann-2016-desig-data.pdf
  :END:
  Review by [[https://henrikwarne.com/2019/07/27/book-review-designing-data-intensive-applications/][Henrik Warne]].
+* [[/Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf][jun-2009-ident-mammal]] - Identification of mammalian orthologs using local synteny
+ :PROPERTIES:
+ :Custom_ID: jun-2009-ident-mammal
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf
+ :END:
+ - differentiating between genes that have diverged through a speciation event
+   (orthologs) and those derived through duplication events within a species
+   (paralogs). Gene order may be viewed as a measure of conservation, or better
+   gene family evolution.
+ - local [[https://en.wikipedia.org/wiki/Synteny][synteny]] (gene order) might be useful to resolve ambiguous sequence
+   based matches between putative orthologs (and [[https://www.ncbi.nlm.nih.gov/pubmed/19553367][retrogenes]]).
+ - 93% agreement between coding sequence based orthology (Inparanoid) and local
+   synteny based orthology, with cases of discordance resulting from
+   evolutionary events including [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2884099/][retrotransposition]] and genome rearrangements.
+ - intron conservation ratio = #(positional homologous introns)/#(intron
+   positions in protein alignment), in strong agreement with the orthology
+   assignments made by the two methods.
+* [[/Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] - Orthology detection combining clustering and synteny for very large datasets
+ :PROPERTIES:
+ :Custom_ID: lechner-2014-orthol-detec
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf
+ :END:
+- orthology is not a transitive relation so that the problem is different from
+  clustering an input gene set.
+- the authors focus on avoiding false positive orthology assignments within the phylogenetic range of the reported orthologous groups, while tolerating recent in-paralogs (speciation preceding duplication) as unavoidable contamination

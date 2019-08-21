@@ -975,6 +975,15 @@ https://ghaiklor.github.io/iterm-fish-fisher-osx/
 ** Nord theme for Fish
 [2019-08-16 Ven 08:39]
 https://github.com/arcticicestudio/nord/issues/102
+** TypeScript Language Specification
+[2019-08-19 Lun 18:45]
+https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md
+** The Adventures of a Pythonista in Schemeland
+[2019-08-19 Lun 18:45]
+http://www.phyast.pitt.edu/~micheles/scheme/index.html
+** Programming in Haskell - Solutions to slides
+[2019-08-21 Wed 07:47]
+https://tiefenauer.github.io/blog/programming-in-haskell/
 * Notes
 ** [2006-07-09 Dim] C Tips
 

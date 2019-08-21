@@ -1,0 +1,26 @@
+#+TITLE: Log book
+#+AUTHOR: chl
+
+* 2019
+** August
+*** 19
+- installation poste de travail (écran, clavier et souris)
+- remise en route du serveur
+- nettoyage second poste bureautique
+- problèmes Rosalind et dotfiles Github
+- lectures diverses sur Lisp/Scheme
+*** 20
+- installation Fish et Nvim sur serveur podospora
+- problèmes Rosalind
+- mise à jour 3 nouveaux génomes sur serveur local de blast
+- lecture articles sur synthénie
+- création page index sur serveur local de blast
+*** 21
+- mise à jour installation Haskell stack (Hlint)
+- mise à jour Rust (stable + nightly)
+- lecture articles sur synthénie (con't)
+- inscription site JGI (ch.lalanne@gmail.com), vérification [[https://genome.jgi.doe.gov/portal/pages/dynamicOrganismDownload.jsf?organism=ascomycota][raw data]]
+- problèmes Rosalind
+*** 22
+- étudier algorithme Ukkonen et "suffix tree" (cf. [[https://codereview.stackexchange.com/q/225486][Rosalind LCSM]])
+**** TODO algorithms on trees and graphs

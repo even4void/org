@@ -116,9 +116,16 @@ CLOSED: [2019-05-17 Ven 10:10]
 ** TODO [rust] libc
 ** TODO [racket] trie
 ** TODO [rust] permutation
-* Lab [1/4]
-** TODO Check server and configure ssh keys
+* Lab [2/4]
+** DONE Check server and configure ssh keys
+CLOSED: [2019-08-20 Tue 16:21]
 ** TODO Check and update ITS data
 ** DONE Configure screen + keyboard
 CLOSED: [2019-08-19 Lun 14:08]
 ** TODO Prepare NGS + Galaxy handout for September
+* Blog [2/3]
+** DONE Finish post on Mendel's second law
+CLOSED: [2019-08-20 Tue 13:44]
+** DONE Finish post on prime factorization
+CLOSED: [2019-08-20 Tue 10:32]
+** TODO Write post on Python [[itertools and functools][~/Documents/Drafts/euler-python-itertools]]
