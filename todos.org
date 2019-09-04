@@ -111,41 +111,41 @@ CLOSED: [2019-09-03 Tue 09:47]
 ** CANC Stata dct to psql converter ([[https://github.com/mrdwab/StataDCTutils][www]])
 CLOSED: [2019-09-03 Tue 09:48]
 ** STAR Read cite:yang-2006-comput-molec-evolut (Part II)                     :bioinfo:
-** TODO Python CSVY
-** TODO Create Racket package like [[https://github.com/davidgohel/fpeek][fpeek]]
-** TODO Mac app for apache Drill
-** TODO Drawing phylogenetic tree with D3.js                                  :code:
+** TODO Python CSVY                                                           :code:python:
+** TODO Create Racket package like [[https://github.com/davidgohel/fpeek][fpeek]]                                      :code:racket:
+** TODO Mac app for apache Drill                                              :code:
+** TODO Drawing phylogenetic tree with D3.js                                  :code:bioinfo:
 ** CANC Mac app for viewing Fasta and Mafft (See [[https://github.com/4ment/seqotron/][seqotron]])                    :bioinfo:
    CLOSED: [2019-04-13 Sat 20:06]
-** TODO [rust] libc
-** TODO [racket] trie
-** TODO [rust] permutation
-** TODO [[https://github.com/mikolalysenko/robust-arithmetic-notes][Robust arithmetic in JavaScript]] in Racket
+** TODO libc                                                                  :code:rust:
+** TODO trie                                                                  :code:racket:
+** TODO permutation                                                           :code:rust:
+** TODO [[https://github.com/mikolalysenko/robust-arithmetic-notes][Robust arithmetic in JavaScript]] in Racket                             :code:racket:
 * Lab [4/9]
 ** DONE Download Mycobank data                                                :bioinfo:
    CLOSED: [2019-03-13 Wed 11:11]
-** DONE Check server and configure ssh keys
+** DONE Check server and configure ssh keys                                   :work:
 CLOSED: [2019-08-20 Tue 16:21]
-** TODO Check and update ITS data
-** DONE Configure screen + keyboard
+** TODO Check and update ITS data                                             :bioinfo:
+** DONE Configure screen + keyboard                                           :work:
 CLOSED: [2019-08-19 Lun 14:08]
-** STAR Prepare NGS + Galaxy handout for September
-** DONE Install Galaxy server
+** STAR Prepare NGS + Galaxy handout for September                            :bioinfo:
+** DONE Install Galaxy server                                                 :work:
 CLOSED: [2019-09-02 Mon 15:14]
-** STAR Test Galaxy server with local [[file:/Users/chl/Documents/cwd/nobackup/galaxy/RNAseq][RNAseq data]]
-** TODO Install local Blast+ server
-** STAR Readings RNAseq, feat. [[https://github.com/GenomicParisCentre/eoulsan][Eoulsan]] git reference repository
+** STAR Test Galaxy server with local [[file:/Users/chl/Documents/cwd/nobackup/galaxy/RNAseq][RNAseq data]]                             :bioinfo:
+** TODO Install local Blast+ server                                           :work:
+** STAR Readings RNAseq, feat. [[https://github.com/GenomicParisCentre/eoulsan][Eoulsan]] git reference repository               :bioinfo:
 * Blog [3/10]
-** DONE Finish post on Mendel's second law
+** DONE Finish post on Mendel's second law                                    :blog:
 CLOSED: [2019-08-20 Tue 13:44]
-** DONE Finish post on prime factorization
+** DONE Finish post on prime factorization                                    :blog:
 CLOSED: [2019-08-20 Tue 10:32]
-** TODO Write post on Python [[itertools and functools][~/Documents/Drafts/euler-python-itertools]]
-** TODO Write post on why emacs (vs. NVim or VS Code), see https://is.gd/A9vDBR
-** DONE Write post "Tranches de vie" (photos frigo)
+** TODO Write post on Python [[itertools and functools][~/Documents/Drafts/euler-python-itertools]]        :blog:
+** TODO Write post on why emacs (vs. NVim/VSC), see https://is.gd/A9vDBR      :blog:
+** DONE Write post "Tranches de vie" (photos frigo)                           :blog:
 CLOSED: [2019-09-02 Mon 07:47]
-** TODO Write post combinatorics
-** TODO Write post CL and numcl
-** TODO Micro-review September
-** TODO Tree traversal (O(n)) [[https://yuyuan.org/MorrisAlgorithm/][1]], [[http://www.kohala.com/start/papers.others/knuth.dec74.html#sec2][2]], [[https://news.ycombinator.com/item?id=20863431][3]]
-** TODO Book review /Algorithms/ [cite:dasgupta-2006-algor]
+** TODO Write post combinatorics                                              :blog:
+** TODO Write post CL and numcl                                               :blog:
+** TODO Micro-review September                                                :blog:
+** TODO Tree traversal (O(n)) [[https://yuyuan.org/MorrisAlgorithm/][1]], [[http://www.kohala.com/start/papers.others/knuth.dec74.html#sec2][2]], [[https://news.ycombinator.com/item?id=20863431][3]]                                         :blog:
+** TODO Book review /Algorithms/ [cite:dasgupta-2006-algor]                     :blog:
