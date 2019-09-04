@@ -1009,6 +1009,190 @@ https://www.ybrikman.com/writing/2015/05/19/docker-osx-dev/
 [2019-08-30 Fri 09:07]
 https://www.quora.com/What-is-the-difference-between-containerization-Docker-and-virtualization-VMWare-VirtualBox-Xen
 * Notes
+** [2005-08-10 Mer] RCS
+Principe général de RCS
+------------------------
+RCS_ est un système de gestion de versions très simple d'utilisation,
+qui permet de conserver une trâce de l'évolution d'un projet
+(document, code source, etc.) en cours d'élaboration : cela comprend
+la gestion automatisée des différentes versions du projet, les
+modifications (ajout/suppression) apportées à celui-ci dans chaque
+version, la gestion du travail collaboratif, et de nombreuses autres
+fonctionnalités qui évitent des tâches d'intendance parfois
+fastidieuses lorsqu'elles doivent être réalisée manuellement.
+
+.. _RCS: http://www.gnu.org/software/rcs/rcs.html
+
+RCS n'est qu'un système de contrôle de versions parmi d'autres. A
+titre d'exemple, on peut citer CVS ou subversion, qui offrent
+également des systèmes de gestion de version très efficace. L'avantage
+de RCS est sa simplicité d'utilisation, et l'absence de configuration
+de quelque nature que ce soit [#]_.
+
+
+Gestion des versions
+--------------------
+
+
+Exemples
+--------
+
+Un simple document LaTeX
+~~~~~~~~~~~~~~~~~~~~~~~~
+On se propose d'illustrer les différentes commandes vues à propos de
+RCS dans le cadre de l'édition d'un petit document en LaTeX. On édite
+le fichier avec son éditeur préféré, on le compile pour vérifier qu'il
+n'y a pas d'erreur, puis on le visionne avec xdvi. Généralement, on
+répète cette procédure à chaque fois que l'on fait des modifications
+sur le docuemnt, et à mesure que celui-ci grandit on est parfois amené
+à conserver une partie du document telle quelle et à développer une
+autre partie, puis à revenir sur l'ancienne partie, et cela nécessite
+de conserver une trace visible des modifications (à moins d'avoir une
+mémoire exceptionnelle). Plusieurs options permettent de gérer ce
+genre d'aléas de l'édition de document : on peut passer en commentaire
+une partie du texte tapé la veille, afin d'en conserver une trace,
+renommer le fichier exemple.tex en exemple2.tex, etc. Mais en
+utilisant RCS, on se passera de ces méthodes manuelles contraignantes,
+et on bénéficiera d'un contrôle des différentes versions du document,
+i.e. de son "évolution temporelle".
+Tout d'abord, on insérera dans un commentaire en tête ou en fin du
+document l'instruction ``$Header: /home/chl/Documents/work4site/rcs.tut/rcs.txt,v 1.1 2005/08/10 14:19:25 chl Exp chl $``, ce qui donne à peu près ceci dans
+le source exemple.tex ::
+
+  % $Header: /home/chl/Documents/work4site/rcs.tut/rcs.txt,v 1.1 2005/08/10 14:19:25 chl Exp chl $
+  \documentclass[a4paper,12pt]{article} \usepackage[latin1]{inputenc}
+  \usepackage[francais]{babel}
+
+  \begin{document}
+  ...
+
+Ensuite, on dépose la première version du fichier dans l'archive RCS à
+l'aide de la commande ::
+
+  ci exemple.tex
+
+Normalement, RCS affiche la suite de messages ci-dessous ::
+
+  exemple.tex,v  <--  exemple.tex
+  enter description, terminated with single '.' or end of file:
+  NOTE: This is NOT the log message!
+  >>
+
+Il suffit alors de suivre les instructions indiquées et de donner une
+plus ou moins brève description du projet à la suite de l'invite
+``>>``, puis de valider et de saisir un point ``.`` pour retourner sous le
+shell. RCS aura crée un fichier ``exemple.tex,v`` (vérifier avec la
+commande ``ls``), qui contient les informations de version et le texte
+du fichier original. Par défaut, la version attribué est la ``1.1``
+puisque cela correspond à la *racine* du projet.
+
+Afin de reprendre l'édition de notre document, il faut récupérer notre
+fichier en tapant ::
+
+  co exemple.tex
+
+(attention, on ne tape pas le nom du fichier tel qu'il apparaît dans
+le répertoire, i.e. exemple.tex,v)
+
+On notera que cette fois, l'instruction ``$Header: /home/chl/Documents/work4site/rcs.tut/rcs.txt,v 1.1 2005/08/10 14:19:25 chl Exp chl $`` insérée en début
+de document a été remplacée à présent par ``$Header:
+/home/chl/Documents/work4site/rcs.tut/exemple.tex,v 1.1 2005/08/10
+11:20:11 chl Exp $`` : elle indique le lieu où se trouve le fichier
+dans l'arborescence de votre système, le numéro de version, la date de
+dernière modification (i.e. en l'occurence d'archivage), l'auteur de
+la dernière modification et le statut du document (ici Exp, pour
+expérimental). Néanmois, si vous essayez d'effectuer des modifications
+sur le document, votre éditeur vous renverra un message d'erreur lors
+de l'enregistrement des modifications car le document est verouillé :
+on peut le lire, le compiler, mais pas modifier son contenu. Pour
+avoir un accès en écriture au fichier, il faut en fait taper la
+commande ::
+
+  co -l exemple.tex
+
+Cette fois-ci, RCS indique ::
+
+  exemple.tex,v  -->  exemple.tex
+  revision 1.1 (locked)
+  done
+
+Le fichier est verrouillé car vous l'avez extrait pour
+modifications. Toute personne qui tenterait de faire la même chose en
+même temps que vous se verrait ainsi prié d'attendre que vous ayez
+déverouillé l'archive. Bien évidemment, lorsque vous travaillez seul,
+il n'est pas très utile d'avoir un tel système de contrôle de
+l'édition par l'application d'un verrou à l'enreistrement : vous
+pouvez dans ce cas taper ::
+
+  ci -l exemple.tex
+
+lors du dépôt, ce qui vous évitera de taper ``co -l`` à chaque fois
+que vous souhaiterez rééditer le document. RCS se charge d'actualiser
+le fichier ``exemple.tex,v`` sans détruire le fichier sur lequel vous
+travaillez. La commande ``rcs -U`` permet également de libérer l'accès
+au fichier, de sorte que l'on peut travailler dessus sans le
+déverouiller au préalable.
+
+Maintenant, on peut s'amuser à rajouter un paragraphe en fin de
+document, et à effectuer de nouveau l'archivage du document pour
+mettre à jour la version (après modifications, on devrait passer en
+version 1.2). Après avoir enregistré les modifications, il suffit de
+taper de nouveau ``ci exemple.tex``, et on doit voir s'afficher ::
+
+  exemple.tex,v  <--  exemple.tex
+  new revision: 1.2; previous revision: 1.1
+  enter log message, terminated with single '.' or end of file:
+  >>
+
+On indique les modifications apportées à la suite de l'invite ``>>``,
+on valide et on termine par un point ``.`` ; par exemple ::
+
+  >> ajout de la section 3
+  >> .
+  done
+
+Le fichier original ``exemple.tex`` a été de nouveau convertit en un
+fichier ``exemple.tex,v`` par RCS, et il est à présent verrouillé dans
+l'archive. Le numéro de version correspondant est bien ``1.2`` : c'est
+la version numéro 2 du tronc, directement dérivée de la racine
+(version 1.1). On vérifiera également en déverouillant l'archive pour
+édition (``co -l exemple.tex``) que le numéro de version a bien été
+mis à jour dans le source du document.
+
+Pour visualiser l'ensemble des modifications qui ont été réalisées sur
+le document depuis sa création, il suffit de taper ::
+
+  rlog exemple.tex
+
+Cette commande produit les informations relatives à l'ensemble des
+modification qui ont été effectuées depuis le premier dépôt du fichier
+dans l'archive ::
+
+  RCS file: exemple.tex,v
+  Working file: exemple.tex
+  head: 1.2
+  branch:
+  locks: strict
+  access list:
+  symbolic names:
+  keyword substitution: kv
+  total revisions: 2;     selected revisions: 2
+  description:
+  un document simple sous LaTeX pour illustrer l'usage de RCS
+  ----------------------------
+  revision 1.2
+  date: 2005/08/10 12:38:27;  author: chl;  state: Exp;  lines: +5 -1
+  ajout de la section 3
+  ----------------------------
+  revision 1.1
+  date: 2005/08/10 11:20:11;  author: chl;  state: Exp;
+  Initial revision
+  =============================================================================
+
+.. [#] en dehors de l'installation de RCS... Si ce n'est pas le cas ;
+.. sous Linux, c'est généralement installé d'office, si ce n'est pas
+.. le cas, changer de système :-)
+
 ** [2006-07-09 Dim] C Tips
 
 *Puissance de 2 :*
@@ -1222,7 +1406,1910 @@ In article <1125025156.153462@nfs-db1.segnet.com>,
  Reinder
 -------------------------------
 
-** [2006-07-09 Dim] Running R in batch mode: =/usr/bin/nice 19 R --no-save BATCH $1.R -o a.out &=
+** [2006-07-09 Dim] Running R in batch mode
+=/usr/bin/nice 19 R --no-save BATCH $1.R -o a.out &=
+:encoding: ISO-8859-1
+An introduction to knowledge engineering
+========================================
+Christophe Lalanne <christophe.lalanne@gmx.net>
+Jan. 2008
+
+// Applications using Neural Networks, Genetic Algorithms and Rule-Based Systems
+
+image:ike.jpg[ike.jpg]
+** [2006-10-15 Dim] Algorithmique
+Introduction
+============
+Voici quelques notes concernant l'algorithmique au travers du langage
+Pascal, initialement écrites au fil de mes lectures et de mon
+apprentissage de ce langage. Elles sont rassemblées ici à titre
+personnel, et éventuellement à titre pédagogique, pour les personnes
+désireuses d'apprendre ce langage au travers d'exemples choisis, ou
+pour les personnes connaissant déjà le langage mais recherchant
+certains détails algorithmiques. Lorsque cela est possible (ou utile),
+la même version en langage C est fournie, à titre de
+comparaison. L'ensemble des sources figurant sur cette page ont été
+testés avec gcc (Gnu C Compiler, version 3.4.1) et fpc (Free Pascal
+Compiler, version 1.9.8), initialement sous GNU/Linux, puis sous MacOS X, avec gcc version 4.0.1 et fpc version 2.0.4-1.
+
+Le calcul scientifique impose la plupart du temps de travailler avec
+des réels, et soulève par conséquent le problème (i) de la
+représentation de ces quantités en machine, et (ii) de la précision
+des résultats issus des calculs effectués. J'ai rassemblé ici
+quelques-unes des implications de ce type de calcul, au fur et à
+mesure de mon "expérimentation" de ce domaine.
+
+Il y a également quelques algorithmes plus généraux que l'on trouve
+dans des cours de mathématiques pour l'informatique (ou vice-versa...)
+très ordinaires, mais qui constituent toujours un bon point de départ
+pour toute personne désireuse de débuter en programmation
+mathématique. De nombreuses notions présentées sur cette page m'ont
+été
+
+On commencera par quelques rappels et considérations générales
+concernant la programmation mathématique, puis on présentera
+quelques-uns des algorithmes les plus connus, puis on terminera avec
+des fonctions plus avancées.
+
+Les exemples proposés sont réalisés en Pascal la plupart du temps,
+quelques fois en C, et quelques implémentations en Scheme ou Maple
+sont également disponibles. La littérature étant vaste sur ce sujet,
+je donne ici à titre indicatif les ouvrages que j'ai consultés : [Bers1991]_, [Knut1997]_, [Boug1993]_. Les autres références ponctuelles (pages internet ou
+ouvrages divers) sont indiquées directement dans le texte ou dans la
+bibliographie rassemblée à la fin de ce document.
+
+L'ensemble des sources figurant sur cette page ont été testés avec gcc
+(Gnu C Compiler, version 3.4.1) et fpc (Free Pascal Compiler, version
+2.0.0).
+
+Calcul numérique
+================
+
+Calcul de sommes sans dépassement
+---------------------------------
+Lorsque l'on calcule une somme de manière classique, c'est-à-dire par
+accumulation itérative des valeurs à sommer, il peut arriver qu'il se
+produise un dépassemment du résultat du point de vue de la capacité de
+représentation en machine, c'est-à-dire que la valeur de la somme
+*temporaire* calculée à un certain moment n'est pas représentable en
+machine, comme par exemple une somme codée en entier (integer)
+dépassant 32765. C'est le cas lorsque l'on travaille avec de
+grandes bases de données. Il est possible de remédier à cet
+inconvénient en utilisant l'idée suivante :
+
+.. TODO: compléter ce paragraphe
+
+Voici le code correspondant ::
+
+  function somme(A : tab): integer;
+  var
+     pos, neg: tab;
+     npos, nneg, accu, i: integer;
+  begin
+     npos := 0;
+     nneg := 0;
+     {-- étape 1 : tri en termes positifs et négatifs --}
+     for i:=1 to N do
+        if A[i] >= 0 then
+        begin
+	   npos := npos + 1;
+	   pos[npos] := A[i];
+        end
+        else
+        begin
+	   nneg := nneg + 1;
+	   neg[nneg] := A[i];
+        end;
+     {-- étape 2 : calcul de la somme --}
+     accu := 0;
+     while (npos > 0) and (nneg > 0) do
+     begin
+        if accu >= 0 then
+        begin
+	   accu := accu + neg[nneg];
+	   nneg := nneg - 1;
+        end
+        else
+        begin
+	   accu := accu + pos[npos];
+	   npos := npos - 1;
+        end
+     end;
+     {-- étape 3 : ajout des derniers termes de même signe --}
+     if npos > 0 then
+        for i:=1 to npos do
+	   accu := accu + pos[i]
+        else
+	   for i:=1 to nneg do
+	      accu := accu + neg[i];
+     somme := accu;
+  end;
+
+Une autre solution consiste à travailler avec des entiers "beaucoup"
+plus grands.
+
+Calcul de la puissance d'un nombre réel
+---------------------------------------
+Il n'existe pas de fonction puissance sous Pascal, et plutôt que de
+répéter `x * x * x * ...` dans une instruction, il est parfois utile
+d'en implémenter une rapidement.  L'avantage de la méthode récursive
+(cf.  D. Knuth, *The Art of Computer Programming*, Addison Wesley, 2ème
+éd., 1981) est qu'elle requiert environ `log2(n)` multiplications,
+contrairement à la solution itérative classique qui nécessite n-1
+multiplications.
+
+Voici la fonction classique ::
+
+  function puissance(x : real; n : integer): real;
+  {méthode classique
+   N.B.: traite les cas n<0, n=0 et n>0}
+  var
+     i   : integer;
+
+  begin
+     if n = 0 then
+        puissance := 1.0
+     else if n > 0 then
+     begin
+        puissance := x;
+        for i:=2 to n do
+	   puissance := puissance * x
+     end
+     else
+     begin
+        puissance := 1/x;
+        for i:=2 to abs(n) do
+	   puissance := puissance * 1/x
+     end
+  end; { puissance }
+
+et une variante ::
+
+  function puissance2(x : real; n : integer): real;
+  {méthode récursive de la chaîne chinoise
+   N.B.: implémentée pour les puissances positives}
+  var
+     moitie : real;
+
+  begin
+     if n = 0 then
+        puissance2 := 1.0
+     else
+     begin
+        moitie := puissance2(x, n div 2);
+        puissance2 := sqr(moitie);
+        if (n mod 2 = 1) then
+	   puissance2 := puissance2 * x
+     end;
+  end; { puissance2 }
+
+Le programme `puissance.pas`_ permet de tester ces deux fonctions.
+
+.. _puissance.pas: src/puissance.pas
+
+Estimation de pi par la méthode de Monte Carlo
+----------------------------------------------
+Plusieurs méthodes d'estimation de pi existent et sont plus ou moins
+facilement implémentables en Pascal. La méthode de Monte Carlo est une
+méthode très simple de simulation qui consiste à
+
+Voici le programme correspondant, `pi.pas`_ ::
+
+  program calcul_pi;
+  { calcul de pi par la m-béthode de Monte Carlo }
+
+  var
+     x, y	      : real;
+     d2	      : real;
+     pi	      : real;
+     np, nc, nr : integer; (* nb points tirés, nb points ok, nb répétitions *)
+     i, j	      : integer;
+
+  function aleat: real;
+  begin
+     aleat := random(32766)/32767;
+  end; { aleat }
+
+  { -- bloc principal --}
+  begin
+     write('Combien de points ? ');
+     readln(np);
+     write('Combien de répétitions ? ');
+     readln(nr);
+     randomize;
+     for i:=1 to nr do
+     begin
+        pi := 0.0;
+        nc := 0;
+        for j:=1 to np do
+        begin
+  	   x := aleat;
+	   y := aleat;
+	   d2 := (x-0.5)*(x-0.5) + (y-0.5)*(y-0.5);
+	   if d2 <= 0.25 then
+	      nc := nc + 1;
+        end;
+        pi := (4.0*nc)/np;
+        writeln('estimation de pi avec ', np, ' points : ', pi);
+     end;
+  end.
+
+.. TODO: compléter avec Gentle (2003). *Random Number Generation and
+ 		 Monte Carlo Methods*. Springer-Verlag (2nd Edition).
+
+.. _pi.pas: src/pi.pas
+
+Représentation des nombres réels
+--------------------------------
+.. TODO: à faire
+
+Associativité de la multiplication
+----------------------------------
+.. TODO: à faire
+
+Echange de valeurs
+------------------
+L'échange du contenu de deux variables (`a` prend la valeur de `b` et
+réciproquement) peut se faire de plusieurs manières, et dépend du type
+de langage utilisé.  Le plus souvent, on utilise une variable
+auxiliaire (avec passage par valeur, ou en définissant une fonction
+d'échange avec passage des paramètres par adresse [#]_), mais il est
+possible d'échanger la valeur de 2 variables sans utiliser une telle
+variable auxiliaire. Par exemple, les instructions suivantes
+permettent d'échanger le contenu des variables `a` et `b`::
+
+   x := x + y;
+   y := x - y;
+   x := x - y;
+
+Cependant, cette méthode n'est pas une bonne façon de procéder à la
+permutation des valeurs de 2 variables, notamment lorsque les
+variables sont de type réel. En effet, si `a = 1E+8` et `b=1E-6`, `a`
+et `b` auront la même valeur après l'échange. Pourquoi ? Parce que
+l'écart entre ces deux valeurs dépassent la précision en machine et
+`1E+8+1E-6 = 1E+8`.
+
+.. _echange.pas: ./src/echange.pas
+
+Comparaison de deux réels
+-------------------------
+On évitera de tester directement l'égalité entre deux réels, du type
+``if (a == b)``, dans la mesure où ceux-ci peuvent différer à cause de
+la précision machine.  On trouve souvent le test suivant (EPS
+désignant une constante très petite, e.g. 1E-6) ::
+
+   if (fabs (x - y) < EPS
+
+Knuth [Knut1997]_ recommande cependant de privilégier ::
+
+   if (fabs (x - y) < fabs(x)*EPS
+
+puisque cela permet de s'affranchir du problème lié à une éventuelle
+différence entre x et y qui dépasserait la précision machine. En
+effet, si (...)  (texte à revoir)
+[voir également http://www.faqs.org/faqs/C-faq/faq/, sec. 14.5]
+
+.. _testfloat.c: ./src/testfloat.c
+
+Résolution d'équation du 2ème degré
+-----------------------------------
+
+Les solutions classiques d'un polynôme du deuxième degré en `x`,
+`ax²+bx+c=0`, (en supposant `a` différent de 0, sinon on se ramène à
+un problème du premier degré), sont obtenues classiquement comme suit :
+
+- si `delta > 0`, il existe 2 solutions distinctes :
+         `x = (-b +/- sqrt(delta))/2a`
+- si `delta = 0`, il existe une solution double :
+         `x = -b/2a`
+- si `delta < 0`, il n'y a pas de solution réelle.
+
+Une des conséquences de la représentation des réels en machine est que
+l'addition ou la soustraction de valeurs très proches (ici, `-b` et
+`sqrt(delta)`) peut amener des résultats totalement inexacts.
+
+Voici un exemple en Pascal (`trinome.pas`_) ::
+
+  program trinome;
+
+  const EPS = 1E-10;
+
+  var
+     a, b, c : real;
+     delta   : real;
+     x1, x2  : real;
+
+  function sign(D : real): integer;
+  begin
+     if D > 0.0 then
+        sign := +1
+     else if D < 0.0 then
+        sign := -1
+     else
+        sign := 0
+  end; {sign}
+
+  begin
+     write('a = ');
+     readln(a);
+     write('b = ');
+     readln(b);
+     write('c = ');
+     readln(c);
+     delta := b*b - 4*a*c;
+     if delta >= 0 then
+     begin
+        x1 := (-b - sign(b) * sqr(delta))/(2.0*a);
+        x2 := c/(a*x1);
+	if delta < EPS then
+	   writeln('la racine double est : x = ', x1:8:4)
+	else
+           writeln('les racines réelles sont x1 = ', x1:8:4, ' et x2 = ', x2:8:4)
+     end
+     else
+        writeln('pas de racines réelles.')
+  end.
+
+On pourrait bien évidemment raffiner le programme pour calculer
+également les racines complexes, selon le même schéma (voir
+`trinome2.c`_).
+
+.. _trinome.pas: ./src/trinome.pas
+.. _trinome2.c: ./src/trinome2.c
+
+Suites et séries numériques
+===========================
+
+Calcul de racine
+----------------
+On peut approximer la valeur de la racine de `a` à l'aide d'une simple
+suite numérique, définie telle que::
+
+  u0 = 10, u(n+1)=un+a/un+1.
+
+En Pascal, cela donne (`racine.pas`_)::
+
+  program suite1;
+
+  const Precision = 1E-9;
+
+  var
+     n	  : integer;
+     a	  : integer;
+     u, v : real;
+
+  begin
+     n := 1;
+     write('a = ');
+     readln(a);
+     write('u0 = ');
+     readln(u);
+     repeat
+        v := u;
+        u := (u+a)/(u+1);
+        writeln('u', n, ' = ', u:16:15);
+        n := n+1
+     until abs(u-v) < Precision
+  end.
+
+Rien de bien extraordinaire là, mais cela permet de construire, sur le
+même principe, des calculs sur des suites beaucoup plus complexes,
+Notons au passage que l'on n'a pas construit une fonction `suite` qui
+renverrait le terme demandé, mais qu'on a utilisé une solution
+itérative. Dans de nombreux cas, cela est suffisant, mais on peut
+vouloir implémenter des solutions récursives. Les suites se prêtent
+en effet par excellence à l'utilisation de la récurrence, et on
+exploitera au mieux la notion de récursivité, comme dans le calcul des
+termes de la fonction d'Ackerman (cf. infra_).
+
+.. TODO: revoir ce paragraphe et compléter avec :
+	 - les problèmes engendrés par la récursivité (pile d'appels
+           de fonction (cf. § suivante)
+	 - la dérécursivation
+
+.. _racine.pas: ./src/racine.pas
+
+Suite de Fibonacci
+------------------
+
+Pour la petite histoire, la suite de Fibonacci modélise la croissance
+des lapins
+
+.. TODO: revoir ce paragraphe
+
+Voici une solution récursive::
+
+  function fibo_rec(n:integer):longint; {Les résultats obtenus sont grands!}
+  begin
+     if n=0 then
+        fibo_rec:=1
+     else if n=1 then
+        fibo_rec:=1
+     else
+        fibo_rec:=fibo_rec(n-1)+fibo_rec(n-2)
+  end;
+
+La solution itérative, exposée ci-dessous, est préférable à la
+procédure récursive car cette dernière entraîne l'évaluation répétée
+des mêmes expressions : par exemple, pour obtenir `F(5)`, on calcule
+`F(4)` et `F(3)`, sachant que `F(4)` est calculée à partir de `F(3)`
+et `F(2)` -- on évalue donc deux fois `F(3)`, pour le seul calcul de
+`F(5)`... ce qui à terme risque de poser de sérieux problèmes en
+termes de performances.
+
+.. figure:: img/ch1-Z-G-13.gif
+   :scale: 100
+   :alt: fibo_rec(5)
+   :align: center
+   :target: img/ch1-Z-G-13.gif
+
+   Fig. 1 - Illustration des étapes de calcul de fibo_rec(5) (Tiré de
+   [b]_, fig 1.5)
+
+On peut comparer les temps d'exécution des 2 fonctions afin de
+s'apercevoir que la solution itérative est de loin la meilleure, dès
+que n dépasse 30 (j'utilise pour ma part un pentium M à 1.7 GHz). Bien
+évidemment, l'évaluation de la fonction récursive pour n=500 est hors
+de propos (en Pascal ou en C). Voici une solution itérative
+(`fibonacci.pas`_)::
+
+  function fibo_iter(n:integer):longint;
+  var
+     tab : array[0..MAX] of longint;
+     i	 : integer;
+  begin
+     tab[0]:=1;
+     tab[1]:=1;
+     for i:=2 to n do
+     begin
+        tab[i]:=tab[i-1]+tab[i-2]
+     end;
+     fibo_iter:=tab[n];
+  end;
+
+:Remarque:
+	A propos de la solution récursive, lors du calcul de la factorielle
+	d'un nombre, Maple utilise une astuce (`option remember`) qui permet
+	de conserver les valeurs intermédiaires : ainsi, pour calculer 5000!,
+	on pourra calculer successivement 1000!, 2000!, 3000!, 4000! et 5000!
+	à l'aide d'une fonction du type::
+
+	  fact:=proc(n) option remember;
+	  if n=1 then 1; else n*fact(n-1) fi;
+	  end;
+
+Le calcul par dichotomie -- selon que n est pair ou impair -- permet
+d'améliorer sensiblement la rapidité de l'évaluation, lorsque n est
+grand ; les formules de calcul sont les suivantes ::
+
+  F(2p)= (2×F(p+1)-F(p))×F(p), F(2p+1)= F^2(p+1)+F^2(p)
+
+En utilisant bc, cela donne [a]_::
+
+        scale=0;
+        define fib(n) {
+          auto a, b;
+          if(n<3) {
+            if(n==0) return 0;
+            return 1;
+          }
+          a = fib(n/2); b = fib(n/2+1)
+          if(n%2) return b^2 + a^2;
+          return (2*b-a)*a ;
+        }
+        fib(3000);
+        quit;
+
+On peut également utiliser la propriété suivante : `pour 0<= k<= n-2,
+F(n)=F(k+2)*F(n-k-1)+F(k+1)*F(n-k-2)` ; cela permet de ne calculer
+qu'une petite partie des nombres de Fibonacci précédant `F(n)` (le gain
+de temps est d'environ 125 %). Par
+exemple, en prenant `k+1=50`, on ne calcule que 2 nombres de Fibonacci
+consécutifs toutes les 50 positions.
+
+On peut même évaluer cette fonction pour n=3000 en Scheme [a]_ ::
+
+        1 ]=> (define (F n) (Fs n 1 0))
+        (define (Fs n s c)
+           (if (= n 0)
+             c
+             (Fs (- n 1) (+ s c) s)))
+
+        ;Value: f
+
+        1 ]=>
+        ;Value: fs
+
+        1 ]=> (F 3000)
+
+qui donne comme résultat ::
+
+  41061588630797126033356837871926710522012510863736925240888543092690
+  55842741134037313304916608500445608300368357069422745885693621454765
+  02674373045446852160486606292497360503469773453733196887405847255290
+  08204908690751262205905454219588975803110922267084927479385953913331
+  83712447955431476110732762400667379340851917318109932017067768389347
+  66764778739502174470268627820918553842225858306408301661862900358266
+  85723821023580250435195147299791967652400478423637645334726836415264
+  83462458405732142414199379172429186026398100978669423920154046201538
+  18671425739835074851396421139982713640679581178458198658692285968043
+  243656709796000
+
+.. [a] http://perso.wanadoo.fr/jean-paul.davalan/divers/fibonacci/f02.html#PROG
+.. [b] http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-11.html#%_sec_1.2.1
+.. _fibonacci.pas: ./src/fibonacci.pas
+
+Fonction d'Ackerman
+-------------------
+.. _infra:
+
+On appelle fonction d'Ackerman la fonction définie de N² dans N par :
+
+F(x,y) = y+1, si x=0
+
+       = F(x-1,1), si y=0
+
+       = F(x-1,F(x,y-1)), si x<>0 et y<>0
+
+Cette fonction est en apparence banale, mais peut se révèler très
+complexe lorsqu'il s'agit d'énumérer les étapes intermédiaires de
+calcul (à la différence de l'algorithme récursif de la suite de
+Fibonacci, pour lequel il s'agit simplement de répéter ou réécrire des
+calculs déjà effectués au préalable). Par exemple, pour calculer
+`F(0,2)`, la réponse est immédiate : `F(0,2)=3`. En fait, dès qu'on tombe
+dans le cas x=0, c'est rapide ! Maintenant, calculons juste `F(2,0)` :
+
+`F(2,0)=F(1,1)=F(0,F(1,0))=F(0,F(0,1))=F(0,2)=3`
+
+ou (autre méthode) :
+
+`F(2,0)=F(1,1)=F(0,F(1,0))=F(1,0)+1=F(0,1)+1=3`
+
+En fait, on peut montrer que pour tout y (entier naturel) :
+
+F(0,y) = y+1
+
+F(1,y) = y+2
+
+F(2,y) = 2y+3
+
+F(3,y) = 8*(2y-3)
+
+Mais, pour x > 3, il n'existe plus de procédé systématique de
+calcul. Lorsque l'on songe que F(3,10)=8189, il est évident que son
+calcul manuel relève du défi...
+
+La fonction d'Ackerman peut donc être évaluée comme suit
+(`ackerman.pas`_) ::
+
+  function func(x, y : integer) : integer;
+  begin
+     if x = 0 then
+        func := y+1
+     else
+        if y = 0 then
+	   func := func(x-1, 1)
+        else
+	   func := func(x-1, func(x, y-1))
+  end; { func }
+
+On notera qu'il existe d'autres définitions de la fonction d'ACkerman
+(cf. http://perso.wanadoo.fr/jean-paul.davalan/mots/suites/ack/), mais
+qu'elles sont toutes basées sur la fonction définie ci-dessus, qui est
+celle proposée par Ackerman.
+
+Dans l'ouvrage de Abelson et al. [b]_, on trouve une procédure de
+calcul de la fonction d'Ackerman, écrite en Scheme ::
+
+ (define (A x y)
+   (cond ((= y 0) 0)
+         ((= x 0) (* 2 y))
+         ((= y 1) 2)
+         (else (A (- x 1)
+                  (A x (- y 1))))))
+
+On voit ici la concision avec laquelle ce langage permet de
+représenter des fonctions mathématiques. C'est ici bien évidemment une
+solution récursive, puisque le langage fonctionnel Scheme repose
+exclusivement sur ce mode d'évaluation, mais...
+
+.. _ackerman.pas: ./src/ackerman.pas
+
+Relations binaires
+------------------
+
+
+
+
+Polynômes de Legendre
+---------------------
+
+Arithmétique
+============
+
+Calcul de pgcd
+--------------
+
+Le type integer ne convient pas à la manipulation de très grands
+entiers, en raison de la capacité de représentation de tels nombres
+(limitée à 32765). La représentation des entiers en machine peut se
+faire de différentes manières :
+
+- utiliser un type constitué de tableaux de nombres de type integer
+  classique mais écrits en base 10 (ou 100)
+
+- modifier le type réel (e.g. real en Pascal) existant
+
+La première méthode (dite de *calcul en précision multiple*) impose de
+recréer également l'ensemble des opérations arithmétiques courantes :
+addition, multiplication et division euclidienne. La deuxième méthode
+est plus rapide, mais exige de limiter l'étendue des nombres utilisés,
+de façon à obtenir des calculs exacts.
+
+Notons que l'exercice est un exercice de forme car la plupart des
+compilateurs autorise l'usage de type prédéfini pour les entiers
+(e.g. ??). D'autre part, en Pascal, le type `longint` permet également
+de travailler avec des nombres entiers plus grands.
+
+Pour calculer le pgcd de 2 nombres entiers, on a besoin de 2 fonctions
+arithmétiques spéciales : le calcul de la partie entière et la
+division euclidienne (avec le calcul du reste entier). On suppose
+qu'on a défini le type entier à partir du type prédéfini réel,
+e.g. `type entier = real;`. Une solution possible pour ces trois
+fonctions est la suivante ::
+
+  function ent(x: entier): entier;
+  var s : entier;
+
+  begin
+     s := int(x);
+     if (x < 0) and (s <> x) then
+        s := s-1;
+     ent := s
+  end; { ent }
+
+  function div_e(x, y : entier) : entier;
+  var q : entier;
+
+  begin
+     q := x/y;
+     div_e := ent(q)
+  end; { div_e }
+
+  function mod_e(x, y : entier) : entier;
+  begin
+     mod_e := x - div_e(x, y)*y
+  end; { mod_e }
+
+Cela permet d'écrire une fonction de calcul du pgcd (`pgcd.pas`_) sous
+la forme ::
+
+  function pgcd(x, y: entier) : entier;
+  var r : entier;
+
+  begin
+     x := abs(x);
+     y := abs(y);
+     if x < y then
+     begin
+        r := x;
+        x := y;
+        y := r
+     end;
+     while y <> 0 do
+     begin
+        r := mod_e(x, y);
+        x := y;
+        y := r
+     end;
+     pgcd := x
+  end; { pgcd }
+
+.. _pgcd.pas: ./src/pgcd.pas
+
+Numération
+----------
+
+Combinatoire
+============
+
+Partitions
+----------
+.. TODO: décrire intérêt en statistique multidimensionnelle
+			(e.g. k-means (?) ou classification)
+
+Permutations
+------------
+.. TODO: décrire les 2 méthodes de Knuth + intérêt pour les statistiques
+
+
+On peut tester le programme à l'aide de `test_perms.pas`_, en donnant
+comme série {1,3,5,4,2}. Le programme indique que le rang de cette
+permutation de 5 éléments est 12.
+
+On peut vérifier que le rang indiqué (12) correspond à celui que donne
+*Mathematica* ::
+
+  ln[5]:= Permutations[{1,2,3,4,5}]
+  Out[5]= {{1, 2, 3, 4, 5}, {1, 2, 3, 5, 4}, {1, 2, 4, 3, 5}, {1, 2, 4, 5, 3},
+
+  >    {1, 2, 5, 3, 4}, {1, 2, 5, 4, 3}, {1, 3, 2, 4, 5}, {1, 3, 2, 5, 4},
+
+  >    {1, 3, 4, 2, 5}, {1, 3, 4, 5, 2}, {1, 3, 5, 2, 4}, {1, 3, 5, 4, 2},
+                                                          ^^^^^^^^^^^^^^^
+  >    {1, 4, 2, 3, 5}, {1, 4, 2, 5, 3}, {1, 4, 3, 2, 5}, {1, 4, 3, 5, 2},
+
+  >    {1, 4, 5, 2, 3}, {1, 4, 5, 3, 2}, {1, 5, 2, 3, 4}, {1, 5, 2, 4, 3},
+
+  > ...
+
+
+Notons que la bibliothèque STL de C++ définit des fonctions pour
+travailler avec les permutations, dans `stl_algo.h` (généralement dans
+``/usr/include/c++/4.0/bits``). Il suffit d'inclure la bibliothèque
+``algorithm`` pour pouvoir utiliser ces fonctions ::
+
+  $ grep permutation stl_algo.h
+  // next_permutation and prev_permutation, with and without an explicitly
+   *  @return  False if wrapped to first permutation, true otherwise.
+   *  Treats all permutations of the range as a set of "dictionary" sorted
+    next_permutation(_BidirectionalIterator __first,
+   *  @return  False if wrapped to first permutation, true otherwise.
+   *  Treats all permutations of the range [first,last) as a set of
+    next_permutation(_BidirectionalIterator __first,
+   *  @return  False if wrapped to last permutation, true otherwise.
+   *  Treats all permutations of the range as a set of "dictionary" sorted
+    prev_permutation(_BidirectionalIterator __first,
+   *  @return  False if wrapped to last permutation, true otherwise.
+   *  Treats all permutations of the range [first,last) as a set of
+    prev_permutation(_BidirectionalIterator __first,
+
+Le programme `permutation.cc`_ permet de tester très brièvement la
+génération de permutations en utilisant C++.
+
+.. _perms.pas: src/perms.pas
+.. _test_perms.pas: src/test_perms.pas
+.. _permutation.cc: src/permutation.cc
+
+
+Calcul matriciel
+================
+
+Résolution d'un système d'équations (Gauss)
+-------------------------------------------
+
+
+.. _gauss.c: ./src/gauss.c
+
+Calcul de l'inverse d'une matrice
+---------------------------------
+
+Algorithme de Gauss-Jordan
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _gauss.pas: ./src/gauss.pas
+
+Méthode de Pan & Reiff
+~~~~~~~~~~~~~~~~~~~~~~
+
+Méthode de Gréville
+~~~~~~~~~~~~~~~~~~~
+
+.. _inverse.pas: ./src/inverse.pas
+.. _inverse.c: ./src/inverse.c
+
+.. TODO: sections à ajouter :
+	 - dichotomie
+	 - euler
+	 - runge-kutta
+	 - equa diff
+	 - graphe
+	 - matrice
+	 - plus court chemin (dijkstra)
+
+
+
+Références
+==========
+
+
+
+.. [Bers1991] Berstel, J., Pin, J.-E. et Pocchiola, M. (1991). *Mathématiques et Informatique, 1. Algèbre*. McGraw-Hill.
+.. [Knut1997] Knuth, D.E. (1997). *The Art of Computer Programming, Volume 1: Fundamental Algorithms*. Addison-Wesley.
+.. [Boug1993] Bougé, L., Kenyon, C., Muller, J.-M., Robert, Y. (1993). Algorithmique - Exercices corrigés, Oral du concours d'entrée à l'Ecole Normale Supérieure de Lyon. (Ellipses)
+.. [Dela1996] Delannoy, C. (1996). Exercices en Turbo-Pascal. (Eyrolles)
+.. [web] http://www.cs.sunysb.edu/~algorith/ ; http://www2.toki.or.id/book/AlgDesignManual/
+
+
+**Notes**
+
+.. [#] ou encore en définissant une macro, par exemple en C::
+
+	#define echange(a,b)
+
+** [2006-10-26 Jeu] Notes R
+<R internals>
+
+- structure de données :
+Les variables ou objets sont des symboles associés à une valeur. La
+valeur peut être vue comme une SEXP (pointeur), ou la structure
+pointée, une SEXPREC (ou pour des vecteurs, une VECSXP pointant sur
+des structures de type VECTOR_SEXPREC). Les briques de base de R
+s'appellent des noeuds (SEXPREC ou VECTOR_SEXPREC). Chacune de ces
+structures nodales possède comme trois premiers champs : un en-tête
+32-bits sxpinfo, puis 3 pointeurs (sur les attributs, ainsi que le
+noeud suivant et précédent, dans une liste doublement chaînée), puis
+d'autres champs. Sur une plateforme 32-bits, un noeud occupe 28
+bytes. Les 5 premiers bits de l'en-tête spxinfo spécifient l'un des 32
+SEXPTYPE.
+L'en-tête sxpinfo est une structure C définie comme suit :
+
+  struct sxpinfo_struct {
+  	 SEXPTYPE type	    : 5;
+	 unsigned int obj   : 1;
+	 unsigned int named : 2;
+	 unsigned int gp    : 16;
+	 unsigned int mark  : 1;
+	 unsigned int debug : 1;
+	 unsigned int trace : 1;
+	 unsigned int spare : 1;
+	 unsigned int gcgen : 1;
+	 unsigned int gccls : 3;
+  };
+
+Le champ named est rempli et accessible par les macros SET_NAMED et
+NAMED. Il prend les valeurs 0, 1 et 2. R possède en apparence une
+procédure d'appel par valeur, de sorte qu'une affectation de type
+
+  b <- a
+
+apparaît créer une copie de a et y référer par b. Cependant, si a et b
+ne sont pas altérés ultérieurement, il n'y a pas besoin de faire une
+recopie. Ce qui se passe réellement c'est qu'un nouveau symbole b est
+associé à la même valeur que a et le champ named de l'objet est
+renseigné (valeur à 2). Lorsqu'un objet va être modifié, le champ
+named est consulté. Une valeur de 2 signifie que cet objet doit être
+dupliqué avant d'être modifié. Une valeur à 0 signifie que l'on sait
+qu'aucune autre SEXP ne partage de données avec cet objet, et qu'il
+peut par conséquent être modifié sans danger. La valeur 1 est réservée
+aux situations comme
+
+  dim(a) <- c(7,2)
+
+où en principe deux copies existent pour la durée du calcul comme
+
+  a <- 'dim<-'(a,c(7,2))
+
+mais pas plus longtemps, et donc certaines fonctions peuvent être
+optimisées pour éviter la recopie dans ce cas.
+
+Une SEXPREC est une structure C qui contient le header 32-bits, 3
+pointeurs (attributs, noeud suivant, noeud précédent) et un noeud
+données, qui est une union :
+
+  union {
+  	struct primsxp_struct primsxp;
+	struct symsxp_struct symsxp;
+	struct listsxp_struct listsxp;
+	struct envsxp_struct envsxp;
+	struct closxp_struct closxp;
+	struct promsxp_struct promsxp;
+  } u;
+
+Toutes ces alternatives, sauf la première (un entier) consistent en 3
+pointeurs, de sorte que l'union occupe 3 words.
+
+
+- gestion de l'environnement :
+Lorsque R démarre, les fonctions internes sont installées (par du code
+C) dans la table de symboles, les fonctions primitives ayant des
+valeurs et les fonctions .Internal ayant pour valeurs ce qui est
+présent dans la macro INTERNAL. Puis, .Platform et .Machine sont
+évalués et le paquetage de base est chargé dans l'environnement de
+base, suivi du profil système.
+
+
+
+
+
+
+
+Test (exact) de Fisher
+----------------------
+
+  fisher <- function(tab,n.sim=1000) {
+    bot0 <- sum(lgamma(tab+1)) # observed
+
+    bot <- 1:n.sim
+    a <- list(rep((row(tab),tab),rep(col(tab),tab))
+    for (i in 1:n.sim) {
+      a <- lapply(a, sample)
+      tab2 <- table(a)
+      bot[i] <- sum(lgamma(tab2+1))
+    }
+    mean(bot0 < bot)
+  }
+
+test :
+
+  x <- matrix(c(2,1,3,4,
+                4,1,1,6,
+	        0,1,0,7), ncol=4, byrow=T)
+  fisher(x)
+  fisher(x,500)
+
+
+Exemple de simulation pour lm() et glm()
+----------------------------------------
+
+Utile pour ajouter des valeurs manquantes à un vecteur de données et
+tester la qualité du modèle (ic, y = 0.5*x1 - x2 + eps)
+
+  mydata <- data.frame(x1=rnorm(100),x2=rnorm(100))
+  mydata$y <- 0.5*mydata$x1 - mydata$x2 + rnorm(100,0,0.2)
+  mydata$y[sample(1:100,10)] <- NA
+
+  o1 <- lm(y ~ x1 + x2, data=mydata)
+  o2 <- lm(y ~ -1 + x1 + x2, data=mydata)
+  summary(o2)
+  plot(o1$fitted,o1$resid)
+  abline(h=0)
+
+  mydata$y2 <- rbinom(100,5,exp(mydata$x1)/(1+exp(mydata$x1)))
+  mydata$y2 <- mydata$y2/5
+  mydata$n <- rep(5,100)
+  o3 <- glm(y2 ~ x1 + x2,family=binomial(link=logit),data=mydata,weights=n)
+
+Graphiques
+----------
+
+From R-FAQ.txt
+To rotate axis labels (using base graphics), you need to use text(), rather than mtext(), as the latter does not support par("srt").
+
+     ## Increase bottom margin to make room for rotated labels
+     par(mar = c(7, 4, 4, 2) + 0.1)
+     ## Create plot with no x axis and no x axis label
+     plot(1 : 8, xaxt = "n",  xlab = "")
+     ## Set up x axis with tick marks alone
+     axis(1, labels = FALSE)
+     ## Create some text labels
+     labels <- paste("Label", 1:8, sep = " ")
+     ## Plot x axis labels at default tick marks
+     text(1:8, par("usr")[3] - 0.25, srt = 45, adj = 1,
+          labels = labels, xpd = TRUE)
+     ## Plot x axis label at line 6 (of 7)
+     mtext(1, text = "X Axis Label", line = 6)
+
+
+Calcul numérique (précision)
+----------------------------
+
+From R-FAQ.txt
+The only numbers that can be represented exactly in R's numeric type are integers and fractions whose denominator is a power of 2. Other numbers have to be rounded to (typically) 53 binary digits accuracy. As a result, two floating point numbers will not reliably be equal unless they have been computed by the same algorithm, and not always even then. For example
+
+     R> a <- sqrt(2)
+     R> a * a == 2
+     [1] FALSE
+     R> a * a - 2
+     [1] 4.440892e-16
+The function all.equal() compares two objects using a numeric tolerance of .Machine$double.eps ^ 0.5. If you want much greater accuracy than this you will need to consider error propagation carefully.
+
+One way is to use paste() (or sprintf()) to concatenate a stem filename and the iteration number while file.path() constructs the path. For example, to save results into files result1.rda, ..., result100.rda in the subdirectory Results of the current working directory, one can use
+
+     for(i in 1:100) {
+       ## Calculations constructing "some_object" ...
+       fp <- file.path("Results", paste("result", i, ".rda", sep = ""))
+       save(list = "some_object", file = fp)
+     }
+
+
+Configuration interne (variables d'environnement)
+-------------------------------------------------
+
+R CMD config
+
+** [2006-12-30 Sam] RMS mail
+Relay-Version: version B 2.10 5/3/83; site utzoo.UUCP
+Posting-Version: version B 2.10.1 6/24/83; site mit-eddie.UUCP
+From: RMS@MIT-OZ@mit-eddie.UUCP (Richard Stallman)
+Newsgroups: net.unix-wizards,net.usoft
+Subject: new UNIX implementation
+Message-ID: <771@mit-eddie.UUCP>
+Date: Tue, 27-Sep-83 13:35:59 EDT
+Article-I.D.: mit-eddi.771
+Posted: Tue Sep 27 13:35:59 1983
+Date-Received: Thu, 29-Sep-83 07:38:11 EDT
+Organization: MIT AI Lab, Cambridge, MA
+Lines: 90
+
+
+Free Unix!
+
+Starting this Thanksgiving I am going to write a complete
+Unix-compatible software system called GNU (for Gnu's Not Unix), and
+give it away free to everyone who can use it.  Contributions of time,
+money, programs and equipment are greatly needed.
+
+To begin with, GNU will be a kernel plus all the utilities needed to
+write and run C programs: editor, shell, C compiler, linker,
+assembler, and a few other things.  After this we will add a text
+formatter, a YACC, an Empire game, a spreadsheet, and hundreds of
+other things.  We hope to supply, eventually, everything useful that
+normally comes with a Unix system, and anything else useful, including
+on-line and hardcopy documentation.
+
+GNU will be able to run Unix programs, but will not be identical
+to Unix.  We will make all improvements that are convenient, based
+on our experience with other operating systems.  In particular,
+we plan to have longer filenames, file version numbers, a crashproof
+file system, filename completion perhaps, terminal-independent
+display support, and eventually a Lisp-based window system through
+which several Lisp programs and ordinary Unix programs can share a screen.
+Both C and Lisp will be available as system programming languages.
+We will have network software based on MIT's chaosnet protocol,
+far superior to UUCP.  We may also have something compatible
+with UUCP.
+
+
+Who Am I?
+
+I am Richard Stallman, inventor of the original much-imitated EMACS
+editor, now at the Artificial Intelligence Lab at MIT.  I have worked
+extensively on compilers, editors, debuggers, command interpreters, the
+Incompatible Timesharing System and the Lisp Machine operating system.
+I pioneered terminal-independent display support in ITS.  In addition I
+have implemented one crashproof file system and two window systems for
+Lisp machines.
+
+
+Why I Must Write GNU
+
+I consider that the golden rule requires that if I like a program I
+must share it with other people who like it.  I cannot in good
+conscience sign a nondisclosure agreement or a software license
+agreement.
+
+So that I can continue to use computers without violating my principles,
+I have decided to put together a sufficient body of free software so that
+I will be able to get along without any software that is not free.
+
+
+How You Can Contribute
+
+I am asking computer manufacturers for donations of machines and money.
+I'm asking individuals for donations of programs and work.
+
+One computer manufacturer has already offered to provide a machine.  But
+we could use more.  One consequence you can expect if you donate
+machines is that GNU will run on them at an early date.  The machine had
+better be able to operate in a residential area, and not require
+sophisticated cooling or power.
+
+Individual programmers can contribute by writing a compatible duplicate
+of some Unix utility and giving it to me.  For most projects, such
+part-time distributed work would be very hard to coordinate; the
+independently-written parts would not work together.  But for the
+particular task of replacing Unix, this problem is absent.  Most
+interface specifications are fixed by Unix compatibility.  If each
+contribution works with the rest of Unix, it will probably work
+with the rest of GNU.
+
+If I get donations of money, I may be able to hire a few people full or
+part time.  The salary won't be high, but I'm looking for people for
+whom knowing they are helping humanity is as important as money.  I view
+this as a way of enabling dedicated people to devote their full energies to
+working on GNU by sparing them the need to make a living in another way.
+
+
+For more information, contact me.
+Arpanet mail:
+  RMS@MIT-MC.ARPA
+
+Usenet:
+  ...!mit-eddie!RMS@OZ
+  ...!mit-vax!RMS@OZ
+
+US Snail:
+  Richard Stallman
+  166 Prospect St
+  Cambridge, MA 02139
+
+** [2008-03-09 Dim] SQL
+Ce document est une mise à jour d'un ensemble de notes rédigées fin 2006, lors
+de l'acquisition de mon premier Mac (OS X), après 5 annnées passées sous
+Linux. Évidemment, tout est souvent plus simple sous Mac, en particulier la
+gestion du serveur Apache, des différents langages d'interface pour le web
+(PHP, Perl, Python, Ruby), et la mise en production de bases de données
+relationnelles. Plusieurs tutoriels sont disponibles sur le site
+http://developer.apple.com/opensource/[developer.apple.com/opensource/].
+Toutefois, il s'agit vraiment d'une synthèse des notes que j'ai consignées
+durant l'installation des différents outils d'administration de bases de
+données, et il existe de bien meilleurs tutoriels ou documents de référence,
+sur le web et en librairie.
+
+
+MySQL
+-----
+
+Configuration des droits
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.Remarque
+******************************************************************************
+Les différentes étapes de configuration décrites dans cette section suppose
+une installation manuelle du serveur sur un système Linux. Pour Mac OS X, la
+procédure de gestion des processus est largement simplifiée dans la mesure où
+la configuration est faite lors de l'installation et un utilitaire de
+démarrage automatique ou manuel est installé par défaut.
+******************************************************************************
+
+Après avoir installé http://www.mysql.com/[MySQL], il est nécessaire de
+configurer la table des droits d'accès. En effet, MySQL repose sur un principe
+d'accès restreint qui permet de contrôler quel(s) utilisateur(s) peut accéder
+à quelles bases, et quelles commandes il peut exécuter sur celles-ci
+(+SELECT+, +DROP+, etc.). Avant toute utilisation de MySQL, on s'assurera au
+préalable d'avoir bien lancé le démon, généralement +mysqld+. footnote:[Par
+défaut, sous Linux, on peut utiliser les scripts +Sys V+, +/etc/rc.d/mysql
+start+.]
+
+Dans un premier temps, il faut créer un (ou plusieurs) utilisateur(s) ; pour
+cela, on se connecte en _root_ sur la table +mysql+, qui contient la table des
+droits :
+
+------------------------------------------------------------------------------
+$ mysql -u root mysql -p
+------------------------------------------------------------------------------
+
+et on s'alloue tous les droits (ce n'est pas forcément une bonne idée, mais ça
+suffit pour tester les fonctionnalités de MySQL) :
+
+------------------------------------------------------------------------------
+GRANT ALL PRIVILEGES ON *.* TO 'utilisateur'@'%'
+    IDENTIFIED BY 'mot_de_passe' WITH GRANT OPTION;
+------------------------------------------------------------------------------
+
+où +utilisateur+ et +mot_de_passe+ sont bien évidemment à
+remplacer par les valeurs souhaitées. On notera que l'on utilisera
++%+ pour inclure n'importe quel domaine pour la connexion. Le cas
+échéant, il faut spécifier +localhost+ (lorsqu'on n'est pas connecté
+à un réseau) et le nom d'hôte renvoyé par
+
+------------------------------------------------------------------------------
+$ hostname
+------------------------------------------------------------------------------
+
+Dans la commande +sql+ décrite plus haut, on a donné tous les privilèges à
+l'utilisateur +utilisateur+. Pour rendre effectives les modifications, il faut
+en plus taper
+
+------------------------------------------------------------------------------
+FLUSH PRIVILEGES;
+------------------------------------------------------------------------------
+
+En effet, pour améliorer la rapidité, MySQL dispose d'une copie de la base de
+données +mysql+ en mémoire, et celle-ci est actualisée par la commande +FLUSH
+PRIVILEGES+.
+
+On peut ensuite vérifier que le compte +utilisateur+ est présent dans la table
+des droits (on travaille toujours sous l'identité _root_) :
+
+------------------------------------------------------------------------------
+SELECT user, host, password FROM user;
+------------------------------------------------------------------------------
+
+On peut ensuite quitter la ligne de commande avec +quit;+ et se
+reconnecter sous l'identifiant nouvellement crée :
+
+------------------------------------------------------------------------------
+$ mysql -u chl -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 7 to server version: 5.0.26-max
+
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+
+mysql>
+------------------------------------------------------------------------------
+
+Création d'une base de test
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Cas général
+^^^^^^^^^^^
+En premier lieu, il est nécessaire de créer une nouvelle base, avec la
+commande :
+
+------------------------------------------------------------------------------
+CREATE DATABASE my_test;
+------------------------------------------------------------------------------
+
+On pourra vérifier que la base a bien été créer en tapant
+
+------------------------------------------------------------------------------
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| my_test            |
+| mysql              |
+| test               |
++--------------------+
+4 rows in set (0.00 sec)
+------------------------------------------------------------------------------
+
+Notons que l'on pourrait utiliser la base +test+ puisque celle-ci est
+fournie par défaut lors de l'installation (cf. note ci-dessous).
+Puis on indique que l'on travaille sur celle-ci (les nouvelles
+commandes `sql` s'appliqueront désormais sur la base +my_test+) :
+
+[TIP]
+.À propos des connexions sur des tables SQL
+==============================================================================
+Par défaut également, les connexions anonymes sont autorisées et n'importe qui
+peut agir sur cette base de test. En fait, toutes les bases débutant par
++test+ sont accessibles aux utilisateurs. On peut préférer une autre solution
+qui consiste à permettre à chaque utilisateur de créer sa propre base, en la
+préfixant par son nom d'utilisateur, e.g. +dupont_unebase+. Pour cela, on ne
+peut pas utiliser directement +GRANT+, car celle-ci n'autorise pas la saisie
+de caractères génériques, et on est obligé de jongler un peu :
+
+------------------------------------------------------------------------------
+USE my_test;
+GRANT USAGE ON *.* TO username@localhost IDENTIFIED BY 'xxx';
+INSERT INTO mysql.db
+         (Host, Db, User, Select_priv, Insert_priv, Update_priv,
+	 Delete_priv, Create_priv, Drop_priv, Grant_priv, Reference_priv,
+	 Index_priv, Index_prov, Alter_priv, Create_tmp_table_priv,
+	 Lock_tables_priv, Create_view_priv, Show_view_priv)
+       VALUES
+	 ('localhost', 'username%', 'username', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y',
+	 'N', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y');
+FLUSH PRIVILEGES;
+------------------------------------------------------------------------------
+
+On effectue ainsi les modifications nécessaires directement dans la base +db+,
+et les noms de bases de données autorisés sont constitués de +username+ suivi
+de n'importe quel nombre de caractères (cf. le joker +%+). La première
+commande (+GRANT+...) sert à créer les utilisateurs si besoin.
+==============================================================================
+
+On peut ensuite créer notre première table, par exemple une table incluant un
+identifiant unique, automatiquement attribué, un score et une date de saisie.
+
+------------------------------------------------------------------------------
+CREATE TABLE une_table (
+    id INT NOT NULL AUTO_INCREMENT,
+    choice TINYINT NOT NULL,
+    ts TIMESTAMP,
+    PRIMARY KEY (id));
+------------------------------------------------------------------------------
+
+On notera que l'on a définit la clé primaire sur le champ +id+, et que les
+champs +id+ et +choice+ doivent obligatoirement être renseignés (attribut +NOT
+NULL+).
+
+Ensuite, on peut commencer à alimenter la base avec des données :
+
+------------------------------------------------------------------------------
+INSERT INTO une_table (choice) VALUES (3);
+INSERT INTO une_table (choice) VALUES (5);
+------------------------------------------------------------------------------
+
+On peut vérifier l'état de la base avec la construction classique
++SELECT ... FROM ...+ :
+
+------------------------------------------------------------------------------
+SELECT COUNT(choice) FROM une_table;
++---------------+
+| COUNT(choice) |
++---------------+
+|             2 |
++---------------+
+1 row in set (0.00 sec)
+------------------------------------------------------------------------------
+
+Le résultat indique le nombre d'enregistrements présents dans la table
++une_table+ (dans le cas présent, 2 enregistrements).
+
+Plutôt que de remplir manuellement la base avec la clause +INSERT+, on peut
+charger directement un fichier texte contenant les valeurs à ajouter. De même,
+on peut créer le tableau de données à l'aide d'un tableur, puis exporter la
+feuille de données au format txt (ou csv), en spécifiant un séparateur
+(tabulation ou +;+). Pour charger les données dans la table, il suffira de
+taper :
+
+------------------------------------------------------------------------------
+LOAD DATA INFILE '~/un_fichier.txt' INTO TABLE une_table
+     FIELDS OPTIONALLY ENCLOSED BY '"';
+------------------------------------------------------------------------------
+
+On se rappelera que la tabulation est le séparateur de données par défaut sous
+MySQL. Si le fichier texte utilise le +;+ comme séparateur de données, il faut
+le préciser lors de l'appel. Si tout se passe bien, on a le message suivant :
+
+------------------------------------------------------------------------------
+Query OK, 8 rows affected (0.00 sec)
+Records: 8  Deleted: 0  Skipped: 0  Warnings: 0
+------------------------------------------------------------------------------
+
+On a bien rajouté 8 enregistrements provenant du fichier, et on peut vérifier
+que la table comporte à présent 10 enregistrements (les 2 crées manuellement +
+les 8 importés) :
+
+------------------------------------------------------------------------------
+SELECT COUNT(choice) FROM une_table;
++---------------+
+| COUNT(choice) |
++---------------+
+|            10 |
++---------------+
+1 row in set (0.00 sec)
+------------------------------------------------------------------------------
+
+Pour un script d'importation automatique en PHP, voir
+http://www.infres.enst.fr/~danzart/mysql/mysqlimporte.phtml
+
+Outils SQL sous Mac OS X
+^^^^^^^^^^^^^^^^^^^^^^^^
+Les mêmes instructions, à l'exception de la gestion des scripts dans +/etc+,
+sont sous environnement Mac OS X. Après tout, c'est l'interaction avec un
+shell SQL qui a été présentée (certes très succinctement).
+
+Sous Mac OS X, il existe des applicatifs qui ``facilitent'' la gestion des
+bases de données (maintenance, requêtes, etc.). Mentionnons en deux :
+
+- http://cocoamysql.sourceforge.net/[CocoaMySQL]
+- http://dev.mysql.com/downloads/gui-tools/5.0.html[MySQL GUI Tools]
+
+*CocoaMySQL* est une application permettant de gérer des bases de données
+MySQL locales ou en ligne (création, suppression, modification, requêtes,
+sauvegardes). Voici à quoi ressemble l'interface générale (ici, connectée à
+une simple base de données) :
+*MySQL GUI Tools*, proposé sur le site http://dev.mysql.com/[mysql] est un
+ensemble de trois applications :
+
+- MySQL Administrator
+- MySQL Query Browser
+- MySQL Migration Toolkit
+
+Les figures suivantes illustrent la gestion du serveur <<Fig. 1>>, ainsi que
+des tables <<Fig. 2>> (*MySQL Administrator*).
+
+[[Fig. 1]]
+.Gestionnaire d'administration des bases SQL.
+image::MySQL_Administrator1_75pc.png[MySQL_Administrator1_75pc.png]
+
+[[Fig. 2]]
+.Gestionnaire d'administration des bases SQL.
+image::MySQL_Administrator2_75pc.png[MySQL_Administrator2_75pc.png]
+
+Dans la pratique, j'utilise assez rarement ces utilitaires puisque je
+construis mes tables dans des fichiers que je ``source'' directement dans le
+shell SQL. Quant aux requêtes, je les effectue généralement directement en
+ligne de commande ou à partir d'un script dans un autre langage (R, par
+exemple).
+
+Effectuer des requêtes (notions basiques)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+À présent, on peut effectuer des requêtes sur la base pour tester les
+fonctionnalités de +mysql+.
+
+Langage de requêtes et exemples
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+[red]#Cette partie est à écrire...#
+
+Interfaces graphiques sous Mac OS X
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Nous avons mentionné dans la section précédente l'existence d'utilitaires
+graphiques. Outre l'interface de gestion du serveur +mysql+, les outils
+proposés par http://dev.mysql.com/[mysql] incluent un utilitaire de requête. À
+l'aide de celui-ci, on peut formuler une requête et visualiser le résultat
+dans des fenêtres organisées par onglets <<Fig. 3>>. Ici, on a simplement
+effectué une requête de type +SELECT * FROM Fiche+ (dans une base appelée,
++tcf+). La clé primaire est indiquée par un carré dans la colonne
+correspondante (ici, +idFiche+). Le nombre de tuples retournés est indiqué
+dans la partie basse de l'interface.
+
+[[Fig. 3]]
+.Résultat d'une requête dans *MySQL Query Browser*.
+image::MySQL_QueryBrowser1_75pc.png[MySQL_QueryBrowser1_75pc.png]
+
+La palette d'outils proposée sur une barre latérale <<Fig. 4>> est assez
+commode puisqu'elle contient tous les éléments du langage SQL et propose une
+vue des schémas de la base.
+
+[[Fig. 4]]
+.Panneau latéral de *MySQL Query Browser*.
+image::MySQL_QueryBrowser2_75pc.png[MySQL_QueryBrowser2_75pc.png]
+
+Interfacer SQL avec d'autres langages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+MySQL et R
+^^^^^^^^^^
+On peut également utiliser *R* pour interroger notre base. Il y a alors deux
+solutions :
+
+- soit on dispose d'un fichier texte dans lequel se trouve les données
+  de la base (on aura au préalable exporté celle-ci),
+- soit on veut travailler directement en se connectant sur le serveur
+  MySQL.
+
+Dans le premier cas, il suffit de charger le fichier avec +read.csv()+ :
+
+------------------------------------------------------------------------------
+> a <- read.csv("une_table.csv", header=T)
+------------------------------------------------------------------------------
+
+Dans le second cas, on a besoin du paquetage +RODBC+.
+
+------------------------------------------------------------------------------
+> install.packages('RODBC')
+------------------------------------------------------------------------------
+
+// TODO: revoir cette partie avec ODBC
+
+Le package +RMySQL+ permet de travailler directement avec une base de données
+MySQL. La procédure est assez simple puisqu'il suffit de définir un
+descripteur pour la connexion (il faut naturellement que le serveur soit
+démarré) :
+
+------------------------------------------------------------------------------
+> library(RMySQL)
+> link <- dbConnect(MySQL(), user="******", password="******",
+                    dbname="tcf", host="localhost")
+> dbListTables(link)
+------------------------------------------------------------------------------
+
+Pour effectuer des requêtes, on utilise la fonction +dbSendQuery()+, par
+exemple :
+
+------------------------------------------------------------------------------
+> result <- dbSendQuery(link, "SELECT * FROM Correcteur")
+------------------------------------------------------------------------------
+
+L'ensemble des résultats est à présent contenu dans la variable +result+. Pour
+afficher le résultat, on utilise la fonction +fetch()+ qui prend en argument
+la variable précédente.
+
+------------------------------------------------------------------------------
+> fetch(result, n=10)
+------------------------------------------------------------------------------
+
+MySQL et Perl
+^^^^^^^^^^^^^
+Pour utiliser l'interface Perl/MySQL, il faut installer le module DBI et
++DBD::mysql+. On peut utiliser l'interface +cpan+ :
+
+------------------------------------------------------------------------------
+> sudo perl -MCPAN -e 'install Bundle::DBD::mysql'
+------------------------------------------------------------------------------
+
+[CAUTION]
+.Problème rencontré sous MacOS X
+==============================================================================
+Par défaut, Perl s'attend à trouver la librairie (statique)
++libmysqlclient.15.dylib+ dans le répertoire +/usr/local/mysql/lib/mysql/+, or
+il semble que depuis les dernières versions de MySQL, celle-ci soit installée
+dans le répertoire +/usr/local/mysql/lib/+. On peut imaginer recréer des liens
+symboliques pour faire correspondre ces deux répertoires, mais il existe une
+méthode plus simple de mise à jour du système de référencement des librairies
+sous MacOS X : la commande +install_name_tool+. Voici ce qu'il faut faire (en
+_root_) :
+
+------------------------------------------------------------------------------
+$ sudo install_name_tool -change
+$ /usr/local/mysql/lib/mysql/libmysqlclient.15.dylib
+$ /usr/local/mysql/lib/libmysqlclient.15.dylib
+$ /Users/chl/.cpan/build/DBD-mysql-4.005/blib/arch/auto/DBD/mysql/mysql.bundle
+------------------------------------------------------------------------------
+
+Cette remarque vaut également pour la configuration de
+http://www.rubyonrails.org/[Rails].
+==============================================================================
+
+Avec Perl, il est nécessaire de définir, comme pour R, le serveur, le nom de
+la base, et les informations de connexion (nom d'utilisateur et mot de passe).
+
+------------------------------------------------------------------------------
+my $link = DBI->connect("dbi:mysql:$db:$server", $user, $pwd);
+------------------------------------------------------------------------------
+
+On forme ensuite la requête sql et on l'exécute :
+
+------------------------------------------------------------------------------
+my $query = "show tables";
+my $sql   = $link->prepare($query);
+$sql->execute();
+------------------------------------------------------------------------------
+
+Pour récupérer et afficher les résultats, on peut utiliser une boucle formulée
+comme suit :
+
+------------------------------------------------------------------------------
+while (my $row = $sql->fetchrow_arrayref) {
+  print join("\t", @$row), "\n";
+}
+------------------------------------------------------------------------------
+
+On n'oubliera pas de refermer la connexion une fois les requêtes effectuées.
+
+------------------------------------------------------------------------------
+$link->disconnect;
+------------------------------------------------------------------------------
+
+MySQL et Python
+^^^^^^^^^^^^^^^
+Enfin, on peut également préférer le langage http://www.python.org/[Python]
+pour la manipulation et l'interrogation de la base MySQL. Il est nécessaire
+dans ce cas d'installer le package +mysql+ pour Python. Sous MacOS X, on peut
+le trouver sur le site
+http://sourceforge.net/projects/mysql-python/[sourceforge.net/projects/mysql-python/]. Pour
+compiler, il suffit de taper :
+
+------------------------------------------------------------------------------
+$ python setup.py build
+------------------------------------------------------------------------------
+
+puis en root :
+
+------------------------------------------------------------------------------
+$ sudo python setup.py install
+------------------------------------------------------------------------------
+
+On peut tester l'installation en tentant de se connecter à une base et
+en affichant les résultats du requête +SELECT+.
+
+------------------------------------------------------------------------------
+>>> import MySQLdb;
+>>> link = MySQLdb.connect('localhost','user','pwd','dbName')
+>>> curs = link.cursor()
+>>> result = curs.execute("select * from Correcteur")
+>>> result=curs.fetchall()
+>>> print result;
+>>> curs.close()
+>>> link.close()
+------------------------------------------------------------------------------
+
+PostgreSQL
+----------
+Le site officiel http://www.postgresql.org/[www.postgresql.org] comprend
+toutes les ressources nécessaires pour une transition ``en douceur'' de MySQL
+à PostgreSQL. Je n'ai jamais testé PostgreSQL sur Linux (encore moins sur
+Windows, mais là n'est pas le propos).
+
+
+Installation de PostgreSQL sur Mac OS X
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+On peut installer +postgresql+ d'au moins 3 façons différentes sous Mac :
+
+- à partir des sources, disponibles sur le site de
+  http://www.postgresql.org/download/[postgresql]
+- avec +fink+ (http://www.finkproject.org/[www.finkproject.org/])
+- avec un package "intégré" disponible sur le site
+  http://www.postgresqlformac.com/[www.postgresqlformac.com/]
+
+J'ai personnellement essayé les deux dernières solutions, et la dernière
+m'apparaît plus stable et souple à la fois. Si toutefois l'installation est
+effectuée via +fink+, on veillera à prendre la version la plus récente :
+
+------------------------------------------------------------------------------
+$ fink info postgresql
+Information about 6717 packages read in 2 seconds.
+
+postgresql-8.2.6-1: Upgrade package for PostgreSQL
+ .
+ Web site: http://www.postgresql.org/
+ .
+ Maintainer: Benjamin Reed <postgresql82@fink.racoonfink.com>
+------------------------------------------------------------------------------
+
+Si l'on choisit la http://www.postgresqlformac.com/[dernière solution], il
+faut savoir que la suite serveur + outils d'administration est installée dans
+le répertoire +/Applications/PostgreSQL+ ainsi que des scripts
+d'initialisation dans +/Library/StartupItems/PostgreSQL+. Dans ce cas, le
+serveur +postgresql+ est lancé automatiquement lors de la connexion, ce qui
+n'est pas nécessairement ce que l'on souhaiterait. On peut supprimer le
+dossier en question dans le répertoire +/Library/StartupItems/+ (ou modifier
+le fichier +PostgreSQL+, mais je ne sais pas où est initialisée la variable
++$POSTGRES$+...) et lancer ``à la main'' le serveur. Pour cela, on utilisera
+les commandes suivantes :
+
+------------------------------------------------------------------------------
+$ sudo -u postgres /Library/PostgreSQL8/bin/pg_ctl -D
+  /Library/PostgreSQL8/data/ -l
+  /Library/PostgreSQL8/log/PostgreSQL8.log start
+------------------------------------------------------------------------------
+
+En ce qui me concerne, le serveur est lancé au démarrage de la machine. Seul
+le serveur MySQL est démarré manuellement.
+
+Ensuite, on peut se connecter à la console +postgresql+ de la manière usuelle.
+
+------------------------------------------------------------------------------
+$ cd /Library/PostgreSQL8/bin/
+$ ./psql test -U postgres
+test=# \d;
+               List of relations
+ Schema |      Name      |   Type   |  Owner
+--------+----------------+----------+----------
+ public | foo            | table    | postgres
+ public | foo_foo_id_seq | sequence | postgres
+(2 rows)
+------------------------------------------------------------------------------
+
+Configuration de PostgreSQL
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Si l'on a choisit de lancer le serveur au démarrage de Mac OS X
+(+/Library/StartupItems/PostgreSQL/PostgreSQL+), il n'est pas besoin de lancer
+manuellement le serveur. On peut vérifier que le serveur est bien démarré dans
+le *Moniteur d'activité*, ou en ligne de commande :
+
+------------------------------------------------------------------------------
+$ ps ax | grep postgres
+  165  ??  S      0:00.41 /Library/PostgreSQL8/bin/postgres -D /Library/Postgre
+  207  ??  Ss     0:00.40 postgres: writer process
+  208  ??  Ss     0:00.28 postgres: wal writer process
+  209  ??  Ss     0:00.08 postgres: autovacuum launcher process
+  210  ??  Ss     0:00.15 postgres: stats collector process
+  563  ??  Ss     0:00.01 postgres: postgres test ::1(49277) idle
+  564  ??  Ss     0:03.62 postgres: postgres test ::1(49278) idle
+  665  p2  R+     0:00.00 grep postgres
+------------------------------------------------------------------------------
+
+Si l'on a installé les gestionnaires clients, on peut également lancer
+l'utilitaire *Service Manager* <<Fig. 1>>. Celui-ci est comparable à l'outil
+pour lancer le serveur +mysql+ situé dans le panneau des *Préférences
+Système* de Mac OS X : on clique sur le bouton pour démarrer...
+
+[[Fig. 1]]
+.Gestionnaire de connexion au serveur.
+image::pgsql1.png[pgsql1.png]
+
+Dans un premier temps, on crée une nouvelle base, que l'on appelera +test+ et
+qui nous servira de base de test. Ensuite, on se connecte à la nouvelle table
+ainsi crée et on ajoute deux entrées. On procède comme dans le
+http://developer.apple.com/internet/opensource/postgres.html[tutoriel en
+ligne] proposé par Apple.
+
+------------------------------------------------------------------------------
+[13] $ sudo -u postgres createdb test
+[14] $ sudo -u postgres psql test
+Welcome to psql 8.3.0, the PostgreSQL interactive terminal.
+
+Type:  \copyright for distribution terms
+       \h for help with SQL commands
+       \? for help with psql commands
+       \g or terminate with semicolon to execute query
+       \q to quit
+
+test=# create table tab1 (name varchar primary key, tab1_id serial);
+NOTICE:  CREATE TABLE will create implicit sequence "tab1_tab1_id_seq" for serial column "tab1.tab1_id"
+NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "tab1_pkey" for table "tab1"
+CREATE TABLE
+test=# insert into tab1 (name) values ('Alice');
+INSERT 0 1
+test=# insert into tab1 (name) values ('John');
+INSERT 0 1
+test=# \q
+------------------------------------------------------------------------------
+
+On peut effectuer des requêtes en ligne de commande, ou à l'aide des
+utilitaires graphiques. Par exemple, l'utilitaire *Query Tool for Postgres*
+permet de visualiser les tables, les schémas, etc.
+
+[[Fig. 2]]
+.Création d'une requête.
+image::pgsql2.png[pgsql2.png]
+
+En sélectionnant la table créée (+tab1+) <<Fig. 2>>, on peut afficher la liste
+des entrées (+SELECT * FROM tab1+) et on retrouve bien les deux entrées
+insérées à l'étape précédente <<Fig. 3>>.
+
+[[Fig. 3]]
+.Affichage des résultats.
+image::pgsql3_75pc.png[pgsql3.png]
+
+Ensuite, on peut ajouter un groupe d'utilisateurs autorisés à se connecter sur
+la table +test+. Ici, on ajoute l'utilisateur +chl+ avec le mot de passe
++lolita+. Cela servira pour les connexions distantes sur la base de
+données.
+
+------------------------------------------------------------------------------
+test=# create group test;
+CREATE ROLE
+test=# create user chl with password 'lolita';
+CREATE ROLE
+test=# alter group test add user chl;
+ALTER ROLE
+test=# \q
+------------------------------------------------------------------------------
+
+On peut vérifier que l'utilisateur nouvellement créé est bien autorisé à se
+connecter sur la table +test+.
+
+------------------------------------------------------------------------------
+$ psql test chl
+Welcome to psql 8.3.0, the PostgreSQL interactive terminal.
+
+Type:  \copyright for distribution terms
+       \h for help with SQL commands
+       \? for help with psql commands
+       \g or terminate with semicolon to execute query
+       \q to quit
+test=> \dp
+          Access privileges for database "test"
+ Schema |       Name       |   Type   | Access privileges
+--------+------------------+----------+-------------------
+ public | tab1             | table    |
+ public | tab1_tab1_id_seq | sequence |
+(2 rows)
+------------------------------------------------------------------------------
+
+Le script Perl ci-dessous est entièrement copié du tutoriel proposé par
+Apple. Globalement, il permet de se connecter à la table et d'afficher
+l'ensemble des entrées qu'elle contient. Il est nécessaire d'installer
+l'interface +DBI.pm+ (comme pour MySQL), soit par +fink+
+
+------------------------------------------------------------------------------
+$ sudo fink install dbi-pm
+------------------------------------------------------------------------------
+
+soit directement à partir de +CPAN+. Ensuite, on ajoute l'interface spécifique
+à PostgreSQL, +DBD::Pg+, à partir de +CPAN+. Donc, autant faire les deux avec
+l'utilitaire +cpan+.
+
+------------------------------------------------------------------------------
+$ sudo perl -MCPAN -e 'install DBI'
+$ sudo perl -MCPAN -e 'install DBD::Pg'
+------------------------------------------------------------------------------
+
+Le programme +cgi+ de test doit être placé dans le répertoire hébergeant les
+scripts CGI (sur un site distant, ou en local dans
++/Library/WebServer/CGI-Executables+), et il doit être exécutable (+$ chmod +x
+pg.cgi+).
+
+..............................................................................
+include::pg.cgi[tabsize=4]
+..............................................................................
+
+Le résultat produit est conforme à ce qui est attendu <<Fig. 4>>.
+
+[[Fig. 4]]
+.Perl et PostgreSQL.
+image::pgsql4.png[pgsql4.png]
+
+
+
+SQLite
+------
+
+Du point de vue des http://www.sqlite.org/speed.html[performances], SQLite est
+préférable lorsque l'on gère de petites bases de données, sans grosses
+contraintes d'intégrité à mettre en place. Qui plus est, on peut accéder à des
+données stockées sous SQLite depuis pratiquement n'importe quel langage de
+programmation. Un http://www.sqlite.org/sqlite.html[tutoriel] permet de se
+familiariser rapidement avec SQLite.
+
+[TIP]
+.SQLite et Apple Mail
+==============================================================================
+SQLite est installé par défaut sous Mac OS X (+sqlite3+). Le gestionnaire de
+mail *Apple Mail* utilise en fait une base de données SQLite pour gérer les
+messages. Comme cela est proposé sur le blog de
+http://www.hawkwings.net/2007/03/01/a-faster-way-to-speed-up-mailapp/[Hawk
+Wings], on peut ``accélérer'' l'affichage de *Apple Mail* (quelque peu ralenti
+lorsque l'on gère beaucoup de messages) en reconstruisant l'index de la
+table. Les commandes à utiliser sont assez simples :
+
+------------------------------------------------------------------------------
+$ cd ~/Library/Mail
+$ sqlite3 Envelope\ Index
+SQLite version 3.1.3
+Enter ".help" for instructions
+sqlite> vacuum subjects;
+Ctrl-D
+------------------------------------------------------------------------------
+
+Personnellement, je conserve environ 2000 messages dans la boîte de récéeption
+de *Apple Mail*, et j'archive régulièrement les messages (tous les deux mois)
+dans des dossiers indexés chronologiquement, donc ce type de manipulation ne
+change pas foncièrement la réactivité de *Apple Mail*.
+==============================================================================
+
+La création d'une base de données avec SQLite est beaucoup plus rapide qu'avec
+MySQL ou PostgreSQL puisqu'il y a beaucoup moins de droits à configurer. If
+faut donc plutôt voir SQLite comme un gestionnaire de fichier
+``amélioré''. Par exemple, pour créer le même type de table qu'à la section
+précédente, on procède ainsi :
+
+------------------------------------------------------------------------------
+$ sqlite3 test.db
+SQLite version 3.1.3
+Enter ".help" for instructions
+sqlite> create table tab2(one varchar(10), two smallint);
+sqlite> insert into tab2 values('Alice', 1);
+sqlite> insert into tab2 values('John', 2);
+sqlite> select * from tab2;
+Alice|1
+John|2
+------------------------------------------------------------------------------
+
+J'ai reproduit l'http://www.sqlite.org/quickstart.html[exemple tcl] fourni sur
+le site, en adaptant le chemin de la bibliothèque (l. 6, +load
+/usr/lib/tclsqlite3.so Sqlite3+) pour que cela corresponde à mon arborescence
+Mac.
+
+..............................................................................
+include::query_tab2.sh[tabsize=4]
+..............................................................................
+
+L'appel à ce petit programme produit le résultat escompté :
+
+------------------------------------------------------------------------------
+$ ./query_tab2.sh test.db "select * from tab2;"
+one = Alice
+two = 1
+
+one = John
+two = 2
+------------------------------------------------------------------------------
+
+
+Pour utiliser SQLite avec Ruby, il est nécessaire d'installer l'extension
+correspondante. On peut utiliser +gem+ pour cela.
+
+------------------------------------------------------------------------------
+$ sudo gem install sqlite3-ruby
+Password:
+Need to update 16 gems from http://gems.rubyforge.org
+................
+complete
+Select which gem to install for your platform (i686-darwin)
+ 1. sqlite3-ruby 1.2.1 (mswin32)
+ 2. sqlite3-ruby 1.2.1 (ruby)
+ 3. sqlite3-ruby 1.2.0 (mswin32)
+ 4. sqlite3-ruby 1.2.0 (ruby)
+ 5. Skip this gem
+ 6. Cancel installation
+> 2
+Building native extensions.  This could take a while...
+Successfully installed sqlite3-ruby-1.2.1
+Installing ri documentation for sqlite3-ruby-1.2.1...
+Installing RDoc documentation for sqlite3-ruby-1.2.1...
+------------------------------------------------------------------------------
+
+Il existe une http://sqlite-ruby.rubyforge.org/sqlite3/faq.html[FAQ] pour les
+principales questions relatives à l'interface Ruby/SQLite.
+
+En ligne de commande, voici comment on peut procéder :
+
+------------------------------------------------------------------------------
+$ irb
+irb(main):001:0> require 'sqlite3'
+=> true
+irb(main):002:0> db = SQLite3::Database.open( "test.db" )
+=> #<SQLite3::Database:0x10249cc @driver=#<SQLite3::Driver::Native::Driver:0x101b73c @callback_data={}, @trace={}, @busy_handler={}, @authorizer={}>, @statement_factory=SQLite3::Statement, @results_as_hash=false, @handle=#<SWIG::TYPE_p_sqlite3:0x101b6b0>, @transaction_active=false, @closed=false, @translator=nil, @type_translation=false>
+irb(main):003:0> db.execute( "SELECT * FROM tab2" ) do |row|
+irb(main):004:1* puts row
+irb(main):005:1> end
+Alice
+1
+John
+2
+=> nil
+------------------------------------------------------------------------------
+
+Voici également un petit script qui permet de récupérer les informations
+contenues dans la table +tab2+ créée ci-dessus.
+
+..............................................................................
+include::sqlite_test.rb[tabsize=4]
+..............................................................................
+
 ** [2008-03-21 Ven] Paired comparisons
 
 Sylvia G. Roch, Angela M. Sternburgh, Pat M. Caputo (2007) Absolute vs Relative Performance Rating Formats: Implications for fairness and organizational justice
@@ -1252,6 +3339,390 @@ Journal of Electronic Imaging -- April 2001 -- Volume 10, Issue 2, pp. 394-398
 Gordon Crawford, Cindy Williams, 1985
 The Analysis of Subjective Judgment Matrices
 RAND Report
+
+** [2008-05-12 Lun] Knowledge engineering
+*http://www.springer.com/west/home?SGWID=4-102-22-165247224-0&changeHeader=true&SHORTCUT=www.springer.com/978-1-84628-475-5[An
+ introduction to knowledge engineering], Simon Kendal & Malcom Creen,
+ Springer 2005.*
+
+This book provides a gentle introduction to knowledge engineering
+which encompasses the acquisition, representation and management of
+so-called "knowledge". After reviewing the basic tools for managing
+knowledge-based systems, namely Expert Systems, Neural Networks,
+Case-Based Reasoning, Genetic Algorithms, Intelligent Agents and Data
+Mining, the authors develop useful concepts relating to knowledge
+acquisition and representation. Then, dedicated programming languages
+are reviewed, including expert systems shells and PROLOG, before
+tackling the design of common knowledge-based systems (architecture,
+life cycle and the like). Finally, the rest of the book is devoted to
+uncertain reasoning and hybrid knowledge-based systems, with a
+particular emphasis on probabilistic reasoning, fuzzy logic, and the
+integration of symbolic and connectionist systems.
+
+*****************************************************************************
+This article is referenced from the
+http://www.aliquote.org/memos/2008/01/04/an-introduction-to-knowledge-engineering/index.php#links[following
+post] on http://www.aliquote.org[www.aliquote.org], and is also
+available in link:./KnowledgeEnginneering.pdf[pdf format].
+*****************************************************************************
+
+Summary
+-------
+Although this book should be viewed as an elementary book on such an
+extensive field as Knowledge-Based Systems (KBS), I shall use it as
+the basis for illustrating some of the classical tools tuned to
+Artificial Intelligence (AI) programming. The open-source statistical
+package http://www.cran.r-project.org[R] will be used in the following
+applications.
+
+Other reference textbooks related to AI and KBS include, but is not
+limited to:
+
+- _Artificial Intelligence: A Modern Approach_, by Stuart Russel and
+Peter Norvig (1995, Prentice Hall)
+http://aima.cs.berkeley.edu/[homepage of the 2nd version]
+- _Knowledge Systems Design_, by J. K. Debenham (1988, Prentice Hall)
+
+Some additional pointers can be found on the free on-line encyclopedia
+http://en.wikipedia.org/wiki/Knowledge-based_systems[Wikipedia].
+
+We will mainly focus our attention on Neural Networks, Genetic
+Algorithms and Data Mining. These computational frameworks will be
+used as our starting point for further discussion.
+
+
+Neural networks
+---------------
+Before going down to the statistical properties of the NN approach, in
+particular its link to the more usual regression approach, let's
+remind the reader some of the main properties of an artificial NN.
+A classical textbook on this subject  is <<Ripley1996>>.
+
+
+Principles of neural modeling
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It can be shown that a two-layer feedforward neural network can
+implement any Boolean function. Figure 1 illustrate how a two-layer
+network can solve the XOR problem (reproduced from <<Berthold2003>>,
+p. 279).
+
+.A two-layer network that can solve the XOR problem
+[caption="Figure 2 : "]
+image::img/nn_xor.png[nn_xor.png]
+
+You may recall that the XOR problem, i.e. the exclusive-OR function
+whose truth table is given below, usually cannot be resolved by the
+basic artificial neuron proposed by <<McCulloch1943>>.
+
+.The XOR function
+[grid="all"]
+.-----.-----.----
+x~1~   x~2~   y
+-----------------
+0       0     0
+0       1     1
+1       0     1
+1       1     0
+----------------
+
+Some applications
+~~~~~~~~~~~~~~~~~
+The R package `nnet` (now bundled in the `VR` package) allows to fit a
+single-hidden-layer neural network to a data matrix.
+To illustrate how such NN can uncover the properties of a dataset, we
+will use the well-known Fisher Iris data (Fisher, 1936). These data
+are measurements of the sepal length and width and petal length and
+width in centimetres of fifty plants for each of three types of iris;
+Iris setosa, Iris versicolor and Iris virginica. They most often are
+used to illustrate the principles underlying discriminant
+analysis. Indeed, though the data were collected by Dr. Edgar
+Anderson, R. A. Fisher published the data on Iris setosa and Iris
+versicolor to demonstrate the use of discriminant functions. The Iris
+virginica data are used to extend Fisher's technique and to test
+Randolph's (1934) hypothesis that Iris versicolor is a polyploid
+hybrid of the two other species which is related to the fact that Iris
+setosa is a diploid species with 38 chromosomes, Iris virginica a
+tetraploid and Iris versicolor having 108 chromosomes is a hexaploid.
+Here is what it looks like:
+
+-----------------------------------------------------------------------------
+> data(iris)
+> pairs(iris)
+-----------------------------------------------------------------------------
+
+.The Fisher's iris
+[caption="Figure 1 : "]
+image::img/iris.png[iris.png]
+
+
+The program link:./code/nn_ex1.java[nn_ex1.java] implements a basic
+hopfield neural network.
+
+Knowledge representation and management
+---------------------------------------
+
+Rule-based systems
+~~~~~~~~~~~~~~~~~~
+Representing knowledge through a KBS can be handled using two kind of
+programming approach: Procedural and Declarative. Procedural
+programming refers to a set of procedures, or fixed instructions, that
+have to be performed in a specific order, while declarative programing
+mainly involves a set of rules (statements about given facts) for
+which the processing sequences are not defined by the engineer. In
+short, the statements provide information regarding the association
+between several objects, or entities, and the system decides, through
+its inference engine, when to apply selected rules.
+
+Among others, forward and backward chaining (also see
+http://www.cse.unsw.edu.au/~billw/aidict.html[The AI Dictionary]) are
+generally found in any rule-based system. Such a system uses the
+basics of propositional logic to manipulate data which in turn is
+stored in the system through symbols or entities related one to to
+each other. Relationships between entites and values are mostly
+represented using classical symbols, such as AND, OR, NOT, IMPLIES,
+FOR ALL, EXIST, etc.
+
+In _forward chaining_, the inferential procedure starts with a set of
+facts (i.e. logical assertions of the form IF fact1 THEN fact2) and
+processes them to reach conclusions about the domain of
+expertise. Forward chaining rules are fired for each new data that is
+presented to the system until it cannot reach any further conclusion.
+
+On the contrary, in _backward chaining_, the system is initialized
+with a given hypothesis, and, then, the veracity of this hypothesis is
+proved by checking the rules within the domain. In other words, the
+system is driven from the goal to the data while the reverse holds in
+the preceding case.
+
+Quoting the http://www.computer-dictionary-online.org/[Online Computer
+Dictionnary]:
+
+[backward chaining, (1997-07-14)]
+_____________________________________________________________________________
+An algorithm for proving a goal by recursively braking it down into
+sub-goals and trying to prove these until facts are reached. Facts are
+goals with no sub-goals which are therefore always true. Backward
+training is the program execution mechanism used by most logic
+programming language like Prolog.
+
+Opposite: forward chaining.
+_____________________________________________________________________________
+
+
+One can find an implementation in Java of such rule-based programming
+on the http://algernon-j.sourceforge.net/[Algernon's project]
+webpage. There is also a complete implementation of an
+http://www.amzi.com/ExpertSystemsInProlog/[expert system in
+PROLOG]. Note that among Algernon code samples, there is a Mycin-like
+reasoning sheme example. Mycin <<Buchanan1984>> is a well-known
+example of the use of Expert System in the biomedical domain, and it
+was mainly used for training the becoming physician (other links:
+http://www.computing.surrey.ac.uk/ai/PROFILE/mycin.html[1],
+http://en.wikipedia.org/wiki/Mycin[2]).
+
+// TODO
+// http://www.cert.fr/dcsd/THESES/fabiani/manuscrit_fabiani/node334.html
+
+The following example is taken from the
+http://algernon-j.sourceforge.net/doc/examples/mini-Mycin/[Algernon
+example]. It shows how one of the decision rules is intanciated using
+this KBS:
+
+-----------------------------------------------------------------------------
+;; Rule 4  "A patient who has renal_abnormality has abnormal_urologic_anatomy"
+(tell ((:add-rule Assertion
+           ;; test slots of the modified or new Assertion
+           ((concept ?assertion "renal_abnormality")
+            (value   ?assertion :TRUE)
+            ->
+            (:add-instance (?assertion Assertion ) ;; Add a new assertion
+                (concept ?assertion "abnormal_urologic_anatomy")
+                (value   ?assertion :TRUE))
+            ))
+        ))
+-----------------------------------------------------------------------------
+
+The following articles, related to various scientifical fields, should
+be of relevant interest:
+
+=============================================================================
+- S. S. Joshi and B. Guilhabert, Sequence-Learning Algorithm Based on Backward Chaining, *Adaptive Behavior*, *14(1)*: 53-71 (2006) [http://adb.sagepub.com/cgi/content/abstract/14/1/53[abstract]]
+- R. Poli and W. B. Langdon, Backward-chaining evolutionary algorithms, *Artificial Intelligence*, *170*: 953-982 (2006) [http://www.cs.ucl.ac.uk/staff/W.Langdon/ftp/papers/poli_2006_AIJ.pdf[pdf paper]]
+- T. Mszros and B. Vadsz, An Extension to the RETE Match Algorithm: Supporting both Forward and Backward Chaining, *TEMPUS JEP3815*, Budapest, Hungary (1994) [http://citeseer.ist.psu.edu/rd/13818962%2C270955%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/cache/papers/cs/13804/http:zSzzSzwww.mit.bme.huzSz%7EmeszaroszSzmezSzpubszSztempus94.pdf/an-extension-to-the.pdf[pdf paper]]
+- D. H. Fisher, M. E. Edgerton, Z. Chen, L. Tang, and L. Frey, Backward Chaining Rule Induction [http://www.vuse.vanderbilt.edu/~dfisher/IDAfinalsubmission.pdf[pdf paper]]
+- L. Aversano, G. Canfora, and A. Clampi, An Algorithm for Web Service Discovery through Their Composition, *IEEE International Conference on Web Services (ICWS'04)*: 332 [http://csdl2.computer.org/persagen/DLAbsToc.jsp?resourcePath=/dl/proceedings/&toc=comp/proceedings/icws/2004/2167/00/2167toc.xml&DOI=10.1109/ICWS.2004.1314755[abstract]]
+- R. Poli and W. B. Langdon, Backward-chaining Genetic Programming, *GECCO'05*, June 25-29 (2005) [http://cswww.essex.ac.uk/staff/poli/papers/geccobackchain2005.pdf[pdf paper]]
+=============================================================================
+
+// TODO:
+// http://ai-depot.com/Tutorial/RuleBased-Methods.html
+//
+
+Semantic networks and frames
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Both methodologies-- semantic network and frames--can be thought as
+the precursors of the actual high-level programming languages, such as
+C++ or Java, which are fundamentally object-oriented languages.
+
+Semantic networks are mostly a convenient way to graphically represent
+associations between entities in the knowledge domain. In fact,
+associations allow to describe the hierarchical relations between all
+of the entities. Such a graphical network is illustrated in the
+following figure (reproduced from Kendal & Creen, p. 143).
+
+.A small semantic network
+[caption="Figure 2 : "]
+image::img/sn1.png[sn1.png]
+
+Relations, in particular inheritance relationship, can be represented
+using a simple oriented graph whose node contains the entities and
+link represent the relation between two entities.
+
+However, as shown in Figure 3 (Kendal & Creen, p. 144), adding a
+single property to the network can drastically reduce the power of the
+inference that can be made about the domain. Indeed, after setting
+that _grass snake eats meat_, we now arrive at differing conclusions
+depending on when we start to read the graph.
+
+.The same semantic network after a slight modification
+[caption="Figure 3 : "]
+image::img/sn2.png[sn2.png]
+
+For the interested reader, some links are given below:
+
+=============================================================================
+- http://www.semanticresearch.com/[Semantic Research] (includes the Semantica (R) software and some white papers available as pdf, like http://www.semanticresearch.com/downloads/whitepapers/theory_whitepaper.pdf[Knowledge and Semantic Network Theory])
+- http://www.ipli.com/semantic.htm[Semantic Networks, Concept Maps, Knowledge, Knowledge Representation]
+- http://www.sciam.com/article.cfm?articleID=00048144-10D2-1C70-84A9809EC588EF21[The Semantic Web] (from *Scientific American*)
+- http://www.conroeisd.net/departments/tlc/plan/mindtools.htm[Mindtools for Cognitive Thinking]
+- M. Hsing and A. Cherkasov, Integration of Biological Data with Semantic Networks, *Current Bioinformatics*, *1(3)* (2006) [http://colab.cim3.net/file/work/SICoP/2006-10-10/Hsing_CBIO.pdf[pdf paper]]
+- S. J. McGriff, Measuring cognitive structure: An overview of Pathfinder Networks and Semantic Networks (2001) [http://www.personal.psu.edu/sjm256/portfolio/kbase/Theories&Models/Cognitivism/Cognitive-Structure.pdf[pdf paper]]
+- M. Marko, M. A. Porter, A. Probst, C. Gershenson, and A. Das, Transforming the World Wide Web into a Complexity-Based Semantic Network (2002) [http://arxiv.org/html/cs.NI/0205080[html paper]]
+=============================================================================
+
+// TODO
+// http://www.coe.missouri.edu/~jonassen/courses/mindtool/SemanticSoftware.html
+
+
+Frames technology offer a way to circumvent some of the limitations of
+the semantic network approach. More precisely, frames allow
+
+
+.Example of a set of frames
+[caption="Figure 4 : "]
+image::img/fr.png[fr.png]
+
+Dedicated programming language
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lisp and PROLOG are certainly the most promoted programming languages
+for AI applications. They were created in the 1958 and 1972 and differ
+from procedural language in that they allow the programmer to use
+declarative assertion rather than inputting a raw sequence of
+instructions.
+
+
+Bibliography
+------------
+
++ [[[Berthold2003]]] Berthold, M. and Hand, D. J. (2003). _Intelligent Data Analysis. An Introduction_. Springer.
++ [[[Ripley1996]]] Ripley, B. D. (1996) _Pattern Recognition and Neural Networks_. Cambridge.
++ [[[Buchanan1984]]] Buchanan, B. G. and Shortliffe, E. H. (1984). _Rule-Based Expert Systems, The Mycin experiments of the Stanford Heuristic Programming Project_. Addison-Wesley Publishing Company. [available online at http://www.aaaipress.org/Classic/Buchanan/buchanan.html[www.aaaipress.org]]
++ [[[McCulloch1943]]] McCulloch, W. S. and Pitts, W. (1943). A logical calculus of the ideas immanent in nervous activity. _Bulletin of Mathematical Biophysics_, _5_, 115-133.
++ [[[Kabbaj1991]]] Kabbaj, A. (1991). _Intelligence Artificielle en Lisp et Prolog_. Masson.
+
+** [2008-10-06 Lun] Graphes et algorithmes
+Vocabulaire et notions essentielles
+-----------------------------------
+
+Un graphe est un couple G=(X,U) formé d'un ensemble X et d'une relation
+bianire U sur X. Les éléments de X sont appelés les sommets de G, et ceux de U
+les arcs de G. Si l'on considère que x est l'origine de (x,y) ∈ U et y son
+extrêmité, alors l'arc (x,y) est dit incident en x et en y. Deux arcs sont
+dits adjacents lorsqu'ils ont au moins un sommet en commun.
+
+Un peu de "topologie" sur cette grande famille :
+
+- G_Y = (Y,U∩(Y×Y)) est le sous-graphe de G induit par Y,
+- G^V = (X,V) est le graphe partiel de G induit par V,
+- G_Y^V = (Y,V∩(Y×Y)) est le sous-graphe partiel de G induit par Y et V.
+
+On peut également définir l'homomorphisme de G vers G' comme la fonction f:
+X→X' qui à (x,y) ∈ U associe (f(x),f(y)) ∈ U'. Si l'homomorphisme f est en
+plus bijectif, et que f^{-1} est un homomorphisme également, alors f est un
+isomorphisme : G et G' sont dits isomorphes.
+
+Enfin, pour en terminer avec cette introduction rigoureuse aux propriétés des
+graphes, le nombre n des sommets de G est appelé son ordre et le nombre m de
+ses arcs est appelé sa taille.
+
+Pour mieux définir un graphe G donné, on peut convenir de désigner par
+∂+(x)=⎮xU⎮ le degré sortant de x, où xU l'ensemble des arcs d'origine x et
+(x,y) ∈ xU désigne un arc sortant. On définit de même ∂-(x)=⎮xU⎮ le degré
+entrant de x. L'opérateur ⎮.⎮ désigne la somme des éléments de l'ensemble
+considéré.
+
+Le premier résultat trivial est que la somme des degrés entrants est égale à
+la somme des degrés sortants :
+
+ ∑ ∂+(x) =  ∑ ∂-(x) = ⎮U⎮
+x∈X        x∈X
+
+Dans l'exemple suivant, on a ∂+(2)=2 (2U={(2,4),(2,5)}) et ∂-(2)=1
+(U2={(1,2)}).
+
+// ::1.dot::
+// digraph 1 {
+//   size="5,5";
+//   1 -> 2;
+//   1 -> 3;
+//   2 -> 4;
+//   2 -> 5;
+//   3 -> 4;
+//   3 -> 5;
+//   4 -> 6;
+//   5 -> 6;
+// }
+
+image::1.png[]
+
+À présent que les éléments constitutifs d'un graphe ont été définis, on peut
+s'intéresser à leur relation lorsqu'ils sont pris dans leur ensemble ou après
+une restriction définie.
+
+Un chemin de G se définit comme une suite c=(u_1,...,u_q) d'arcs deux à deux
+distincts telle que l'extrêmité de tout u_i, 0 < i ≤ q-1, correspond à
+l'origine de u_{i+1}. En d'autres termes, on peut "dessiner" le chemin sans
+lever le crayon. Si l'on désigne un chemin c par la suite x_1...x_{q+1}, q est
+appelé sa longueur.
+
+
+Un exemple de graphe avec 4 sommets et 4 arcs est fourni ci-dessous :
+
+      A
+      *
+     /|
+    / |
+ B *--|--* D
+    \ | /
+     \|/
+      *
+      C
+
+
+
+Algorithmes sur les graphes
+---------------------------
+
+
+
+
+Structures de données
+~~~~~~~~~~~~~~~~~~~~~
+Avant de présenter quelques algorithmes reposant des représentations sous
+forme de graphes, il est utile d'introduire les structures de données
+associées à ce type de représnetation. En fait, on parle de type de données
+abstraits.
 
 ** [2009-07-14 Mar] DSC 2009 conference
 There was a lot of interesting stuff presented this year at the DSC conference. But first of all, let's look at some pictures of Copenhagen, which has very nice lakes and parks.
@@ -1288,6 +3759,189 @@ The usual arithmetic operators are now members of an S4 class ('Arith') and meth
 
 Christophe Genolini offers a gentle introduction to R programming with S4 and relevant OO concepts.
 
+** [2009-08-01 Sam] Fibonacci
+#+BEGIN_SRC python
+def fib1 (n):
+    """ Compute the value of F(n) in exponential time (recursive) """
+    if (n == 0):
+        return 0
+    if (n == 1):
+        return 1
+    return fib1(n-1) + fib1(n-2)
+
+from numarray import array,zeros
+
+def fib2 (n):
+    """ Compute the value of F(n) in polynomial time (iterative) """
+    if (n == 0):
+        return 0
+    f = zeros((n))
+    f[0],f[1] = 0,1
+    for i in range(2,n):
+        f[i] = f[i-1]+f[i-2]
+    return f[n]
+
+def fib3 (n):
+    """ Compute the value of F(n) in a more efficeint way (matrix) """
+    X = array([[0,1],[1,1]])
+    X ** n
+#+END_SRC
+
+** [2009-11-25 Mer] Apple developement tools
+Snow Leopard (SL) comes with two versions of gcc (4.0 and 4.2) once
+you've installed the Xcode package. It is, however, possible to
+compile the latest gcc version (4.5) as shown by J. De Leeuw and
+others. See the SVN repository at http://gcc.gnu.org/svn.html.
+In this case, the complete gcc suite (http://gcc.gnu.org/)
+would provide front ends for C, C++, Objective-C, Fortran, Java, and
+Ada. Actually, I was not able to succeed in using the gcj compiler
+because of missing dependencies, in particular the Eclipse native
+compiler (ecj). The gfortran compiler works fine, but I also have a
+version of Fortran 77, mostly to ensure compatibility with old
+software and to compare both versions.
+
+In addition, the Developer tools include the llvm suite
+(http://llvm.org/) which is based on version 4.2 of gcc. LLVM stands
+for Low Level Virtual Machine and it is ...
+
+Apple provides Python 2.3 (for compatibility reason), 2.5 (32 bits
+mode), and 2.6 (32 and 64 bits mode). They all are installed as system
+languages, that is in a Framework. Default system Python can be
+changed by setting in .profile or .bashrc something like:
+  export VERSIONER_PYTHON_PREFER_32_BIT=no
+  export VERSIONER_PYTHON_VERSION=2.6
+but see the man page on python. There is also an alternative solution
+which is Enthought Python (http://www.enthought.com/), that comes with
+a lot of scientific packages bundled together. It should be sufficient
+for most numerical applications although it may be necessary to add
+additional package. The proper way to do is to patch the easy_install
+utility and use it under EPD; the sad way (but it works!) is to
+compile the package under Python 2.5 (which is actually the same
+version that comes with EPD) and move the compiled package into the
+EPD site-packages directory. Personally, I recompile everything
+in 64 bits, with the exception of MayaVi. However, I may still be able
+to use the EPD distribution through emacs with the enhanced Python
+mode and ipython. Add to your .emacs something like:
+  (setq ipython-command
+     "/Library/Frameworks/Python.framework/Versions/Current/bin/ipython")
+  (require 'ipython)
+  (require 'python-mode)
+Be careful that compiling from scratch the scipy package takes some
+time (about 40 min.) when linked against LAPACK and/or BLAS (numpy is
+laready included in system Python 2.5 and 2.6).
+
+Ruby is available (version 1.8) but it is easy to update to version
+1.9 in 64 bits, or to install MacRuby (http://www.macruby.org/) if one
+is interested in benefiting from Apple Objective-C technologies. Both
+can be installed in /usr/local. Ruby packages are easily managed using
+gem (like cpan for Perl). In particular, Rails
+(http://rubyonrails.org/) can be installed with one line: gem install
+rails, but it is available as a standalone package if needed.
+
+The R statistical software can be installed from CRAN website
+(http://www.cran.r-project.org) with the binary installer, which
+includes the R core packages, the Mac GUI and gfortran. Most
+experienced users would be interested in the Mac OS X Developer's R
+version (http://r.research.att.com/). Actually, I recompile the
+experimental R 2.11, without GUI support, but I cannot get a working
+Gtk system (most probably due to conflict with Cairo libraries).
+
+
+
+Creating shared libraries using gcc
+
+For example, there is no getline function in the standard C files on
+Mac OS X. Although it could be replaced with fgets (less secure) or
+fgetln which is defined in all BSD distributions. Suppose we are
+interested in using getline
+
+
+First you need to create the object file
+  $ cc -fno-common -c getline.c
+  $ file getline.o
+  getline.o: Mach-O 64-bit object x86_64
+
+Next, we can create the corresponding shared library:
+  $ gcc -dynamiclib -o libgetline.dylib -dylib getline.o
+  $ file libgetline.dylib
+  libgetline.dylib: Mach-O 64-bit dynamically linked shared library x86_64
+
+We can now compile our toy example using something like,
+  $ cc -o mygetline mygetline.c -L/Users/chl/tmp -lgetline
+
+where mygetline.c reads
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+
+int main(void)
+{
+  char * line = NULL;
+  size_t len = 0;
+  ssize_t read;
+  while ((read = getline(&line, &len, stdin)) != -1) {
+    printf("Retrieved line of length %zu: \n", read);
+    printf("%s", line);
+  }
+  if (line)
+    free(line);
+  return EXIT_SUCCESS;
+}
+
+  $ ./mygetline
+  first line here
+  Retrieved line of length 16:
+  first line here
+  and a second one
+  Retrieved line of length 17:
+  and a second one
+
+If you're planning to use this library for other application, don't
+forget to put it in a place where it can be found, e.g. /usr/local/lib
+or update your Libraries table.
+
+** [2010-02-03 Mer] Gene annotations
+En sqlite,
+
+$ sqlite3 hg18.refseq.sqlite
+sqlite> .tables
+chromosome        exon_tree_parent  gene_tree         transcript
+exon              exon_tree_rowid   gene_tree_node
+exon_tree         gene              gene_tree_parent
+exon_tree_node    gene_alias        gene_tree_rowid
+sqlite> .schema gene
+CREATE TABLE gene(
+  id INTEGER PRIMARY KEY, -- ID to link with the RTree Index
+  name VARCHAR,           -- Gene symbol (unless ensembl => ENSGID)
+  chromosome_id INTEGER,  -- Fkey to chromosome.id
+  strand INTEGER          -- 1 : plus, 2 : minus
+);
+CREATE INDEX geneChromosome on gene(chromosome_id);
+CREATE UNIQUE INDEX geneName on gene(name);
+CREATE INDEX geneStrand on gene(strand);
+sqlite>  select * from gene where name='DRD1';
+6107|DRD1|5|2
+sqlite> select id from gene where name='DRD1';
+6107
+sqlite> select * from transcript where gene_id='6107';
+NM_000794|6107|174800281|174803769|174801368|174802708|2
+
+
+En python,
+
+import sqlite3
+conn = sqlite3.connect('hg18.refseq.sqlite')
+c = conn.cursor()
+c.execute('select * from gene where name="DRD1"')
+for row in c:
+   ....:     print row
+   ....:
+(6107, u'DRD1', 5, 2)
+
 ** [2010-05-24 Lun] Borsboom
 (...) So, once again we see that the fundamental tension that Lord and
 Novick have introduced through their axiomatic treatment of test
@@ -1307,6 +3961,203 @@ then, is the classical test theory model so immensely successful?
 
 D. Borsboom, Measuring the Mind, Conceptual Issues in Contemporary
 Psychometrics, Cambridge University Press, 2005, pp. 46–47.
+
+** [2010-12-27 Lun] HDP
+This note is about Dirichlet Processes (DP) and their application in IRT. This was partly initiated following a question on stats.stackexchange.com that reminded me of the potential interest of DP in psychometrics. But first of all, what are DP?
+
+The basic setup is as follows:
+We consider problems involving groups of data, where each observation within a group is a draw from a mixture model, and where it is desirable to share mixture components between groups. We assume that the number of mixture components is unknown a priori and is to be inferred from the data. In this setting it is natural to consider sets of Dirichlet processes, one for each group, where the well-known clustering property of the Dirichlet process provides a nonparametric prior for the number of mixture components within each group.
+
+In fact, it comes from a paper by Teh et al., [1] but I found a very clear introduction to topics such as DP, bayesian modeling, etc. in Non-parametric Bayesian Methods, from Zoubin Ghahramani. [2]
+
+The definitive reference seems to be:
+N. Hjort, C. Holmes, P. Müller, and S. Walker, editors. Bayesian Nonparametrics. Number 28 in Cambridge Series in Statistical and Probabilistic Mathematics. Cambridge University Press, 2010.
+
+The recommended R package seems to be the DPpackage.
+
+Bayesian Hierarchical Clustering, as implemented in the Bioconductor BHC package (http://www.bioconductor.org/help/bioc-views/release/bioc/html/BHC.html), offers an interesting way to do cluster analysis without bothering with an apriori number of clusters. I just ran the example in the package (the vignette is actually very limited) and found a good paper by Savage and coll. [3]
+
+[1]  Teh, YW, Jordan, MI, Beal, MJ, and Blei, DM. Hierarchical Dirichlet Processes. November, 2005.
+[2]  Ghahramani, Z. Non-parametric Bayesian Methods. Uncertainty in Artificial Intelligence Tutorial July 2005. http://learning.eng.cam.ac.uk/zoubin/talks/uai05tutorial-b.pdf (accessed December, 2010)
+[3]  Savage, RS, Heller, K, Xu, Y, Ghahramani, Z, Truman, WM, Grant, M, Denby, KJ, and Wild, DL. R/BHC: fast Bayesian hierarchical clustering for microarray data. BMC Bioinformatics 2009, 10:242. doi:10.1186/1471-2105-10-242
+
+** [2011-01-03 Lun] Genetics
+Here are some notes I took while reading Lange's Mathematical and
+Statistical Methods for Genetic Analysis (Springer, 2002, 2nd
+ed.). There must be various topics covered there as I need to get a
+clear idea of terminology used when speaking of genetic analysis, and
+from what I know there are several models of population genetics. I
+will also try to cover some concepts coming from behavioral
+genetics. The use of dedicated software, like R/Bioconductor or Mx,
+shall be dealt with in another file.
+
+Other books I have read that are more or less relevant are:
+
+  - Genes, Behavior, and the Social Environment: Moving Beyond the
+     Nature/Nurture Debate
+  - Kernel Methods in Computational Biology, Scholkopf et
+     al. (Bradford, 2004)
+  - Multiple Testing Procedures and Applications to Genomics, Dudoit
+     and Van Der Laan (Springer, 2008)
+  - Statistical Genetics: Gene Mapping Through Linkage and
+     Association, Neale et al. (Taylor & Francis, 2007)
+  - Genetic Analysis of Complex Disease, Haines and Pericak-Vance
+     (Wiley, 2006, 2nd ed.)
+  - Bioconductor Case Studies, Hahne et al. (Springer, 2008)
+  - Statistical Methods in Genetic Epidemiology, Thomas (Oxford
+     University Press, 2004)
+
+In 2004, a Special Issue was published in the Lancet featuring 7
+articles dealing with genetic epidemiology. They are available at the
+following address: http://j.mp/hZwQEe. I still think they could serve
+as a very good starting point for a couple of reference papers.
+
+*Terminology*
+
+Genes occur at definite sites, called loci, along a chromosom. Each
+locus can be occupied by one of several variant genes, called
+alleles. Most human cells contain 22 homologous pairs of chromosomes
+(autosomes) and two sex chromosomes -- two paired X's for a female,
+and X+Y for a male, making up a total of 46 chromosomes. Except for
+the sex chromosome, there are two genes at every locus, and if the two
+alleles are identical we say the person is homozygote; in the other
+case, he is said to be heterozygote. Genotype is not observable, but
+phenotype is.
+
+
+  |   |
+  A - A
+  |   |
+  B - A
+  |   |
+  A - B
+  |   |
+  B - B
+  |   |
+
+** [2012-01-08 Dim] Frank Harrell
+I'd suggest fitting a model that has the right number of parameters
+for the effective sample size (allowing multiple terms for apriori
+strong variables not known to act linearly), putting in
+subject-matter-driven interaction terms, then plotting predicted
+values from that model. Partial effect plots are very helpful.
+
+Some recommendations for assessment of model fit. (1) Make the model
+fit up-front as much as possible so you don't need to worry so much
+(e.g., don't assume anything is linear; use regression splines); (2)
+If you have some hope that the model is simple, add more complex terms
+to the model and assess their added value (e.g., partial chi-square
+chunk test); (3) Draw a bootstrap overfitting-corrected smooth
+calibration curve; (4) Summarize predictive discrimination (show
+histogram of predicted risks or compute R2 measure or Somers' Dxy rank
+correlation (related to c-index or ROC area).
+
+** [2013-06-25 Mar] Mplus
+Here are some notes I took when learning Mplus for psychometrics.
+This is not a replacement for the Mplus User Guide
+In what follows, I will use the following conventions: keywords are
+displayed in UPPERCASE,
+
+
+difference with `gllamm`:
+- http://www.gllamm.org/SEMcat.pdf
+- [Mplus & GLLAMM](http://bit.ly/11OzEPN)
+- http://www.stata.com/statalist/archive/2004-05/msg00000.html
+- http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2717116/
+
+*Exploratory factor analysis*
+
+Here is a sample script that performs EFA on ordered (Likert-type) responses:
+
+    TITLE:	  Put your title here.
+    DATA:	  FILE IS file.dat;
+    VARIABLE: NAMES ARE ID-Q10;
+    	      CATEGORICAL ARE Q1-Q10;
+    ANALYSIS: TYPE = EFA 1 5;
+              ROTATION = VARIMAX;
+
+The `CATEGORICAL` instruction is here to ensure that Mplus will treat data
+as categorical data (either binary or polytomous items) in which case Mplus
+uses robust weighted least squares estimator (WLS). In the `ANALYSIS` step,
+we indicate what kind of analysis we want to perform, in this case `EFA`,
+and further options. After `TYPE = EFA` we specify the number of factors to
+extract (minimum to maximum). The default rotation is `GEOMIN` which can be
+thought of as a way to minimize variable complexity, that is favor simple
+structure, according to Sass & Schmitt (2010).
+
+To get the covariance matrix, we just have to replace `TYPE = EFA` by `TYPE
+= BASIC`. If we want to save it for latter use, we need to specify
+
+    OUTPUT:
+      SAMPSTAT;
+    SAVEDATA:
+      SAMPLE = covmat.dat;
+
+This may be useful for large dataset (computing a polychoric correlation
+matrix is nonetheless costly) or repeated tasks. Also, if you want to want
+to run a factor analysis with another software, you can directly reuse a
+correlation matrix computed under Mplus. Of note, Mplus will output an
+unstructured correlation matrix
+
+The following R script will read such a matrix and convert it to an R matrix
+with lower diagonal entries only:
+
+    cov2mat <- function(file, k) {
+      tmp <- scan("file")
+      idx <- cumsum(1:k)
+      covmat <- matrix(nc=k, nr=k)
+      covmat[1,1] <- 1
+      for (j in 1:(k-1))
+        covmat[j+1,1:(j+1)] <- tmp[(idx[j+1]-j):idx[j+1]]
+
+      return(covmat)
+    }
+
+It could be used this way:
+
+    write.table(cov2mat(covmat, 38), file="covmat_diag.dat", na="",
+	            row.names=FALSE, col.names=FALSE)
+
+If we need the full matrix (lower and upper-diagonal elements), we can use
+the following:
+
+    fill.cor <- function(x, k) {
+        upper <- matrix(x, ncol=k, byrow=FALSE)
+        diag(upper) <- 0
+        lower <- matrix(x, ncol=k, byrow=TRUE)
+        out <- lower + upper
+        return(out)
+    }
+    covmat[is.na(covmat)] <- 0
+    covmat.full <- fill.cor(as.vector(matrix(t(covmat), nr=1)), 38)
+
+
+Contrary to other software (R, Stata), computing the polychoric correlation
+matrix is quite fast. My own benchmark tend to indicate that Mplus is 200 to
+500 times faster than Stata for 'basic' psychometric models (e.g., 2PL or
+MIMIC models).
+
+*Confirmatory factor analysis*
+
+To get standardized model fit indices (SRMR), add in the `MODEL` section
+
+    F1@1;
+    F2@1;
+    F3@1;
+
+Modification indices can be requested by adding
+
+    OUTPUT:
+	  modindices(0);
+
+*Bifactor models*
+ex. 4.7 p. 58
+
+*References*
+
+Sass, D.A. and Schmitt, T.A. (2010).
+[[http://www.statmodel.com/download/Sass%20Schmitt%202010%20MBR.pdf][A Comparative Investigation of Rotation Criteria Within Exploratory Factor Analysis]]. *Multivariate
+Behavioral Research*, 45: 1, 73–103.
 
 ** [2018-07-19 Jeu] Fizzbuzz in Racket with pattern matching:
 

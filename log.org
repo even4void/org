@@ -65,6 +65,12 @@
 - Maintenance dotfiles + Emacs
 - MAJ Rosalind
 - Inscription Hacker News
+*** 04
+- Lectures workflow RNAseq
+- Nettoyage boîte mail Gmail (2018-2019)
+- Création dépôt privé Github pour projets LIED
+- Script traitement CDS [[file:~/cwd/projects/cds/]]
+- Récupération vieilles notes
 
 *** TODO [1/7]
 - [ ] algorithms on trees and graphs
