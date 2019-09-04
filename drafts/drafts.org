@@ -1,0 +1,105 @@
+* Agile Data Science
+
+After reading a lot of papers and books on Agile methodology, and in particular
+Agile principles applied to data science, I came to the conclusion that I was
+not that far from the principled ways when I was working as a medical
+statistician. As far as I am concerned, I always felt like the guys with whom I
+was working on a project must be kept informed of the progress of my report in
+real time, even if it was only a rough draft or when little has changed since
+the previsous version.
+
+"Researchers and data scientists, who work on longer timelines than agile
+sprints typically allow, generate data daily—albeit not in a “publishable”
+state. In Agile Big Data, there is no unpublishable state. The rest of the team
+must see weekly, if not daily (or more often), updates in the state of the data.
+This kind of engagement with researchers is essential to unifying the team and
+enabling product management. That means publishing intermediate
+results—incomplete data, the scraps of analysis".
+cite:jurney-2014-agile-data-scien
+
+As a matter of fact, data scientists and decision makers or business men do not
+work on the same time frame. As someone used to say for programmers, data
+scientists will generally need to three to four hours on a project, without
+being interrupted by short or longer last minute meetings. 
+
++ FIXME: check for the reference about programmers 
++ TODO: Jurney exposes similar concerns in § "Agile Environments: Engineering Productivity".
+
+References:
+
+- [[https://www.datascience.com/blog/agile-data-science][Taking an Agile Approach to Data Science]]
+- [[https://www.quora.com/Is-the-agile-approach-applicable-in-data-science-projects][Is the agile approach applicable in data science projects?]]
+- [[http://2016.agileturas.lt/vilnius/wp-content/uploads/2016/10/5.3-2-Waclaw-Kusnierszyk-Agile-Data-Science.pdf][Agile Data Science]]
+
+
+
+
+
+* OCaml
+
+I played with OCaml during the last two weeks or so. I used the following online courses which I must admit are really well organized: [[https://cs.uwaterloo.ca/~plragde/flaneries/FDS/][Functional Data Structures]] (FDS) and [[https://www.cs.cornell.edu/courses/cs3110/2017fa/][Data Structures and Functional Programming]] (DSFP).
+
+In DSFP, the author suggests that to learn a new programming language (PL), there are a couple of aspects that we need to focus on, including: syntax, semantics, idioms, libraries, and tools. Concentrating on semantics and idioms is the most important aspect to learning a new PL since it amounts to understand what the program really does and what are good design patterns for using that particular language.
+
+OCaml is a statically-typed and type-safe programming language, featuring algebric datatypes, type inference, parametric polymorphism, garbage collection, and modules. It is one of the successor of ML, which was devised after Lisp itself in the 60's. It is interesting to study the design of this language especially for those that are into Scala these days, and more generally to get a deep understanding of what we might call a principled approach to functional programming.
+
+Note that the following expression does not evaluate to 2 as it simply doesn't type check: (However, the compiler is able to perform type inference.)
+
+#+BEGIN_SRC ocaml
+if 22=0 then "bear" else 2
+#+END_SRC
+
+Importantly, a function is a value which is clearly apparent when using anonymous functions, also called lambda expressions: (mostly like in Clojure but with a simpler syntax)
+
+#+BEGIN_SRC ocaml
+let inc = fun x -> x+1 
+let inc x = x+1
+#+END_SRC
+
+Ironically, while I hate the piping approach that is being popularized in R, OCaml also has a pipeline operator. Instead of =f e=, we can write =e |> f=, so that =5 |> inc |> square= computes the square of 5+1 (36, as in =square(inc 5)=, provided =inc= and =square= are implemented beforehand. 
+
+Type inference is performed automagically by the compiler. So, instead of specifying the type of each variable, it would be possible to omit all type annotations in the following example:
+
+#+BEGIN_SRC ocaml
+(* requires: y>=0 *)
+(* returns: x to the power of y *)
+let rec pow (x:int) (y:int) : int = 
+  if y=0 then 1 
+  else x * pow x (y-1)
+#+END_SRC
+
+OCaml also allows to define mutually recursive functions, e.g.:
+
+#+BEGIN_SRC ocaml
+let rec even n = 
+  n=0 || odd (n-1) 
+and odd n = 
+  n<>0 && even (n-1);;
+#+END_SRC
+
+It is worth noting that it is safer to always exit the "toplevel" (=utop=) when testing or debugging.
+
+* GitHub
+
+** Synchronize fork and upstream
+
+*Scenario:* fork a foreign repository on your own GitHub account, clone into your local HD, and update to latest commit from foreign (upstream) repository.
+
+https://help.github.com/articles/syncing-a-fork/
+
+git fetch upstream
+git checkout master
+git merge upstream/master
+git push
+
+** Update user repository
+
+*Scenario:* When you change your username, you must update your own fork by pointing to the new repository.
+
+https://help.github.com/articles/changing-a-remote-s-url/
+
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+** Create branch and submit PR
+
+https://stackoverflow.com/questions/42641355/git-collaborate-on-branch
+https://www.gun.io/blog/how-to-github-fork-branch-and-pull-request

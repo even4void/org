@@ -1,0 +1,13 @@
+
+
+- =less -M= to print line number and % when paging file or output
+- =ls -lr= to sort files in a directory by last modified date (add =-t= to print in reverse order)
+- =rm -i .[^.]*= will remove all hidden files (ignoring =.= and =..=)
+- =grep -C2 -n --color=always= will show 2 lines before and after matches, with highlighting and line number
+- =find /usr/bin -name "c*" -size +30k -type f -user $USER -perm +u=w -print= will find regular files starting with "c" that are executable, greater than 30 KB in size, located in the /bin directory, and for which you write permission; use =-ls= flag to print à la =ls -l=
+- =find . -cmin -60 -print -type f= find plain files that have changed within 60 minutes in the current directory
+- =mdls file.jpg | grep -E '(PixelHeight|PixelWidth)'= returns height and width of a JPG file
+- =mdls file.mp3 | grep Duration= returns duration of an MP3 file
+- =tr "[:lower:]" "[:upper:]" < file= convert from lower to uppercase
+- =ls -l | grep "out" | sort -n -k 5= filter *.out files and sort them by size
+- =sudo lsof -nP -iTCP -sTCP:LISTEN= to listen to processes

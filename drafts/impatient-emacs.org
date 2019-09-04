@@ -1,0 +1,118 @@
+#+TITLE:        Emacs pour l'impatient
+#+AUTHOR:       chl
+#+LANGUAGE:     fr  
+#+STARTUP:      align fold noindent hideblocks
+#+OPTIONS:      H:3 num:nil toc:2 ':t *:t ::t f:t |:t 
+
+#+BEGIN_abstract
+Ce document se propose de survoler les principales fonctionnalités de l'éditeur de texte Emacs, ou plus spécifiquement le package "Spacemacs", dans le but de faciliter l'appréhension de cet outil dans les activités d'édition de documents, d'organisation de ces mêmes activités, et plus généralement de programmation scientifique.
+#+END_abstract
+
+* Les bases de l'éditeur Emacs
+
+** Emacs en quelques mots
+
+Emacs est un éditeur de texte, voire un [[https://news.ycombinator.com/item?id=6291620][système d'exploitation à part entière]] diront certains. Des débats enflammés ont lieu régulièrement entre les partisans d'Emacs et ceux de Vi(m), un autre éditeur Unix versatile, tout comme on retrouve des discussions sans fin sur l'usage des taquets de tabulation ou des espaces pour l'indentation des blocs en Python. Et bien sûr, Richard Stallman, adossé à la FSF, n'est jamais bien loin lorsque l'on évoque le logiciel Emacs.
+
+#+BEGIN_QUOTE
+I spend most of my time editing in Emacs. I read and send mail with Emacs using M-x rmail and C-x m. I have no experience with any other email client programs. In principle I would be glad to know about other free email clients, but learning about them is not a priority for me and I don't have time.
+--- Richard Stallman, [[https://stallman.org/stallman-computing.html][How I do my computing]]
+#+END_QUOTE
+
+Ceci étant, l'objet de ce document n'est pas d'arguer pour ou contre l'usage de Emacs pour réaliser des tâches plus ou moins complexes. Il n'est pas non plus question de fournir un manuel détaillé concernant l'utilisation d'Emacs et les [[http://ergoemacs.org/emacs/gnu_emacs_keybinding.html][milles et quelques raccourcis clavier]] dont dispose Emacs dans sa configuration de base. Pour cela, il est possible de consulter la [[https://www.gnu.org/software/emacs/tour/][documentation officielle]], les ouvrages publiés chez O'Reilly, par exemple [[http://shop.oreilly.com/product/9780596006488.do][Learning GNU Emacs]], ou les nombreux liens que l'on trouve sur internet : [[https://www.masteringemacs.org][Mastering Emacs]] ou [[http://ergoemacs.org/emacs/emacs.html][Practical Emacs Tutorial]] ; [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]] et [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Emacs org-mode examples and cookbook]] pour le mode org plus spécifiquement
+
+L'objet de ce document est somme tout assez modeste et on s'intéressera essentiellement à quelques "modes" spécifiques, en particulier ceux qui se révèlent le plus utile pour éditer efficacement des documents texte et interagir interactivement avec des shells ou des environnements de type {REPL|Read Eval Print Loop}. L'auteur utilise personnellement Emacs depuis une quinzaine d'années, en connaît le strict minimum pour éditer une grande variété de documents, et se contente la plupart du temps d'utiliser Emacs comme un excellent éditeur de texte. En guise d'illustration, la figure [[fig:emacs-screenshot]] permet de voir à quoi ressemble l'édition de ce document sous Emacs avec le [[https://orgmode.org][mode org]].
+
+#+CAPTION:   L'édition de ce document sous Emacs
+#+NAME:      fig:emacs-screenshot
+#+LABEL:     fig:emacs-screenshot
+#+ATTR_HTML: :width 640px
+#+ATTR_ORG:  :width 100
+[[./_assets/fig-emacs-screenshot.png]]
+
+** Organiser son travail avec Emacs
+
+Encore une fois, il n'est pas question de transformer Emacs en une application tout en un --- pour cela, il suffit de consulter l'excellente page citée plus haut, [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]], mais à l'exploiter comme une boîte à outils centrale dans le "workflow" quotidien.
+
+** TL;DR
+
+Voici en quelques mots ce qu'il faut retenir de ce document.
+
+On parlera de programmation lettrée (en anglais, /literate programming/) pour désigner cette approche 
+
+#+BEGIN_QUOTE
+Let us change our traditional attitude to the construction of programs. Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.
+--- Donald E. Knuth
+#+END_QUOTE
+
+* Navigation et mouvement de base
+
+** Organisation des fichiers et des buffers
+** Mouvements de base
+
+Il existe un excellent tutoriel de Guy Lapalme, [[http://www.iro.umontreal.ca/~lokbani/cours/ift1166/sessions/administration/gnuemacs.intro][GNU-EMACS - Presentation simplifiee]], qui couvre l'essentiel des commandes permettant de se déplacer dans un fichier et des raccourcis associés. En voici une adaptation exploitant les fonctionnalités propres à Spacemacs. Dans ce qui suit, on utilisera le mode hybride qui permet d'utiliser tous les raccourcis Emacs en mode /insertion/, et les raccourcis Vi en mode /normal/. Voici un moyen mnémotechnique pour retenir les commandes de déplacement sur une ligne de texte : la direction du déplacement se contrôle avec =b= pour "backward" (reculer) et =f= pour "forward" (avancer), l'unité de déplacement est soit le caractère (=C= ou =^=) soit le mot (=M= ou =ESC=). Les commandes =C-a= et =C-e=, également très utiles dans un terminal Unix, permettent d'aller en début et en fin de ligne (physique) ; avec =M-a= et =M-e=, le déplacement porte sur la phrase entière. Quant à =M-<= et =M->=, cela permet d'aller au tout début ou à la toute fin du tampon ou "buffer". Voici une illustration sur un texte arbitraire dans lequel la position du curseur est représentée par le symbole =|= :
+
+#+begin_example
+Vivre, c'est passer d'un e|space à un autre en essayant le plus possible de ne pas se cogner.
+^                          ^     ^                                                           ^
+C-a                      C-f   M-f                                                         C-e
+
+Vivre, c'e|st passer d'un espace à un autre en essayant le plus possible de ne pas se cogner.
+^        ^
+M-b     C-b
+#+end_example
+
+On passe d'une ligne à la suivante ou à la précédente à l'aide de =C-n= et =C-p=, et d'un paragraphe à l'autre à l'aide de =M-}= et =M-{=. En pratique, comme on peut utiliser les flèches du clavier pour se déplacer d'un caractère à l'autre, ou d'une ligne à l'autre, seules les commandes permettant de naviguer entre les mots ou les blocs de mots (phrases ou paragraphes) se révèlent vraiment intéressantes.
+
+
+** Fonctions avancées
+** Recherche simple
+
+* Gestion de projets
+* Gestion de documents texte
+
+** Le mode texte simple
+
+Emacs offre les mêmes fonctionnalités d'édition de texte simple qu'un éditeur tel que vi(m), Sublime, Atom ou VS Code.
+
+Plutôt que de laisser courir le texte indéfiniment sur la même ligne (il s'agit du mode ~longlines-mode~), il est possible de formater l'affichage du texte dans le buffer à l'aide de modes mineurs. On distingue alors principalement le mode avec arrêt automatique sur le bord de la fenêtre (~visual-line-mode~) ou à un certain nombre de caractères (~auto-fill-mode~). Dans le premier cas de figure, cela n'affecte pas le rendu final du document texte (chaque ligne reste disposée sur une seule et même ligne physique), alors que dans le second cas de figure le document final est vraiment formaté selon le nombre de colonnes spécifiées, généralement 80 charactères pour respecter les limitations de certains terminaux.
+
+Pour le reste, on dispose des commandes de base de Emacs concernant n'importe quelle saisie de texte. Il peut exister des subtilités selon, par exemple, que le mode "électrique" est activé ou non,
+
+En mode d'édition texte (cela est valable également dans le cas de documents Markdown ou Org), il est toujours possible d'activer le correcteur orthographique qui généralement repose sur le programme ~ispell~ ou son équivalent ~aspell~. Il peut être nécessaire de modifier le dictionnaire choisi par défaut à l'aide de la commande ~ispell-change-dictionnary~. Lorsqu'un mot présente une erreur, il est sous-ligné et il est alors possible de le corriger en tapant =M-$= (~ispell-word~) : une sous-fenêtre propose différents choix possibles pour le remplacement et il suffit d'indiquer le numéro correspondant ou à défaut de taper sur la touche entrée.
+
+** Markdown
+
+L'édition de fichier Markdown peut naturellement se faire en mode texte simple, mais il est préférable d'utiliser le [[https://jblevins.org/projects/markdown-mode/][mode majeur]] correspondant. Un aperçu des principales options du mode Markdown est fourni dans la figure ci-après. 
+
+#+CAPTION:   Le mode majeur pour Markdown
+#+NAME:      fig:emacs-markdown-mode
+#+LABEL:     fig:emacs-markdown-mode
+#+ATTR_HTML: :width 640px
+#+ATTR_ORG:  :width 100
+[[./_assets/fig-emacs-markdown-mode.png]]
+
+Pour faciliter le balisage de certains éléments, tels que la mise en gras ou en italique, il suffit de sélectionner une partie de texte, qui devient alors la "région active", et d'utiliser le raccourci clavier correspondant en utilisant la séquence =C-c C-s=.
+
+** Org
+
+* Gestion des modes de programmation
+
+** Introduction au mode =progn=
+
+En plus de son support amélioré pour les différents modes texte (texte brut, Markdown, Org et bien d'autres), Emacs permet d'éditer du code dans presque n'importe quel langage de programmation. Les plus connus sont bien évidemment les modes pour Emacs Lisp et C, mais on verra d'autres langages, en particulier Python, Clojure, Scheme, la manière de configurer les modes associés et les principaux outils disponibles sous Emacs pour interagir avec le code dans ces modes. Indépendemment du langage, Emacs offre un ensemble de fonctionnalités commune à tous les modes de programmation, encore appelé ~progn-mode~. Cela comprend la gestion automatique des parenthèses, de l'indentation, des commentaires, etc.
+
+** Emacs Lisp
+
+Même si vous ne programmez pas en ELisp, ce mode nous servira de base pour la présentation des autres modes.
+
+
+Il est possible de lancer un shell interactif, appelé [[https://www.emacswiki.org/emacs/InferiorEmacsLispMode][iElm]], qui n'est rien d'autre qu'un mode mineur pour Emacs Lisp, en tapant =M-x ielm=.
+
+Dans ce qui suit, on présentera plus en détails le mode Lisp avec en particulier Slime.
+
+** Lisp et Slime
+
+** Clojure et Cider
+
+

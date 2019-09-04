@@ -1,0 +1,101 @@
+#+TITLE:        RNA-Seq Workflow
+#+STARTUP:      align fold noindent hideblocks
+#+OPTIONS:      author:nil creator:nil H:3 num:nil toc:2 ':t *:t ::t f:t |:t
+#+HTML_HEAD:    <link href="_assets/github.css" rel="stylesheet" type="text/css" />
+
+* Typical workflow for NGS data
+
+** Processing steps
+
+1. DNA extraction from a sample
+2. DNA sequencing
+3. Alignment of sequencing reads to a reference genome
+4. Basic exploratory data analysis
+5. Identification of genomic variants (SNPs, small insertions and deletions)
+
+** Tools
+
+- [[http://bowtie-bio.sourceforge.net/bowtie2/index.shtml][Bowtie2]], or [[https://ccb.jhu.edu/software/tophat/index.shtml][TopHat2]] which relies on Bowtie, now [[https://ccb.jhu.edu/software/hisat2/index.shtml][HISAT2]] (3) : Fasta -> SAM
+- [[http://www.htslib.org/download/][SAMtools]] (4+5)
+- BCFtools
+
+*** TODO
+- [[https://github.com/vcflib/vcflib][vcflib]], to manipulate VCF files
+- [[http://cole-trapnell-lab.github.io/cufflinks/][cufflinks]], part of the Tuxedo toolsuite (Bowtie + TopHat + cufflinks)
+- [[https://broadinstitute.github.io/picard/][Picard]], to manipulate HTS files
+- "How many reads map onto exons, introns and intergenic regions" on [[https://www.biostars.org/p/131734/][Biostars]]
+- [[http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.htm][Calling variants with freebayes]]
+- Workflows: https://is.gd/eKFGC2 + https://is.gd/In1Zcn
+** File Formats
+
+- Fasta :: Nucleotide or aa, with a description line (the symbol =>= followed by the
+  sequence /identifier/ and other (optional) information, also called /comment/)
+
+#+BEGIN_EXAMPLE
+>scaffold_1
+TAAATAACGTATCGAGTAACTTTTAATGATTAAACAAGGTAGTAACCCCCTTTAAGTTCCGCATTCCTAT
+AATAATAAACTTACCGCTCCTCTCTAAACCTATAATTATCTATCCCCCTACTTATAATTACTTAAGATCG
+TTAATAATATACCTTTCGCCTAATTATATACTTAGTTTTATAGGATAAAAGTAGGCTCCTAAAGTTCTTT
+#+END_EXAMPLE
+
+- Fastq :: Like Fasta file (header = =@= followed by sequence ID) but with the
+  corresponding quality scores on a separate line (after the =+= sign); quality
+  value ranges from 0x21 (!, lowest) to 0x7e (~, highest). Like Fasta files,
+  they can be compressed using =gzip=.
+
+#+BEGIN_EXAMPLE
+@F3ZLV5G04JEGB9 length=314 xy=3738_0167 region=4 run=R_2009_10_12_15_13_07_
+GTTGTTGTTGTTGTTGTTATTGAGGTTGTTGATTAGTGACTGATTACCAAGACTCCGAACAAGTGAGGGAAAGTGACA
+CGCCCAGAAACTATTGACGCTTAAAATCATGCTTAACCAACAAGAGGCTTGGCCATGATGAGTCGTCAGGTATTATCT
+CCTGGTTCGGCCTGCATTTCTATACCAGTCACACCTTCCCTTCAGCGCAATGCTCTGCCAGTGCCACCACCCACAACC
+ATCCACAACTGCCACTGCCAAGCTTCCAAATGCCACTTCTCTTTTTCAAAGTGCCTTGGCTCGACGGAAAACCGGCCT
+TC
++
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIHCC666>IIIIG
+@@133B?333?A<==?BIAC772244;?IGGGEIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+IIIHHHHIIIIIIIIIHHHIIIIIIIIIIIIIIII??666HHIIIIIIIIIIIIIIIIIIIIHHHHHII???IIIIII
+IHHHIIIIIIIIIIIIIIIHHHIIIIIHHHIHHHIIIIIII===;;IFIIIIC;;;;CBGGIIIIHH@@@@IIIIIII
+II
+#+END_EXAMPLE
+
+- SRA :: Sequence Read Archives, from NCBI. Can be converted to Fasta using
+  =fastq-dump=:
+
+#+BEGIN_SRC bash
+$ fastq-dump --gzip file.sra
+#+END_SRC
+
+As an alternative, samtools can be used to generate a BAM file:
+
+#+BEGIN_SRC bash
+$ sam-dump SRR6960207.sra | samtools view -bS - > alignments/SRR6960207.bam
+#+END_SRC
+
+- SAM (BAM) :: Composed of a header (=@= lines) and alignments of the sequence against a
+  reference genome. BAM files are compressed version of SAM files.
+
+#+BEGIN_EXAMPLE
+@HD     VN:1.0  SO:unsorted
+@SQ     SN:gi|110640213|ref|NC_008253.1|        LN:4938920
+@PG     ID:bowtie2      PN:bowtie2      VN:2.3.5.1      CL:"/usr/local/bin/bowtie2-al %snip%
+gi|110640213|ref|NC_008253.1|_418_952_1:0:0_1:0:0_0/1   0       gi|110640213|ref|NC_008253.1|
+418     42      70M     *       0       0       CCAGGCAGTGGCAGGTGGCCACCGTCCTCTCTGCCCCCGCCAAAA
+TCACCAACCATCTGGTAGCGATGAT  222222222222222222222222222222222222222222222222222222222222222222
+2222  AS:i:-3 XN:i:0  XM:i:1  XO:i:0  XG:i:0  NM:i:1  MD:Z:8G61       YT:Z:UU
+#+END_EXAMPLE
+
+#+CAPTION: Sequence Alignment/Map Format Specification
+#+NAME:   fig:sam-format
+[[./_img/fig-sam-format.png]]
+
+- VCF :: Variant Call Format (See [[http://www.1000genomes.org][1000 Genomes Project]])
+
+A typical workflow consists in calling mpileup via samtools or bcftools (which
+now integrate the pileup option). The mpileup command automatically scans every
+position supported by an aligned read, computes all the possible genotypes
+supported by these reads, and then computes the probability that each of these
+genotypes is truly present in our sample.
+
+#+BEGIN_SRC bash
+$ bcftools mpileup -f NC_008253.fna reads_aligned.sorted.bam -o sim_variants.bcf
+#+END_SRC
