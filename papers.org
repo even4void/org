@@ -150,6 +150,22 @@ Some additional pointers:
 - Evan Miller's review: [[https://www.evanmiller.org/a-taste-of-rust.html][A Taste of Rust]]
 - Jeroen Ooms (@opencpu): [[https://github.com/jeroen/hellorust][Hello Rust]] (Minimal Example of Calling Rust from R using Cargo)
 
+* [[/Users/chl/Documents/Papers/au-2018-random-fores.pdf][au-2018-random-fores]] - Random forests, decision trees, and categorical predictors: the “absent levels” problem
+ :PROPERTIES:
+ :Custom_ID: au-2018-random-fores
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/au-2018-random-fores.pdf
+ :END:
+ This paper discusses the case of how best to handle catgeorical predictors in
+ RF, in particular the 'absent level' problem, i.e. the case of the indeterminacy over how to handle an observation that has reached a categorical split which was determined when the observation in question’s level was absent during training.
+
+* [[/Users/chl/Documents/Papers/bray-2016-near.pdf][bray-2016-near]] - Near-optimal probabilistic rna-seq quantification
+ :PROPERTIES:
+ :Custom_ID: bray-2016-near
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/bray-2016-near.pdf
+ :END:
+ Easy to setup (=brew install kallisto=) and time+memory-efficient on fungi data.
+ Works on Galaxy server too.
+
 * [[/Users/chl/Documents/Papers/rochester-2013-clojur-data.pdf][rochester-2013-clojur-data]] - Clojure Data Analysis Cookbook
  :PROPERTIES:
  :Custom_ID: rochester-2013-clojur-data
@@ -183,8 +199,6 @@ Focus on semi-parametric and nonparametric causal inference methodology, with a 
 
 Some caveats when assessing causal inference methods: (1) few methods compared and unfair comparisons, (2) testing grounds not calibrated to "real life", and (3) file drawer effect. The later ressembles what is commonly impacting meta-analytical studies. It reminds me of a critic of machine elarning algorithms that are always developed and calibrated on exiting data sets, like those available on UCI, with reference to existing benchmarks---hence inducing a confirmation bias---and that would probably perform poorly on real life data (I didn't find the reference). See also this online article, [[https://www.mckinsey.com/business-functions/risk/our-insights/controlling-machine-learning-algorithms-and-their-biases][Controlling machine-learning algorithms and their biases]], by Tobias Baer and Vishnu Kamalnath, regarding human biases.
 
-
-
 See also: [[/Users/chl/Documents/Papers/middleton-2016-bias-amplif.pdf][middleton-2016-bias-amplif]].
 
 *Sidenote*: Omitted variable bias
@@ -197,6 +211,7 @@ Y & = \beta_0 + \beta_1 X + \beta_2 (\gamma_0 + \gamma_1 X + w) + u \\
 \end{align*}
 
 Unless $\beta_2 = 0$, $\mathbb E(\hat\beta_1) = \beta_1 + \beta_2\left(\frac{\sum xz}{\sum x^2}\right) \neq 0$, which means that the coefficient of $X$ picks up the part of the influence of $Z$ that was correlated with $X$.
+
 * [[/Users/chl/Documents/Papers/wicherts-2017-weak-spots.pdf][wicherts-2017-weak-spots]] - The weak spots in contemporary science (and how to fix them)
  :PROPERTIES:
  :Custom_ID: wicherts-2017-weak-spots
@@ -295,18 +310,21 @@ TODO Post a review on [[http://aliquote.org]].
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/laaksonen-2017-compet-progr-handb.pdf
  :END:
  When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike @conery-2016-impos-handb, it has more running code, and in a decent language (C++ 11). I wrote a little trasncript in  Python 3.x: [[~/Documents/Blocks/competitive.py]] and a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on http://aliquote.org.
+
 * [[/Users/chl/Documents/Papers/stein-2017-elemen-number-theor.pdf][stein-2017-elemen-number-theor]] - Elementary number theory: primes, congruences, and secrets
  :PROPERTIES:
  :Custom_ID: stein-2017-elemen-number-theor
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/stein-2017-elemen-number-theor.pdf
  :END:
-**** TODO Add a few words in [[file:articles/number-theory.org]]
+**** TODO Add a few words in [[file:~/Drafts/current/number-theory.org]]
+
 * [[/Users/chl/Documents/Papers/chen-2003-statis-comput-datab.pdf][chen-2003-statis-comput-datab]] - Statistical computing and databases: distributed computing near the data
  :PROPERTIES:
  :Custom_ID: chen-2003-statis-comput-datab
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/chen-2003-statis-comput-datab.pdf
  :END:
 Old stuff but interesting ideas (part of them are now materialized in the dplyr/dbi packages) like performing the data-intensive but algorithmically less sophisticated operations in the database and send back the results to the statistical package which is responsible for the algorithmic flow. The software design includes a CORBA architecture coupled to [[https://www.csm.ornl.gov/pvm/][PVM]] for managing parallel computations.
+
 * [[/Users/chl/Documents/Papers/neil-2018-moder-vim.pdf][neil-2018-moder-vim]] - Modern Vim: Craft Your Development Environment with Vim 8 and Neovim
  :PROPERTIES:
  :Custom_ID: neil-2018-moder-vim
@@ -318,6 +336,7 @@ Useful packages and config for Lisp editing:
 - https://github.com/Shougo/deoplete.nvim
 - https://github.com/kovisoft/slimv
 - https://blog.venanti.us/clojure-vim/
+
 * [[/Users/chl/Documents/Papers/watson-2016-lovin-common-lisp.pdf][watson-2016-lovin-common-lisp]] - Loving Common Lisp
  :PROPERTIES:
  :Custom_ID: watson-2016-lovin-common-lisp
@@ -375,7 +394,6 @@ The =dotimes= and =dolist= macros are close to Stata =forvalues= and =foreach= i
   (print i))
 #+END_SRC
 
-
 Input (=*standard-input*=) and output (=*standard-output*=) of Lisp data is handled using streams, and the =with-open-file= macro. Note that it is possible to use =make-pathname= to build a proper absolute or relative path, instead of using (quoted) strings. Here is a typical example of reading a file line by line:
 
 #+BEGIN_SRC lisp
@@ -390,6 +408,7 @@ Input (=*standard-input*=) and output (=*standard-output*=) of Lisp data is hand
 #+END_SRC
 
 The rest of the book describes some application of web and network programming using CLOS classes and various packages (=drakma=, =hunchentoot=). The chapter of querying database is also interesting.
+
 * [[/Users/chl/Documents/Papers/yu-2018-two-method.pdf][yu-2018-two-method]] - Two methods for mapping and visualizing associated data on phylogeny using ggtree
  :PROPERTIES:
  :Custom_ID: yu-2018-two-method
@@ -398,7 +417,8 @@ The rest of the book describes some application of web and network programming u
 Two packages: [[http://bioconductor.org/packages/ggtree][ggtree]] for mapping and visualization, and [[http://bioconductor.org/packages/treeio][treeio]] for data parsing ([[https://github.com/GuangchuangYu/treeio][Github]])
 Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
-NEXT Letunic I, Bork P. 2007. Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation. Bioinformatics 23:127–128.
+**** TODO Letunic I, Bork P. 2007. Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation. Bioinformatics 23:127–128.
+
 * [[/Users/chl/Documents/Papers/bradley-2018-what-categ-theor.pdf][bradley-2018-what-categ-theor]] - What is category theory
  :PROPERTIES:
  :Custom_ID: bradley-2018-what-categ-theor
@@ -412,8 +432,8 @@ Category Theory used to reshape and reformulate problems within pure mathematics
 Two central themes:
 
 - functorial semantics: C → D ≈ interpretation of C within D; syntax (grammar in NLP) refers to rules for putting things together and semantics (meaning) refers to the meaning of those things.
-
 - compositionality
+
 * [[/Users/chl/Documents/Papers/schliep-2017-inter.pdf][schliep-2017-inter]] - Intertwining phylogenetic trees and networks
  :PROPERTIES:
  :Custom_ID: schliep-2017-inter
@@ -422,6 +442,7 @@ Two central themes:
 Bifurcating tree hypothesis ([[https://academic.oup.com/sysbio/article/62/3/479/1648670][Mindell 2013]]): the "tree of life" metaphor works well as a strictly bifurcating tree in the absence of reticulate evolution, which results from hybridization, lineage merger, and lateral gene transfer. If this does not hold, phylogenetic networks should be used instead.
 
 [[https://www.phangorn.org][Phangorn]] R package (+ [[https://cran.r-project.org/web/packages/ape/index.html][ape]]): "support value" (nonparametric bootstrap support: Felsenstein 1985; Bayesian posterior probabilities: Rannala & Yang 1996; internode certainty: Salichos, Sta- matakis & Rokas 2014); see also Draper, Hedenäs & Grimm 2007.
+
 * [[/Users/chl/Documents/Papers/buffalo-2015-bioin-data-skill.pdf][buffalo-2015-bioin-data-skill]] - Bioinformatics data skills: reproducible and robust research with open source tools
  :PROPERTIES:
  :Custom_ID: buffalo-2015-bioin-data-skill
@@ -430,6 +451,7 @@ Bifurcating tree hypothesis ([[https://academic.oup.com/sysbio/article/62/3/479/
 
 [[https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?][Sequence Read Archive]]
 forensic bioinformatics ([[https://projecteuclid.org/euclid.aoas/1267453942][Baggerly and Coombes 2009]])
+
 * [[/Users/chl/Documents/Papers/danjou-2018-serious-python.pdf][danjou-2018-serious-python]] - Serious Python
  :PROPERTIES:
  :Custom_ID: danjou-2018-serious-python
@@ -437,6 +459,7 @@ forensic bioinformatics ([[https://projecteuclid.org/euclid.aoas/1267453942][Bag
  :END:
 Nice book to understand the underside of Python, especially regarding package import and path management. Note that this will not teach you Python programming, but it will certainly be helpful to better understand Python, think about design patterns, and how to develop your own projects. Each chapter provides a discussion of important topics in project development, and a brief interview by core developers is provided at the end. Note that some chapters are very specific of some aspects of Python programming, or PL more generally. For instance, chapter 4 deals with timestamp and the importance of timezone.
 I learned a few things about packaging, and in particular the number of modules that were developed before =pip=, namely (in chronological order): =distutils=, =setuptools=, =distribute=, =distutils2=, =packaging=, and =distlib=. The latter may eventually replace =setuptools=.
+
 * [[/Users/chl/Documents/Papers/casillas-2017-molec-popul-genet.pdf][casillas-2017-molec-popul-genet]] - Molecular Population Genetics
  :PROPERTIES:
  :Custom_ID: casillas-2017-molec-popul-genet
@@ -445,14 +468,11 @@ I learned a few things about packaging, and in particular the number of modules 
 Driving forces for /evolution/:
 
 - natural selection: (ignoring effects of genetic drift) classical (homozygous loci for the wild-type allele) vs. balance (polymorphic loci) hypothesis, which requires to be able to estimate genetic diversity in populations. This has successively be done using allozyme polymorphisms (inconclusive results due to limitations of protein electrophoresis), nucleotide sequence data (using restriction enzymes, before PCR and automated Sanger sequencing), and genome variation.
-
 - genetic drift,
-
 - mutation,
-
 - recombination,
-
 - gene flux.
+
 * [[/Users/chl/Documents/Papers/altenhoff-2019-oma.pdf][altenhoff-2019-oma]] - OMA standalone: orthology inference among public and custom genomes and transcriptomes
  :PROPERTIES:
  :Custom_ID: altenhoff-2019-oma
@@ -461,6 +481,7 @@ Driving forces for /evolution/:
  Orthology resources: [[http://eggnogdb.embl.de][eggNOG]], [[http://www.ensembl.org/info/docs/api/compara/index.html][Ensembl Compara]], [[http://inparanoid.sbc.su.se][InParanoid]], [[https://omictools.com/mbgd-tool][MBGD]], [[https://www.orthodb.org][OrthoDB]], [[https://orthomcl.org/orthomcl/][OrthoMCL]], [[http://www.pantherdb.org/genes/][PANTHER]], [[http://phylomedb.org][PhylomeDB]], and [[https://omabrowser.org/oma/home/][OMA]].
  OMA [[https://omabrowser.org/standalone/][standalone app]], available /via/ Homebrew.
  Orthologous and paralogous genes are two types of homologous genes, that is, genes that arise from a common DNA ancestral sequence. Orthologous genes diverged after a speciation event, while paralogous genes diverge from one another within a species. Put another way, the terms orthologous and paralogous describe the relationships between genetic sequence divergence and gene products associated with speciation or genetic duplication. ([[https://sciencing.com/difference-between-orthologous-paralogous-genes-18612.html][The difference between orthologous & paralogous genes]])
+
 * [[/Users/chl/Documents/Papers/cormen-2013-algor-unloc.pdf][cormen-2013-algor-unloc]] - Algorithms Unlocked
  :PROPERTIES:
  :Custom_ID: cormen-2013-algor-unloc
@@ -472,11 +493,7 @@ We want two things from a computer algorithm: given an input to a problem, it sh
 - exact vs. approximate solution (e.g., RSA and large prime numbers)
 - focusing on the order of growth of the running time as a function of the input size
 - algorithms described in plain English, and not in pseudo-code like in CLRS
-* [[/Users/chl/Documents/Papers/flatt-2019-racket-guide.pdf][flatt-2019-racket-guide]] - The Racket Guide
- :PROPERTIES:
- :Custom_ID: flatt-2019-racket-guide
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/flatt-2019-racket-guide.pdf
- :END:
+
 * [[/Users/chl/Documents/Papers/friedman-1995-littl-schem.pdf][friedman-1995-littl-schem]] - The Little Schemer
  :PROPERTIES:
  :Custom_ID: friedman-1995-littl-schem
@@ -497,29 +514,28 @@ We want two things from a computer algorithm: given an input to a problem, it sh
     8. Use help functions to abstract from representations.
     9. Abstract common patterns with a new function.
     10. Build functions to collect more than one value at a time.
+
 * [[/Users/chl/Documents/Papers/kleppmann-2016-desig-data.pdf][kleppmann-2016-desig-data]] - Designing Data-Intensive Applications
  :PROPERTIES:
  :Custom_ID: kleppmann-2016-desig-data
  :INTERLEAVE_PDF:/Users/chl/Documents/Papers/kleppmann-2016-desig-data.pdf
  :END:
  Review by [[https://henrikwarne.com/2019/07/27/book-review-designing-data-intensive-applications/][Henrik Warne]].
+
 * [[/Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf][jun-2009-ident-mammal]] - Identification of mammalian orthologs using local synteny
  :PROPERTIES:
  :Custom_ID: jun-2009-ident-mammal
  :INTERLEAVE_PDF:/Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf
  :END:
  - differentiating between genes that have diverged through a speciation event
-   (orthologs) and those derived through duplication events within a species
-   (paralogs). Gene order may be viewed as a measure of conservation, or better
-   gene family evolution.
+   (orthologs) and those derived through duplication events within a species (paralogs). Gene order may be viewed as a measure of conservation, or better gene family evolution.
  - local [[https://en.wikipedia.org/wiki/Synteny][synteny]] (gene order) might be useful to resolve ambiguous sequence
    based matches between putative orthologs (and [[https://www.ncbi.nlm.nih.gov/pubmed/19553367][retrogenes]]).
  - 93% agreement between coding sequence based orthology (Inparanoid) and local
-   synteny based orthology, with cases of discordance resulting from
-   evolutionary events including [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2884099/][retrotransposition]] and genome rearrangements.
+   synteny based orthology, with cases of discordance resulting from evolutionary events including [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2884099/][retrotransposition]] and genome rearrangements.
  - intron conservation ratio = #(positional homologous introns)/#(intron
-   positions in protein alignment), in strong agreement with the orthology
-   assignments made by the two methods.
+   positions in protein alignment), in strong agreement with the orthology assignments made by the two methods.
+
 * [[/Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] - Orthology detection combining clustering and synteny for very large datasets
  :PROPERTIES:
  :Custom_ID: lechner-2014-orthol-detec

@@ -984,6 +984,30 @@ http://www.phyast.pitt.edu/~micheles/scheme/index.html
 ** Programming in Haskell - Solutions to slides
 [2019-08-21 Wed 07:47]
 https://tiefenauer.github.io/blog/programming-in-haskell/
+** Using TypeScript with React
+[2019-08-22 Thu 10:16]
+https://simonknott.de/articles/Using-TypeScript-with-React.html
+** Migrating from Python to Racket
+[2019-08-22 Thu 16:06]
+https://github.com/racket/racket/wiki/Python-to-Racket
+** A philosophical difference between Haskell and Lisp
+[2019-08-22 Thu 21:00]
+https://chrisdone.com/posts/haskell-lisp-philosophy-difference/
+** PH525x series - Biomedical Data Science
+[2019-08-26 Mon 12:10]
+http://genomicsclass.github.io/book/
+** Awk one-liner
+[2019-08-27 Tue 09:38]
+http://tuxgraphics.org/~guido/scripts/awk-one-liner.html
+** Emacs and GPG
+[2019-08-27 Tue 16:03]
+http://prodissues.com/2016/02/emacs-gpg-for-dummies.html
+** A productive development environment with Docker on OS X
+[2019-08-30 Fri 09:05]
+https://www.ybrikman.com/writing/2015/05/19/docker-osx-dev/
+** Docker vs. Virtualbox
+[2019-08-30 Fri 09:07]
+https://www.quora.com/What-is-the-difference-between-containerization-Docker-and-virtualization-VMWare-VirtualBox-Xen
 * Notes
 ** [2006-07-09 Dim] C Tips
 
