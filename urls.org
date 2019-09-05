@@ -1,0 +1,1010 @@
+* Inbox
+** Check this new series of posts from Stata blog
+[2018-02-15 Thu 21:01]
+https://blog.stata.com/2018/02/15/programming-an-estimation-command-in-stata-preparing-to-write-a-plugin/
+** See if we can make something similar to handle statistical projects and tutorials.
+[2018-02-15 Thu 18:01]
+http://dankleiman.com/2018/01/28/keeping-an-engineering-notebook/
+** Useful stuff for "agile data science" and "design pattern for efficient data mining"
+[2018-02-18 Sun 09:43]
+https://www.oreilly.com/ideas/questioning-the-lambda-architecture
+** Is this working?
+[2018-02-19 Mon 00:13]
+https://github.com/qdot/org-gitbook
+** Cool stuff here. Check out other posts on CL implementation
+[2018-02-19 Mon 23:18]
+https://kaygun.tumblr.com/post/161636640449/a-stochastic-gradient-descent-implementation-in
+** Lot of useful stuff to master iterators in Python 3
+Reminds me of: Clojure High Performance -- Variations around the Fibonacci sequence using linear algorithms: https://deque.blog/2017/06/01/clojure-high-performance-fibonacci/#more-22281
+[2018-02-20 Tue 12:35]
+https://www.youtube.com/watch?v=ThS4juptJjQ
+** Useful reading list to start diving into Haskell land
+[2018-02-20 Tue 19:58]
+http://www.stephendiehl.com/posts/haskell_2018.html
+** Useful guide to setup Haskell for productive work
+[2018-02-21 Wed 13:02]
+https://lexi-lambda.github.io/blog/2018/02/10/an-opinionated-guide-to-haskell-in-2018/
+** Nice overview of resampling methods.
+[2018-02-22 Thu 10:24]
+https://stats.stackexchange.com/questions/104040/resampling-simulation-methods-monte-carlo-bootstrapping-jackknifing-cross
+** Here is an HN thread where we learn a lot about how Mathematica was originally designed. See also this blog post: [[http://blog.stephenwolfram.com/2013/02/what-should-we-call-the-language-of-mathematica/][What Should We Call the Language of Mathematica?]]
+[2018-02-24 Sat 21:35]
+https://news.ycombinator.com/item?id=9797936
+** Check the code on  GitHub to see if I can use it for custom handouts
+[2018-03-02 Fri 19:08]
+https://jblevins.org/log/dot-grid-paper
+** To get inspiration for an org-based textbook. See also https://lakshminp.com/publishing-book-using-org-mode
+[2018-03-05 Mon 09:39]
+https://procomun.wordpress.com/2014/03/10/writing-a-book-with-emacs/
+** Check the extended documentation and files in texlive
+[2018-03-05 Mon 16:22]
+http://petr.olsak.net/opmac-e.html
+** To learn more about zip, gzip and zlib, by Marc Adler. h/t https://piotrkazmierczak.com/2016/how-are-zlib-gzip-and-zip-related/
+[2018-03-05 Mon 23:54]
+https://stackoverflow.com/questions/20762094/how-are-zlib-gzip-and-zip-related-what-do-they-have-in-common-and-how-are-they
+** Yet another blog post about Org and GTD, specifically https://www.buildingasecondbrain.com
+[2018-03-06 Tue 09:58]
+https://praxis.fortelabs.co/building-a-second-brain-in-emacs-and-org-mode-faa20ae06fc
+** A nice sociological account of Steve Job's life and vision of things
+[2018-03-06 Tue 10:02]
+https://kieranhealy.org/blog/archives/2011/10/10/a-sociology-of-steve-jobs/
+** Introduction to org-ref features
+[2018-03-06 Tue 10:21]
+https://www.youtube.com/watch?v=2t925KRBbFc
+** Why Sage is failing. Check also https://www.reddit.com/r/math/comments/45q7j1/sagemath_open_source_is_now_ready_to_compete_with/
+[2018-03-06 Tue 12:39]
+http://sagemath.blogspot.fr/2014/08/what-is-sagemathcloud-lets-clear-some.html
+** Someone must have to write an EOS
+[2018-03-06 Tue 12:57]
+https://writequit.org/eos/eos.html
+** Yet another org-powered blog
+[2018-03-06 Tue 13:09]
+https://ogbe.net/blog/blogging_with_org.html
+** Useful stuff to build a custom Iosevka font type for emacs and web
+[2018-03-06 Tue 13:20]
+http://whyarethingsthewaytheyare.com/trying-out-iosevka-font/
+** Very nice looking web site with lot of goodies inside
+[2018-03-06 Tue 14:04]
+https://www.baty.net/post/
+** Read some blog entries
+[2018-03-09 Fri 21:43]
+https://pavpanchekha.com/
+** Org-mode in VS Code
+[2018-03-14 Wed 10:57]
+https://news.ycombinator.com/item?id=16198369
+** I should definitely check the scrartcl class
+[2018-03-14 Wed 22:20]
+https://tex.stackexchange.com/questions/295864/tufte-alike-design-with-sidenotes-crossing-pagebreaks-or-tufte-made-with-komas/352756#352756
+** How does it compare to [[https://spark.apache.org/docs/latest/sql-programming-guide.html#datasets-and-dataframes][Apache Spark DataFrame]]?
+[2018-03-15 Thu 21:45]
+https://github.com/acowley/Frames
+** Interesting Youtube channel to learn cool things about dataviz
+[2018-03-16 Fri 08:32]
+https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg
+** Useful handouts for caluclus and probability
+[2018-03-16 Fri 08:45]
+http://sites.math.rutgers.edu/~zeilberg/
+** To find datasets
+[2018-03-16 Fri 13:43]
+http://www.statsci.org/datasets.html
+** Short info on how to use irony and rdm for clang stuff
+[2018-04-21 Sam 23:35]
+https://oremacs.com/2017/03/28/emacs-cpp-ide/
+** Useful code snippet to generate reproducible random numbers in Clojure
+[2018-04-23 Lun 10:29]
+https://stackoverflow.com/questions/24007063/how-to-generate-repeatable-random-sequences-with-rand-int
+** Implement this PRNG in Clojure
+[2018-04-23 Lun 18:28]
+https://www.codeproject.com/Articles/25172/Simple-Random-Number-Generation
+** Constructive critic of Stephen Wolfram wrt his book "A New Kind of Science"
+[2018-04-24 Mar 00:22]
+https://nedbatchelder.com/blog/200207/stephen_wolframs_unfortunate_ego.html
+** Implementation of Random Forest in Lisp (See also the interface to Gnuplot)
+[2018-04-25 Mer 08:24]
+https://github.com/masatoi/cl-random-forest
+** Nice ressources on Epidemiology, including Clayton's book on Statistical Models in Epidemiology
+[2018-04-26 Jeu 12:50]
+http://www.med.mcgill.ca/epidemiology/hanley/bios601/
+** How to disable Google chrome updater
+[2018-04-30 Lun 17:28]
+http://applehelpwriter.com/2014/07/13/how-to-remove-googles-secret-update-software-from-your-mac/
+** Good intro to Python itertools
+[2018-05-01 Mar 12:49]
+https://www.blog.pythonlibrary.org/2016/04/20/python-201-an-intro-to-itertools/
+** Cool Python 3.x tips & tricks
+[2018-05-02 Mer 14:50]
+https://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html
+** Think of prioritization of endpoints as pre-specification of the order for publication and how the study results are publicized. It is OK to announce a “significant” third endpoint as long as the “insignificant” first and second endpoints are announced first, and the context for the third endpoint is preserved.
+[2018-05-07 Lun 10:30]
+http://www.fharrell.com/post/ymult/
+** Check some of the courses and PDFs
+[2018-05-08 Mar 08:51]
+https://people.eecs.berkeley.edu/~wkahan/
+** Useful Emacs init files (blog post here: http://www.howardism.org/Technical/Emacs/orgmode-wordprocessor.html)
+[2018-05-08 Mar 08:57]
+https://github.com/howardabrams/dot-files
+** Interesting Swift/CBLAS link + Numpy-like methods
+[2018-05-12 Sam 08:30]
+https://stsievert.com/swix/
+** Ressources for Stata teaching
+[2018-05-12 Sam 08:30]
+https://www.stata.com/links/resources-for-learning-stata/#cheat
+** Quick introduction to git internals for people who are not scared by words like Directed Acyclic Graph.
+[2018-05-12 Sam 08:46]
+http://eagain.net/articles/git-for-computer-scientists/
+** Interesting blog posts and econom(etr)ics courses using Python and Stata
+[2018-05-12 Sam 09:53]
+http://rlhick.people.wm.edu/posts/index.html
+** See the notes section for interesting maths and number theory with algorithms
+[2018-05-12 Sam 21:01]
+https://crypto.stanford.edu/pbc/
+** Number Theory with Python
+[2018-05-13 Dim 18:49]
+http://www.math.umbc.edu/~campbell/Computers/Python/numbthy.html
+** Tutorial on Python Pandas by the same author of the [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][org-mode tutorial]]
+[2018-05-14 Lun 08:16]
+http://ehneilsen.net/notebook/pandasExamples/pandas_examples.html
+** Useful cheat sheet for org-mode, especially +OPTIONS keywords
+[2018-05-14 Lun 08:22]
+https://emacsclub.github.io/html/org_tutorial.html
+** Lot of ressources on crypto/math and number theory
+[2018-05-15 Mar 09:53]
+http://www.math.brown.edu/~jhs/
+** Looks like a nice intro to Swift
+[2018-05-15 Mar 09:54]
+https://www.hackingwithswift.com/read/0/overview
+** Interesting tutorials on Stata by Mark Lunt
+[2018-05-15 Mar 09:55]
+http://personalpages.manchester.ac.uk/staff/mark.lunt/stats_course.html
+** To learn a bit of Vim (again)
+[2018-05-15 Mar 10:34]
+https://ferd.ca/vim-and-composability.html
+** Interesting R package that brings some Stata output
+[2018-05-15 Mar 21:07]
+https://github.com/matthieugomez/statar
+** How to use org-mode with Stata code
+[2018-05-15 Mar 21:18]
+http://rlhick.people.wm.edu/posts/stata-and-literate-programming-in-emacs-org-mode.html
+** How to custiomize HTML and CSS with org-mode
+[2018-05-15 Mar 21:18]
+https://emacs.stackexchange.com/questions/7629/the-syntax-highlight-and-indentation-of-source-code-block-in-exported-html-file
+** Yet Another Org-Mode Configuration
+[2018-05-16 Mer 10:41]
+http://www.i3s.unice.fr/~malapert/org/tips/emacs_orgmode.html
+** What to put in your Stata profile.do
+[2018-05-16 Mer 19:47]
+https://www.statalist.org/forums/forum/general-stata-discussion/general/1405778-profile-do-useful-startups
+** Yet another org-mode post dedicated to Hugo
+[2018-05-16 Mer 21:59]
+https://www.zcl.space/tools/my-blog-workflow/
+** The setup
+[2018-05-18 Ven 06:32]
+https://writequit.org/org/
+** Plain TeX template for editing refcard
+[2018-05-18 Ven 09:29]
+https://michaelgoerz.net/refcards/
+** Common Lisp Quick Reference is a free booklet with short descriptions of the thousand or so symbols defined in the ANSI standard
+[2018-05-18 Ven 09:31]
+http://clqr.boundp.org/
+** Interesting package! See also {breakDown} [[https://pbiecek.github.io/breakDown/]].
+[2018-05-18 Ven 14:04]
+http://pbiecek.github.io/archivist/
+** Check dataMaid (An R package for data screening)
+[2018-05-18 Ven 14:18]
+https://github.com/ekstroem/dataMaid
+** Config options for org-mode with French babel
+[2018-05-20 Dim 09:16]
+http://drieu.org/post/R%C3%A9glages-org-mode-et-export-PDF
+** Org-babel examples on GitHUb
+[2018-05-20 Dim 09:46]
+https://github.com/dfeich/org-babel-examples
+** Free online Lisp books
+[2018-05-20 Dim 23:55]
+https://www.onlineprogrammingbooks.com/lisp/
+** A local+cloud alternative to Dropbox
+[2018-05-20 Dim 23:59]
+https://syncthing.net/
+** Interesting gnuplot examples
+[2018-05-22 Mar 07:10]
+http://www.gnuplotting.org/
+** Another org config
+[2018-05-23 Mer 09:44]
+http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html
+** Useful tips on org-mode + beautiful CSS
+[2018-05-23 Mer 16:45]
+http://www.cachestocaches.com/2016/9/my-workflow-org-agenda/
+** Other than proselint, there is this plugin to help in detecting writing typos and the like
+[2018-05-24 Jeu 15:20]
+https://github.com/bnbeckwith/writegood-mode
+** Interesting read
+[2018-05-28 Lun 22:34]
+https://arachnoid.com/trouble_with_psychology/index.html
+** How to Start a Bookdown Book
+[2018-05-29 Mar 07:27]
+http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html
+** Python for NLP and machine learning
+[2018-05-30 Mer 08:23]
+https://github.com/TiesdeKok/Python_NLP_Tutorial
+** Another tutorial on Python for accounting resarch
+[2018-05-30 Mer 08:24]
+https://github.com/TiesdeKok/LearnPythonforResearch
+** Good old tutorial on Org + Pandoc
+[2018-05-30 Mer 08:35]
+https://www.rousette.org.uk/archives/org-mode-and-pandoc/
+** Jupyter vs. R Markdown
+[2018-05-30 Mer 18:12]
+https://www.datacamp.com/community/blog/jupyter-notebook-r
+** I should try to replace ipynb with Md files
+[2018-05-30 Mer 18:15]
+https://github.com/rossant/ipymd
+** And now here is a way to convert Python notebook to RMarkdown
+[2018-05-30 Mer 18:17]
+https://github.com/chronitis/ipyrmd
+** Interesting template for Gitbook with open review
+[2018-05-30 Mer 19:08]
+https://benmarwick.github.io/bookdown-ort/mods.html
+** Base16 for Shells
+[2018-05-30 Mer 21:35]
+https://github.com/chriskempson/base16-shell
+** Interesting approach with Vagrant and rstats
+[2018-05-31 Jeu 09:18]
+https://github.com/agoldst/litdata-vagrant
+** CL and Machine Learning
+[2018-05-31 Jeu 09:19]
+https://github.com/mmaul/clml
+** Really nice tutorial
+[2018-05-31 Jeu 09:20]
+https://github.com/seeingtheory/Seeing-Theory
+** Useful mu4e config tips
+[2018-06-01 Ven 04:01]
+https://github.com/thblt/.emacs.d/blob/master/dotemacs.org
+** Drowning in Email; mu4e to the Rescue
+[2018-06-01 Ven 04:04]
+http://www.macs.hw.ac.uk/~rs46/posts/2014-01-13-mu4e-email-client.html
+** Email done right (in Emacs)
+[2018-06-01 Ven 04:14]
+https://zmalltalker.com/linux/mu.html
+** Pretty nice idea
+[2018-06-01 Ven 21:54]
+https://erikclarke.net/2014/10/21/keeping-a-lab-notebook-with-org-mode-git-papers-and-pandoc-part-ii/
+** In case we want to go to the dark side with Forklift
+[2018-06-04 Lun 09:30]
+https://johnscullen.com/how-to-make-forklift-3-the-default-file-viewer/
+** Interesting application for teaching with Rosner's FEV dataset
+[2018-06-04 Lun 11:01]
+https://ww2.amstat.org/publications/jse/v13n2/datasets.kahn.html
+** Good paper that summarizes the main point of logistic regression
+[2018-06-04 Lun 19:35]
+http://www.kan.or.kr/kor/shop_sun/files/memoir_img/201302/mm__201304301807550.pdf
+** Useful tutorial on mixed-effect models using R
+[2018-06-05 Mar 07:25]
+http://rpsychologist.com/r-guide-longitudinal-lme-lmer
+** R code for Cleveland dot plot using ggplot2
+[2018-06-05 Mar 18:48]
+https://uc-r.github.io/cleveland-dot-plots
+** Course on the analysis of discrete data using R
+[2018-06-06 Mer 10:28]
+https://onlinecourses.science.psu.edu/stat504/
+** So nice illustration of ML principles
+[2018-06-06 Mer 10:37]
+http://www.r2d3.us/visual-intro-to-machine-learning-part-1/
+** How to configure Emacs flycheck for ES6
+[2018-06-07 Jeu 11:22]
+http://codewinds.com/blog/2015-04-02-emacs-flycheck-eslint-jsx.html
+** Interesting online book
+[2018-06-08 Ven 13:41]
+https://www.bookofproofs.org/branches/
+** Interesting book or not?
+[2018-06-08 Ven 19:24]
+http://www.statsref.com/StatsRefSample.pdf
+** Nice setup for Pytjon. It should work with Rust too. Looking forward to cquery!
+ [2018-06-12 Mar 16:39]
+ https://vxlabs.com/2018/06/08/python-language-server-with-emacs-and-lsp-mode/
+** Read this for Stata GLMs
+ [2018-06-13 Mer 22:00]
+ https://stats.idre.ucla.edu/stata/webbooks/logistic/chapter3/lesson-3-logistic-regression-diagnostics/
+** Better than Spark? What's the difference? See the xgboost project.
+ [2018-06-18 Lun 19:48]
+ http://flink.apache.org/
+** See how it is going wrt. existing implementation. Also related: https://github.com/danking/racket-ml.
+ [2018-06-21 Jeu 09:46]
+ https://github.com/mkierzenka/Racket_NumericalMethods
+** Good starter kit for git collaboration. See also (more recent): https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
+ [2018-06-22 Ven 11:08]
+ https://code.tutsplus.com/tutorials/how-to-collaborate-on-github--net-34267
+** Stata histogram with survey weights
+ [2018-06-22 Ven 16:45]
+ https://stackoverflow.com/questions/32121901/stata-density-distribution-functions-with-survey-data
+** NHANES dataset for Stata
+ [2018-06-22 Ven 23:30]
+ https://www.icpsr.umich.edu/icpsrweb/NACDA/series/39
+** Anlysis of NHANES dataset in Stata
+ [2018-06-22 Ven 23:32]
+ https://stats.idre.ucla.edu/stata/seminars/applied-svy-stata13/
+** Nice summary of some Stata commands for test and modeling
+ [2018-06-26 Mar 10:14]
+ http://nepaldevelopment.pbworks.com/w/page/61335021/STATA%3A%20Quick%20Command%20Reference
+** Security and ML in Python @ssi.gouv.fr
+ [2018-06-27 Mer 18:44]
+ https://github.com/ANSSI-FR/SecuML
+** Is it better than cquery?
+ [2018-07-04 Mer 21:06]
+ https://github.com/MaskRay/ccls
+** Useful tips for scientific computing using floats in Racket
+ [2018-07-05 Jeu 10:38]
+ https://stackoverflow.com/questions/16009143/scientific-notation-conversion-scheme
+** Interesting tutorials on numerical methods.
+ [2018-07-05 Jeu 13:01]
+ https://math.la.asu.edu/~dajones/
+** Now that it reaches version 1.0 I should try BeakerX gain
+ [2018-07-06 Ven 12:32]
+ http://beakerx.com/
+** Useful add-ons for Stata twoway
+ [2018-07-07 Sam 10:08]
+ https://stats.idre.ucla.edu/stata/faq/graph/njc-stata-plots/
+** Is this why I get so blurry font rendering with my HP external monitor?
+ [2018-07-07 Sam 11:30]
+ https://apple.stackexchange.com/questions/299820/font-smoothing-in-high-sierra/300025
+** Operating Systems: From 0 to 1
+ [2018-07-10 Mar 08:37]
+ https://tuhdo.github.io/os01/
+** Interesting minimalistic theme and concept (albeit for VS Code)
+ [2018-07-13 Ven 20:22]
+ https://github.com/tonsky/vscode-theme-alabaster
+** Clojure DSL for Apacke Spark
+ [2018-07-16 Lun 08:08]
+ https://github.com/yieldbot/flambo
+** Interesting links on stat libs for Clojure
+ [2018-07-16 Lun 08:12]
+ https://www.reddit.com/r/Clojure/comments/6kjdrk/is_there_an_actively_developed_stats_library_for/
+** Reread this when I will be more proficient using core Clojure
+ [2018-07-16 Lun 15:28]
+ https://github.com/nathanmarz/specter
+** Useful ressource on mathematical statistics
+ [2018-07-17 Mar 18:39]
+ http://math.usu.edu/symanzik/
+** Petit traité de Lisp en français
+ [2018-07-19 Jeu 09:33]
+ http://dept-info.labri.fr/~strandh/Teaching/Programmation-Symbolique/Common/Book/Dir.html
+** Clojure and AWS Lambda
+ [2018-07-21 Sam 07:02]
+ https://aws.amazon.com/fr/blogs/compute/clojure/
+** Getting Started on Heroku with Clojure
+ [2018-07-21 Sam 07:02]
+ https://devcenter.heroku.com/articles/getting-started-with-clojure
+** Interesting approach for managing Git projects
+ [2018-07-29 Dim 17:18]
+ https://github.com/git-up/GitUp
+** I should try this at some point
+ [2018-07-29 Dim 18:06]
+ https://github.com/deadc0de6/dotdrop
+** Base 16 shell color
+ [2018-07-29 Dim 18:12]
+ https://github.com/chriskempson/base16-shell
+** Teach yourself programming in ten years
+ [2018-07-30 Lun 21:19]
+ http://norvig.com/21-days.html
+** Successor of window-purpose
+ [2018-10-03 Wed 18:24]
+ https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Bspacemacs/spacemacs-purpose
+** Interesting tool to manage Github repo from the command line
+ [2018-10-03 Wed 18:27]
+ http://myusuf3.github.io/octogit/
+** Meow Hash algorithm; see also https://github.com/bodil/meowhash-rs
+ [2018-10-22 Mon 19:29]
+ https://mollyrocket.com/meowhash
+** Interesting config for org and Hugo
+ [2018-10-27 Sat 17:43]
+ https://www.shanesveller.com/blog/2018/02/13/blogging-with-org-mode-and-ox-hugo/
+** Blot on your local machine
+ [2018-11-20 Tue 20:49]
+ https://github.com/davidmerfield/Blot
+** Interesting cheatsheet for Org babel
+ [2018-11-20 Tue 20:59]
+ https://necromuralist.github.io/posts/org-babel-cheat-sheet/
+** Interesting list of algorithms implemented in different languages
+ [2018-11-23 Fri 17:55]
+ https://github.com/Thuva4/Algorithms
+** Interesting tutorials on Racket
+ [2019-01-15 Tue 19:31]
+ https://courses.cs.washington.edu/courses/cse341/12au/index.html
+** Useful tricks to configure iCloud and Gmail using isync
+ [2019-01-25 Fri 10:30]
+ https://ict4g.net/adolfo/notes/2014/12/27/EmacsIMAP.html
+** Another nice tutorial on setting up mu4e
+ [2019-01-25 Fri 11:52]
+ http://cachestocaches.com/2017/3/complete-guide-email-emacs-using-mu-and-/
+** Nice custom functions for mu4e and org-mode
+ [2019-01-29 Tue 08:59]
+ https://gitlab.com/ambrevar/dotfiles/blob/master/.emacs.d/lisp/init-mu4e.el
+** Biomedical Data Science (R and Bioconductor)
+ [2019-02-05 Tue 08:43]
+ http://genomicsclass.github.io/book/
+** Three algorithms with Python code for Gradient descent. See also http://ruder.io/optimizing-gradient-descent/ and https://jermwatt.github.io/mlrefined/.
+ [2019-02-10 Sun 11:35]
+ https://www.hackerearth.com/blog/machine-learning/3-types-gradient-descent-algorithms-small-large-data-sets/
+** Ninety-Nine Lisp Problems
+ [2019-02-10 Sun 14:06]
+ https://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html
+** Difference between setq and setf in Common Lisp
+ [2019-02-11 Mon 10:57]
+ https://stackoverflow.com/questions/869529/difference-between-set-setq-and-setf-in-common-lisp
+** Interesting library for math computing
+ [2019-02-11 Mon 13:53]
+ https://github.com/mfiano/gamebox-math
+** Google Calendar With Org-Mode
+ [2019-02-12 Tue 20:42]
+ http://jameswilliams.be/blog/2016/01/11/Taming-Your-GCal.html
+** Lisp and bioinformatics
+ [2019-02-13 Wed 13:45]
+ https://omicsomics.blogspot.com/2017/09/why-is-lisp-so-rare-in-bioinformatics.html
+** Performance and types in Lisp
+ [2019-02-13 Wed 19:12]
+ https://blog.30dor.com/2014/03/21/performance-and-types-in-lisp/
+** Org babel reference card
+ [2019-02-13 Wed 19:32]
+ https://org-babel.readthedocs.io/en/latest/
+** Phylogenetic Network Software
+ [2019-02-15 Fri 09:36]
+ http://www.fluxus-engineering.com/sharenet.htm
+** How to read MD5 hash efficiently in Python 2/3. See also https://stackoverflow.com/a/20014805
+ [2019-02-16 Sat 11:02]
+ https://stackoverflow.com/questions/1131220/get-md5-hash-of-big-files-in-python/40961519#40961519
+** Introduction to ML with Common Lisp
+ [2019-02-16 Sat 12:57]
+ https://gorkovchanin.wordpress.com/2017/07/21/introduction-to-ml-with-common-lisp/
+** BioJulia packages. See also https://julialang.org/blog/2015/10/biojulia-sequence-analysis
+ [2019-02-16 Sat 14:07]
+ https://biojulia.net/
+** What's the most efficient file format for the storage of DNA sequences?
+ [2019-02-16 Sat 14:09]
+ https://bioinformatics.stackexchange.com/questions/1/whats-the-most-efficient-file-format-for-the-storage-of-dna-sequences
+** Check these new estimators and the [[https://github.com/neurospin/pylearn-parsimony][parsimony]] package
+ [2019-02-16 Sat 20:47]
+ http://neurospin.github.io/pylearn-parsimony/tutorials.html
+** Emacs for Travis CI
+ [2019-02-17 Sun 09:06]
+ https://github.com/flycheck/emacs-travis
+** IPython kernel for Racket
+ [2019-02-17 Sun 09:15]
+ https://github.com/ppaml-op3/iracket
+** Set Forklift as the default file manager. See also [[https://johnscullen.com/how-to-make-forklift-3-the-default-file-viewer/][How to make ForkLift 3 the default file viewer]]
+ [2019-02-18 Mon 12:11]
+ https://apple.stackexchange.com/questions/45809/set-forklift-as-default-file-viewer/45831#45831
+** Resources for Population Genetics in R
+ [2019-02-19 Tue 10:53]
+ https://github.com/emmanuelparadis/popgenInfo
+** Phylogenetic trees in Python
+ [2019-02-19 Tue 12:20]
+ https://github.com/Zsailer/phylogenetics/blob/master/docs/index.rst
+** Trees in SQL. See also https://www.postgresql.org/docs/9.0/ltree.html
+ [2019-02-19 Tue 12:21]
+ https://communities.bmc.com/docs/DOC-9902
+** Software for bayesian phylogeny
+ [2019-02-20 Wed 07:42]
+ http://nbisweden.github.io/MrBayes/download.html
+** Galaxy Pasteur
+ [2019-02-20 Wed 07:43]
+ https://galaxy.pasteur.fr/?form=dnapars
+** Tips on using org-journal
+ [2019-02-20 Wed 09:11]
+ https://bastibe.de/2018-04-02-scheduling-future-todos-in-org-journal.html
+** Classification of genome data with n-gram models using Mathematica
+ [2019-02-20 Wed 10:51]
+ https://mathematicaforprediction.wordpress.com/tag/markov-chains/
+** Markov Chains and evolution
+ [2019-02-20 Wed 10:56]
+ https://math.la.asu.edu/~jtaylor/teaching/Spring2015/APM504/APM504.html
+** A Biologist's Guide to Mathematical Modeling with Mathematica applications
+ [2019-02-20 Wed 11:14]
+ http://www.zoology.ubc.ca/biomath/
+** Programming with strings in Mathematica
+ [2019-02-20 Wed 12:43]
+ https://www.mathematica-journal.com/2013/04/strings/
+** Writing fast Mathematica code
+ [2019-02-21 Thu 10:28]
+ https://blog.wolfram.com/2011/12/07/10-tips-for-writing-fast-mathematica-code/
+** Sample matehmatica notebooks for biology
+ [2019-02-21 Thu 10:30]
+ http://theory.bio.uu.nl/sb/wiskunde/Mathematica/
+** Phylogenetic trees in Mathematica
+ [2019-02-21 Thu 11:40]
+ https://mathematica.stackexchange.com/questions/126496/how-to-work-with-phylogenetic-trees
+** Various courses on stochastic processes
+ [2019-02-21 Thu 12:51]
+ https://math.la.asu.edu/~jtaylor/courses.html
+** Functional programming in Mathematica
+ [2019-02-23 Sat 08:52]
+ https://reference.wolfram.com/language/guide/FunctionalProgramming.html
+** How to handle simple and complex rules in Timing App
+ [2019-02-23 Sat 10:33]
+ https://timingapp.com/help/rules
+** Processing and visualization tools for quantitative MRI data using Mathematica
+ [2019-02-24 Sun 09:33]
+ https://github.com/mfroeling/QMRITools
+** Nice posts by Pearly Spencer on Stata
+ [2019-02-25 Mon 09:08]
+ https://stackoverflow.com/search?q=user%3A8682794+%5Bstata%5D+program
+** Internet guide to Stata
+ [2019-02-25 Mon 09:37]
+ http://wlm.userweb.mwn.de/Stata/
+** Tutoriel Perl et DBI
+ [2019-02-25 Mon 11:55]
+ https://djibril.developpez.com/tutoriels/perl/perl-dbi/
+** Tutorial on Flask and MySQL
+ [2019-02-25 Mon 12:15]
+ https://code.tutsplus.com/tutorials/creating-a-web-app-from-scratch-using-python-flask-and-mysql--cms-22972
+** Algorithms for computational biology
+ [2019-02-25 Mon 18:03]
+ https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-algorithms-for-computational-biology-spring-2005/
+** PHASE manual including discussion of phylogenetic theory
+ [2019-02-25 Mon 18:35]
+ http://bioinf.man.ac.uk/resources/phase/manual/node1.html
+** Interesting blog
+ [2019-02-25 Mon 18:54]
+ http://johnhawks.net/
+** Finding subsequences in strings
+ [2019-02-25 Mon 20:50]
+ https://www.geeksforgeeks.org/given-two-strings-find-first-string-subsequence-second/
+** Is there an actively developed stats library for Clojure?
+ [2019-02-26 Tue 07:57]
+ https://www.reddit.com/r/Clojure/comments/6kjdrk/is_there_an_actively_developed_stats_library_for/
+** Concatenates FASTA formatted files to one "phyml" (PHYLIP) formatted file
+ [2019-02-26 Tue 09:47]
+ https://github.com/nylander/catfasta2phyml
+** Handling phylogenomic data
+ [2019-02-26 Tue 09:53]
+ http://odiogosilva.github.io/TriFusion/
+** FASTA to sequential PHYLIP format converter
+ [2019-02-26 Tue 09:57]
+ http://aligner.azurewebsites.net/
+** SSE3 support on macOS Macbook
+ [2019-02-26 Tue 10:13]
+ https://stackoverflow.com/questions/45917280/mac-osx-minumum-support-sse-version
+** Elegant operations on matrix rows and columns
+ [2019-02-26 Tue 13:01]
+ https://mathematica.stackexchange.com/questions/3069/elegant-operations-on-matrix-rows-and-columns
+** Useful tips for Mathjax
+ [2019-02-26 Tue 20:05]
+ https://yutsumura.com/mathjax-in-wordpress/
+** Nice tutorial on deploying a Flask app on Heroku
+ [2019-02-27 Wed 11:07]
+ https://medium.com/the-andela-way/deploying-a-python-flask-app-to-heroku-41250bda27d0
+** How to setup a Git mirror to have Travis CI working on Bitbucket
+ [2019-02-27 Wed 16:48]
+ https://pythonwise.blogspot.com/2012/05/using-travis-ci-with-bitbucket.html
+** Travis tutorial
+ [2019-02-27 Wed 18:10]
+ https://docs.travis-ci.com/user/tutorial/
+** How to setup Travis CI with GH pages and Hugo
+ [2019-02-27 Wed 20:16]
+ https://axdlog.com/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/
+** Netlify setup
+ [2019-02-27 Wed 20:28]
+ https://www.netlify.com/docs/cli/
+** Heroku and Python/Flask
+ [2019-02-28 Thu 09:53]
+ https://coderwall.com/p/pstm1w/deploying-a-flask-app-at-heroku
+** Codekit: Build websites faster and better
+ [2019-02-28 Thu 09:55]
+ https://codekitapp.com/index.html
+** A template to get your Flask app running on Heroku as fast as possible
+ [2019-02-28 Thu 09:56]
+ https://github.com/zachwill/flask_heroku
+** Making a Flask app using a PostgreSQL database and deploying to Heroku
+ [2019-02-28 Thu 10:02]
+ http://blog.sahildiwan.com/posts/flask-and-postgresql-app-deployed-on-heroku/
+** Postgres guide
+ [2019-02-28 Thu 17:38]
+ http://postgresguide.com/
+** Getting started with Docker on a Mac
+ [2019-02-28 Thu 19:38]
+ https://docs.docker.com/docker-for-mac/
+** Another nice tutorial on Flask
+ [2019-03-04 Mon 10:50]
+ https://realpython.com/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/
+** Another tutorial on Flask + Postgresql
+ [2019-03-04 Mon 10:55]
+ https://blog.theodo.fr/2017/03/developping-a-flask-web-app-with-a-postresql-database-making-all-the-possible-errors/
+** Flask 101
+ [2019-03-04 Mon 10:58]
+ https://www.blog.pythonlibrary.org/2017/12/12/flask-101-getting-started/
+** Difference between pipvenv and virtualenv
+ [2019-03-04 Mon 11:25]
+ https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe
+** Python + Postgresql tutorials
+ [2019-03-04 Mon 16:50]
+ http://www.postgresqltutorial.com/postgresql-python/
+** Python and alembic
+ [2019-03-04 Mon 17:58]
+ https://overiq.com/flask-101/database-migrations-with-alembic/
+** IMDb data and SQL
+ [2019-03-06 Wed 07:43]
+ https://www.decisivedata.net/blog/import-data-from-multiple-csv-files-using-bulk-insert
+** PostgreSQL and bash Stuff
+ [2019-03-06 Wed 10:22]
+ https://www.manniwood.com/postgresql_and_bash_stuff/index.html
+** Drawing Graphs Directly in Psql
+ [2019-03-06 Wed 16:08]
+ http://akorotkov.github.io/blog/2016/06/09/psql-graph/
+** Turn your PostgreSQL queries into Charts
+ [2019-03-07 Thu 08:09]
+ https://github.com/dimitri/pgcharts
+** Haskell programming from manu.el
+ [2019-03-07 Thu 09:44]
+ https://github.com/manuel-uberti/haskell-programming
+** Modern R with the tidyverse
+ [2019-03-07 Thu 10:08]
+ https://b-rodrigues.github.io/modern_R/
+** How to Build a Machine Learning App from Scratch
+ [2019-03-08 Fri 09:24]
+ https://camtsmith.com/articles/2017-10/naive-bayes-text-classification
+** Netlify vs Heroku
+ [2019-03-08 Fri 12:07]
+ https://linuxhint.com/netlify_vs_heroku/
+** How to Type Common Symbols and Special Characters in Mac OS X
+ [2019-03-08 Fri 12:19]
+ https://www.chriswrites.com/how-to-type-common-symbols-and-special-characters-in-os-x/
+** Yet another Flask tutorial with login and Heroku
+ [2019-03-11 Mon 07:49]
+ https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-v-user-logins
+** Taxonomic trees in SQL
+ [2019-03-12 Tue 07:35]
+ http://gbif.blogspot.com/2012/06/taxonomic-trees-in-postgresql.html
+** Managing local biological databases with the BioSQL module
+ [2019-03-12 Tue 07:41]
+ https://biopython.org/wiki/BioSQL
+** BeautifulSoup: removing tags
+ [2019-03-12 Tue 19:10]
+ https://kaijento.github.io/2017/03/30/beautifulsoup-removing-tags/
+** Skip List vs. Binary Search Tree
+ [2019-03-15 Fri 10:10]
+ https://stackoverflow.com/questions/256511/skip-list-vs-binary-search-tree
+** Org export html options
+ [2019-03-16 Sat 09:35]
+ https://orgmode.org/manual/Export-settings.html
+** Old good Emacs tutor
+ [2019-03-18 Mon 11:06]
+ https://www.tuteurs.ens.fr/unix/editeurs/emacs.html
+** A DNA Sequence Alignment/Map (SAM) library for Common Lisp
+ [2019-03-20 Wed 13:27]
+ https://github.com/keithj/cl-sam
+** Little Book of R for Bioinformatics
+ [2019-03-20 Wed 13:33]
+ https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/
+** Validated, scalable, community developed variant calling, RNA-seq and small RNA analysis
+ [2019-03-20 Wed 13:52]
+ https://github.com/bcbio/bcbio-nextgen
+** A DNA Sequence Alignment/Map (SAM) library for Clojure
+ [2019-03-20 Wed 13:53]
+ https://chrovis.github.io/cljam/
+** scikit-bio is an open-source, BSD-licensed, Python package providing data structures, algorithms, and educational resources for bioinformatics.
+ [2019-03-20 Wed 14:04]
+ https://github.com/biocore/scikit-bio
+** Machine learning with clojure in 2018
+ [2019-03-22 Fri 10:13]
+ https://www.reddit.com/r/Clojure/comments/7w5ceh/machine_learning_with_clojure_in_2018/
+** Binary search tree in Racket
+ [2019-03-22 Fri 10:13]
+ https://learningtogetolder.wordpress.com/2013/08/14/creating-a-binary-search-tree-in-racket/
+** Cigar encoding
+ [2019-03-22 Fri 10:15]
+ https://genome.sph.umich.edu/wiki/SAM#What_is_a_CIGAR.3F
+** Longest Common Subsequence using Scheme
+ [2019-03-22 Fri 10:16]
+ https://programmingpraxis.com/2009/06/09/longest-common-subsequence/
+** Sequence Manipulation Suite
+ [2019-03-22 Fri 10:17]
+ https://www.bioinformatics.org/sms2/
+** Check Lispy for Python inline evaluation
+ [2019-03-22 Fri 11:08]
+ https://github.com/abo-abo/lispy/
+** ThinkStats in Clojure ([[https://metail.com/technology/think-stats-in-clojure-i/][www]])
+ [2019-03-23 Sat 08:44]
+ https://github.com/ray1729/thinkstats
+** Awk tutorial
+ [2019-03-23 Sat 08:45]
+ http://www.grymoire.com/Unix/Awk.html
+** Essential AWK Commands for Next Generation Sequence Analysis
+ [2019-03-25 Mon 12:44]
+ http://bioinformatics.cvr.ac.uk/blog/category/awk/
+** sed and awk for genomics
+ [2019-03-25 Mon 12:45]
+ https://genomebio.org/sed-awk/
+** Most Commonly used Awk by Bioinformatician
+ [2019-03-25 Mon 12:45]
+ http://bioinformaticsonline.com/pages/view/2573/most-commonly-used-awk-by-bioinformatician
+** Bioinformatics one-liners
+ [2019-03-25 Mon 12:46]
+ https://github.com/stephenturner/oneliners
+** Lecture notes on Complex Systems in Biology
+ [2019-03-26 Tue 13:25]
+ http://rocs.hu-berlin.de/complexsys2018/lectures/
+** Hugo slim theme
+ [2019-03-26 Tue 15:03]
+ https://github.com/oblitum/hugo-theme-slim
+** Zeit now examples
+ [2019-03-26 Tue 18:43]
+ https://github.com/zeit/now-examples
+** How to migrate old networkx code
+ [2019-03-26 Tue 18:43]
+ https://networkx.github.io/documentation/stable/release/migration_guide_from_1.x_to_2.0.html
+** Krigging
+ [2019-03-27 Wed 09:36]
+ https://desktop.arcgis.com/fr/arcmap/10.3/tools/3d-analyst-toolbox/how-kriging-works.htm
+** Comparing different approaches to evolutionary simulations
+ [2019-03-27 Wed 13:57]
+ http://slideviewer.herokuapp.com/github/yoavram/ipython-notebooks/blob/master/simulation%20frameworks.ipynb#/
+** Interesting courses
+ [2019-03-27 Wed 14:20]
+ http://www.peterbeerli.com/classes/index.php?title=Main_Page
+** Modern Regression Analysis
+ [2019-03-28 Thu 11:40]
+ http://biostat.mc.vanderbilt.edu/wiki/Main/CourseBios312
+** Bayesian Evolutionary Analysis by Sampling Trees
+ [2019-03-29 Fri 10:42]
+ https://github.com/CompEvol/beast2
+** Emacs EShell Parameters
+ [2019-03-29 Fri 20:02]
+ https://github.com/howardabrams/dot-files/blob/master/emacs-eshell.org
+** Remote pbcopy on OS X systems
+ [2019-03-31 Sun 08:45]
+ https://brettterpstra.com/2014/02/19/remote-pbcopy-on-os-x-systems/
+** Remote access for macOS
+ [2019-03-31 Sun 08:56]
+ https://setapp.com/how-to/how-to-access-your-mac-remotely
+** Tutorial on Python package
+ [2019-04-01 Mon 08:44]
+ https://python-packaging.readthedocs.io/en/latest/
+** Virtualbox and postgresql
+ [2019-04-01 Mon 15:32]
+ http://grismar.net/2011/07/22/virtualbox_running_postgresql/
+** Creating a minimal Ubuntu VirtualBox image
+ [2019-04-01 Mon 15:38]
+ https://matschaffer.com/2011/06/minimal-ubuntu-virtualbox/
+** Installing Ubuntu on VirtualBox
+ [2019-04-02 Tue 14:55]
+ https://henricasanova.github.io/VirtualBoxUbuntuHowTo.html
+** Interesting library to find or manage OSS projects
+ [2019-04-03 Wed 09:32]
+ https://libraries.io/
+** Docker vs. Vagrant
+ [2019-04-03 Wed 11:24]
+ https://www.upguard.com/articles/docker-vs-vagrant
+** Zappa -- Serverless Python
+ [2019-04-03 Wed 12:54]
+ https://github.com/Miserlou/Zappa
+** Running Jupyter Lab as a Desktop Application
+ [2019-04-03 Wed 21:07]
+ http://christopherroach.com/articles/jupyterlab-desktop-app/
+** Setting up a local web server on macOS 10.14 “Mojave”
+ [2019-04-03 Wed 21:27]
+ https://discussions.apple.com/docs/DOC-13841
+** CD-HIT sequence identity
+ [2019-04-04 Thu 14:39]
+ https://www.drive5.com/usearch/manual9/cd_hit_id.html
+** Generators and iterables in Python
+ [2019-04-08 Mon 09:54]
+ https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
+** ShinyStudio
+ [2019-04-08 Mon 13:05]
+ https://github.com/dm3ll3n/ShinyStudio
+** Fast multi-line FASTA/Q reader in several programming languages
+ [2019-04-08 Mon 13:25]
+ https://github.com/lh3/readfq
+** Interesting R package for descriptive statistics
+ [2019-04-09 Tue 13:59]
+ https://cran.r-project.org/web/packages/summarytools/index.html
+** Analysis of ESS data using R
+ [2019-04-09 Tue 14:00]
+ http://asdfree.com/european-social-survey-ess.html
+** Emacs and Git
+ [2019-04-10 Wed 09:45]
+ http://alexott.net/en/writings/emacs-vcs/EmacsGit.html
+** Netlify dev
+ [2019-04-10 Wed 13:07]
+ https://www.netlify.com/products/dev/
+** Eve (after LightTable)
+ [2019-04-10 Wed 13:07]
+ http://witheve.com/
+** Fuzzy String Comparison
+ [2019-04-11 Thu 07:54]
+ https://stackoverflow.com/questions/10383044/fuzzy-string-comparison
+** Rose for genetic substitution model simulation
+ [2019-04-11 Thu 07:54]
+ https://popmodels.cancercontrol.cancer.gov/gsr/packages/rose/
+** Computational Genomics and Molecular Biology
+ [2019-04-15 Mon 11:51]
+ https://www.cs.cmu.edu/~durand/03-711/2015/Lectures/
+** Simply Scheme: Introducing Computer Science
+ [2019-04-15 Mon 13:34]
+ https://people.eecs.berkeley.edu/~bh/ss-toc2.html
+** A short mathematica course
+ [2019-04-15 Mon 13:52]
+ http://j-star.org/mathematica_course.html
+** Higher level tools for working with CSV data and files in Clojure
+ [2019-04-15 Mon 13:54]
+ https://github.com/metasoarous/semantic-csv
+** SCons for data science and compbio
+ [2019-04-15 Mon 14:38]
+ https://www.metasoarous.com/scons-for-data-science-and-compbio/
+** Gogs -- Un service git auto-hébergé sans-douleur
+ [2019-04-16 Tue 10:50]
+ https://gogs.io/
+** A successful Git branching model
+ [2019-04-16 Tue 11:30]
+ https://nvie.com/posts/a-successful-git-branching-model/
+** How to GitHub: Fork, Branch, Track, Squash and Pull Request
+ [2019-04-16 Tue 11:30]
+ https://www.gun.io/blog/how-to-github-fork-branch-and-pull-request
+** Teaching material: Data analytics and visualization
+ [2019-04-17 Wed 09:45]
+ https://www.yan-holtz.com/teaching
+** Documented Anomaly in Recent Versions of the BLASTN Algorithm and a Complete Reanalysis of Chimpanzee and Human Genome-Wide DNA Similarity Using Nucmer and LASTZ
+ [2019-04-17 Wed 09:46]
+ https://answersingenesis.org/genetics/dna-similarities/blastn-algorithm-anomaly/
+** Interesting approach to learning Racket
+ [2019-04-18 Thu 11:05]
+ https://artyom.me/learning-racket-1
+** Counsel, Ivy and Co.
+[2019-05-08 Mer 08:31]
+https://truthseekers.io/lessons/how-to-use-ivy-swiper-counsel-in-emacs-for-noobs/
+** Markdown and Vim
+[2019-05-11 Sam 19:17]
+https://jdhao.github.io/2019/01/15/markdown_edit_preview_nvim/
+** Brian Ripley's talks
+[2019-05-17 Ven 10:35]
+http://www.stats.ox.ac.uk/~ripley/talks.html
+** Rich book classes in Latex
+[2019-05-17 Ven 11:34]
+https://tex.stackexchange.com/questions/134215/where-can-i-find-some-rich-book-classes
+** Matthias Felleisen homepage
+[2019-05-20 Lun 09:59]
+https://felleisen.org/matthias/
+** Random numbers in Scheme
+[2019-05-20 Lun 11:25]
+https://stackoverflow.com/questions/14674165/scheme-generate-random
+** Programming Praxis Amazon Interview Question, part 2
+[2019-05-20 Lun 11:52]
+https://thornydev.blogspot.com/2012/12/programming-praxis-amazon-interview.html
+** The Scheme Programming Language
+[2019-05-20 Lun 19:26]
+https://www.scheme.com/tspl4/
+** Simulating Brownian motion in R
+[2019-05-22 Mer 10:22]
+http://phytools.org/eqg/Exercise_4.1/
+** Simulated ecosystems
+[2019-05-22 Mer 13:19]
+https://jobtalle.com/simulated_ecosystems.html
+** Interesting repos in Clojure. See also the blog.
+[2019-05-24 Ven 13:50]
+https://github.com/eigenhombre
+** Lisp Notes and Handouts
+[2019-05-27 Lun 10:18]
+http://www.covingtoninnovations.com/mc/LispNotes/
+** Static Generative Art Setup for Clojure
+[2019-05-29 Mer 14:02]
+http://marvelous-code.com/uncategorized/static-generative-art-setup-for-clojure/
+** Immutability with normal JavaScript objects and arrays
+[2019-05-31 Ven 13:22]
+https://github.com/immerjs/immer
+** Typescript and Emacs
+[2019-05-31 Ven 18:41]
+http://redgreenrepeat.com/2018/05/04/typescript-in-emacs/
+** Various string metrics in Lisp
+[2019-06-01 Sam 08:31]
+https://github.com/cbaggers/mk-string-metrics
+** Yet another Emacs configuration
+[2019-06-01 Sam 20:23]
+https://lthms.xyz/emacs.d
+** Nice generative algorithm to draw hyphae
+[2019-06-03 Lun 10:04]
+https://inconvergent.net/generative/hyphae/
+** Dual boot macOS/Ubuntu
+[2019-06-04 Mar 11:46]
+https://www.lifewire.com/dual-boot-linux-and-mac-os-4125733
+** Useful Awk tips and tricks
+[2019-06-06 Jeu 10:59]
+http://www.grymoire.com/Unix/Awk.html
+** Check blog posts and course materials
+[2019-06-06 Jeu 10:59]
+http://matt.might.net/#teaching
+** Processing.js Quick Start
+[2019-06-13 Jeu 10:21]
+http://processingjs.org/articles/jsQuickStart.html
+** A gentle introduction to persistent homology
+[2019-06-13 Jeu 10:35]
+https://christian.bock.ml/posts/persistent_homology/
+** Historical map of Cognitive Science
+[2019-06-13 Jeu 10:45]
+http://www.riedlanna.com/cognitivesciencemap.html
+** Differences between Processing.js and P5.js
+[2019-06-13 Jeu 10:56]
+https://www.sitepoint.com/processing-js-vs-p5-js-whats-difference/
+** Growth Modeling of filamentous fungi
+[2019-06-14 Ven 10:22]
+http://2018.igem.org/Team:DTU-Denmark/GrowthModelling
+** Solutions to Ninety-Nine Lisp Problems
+[2019-06-17 Lun 10:34]
+http://www.informatimago.com/develop/lisp/l99/
+** C programming Solved Programs/Examples with Solutions
+[2019-06-17 Lun 15:10]
+https://www.includehelp.com/c-programming-examples-solved-c-programs.aspx
+** Predator-Prey Modeling in Clojure
+[2019-06-19 Mer 15:04]
+https://markbastian.github.io/posts-output/2015-04-28-predator-prey/
+** Exercises in Clojure with Commentary
+[2019-06-19 Mer 15:13]
+https://markbastian.github.io/posts-output/2015-05-27-exercises/
+** Trees, Quil and Random
+[2019-06-20 Jeu 10:36]
+http://nbeloglazov.com/2015/05/18/trees-quil-and-random.html
+** How to get 64 bit integer in common lisp?
+[2019-06-21 Ven 10:10]
+https://stackoverflow.com/questions/8674982/how-to-get-64-bit-integer-in-common-lisp
+** (gnu) common lisp: features and functions
+[2019-06-21 Ven 10:13]
+http://www.csci.viu.ca/~wesselsd/courses/csci330/code/lisp/
+** Nested for loops in R and Racket
+[2019-07-04 Jeu 13:41]
+https://www.travishinkelman.com/post/for-loop-r-racket/
+** HT Sequence Analysis with R and Bioconductor
+[2019-07-05 Ven 14:14]
+http://manuals.bioinformatics.ucr.edu/home/ht-seq
+** SSC Intro to NGS Bioinformatics Course
+[2019-07-05 Ven 14:16]
+https://wikis.utexas.edu/display/bioiteam/SSC+Intro+to+NGS+Bioinformatics+Course
+** Algorithme de Needleman et Wunsch en Scheme
+[2019-07-05 Ven 16:12]
+http://www.laurentbloch.org/MySpip3/Algorithme-de-Needleman-et-Wunsch
+** C ressources
+[2019-07-20 Sat 20:37]
+http://people.duke.edu/~tkb13/courses/ncsu-csc230/lecture/
+** Racket course
+[2019-07-20 Sat 20:59]
+https://www.cs.grinnell.edu/~rebelsky/Courses/CSC151/2019S/readings/
+** Light alternative to libgen.io
+[2019-07-31 Mer 10:25]
+https://the-eye.eu/public/Books/
+** Sequences in Lisp
+[2019-08-09 Fri 09:11]
+https://www.slac.stanford.edu/comp/unix/gnu-info/cl_9.html
+** Some tips & tricks on Fish and iTerm
+[2019-08-16 Ven 08:38]
+https://ghaiklor.github.io/iterm-fish-fisher-osx/
+** Nord theme for Fish
+[2019-08-16 Ven 08:39]
+https://github.com/arcticicestudio/nord/issues/102
+** TypeScript Language Specification
+[2019-08-19 Lun 18:45]
+https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md
+** The Adventures of a Pythonista in Schemeland
+[2019-08-19 Lun 18:45]
+http://www.phyast.pitt.edu/~micheles/scheme/index.html
+** Programming in Haskell - Solutions to slides
+[2019-08-21 Wed 07:47]
+https://tiefenauer.github.io/blog/programming-in-haskell/
+** Using TypeScript with React
+[2019-08-22 Thu 10:16]
+https://simonknott.de/articles/Using-TypeScript-with-React.html
+** Migrating from Python to Racket
+[2019-08-22 Thu 16:06]
+https://github.com/racket/racket/wiki/Python-to-Racket
+** A philosophical difference between Haskell and Lisp
+[2019-08-22 Thu 21:00]
+https://chrisdone.com/posts/haskell-lisp-philosophy-difference/
+** PH525x series - Biomedical Data Science
+[2019-08-26 Mon 12:10]
+http://genomicsclass.github.io/book/
+** Awk one-liner
+[2019-08-27 Tue 09:38]
+http://tuxgraphics.org/~guido/scripts/awk-one-liner.html
+** Emacs and GPG
+[2019-08-27 Tue 16:03]
+http://prodissues.com/2016/02/emacs-gpg-for-dummies.html
+** A productive development environment with Docker on OS X
+[2019-08-30 Fri 09:05]
+https://www.ybrikman.com/writing/2015/05/19/docker-osx-dev/
+** Docker vs. Virtualbox
+[2019-08-30 Fri 09:07]
+https://www.quora.com/What-is-the-difference-between-containerization-Docker-and-virtualization-VMWare-VirtualBox-Xen
