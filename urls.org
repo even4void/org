@@ -1008,3 +1008,6 @@ https://www.ybrikman.com/writing/2015/05/19/docker-osx-dev/
 ** Docker vs. Virtualbox
 [2019-08-30 Fri 09:07]
 https://www.quora.com/What-is-the-difference-between-containerization-Docker-and-virtualization-VMWare-VirtualBox-Xen
+** Lecture notes -- Memory layout in C
+[2019-09-06 Fri 10:02]
+http://web.eecs.utk.edu/~huangj/cs360/360/notes/Memory/lecture.html

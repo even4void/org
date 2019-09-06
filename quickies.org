@@ -592,6 +592,14 @@ year,month,day = time.strftime('%Y-%m-%d',time.localtime()).split('-')
 #+END_SRC
 
 h/t neilkod
+** Enumerate and generators
+Nice trick when using =enumerate=:
+
+#+BEGIN_SRC python
+next(i for i,v in enumerate(l) if is_odd(v))
+#+END_SRC
+
+https://stackoverflow.com/a/1701404
 * R
 
 ** I always create small dataframe for illustrations
@@ -667,6 +675,10 @@ $ sudo pkgutil --forget org.r-project.R.Leopard.fw.pkga
 
 ** Use
 =page(d, method="print")= to view a long data frame =d= through a pager.
+* Racket
+** How to prevent void in output of list
+https://stackoverflow.com/q/41135630
+On the use of the =#:when= clause in =for/list= form.
 * TeX
 
 ** Using texdoc mathptmx show up a complete description of current font
