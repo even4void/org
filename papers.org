@@ -544,3 +544,23 @@ We want two things from a computer algorithm: given an input to a problem, it sh
 - orthology is not a transitive relation so that the problem is different from
   clustering an input gene set.
 - the authors focus on avoiding false positive orthology assignments within the phylogenetic range of the reported orthologous groups, while tolerating recent in-paralogs (speciation preceding duplication) as unavoidable contamination
+* [[/Users/chl/Documents/Papers/li-2018-minim.pdf][li-2018-minim]] - Minimap2: pairwise alignment for nucleotide sequences
+ :PROPERTIES:
+ :Custom_ID: li-2018-minim
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/li-2018-minim.pdf
+ :END:
+ Minimap2 is a general-purpose alignment program to map DNA or long mRNA
+ sequences against a large reference database. It works with accurate short
+ reads of 100 bp in length, 1 kb genomic reads at error rate 15%, full-length
+ noisy Direct RNA or cDNA reads and assembly contigs or closely related full
+ chromosomes of hundreds of megabases in length.
+ Used in the [[http://www.outils.genomique.biologie.ens.fr/eoulsan2/][Eoulsan]] toolkit.
+* [[/Users/chl/Documents/Papers/piskol-2013-reliab-ident.pdf][piskol-2013-reliab-ident]] - Reliable identification of genomic variants from rna-seq data
+ :PROPERTIES:
+ :Custom_ID: piskol-2013-reliab-ident
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/piskol-2013-reliab-ident.pdf
+ :END:
+ Use =cufflinks= after =tophat2= for gene quantification.
+ RNA-seq data alone enabled the discovery of 40.2% and 47.7% of all coding
+ variants identified by WGS in GM12878 cells and PBMCs, respectively. At the
+ same time, RNA-seq only required a fraction (1/6) of the sequencing effort.

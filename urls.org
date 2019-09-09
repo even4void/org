@@ -1011,3 +1011,21 @@ https://www.quora.com/What-is-the-difference-between-containerization-Docker-and
 ** Lecture notes -- Memory layout in C
 [2019-09-06 Fri 10:02]
 http://web.eecs.utk.edu/~huangj/cs360/360/notes/Memory/lecture.html
+** Sparkling Water provides H2O functionality inside Spark cluster
+[2019-09-06 Fri 18:41]
+https://github.com/h2oai/sparkling-water
+** A collection of algorithms in various langauges
+[2019-09-07 Sat 07:56]
+http://algorithmexamples.com/
+** Git pull vs. git up
+[2019-09-09 Mon 09:49]
+https://stackoverflow.com/questions/15316601/in-what-cases-could-git-pull-be-harmful/15316602
+** Check if there's anything better than that for automagically updating all Git repo
+[2019-09-09 Mon 09:55]
+https://gist.github.com/douglas/1287372
+** RNA-Seq studies of brown rot fungi could lead to new tools for more efficient biofuel production
+[2019-09-09 Mon 10:32]
+https://www.rna-seqblog.com/rna-seq-studies-of-brown-rot-fungi-could-lead-to-new-tools-for-more-efficient-biofuel-production/
+** Python tutorial feat. biopython
+[2019-09-09 Mon 14:08]
+http://people.duke.edu/~ccc14/pcfb/biopython/BiopythonSequences.html
