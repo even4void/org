@@ -564,3 +564,11 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  RNA-seq data alone enabled the discovery of 40.2% and 47.7% of all coding
  variants identified by WGS in GM12878 cells and PBMCs, respectively. At the
  same time, RNA-seq only required a fraction (1/6) of the sequencing effort.
+* [[/Users/chl/Documents/Papers/priyam-2019-sequen.pdf][priyam-2019-sequen]] - Sequenceserver: a modern graphical user interface for custom blast databases
+ :PROPERTIES:
+ :Custom_ID: priyam-2019-sequen
+ :INTERLEAVE_PDF:/Users/chl/Documents/Papers/priyam-2019-sequen.pdf
+ :END:
+ Only very basic sequence aligner. Not much compared to good old Wwwblast
+ unfortunately. The only interest is possibly to use the automated converter of
+ Fasta files (=makeblastdb=).

@@ -1029,3 +1029,9 @@ https://www.rna-seqblog.com/rna-seq-studies-of-brown-rot-fungi-could-lead-to-new
 ** Python tutorial feat. biopython
 [2019-09-09 Mon 14:08]
 http://people.duke.edu/~ccc14/pcfb/biopython/BiopythonSequences.html
+** Good old friend Wwwblast
+[2019-09-10 Tue 13:47]
+https://openwetware.org/wiki/Wwwblast
+** Clustering RNAseq data using K-means: how many clusters?
+[2019-09-10 Tue 16:50]
+https://2-bitbio.com/2017/10/clustering-rnaseq-data-using-k-means.html
