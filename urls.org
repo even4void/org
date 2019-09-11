@@ -1035,3 +1035,9 @@ https://openwetware.org/wiki/Wwwblast
 ** Clustering RNAseq data using K-means: how many clusters?
 [2019-09-10 Tue 16:50]
 https://2-bitbio.com/2017/10/clustering-rnaseq-data-using-k-means.html
+** PHP and Apache on Mojave
+[2019-09-11 Wed 10:10]
+https://getgrav.org/blog/macos-mojave-apache-multiple-php-versions
+** Online regex tester
+[2019-09-11 Wed 15:24]
+https://www.regexplanet.com/

@@ -153,7 +153,7 @@ Some additional pointers:
 * [[/Users/chl/Documents/Papers/au-2018-random-fores.pdf][au-2018-random-fores]] - Random forests, decision trees, and categorical predictors: the “absent levels” problem
  :PROPERTIES:
  :Custom_ID: au-2018-random-fores
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/au-2018-random-fores.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/au-2018-random-fores.pdf
  :END:
  This paper discusses the case of how best to handle catgeorical predictors in
  RF, in particular the 'absent level' problem, i.e. the case of the indeterminacy over how to handle an observation that has reached a categorical split which was determined when the observation in question’s level was absent during training.
@@ -161,7 +161,7 @@ Some additional pointers:
 * [[/Users/chl/Documents/Papers/bray-2016-near.pdf][bray-2016-near]] - Near-optimal probabilistic rna-seq quantification
  :PROPERTIES:
  :Custom_ID: bray-2016-near
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/bray-2016-near.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bray-2016-near.pdf
  :END:
  Easy to setup (=brew install kallisto=) and time+memory-efficient on fungi data.
  Works on Galaxy server too.
@@ -455,7 +455,7 @@ forensic bioinformatics ([[https://projecteuclid.org/euclid.aoas/1267453942][Bag
 * [[/Users/chl/Documents/Papers/danjou-2018-serious-python.pdf][danjou-2018-serious-python]] - Serious Python
  :PROPERTIES:
  :Custom_ID: danjou-2018-serious-python
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/danjou-2018-serious-python.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/danjou-2018-serious-python.pdf
  :END:
 Nice book to understand the underside of Python, especially regarding package import and path management. Note that this will not teach you Python programming, but it will certainly be helpful to better understand Python, think about design patterns, and how to develop your own projects. Each chapter provides a discussion of important topics in project development, and a brief interview by core developers is provided at the end. Note that some chapters are very specific of some aspects of Python programming, or PL more generally. For instance, chapter 4 deals with timestamp and the importance of timezone.
 I learned a few things about packaging, and in particular the number of modules that were developed before =pip=, namely (in chronological order): =distutils=, =setuptools=, =distribute=, =distutils2=, =packaging=, and =distlib=. The latter may eventually replace =setuptools=.
@@ -463,7 +463,7 @@ I learned a few things about packaging, and in particular the number of modules 
 * [[/Users/chl/Documents/Papers/casillas-2017-molec-popul-genet.pdf][casillas-2017-molec-popul-genet]] - Molecular Population Genetics
  :PROPERTIES:
  :Custom_ID: casillas-2017-molec-popul-genet
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/casillas-2017-molec-popul-genet.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/casillas-2017-molec-popul-genet.pdf
  :END:
 Driving forces for /evolution/:
 
@@ -476,7 +476,7 @@ Driving forces for /evolution/:
 * [[/Users/chl/Documents/Papers/altenhoff-2019-oma.pdf][altenhoff-2019-oma]] - OMA standalone: orthology inference among public and custom genomes and transcriptomes
  :PROPERTIES:
  :Custom_ID: altenhoff-2019-oma
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/altenhoff-2019-oma.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/altenhoff-2019-oma.pdf
  :END
  Orthology resources: [[http://eggnogdb.embl.de][eggNOG]], [[http://www.ensembl.org/info/docs/api/compara/index.html][Ensembl Compara]], [[http://inparanoid.sbc.su.se][InParanoid]], [[https://omictools.com/mbgd-tool][MBGD]], [[https://www.orthodb.org][OrthoDB]], [[https://orthomcl.org/orthomcl/][OrthoMCL]], [[http://www.pantherdb.org/genes/][PANTHER]], [[http://phylomedb.org][PhylomeDB]], and [[https://omabrowser.org/oma/home/][OMA]].
  OMA [[https://omabrowser.org/standalone/][standalone app]], available /via/ Homebrew.
@@ -485,7 +485,7 @@ Driving forces for /evolution/:
 * [[/Users/chl/Documents/Papers/cormen-2013-algor-unloc.pdf][cormen-2013-algor-unloc]] - Algorithms Unlocked
  :PROPERTIES:
  :Custom_ID: cormen-2013-algor-unloc
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/cormen-2013-algor-unloc.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/cormen-2013-algor-unloc.pdf
  :END:
 #+begin_quote
 We want two things from a computer algorithm: given an input to a problem, it should always produce a correct solution to the problem, and it should use com- putational resources efficiently while doing so.
@@ -497,7 +497,7 @@ We want two things from a computer algorithm: given an input to a problem, it sh
 * [[/Users/chl/Documents/Papers/friedman-1995-littl-schem.pdf][friedman-1995-littl-schem]] - The Little Schemer
  :PROPERTIES:
  :Custom_ID: friedman-1995-littl-schem
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/friedman-1995-littl-schem.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/friedman-1995-littl-schem.pdf
  :END:
  Beautiful book, very different from SICP in that it focus on basic building blocks (=car=, =cdr=, =cons=, =eq?=, etc.) and use a very pragmatic approach to understanding the structuration and interpretation of forms and s-expr. The penultimate goal of this book (4th ed., after the original /Little Lisper/) is to learn to think in a functional way. The ten commandments are worth keeping in mind for that very specific purpose:
 
@@ -518,14 +518,14 @@ We want two things from a computer algorithm: given an input to a problem, it sh
 * [[/Users/chl/Documents/Papers/kleppmann-2016-desig-data.pdf][kleppmann-2016-desig-data]] - Designing Data-Intensive Applications
  :PROPERTIES:
  :Custom_ID: kleppmann-2016-desig-data
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/kleppmann-2016-desig-data.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kleppmann-2016-desig-data.pdf
  :END:
  Review by [[https://henrikwarne.com/2019/07/27/book-review-designing-data-intensive-applications/][Henrik Warne]].
 
 * [[/Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf][jun-2009-ident-mammal]] - Identification of mammalian orthologs using local synteny
  :PROPERTIES:
  :Custom_ID: jun-2009-ident-mammal
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf
  :END:
  - differentiating between genes that have diverged through a speciation event
    (orthologs) and those derived through duplication events within a species (paralogs). Gene order may be viewed as a measure of conservation, or better gene family evolution.
@@ -539,7 +539,7 @@ We want two things from a computer algorithm: given an input to a problem, it sh
 * [[/Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] - Orthology detection combining clustering and synteny for very large datasets
  :PROPERTIES:
  :Custom_ID: lechner-2014-orthol-detec
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf
  :END:
 - orthology is not a transitive relation so that the problem is different from
   clustering an input gene set.
@@ -547,7 +547,7 @@ We want two things from a computer algorithm: given an input to a problem, it sh
 * [[/Users/chl/Documents/Papers/li-2018-minim.pdf][li-2018-minim]] - Minimap2: pairwise alignment for nucleotide sequences
  :PROPERTIES:
  :Custom_ID: li-2018-minim
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/li-2018-minim.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/li-2018-minim.pdf
  :END:
  Minimap2 is a general-purpose alignment program to map DNA or long mRNA
  sequences against a large reference database. It works with accurate short
@@ -558,7 +558,7 @@ We want two things from a computer algorithm: given an input to a problem, it sh
 * [[/Users/chl/Documents/Papers/piskol-2013-reliab-ident.pdf][piskol-2013-reliab-ident]] - Reliable identification of genomic variants from rna-seq data
  :PROPERTIES:
  :Custom_ID: piskol-2013-reliab-ident
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/piskol-2013-reliab-ident.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/piskol-2013-reliab-ident.pdf
  :END:
  Use =cufflinks= after =tophat2= for gene quantification.
  RNA-seq data alone enabled the discovery of 40.2% and 47.7% of all coding
@@ -567,8 +567,21 @@ We want two things from a computer algorithm: given an input to a problem, it sh
 * [[/Users/chl/Documents/Papers/priyam-2019-sequen.pdf][priyam-2019-sequen]] - Sequenceserver: a modern graphical user interface for custom blast databases
  :PROPERTIES:
  :Custom_ID: priyam-2019-sequen
- :INTERLEAVE_PDF:/Users/chl/Documents/Papers/priyam-2019-sequen.pdf
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/priyam-2019-sequen.pdf
  :END:
  Only very basic sequence aligner. Not much compared to good old Wwwblast
  unfortunately. The only interest is possibly to use the automated converter of
  Fasta files (=makeblastdb=).
+* [[/Users/chl/Documents/Papers/dobin-2013-star.pdf][dobin-2013-star]] - Star: ultrafast universal rna-seq aligner
+ :PROPERTIES:
+ :Custom_ID: dobin-2013-star
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/dobin-2013-star.pdf
+ :END:
+ STAR = Spliced Transcripts Alignment to a Reference
+ Designed to align the non-contiguous sequences directly to the reference
+ genome, instead of short reads to a database of splice junctions or align
+ split-read portions contiguously to a reference genome, or a combination
+ thereof.
+ /Algorithm/: (1) MMP seed search and (2) clustering and stitching of all the
+ seeds that were aligned to the genome (allowing for only one insertion or
+ deletion) using local scoring scheme.
