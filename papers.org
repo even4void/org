@@ -585,3 +585,15 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  /Algorithm/: (1) MMP seed search and (2) clustering and stitching of all the
  seeds that were aligned to the genome (allowing for only one insertion or
  deletion) using local scoring scheme.
+* [[/Users/chl/Documents/Papers/ramos-2014-reach-python-racket.pdf][ramos-2014-reach-python-racket]] - Reaching python from racket
+ :PROPERTIES:
+ :Custom_ID: ramos-2014-reach-python-racket
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ramos-2014-reach-python-racket.pdf
+ :END:
+ Via [[https://racket-news.com/2019/09/racket-news-issue-15.html][Racket News #15]].
+* [[/Users/chl/Documents/Papers/koster-2016-rust-bio.pdf][koster-2016-rust-bio]] - Rust-bio: a fast and safe bioinformatics library
+ :PROPERTIES:
+ :Custom_ID: koster-2016-rust-bio
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/koster-2016-rust-bio.pdf
+ :END:
+ https://rust-bio.github.io

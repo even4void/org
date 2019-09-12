@@ -1041,3 +1041,12 @@ https://getgrav.org/blog/macos-mojave-apache-multiple-php-versions
 ** Online regex tester
 [2019-09-11 Wed 15:24]
 https://www.regexplanet.com/
+** IPython theming
+[2019-09-12 Thu 09:26]
+https://blog.henryhhammond.com/theming-ipython/
+** Hugo + Pygments—How to change highlighting theme?
+[2019-09-12 Thu 09:37]
+https://stackoverflow.com/questions/38821339/hugo-pygments-how-to-change-highlighting-theme
+** IPython customization
+[2019-09-12 Thu 09:45]
+https://stackoverflow.com/questions/14129278/how-do-i-customize-text-color-in-ipython
