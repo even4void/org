@@ -597,3 +597,19 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/koster-2016-rust-bio.pdf
  :END:
  https://rust-bio.github.io
+* [[/Users/chl/Documents/Papers/gunawardena-2014-model.pdf][gunawardena-2014-model]] - Models in biology: 'accurate descriptions of our pathetic thinking'
+ :PROPERTIES:
+ :Custom_ID: gunawardena-2014-model
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gunawardena-2014-model.pdf
+ :END:
+ Emphasizes the role of forward modeling, especially with regard to causality.
+
+ #+BEGIN_QUOTE
+ Mathematical models come in a variety of flavors, depending on whether the state of a system is measured in discrete units (‘off’ and ‘on’), in continuous concentrations or as probability distributions and whether time and space are themselves treated discretely or continuously.
+ #+END_QUOTE
+* [[/Users/chl/Documents/Papers/ghuloum-2006-increm-approac.pdf][ghuloum-2006-increm-approac]] - An incremental approach to compiler construction
+ :PROPERTIES:
+ :Custom_ID: ghuloum-2006-increm-approac
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ghuloum-2006-increm-approac.pdf
+ :END:
+ Found by following Thorsten Ball's progress (on Twitter) on his approach to build a [[https://github.com/mrnugget/scheme_x86][Scheme compiler]] from scratch.
