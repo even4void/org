@@ -55,23 +55,23 @@
   Together with SRA format (see below), this is the default format for DNA reads. Quality control on the reads can be performed using, e.g., =sickle=, which basically allows to filter reads with low quality (e.g., PHRED score[fn::The PHRED score is defined as $Q=-10\log_{10}(p)$ where where $p$ is the probability that the corresponding base call is incorrect. A score of 10 means a probability of 1/10 (hence, 90% accuracy for base calling), while a score of 30 means a probability of 1/1000.] < 35):
 
   #+BEGIN_SRC sh
-$ sickle se -f SRR391535.fastq -t sanger -o trimmed_SRR391535.fastq -q 35 -l 45
-#+END_SRC
+  $ sickle se -f SRR391535.fastq -t sanger -o trimmed_SRR391535.fastq -q 35 -l 45
+  #+END_SRC
 
   This is often one of the very first pre-processing step when working with a batch of DNA reads.
 
 - SRA :: Sequence Read Archives, from NCBI. Can be converted to Fasta using =fastq-dump=:
 
   #+BEGIN_SRC sh
-$ fastq-dump --gzip file.sra
-#+END_SRC
+  $ fastq-dump --gzip file.sra
+  #+END_SRC
 
   As an alternative, =samtools= can be used to generate a BAM file:
 
   #+BEGIN_SRC sh
-$ sam-dump SRR6960207.sra \
-    | samtools view -bS - > alignments/SRR6960207.bam
-#+END_SRC
+  $ sam-dump SRR6960207.sra \
+      | samtools view -bS - > alignments/SRR6960207.bam
+  #+END_SRC
 
 - SAM (BAM) :: Composed of a header (=@= lines) and alignments of the sequence against a reference genome
   BAM files are compressed version of SAM files, and you will need the =samtools= to display them on screen.
@@ -92,7 +92,7 @@ $ sam-dump SRR6960207.sra \
   A typical workflow consists in calling =mpileup= via =samtools= or =bcftools= (which now integrate the pileup option). The =mpileup= command automatically scans every position supported by an aligned read, computes all the possible genotypes supported by these reads, and then computes the probability that each of these genotypes is truly present in our sample.
 
   #+BEGIN_SRC sh
-$ bcftools mpileup -f NC_008253.fna reads_aligned.sorted.bam -o sim_variants.bcf
-#+END_SRC
+  $ bcftools mpileup -f NC_008253.fna reads_aligned.sorted.bam -o sim_variants.bcf
+  #+END_SRC
 
   The =vcflib= tools allow to further manipulate VCF files.
