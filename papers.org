@@ -613,3 +613,9 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ghuloum-2006-increm-approac.pdf
  :END:
  Found by following Thorsten Ball's progress (on Twitter) on his approach to build a [[https://github.com/mrnugget/scheme_x86][Scheme compiler]] from scratch.
+* [[/Users/chl/Documents/Papers/yendrek-2012-bench-scien.pdf][yendrek-2012-bench-scien]] - The bench scientist's guide to statistical analysis of rna-seq data
+ :PROPERTIES:
+ :Custom_ID: yendrek-2012-bench-scien
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/yendrek-2012-bench-scien.pdf
+ :END:
+ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][conesa-2016-survey-best]] for more up to date material and technologies.

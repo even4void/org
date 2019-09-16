@@ -1,6 +1,7 @@
 #+TITLE:        RNA-Seq Workflow
+#+LANGUAGE:     en
 #+STARTUP:      align fold noindent hideblocks
-#+OPTIONS:      H:3 num:nil toc:2 ':t *:t \n:nil ::t f:t |:t
+#+OPTIONS:      H:3 num:nil toc:2 ':t *:t ::t f:t |:t -:t
 #+OPTIONS:      author:nil creator:nil html-postamble:nil tasks:nil
 
 * Typical workflow for NGS data
@@ -38,19 +39,25 @@
 - Fasta :: Nucleotide or aa, with a description line (the symbol =>= followed by the sequence /identifier/ and other (optional) information, also called /comment/)
 
 
-- Fastq :: Like Fasta file (header = =@= followed by sequence ID) but with the corresponding quality scores on a separate line (after the =+= sign); quality value ranges from 0x21 (!, lowest) to 0x7e (~, highest). Like Fasta files, they can be compressed using =gzip=.
+- Fastq :: Like Fasta file (header = =@= followed by sequence ID) but with the corresponding quality scores on a separate line (after the =+= sign); quality value ranges from 0x21 (!, lowest) to 0x7e (~, highest). Like Fasta files, they can be compressed using =gzip=. Together with SRA format (see below), this is the default format for DNA reads. Quality control on the reads can be performed using, e.g., =sickle=, which basically allows to filter reads with low quality (e.g., PHRED score < 35):
 
+#+BEGIN_SRC sh
+$ sickle se -f SRR391535.fastq -t sanger -o trimmed_SRR391535.fastq -q 35 -l 45
+#+END_SRC
+
+This is often one of the very first pre-processing step when working with a batch of DNA reads.
 
 - SRA :: Sequence Read Archives, from NCBI. Can be converted to Fasta using =fastq-dump=:
 
-#+BEGIN_SRC bash
+#+BEGIN_SRC sh
 $ fastq-dump --gzip file.sra
 #+END_SRC
 
-As an alternative, samtools can be used to generate a BAM file:
+As an alternative, =samtools= can be used to generate a BAM file:
 
-#+BEGIN_SRC bash
-$ sam-dump SRR6960207.sra | samtools view -bS - > alignments/SRR6960207.bam
+#+BEGIN_SRC sh
+$ sam-dump SRR6960207.sra \
+    | samtools view -bS - > alignments/SRR6960207.bam
 #+END_SRC
 
 - SAM (BAM) :: Composed of a header (=@= lines) and alignments of the sequence against a reference genome. BAM files are compressed version of SAM files.
@@ -61,10 +68,10 @@ $ sam-dump SRR6960207.sra | samtools view -bS - > alignments/SRR6960207.bam
 
 - VCF :: Variant Call Format (See [[http://www.1000genomes.org][1000 Genomes Project]])
 
-A typical workflow consists in calling mpileup via samtools or bcftools (which now integrate the pileup option). The mpileup command automatically scans every position supported by an aligned read, computes all the possible genotypes supported by these reads, and then computes the probability that each of these genotypes is truly present in our sample.
+A typical workflow consists in calling =mpileup= via =samtools= or =bcftools= (which now integrate the pileup option). The =mpileup= command automatically scans every position supported by an aligned read, computes all the possible genotypes supported by these reads, and then computes the probability that each of these genotypes is truly present in our sample.
 
-#+BEGIN_SRC bash
+#+BEGIN_SRC sh
 $ bcftools mpileup -f NC_008253.fna reads_aligned.sorted.bam -o sim_variants.bcf
 #+END_SRC
 
-The vcflib tools allow to further manipulate VCF files.
+The =vcflib= tools allow to further manipulate VCF files.

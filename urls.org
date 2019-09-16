@@ -1050,3 +1050,6 @@ https://stackoverflow.com/questions/38821339/hugo-pygments-how-to-change-highlig
 ** IPython customization
 [2019-09-12 Thu 09:45]
 https://stackoverflow.com/questions/14129278/how-do-i-customize-text-color-in-ipython
+** Org-mode Tutorial / Cheat Sheet
+[2019-09-16 Mon 14:09]
+https://emacsclub.github.io/html/org_tutorial.html
