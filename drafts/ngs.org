@@ -1,8 +1,14 @@
 #+TITLE:        RNA-Seq Workflow
 #+LANGUAGE:     en
-#+STARTUP:      align fold noindent hideblocks
+#+STARTUP:      align fold noindent hideblocks fnlocal
 #+OPTIONS:      H:3 num:nil toc:2 ':t *:t ::t f:t |:t -:t
-#+OPTIONS:      author:nil creator:nil html-postamble:nil tasks:nil
+#+OPTIONS:      author:nil creator:nil tasks:nil
+
+* TODO [2/4]
+- [X] "How many reads map onto exons, introns and intergenic regions" on [[https://www.biostars.org/p/131734/][Biostars]]
+- [ ] [[http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.htm][Calling variants with freebayes]]
+- [ ] https://github.com/CBC-UCONN/Variant-Calling-with-Samtools
+- [X] [[https://is.gd/q5umF6][RPKM, FPKM and TPM, clearly explained]]
 
 * Typical workflow for NGS data
 
@@ -15,84 +21,99 @@
 5. Identification of genomic variants (SNPs, small insertions and deletions)
 6. Gene quantification (i.e., statistics on count data)
 
+Some reviews: @conesa-2016-survey-best; @yendrek-2012-bench-scien; and for the state of the art, see the Bioconductor project, @orkorpelainen-2015-rna.
+
 ** Tools
 
+Mostly open-source and macOS-compatible software:
+
 - [[https://github.com/ucdavis-bioinformatics/sickle][sickle]], for QC of reads
+- [[http://cole-trapnell-lab.github.io/cufflinks/][cufflinks]], part of the Tuxedo toolsuite (Bowtie + TopHat + cufflinks)
+- [[https://broadinstitute.github.io/picard/][Picard]], to manipulate HTS files
 - [[http://bowtie-bio.sourceforge.net/bowtie2/index.shtml][Bowtie2]], or [[https://ccb.jhu.edu/software/tophat/index.shtml][TopHat2]] which relies on Bowtie, now [[https://ccb.jhu.edu/software/hisat2/index.shtml][HISAT2]] (3) : Fasta -> SAM
+- [[https://pachterlab.github.io/kallisto/][kallisto]] (faster)
 - [[http://www.htslib.org/download/][SAMtools]] (4+5)
 - [[https://www.htslib.org/doc/bcftools.html][BCFtools]] (not to be confounded with [[https://bedtools.readthedocs.io/en/latest/][bedtools]])
 - [[https://github.com/vcflib/vcflib][vcflib]], to manipulate VCF files
+- bedtools [[https://bedtools.readthedocs.io/en/latest/content/tools/multicov.html][multicov]], featureCounts ([[http://subread.sourceforge.net][subread]]), [[https://htseq.readthedocs.io/en/release_0.11.1/][HTSeq]]
 
-*** TODO [0/4]
-- [ ] [[http://cole-trapnell-lab.github.io/cufflinks/][cufflinks]], part of the Tuxedo toolsuite (Bowtie + TopHat + cufflinks)
-- [ ] [[https://broadinstitute.github.io/picard/][Picard]], to manipulate HTS files
-- [ ] "How many reads map onto exons, introns and intergenic regions" on [[https://www.biostars.org/p/131734/][Biostars]]
-- [ ] [[http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.htm][Calling variants with freebayes]]
-- [ ] https://github.com/CBC-UCONN/Variant-Calling-with-Samtools
-- [ ] https://bioinformatics.uconn.edu/reference-based-rna-seq-data-analysis/ (Galaxy)
-- [ ] https://gitlab.com/cbc-uconn/prokaryote_rnaseq
-- [ ] https://gitlab.com/cbc-uconn/model_marine_rnaseq_and_functional_annotation_uconn/blob/master/README.md
+Also available in Galaxy.
 
 ** Tutorials
 
 - Workflows: https://is.gd/eKFGC2 + https://is.gd/In1Zcn
 - [[https://osca.bioconductor.org][Orchestrating Single-Cell Analysis with Bioconductor]]
+- https://bioinformatics.uconn.edu/reference-based-rna-seq-data-analysis/ (Galaxy)
+- https://gitlab.com/cbc-uconn/prokaryote_rnaseq
+- https://gitlab.com/cbc-uconn/model_marine_rnaseq_and_functional_annotation_uconn/blob/master/README.md
 
 ** File Formats
 
-- Fasta :: Nucleotide or aa, with a description line (the symbol =>= followed by the sequence /identifier/ and other (optional) information, also called /comment/)
-  Extension is usually =.fasta=, =.fa=, or =.faa= (amino acid) and =.fna= (nucleotides).
+Fasta files contain nucleotide or aa, with a description line (the symbol =>= followed by the sequence /identifier/ and other (optional) information, also called /comment/). File extension is usually =.fasta=, =.fa=, or =.faa= (amino acid) and =.fna= (nucleotides).
 
-- Fastq :: Like Fasta file (header = =@= followed by sequence ID) but with the corresponding quality scores on a separate line (after the =+= sign)
-  Quality value ranges from 0x21 (!, lowest) to 0x7e (~, highest). Like Fasta files, they can be compressed using =gzip=. Extension is usually =.fastq= or =.fq=. Beware of differing rules (offset coding and PHRED scores) between Sanger and Illumina Fastq format. Here is an example of the first of the four lines available in each entry of a Fastq file:
+Fastq files are like Fasta file (header = =@= followed by sequence ID) but with the corresponding quality scores on a separate line (after the =+= sign). Quality value ranges from 0x21 (!, lowest) to 0x7e (~, highest). Like Fasta files, they can be compressed using =gzip=. Extension is usually =.fastq= or =.fq=. Beware of differing rules (offset coding and PHRED scores) between Sanger and Illumina Fastq format. Here is an example of the first of the four lines available in each entry of a Fastq file:
 
-  #+BEGIN_EXAMPLE Fastq file
-  @K00188:208:HFLNGBBXX:3:1101:1428:1508 2:N:0:CTTGTA
-  #+END_EXAMPLE
+#+BEGIN_EXAMPLE Fastq file
+@K00188:208:HFLNGBBXX:3:1101:1428:1508 2:N:0:CTTGTA
+#+END_EXAMPLE
 
-  The interesting part in the above example are =2:N:0:CTTGTA=, which stands for the member of a pair (1 or 2, for paired-end or mate-pair reads only), the filter status (Y if filtered, N otherwise), the control bits (0 when none, otherwise if they are on), and the index sequence or barcode (=CTTGTA=).
+The interesting part in the above example are =2:N:0:CTTGTA=, which stands for the member of a pair (1 or 2, for paired-end or mate-pair reads only), the filter status (Y if filtered, N otherwise), the control bits (0 when none, otherwise if they are on), and the index sequence or barcode (=CTTGTA=).
 
-  Together with SRA format (see below), this is the default format for DNA reads. Quality control on the reads can be performed using, e.g., =sickle=, which basically allows to filter reads with low quality (e.g., PHRED score[fn::The PHRED score is defined as $Q=-10\log_{10}(p)$ where where $p$ is the probability that the corresponding base call is incorrect. A score of 10 means a probability of 1/10 (hence, 90% accuracy for base calling), while a score of 30 means a probability of 1/1000.] < 35):
+Together with SRA format (see below), this is the default format for DNA reads. Quality control on the reads can be performed using, e.g., =sickle=, which basically allows to filter reads with low quality, e.g., PHRED score < 35:[fn:phred]
 
-  #+BEGIN_SRC sh
-  $ sickle se -f SRR391535.fastq -t sanger -o trimmed_SRR391535.fastq -q 35 -l 45
-  #+END_SRC
+#+BEGIN_SRC sh
+$ sickle se -f SRR391535.fastq -t sanger -o trimmed_SRR391535.fastq -q 35 -l 45
+#+END_SRC
 
-  This is often one of the very first pre-processing step when working with a batch of DNA reads.
+This is often one of the very first pre-processing step when working with a batch of DNA reads.
 
-- SRA :: Sequence Read Archives, from NCBI. Can be converted to Fasta using =fastq-dump=:
+The SRA format is used for Sequence Read Archives, from NCBI. They can be converted to Fastq using =fastq-dump=:
 
-  #+BEGIN_SRC sh
-  $ fastq-dump --gzip file.sra
-  #+END_SRC
+#+BEGIN_SRC sh
+$ fastq-dump --gzip file.sra
+#+END_SRC
 
-  As an alternative, =samtools= can be used to generate a BAM file:
+As an alternative, =samtools= can be used to generate a BAM file:
 
-  #+BEGIN_SRC sh
-  $ sam-dump SRR6960207.sra \
-      | samtools view -bS - > alignments/SRR6960207.bam
-  #+END_SRC
+#+BEGIN_SRC sh
+$ sam-dump SRR6960207.sra \
+    | samtools view -bS - > alignments/SRR6960207.bam
+#+END_SRC
 
-- SAM (BAM) :: Composed of a header (=@= lines) and alignments of the sequence against a reference genome
-  BAM files are compressed version of SAM files, and you will need the =samtools= to display them on screen.
+SAM (BAM) files are composed of a header (=@= lines) and alignments of the sequence against a reference genome. BAM files are compressed version of SAM files, and you will need the =samtools= to display them on screen.
 
-  #+CAPTION: Sequence Alignment/Map Format Specification
-  #+NAME: fig:sam-format
-  [[~/_img/fig-sam-format.png]]
+#+CAPTION: Sequence Alignment/Map Format Specification
+#+NAME: fig:sam-format
+[[./_img/fig-sam-format.png]]
 
-- VCF :: Variant Call(ing) Format
-  (See [[http://www.1000genomes.org][1000 Genomes Project]])
+VCF stands for Variant Call(ing) Format (See [[http://www.1000genomes.org][1000 Genomes Project]]). The format is standardized, like for SAM files:
 
-  Format:
+#+BEGIN_EXAMPLE Header of a VCF file
+#CHROM, POS, ID, REF, ALT, QUAL, FILTER, INFO.
+#+END_EXAMPLE
 
-  #+BEGIN_EXAMPLE Header of a VCF file
-  #CHROM, POS, ID, REF, ALT, QUAL, FILTER, INFO.
-  #+END_EXAMPLE
+A typical workflow consists in calling =mpileup= via =samtools= or =bcftools= (which now integrate the pileup option). The =mpileup= command automatically scans every position supported by an aligned read, computes all the possible genotypes supported by these reads, and then computes the probability that each of these genotypes is truly present in our sample.
 
-  A typical workflow consists in calling =mpileup= via =samtools= or =bcftools= (which now integrate the pileup option). The =mpileup= command automatically scans every position supported by an aligned read, computes all the possible genotypes supported by these reads, and then computes the probability that each of these genotypes is truly present in our sample.
+#+BEGIN_SRC sh
+$ bcftools mpileup -f NC_008253.fna reads_aligned.sorted.bam -o sim_variants.bcf
+#+END_SRC
 
-  #+BEGIN_SRC sh
-  $ bcftools mpileup -f NC_008253.fna reads_aligned.sorted.bam -o sim_variants.bcf
-  #+END_SRC
+The =vcflib= tools allow to further manipulate VCF files (comparison, format conversion, /filtering/ and subsetting, annotation, samples, ordering, variant representation, genotype manipulation, interpretation and classification of variants)
 
-  The =vcflib= tools allow to further manipulate VCF files.
+Finally, GFF (or GFF3) files, which stand for General Feature Format or Gene Finding Format, are used to provide a list of the features (CDS, gene, etc.) available on a given sequence. They have 9 mandatory TAB separated columns. GFF3 have extension =.gff3=. A typical file is shown below:
+
+#+BEGIN_EXAMPLE GFF3 format
+##gff-version 3
+ctg123 . mRNA           1300 9000 . + . ID=mrna0001;Name=sonichedgehog
+ctg123 . exon           1300 1500 . + . ID=exon00001;Parent=mrna0001
+ctg123 . exon           1050 1500 . + . ID=exon00002;Parent=mrna0001
+ctg123 . exon           3000 3902 . + . ID=exon00003;Parent=mrna0001
+ctg123 . exon           5000 5500 . + . ID=exon00004;Parent=mrna0001
+ctg123 . exon           7000 9000 . + . ID=exon00005;Parent=mrna0001
+#+END_EXAMPLE
+
+Be careful with how entites are identified. In the above case, the id is called =ID=, but Galaxy expects =gene_id=, for example.
+
+# ----------------------------------------------------------------------------
+
+[fn:phred] The PHRED score is defined as $Q=-10\log_{10}(p)$ where where $p$ is the probability that the corresponding base call is incorrect. A score of 10 means a probability of 1/10 (hence, 90% accuracy for base calling), while a score of 30 means a probability of 1/1000.

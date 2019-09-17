@@ -1053,3 +1053,15 @@ https://stackoverflow.com/questions/14129278/how-do-i-customize-text-color-in-ip
 ** Org-mode Tutorial / Cheat Sheet
 [2019-09-16 Mon 14:09]
 https://emacsclub.github.io/html/org_tutorial.html
+** Org-Mode Is One of the Most Reasonable Markup Languages to Use for Text
+[2019-09-16 Mon 17:44]
+https://karl-voit.at/2017/09/23/orgmode-as-markup-only/
+** Beautiful websites using Emacs's org mode [closed]
+[2019-09-16 Mon 17:50]
+https://stackoverflow.com/questions/12052013/beautiful-websites-using-emacss-org-mode
+** Using org to Blog with Jekyll
+[2019-09-17 Tue 14:09]
+https://orgmode.org/worg/org-tutorials/org-jekyll.html
+** Academic Markdown and Citations
+[2019-09-17 Tue 16:19]
+https://v4.chriskrycho.com/2015/academic-markdown-and-citations.html
