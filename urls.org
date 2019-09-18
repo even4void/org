@@ -1065,3 +1065,6 @@ https://orgmode.org/worg/org-tutorials/org-jekyll.html
 ** Academic Markdown and Citations
 [2019-09-17 Tue 16:19]
 https://v4.chriskrycho.com/2015/academic-markdown-and-citations.html
+** Removing and purging files from git history
+[2019-09-18 Wed 07:47]
+https://blog.ostermiller.org/git-remove-from-history

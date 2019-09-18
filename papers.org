@@ -164,7 +164,7 @@ Some additional pointers:
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bray-2016-near.pdf
  :END:
  Easy to setup (=brew install kallisto=) and time+memory-efficient on fungi data.
- Works on Galaxy server too.
+ Works on Galaxy server too. Beware that it returns different counts than BEDtools multicov. See why: [[https://www.rna-seqblog.com/rpkm-fpkm-and-tpm-clearly-explained/][RPKM, FPKM and TPM, clearly explained]].
 
 * [[/Users/chl/Documents/Papers/rochester-2013-clojur-data.pdf][rochester-2013-clojur-data]] - Clojure Data Analysis Cookbook
  :PROPERTIES:

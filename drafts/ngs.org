@@ -4,11 +4,15 @@
 #+OPTIONS:      H:3 num:nil toc:2 ':t *:t ::t f:t |:t -:t
 #+OPTIONS:      author:nil creator:nil tasks:nil
 
-* TODO [2/4]
+* TODO [2/8]
 - [X] "How many reads map onto exons, introns and intergenic regions" on [[https://www.biostars.org/p/131734/][Biostars]]
 - [ ] [[http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.htm][Calling variants with freebayes]]
 - [ ] https://github.com/CBC-UCONN/Variant-Calling-with-Samtools
 - [X] [[https://is.gd/q5umF6][RPKM, FPKM and TPM, clearly explained]]
+- [ ] [[https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html][RNA-seq workflow: gene-level exploratory analysis and differential expression]]
+- [ ] [[http://lab.loman.net/2012/10/31/a-simple-guide-to-variant-calling-with-bwa-samtools-varscan2/][A simple guide to variant calling with BWA, samtools, VarScan2]]
+- [ ] [[https://digibio.blogspot.com/2017/11/rna-seq-analysis-hisat2-featurecounts.html][RNA seq analysis - FeatureCounts and DESeq2 workflow]]
+- [ ] [[https://4va.github.io/biodatasci/r-rnaseq-airway.html][Count-Based Differential Expression Analysis of RNA-seq Data]]
 
 * Typical workflow for NGS data
 
@@ -21,7 +25,7 @@
 5. Identification of genomic variants (SNPs, small insertions and deletions)
 6. Gene quantification (i.e., statistics on count data)
 
-Some reviews: @conesa-2016-survey-best; @yendrek-2012-bench-scien; and for the state of the art, see the Bioconductor project, @orkorpelainen-2015-rna.
+Some reviews: @conesa-2016-survey-best; @yendrek-2012-bench-scien; and for the state of the art, see the Bioconductor project, or @korpelainen-2015-rna.
 
 ** Tools
 
@@ -114,6 +118,8 @@ ctg123 . exon           7000 9000 . + . ID=exon00005;Parent=mrna0001
 
 Be careful with how entites are identified. In the above case, the id is called =ID=, but Galaxy expects =gene_id=, for example.
 
-# ----------------------------------------------------------------------------
+
+** References
+
 
 [fn:phred] The PHRED score is defined as $Q=-10\log_{10}(p)$ where where $p$ is the probability that the corresponding base call is incorrect. A score of 10 means a probability of 1/10 (hence, 90% accuracy for base calling), while a score of 30 means a probability of 1/1000.
