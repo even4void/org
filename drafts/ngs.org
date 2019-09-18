@@ -1,10 +1,9 @@
 #+TITLE:        RNA-Seq Workflow
-#+LANGUAGE:     en
+#+LANG:         en
 #+STARTUP:      align fold noindent hideblocks fnlocal
 #+OPTIONS:      H:3 num:nil toc:2 ':t *:t ::t f:t |:t -:t
-#+OPTIONS:      author:nil creator:nil tasks:nil
 
-* TODO [2/8]
+* TODO [2/8] :noexport:
 - [X] "How many reads map onto exons, introns and intergenic regions" on [[https://www.biostars.org/p/131734/][Biostars]]
 - [ ] [[http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.htm][Calling variants with freebayes]]
 - [ ] https://github.com/CBC-UCONN/Variant-Calling-with-Samtools
@@ -55,6 +54,14 @@ Also available in Galaxy.
 
 Fasta files contain nucleotide or aa, with a description line (the symbol =>= followed by the sequence /identifier/ and other (optional) information, also called /comment/). File extension is usually =.fasta=, =.fa=, or =.faa= (amino acid) and =.fna= (nucleotides).
 
+Most bioinformatics software allow to read Fasta file in an efficient manner. Don't try to write your own reader unless you know what you are doing. E.g., in Python, you can use the [[https://biopython.org][BioPython]] module:
+
+#+BEGIN_SRC python
+from Bio import SeqIO
+
+records = list(SeqIO.parse("sordariales-all.fa", 'fasta'))
+#+END_SRC
+
 Fastq files are like Fasta file (header = =@= followed by sequence ID) but with the corresponding quality scores on a separate line (after the =+= sign). Quality value ranges from 0x21 (!, lowest) to 0x7e (~, highest). Like Fasta files, they can be compressed using =gzip=. Extension is usually =.fastq= or =.fq=. Beware of differing rules (offset coding and PHRED scores) between Sanger and Illumina Fastq format. Here is an example of the first of the four lines available in each entry of a Fastq file:
 
 #+BEGIN_EXAMPLE Fastq file
@@ -65,7 +72,7 @@ The interesting part in the above example are =2:N:0:CTTGTA=, which stands for t
 
 Together with SRA format (see below), this is the default format for DNA reads. Quality control on the reads can be performed using, e.g., =sickle=, which basically allows to filter reads with low quality, e.g., PHRED score < 35:[fn:phred]
 
-#+BEGIN_SRC sh
+#+BEGIN_SRC bash
 $ sickle se -f SRR391535.fastq -t sanger -o trimmed_SRR391535.fastq -q 35 -l 45
 #+END_SRC
 
@@ -73,13 +80,13 @@ This is often one of the very first pre-processing step when working with a batc
 
 The SRA format is used for Sequence Read Archives, from NCBI. They can be converted to Fastq using =fastq-dump=:
 
-#+BEGIN_SRC sh
+#+BEGIN_SRC bash
 $ fastq-dump --gzip file.sra
 #+END_SRC
 
 As an alternative, =samtools= can be used to generate a BAM file:
 
-#+BEGIN_SRC sh
+#+BEGIN_SRC bash
 $ sam-dump SRR6960207.sra \
     | samtools view -bS - > alignments/SRR6960207.bam
 #+END_SRC
@@ -98,7 +105,7 @@ VCF stands for Variant Call(ing) Format (See [[http://www.1000genomes.org][1000 
 
 A typical workflow consists in calling =mpileup= via =samtools= or =bcftools= (which now integrate the pileup option). The =mpileup= command automatically scans every position supported by an aligned read, computes all the possible genotypes supported by these reads, and then computes the probability that each of these genotypes is truly present in our sample.
 
-#+BEGIN_SRC sh
+#+BEGIN_SRC bash
 $ bcftools mpileup -f NC_008253.fna reads_aligned.sorted.bam -o sim_variants.bcf
 #+END_SRC
 

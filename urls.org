@@ -1068,3 +1068,6 @@ https://v4.chriskrycho.com/2015/academic-markdown-and-citations.html
 ** Removing and purging files from git history
 [2019-09-18 Wed 07:47]
 https://blog.ostermiller.org/git-remove-from-history
+** A curated list of awesome Scheme libraries and resources
+[2019-09-18 Wed 15:05]
+https://github.com/schemedoc/awesome-scheme
