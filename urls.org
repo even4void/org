@@ -1071,3 +1071,12 @@ https://blog.ostermiller.org/git-remove-from-history
 ** A curated list of awesome Scheme libraries and resources
 [2019-09-18 Wed 15:05]
 https://github.com/schemedoc/awesome-scheme
+** An alternative exome sequencing pipeline using bowtie2 and samtools
+[2019-09-18 Wed 21:40]
+http://www.cureffi.org/2012/09/07/an-alternative-exome-sequencing-pipeline-using-bowtie2-and-samtools/
+** Nice use of mdfind
+[2019-09-22 Sun 20:13]
+https://superuser.com/questions/226566/how-do-i-find-a-file-by-filename-in-mac-osx-terminal
+** A Practical Introduction to NMF (nonnegative matrix factorization)
+[2019-09-23 Mon 10:56]
+https://mlexplained.com/2017/12/28/a-practical-introduction-to-nmf-nonnegative-matrix-factorization/

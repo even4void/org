@@ -40,7 +40,7 @@ Mostly open-source and macOS-compatible software:
 - [[https://github.com/vcflib/vcflib][vcflib]], to manipulate VCF files
 - bedtools [[https://bedtools.readthedocs.io/en/latest/content/tools/multicov.html][multicov]], featureCounts ([[http://subread.sourceforge.net][subread]]), [[https://htseq.readthedocs.io/en/release_0.11.1/][HTSeq]]
 
-Also available in Galaxy.
+Most tools are available in Galaxy. Another software that is widely used for RNA-Seq analysis is [[http://mev.tm4.org/][MeV]], but this a web application only [@howe-2011-rna-seq-mev].
 
 ** Tutorials
 

@@ -164,7 +164,7 @@ Some additional pointers:
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bray-2016-near.pdf
  :END:
  Easy to setup (=brew install kallisto=) and time+memory-efficient on fungi data.
- Works on Galaxy server too. Beware that it returns different counts than BEDtools multicov. See why: [[https://www.rna-seqblog.com/rpkm-fpkm-and-tpm-clearly-explained/][RPKM, FPKM and TPM, clearly explained]].
+ Works on Galaxy server too. Beware that it returns different counts (TPM) than BEDtools [[https://bedtools.readthedocs.io/en/latest/content/tools/multicov.html][multicov]]. See why: [[https://www.rna-seqblog.com/rpkm-fpkm-and-tpm-clearly-explained/][RPKM, FPKM and TPM, clearly explained]] and [[http://www.cureffi.org/2013/09/12/counts-vs-fpkms-in-rna-seq/][Counts vs. FPKMs in RNA-seq]]. See also this [[http://seqanswers.com/forums/showthread.php?t=24903][thread on SEQanswers]].
 
 * [[/Users/chl/Documents/Papers/rochester-2013-clojur-data.pdf][rochester-2013-clojur-data]] - Clojure Data Analysis Cookbook
  :PROPERTIES:
@@ -619,3 +619,9 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/yendrek-2012-bench-scien.pdf
  :END:
  Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][conesa-2016-survey-best]] for more up to date material and technologies.
+* [[/Users/chl/Documents/Papers/howe-2011-rna-seq-mev.pdf][howe-2011-rna-seq-mev]] - Rna-seq analysis in mev
+ :PROPERTIES:
+ :Custom_ID: howe-2011-rna-seq-mev
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/howe-2011-rna-seq-mev.pdf
+ :END:
+ Latest standalone app dates back to 2011 and is Java 6 only. The Shell script included is useful for microarrays only.
