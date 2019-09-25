@@ -125,8 +125,34 @@ ctg123 . exon           7000 9000 . + . ID=exon00005;Parent=mrna0001
 
 Be careful with how entites are identified. In the above case, the id is called =ID=, but Galaxy expects =gene_id=, for example.
 
+* Applications
+** Kallisto
+Whether we use Galaxy or the command-line, we basically need two kind of files: a reference genome (Fasta) and Fastq or sra reads files. If reads are in SRA format, they need to be converted to Fastq format using the =sratoolkit=. For gene quantification using DESeq2, we will further need annotation as a GFF or GFF3 file.
 
-** References
+Kallisto will produce counts and TPM values in a TSV file (as well as an HDF5 file). Here is an example of Kallisto output:
+
+#+BEGIN_EXAMPLE Kallisto abundance data
+target_id       length  eff_length      est_counts      tpm
+jgi|Podans1|100005|CE99640_2373 1994    1895    1407    51.6298
+jgi|Podans1|100060|CE99695_1372 3146    3047    504     11.502
+jgi|Podans1|10015|CE9650_8706   1582    1483    1156    54.2042
+#+END_EXAMPLE
+
+Note that transcript ID (taken from the reference genome, =>jgi|Podans1|100005|CE99640_2373=) should correspond to gene ID in the annotation file, which actually reads:
+
+#+BEGIN_EXAMPLE Annotation file
+##gff-version 3
+-%<-----
+38763:scaffold_3	prediction	gene	644807	646915	0	+	.	ID=gene_5098;Name=jgi.p|Podans1|99641;portal_id=Podans1;product_name=Cytochrome P450;proteinId=99641;transcriptId=100005
+38764:scaffold_3	prediction	mRNA	644807	646915	.	+	.	ID=mRNA_5098;Name=jgi.p|Podans1|99641;Parent=gene_5098;proteinId=99641;track=FilteredModels1;transcriptId=100005
+#+END_EXAMPLE
+
+In this case, this means that the transcript ID 100005 is found in unexpected place, at least when using Galaxy. An R [[file:src/rewrite_gff3.r][script]] can be used to process the original GFF file and update ID so that they match each other.
+
+https://rstudio-pubs-static.s3.amazonaws.com/218660_7cbe1343ac434dbab59924a80ac2e815.html
+https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#input-data
+
+* References
 
 
 [fn:phred] The PHRED score is defined as $Q=-10\log_{10}(p)$ where where $p$ is the probability that the corresponding base call is incorrect. A score of 10 means a probability of 1/10 (hence, 90% accuracy for base calling), while a score of 30 means a probability of 1/1000.

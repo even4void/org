@@ -1080,3 +1080,12 @@ https://superuser.com/questions/226566/how-do-i-find-a-file-by-filename-in-mac-o
 ** A Practical Introduction to NMF (nonnegative matrix factorization)
 [2019-09-23 Mon 10:56]
 https://mlexplained.com/2017/12/28/a-practical-introduction-to-nmf-nonnegative-matrix-factorization/
+** The Golden Rule of Bioinformatics
+[2019-09-23 Mon 14:40]
+https://davetang.org/muse/2019/01/23/the-golden-rule-of-bioinformatics/
+** Making a heatmap in R with the pheatmap package
+[2019-09-23 Mon 14:53]
+https://davetang.org/muse/2018/05/15/making-a-heatmap-in-r-with-the-pheatmap-package/
+** Tutorial RNA-Seq using R
+[2019-09-25 Wed 10:27]
+https://www.r-bloggers.com/deseq2-course-work/
