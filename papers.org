@@ -625,3 +625,10 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/howe-2011-rna-seq-mev.pdf
  :END:
  Latest standalone app dates back to 2011 and is Java 6 only. The Shell script included is useful for microarrays only.
+* [[/Users/chl/Documents/Papers/love-2014-moder-rna-deseq.pdf][love-2014-moder-rna-deseq]] - Moderated estimation of fold change and dispersion for rna-seq data with deseq2
+ :PROPERTIES:
+ :Custom_ID: love-2014-moder-rna-deseq
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/love-2014-moder-rna-deseq.pdf
+ :END:
+ NGS analyses (RNA, CHIP, etc.) need to account for within-group variance estimates when analysing lot of genes, hence the need to pool information across genes. The DESeq approach detects and corrects dispersion estimates that are too low through modeling of the dependence of the dispersion on the average expression strength over all samples. In addition, it provides a novel method for gene ranking and the visualization of stable estimates of effect sizes. The [[https://bioconductor.org/packages/release/bioc/html/DESeq2.html][DESeq2]] package further includes shrunken fold changes (with SE).
+ See also: [[file:~/Documents/Papers/ignatiadis-2016-data.pdf][ignatiadis-2016-data]], [[file:~/Documents/papers/zhu-2019-heavy.pdf][zhu-2019-heavy]], [[file:~/Documents/Papers/stephens-2017-false.pdf][stephens-2017-false]].

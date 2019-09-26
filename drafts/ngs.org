@@ -149,8 +149,24 @@ Note that transcript ID (taken from the reference genome, =>jgi|Podans1|100005|C
 
 In this case, this means that the transcript ID 100005 is found in unexpected place, at least when using Galaxy. An R [[file:src/rewrite_gff3.r][script]] can be used to process the original GFF file and update ID so that they match each other.
 
-https://rstudio-pubs-static.s3.amazonaws.com/218660_7cbe1343ac434dbab59924a80ac2e815.html
-https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#input-data
+** DESeq2
+The definitive reference is @love-2014-moder-rna-deseq. Basically, NGS analyses (RNA, CHIP, etc.) need to account for within-group variance estimates when analysing lot of genes, hence the need to pool information across genes. The DESeq approach detects and corrects dispersion estimates that are too low through modeling of the dependence of the dispersion on the average expression strength over all samples. In addition, it provides a novel method for gene ranking and the visualization of stable estimates of effect sizes. The [[https://bioconductor.org/packages/release/bioc/html/DESeq2.html][DESeq2]] package further includes shrunken fold changes (with SE).
+
+We need two data frames before running the statistical analysis: a table of counts (or TPM values from =kallisto= or =salmon=), and a table describing the experimental condition. Note that each run must come as triplicate. Here are the basic steps to import counts data and setup the design matrix:
+
+#+BEGIN_SRC R
+library("DESeq2")
+library("tximport")
+
+datadir <- dir(".", pattern = "out.\\.*")
+files <- file.path(datadir, "abundance.h5")
+names(files) <- gsub("out.", "", datadir)
+samples <- data.frame(run = names(files), condition = c("4h", "48h", "24h"))
+
+txi <- tximport(files, "kallisto", txOut = TRUE)
+
+dds <- DESeqDataSetFromTximport(txi, colData = samples, design = ~ condition)
+#+END_SRC
 
 * References
 

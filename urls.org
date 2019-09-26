@@ -1089,3 +1089,6 @@ https://davetang.org/muse/2018/05/15/making-a-heatmap-in-r-with-the-pheatmap-pac
 ** Tutorial RNA-Seq using R
 [2019-09-25 Wed 10:27]
 https://www.r-bloggers.com/deseq2-course-work/
+** RNA-seq Differential Analysis with R (oldie)
+[2019-09-26 Thu 11:49]
+https://rstudio-pubs-static.s3.amazonaws.com/218660_7cbe1343ac434dbab59924a80ac2e815.html#ma_plot
