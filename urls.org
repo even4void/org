@@ -1095,3 +1095,6 @@ https://rstudio-pubs-static.s3.amazonaws.com/218660_7cbe1343ac434dbab59924a80ac2
 ** Moving to zsh
 [2019-09-28 Sat 17:16]
 https://scriptingosx.com/2019/06/moving-to-zsh/
+** macOS Setup Guide
+[2019-09-30 Mon 13:05]
+https://sourabhbajaj.com/mac-setup/

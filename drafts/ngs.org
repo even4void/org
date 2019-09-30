@@ -97,6 +97,26 @@ dds <- DESeqDataSetFromTximport(txi, colData = samples, design = ~ condition)
 
 This workflow usually takes a longer time but TopHat has the advantage of being aware of splice junction (in fact, this is what TopHat really adds to bowtie).
 
+** Statistical analysis of count data
+
+*** Sanity checks
+
+Two preprocessing stages are worth considering before dwelling into gene quantification /per se/: quality control and normalization. Quality control amounts to controlling the number of genes having non-zero counts in all samples. If this number is very low, it is likely that something went wrong, at least with some of the samples. Based on the DESeq table of counts, we can proceed as follows in R:
+
+#+BEGIN_SRC R
+gene_counts <- counts(dds)
+counts_per_sample <- apply(gene_counts, 1, function(x) all(x) > 0)
+cat(sum(counts_per_sample), "out of", nrow(dds), "\n")
+#+END_SRC
+
+Normalization refers to the comparison of size factors defined as the median of ratios of each sample to a virtual reference sample (median of each gene’s values across samples). Those ratios are expected to match the ratios of the library sizes and be roughly equal to one. Dividing each column of the count table by the corresponding size factor yields normalized count values, which can be scaled to give a counts per million interpretation.
+
+The MA plot shows the average vs mean–difference of log fold change, centered around 0, and it is expected to observe higher variability of log ratios at lower counts.
+
+*** Sample clustering
+
+A PCA or simple heatmap of the results of hierarchical clustering of the sample data can be used to assess overall similarity between samples. We expect triplicate to cluster together while samples from very different experimental conditions are expected to be far away one from the other. Of note, it is useful to apply a regularized log–transformation on the raw counts to avoid the impact of few highly variale genes, hence considering a roughly equal contribution from all genes.
+
 * Appendix
 ** Tutorials
 
