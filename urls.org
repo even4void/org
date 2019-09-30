@@ -1092,3 +1092,6 @@ https://www.r-bloggers.com/deseq2-course-work/
 ** RNA-seq Differential Analysis with R (oldie)
 [2019-09-26 Thu 11:49]
 https://rstudio-pubs-static.s3.amazonaws.com/218660_7cbe1343ac434dbab59924a80ac2e815.html#ma_plot
+** Moving to zsh
+[2019-09-28 Sat 17:16]
+https://scriptingosx.com/2019/06/moving-to-zsh/

@@ -1,4 +1,4 @@
-#+TITLE:        RNA-Seq Workflow
+#+TITLE:        RNA-Seq Workshop
 #+LANG:         en
 #+STARTUP:      align fold noindent hideblocks fnlocal
 #+OPTIONS:      H:3 num:nil toc:2 ':t *:t ::t f:t |:t -:t
@@ -13,9 +13,10 @@
 - [ ] [[https://digibio.blogspot.com/2017/11/rna-seq-analysis-hisat2-featurecounts.html][RNA seq analysis - FeatureCounts and DESeq2 workflow]]
 - [ ] [[https://4va.github.io/biodatasci/r-rnaseq-airway.html][Count-Based Differential Expression Analysis of RNA-seq Data]]
 
-* Typical workflow for NGS data
-
+* Introduction
 ** Processing steps
+
+Overall, RNA-Seq analysis consists in a series of extraction, preprocessing and statistical analysis:
 
 1. DNA extraction from a sample
 2. DNA sequencing
@@ -24,24 +25,79 @@
 5. Identification of genomic variants (SNPs, small insertions and deletions)
 6. Gene quantification (i.e., statistics on count data)
 
-Some reviews: @conesa-2016-survey-best; @yendrek-2012-bench-scien; and for the state of the art, see the Bioconductor project, or @korpelainen-2015-rna.
+Some reviews of best practices are available [@conesa-2016-survey-best; @yendrek-2012-bench-scien]. Regarding statistical software, the state of the art is described on the [[https://www.bioconductor.org][Bioconductor]] project [@korpelainen-2015-rna; @anders-2013-count-rna].
+
+#+CAPTION: Typical workflow (From @anders-2013-count-rna)
+#+ATTR_LaTeX: scale=0.75
+#+LABEL: fig:count-rna
+[[./_img/fig-count-rna.png]]
 
 ** Tools
 
-Mostly open-source and macOS-compatible software:
+There are many, many tools available on the internet. They are mostly open-source and macOS-compatible. To name a few:
 
 - [[https://github.com/ucdavis-bioinformatics/sickle][sickle]], for QC of reads
 - [[http://cole-trapnell-lab.github.io/cufflinks/][cufflinks]], part of the Tuxedo toolsuite (Bowtie + TopHat + cufflinks)
 - [[https://broadinstitute.github.io/picard/][Picard]], to manipulate HTS files
-- [[http://bowtie-bio.sourceforge.net/bowtie2/index.shtml][Bowtie2]], or [[https://ccb.jhu.edu/software/tophat/index.shtml][TopHat2]] which relies on Bowtie, now [[https://ccb.jhu.edu/software/hisat2/index.shtml][HISAT2]] (3) : Fasta -> SAM
-- [[https://pachterlab.github.io/kallisto/][kallisto]] (faster)
+- [[http://bowtie-bio.sourceforge.net/bowtie2/index.shtml][Bowtie2]], or [[https://ccb.jhu.edu/software/tophat/index.shtml][TopHat2]] which relies on Bowtie, now [[https://ccb.jhu.edu/software/hisat2/index.shtml][HISAT2]] (3), for alignments
+- [[https://pachterlab.github.io/kallisto/][kallisto]] (faster), for fast alignment
 - [[http://www.htslib.org/download/][SAMtools]] (4+5)
 - [[https://www.htslib.org/doc/bcftools.html][BCFtools]] (not to be confounded with [[https://bedtools.readthedocs.io/en/latest/][bedtools]])
 - [[https://github.com/vcflib/vcflib][vcflib]], to manipulate VCF files
 - bedtools [[https://bedtools.readthedocs.io/en/latest/content/tools/multicov.html][multicov]], featureCounts ([[http://subread.sourceforge.net][subread]]), [[https://htseq.readthedocs.io/en/release_0.11.1/][HTSeq]]
 
-Most tools are available in Galaxy. Another software that is widely used for RNA-Seq analysis is [[http://mev.tm4.org/][MeV]], but this a web application only [@howe-2011-rna-seq-mev].
+Most tools are also available in Galaxy (e.g., [[https://usegalaxy.eu][Galaxy Europe]], or as "shed tools" on a dedicated Galaxy server). Another software that is widely used for RNA-Seq analysis is [[http://mev.tm4.org/][MeV]], but this a web application only, see @howe-2011-rna-seq-mev.
 
+* Applications
+** Kallisto + DESeq2
+
+Whether we use Galaxy or the command-line, we basically need two kind of files: a reference genome (Fasta) and Fastq or sra reads files. If reads are in SRA format, they need to be converted to Fastq format using the =sratoolkit=. For gene quantification using =DESeq2=, we will further need annotation as a GFF or GFF3 file.
+
+Kallisto will produce counts and TPM values in a TSV file (as well as an HDF5 file). Here is an example of Kallisto output:
+
+#+BEGIN_EXAMPLE Kallisto abundance data
+target_id       length  eff_length      est_counts      tpm
+jgi|Podans1|100005|CE99640_2373 1994    1895    1407    51.6298
+jgi|Podans1|100060|CE99695_1372 3146    3047    504     11.502
+jgi|Podans1|10015|CE9650_8706   1582    1483    1156    54.2042
+#+END_EXAMPLE
+
+Note that transcript ID (taken from the reference genome, =>jgi|Podans1|100005|CE99640_2373=) should correspond to gene ID in the annotation file, which actually reads:
+
+#+BEGIN_EXAMPLE Annotation file
+##gff-version 3
+-%<-----
+38763:scaffold_3	prediction	gene	644807	646915	0	+	.	ID=gene_5098;Name=jgi.p|Podans1|99641;portal_id=Podans1;product_name=Cytochrome P450;proteinId=99641;transcriptId=100005
+38764:scaffold_3	prediction	mRNA	644807	646915	.	+	.	ID=mRNA_5098;Name=jgi.p|Podans1|99641;Parent=gene_5098;proteinId=99641;track=FilteredModels1;transcriptId=100005
+#+END_EXAMPLE
+
+In this case, this means that the transcript ID 100005 is found in unexpected place: when using Galaxy, you will have to update the corresponding ID.[fn:fixid]
+
+Basically, NGS analyses (RNA, CHIP, etc.) need to account for within-group variance estimates when analysing lot of genes, hence the need to pool information across genes. The DESeq approach detects and corrects dispersion estimates that are too low through modeling of the dependence of the dispersion on the average expression strength over all samples. In addition, it provides a novel method for gene ranking and the visualization of stable estimates of effect sizes [@love-2014-moder-rna-deseq]. The [[https://bioconductor.org/packages/release/bioc/html/DESeq2.html][DESeq2]] package further includes shrunken fold changes (with SE).
+
+We need two data frames before running the statistical analysis: a table of counts (or TPM values from =kallisto= or =salmon=), and a table describing the experimental condition. Note that each run must come as triplicate. Here are the basic steps to import counts data and setup the design matrix:
+
+#+BEGIN_SRC R
+library("DESeq2")
+library("tximport")
+
+datadir <- dir(".", pattern = "out.\\.*")
+files <- file.path(datadir, "abundance.h5")
+names(files) <- gsub("out.", "", datadir)
+samples <- data.frame(run = names(files), condition = c("4h", "48h", "24h"))
+
+txi <- tximport(files, "kallisto", txOut = TRUE)
+
+dds <- DESeqDataSetFromTximport(txi, colData = samples, design = ~ condition)
+#+END_SRC
+
+[fn:fixid] An R [[file:src/rewrite_gff3.r][script]] can be used to process the original GFF file and update ID so that they match each other.
+
+** TopHat + HTSeq (or FeatureCounts)
+
+This workflow usually takes a longer time but TopHat has the advantage of being aware of splice junction (in fact, this is what TopHat really adds to bowtie).
+
+* Appendix
 ** Tutorials
 
 - Workflows: https://is.gd/eKFGC2 + https://is.gd/In1Zcn
@@ -49,7 +105,6 @@ Most tools are available in Galaxy. Another software that is widely used for RNA
 - https://bioinformatics.uconn.edu/reference-based-rna-seq-data-analysis/ (Galaxy)
 - https://gitlab.com/cbc-uconn/prokaryote_rnaseq
 - https://gitlab.com/cbc-uconn/model_marine_rnaseq_and_functional_annotation_uconn/blob/master/README.md
-
 ** File Formats
 
 Fasta files contain nucleotide or aa, with a description line (the symbol =>= followed by the sequence /identifier/ and other (optional) information, also called /comment/). File extension is usually =.fasta=, =.fa=, or =.faa= (amino acid) and =.fna= (nucleotides).
@@ -94,6 +149,7 @@ $ sam-dump SRR6960207.sra \
 SAM (BAM) files are composed of a header (=@= lines) and alignments of the sequence against a reference genome. BAM files are compressed version of SAM files, and you will need the =samtools= to display them on screen.
 
 #+CAPTION: Sequence Alignment/Map Format Specification
+#+ATTR_LaTeX: scale=0.75
 #+NAME: fig:sam-format
 [[./_img/fig-sam-format.png]]
 
@@ -125,50 +181,6 @@ ctg123 . exon           7000 9000 . + . ID=exon00005;Parent=mrna0001
 
 Be careful with how entites are identified. In the above case, the id is called =ID=, but Galaxy expects =gene_id=, for example.
 
-* Applications
-** Kallisto
-Whether we use Galaxy or the command-line, we basically need two kind of files: a reference genome (Fasta) and Fastq or sra reads files. If reads are in SRA format, they need to be converted to Fastq format using the =sratoolkit=. For gene quantification using DESeq2, we will further need annotation as a GFF or GFF3 file.
-
-Kallisto will produce counts and TPM values in a TSV file (as well as an HDF5 file). Here is an example of Kallisto output:
-
-#+BEGIN_EXAMPLE Kallisto abundance data
-target_id       length  eff_length      est_counts      tpm
-jgi|Podans1|100005|CE99640_2373 1994    1895    1407    51.6298
-jgi|Podans1|100060|CE99695_1372 3146    3047    504     11.502
-jgi|Podans1|10015|CE9650_8706   1582    1483    1156    54.2042
-#+END_EXAMPLE
-
-Note that transcript ID (taken from the reference genome, =>jgi|Podans1|100005|CE99640_2373=) should correspond to gene ID in the annotation file, which actually reads:
-
-#+BEGIN_EXAMPLE Annotation file
-##gff-version 3
--%<-----
-38763:scaffold_3	prediction	gene	644807	646915	0	+	.	ID=gene_5098;Name=jgi.p|Podans1|99641;portal_id=Podans1;product_name=Cytochrome P450;proteinId=99641;transcriptId=100005
-38764:scaffold_3	prediction	mRNA	644807	646915	.	+	.	ID=mRNA_5098;Name=jgi.p|Podans1|99641;Parent=gene_5098;proteinId=99641;track=FilteredModels1;transcriptId=100005
-#+END_EXAMPLE
-
-In this case, this means that the transcript ID 100005 is found in unexpected place, at least when using Galaxy. An R [[file:src/rewrite_gff3.r][script]] can be used to process the original GFF file and update ID so that they match each other.
-
-** DESeq2
-The definitive reference is @love-2014-moder-rna-deseq. Basically, NGS analyses (RNA, CHIP, etc.) need to account for within-group variance estimates when analysing lot of genes, hence the need to pool information across genes. The DESeq approach detects and corrects dispersion estimates that are too low through modeling of the dependence of the dispersion on the average expression strength over all samples. In addition, it provides a novel method for gene ranking and the visualization of stable estimates of effect sizes. The [[https://bioconductor.org/packages/release/bioc/html/DESeq2.html][DESeq2]] package further includes shrunken fold changes (with SE).
-
-We need two data frames before running the statistical analysis: a table of counts (or TPM values from =kallisto= or =salmon=), and a table describing the experimental condition. Note that each run must come as triplicate. Here are the basic steps to import counts data and setup the design matrix:
-
-#+BEGIN_SRC R
-library("DESeq2")
-library("tximport")
-
-datadir <- dir(".", pattern = "out.\\.*")
-files <- file.path(datadir, "abundance.h5")
-names(files) <- gsub("out.", "", datadir)
-samples <- data.frame(run = names(files), condition = c("4h", "48h", "24h"))
-
-txi <- tximport(files, "kallisto", txOut = TRUE)
-
-dds <- DESeqDataSetFromTximport(txi, colData = samples, design = ~ condition)
-#+END_SRC
+[fn:phred] The PHRED score is defined as $Q=-10\log_{10}(p)$ where where $p$ is the probability that the corresponding base call is incorrect. A score of 10 means a probability of 1/10 (hence, 90% accuracy for base calling), while a score of 30 means a probability of 1/1000.
 
 * References
-
-
-[fn:phred] The PHRED score is defined as $Q=-10\log_{10}(p)$ where where $p$ is the probability that the corresponding base call is incorrect. A score of 10 means a probability of 1/10 (hence, 90% accuracy for base calling), while a score of 30 means a probability of 1/1000.

@@ -632,3 +632,10 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :END:
  NGS analyses (RNA, CHIP, etc.) need to account for within-group variance estimates when analysing lot of genes, hence the need to pool information across genes. The DESeq approach detects and corrects dispersion estimates that are too low through modeling of the dependence of the dispersion on the average expression strength over all samples. In addition, it provides a novel method for gene ranking and the visualization of stable estimates of effect sizes. The [[https://bioconductor.org/packages/release/bioc/html/DESeq2.html][DESeq2]] package further includes shrunken fold changes (with SE).
  See also: [[file:~/Documents/Papers/ignatiadis-2016-data.pdf][ignatiadis-2016-data]], [[file:~/Documents/papers/zhu-2019-heavy.pdf][zhu-2019-heavy]], [[file:~/Documents/Papers/stephens-2017-false.pdf][stephens-2017-false]].
+* [[/Users/chl/Documents/Papers/anders-2013-count-rna.pdf][anders-2013-count-rna]] - Count-based differential expression analysis of rna sequencing data using r and bioconductor
+ :PROPERTIES:
+ :Custom_ID: anders-2013-count-rna
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/anders-2013-count-rna.pdf
+ :END:
+ De facto standard pipeline for RNA-Seq analysis using =TopHat= + =HTSeq= + =DESeq2=. See also [[file:~/Documents/Papers/kim-2019-graph-hisat.pdf][kim-2019-graph-hisat]] for the successor of =TopHat2=.
+ See also [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][conesa-2016-survey-best]] for a review of current best pratices and alternative workflows.
