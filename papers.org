@@ -639,3 +639,4 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :END:
  De facto standard pipeline for RNA-Seq analysis using =TopHat= + =HTSeq= + =DESeq2=. See also [[file:~/Documents/Papers/kim-2019-graph-hisat.pdf][kim-2019-graph-hisat]] for the successor of =TopHat2=.
  See also [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][conesa-2016-survey-best]] for a review of current best pratices and alternative workflows.
+ Note that =DESeq2= and =edgeR= use different defaults: Regarding /normalization/, edgeR uses the trimmed mean of M values while DESeq relies on a virtual reference sample; dispersion estimates are based on a trended mean in edgeR, whereas DESeq takes the maximum of the individual dispersion estimates and the dispersion-mean trend.

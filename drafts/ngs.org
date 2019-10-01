@@ -49,7 +49,8 @@ There are many, many tools available on the internet. They are mostly open-sourc
 Most tools are also available in Galaxy (e.g., [[https://usegalaxy.eu][Galaxy Europe]], or as "shed tools" on a dedicated Galaxy server). Another software that is widely used for RNA-Seq analysis is [[http://mev.tm4.org/][MeV]], but this a web application only, see @howe-2011-rna-seq-mev.
 
 * Applications
-** Kallisto + DESeq2
+** Preprocessing (read mapping)
+*** Kallisto + DESeq2
 
 Whether we use Galaxy or the command-line, we basically need two kind of files: a reference genome (Fasta) and Fastq or sra reads files. If reads are in SRA format, they need to be converted to Fastq format using the =sratoolkit=. For gene quantification using =DESeq2=, we will further need annotation as a GFF or GFF3 file.
 
@@ -77,45 +78,77 @@ Basically, NGS analyses (RNA, CHIP, etc.) need to account for within-group varia
 
 We need two data frames before running the statistical analysis: a table of counts (or TPM values from =kallisto= or =salmon=), and a table describing the experimental condition. Note that each run must come as triplicate. Here are the basic steps to import counts data and setup the design matrix:
 
-#+BEGIN_SRC R
+#+BEGIN_SRC r
 library("DESeq2")
 library("tximport")
-
 datadir <- dir(".", pattern = "out.\\.*")
 files <- file.path(datadir, "abundance.h5")
 names(files) <- gsub("out.", "", datadir)
 samples <- data.frame(run = names(files), condition = c("4h", "48h", "24h"))
-
 txi <- tximport(files, "kallisto", txOut = TRUE)
-
 dds <- DESeqDataSetFromTximport(txi, colData = samples, design = ~ condition)
 #+END_SRC
 
 [fn:fixid] An R [[file:src/rewrite_gff3.r][script]] can be used to process the original GFF file and update ID so that they match each other.
 
-** TopHat + HTSeq (or FeatureCounts)
+*** TopHat + HTSeq (or FeatureCounts)
 
 This workflow usually takes a longer time but TopHat has the advantage of being aware of splice junction (in fact, this is what TopHat really adds to bowtie).
 
 ** Statistical analysis of count data
-
-*** Sanity checks
+*** Sanity checking
 
 Two preprocessing stages are worth considering before dwelling into gene quantification /per se/: quality control and normalization. Quality control amounts to controlling the number of genes having non-zero counts in all samples. If this number is very low, it is likely that something went wrong, at least with some of the samples. Based on the DESeq table of counts, we can proceed as follows in R:
 
-#+BEGIN_SRC R
+#+BEGIN_SRC r
 gene_counts <- counts(dds)
 counts_per_sample <- apply(gene_counts, 1, function(x) all(x) > 0)
 cat(sum(counts_per_sample), "out of", nrow(dds), "\n")
 #+END_SRC
 
-Normalization refers to the comparison of size factors defined as the median of ratios of each sample to a virtual reference sample (median of each gene’s values across samples). Those ratios are expected to match the ratios of the library sizes and be roughly equal to one. Dividing each column of the count table by the corresponding size factor yields normalized count values, which can be scaled to give a counts per million interpretation.
+Normalization refers to the comparison of size factors defined as the median of ratios of each sample to a virtual reference sample (median of each gene’s values across samples). Those ratios are expected to match the ratios of the library sizes and be roughly equal to one. Dividing each column of the count table by the corresponding size factor yields normalized count values, which can be scaled to give a counts per million interpretation. Note that this is different from the approach taken by =edgeR=, which considers the trimmed mean of M values.
 
 The MA plot shows the average vs mean–difference of log fold change, centered around 0, and it is expected to observe higher variability of log ratios at lower counts.
 
 *** Sample clustering
 
-A PCA or simple heatmap of the results of hierarchical clustering of the sample data can be used to assess overall similarity between samples. We expect triplicate to cluster together while samples from very different experimental conditions are expected to be far away one from the other. Of note, it is useful to apply a regularized log–transformation on the raw counts to avoid the impact of few highly variale genes, hence considering a roughly equal contribution from all genes.
+A PCA or simple heatmap of the results of hierarchical clustering of the sample data can be used to assess overall similarity between samples. We expect triplicate to cluster together while samples from very different experimental conditions are expected to be far away one from the other. Of note, it is useful to apply a regularized log–transformation on the raw counts to avoid the impact of few highly variale genes, hence considering a roughly equal contribution from all genes. For genes with high counts, this mostly resembles a log2 transformation, whereas for genes with low counts, this shrunkens values toward gene's average across amples. It is important to note that this is only for exploratory analysis; for statistical modeling, raw counts should be preferred since DESeq will handle appropriate correction automagically.
+
+#+BEGIN_SRC r
+rld <- rlogTransformation(dds, blind = TRUE)
+dd <- as.matrix(dist(t(assay(rld))))
+library(pheatmap)
+pheatmap(dd)
+plotPCA(rld, intgroup = c("condition"))
+#+END_SRC
+
+*** Differential analysis
+
+The statistical model underlying differential analysis of count data is a Negative Binomial, which contrary to the standard Poisson model allows to account for overdispersion (i.e., variance greater than mean). Variance is modeled as $\mathbb{V}[NB(\mu, \alpha)]=\mu+\alpha\mu^2$, and the very first step in differential analysis is to get an estimate of the dispersion parameter for each gene (independent of the condition, which is sensible since there is usually a low number of replicates). Notice that for genes with very low read counts, the large amount of Poisson noise prevent those genes from exhibiting any DE at all, and DESeq performs independent filtering automatically to discard such low signals and to increase statistical power for the remaining gene candidates. The asymptotic dispersion for highly expressed genes can be seen as a measurement of biological variability in the sense of a squared coefficient of variation: a dispersion value of 0.01 means that the gene’s expression tends to differ by typically $\sqrt{0.01}=10\%$ between samples of the same treatment group. The R procedure =estimateDispersions= allows to compute (and visualize) dispersion estimates as a function of mean normalized counts.
+
+The statistical test used to assess whether genes are differentially expressed between samples is a Wald test (=nbinomWaldTest=), with FDR correction for multiple testing. Benjamini–Hochberg's adjusted p-values can then be ranked to highlight the top genes. Usually, the statistical threshold is set at 0.1, and not 0.05 as in standard null hypothesis statistical testing.
+
+#+BEGIN_SRC r
+ddstab <- estimateDispersions(estimateSizeFactors(dds))
+r <- results(nbinomWaldTest(ddstab), pAdjustMethod = "BH")
+table(r$padj < 0.1)
+## r@metadata$filterThreshold
+#+END_SRC
+
+The inspection of the distribution of (unadjusted) p-values is helpful to verify that the null distribution for the test statistic is viable. If the histogram does not exhibit an uniform pattern (e.g., U or hill shape), then it is likely that the $\mathcal{N}(0,1)$ null distribution is not appropriate.[fn:fdrtool]
+
+Once the model is fitted, it is possible to extract the top genes using, e.g.:
+
+#+BEGIN_SRC r
+plotMA(r)
+names(dds)[which(r$padj < 0.1)]
+#+END_SRC
+
+[fn:fdrtool] See the [[http://cran.fhcrc.org/web/packages/fdrtool/index.html][fdrtool]] and [[http://cran.fhcrc.org/web/packages/locfdr/index.html][locfdr]] packages for further strategies about controlling global or local FDR, and empirical null modeling allowing to estimate the variance of the null model (expected to be 1, per the $\mathcal{N}(0,1)$ hypothesis).
+
+*** Gene ontology and annotation
+
+[[http://bioconductor.org/packages/release/bioc/html/genefilter.html][genefilter]] or [[https://david.ncifcrf.gov][DAVID]]
 
 * Appendix
 ** Tutorials
