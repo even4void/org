@@ -1,4 +1,7 @@
 * Inbox
+** More on pipe operators in R
+[2019-10-02 Wed 13:42]
+https://www.datacamp.com/community/tutorials/pipe-r-tutorial
 * Archives
 (NOTE: in decreasing order, i.e. newer comes last)
 ** Check this new series of posts from Stata blog

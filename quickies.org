@@ -721,7 +721,6 @@ $ sudo pkgutil --forget org.r-project.R.Leopard.fw.pkga
 https://stackoverflow.com/q/41135630
 On the use of the =#:when= clause in =for/list= form.
 * TeX
-
 ** Using texdoc mathptmx show up a complete description of current font
 selection scheme for use with common PostScript fonts. Example of a nice title typesetted in Times New Roman (h/t tex.stackexchange.com, 8768) :
 
@@ -839,3 +838,6 @@ Then, we can use things like
 #+END_EXAMPLE
 
 h/t http://tex.stackexchange.com/questions/12774
+* Org
+** To insert a non-breaking space
+See this [[https://stackoverflow.com/q/9311538][SO thread]], or just use =C-x 8 SPC=.

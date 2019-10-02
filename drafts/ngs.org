@@ -3,20 +3,16 @@
 #+STARTUP:      align fold noindent hideblocks fnlocal
 #+OPTIONS:      H:3 num:nil toc:2 ':t *:t ::t f:t |:t -:t
 
-* TODO [2/8] :noexport:
+* TODO [2/4]                                                                   :noexport:
 - [X] "How many reads map onto exons, introns and intergenic regions" on [[https://www.biostars.org/p/131734/][Biostars]]
 - [ ] [[http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.htm][Calling variants with freebayes]]
 - [ ] https://github.com/CBC-UCONN/Variant-Calling-with-Samtools
 - [X] [[https://is.gd/q5umF6][RPKM, FPKM and TPM, clearly explained]]
-- [ ] [[https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html][RNA-seq workflow: gene-level exploratory analysis and differential expression]]
-- [ ] [[http://lab.loman.net/2012/10/31/a-simple-guide-to-variant-calling-with-bwa-samtools-varscan2/][A simple guide to variant calling with BWA, samtools, VarScan2]]
-- [ ] [[https://digibio.blogspot.com/2017/11/rna-seq-analysis-hisat2-featurecounts.html][RNA seq analysis - FeatureCounts and DESeq2 workflow]]
-- [ ] [[https://4va.github.io/biodatasci/r-rnaseq-airway.html][Count-Based Differential Expression Analysis of RNA-seq Data]]
+
 
 * Introduction
-** Processing steps
 
-Overall, RNA-Seq analysis consists in a series of extraction, preprocessing and statistical analysis:
+Overall, RNA-Seq analysis consists in a series of extraction, preprocessing and statistical analysis (Fig. [[fig:count-rna]]):
 
 1. DNA extraction from a sample
 2. DNA sequencing
@@ -25,28 +21,14 @@ Overall, RNA-Seq analysis consists in a series of extraction, preprocessing and 
 5. Identification of genomic variants (SNPs, small insertions and deletions)
 6. Gene quantification (i.e., statistics on count data)
 
+This tutorial starts from step 3, and we will skip step 5, which is covered in another tutorial (using =mpileup= and [[https://dkoboldt.github.io/varscan/][varscan]]). A typical workflow will take 4-6 hours, most of this time being specnt in file generation and exploratory data analysis. Indeed, whether data processing is done in Galaxy or at the command-line, a lot of the above steps require converting file from one format to the other, sorting data according to genomic coordiantes and creating index file to ease the processing of the data file. For instance, an SRA file has to be converted to a Fastq file and a pseudo-alignment BAM file needs to be indexed: while the later will run under 3 minutes, the former takes a much longer time. Likewise, soritng a SAM or BAM file may be quite time consuming for large files.
+
 Some reviews of best practices are available [@conesa-2016-survey-best; @yendrek-2012-bench-scien]. Regarding statistical software, the state of the art is described on the [[https://www.bioconductor.org][Bioconductor]] project [@korpelainen-2015-rna; @anders-2013-count-rna].
 
 #+CAPTION: Typical workflow (From @anders-2013-count-rna)
-#+ATTR_LaTeX: scale=0.75
+#+ATTR_LATEX: scale=0.75
 #+LABEL: fig:count-rna
 [[./_img/fig-count-rna.png]]
-
-** Tools
-
-There are many, many tools available on the internet. They are mostly open-source and macOS-compatible. To name a few:
-
-- [[https://github.com/ucdavis-bioinformatics/sickle][sickle]], for QC of reads
-- [[http://cole-trapnell-lab.github.io/cufflinks/][cufflinks]], part of the Tuxedo toolsuite (Bowtie + TopHat + cufflinks)
-- [[https://broadinstitute.github.io/picard/][Picard]], to manipulate HTS files
-- [[http://bowtie-bio.sourceforge.net/bowtie2/index.shtml][Bowtie2]], or [[https://ccb.jhu.edu/software/tophat/index.shtml][TopHat2]] which relies on Bowtie, now [[https://ccb.jhu.edu/software/hisat2/index.shtml][HISAT2]] (3), for alignments
-- [[https://pachterlab.github.io/kallisto/][kallisto]] (faster), for fast alignment
-- [[http://www.htslib.org/download/][SAMtools]] (4+5)
-- [[https://www.htslib.org/doc/bcftools.html][BCFtools]] (not to be confounded with [[https://bedtools.readthedocs.io/en/latest/][bedtools]])
-- [[https://github.com/vcflib/vcflib][vcflib]], to manipulate VCF files
-- bedtools [[https://bedtools.readthedocs.io/en/latest/content/tools/multicov.html][multicov]], featureCounts ([[http://subread.sourceforge.net][subread]]), [[https://htseq.readthedocs.io/en/release_0.11.1/][HTSeq]]
-
-Most tools are also available in Galaxy (e.g., [[https://usegalaxy.eu][Galaxy Europe]], or as "shed tools" on a dedicated Galaxy server). Another software that is widely used for RNA-Seq analysis is [[http://mev.tm4.org/][MeV]], but this a web application only, see @howe-2011-rna-seq-mev.
 
 * Applications
 ** Preprocessing (read mapping)
@@ -148,16 +130,9 @@ names(dds)[which(r$padj < 0.1)]
 
 *** Gene ontology and annotation
 
-[[http://bioconductor.org/packages/release/bioc/html/genefilter.html][genefilter]] or [[https://david.ncifcrf.gov][DAVID]]
+This is beyond the scope of this tutorial, but the [[http://bioconductor.org/packages/release/bioc/html/genefilter.html][genefilter]] package can be used to send queries about specific gene sets, or it is possible to use the online [[https://david.ncifcrf.gov][DAVID]] package.
 
 * Appendix
-** Tutorials
-
-- Workflows: https://is.gd/eKFGC2 + https://is.gd/In1Zcn
-- [[https://osca.bioconductor.org][Orchestrating Single-Cell Analysis with Bioconductor]]
-- https://bioinformatics.uconn.edu/reference-based-rna-seq-data-analysis/ (Galaxy)
-- https://gitlab.com/cbc-uconn/prokaryote_rnaseq
-- https://gitlab.com/cbc-uconn/model_marine_rnaseq_and_functional_annotation_uconn/blob/master/README.md
 ** File Formats
 
 Fasta files contain nucleotide or aa, with a description line (the symbol =>= followed by the sequence /identifier/ and other (optional) information, also called /comment/). File extension is usually =.fasta=, =.fa=, or =.faa= (amino acid) and =.fna= (nucleotides).
@@ -202,7 +177,7 @@ $ sam-dump SRR6960207.sra \
 SAM (BAM) files are composed of a header (=@= lines) and alignments of the sequence against a reference genome. BAM files are compressed version of SAM files, and you will need the =samtools= to display them on screen.
 
 #+CAPTION: Sequence Alignment/Map Format Specification
-#+ATTR_LaTeX: scale=0.75
+#+ATTR_LATEX: scale=0.75
 #+NAME: fig:sam-format
 [[./_img/fig-sam-format.png]]
 
@@ -235,5 +210,30 @@ ctg123 . exon           7000 9000 . + . ID=exon00005;Parent=mrna0001
 Be careful with how entites are identified. In the above case, the id is called =ID=, but Galaxy expects =gene_id=, for example.
 
 [fn:phred] The PHRED score is defined as $Q=-10\log_{10}(p)$ where where $p$ is the probability that the corresponding base call is incorrect. A score of 10 means a probability of 1/10 (hence, 90% accuracy for base calling), while a score of 30 means a probability of 1/1000.
+
+** Tools
+
+There are many, many tools available on the internet. They are mostly open-source and macOS-compatible. To name a few:
+
+- [[https://github.com/ucdavis-bioinformatics/sickle][sickle]], for QC of reads
+- [[http://cole-trapnell-lab.github.io/cufflinks/][cufflinks]], part of the Tuxedo toolsuite (Bowtie + TopHat + cufflinks)
+- [[https://broadinstitute.github.io/picard/][Picard]], to manipulate HTS files
+- [[http://bowtie-bio.sourceforge.net/bowtie2/index.shtml][Bowtie2]], or [[https://ccb.jhu.edu/software/tophat/index.shtml][TopHat2]] which relies on Bowtie, now [[https://ccb.jhu.edu/software/hisat2/index.shtml][HISAT2]] (3), for alignments
+- [[https://pachterlab.github.io/kallisto/][kallisto]] (faster), for fast alignment
+- [[http://www.htslib.org/download/][SAMtools]] (4+5)
+- [[https://www.htslib.org/doc/bcftools.html][BCFtools]] (not to be confounded with [[https://bedtools.readthedocs.io/en/latest/][bedtools]])
+- [[https://github.com/vcflib/vcflib][vcflib]], to manipulate VCF files
+- bedtools [[https://bedtools.readthedocs.io/en/latest/content/tools/multicov.html][multicov]], featureCounts ([[http://subread.sourceforge.net][subread]]), [[https://htseq.readthedocs.io/en/release_0.11.1/][HTSeq]]
+
+Most tools are also available in Galaxy (e.g., [[https://usegalaxy.eu][Galaxy Europe]], or as "shed tools" on a dedicated Galaxy server). Another software that is widely used for RNA-Seq analysis is [[http://mev.tm4.org/][MeV]], but this a web application only, see @howe-2011-rna-seq-mev.
+
+** Tutorials
+
+- Blog posts: [[https://digibio.blogspot.com/2017/11/rna-seq-analysis-hisat2-featurecounts.html][RNA seq analysis - FeatureCounts and DESeq2 workflow]]; [[https://4va.github.io/biodatasci/r-rnaseq-airway.html][Count-Based Differential Expression Analysis of RNA-seq Data]]
+- [[https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html][RNA-seq workflow: gene-level exploratory analysis and differential expression]]
+- [[http://lab.loman.net/2012/10/31/a-simple-guide-to-variant-calling-with-bwa-samtools-varscan2/][A simple guide to variant calling with BWA, samtools, VarScan2]]
+- [[https://osca.bioconductor.org][Orchestrating Single-Cell Analysis with Bioconductor]]
+- [[https://bioinformatics.uconn.edu/reference-based-rna-seq-data-analysis/][Reference-based RNA-seq data analysis (Galaxy)]]
+- [[https://gitlab.com/cbc-uconn/prokaryote_rnaseq][Prokaryote TNA-Seq]] and [[https://gitlab.com/cbc-uconn/model_marine_rnaseq_and_functional_annotation_uconn][Functional annotation]]
 
 * References
