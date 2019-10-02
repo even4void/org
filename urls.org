@@ -1,4 +1,7 @@
 * Inbox
+** Nice tutorial on genome assembly
+[2019-10-02 Wed 14:17]
+https://homolog.us/Tutorials/book4/p2.1.html
 ** More on pipe operators in R
 [2019-10-02 Wed 13:42]
 https://www.datacamp.com/community/tutorials/pipe-r-tutorial
