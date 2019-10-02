@@ -1,31 +1,26 @@
 #+TITLE: A Primer on Number Theory using Python
-#+LANGUAGE: en
-#+OPTIONS: H:3 num:nil toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t TeX:t skip:nil d:nil tags:not-in-toc
-#+BIOBLIOGRAPHY: references
+#+LANG: en
+#+OPTIONS: H:3 num:nil toc:2 \n:nil @:t ::t |:t ^:nil -:t f:t *:t TeX:t skip:nil d:nil
 
 * Aims & scope
 
-There are numerous textbooks on Number Theory, and even number theory with Python
-
-Python 3.x will be used to write reliable and efficient algorithms. Why Python? First, it has simple syntax that should not interfere with the reading flow. Second, it has good support for integer arithmetic and it has no real problem to work with large integers since there is no explicit defined limit other than =sys.maxsize=. Note that starting with Python 2.x, it is not even necessary to add an =L= suffix to denote large integers. Using Python 3 instead of Python 2 also means that we will have to manually specify integer division using the =//= operator.
-
+There are numerous textbooks on Number Theory, and even books on applied Number Theory with Python, or Haskell, or other programming languages. The aim of this note is to familiarize with key concepts in Number Theory, and we will be using Python or Scheme to implement most of the underlying algorithms. Python 3.x is useful to write reliable and efficient algorithms, while Scheme comes with tail-optimized recursion for free. Both languages have good support for integer arithmetic and they do not have problem handling large integers since there is no explicit defined limit, e.g., other than =sys.maxsize= in Python.[fn:int]
 
 * Basic algorithms
-
 ** Greatest common divisor
 
-Finding the greatest common divisor between two integers is such a fundamental task when dealing with prime numbers and cryptography applications that it deserves its own discussion even if there are [[https://docs.python.org/3.6/library/fractions.html#fractions.gcd][standard implementation]] of the algorithm in Python.
+Finding the greatest common divisor between two integers is such a fundamental task when dealing with prime numbers and cryptography applications that it deserves its own discussion even if there are [[https://docs.python.org/3.6/library/fractions.html#fractions.gcd][standard implementation]] of the algorithm in Python. Here is a simple recursive solution, based on Euclid algorithm cite:knuth-1998-art-comput-progr-vol1, which will serve to illustrate basic control flow in Python:
 
-Here is a simple recursive solution, based on Euclid algorithm cite:knuth-1998-art-comput-progr-vol1, which will serve to illustrate basic control flow in Python:
 #+BEGIN_SRC python
 def gcd(a, b):
   if a == 0:
     return b
   return gcd(b % a, a)
 #+END_SRC
+
 As can be seen, to define a function we use the =def= keyword, provide a name to the function (here, =gcd=) followed by its expected parameters into brackets. The body of the function follows the colon on a new line. In this case, it is composed of an if-statement where we test if the reminder is zero, otherwise we call the function again with =a= replaced by =b % a= (the reminder of =b // a=). The =return= keyword is used at the end of a function to indicate what value to return. In this case, this is a recursive call to the function with updated parameters. Python is dynamically typed, meaning that we do not need to specify the type of input variable or returned value.
 
-The above function can also be rewritten as a simple λ function:
+The above function can also be rewritten as a simple lambda function:
 
 #+BEGIN_SRC python :session
 gcd = lambda a,b: a if not b else gcd(b, a % b)
@@ -42,10 +37,11 @@ gcd(27, 3)
 #+RESULTS:
 : 3
 
-
-
 ** Finding prime numbers
 
-The [[https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes][Sieve of Eratosthenes]] is a well known algorithm for finding all prime numbers up to a certain number. Here is a little implementation in Python:
+The [[https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes][Sieve of Eratosthenes]] is a well known algorithm for finding all prime numbers up to a certain number.
 
+* References
+* Footnotes
 
+[fn:int] Note that starting with Python 2.x, it is not even necessary to add an =L= suffix to denote large integers. Using Python 3 instead of Python 2 also means that we will have to manually specify integer division using the =//= operator.

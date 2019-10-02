@@ -1,4 +1,6 @@
 * Inbox
+* Archives
+(NOTE: in decreasing order, i.e. newer comes last)
 ** Check this new series of posts from Stata blog
 [2018-02-15 Thu 21:01]
 https://blog.stata.com/2018/02/15/programming-an-estimation-command-in-stata-preparing-to-write-a-plugin/
