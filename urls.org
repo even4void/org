@@ -1,4 +1,7 @@
 * Inbox
+** Automatic parallelization with @jit
+[2019-10-04 Fri 14:44]
+http://numba.pydata.org/numba-doc/latest/user/parallel.html#explicit-parallel-loops
 ** Nice tutorial on genome assembly
 [2019-10-02 Wed 14:17]
 https://homolog.us/Tutorials/book4/p2.1.html
