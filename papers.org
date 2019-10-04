@@ -640,3 +640,21 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  De facto standard pipeline for RNA-Seq analysis using =TopHat= + =HTSeq= + =DESeq2=. See also [[file:~/Documents/Papers/kim-2019-graph-hisat.pdf][kim-2019-graph-hisat]] for the successor of =TopHat2=.
  See also [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][conesa-2016-survey-best]] for a review of current best pratices and alternative workflows.
  Note that =DESeq2= and =edgeR= use different defaults: Regarding /normalization/, edgeR uses the trimmed mean of M values while DESeq relies on a virtual reference sample; dispersion estimates are based on a trended mean in edgeR, whereas DESeq takes the maximum of the individual dispersion estimates and the dispersion-mean trend.
+* [[/Users/chl/Documents/Papers/ignatiadis-2016-data.pdf][ignatiadis-2016-data]] - Data-driven hypothesis weighting increases detection power in genome-scale multiple testing
+ :PROPERTIES:
+ :Custom_ID: ignatiadis-2016-data
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ignatiadis-2016-data.pdf
+ :END:
+ Independent hypothesis weighting ([[https://www.bioconductor.org/packages/release/bioc/html/IHW.html][IHW]]): a method that assigns weights using covariates (conditionally) independent of the P-values under the null hypothesis but informative of each test’s power or prior probability of the null hypothesis.
+* [[/Users/chl/Documents/Papers/farrell-2019-math-adven.pdf][farrell-2019-math-adven]] - Math Adventures With Python
+ :PROPERTIES:
+ :Custom_ID: farrell-2019-math-adven
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/farrell-2019-math-adven.pdf
+ :END:
+ Keep this in mind for my son in case he happens to use Python at school.
+* [[/Users/chl/Documents/Papers/kim-2019-graph-hisat.pdf][kim-2019-graph-hisat]] - Graph-based genome alignment and genotyping with hisat2 and hisat-genotype
+ :PROPERTIES:
+ :Custom_ID: kim-2019-graph-hisat
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kim-2019-graph-hisat.pdf
+ :END:
+ [[https://ccb.jhu.edu/software/hisat2/index.shtml][HISAT2]] is the successor of TopHat2. What's new? HISAT2 can align both DNA and RNA sequences using a graph Ferragina Manzini index. This graph-based alignment approach enables much higher alignment sensitivity and accuracy than standard, linear reference-based alignment approaches, especially for highly polymorphic genomic regions.
