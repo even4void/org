@@ -658,3 +658,21 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kim-2019-graph-hisat.pdf
  :END:
  [[https://ccb.jhu.edu/software/hisat2/index.shtml][HISAT2]] is the successor of TopHat2. What's new? HISAT2 can align both DNA and RNA sequences using a graph Ferragina Manzini index. This graph-based alignment approach enables much higher alignment sensitivity and accuracy than standard, linear reference-based alignment approaches, especially for highly polymorphic genomic regions.
+* [[/Users/chl/Documents/Papers/castresana-2000-selec-conser.pdf][castresana-2000-selec-conser]] - Selection of conserved blocks from multiple alignments for their use in phylogenetic analysis
+ :PROPERTIES:
+ :Custom_ID: castresana-2000-selec-conser
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/castresana-2000-selec-conser.pdf
+ :END:
+ Instead of removing divergent regions in an arbitrary way, or use alternative approach that consist in assigning gap weights highly variable regions, the author proposes an algorithm (=GBlocks=) that accounts for: the degree of conservation of every position, stretches of contiguous nonconserved positions, minimum length support, removing all positions with gaps and nonconserved positions adjacent to them., as well as small block remaining after gap cleaning are also removed. The paper is quite old by now, and probably outdated.
+* [[/Users/chl/Documents/Papers/efron-1996-boots-confid.pdf][efron-1996-boots-confid]] - Bootstrap Confidence Levels For Phylogenetic Trees
+ :PROPERTIES:
+ :Custom_ID: efron-1996-boots-confid
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/efron-1996-boots-confid.pdf
+ :END:
+ One of the many applied papers on the bootstrap by Efron, based on the original work of Felsenstein (see also [[file:~/Documents/Papers/felsenstein-2004-infer-phylog.pdf][felsenstein-2004-infer-phylog]]). The aim of bootstrap resampling in phylogenetic reconstruction is to assess the confidence for each clad, based on the proportion of bootstrap trees showing that same clade. In this context, the notion of agreement refers to the topology of the trees and not to the length of its arms. The rationale underlying the bootstrap confidence values depends on a simple multinomial probability model, although a bivariate normal model could also be used (parametric bootstrap).
+* [[/Users/chl/Documents/Papers/fourment-2018-dubious-ways.pdf][fourment-2018-dubious-ways]] - 19 dubious ways to compute the marginal likelihood of a phylogenetic tree topology
+ :PROPERTIES:
+ :Custom_ID: fourment-2018-dubious-ways
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/fourment-2018-dubious-ways.pdf
+ :END:
+ The authors use the JC69 model to benchmark 19 methods for computing the marginla likelihood of a topology with respect to branch lengths. While the slowest, Generalized Stepping Stone (GSS) is the one that performs best. Gamma Laplus Importance Sampling (GLIS) is the best fast method, with performance wlose to GSS.
