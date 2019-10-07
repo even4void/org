@@ -1,4 +1,10 @@
 * Inbox
+** Lectures for Mathematics 361 (feat. Number Theory)
+[2019-10-07 Mon 10:35]
+http://people.reed.edu/~jerry/361/lectures/lec.html
+** Hidden features of Python [closed]
+[2019-10-07 Mon 10:09]
+https://stackoverflow.com/questions/101268/hidden-features-of-python
 ** Automatic parallelization with @jit
 [2019-10-04 Fri 14:44]
 http://numba.pydata.org/numba-doc/latest/user/parallel.html#explicit-parallel-loops
