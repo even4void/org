@@ -1,4 +1,16 @@
 * Inbox
+** bcbio-nextgen
+[2019-10-08 Tue 15:44]
+https://bcbio-nextgen.readthedocs.io/en/latest/contents/introduction.html
+** Suffix arrays: How to compute them fast with Python
+[2019-10-08 Tue 15:25]
+https://louisabraham.github.io/notebooks/suffix_arrays.html
+** Accurate design of in vitro experiments -- Why does it matter?
+[2019-10-08 Tue 11:46]
+https://paasp.net/accurate-design-of-in-vitro-experiments-why-does-it-matter/
+** Introduction to RNA-Seq using high-performance computing
+[2019-10-08 Tue 10:03]
+https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon/schedule/
 ** Lectures for Mathematics 361 (feat. Number Theory)
 [2019-10-07 Mon 10:35]
 http://people.reed.edu/~jerry/361/lectures/lec.html

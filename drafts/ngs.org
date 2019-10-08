@@ -235,5 +235,6 @@ Most tools are also available in Galaxy (e.g., [[https://usegalaxy.eu][Galaxy Eu
 - [[https://osca.bioconductor.org][Orchestrating Single-Cell Analysis with Bioconductor]]
 - [[https://bioinformatics.uconn.edu/reference-based-rna-seq-data-analysis/][Reference-based RNA-seq data analysis (Galaxy)]]
 - [[https://gitlab.com/cbc-uconn/prokaryote_rnaseq][Prokaryote TNA-Seq]] and [[https://gitlab.com/cbc-uconn/model_marine_rnaseq_and_functional_annotation_uconn][Functional annotation]]
+- [[https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon/schedule/][Introduction to RNA-Seq using high-performance computing]]
 
 * References

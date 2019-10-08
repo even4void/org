@@ -676,3 +676,9 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/fourment-2018-dubious-ways.pdf
  :END:
  The authors use the JC69 model to benchmark 19 methods for computing the marginla likelihood of a topology with respect to branch lengths. While the slowest, Generalized Stepping Stone (GSS) is the one that performs best. Gamma Laplus Importance Sampling (GLIS) is the best fast method, with performance wlose to GSS.
+* [[/Users/chl/Documents/Papers/izquierdo-carrasco-2011-algor.pdf][izquierdo-carrasco-2011-algor]] - Algorithms, data structures, and numerics for likelihood-based phylogenetic inference of huge trees
+ :PROPERTIES:
+ :Custom_ID: izquierdo-carrasco-2011-algor
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/izquierdo-carrasco-2011-algor.pdf
+ :END:
+ Design of a new search algorithm for large datasets: relies on a /backbone/ tree, to reduce the dimensionality of the search space; basically, the idea is to collapse taxa that are closely related to each other into a single virtual tip. The virtual tips are then interpreted as tips in the backbone tree on which we can conduct the tree search. Optimal tree size reduction factor: R > 0.25.
