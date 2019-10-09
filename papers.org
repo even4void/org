@@ -682,3 +682,26 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/izquierdo-carrasco-2011-algor.pdf
  :END:
  Design of a new search algorithm for large datasets: relies on a /backbone/ tree, to reduce the dimensionality of the search space; basically, the idea is to collapse taxa that are closely related to each other into a single virtual tip. The virtual tips are then interpreted as tips in the backbone tree on which we can conduct the tree search. Optimal tree size reduction factor: R > 0.25.
+* [[/Users/chl/Documents/Papers/hicks-2018-rna-seq.pdf][hicks-2018-rna-seq]] - On the widespread and critical impact of systematic bias and batch effects in single-cell rna-seq data
+ :PROPERTIES:
+ :Custom_ID: hicks-2018-rna-seq
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hicks-2018-rna-seq.pdf
+ :END:
+ #+BEGIN_QUOTE
+ We found that the proportion of genes reported as expressed explains a substantial part of observed variability and that this quantity varies systematically across experimental batches. Furthermore, we found that the implemented experimental designs confounded outcomes of interest with batch effects, a design that can bring into question some of the conclusions of these studies.
+ #+END_QUOTE
+
+ Proposed experimental design (to control batch effects): account for differences in the proportion of detected genes by explicitly including the batch factor as a covariate in a linear regression model, while making use of biological replicates so that multiple batches of cells could be randomized across sequencing runs, flow cells and lanes as in bulk-RNA-Seq.
+* [[/Users/chl/Documents/Papers/liu-2014-rna.pdf][liu-2014-rna]] - Rna-seq differential expression studies: more sequence or more replication?
+ :PROPERTIES:
+ :Custom_ID: liu-2014-rna
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/liu-2014-rna.pdf
+ :END:
+ Better to sequence less reads but increase the number of biological replicates: this will significantly increase the number of DE genes while the number of sequencing reads have a diminishing return after 10M reads.
+* [[/Users/chl/Documents/Papers/li-2010-rna-seq.pdf][li-2010-rna-seq]] - Rna-seq gene expression estimation with read mapping uncertainty
+ :PROPERTIES:
+ :Custom_ID: li-2010-rna-seq
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/li-2010-rna-seq.pdf
+ :END:
+ Optimal read length = 20-25 bp.
+ Problem with RMPKM measures: the mean expressed transcript length may vary between samples. (When the mean expressed transcript length is 1 kb, 1 TPM is equivalent to 1 RPKM, which corresponds to roughly one transcript per cell in mouse.)

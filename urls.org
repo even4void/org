@@ -1,4 +1,7 @@
 * Inbox
+** Teaching Materials for genome assembly and mapping
+[2019-10-09 Wed 13:44]
+http://www.langmead-lab.org/teaching-materials/
 ** bcbio-nextgen
 [2019-10-08 Tue 15:44]
 https://bcbio-nextgen.readthedocs.io/en/latest/contents/introduction.html
