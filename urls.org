@@ -1,4 +1,13 @@
 * Inbox
+** Tmux Cheat Sheet & Quick Reference
+[2019-10-14 Mon 16:45]
+https://tmuxcheatsheet.com/
+** SSH and tmux
+[2019-10-14 Mon 15:22]
+https://github.com/ernestk-git/data-scientist-ish/wiki/ssh-tmux?source=post_page---------------------------
+** Using virtualenv with fish shell
+[2019-10-09 Wed 14:59]
+https://riptutorial.com/python/example/9956/using-virtualenv-with-fish-shell
 ** Teaching Materials for genome assembly and mapping
 [2019-10-09 Wed 13:44]
 http://www.langmead-lab.org/teaching-materials/
