@@ -705,3 +705,9 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :END:
  Optimal read length = 20-25 bp.
  Problem with RMPKM measures: the mean expressed transcript length may vary between samples. (When the mean expressed transcript length is 1 kb, 1 TPM is equivalent to 1 RPKM, which corresponds to roughly one transcript per cell in mouse.)
+* [[/Users/chl/Documents/Papers/jones-2004-introd-bioin-algor.pdf][jones-2004-introd-bioin-algor]] - An introduction to bioinformatics algorithms
+ :PROPERTIES:
+ :Custom_ID: jones-2004-introd-bioin-algor
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jones-2004-introd-bioin-algor.pdf
+ :END:
+ The authors make use of simplified pseudo-code for all the algorithms discussed in this book -- on the basis that the target audience are biologists. I found it nice, as it is heavily inspired from Python syntax (significant indentation is fine for reading purpose, IMHO).

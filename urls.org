@@ -1,4 +1,16 @@
 * Inbox
+** Master Git (part 1)
+[2019-10-15 Tue 10:49]
+http://artemstar.com/2017/03/26/git/
+** How to Install and Dual Boot Linux and Mac OS
+[2019-10-15 Tue 08:53]
+https://www.lifewire.com/dual-boot-linux-and-mac-os-4125733
+** How to Install Ubuntu on a MacBook Pro
+[2019-10-15 Tue 08:51]
+https://laptop.ninja/how-to-install-ubuntu-on-a-macbook-pro/
+** tmux in practice: iTerm2 and tmux
+[2019-10-14 Mon 16:56]
+https://www.freecodecamp.org/news/tmux-in-practice-iterm2-and-tmux-integration-7fb0991c6c01/
 ** Tmux Cheat Sheet & Quick Reference
 [2019-10-14 Mon 16:45]
 https://tmuxcheatsheet.com/
