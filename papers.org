@@ -710,4 +710,12 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :Custom_ID: jones-2004-introd-bioin-algor
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jones-2004-introd-bioin-algor.pdf
  :END:
- The authors make use of simplified pseudo-code for all the algorithms discussed in this book -- on the basis that the target audience are biologists. I found it nice, as it is heavily inspired from Python syntax (significant indentation is fine for reading purpose, IMHO).
+ The authors make use of simplified pseudo-code for all the algorithms discussed in this book -- on the basis that the target audience are biologists. I found it nice, as it is heavily inspired from Python syntax (significant indentation is fine for reading purpose, IMHO). The introductory chapter on computer science (CS) is pretty basic stuff that can be found in any introductory textbook (chapter 2): algorithmic complexity, recursive versus iterative approach, type of algorithms (brute force, branch-and-bound, greedy approach, dynamic programming, divide-and-conquer, machine learning, randomized algorithms), and NP-completeness. It is intended for biologists.
+
+ #+BEGIN_QUOTE
+ I have indeed been able to apply my skills in this new area, but only after coming to understand that solving biological problems requires far more than clever algorithms: it involves a creative partnership between biologists and mathematical scientists to arrive at an appropriate mathematical model, the acquisition and use of diverse sources of data, and statistical methods to show that the biological patterns and regularities that we discover could not be due to chance. --- Richard Karp
+ #+END_QUOTE
+
+ For CS folks, the third chapter provides a gentle primer to biology.
+
+ See also [[http://www.cs.hunter.cuny.edu/~saad/courses/bioinf/][Bioinformatics Algorithms]], by Saad Mneimneh, which offers solutions to selected exercises from each chapter.

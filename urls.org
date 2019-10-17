@@ -1,4 +1,7 @@
 * Inbox
+** Creating a Permanent SSH Tunnel Back to Your Mac at Home
+[2019-10-16 Wed 12:04]
+https://tyler.io/creating-a-permanent-ssh-tunnel-back-to-your-mac-at-home/
 ** Master Git (part 1)
 [2019-10-15 Tue 10:49]
 http://artemstar.com/2017/03/26/git/
