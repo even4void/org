@@ -719,3 +719,16 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  For CS folks, the third chapter provides a gentle primer to biology.
 
  See also [[http://www.cs.hunter.cuny.edu/~saad/courses/bioinf/][Bioinformatics Algorithms]], by Saad Mneimneh, which offers solutions to selected exercises from each chapter.
+* [[/Users/chl/Documents/Papers/miele-2012-high.pdf][miele-2012-high]] - High-quality sequence clustering guided by network topology and multiple alignment likelihood
+ :PROPERTIES:
+ :Custom_ID: miele-2012-high
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/miele-2012-high.pdf
+ :END:
+ Python 2.7 only
+ Download: http://lbbe.univ-lyon1.fr/Download,3100.html
+* [[/Users/chl/Documents/Papers/bernardes-2016-improv-protein.pdf][bernardes-2016-improv-protein]] - Improvement in protein domain identification is reached by breaking consensus, with the agreement of many profiles and domain co-occurrence
+ :PROPERTIES:
+ :Custom_ID: bernardes-2016-improv-protein
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bernardes-2016-improv-protein.pdf
+ :END:
+ http://www.lcqb.upmc.fr/CLADE/

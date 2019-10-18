@@ -1,4 +1,10 @@
 * Inbox
+** Stupid Unix Tricks
+[2019-10-17 Thu 17:06]
+https://sneak.berlin/20191011/stupid-unix-tricks/
+** How to secure remote access to a Linux server (without SSH keys)
+[2019-10-17 Thu 17:04]
+https://medium.com/@chrislange/how-to-secure-remote-access-to-a-linux-server-without-ssh-keys-61a1aa099cfc
 ** Creating a Permanent SSH Tunnel Back to Your Mac at Home
 [2019-10-16 Wed 12:04]
 https://tyler.io/creating-a-permanent-ssh-tunnel-back-to-your-mac-at-home/
