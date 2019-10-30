@@ -1,4 +1,10 @@
 * Inbox
+** Complete list of zsh themes
+[2019-10-30 Wed 10:15]
+https://zshthem.es/all/
+** Owl Numerical System
+[2019-10-30 Wed 09:38]
+https://ocaml.xyz/chapter/index.html
 ** Stupid Unix Tricks
 [2019-10-17 Thu 17:06]
 https://sneak.berlin/20191011/stupid-unix-tricks/
