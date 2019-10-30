@@ -1,4 +1,13 @@
 * Inbox
+** Remote Desktop Roundup: TeamViewer vs. Splashtop vs. Windows RDP
+[2019-10-30 Wed 11:24]
+https://www.howtogeek.com/257655/remote-desktop-roundup-teamviewer-vs.-splashtop-vs.-windows-rdp/
+** How to Lock Down TeamViewer for More Secure Remote Access
+[2019-10-30 Wed 11:19]
+https://www.howtogeek.com/257376/how-to-lock-down-teamviewer-for-more-secure-remote-access/
+** How secure is TeamViewer for simple remote support?
+[2019-10-30 Wed 11:15]
+https://security.stackexchange.com/questions/12152/how-secure-is-teamviewer-for-simple-remote-support
 ** Complete list of zsh themes
 [2019-10-30 Wed 10:15]
 https://zshthem.es/all/
