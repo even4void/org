@@ -1,4 +1,13 @@
 * Inbox
+** Making a Simple Website with Flask
+[2019-11-05 Tue 13:21]
+http://oliverelliott.org/article/computing/notes_labsite/
+** AWS for Bioinformatics
+[2019-11-05 Tue 13:18]
+http://oliverelliott.org/article/computing/tut_bio_aws_2/
+** which is the meaning of scatterplot between a pair of 2 consecutive pseudo random numbers with respect to the independence of the sequence?
+[2019-11-04 Mon 10:33]
+https://stats.stackexchange.com/questions/433029/which-is-the-meaning-of-scatterplot-between-a-pair-of-2-consecutive-pseudo-rando/434151#434151
 ** Remote Desktop Roundup: TeamViewer vs. Splashtop vs. Windows RDP
 [2019-10-30 Wed 11:24]
 https://www.howtogeek.com/257655/remote-desktop-roundup-teamviewer-vs.-splashtop-vs.-windows-rdp/
