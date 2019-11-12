@@ -1,4 +1,10 @@
 * Inbox
+** Programming Talks
+[2019-11-07 Jeu 14:29]
+https://github.com/hellerve/programming-talks#hackett
+** A systematic review of health effects of electronic cigarettes
+[2019-11-07 Jeu 14:16]
+https://www.who.int/tobacco/industry/product_regulation/BackgroundPapersENDS3_4November-.pdf
 ** Making a Simple Website with Flask
 [2019-11-05 Tue 13:21]
 http://oliverelliott.org/article/computing/notes_labsite/
