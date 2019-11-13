@@ -1,4 +1,7 @@
 * Inbox
+** Programming For Biology 2019
+[2019-11-13 Wed 13:02]
+https://github.com/prog4biol/pfb2019
 ** Programming Talks
 [2019-11-07 Jeu 14:29]
 https://github.com/hellerve/programming-talks#hackett
