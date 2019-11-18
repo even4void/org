@@ -1,4 +1,10 @@
 * Inbox
+** Comparative Genomics with R
+ [2019-11-18 Mon 10:38]
+ https://hajkd.github.io/orthologr/index.html
+** Introduction to mlr3
+ [2019-11-18 Mon 10:23]
+ https://github.com/mlr-org/mlr3book
 ** Programming For Biology 2019
 [2019-11-13 Wed 13:02]
 https://github.com/prog4biol/pfb2019
