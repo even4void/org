@@ -1,4 +1,7 @@
 * Inbox
+** Changes the current Ruby
+ [2019-11-18 Mon 11:01]
+ https://github.com/postmodern/chruby
 ** Comparative Genomics with R
  [2019-11-18 Mon 10:38]
  https://hajkd.github.io/orthologr/index.html
