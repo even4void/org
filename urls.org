@@ -1,4 +1,13 @@
 * Inbox
+** Lot of useful config for neovim/zsh/tmux
+ [2019-11-19 Tue 15:34]
+ https://github.com/iamrecursion/dotfiles
+** LSP for (neo)vim
+ [2019-11-19 Tue 14:20]
+ https://github.com/neoclide
+** Fisher–Yates shuffle
+ [2019-11-19 Tue 13:15]
+ https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
 ** DendroPy Phylogenetic Computing Library
  [2019-11-19 Tue 12:26]
  https://dendropy.org/
