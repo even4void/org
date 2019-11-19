@@ -732,3 +732,10 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bernardes-2016-improv-protein.pdf
  :END:
  http://www.lcqb.upmc.fr/CLADE/
+* [[/Users/chl/Documents/Papers/choi-2017-tree-life.pdf][choi-2017-tree-life]] - A genome tree of life for the fungi kingdom
+ :PROPERTIES:
+ :Custom_ID: choi-2017-tree-life
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/choi-2017-tree-life.pdf
+ :END:
+gene tree (small number of highly conserved and orthologous genes) vs. genome tree (whole-genome DNA sequence, transcriptome RNA sequence, proteome amino acid sequence, exome DNA sequences, or other genomic features)
+The authors rely on the whole-proteome sequences on the Feature Frequency Profile ([[https://github.com/jaejinchoi/FFP][FFP]]), which does not require multiple sequence alignment.
