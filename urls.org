@@ -1,4 +1,14 @@
 * Inbox
+** How to Override CSS Styles in Jekyll
+ [2019-11-20 Wed 16:56]
+ alias: Expected at most 2 args, got 3
+ https://tomkadwill.com/2017/12/16/how-to-override-css-styles-in-jekyll.html
+** Fundamentals of Machine Learning Course at DSR
+ [2019-11-20 Wed 12:53]
+ https://github.com/dvgodoy/ML_Fundamentals
+** Advanced Python
+ [2019-11-20 Wed 12:45]
+ https://github.com/krother/advanced_python
 ** Lot of useful config for neovim/zsh/tmux
  [2019-11-19 Tue 15:34]
  https://github.com/iamrecursion/dotfiles
