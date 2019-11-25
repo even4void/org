@@ -1,4 +1,7 @@
 * Inbox
+** Scheme and Fibonacci
+ [2019-11-25 Mon 10:51]
+ https://www.reddit.com/r/scheme/comments/114jaj/nth_fibonacci_numbers_with_the_golden_ratioracket/
 ** How to Override CSS Styles in Jekyll
  [2019-11-20 Wed 16:56]
  alias: Expected at most 2 args, got 3
