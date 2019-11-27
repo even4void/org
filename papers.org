@@ -739,3 +739,18 @@ We want two things from a computer algorithm: given an input to a problem, it sh
  :END:
 gene tree (small number of highly conserved and orthologous genes) vs. genome tree (whole-genome DNA sequence, transcriptome RNA sequence, proteome amino acid sequence, exome DNA sequences, or other genomic features)
 The authors rely on the whole-proteome sequences on the Feature Frequency Profile ([[https://github.com/jaejinchoi/FFP][FFP]]), which does not require multiple sequence alignment.
+* [[/Users/chl/Documents/Papers/capella-gutierrez-2014.pdf][capella-gutierrez-2014]] - A phylogenomics approach for selecting robust sets of phylogenetic markers
+ :PROPERTIES:
+ :Custom_ID: capella-gutierrez-2014
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/capella-gutierrez-2014.pdf
+ :END:
+Set of 4 genes in the case of ascomycetous fungal species (/Basidiomycota/):
+
+| YHR186C | 1557 | Target of rapamycin complex 1 subunit KOG1     |
+| YMR012W | 1277 | Clustered mitochondria protein 1               |
+| YJL029C |  822 | Vacuolar protein sorting-associated protein 53 |
+| YAR007C |  621 | Replication factor A protein 1                 |
+
+Phylogenetic tree analysis using PhyML, with Robinson and Foulds distance to
+compare trees. Interesting approach to use train/test dataset and resampling
+strategy.
