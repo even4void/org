@@ -1,4 +1,7 @@
 * Inbox
+** Coupled events with Shiny and Plotly in R
+ [2019-11-28 Thu 16:23]
+ https://plot.ly/r/shiny-coupled-events/
 ** Visualizing Algorithms
  [2019-11-27 Wed 12:52]
  https://bost.ocks.org/mike/algorithms/
