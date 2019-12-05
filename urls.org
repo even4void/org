@@ -1,4 +1,13 @@
 * Inbox
+** Django Photo Gallery Sample
+ [2019-12-04 Wed 13:37]
+ https://github.com/VelinGeorgiev/django-photo-gallery
+** Useful tips & tricks for R (and more)
+ [2019-12-04 Wed 13:20]
+ https://github.com/hbc/knowledgebase/blob/master/r/R-tips-and-tricks.md
+** Genome browser tracks using Python
+ [2019-12-03 Tue 15:19]
+ https://pythonawesome.com/python-module-to-plot-beautiful-and-highly-customizable-genome-browser-tracks/
 ** Coupled events with Shiny and Plotly in R
  [2019-11-28 Thu 16:23]
  https://plot.ly/r/shiny-coupled-events/
