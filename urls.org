@@ -1,4 +1,7 @@
 * Inbox
+** Templates Django
+ [2019-12-05 Thu 20:09]
+ https://tutorial.djangogirls.org/fr/template_extending/
 ** Django Photo Gallery Sample
  [2019-12-04 Wed 13:37]
  https://github.com/VelinGeorgiev/django-photo-gallery
