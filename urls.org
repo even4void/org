@@ -1,4 +1,16 @@
 * Inbox
+** Microbenchmark in Racket
+ [2019-12-10 Tue 19:39]
+ https://www.travishinkelman.com/post/microbenchmarking-in-r-and-racket/
+** Racket and docstrings using at-exp
+ [2019-12-10 Tue 16:09]
+ https://stackoverflow.com/questions/58981544/docstrings-in-racket
+** Challenge: find Twitter memes with suffix arrays
+ [2019-12-09 Mon 14:54]
+ https://jvns.ca/blog/twitter-memes-challenge/
+** Pharmaceutical Modeling and Simulation for Nonlinear Mixed Effects using Julia
+ [2019-12-09 Mon 10:30]
+ https://github.com/PumasAI/Pumas.jl
 ** Templates Django
  [2019-12-05 Thu 20:09]
  https://tutorial.djangogirls.org/fr/template_extending/
