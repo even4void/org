@@ -1,4 +1,13 @@
 * Inbox
+** No Pain - No Gain: Using Clojure for Web Apps
+ [2019-12-12 Thu 18:02]
+ https://github.com/tbsschroeder/using-clojure-for-web-apps
+** Functional Data Structures in Typed Racket
+ [2019-12-11 Wed 14:45]
+ https://docs.racket-lang.org/functional-data-structures/index.html
+** Scheme/Racket course
+ [2019-12-11 Wed 12:32]
+ https://courses.cs.washington.edu/courses/cse341/18sp/racket/
 ** Microbenchmark in Racket
  [2019-12-10 Tue 19:39]
  https://www.travishinkelman.com/post/microbenchmarking-in-r-and-racket/
