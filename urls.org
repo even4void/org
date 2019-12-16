@@ -1,4 +1,10 @@
 * Inbox
+** Dash Bio is a suite of bioinformatics components
+ [2019-12-13 Fri 10:42]
+ https://github.com/plotly/dash-bio
+** Heroku buildpack for R
+ [2019-12-13 Fri 10:41]
+ https://github.com/virtualstaticvoid/heroku-buildpack-r/tree/heroku-16
 ** No Pain - No Gain: Using Clojure for Web Apps
  [2019-12-12 Thu 18:02]
  https://github.com/tbsschroeder/using-clojure-for-web-apps
