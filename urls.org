@@ -1,4 +1,22 @@
 * Inbox
+** Generative Hyphae Growth Algorithm
+ [2019-12-18 Wed 12:01]
+ https://github.com/shaanappel/generative-hyphae-3d
+** Hyphal branching using Processing
+ [2019-12-18 Wed 11:13]
+ http://www.iaacblog.com/programs/introduction-processing-hyphal-branching/
+** Xylem and hyphae network
+ [2019-12-18 Wed 11:10]
+ https://n-e-r-v-o-u-s.com/blog/?p=1218
+** Let's Write an LLVM Specializer for Python!
+ [2019-12-18 Wed 10:58]
+ http://dev.stephendiehl.com/numpile/
+** Implementing a JIT Compiled Language with Haskell and LLVM
+ [2019-12-18 Wed 10:56]
+ http://www.stephendiehl.com/llvm/
+** Step-by-Step Guide to Implement Machine Learning
+ [2019-12-17 Tue 08:30]
+ https://www.codeproject.com/Articles/5061034/Step-by-Step-Guide-to-Implement-Machine-Learning-6
 ** The Racket Foreign-Function Interface
  [2019-12-16 Mon 16:23]
  http://www.cs.grinnell.edu/~rebelsky/Glimmer/Summer2012/RacketFFI/tutorial.html
