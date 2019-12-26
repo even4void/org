@@ -1,4 +1,7 @@
 * Inbox
+** Neighbour sensing model for fungi growth
+ [2019-12-18 Wed 12:07]
+ http://www.davidmoore.org.uk/CyberWEB/Cyber04.htm
 ** Generative Hyphae Growth Algorithm
  [2019-12-18 Wed 12:01]
  https://github.com/shaanappel/generative-hyphae-3d
