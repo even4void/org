@@ -754,3 +754,18 @@ Set of 4 genes in the case of ascomycetous fungal species (/Basidiomycota/):
 Phylogenetic tree analysis using PhyML, with Robinson and Foulds distance to
 compare trees. Interesting approach to use train/test dataset and resampling
 strategy.
+* [[/Users/chl/Documents/Papers/sturmfels-2007-open-probl.pdf][sturmfels-2007-open-probl]] - Open problems in algebric statistics
+ :PROPERTIES:
+ :Custom_ID: sturmfels-2007-open-probl
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/sturmfels-2007-open-probl.pdf
+ :END:
+Open problems at the intersection between interactions between algebraic geometry and computational statistics. E.g., Graphical Models with Hidden Variables:
+Our first question concerns three-dimensional contingency tables $(p_{ijk})$ whose indices $i, j, k$ range over a set of four elements, such as the set ${A, C, G, T}$ of DNA bases. Consider the variety of 4×4×4-tables of tensor rank at most 4. There are certain known polynomials of degree at most nine which vanish on this variety. Do they suffice to cut out the variety?
+* [[/Users/chl/Documents/Papers/yang-2012-molec.pdf][yang-2012-molec]] - Molecular phylogenetics: principles and practice
+ :PROPERTIES:
+ :Custom_ID: yang-2012-molec
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/yang-2012-molec.pdf
+ :END:
+Molecular phylogenetics is being used to classify metagenomic sequences; to identify genes, regulatory elements, and noncoding RNAs in newly sequenced genomes; to interpret modern and ancient individual genomes; and to reconstruct ancestral genomes. Phylogeny reconstruction methods are either (pairwise) distance- or character-based. Character-based methods include maximum parsimony (MP) --- the only approach that is not model-based and thus does not require a substitution model, maximum likelihood (ML) and Bayesian inference (BI) methods. The tree score is the minimum number of changes for MP, the log-likelihood value for ML, and the posterior probability for BI. To reduce complexity, heuristic tree search algorithms are used.
+The lack of explicit assumptions, as well as failure to correct for multiple changes at the same site or to accommodate parallel changes on two long branches, renders the parsimony approach somewhat weak. ML has a clear advantage over distance or parsimony methods if we seek to understand the process of sequence evolution. Bayesian phylogenetics makes use of sophisticated models, like the relaxed clock model to infer rooted trees.
+Model-based methods (DM, ML and BI) are consistent if the assumed model is correct, while parsimony may be inconsistent under some model-tree combinations.

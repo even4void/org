@@ -1,4 +1,22 @@
 * Inbox
+** Cryptographic libraries for R6RS Scheme
+   :PROPERTIES:
+   :ID:       F29F5FF0-6820-4A0F-86FA-D9F6C856DD2F
+   :END:
+ [2020-01-06 Lun 11:46]
+ https://github.com/weinholt/industria
+** Algebric data types and unordered effects
+   :PROPERTIES:
+   :ID:       08EDD394-A676-4550-96D3-443B2F87640E
+   :END:
+ [2020-01-06 Lun 11:24]
+ https://www.reddit.com/r/haskell/comments/ej8fme/unordered_effects/fd00mk2/
+** Why do Racket hash literals (i.e. #hash()) automatically quote
+   :PROPERTIES:
+   :ID:       6C09B3DB-725D-4F96-862B-9B0C23D16E79
+   :END:
+ [2020-01-06 Lun 11:22]
+ https://www.reddit.com/r/Racket/comments/ehwz0j/why_do_racket_hash_literals_ie_hash_automatically/fcmb1e5/?context=3
 ** Neighbour sensing model for fungi growth
  [2019-12-18 Wed 12:07]
  http://www.davidmoore.org.uk/CyberWEB/Cyber04.htm
