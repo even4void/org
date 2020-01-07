@@ -1,4 +1,16 @@
 * Inbox
+** ZSH higher order functions
+   :PROPERTIES:
+   :ID:       401DF046-A368-42AA-883E-8E8C02173CFE
+   :END:
+ [2020-01-07 Mar 14:34]
+ https://github.com/yogsototh/zsh_functional
+** Gamma function
+   :PROPERTIES:
+   :ID:       0323F358-24F3-48C3-ADF9-0E119DDE694F
+   :END:
+ [2020-01-07 Mar 08:09]
+ https://probabilityandstats.wordpress.com/2017/08/20/the-gamma-function/
 ** Cryptographic libraries for R6RS Scheme
    :PROPERTIES:
    :ID:       F29F5FF0-6820-4A0F-86FA-D9F6C856DD2F
