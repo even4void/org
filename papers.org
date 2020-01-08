@@ -778,3 +778,11 @@ Model-based methods (DM, ML and BI) are consistent if the assumed model is corre
  :END:
 Standard HPC stilla round, but it is nowadays overshadowed by cloud computing; Haddop, Spark; deep learning. Bengtsson's =future= package offers a nice abstraction to local and remote parallelism options. A key aspect of concurrency is the /task-switching cost/. Single instruction multiple data (SIMD) and the AVX-512 instruction sets are another example of CPU- and compiler-centric parallel instructions. OpenMP remains a key technology for parallel execution of compiled code.
 Note that parallel execution requires stream-aware RNGs (p.7).
+* [[/Users/chl/Documents/Papers/heaton-2012-analy-fungal-networ.pdf][heaton-2012-analy-fungal-networ]] - Analysis of fungal networks
+ :PROPERTIES:
+ :Custom_ID: heaton-2012-analy-fungal-networ
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/heaton-2012-analy-fungal-networ.pdf
+ :END:
+p.14 visualisation of network structure and network extraction
+The network topology is defined by classifying junctions (branch points (degree 3), anastomoses and tips (degree 1)) as nodes and the chords between nodes as links. While the number of nodes and links increase over time, there's a selective loss of connections and thinning out of the fine mycellium. This shift can be quantified using the alpha coefficient, which gives the number of closed loops or cycles present as a fraction of the maximum possible for a planar network with the same number of nodes (Euler's polyhedral formula, V - E + F = 2).
+The frequency distribution of node strength (i.e., summing the weight of all links connected to the node) shows more diversity than node degree alone, and follows an approximately log-normal distribution for /P. velutina/ networks.

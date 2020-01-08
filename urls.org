@@ -1,4 +1,22 @@
 * Inbox
+** Scientific computing with Rust
+   :PROPERTIES:
+   :ID:       C6A81828-DD6F-44D7-9DAF-D045E59AA5AF
+   :END:
+ [2020-01-08 Mer 14:27]
+ https://rust-sci.github.io/
+** Rust crates for numerical simulation
+   :PROPERTIES:
+   :ID:       C870B658-9B7B-4A21-B991-DBCB46C3E273
+   :END:
+ [2020-01-08 Mer 14:25]
+ https://rustsim.org/
+** Convert .py to .exe
+   :PROPERTIES:
+   :ID:       B7147882-7981-4B8A-87B2-EDE9EC8D3989
+   :END:
+ [2020-01-08 Mer 12:02]
+ https://nitratine.net/blog/post/convert-py-to-exe/
 ** ZSH higher order functions
    :PROPERTIES:
    :ID:       401DF046-A368-42AA-883E-8E8C02173CFE
