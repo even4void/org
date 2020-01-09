@@ -807,5 +807,22 @@ Orthologs may undergo duplications after the speciation event, generating multip
  :Custom_ID: horiike-2016-orthol-finder
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/horiike-2016-orthol-finder.pdf
  :END:
-Identifying genuine orthologs among distantly related species is challenging, because genes obtained through horizontal gene transfer (HGT) and out-paralogs derived from gene dupli- cation before speciation are often present among the predicted orthologs.
+Identifying genuine orthologs among distantly related species is challenging, because genes obtained through horizontal gene transfer (HGT) and out-paralogs derived from gene duplication before speciation are often present among the predicted orthologs.
 This software uses 5 stages to alleviate such concern: (1) HGT filtering: Genes derived from HGT could be detected and deleted from the initial sequence data set by examining their base compositions. (2) Out-paralog filtering: Out-paralogs are detected and deleted from the data set based on sequence similarity. (3) Classification of phylogenetic trees: Phylogenetic trees generated for ortholog candidates are classified as monophyletic or polyphyletic trees. (4) Tree splitting: Polyphyletic trees are bisected to obtain monophyletic trees and remove HGT genes and out-paralogs. (5) Threshold changing: Out-paralogs are further excluded from the data set based on the difference in the similarity scores of genuine orthologs and out-paralogs.
+*Remark:* See [[~/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] for an intermediate approach (tolerate recent in-paralogs as unavoidable contamination).
+* [[/Users/chl/Documents/Papers/lenstra-1992-algor-algeb.pdf][lenstra-1992-algor-algeb]] - Algorithms in algebric number theory
+ :PROPERTIES:
+ :Custom_ID: lenstra-1992-algor-algeb
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/lenstra-1992-algor-algeb.pdf
+ :END:
+#+BEGIN_QUOTE
+The problems in pure mathematics that arise in connection with algorithms have
+all the virtues of good problems.
+#+END_QUOTE
+* [[/Users/chl/Documents/Papers/emms-2015-orthof.pdf][emms-2015-orthof]] - Orthofinder: solving fundamental biases in whole genome comparisons dramatically improves orthogroup inference accuracy
+ :PROPERTIES:
+ :Custom_ID: emms-2015-orthof
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/emms-2015-orthof.pdf
+ :END:
+ Two strategies: (1) inferring pairwise relationships between genes in two species, and then extending orthology to multiple species by identifying sets of genes spanning these species in which each gene- pair is an orthologue, (2) identify complete orthogroups; an orthogroup is the set of genes that are descended from a single gene in the last common ancestor of all the species being considered.
+ Fundamental biases in whole genome comparisons = Gene length bias in BLAST E-values affects the accuracy of orthogroup detection (fixed using normalization, p.9); over- or under-clustering of sequences (aka, phylogenetic distance from sequence similarity scores).
