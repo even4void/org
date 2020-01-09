@@ -786,3 +786,26 @@ Note that parallel execution requires stream-aware RNGs (p.7).
 p.14 visualisation of network structure and network extraction
 The network topology is defined by classifying junctions (branch points (degree 3), anastomoses and tips (degree 1)) as nodes and the chords between nodes as links. While the number of nodes and links increase over time, there's a selective loss of connections and thinning out of the fine mycellium. This shift can be quantified using the alpha coefficient, which gives the number of closed loops or cycles present as a fraction of the maximum possible for a planar network with the same number of nodes (Euler's polyhedral formula, V - E + F = 2).
 The frequency distribution of node strength (i.e., summing the weight of all links connected to the node) shows more diversity than node degree alone, and follows an approximately log-normal distribution for /P. velutina/ networks.
+* [[/Users/chl/Documents/Papers/emms-2018-orthof.pdf][emms-2018-orthof]] - Orthofinder2: fast and accurate phylogenomic orthology analysis from gene sequences
+ :PROPERTIES:
+ :Custom_ID: emms-2018-orthof
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/emms-2018-orthof.pdf
+ :END:
+OrthoFinder infers orthogroups, genes trees, gene duplication events, the rooted species tree and extensive comparative genomic statistics. It has been shown to perform better compared to methods that use approximate phylogenetic relationships between genes using "reciprocal best hits" from BLAST (e.g., InParanoid, OrthoMCL and OMA).
+Orthofinder provides accurate and scalable ortholog inference using gene trees in 3 stages: (1) orthogroup inference, (2) inference of rooted species and gene trees, and (3) inference of orthologs and gene duplication events from these rooted gene trees. Under the hood, it uses a duplication-loss-coalescent (DLC) resolution algorithm to identify gene duplication events and map them to the species tree.
+* [[/Users/chl/Documents/Papers/sonnhammer-2015-inpar.pdf][sonnhammer-2015-inpar]] - Inparanoid 8: orthology analysis between 273 proteomes, mostly eukaryotic
+ :PROPERTIES:
+ :Custom_ID: sonnhammer-2015-inpar
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/sonnhammer-2015-inpar.pdf
+ :END:
+273 species, mainly from Uniprot, including 246 eukaryotes.
+Orthologs may undergo duplications after the speciation event, generating multiple co-orthologs or inparalogs, which complicates orthology detection. [[http://inparanoid.sbc.su.se/cgi-bin/index.cgi][InParanoid]] allows to generate ortholog groups that include all inparalogs but no outparalogs using a parallel 2-pass BLAST procedure.
+*Remark:* quadratic runtime scaling with the number of species.
+[[https://github.com/JoshuaDavid/Neighbor_Joining][Python code]] for neighbor-joining algorithm.
+* [[/Users/chl/Documents/Papers/horiike-2016-orthol-finder.pdf][horiike-2016-orthol-finder]] - Ortholog-finder: a tool for constructing an ortholog data set
+ :PROPERTIES:
+ :Custom_ID: horiike-2016-orthol-finder
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/horiike-2016-orthol-finder.pdf
+ :END:
+Identifying genuine orthologs among distantly related species is challenging, because genes obtained through horizontal gene transfer (HGT) and out-paralogs derived from gene dupli- cation before speciation are often present among the predicted orthologs.
+This software uses 5 stages to alleviate such concern: (1) HGT filtering: Genes derived from HGT could be detected and deleted from the initial sequence data set by examining their base compositions. (2) Out-paralog filtering: Out-paralogs are detected and deleted from the data set based on sequence similarity. (3) Classification of phylogenetic trees: Phylogenetic trees generated for ortholog candidates are classified as monophyletic or polyphyletic trees. (4) Tree splitting: Polyphyletic trees are bisected to obtain monophyletic trees and remove HGT genes and out-paralogs. (5) Threshold changing: Out-paralogs are further excluded from the data set based on the difference in the similarity scores of genuine orthologs and out-paralogs.

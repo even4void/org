@@ -1,4 +1,22 @@
 * Inbox
+** Parallel Processing in Python
+   :PROPERTIES:
+   :ID:       0B8A54E0-3287-48ED-94F0-25DCB730A5E0
+   :END:
+ [2020-01-09 Jeu 14:22]
+ https://stackabuse.com/parallel-processing-in-python/
+** Data science for economists
+   :PROPERTIES:
+   :ID:       DDACF1F5-448A-4C1B-A366-B3363DA1CF3E
+   :END:
+ [2020-01-09 Jeu 10:35]
+ https://github.com/uo-ec607/lectures
+** Parallel programming using R
+   :PROPERTIES:
+   :ID:       EBD078FF-4EAD-4FCB-A480-205C497BAEFA
+   :END:
+ [2020-01-09 Jeu 10:33]
+ https://raw.githack.com/uo-ec607/lectures/master/12-parallel/12-parallel.html#beware_resource_competition
 ** Scientific computing with Rust
    :PROPERTIES:
    :ID:       C6A81828-DD6F-44D7-9DAF-D045E59AA5AF
