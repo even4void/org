@@ -1,4 +1,16 @@
 * Inbox
+** List of terms relating to algorithms and data structures
+   :PROPERTIES:
+   :ID:       A707DBDC-12C6-490F-B1BA-3363F79D77E3
+   :END:
+ [2020-01-10 Ven 14:14]
+ https://en.m.wikipedia.org/wiki/List_of_terms_relating_to_algorithms_and_data_structures
+** Graph structures in C
+   :PROPERTIES:
+   :ID:       1880D01C-3DED-411D-82E1-90ECD80199D0
+   :END:
+ [2020-01-10 Ven 14:08]
+ https://www.techiedelight.com/implement-graph-data-structure-c/
 ** Parallel Processing in Python
    :PROPERTIES:
    :ID:       0B8A54E0-3287-48ED-94F0-25DCB730A5E0
