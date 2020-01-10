@@ -826,3 +826,11 @@ all the virtues of good problems.
  :END:
  Two strategies: (1) inferring pairwise relationships between genes in two species, and then extending orthology to multiple species by identifying sets of genes spanning these species in which each gene- pair is an orthologue, (2) identify complete orthogroups; an orthogroup is the set of genes that are descended from a single gene in the last common ancestor of all the species being considered.
  Fundamental biases in whole genome comparisons = Gene length bias in BLAST E-values affects the accuracy of orthogroup detection (fixed using normalization, p.9); over- or under-clustering of sequences (aka, phylogenetic distance from sequence similarity scores).
+* [[/Users/chl/Documents/Papers/holme-2002-growin.pdf][holme-2002-growin]] - Growing scale-free networks with tunable clustering
+ :PROPERTIES:
+ :Custom_ID: holme-2002-growin
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/holme-2002-growin.pdf
+ :END:
+ Social networks, computer networks or metabolic networks have a logarithmically growing average geodesic (shortest path) length and an approximately algebraically decaying distribution of vertex degree.
+ The degree of an arbitrary vertex increases as the square root of the time, which yields the power-law degree distribution $P(k)\sim k^{-3}$.
+ See =networkx.powerlaw_cluster_graph=.
