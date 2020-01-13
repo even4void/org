@@ -1,4 +1,10 @@
 * Inbox
+** Heap in Lisp
+   :PROPERTIES:
+   :ID:       597DF12D-8CCC-479E-8D02-2C66C9147E06
+   :END:
+ [2020-01-10 Ven 19:44]
+ http://gms.freeshell.org/lisp-heap/heap.txt
 ** List of terms relating to algorithms and data structures
    :PROPERTIES:
    :ID:       A707DBDC-12C6-490F-B1BA-3363F79D77E3

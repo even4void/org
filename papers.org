@@ -834,3 +834,33 @@ all the virtues of good problems.
  Social networks, computer networks or metabolic networks have a logarithmically growing average geodesic (shortest path) length and an approximately algebraically decaying distribution of vertex degree.
  The degree of an arbitrary vertex increases as the square root of the time, which yields the power-law degree distribution $P(k)\sim k^{-3}$.
  See =networkx.powerlaw_cluster_graph=.
+* [[/Users/chl/Documents/Papers/hayamizu-2019-rankin.pdf][hayamizu-2019-rankin]] - Ranking top-k trees in tree-based phylogenetic networks
+ :PROPERTIES:
+ :Custom_ID: hayamizu-2019-rankin
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hayamizu-2019-rankin.pdf
+ :END:
+ Support tree and linear-time algorithms for counting, enumeration and optimization (Hayamizu's structure theorem, [[https://arxiv.org/abs/1811.05849][arXiv:1811.05849]]).
+ Top-k ranking problem: list top-k support trees of N = (V,A) in non-increasing order by their likelihood values. This is a generalization of the top-1 ranking problem, which asks for a ML support tree of N
+ See also: [[https://academic.oup.com/sysbio/article/61/2/228/1646300][Characterizing the Phylogenetic Tree-Search Problem]].
+* [[/Users/chl/Documents/Papers/huson-2006-applic-phylog.pdf][huson-2006-applic-phylog]] - Application of phylogenetic networks in evolutionary studies
+ :PROPERTIES:
+ :Custom_ID: huson-2006-applic-phylog
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/huson-2006-applic-phylog.pdf
+ :END:
+ Phylogenetic networks should be employed when /reticulate events/ such as hybridization, horizontal gene transfer, recombination, or gene duplication and loss are believed to be involved.
+ Software: [[http://splitstree.org][SplitsTree4]].
+
+ - phylogenetic network = any network in which taxa are represented by nodes and their evolutionary relationships by edges.
+ - split network = combinatorial generalization of phylogenetic trees, designed to represent incompatibilities within and between data sets.
+ - reticulate network = represents evolutionary histories in the presence of reticulate events (nodes with two parents).
+ (See Fig. 1 for an overview )
+
+ A split network contains exactly the same information as a list of splits with a weight for each split.
+
+ TODO: Reread later
+* [[/Users/chl/Documents/Papers/volz-2017-scalab-relax.pdf][volz-2017-scalab-relax]] - Scalable Relaxed Clock Phylogenetic Dating
+ :PROPERTIES:
+ :Custom_ID: volz-2017-scalab-relax
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/volz-2017-scalab-relax.pdf
+ :END:
+Molecular clock models assume a constant substitution rate through time, while relaxed clock models allow robust inference of rates and dates. Such models are usually fitted using Bayesian MCMC, which is computatioanally expensive. This paper explores the relevance of ML and LS phylogenetic and molecular clock dating methods, using a Gamma-Poisson mixture model of substitution rates.
