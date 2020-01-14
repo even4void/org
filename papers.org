@@ -864,3 +864,13 @@ all the virtues of good problems.
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/volz-2017-scalab-relax.pdf
  :END:
 Molecular clock models assume a constant substitution rate through time, while relaxed clock models allow robust inference of rates and dates. Such models are usually fitted using Bayesian MCMC, which is computatioanally expensive. This paper explores the relevance of ML and LS phylogenetic and molecular clock dating methods, using a Gamma-Poisson mixture model of substitution rates.
+* [[/Users/chl/Documents/Papers/pavlopoulos-2010-ref-tree.pdf][pavlopoulos-2010-ref-tree]] - A reference guide for tree analysis and visualization
+ :PROPERTIES:
+ :Custom_ID: pavlopoulos-2010-ref-tree
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/pavlopoulos-2010-ref-tree.pdf
+ :END:
+Challenge: to handle the overload of information and make it easier to understand and explore very large phylogenetic trees.
+- Trees vs. graphs.
+- Cladogram and phylogram (branch lengths are proportional to the amount of inferred evolutionary change).
+- Newick, NHX (enhanced Newick) and Nexus format.
+- Statistical methods: neighbor-joining and UPGMA (distance), maximum parsimony and maximum likelihood (feature matrix), MCMC (both).

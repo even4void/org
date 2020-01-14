@@ -1,4 +1,10 @@
 * Inbox
+** Why I Keep a Research Blog
+   :PROPERTIES:
+   :ID:       AB0432DE-F04D-40E9-9356-8DC480EA5B5A
+   :END:
+ [2020-01-13 Lun 16:09]
+ http://gregorygundersen.com/blog/2020/01/12/why-research-blog/
 ** Heap in Lisp
    :PROPERTIES:
    :ID:       597DF12D-8CCC-479E-8D02-2C66C9147E06
