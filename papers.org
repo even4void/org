@@ -477,7 +477,7 @@ Driving forces for /evolution/:
  :PROPERTIES:
  :Custom_ID: altenhoff-2019-oma
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/altenhoff-2019-oma.pdf
- :END
+ :END:
  Orthology resources: [[http://eggnogdb.embl.de][eggNOG]], [[http://www.ensembl.org/info/docs/api/compara/index.html][Ensembl Compara]], [[http://inparanoid.sbc.su.se][InParanoid]], [[https://omictools.com/mbgd-tool][MBGD]], [[https://www.orthodb.org][OrthoDB]], [[https://orthomcl.org/orthomcl/][OrthoMCL]], [[http://www.pantherdb.org/genes/][PANTHER]], [[http://phylomedb.org][PhylomeDB]], and [[https://omabrowser.org/oma/home/][OMA]].
  OMA [[https://omabrowser.org/standalone/][standalone app]], available /via/ Homebrew.
  Orthologous and paralogous genes are two types of homologous genes, that is, genes that arise from a common DNA ancestral sequence. Orthologous genes diverged after a speciation event, while paralogous genes diverge from one another within a species. Put another way, the terms orthologous and paralogous describe the relationships between genetic sequence divergence and gene products associated with speciation or genetic duplication. ([[https://sciencing.com/difference-between-orthologous-paralogous-genes-18612.html][The difference between orthologous & paralogous genes]])
@@ -874,3 +874,10 @@ Challenge: to handle the overload of information and make it easier to understan
 - Cladogram and phylogram (branch lengths are proportional to the amount of inferred evolutionary change).
 - Newick, NHX (enhanced Newick) and Nexus format.
 - Statistical methods: neighbor-joining and UPGMA (distance), maximum parsimony and maximum likelihood (feature matrix), MCMC (both).
+* [[/Users/chl/Documents/Papers/remm-2001-autom-clust.pdf][remm-2001-autom-clust]] - Automatic clustering of orthologs and in-paralogs from pairwise species comparisons
+ :PROPERTIES:
+ :Custom_ID: remm-2001-autom-clust
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/remm-2001-autom-clust.pdf
+ :END:
+Orthology analysis between humans and invertebrates is often complex because of large numbers of paralogs within protein families. Paralogs that predate the species split (out-paralogs) can easily be confused with true orthologs. Orthologs and in-paralogs are typically detetcted with phylogenetic methods. Alternative approach: ortholog clusters are seeded with a two-way best pairwise match, after which an algorithm for adding in-paralogs is applied.
+Software: [[http://inparanoid.sbc.su.se/cgi-bin/index.cgi][Inparanoid]].
