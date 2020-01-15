@@ -881,3 +881,31 @@ Challenge: to handle the overload of information and make it easier to understan
  :END:
 Orthology analysis between humans and invertebrates is often complex because of large numbers of paralogs within protein families. Paralogs that predate the species split (out-paralogs) can easily be confused with true orthologs. Orthologs and in-paralogs are typically detetcted with phylogenetic methods. Alternative approach: ortholog clusters are seeded with a two-way best pairwise match, after which an algorithm for adding in-paralogs is applied.
 Software: [[http://inparanoid.sbc.su.se/cgi-bin/index.cgi][Inparanoid]].
+* [[/Users/chl/Documents/Papers/ostlund-2010-inpar.pdf][ostlund-2010-inpar]] - Inparanoid 7: new algorithms and tools for eukaryotic orthology analysis
+ :PROPERTIES:
+ :Custom_ID: ostlund-2010-inpar
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ostlund-2010-inpar.pdf
+ :END:
+See also [[/Users/chl/Documents/Papers/remm-2001-autom-clust.pdf][remm-2001-autom-clust]].
+* [[/Users/chl/Documents/Papers/planet-2006-tree-disag.pdf][planet-2006-tree-disag]] - Tree disagreement: measuring and testing incongruence in phylogenies
+ :PROPERTIES:
+ :Custom_ID: planet-2006-tree-disag
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/planet-2006-tree-disag.pdf
+ :END:
+Review of incongruence tests for phylogenetic analysis: character information (character incongruence) vesus those that only consider tree shape or topology (topological incongruence); the latter presents the advantage of being able to compare trees derived from data that may not be strictly comparable or easy to include in the same analysis.
+
+- *Character congruence:* incongruence length difference test, localized incongruence length difference, multiple partitions and pairwise ILD tests, ILD outside of parsimony, parsimony-based tests (permutation and sitewise tests), likelihood-based tests, sitewise testing, non-parametric bootstrapping methods, parametric bootstrapping and partition tests, Bayesian testing
+- *Topological congruence:* consensus-based measurements, tree distances (symmetric difference)
+* [[/Users/chl/Documents/Papers/knuth-2000-dancin-links.pdf][knuth-2000-dancin-links]] - Dancing Links
+ :PROPERTIES:
+ :Custom_ID: knuth-2000-dancin-links
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/knuth-2000-dancin-links.pdf
+ :END:
+https://dancing-links.herokuapp.com
+* [[/Users/chl/Documents/Papers/savojardo-2020-deepm.pdf][savojardo-2020-deepm]] - Deepmito: accurate prediction of protein sub-mitochondrial localization using convolutional neural networks
+ :PROPERTIES:
+ :Custom_ID: savojardo-2020-deepm
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/savojardo-2020-deepm.pdf
+ :END:
+Use of deep learning to predict protein localization in four different mitochondrial compartments (matrix, outer, inner and intermembrane regions).
+Dataset = 424 mito. proteins sharing at most 40% sequence identity (CD-HIT filter), including 166 proteins from fungi.

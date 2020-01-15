@@ -1,4 +1,10 @@
 * Inbox
+** PyOxidizer is a utility for producing binaries that embed Python
+   :PROPERTIES:
+   :ID:       98B97236-C191-459B-B33E-C272ED776925
+   :END:
+ [2020-01-14 Mar 15:40]
+ https://github.com/indygreg/PyOxidizer
 ** Why I Keep a Research Blog
    :PROPERTIES:
    :ID:       AB0432DE-F04D-40E9-9356-8DC480EA5B5A
