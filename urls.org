@@ -1,4 +1,10 @@
 * Inbox
+** New C standard online
+   :PROPERTIES:
+   :ID:       AF334E61-74CF-4EC4-8C51-3D47778C5720
+   :END:
+ [2020-01-16 Jeu 14:03]
+ http://c0x.coding-guidelines.com/
 ** A new algorithm for finding a visual center of a polygon
    :PROPERTIES:
    :ID:       065D983B-B7AD-442A-9BFE-035D0163B1E4
