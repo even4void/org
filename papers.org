@@ -909,3 +909,9 @@ https://dancing-links.herokuapp.com
  :END:
 Use of deep learning to predict protein localization in four different mitochondrial compartments (matrix, outer, inner and intermembrane regions).
 Dataset = 424 mito. proteins sharing at most 40% sequence identity (CD-HIT filter), including 166 proteins from fungi.
+* [[/Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf][khomtchouk-2018-how-lisp]] - How the strengths of lisp-family languages facilitate building complex and flexible bioinformatics applications
+ :PROPERTIES:
+ :Custom_ID: khomtchouk-2018-how-lisp
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf
+ :END:
+See also the [[http://biolisp.org][biolisp]] project and, e.g., [[/Users/chl/Documents/Papers/herzeel-2015-elprep.pdf][herzeel-2015-elprep]].

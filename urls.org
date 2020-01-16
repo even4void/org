@@ -1,4 +1,22 @@
 * Inbox
+** A new algorithm for finding a visual center of a polygon
+   :PROPERTIES:
+   :ID:       065D983B-B7AD-442A-9BFE-035D0163B1E4
+   :END:
+ [2020-01-15 Mer 16:44]
+ https://blog.mapbox.com/a-new-algorithm-for-finding-a-visual-center-of-a-polygon-7c77e6492fbc
+** OpenGL Setup in macOS
+   :PROPERTIES:
+   :ID:       92787029-EAEF-4601-B3A6-350C402A229B
+   :END:
+ [2020-01-15 Mer 15:48]
+ https://giovanni.codes/opengl-setup-in-macos/
+** Using OpenGL with Common Lisp
+   :PROPERTIES:
+   :ID:       5C70E4EF-31ED-412C-A4AB-17D4F8C33304
+   :END:
+ [2020-01-15 Mer 15:47]
+ https://markbrown778.wordpress.com/2013/04/14/using-opengl-with-common-lisp-and-macos-x/
 ** PyOxidizer is a utility for producing binaries that embed Python
    :PROPERTIES:
    :ID:       98B97236-C191-459B-B33E-C272ED776925
