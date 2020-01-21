@@ -281,8 +281,7 @@ Note that parallel execution requires stream-aware RNGs (p.7).
  :Custom_ID: efron-1986-boots-method
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/efron-1986-boots-method.pdf
  :END:
-From the Stata Manual [R] on "bootstrap":
-cite:efron-1986-boots-method describe an alternative to Satterthwaite’s approximation that estimates the ASL by bootstrapping the statistic from the test of equal means. Their idea is to recenter the two samples to the combined sample mean so that the data now conform to the null hypothesis but that the variances within the samples remain unchanged.
+From the Stata Manual [R] on "bootstrap": [[~/Documents/papers/efron-1986-boots-method.pdf][efron-1986-boots-method]] describe an alternative to Satterthwaite’s approximation that estimates the ASL by bootstrapping the statistic from the test of equal means. Their idea is to recenter the two samples to the combined sample mean so that the data now conform to the null hypothesis but that the variances within the samples remain unchanged.
 
 #+NAME: auto
 #+BEGIN_SRC Stata
@@ -298,7 +297,7 @@ set seed 1
 bootstrap t=r(t), rep(1000) strata(foreign) saving(bsauto2) nodots: ttest mpg, by(foreign) unequal
 #+END_SRC
 
-See also cite:hesterberg-2014-what-teach and Patrick Burns note on resampling (http://www.burns-stat.com/documents/tutorials/the-statistical-bootstrap-and-other-resampling-methods-2/).
+See also [[~/Documents/papers/hesterberg-2014-what-teach.pdf][hesterberg-2014-what-teach]] and Patrick Burns note on [[http://www.burns-stat.com/documents/tutorials/the-statistical-bootstrap-and-other-resampling-methods-2/][resampling]]. See also [[~/Documents/Papers/poi-2004-from-help-desk.pdf][poi-2004-from-help-desk]] and the corresponding entry for R code.
 
 * [[/Users/chl/Documents/Papers/efron-1996-boots-confid.pdf][efron-1996-boots-confid]] - Bootstrap Confidence Levels For Phylogenetic Trees
  :PROPERTIES:
@@ -414,7 +413,8 @@ Mathematical models come in a variety of flavors, depending on whether the state
  :Custom_ID: gustedt-2018-moder-c
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gustedt-2018-moder-c.pdf
  :END:
-**** TODO read* [[/Users/chl/Documents/Papers/hailperin-1999-concr-abstr.pdf][hailperin-1999-concr-abstr]] - Concrete abstractions: an introduction to computer science using scheme
+**** TODO read
+* [[/Users/chl/Documents/Papers/hailperin-1999-concr-abstr.pdf][hailperin-1999-concr-abstr]] - Concrete abstractions: an introduction to computer science using scheme
  :PROPERTIES:
  :Custom_ID: hailperin-1999-concr-abstr
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hailperin-1999-concr-abstr.pdf
@@ -484,6 +484,7 @@ See =networkx.powerlaw_cluster_graph=.
 Identifying genuine orthologs among distantly related species is challenging, because genes obtained through horizontal gene transfer (HGT) and out-paralogs derived from gene duplication before speciation are often present among the predicted orthologs.
 
 This software uses 5 stages to alleviate such concern: (1) HGT filtering: Genes derived from HGT could be detected and deleted from the initial sequence data set by examining their base compositions. (2) Out-paralog filtering: Out-paralogs are detected and deleted from the data set based on sequence similarity. (3) Classification of phylogenetic trees: Phylogenetic trees generated for ortholog candidates are classified as monophyletic or polyphyletic trees. (4) Tree splitting: Polyphyletic trees are bisected to obtain monophyletic trees and remove HGT genes and out-paralogs. (5) Threshold changing: Out-paralogs are further excluded from the data set based on the difference in the similarity scores of genuine orthologs and out-paralogs.
+
 *Remark:* See [[~/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] for an intermediate approach (tolerate recent in-paralogs as unavoidable contamination).
 
 * [[/Users/chl/Documents/Papers/howe-2011-rna-seq-mev.pdf][howe-2011-rna-seq-mev]] - Rna-seq analysis in mev
@@ -569,9 +570,9 @@ Interesting use of personal email data
 
 "In Agile Big Data, a small team of generalists uses scalable, high-level tools and cloud computing to iteratively refine data into increasingly higher states of value. We embrace a software stack leveraging cloud computing, distributed systems, and platforms as a service. Then we use this stack to iteratively publish the intermediate results of even our most in-depth research to snowball value from simple records to predictions and actions that create value and let us capture some of it to turn data into dollars."
 
-See also https://www.oreilly.com/ideas/a-manifesto-for-agile-data-science
+See also [[https://www.oreilly.com/ideas/a-manifesto-for-agile-data-science][A manifesto for Agile data science]].
 
-Sidenote: There is an example of using the Enron SQL database (Chapter 2, § "SQL").
+*Sidenote:* There is an example of using the Enron SQL database (Chapter 2, § "SQL").
 
 * [[/Users/chl/Documents/Papers/kazil-2016-data-wrang-python.pdf][kazil-2016-data-wrang-python]] - Data Wrangling with Python
  :PROPERTIES:
@@ -630,7 +631,7 @@ https://rust-bio.github.io
  :Custom_ID: laaksonen-2017-compet-progr-handb
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/laaksonen-2017-compet-progr-handb.pdf
  :END:
-When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike @conery-2016-impos-handb, it has more running code, and in a decent language (C++ 11). I wrote a little transcript in Python 3.x: [[~/git/scratch/python/competitive.py]] and a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on aliquote.org.
+When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike @conery-2016-impos-handb, it has more running code, and in a decent language (C++ 11). I wrote a little [[~/git/scratch/python/competitive.py][transcript]] in Python 3.x and wrote a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on aliquote.org.
 
 * [[/Users/chl/Documents/Papers/laan-2006-target-maxim.pdf][laan-2006-target-maxim]] - Targeted Maximum Likelihood Learning
  :PROPERTIES:
@@ -802,7 +803,7 @@ Only very basic sequence aligner. Not much compared to good old Wwwblast unfortu
  :Custom_ID: ramos-2014-reach-python-racket
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ramos-2014-reach-python-racket.pdf
  :END:
-Via [[https://racket-news.com/2019/09/racket-news-issue-15.html][Racket News #15]].
+Via [[https://racket-news.com/2019/09/racket-news-issue-15.html][Racket News #15]]. See also [[https://news.ycombinator.com/item?id=20392448][Racket is an acceptable Python]].
 
 * [[/Users/chl/Documents/Papers/remm-2001-autom-clust.pdf][remm-2001-autom-clust]] - Automatic clustering of orthologs and in-paralogs from pairwise species comparisons
  :PROPERTIES:
@@ -831,7 +832,9 @@ A book from the Packt Publishing group.
 
 Actually, this is the first book by [[http://www.ericrochester.com][Eric Rochester]]. The second covers more advanced techniques and was published one year later: cite:rochester-2014-master-clojur. The [[https://github.com/erochest/clj-data-analysis][website for the book]] includes data used throughout the book, nothing more, but be aware there are a lot of datasets.
 
-"This book is for programmers or data scientists who are familiar with Clojure and want to use it in their data analysis processes."
+#+BEGIN_QUOTE
+This book is for programmers or data scientists who are familiar with Clojure and want to use it in their data analysis processes.
+#+END_QUOTE
 
 The first chapter describes various ways to import data (flat files, local database and RDF data), mostly using Incanter backend. I would prefer the author start with more basic tool before dwelling into specialized libraries, especially since [[https://github.com/incanter/incanter][Incanter]] looks almost defunct nowadays (the last blog entry I found said that it was [[https://data-sorcery.org/2016/02/01/incanter-1-5-7/][version 1.5.7, Feb 2016]]). Anyway, this provides a good overview of Incanter's facilities to process external data and convert them in array form, and R or Lispstat users should feel at home. However, starting with Chapter 2 the author will use the [[https://github.com/clojure/data.csv][data.csv]] library.
 
@@ -867,7 +870,8 @@ Bifurcating tree hypothesis ([[https://academic.oup.com/sysbio/article/62/3/479/
  :Custom_ID: stein-2017-elemen-number-theor
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/stein-2017-elemen-number-theor.pdf
  :END:
-**** TODO Add a few words in [[file:~/Drafts/current/number-theory.org]]
+**** TODO Add a few words in [[file:~/org/drafts/number-theory.org]]
+
 
 * [[/Users/chl/Documents/Papers/sturmfels-2007-open-probl.pdf][sturmfels-2007-open-probl]] - Open problems in algebraic statistics
  :PROPERTIES:
@@ -913,7 +917,7 @@ Molecular clock models assume a constant substitution rate through time, while r
  :Custom_ID: watson-2016-lovin-common-lisp
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/watson-2016-lovin-common-lisp.pdf
  :END:
-GitHub: https://github.com/mark-watson/loving-common-lisp (Depends on [[https://github.com/mmaul/clml][clml]]), cloned locally in [[~/git/sandbox]].
+On [[https://github.com/mark-watson/loving-common-lisp][Github]] (depends on [[https://github.com/mmaul/clml][clml]]), cloned locally in [[~/git/sandbox]].
 
 There are still some proof-reading lacking here and there but overall it is quite readable. The very first part of the book is all about data types in Common Lisp. All examples are illustrated using SBCL.
 
@@ -938,7 +942,7 @@ Beyond lists, vectors and arrays (=make-array,= or =vector= and =make-sequence=)
 y
 #+END_SRC
 
-Operations on string (=concatenate=, =search=, =subseq= and =string-*=) and the fine distinction between =eq=, =eql=, and =equal=. See also http://doc.norang.ca/lisp.html. For strings, we should prefer =string==. Instead of =nth=, we use =char= to extract a given character in a string.
+Operations on string (=concatenate=, =search=, =subseq= and =string-*=) and the fine distinction between =eq=, =eql=, and =equal=. See also [[http://doc.norang.ca/lisp.html][Lisp - List Processing (or Lots of Irritating Superfluous Parenthesis)]]. For strings, we should prefer =string==. Instead of =nth=, we use =char= to extract a given character in a string.
 
 Hash tables are to be preferred when lists (coupled with =assoc=) are long. Main functions are =gethash=, =make-hash-table=, and =maphash=. Updating values in a hash table is done using =remhash= or =clrhash=. Note that these functions can modify their arguments, much like =setf= or =setq=, but the latter are macros and not functions.
 
@@ -1019,4 +1023,4 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Two packages: [[http://bioconductor.org/packages/ggtree][ggtree]] for mapping and visualization, and [[http://bioconductor.org/packages/treeio][treeio]] for data parsing ([[https://github.com/GuangchuangYu/treeio][Github]])
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
-**** TODO Letunic I, Bork P. 2007. Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation. Bioinformatics 23:127–128.
+See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
