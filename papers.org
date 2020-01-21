@@ -1005,3 +1005,12 @@ Phylogenetic networks are useful when evolution involves reticulate events (hybr
 Split networks and quasi-median networks are two examples of unrooted phylogenetic networks.
 
 Sneath P. 1975. [[https://academic.oup.com/sysbio/article/24/3/360/1659116][Cladistic representation of reticulate evolution]]. Syst Zool. 24(3):360–368.
+* [[/Users/chl/Documents/Papers/tunbridge-1995-l-system.pdf][tunbridge-1995-l-system]] - An l-systems approach to the modelling of fungal growth
+ :PROPERTIES:
+ :Custom_ID: tunbridge-1995-l-system
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/tunbridge-1995-l-system.pdf
+ :END:
+Complete description of an L-system with rules for ungerminated and germinated spores,
+tip, apical, septum and ordinary segment, and segment from which a branch grows.
+
+**** TODO Try to implement main rules using Racket [[https://docs.racket-lang.org/lindenmayer/index.html][#lang lindenmayer]].
