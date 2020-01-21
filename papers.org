@@ -915,3 +915,15 @@ Dataset = 424 mito. proteins sharing at most 40% sequence identity (CD-HIT filte
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf
  :END:
 See also the [[http://biolisp.org][biolisp]] project and, e.g., [[/Users/chl/Documents/Papers/herzeel-2015-elprep.pdf][herzeel-2015-elprep]].
+* [[/Users/chl/Documents/Papers/ferry-2019-dna.pdf][ferry-2019-dna]] - The structure of dna
+ :PROPERTIES:
+ :Custom_ID: ferry-2019-dna
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ferry-2019-dna.pdf
+ :END:
+Of historical importance only.
+* [[/Users/chl/Documents/Papers/vandewiele-2020-overl-optim.pdf][vandewiele-2020-overl-optim]] - Overly optimistic prediction results on imbalanced data: flaws and benefits of applying over-sampling
+ :PROPERTIES:
+ :Custom_ID: vandewiele-2020-overl-optim
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/vandewiele-2020-overl-optim.pdf
+ :END:
+ Methodological bias = applying over-sampling before partitioning the data into mutually exclusive training and testing sets. Other biased approaches: apply cross-validation on a subset of data subsampled from the original dataset (increases the variance of the obtained results and does not address class imbalance). Carrying out over-sampling before splitting into training and testing sets might leak information from the original testing samples to the artificially generated training samples, leading to overly optimistic validation scores. It is therefore of key importance to carry out the over-sampling after selecting a training and testing set.

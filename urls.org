@@ -1,4 +1,34 @@
 * Inbox
+** Nice org config for Doom Emacs
+   :PROPERTIES:
+   :ID:       86F7E323-8CA4-4CC2-BBB2-4C684CCC18D0
+   :END:
+ [2020-01-21 Mar 09:50]
+ https://github.com/nmartin84/.doom.d
+** xsv is a command line program for indexing, slicing, analyzing, splitting and joining CSV files.
+   :PROPERTIES:
+   :ID:       BE4EBCDE-87CE-48E6-9DA9-28A7E2DB062D
+   :END:
+ [2020-01-20 Lun 14:27]
+ https://github.com/BurntSushi/xsv
+** Why is quicksort better than other sorting algorithms in practice?
+   :PROPERTIES:
+   :ID:       F6AB06B2-AC16-433E-8C0E-0E38F095BED3
+   :END:
+ [2020-01-20 Lun 14:23]
+ https://cs.stackexchange.com/questions/3/why-is-quicksort-better-than-other-sorting-algorithms-in-practice
+** Ergolib is a disparate collection of utilities designed to make programming in Common Lisp easier.
+ [2020-01-20 Lun 12:28]
+ https://github.com/rongarret/ergolib
+** Lisping at JPL
+ [2020-01-20 Lun 12:26]
+ http://flownet.com/gat/jpl-lisp.html
+** R7RS SRFI implementations
+   :PROPERTIES:
+   :ID:       99259404-1186-4D3B-900B-31A0B1DD2214
+   :END:
+ [2020-01-17 Ven 09:55]
+ https://github.com/TaylanUB/scheme-srfis
 ** New C standard online
    :PROPERTIES:
    :ID:       AF334E61-74CF-4EC4-8C51-3D47778C5720
