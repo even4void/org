@@ -1,4 +1,10 @@
 * Inbox
+** Cleanup virtualfish env after Homebrew upgrade
+   :PROPERTIES:
+   :ID:       40099253-F7FF-4B62-9FDB-22A8D4F4C758
+   :END:
+ [2020-01-21 Mar 15:06]
+ https://stackoverflow.com/questions/23233252/broken-references-in-virtualenvs
 ** Rope (data structure)
    :PROPERTIES:
    :ID:       4D2A9DDA-434B-4827-BDC6-F7E742D14DBA
