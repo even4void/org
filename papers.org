@@ -927,3 +927,28 @@ Of historical importance only.
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/vandewiele-2020-overl-optim.pdf
  :END:
  Methodological bias = applying over-sampling before partitioning the data into mutually exclusive training and testing sets. Other biased approaches: apply cross-validation on a subset of data subsampled from the original dataset (increases the variance of the obtained results and does not address class imbalance). Carrying out over-sampling before splitting into training and testing sets might leak information from the original testing samples to the artificially generated training samples, leading to overly optimistic validation scores. It is therefore of key importance to carry out the over-sampling after selecting a training and testing set.
+* [[/Users/chl/Documents/Papers/poi-2004-from-help-desk.pdf][poi-2004-from-help-desk]] - From the help desk: some bootstrapping techniques
+ :PROPERTIES:
+ :Custom_ID: poi-2004-from-help-desk
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/poi-2004-from-help-desk.pdf
+ :END:
+ Hypothesis test based on bootstrap resampling:
+
+ #+BEGIN_SRC R
+x1 <- d[,1] - mean(d[,1]) + mean(x)
+x2 <- d[,2] - mean(d[,2]) + mean(x)
+B <- 10000        ## no. bootstrap samples
+s <- numeric(B)   ## vector of test statistics
+for (i in 1:B) {
+  x1s <- sample(x1, replace=TRUE)
+  x2s <- sample(x2, replace=TRUE)
+  s[i] <- mean(x1s) - mean(x2s)
+}
+pobs <-  (1 + sum(abs(s) > abs(s0))) / (B+1)
+ #+END_SRC
+* [[/Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf][tsamardinos-2017-boots-out]] - Bootstrapping the out-of-sample predictions for efficient and accurate cross-validation
+ :PROPERTIES:
+ :Custom_ID: tsamardinos-2017-boots-out
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf
+ :END:
+Bootstrap Bias Corrected CV = bootstrap the whole process of selecting the best-performing configuration on the out-of-sample predictions of each configuration, without additional training of models. Computationally more efficient, smaller variance and bias compared to nested CV.

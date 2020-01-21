@@ -1,4 +1,34 @@
 * Inbox
+** Rope (data structure)
+   :PROPERTIES:
+   :ID:       4D2A9DDA-434B-4827-BDC6-F7E742D14DBA
+   :END:
+ [2020-01-21 Mar 13:56]
+ https://en.wikipedia.org/wiki/Rope_(data_structure)
+** A Definition of Closures
+   :PROPERTIES:
+   :ID:       9BC47136-8BFF-4F54-8B5B-87042FD14A01
+   :END:
+ [2020-01-21 Mar 13:51]
+ http://gafter.blogspot.com/2007/01/definition-of-closures.html
+** UNIX Syscalls
+   :PROPERTIES:
+   :ID:       DEE9E033-30EC-411C-9B37-D7AA3D232C13
+   :END:
+ [2020-01-21 Mar 13:00]
+ http://fungi-db.herokuapp.com/view/956
+** Obfuscated Vim code
+   :PROPERTIES:
+   :ID:       D24E671E-3AFB-4C3B-9AF7-26FB100F1E17
+   :END:
+ [2020-01-21 Mar 12:29]
+ https://www.linusakesson.net/programming/vim/index.php
+** Fun with .Rprofile and customizing R startup
+   :PROPERTIES:
+   :ID:       566F5F08-B411-4BEF-B49A-C1DA051F77A3
+   :END:
+ [2020-01-21 Mar 11:57]
+ https://www.r-bloggers.com/fun-with-rprofile-and-customizing-r-startup/
 ** Nice org config for Doom Emacs
    :PROPERTIES:
    :ID:       86F7E323-8CA4-4CC2-BBB2-4C684CCC18D0
