@@ -1,4 +1,10 @@
 * Inbox
+** Global alignment and alignment extension
+   :PROPERTIES:
+   :ID:       3078CF97-6EE7-4C99-92C9-6498911DBD9A
+   :END:
+ [2020-01-21 Mar 16:47]
+ https://github.com/lh3/ksw2
 ** Cleanup virtualfish env after Homebrew upgrade
    :PROPERTIES:
    :ID:       40099253-F7FF-4B62-9FDB-22A8D4F4C758

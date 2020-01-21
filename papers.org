@@ -1,27 +1,39 @@
-* [[/Users/chl/Documents/Papers/gosset-1908-probab-error-mean.pdf][gosset-1908-probab-error-mean]] - The Probable Error of a Mean
+* [[/Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf][allen-2016-haskel-progr]] - Haskell Programming from First Principles
  :PROPERTIES:
- :Custom_ID: gosset-1908-probab-error-mean
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gosset-1908-probab-error-mean.pdf
+ :Custom_ID: allen-2016-haskel-progr
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf
  :END:
-R =datasets::sleepstudy=
+One of the best book I read about Haskell, and on functional programming more generally.
 
-Extra R code (Frank Harrell, [[/Users/chl/Documents/Papers/harrell-2017-biost-biomed-resear.pdf][harrell-2017-biost-biomed-resear]])
+A short remark about typography: this book is typesetted using LaTeX; however, the verbatim and math elements appear a bit too small in my view.
 
-#+NAME: sleepstudy
-#+BEGIN_SRC R
-drug1 = c(.7, -1.6, -.2, -1.2, -.1, 3.4, 3.7, .8, 0, 2)
-drug2 = c(1.9, .8, 1.1, .1, -.1, 4.4, 5.5, 1.6, 4.6, 3.4)
-d = data.frame(Drug=c(rep('Drug 1', 10), rep('Drug 2', 10), rep('Difference', 10)),
-               extra=c(drug1 , drug2 , drug2 - drug1))
-w = data.frame(drug1, drug2, diff=drug2 - drug1)
-ggplot(d, aes(x=Drug, y=extra)) +
-geom_boxplot(col='lightyellow1', alpha=.3, width=.5) +
-geom_dotplot(binaxis='y', stackdir='center', position='dodge') +
-stat_summary(fun.y=mean, geom="point", col='red', shape=18, size=5) +
-geom_segment(data=w, aes(x='Drug 1', xend='Drug 2', y=drug1, yend=drug2), col=gray(.8)) +
-geom_segment(data=w, aes(x='Drug 1', xend='Difference', y=drug1, yend=drug2 - drug1), col=gray(.8)) +
-xlab('') + ylab('Extra Hours of Sleep') + coord_flip()
-#+END_SRC
+* [[/Users/chl/Documents/Papers/altenhoff-2019-oma.pdf][altenhoff-2019-oma]] - OMA standalone: orthology inference among public and custom genomes and transcriptomes
+ :PROPERTIES:
+ :Custom_ID: altenhoff-2019-oma
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/altenhoff-2019-oma.pdf
+ :END:
+- Orthology resources: [[http://eggnogdb.embl.de][eggNOG]], [[http://www.ensembl.org/info/docs/api/compara/index.html][Ensembl Compara]], [[http://inparanoid.sbc.su.se][InParanoid]], [[https://omictools.com/mbgd-tool][MBGD]], [[https://www.orthodb.org][OrthoDB]], [[https://orthomcl.org/orthomcl/][OrthoMCL]], [[http://www.pantherdb.org/genes/][PANTHER]], [[http://phylomedb.org][PhylomeDB]], and [[https://omabrowser.org/oma/home/][OMA]].
+- OMA [[https://omabrowser.org/standalone/][standalone app]], available /via/ Homebrew.
+
+Orthologous and paralogous genes are two types of homologous genes, that is, genes that arise from a common DNA ancestral sequence. Orthologous genes diverged after a speciation event, while paralogous genes diverge from one another within a species. Put another way, the terms orthologous and paralogous describe the relationships between genetic sequence divergence and gene products associated with speciation or genetic duplication. ([[https://sciencing.com/difference-between-orthologous-paralogous-genes-18612.html][The difference between orthologous & paralogous genes]])
+
+* [[/Users/chl/Documents/Papers/anders-2013-count-rna.pdf][anders-2013-count-rna]] - Count-based differential expression analysis of rna sequencing data using r and bioconductor
+ :PROPERTIES:
+ :Custom_ID: anders-2013-count-rna
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/anders-2013-count-rna.pdf
+ :END:
+De facto standard pipeline for RNA-Seq analysis using =TopHat= + =HTSeq= + =DESeq2=. See also [[file:~/Documents/Papers/kim-2019-graph-hisat.pdf][kim-2019-graph-hisat]] for the successor of =TopHat2=.
+
+See also [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][conesa-2016-survey-best]] for a review of current best pratices and alternative workflows.
+
+Note that =DESeq2= and =edgeR= use different defaults: Regarding /normalization/, edgeR uses the trimmed mean of M values while DESeq relies on a virtual reference sample; dispersion estimates are based on a trended mean in edgeR, whereas DESeq takes the maximum of the individual dispersion estimates and the dispersion-mean trend.
+
+* [[/Users/chl/Documents/Papers/au-2018-random-fores.pdf][au-2018-random-fores]] - Random forests, decision trees, and categorical predictors: the “absent levels” problem
+ :PROPERTIES:
+ :Custom_ID: au-2018-random-fores
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/au-2018-random-fores.pdf
+ :END:
+This paper discusses the case of how best to handle catgeorical predictors in RF, in particular the 'absent level' problem, i.e. the case of the indeterminacy over how to handle an observation that has reached a categorical split which was determined when the observation in question’s level was absent during training.
 
 * [[/Users/chl/Documents/Papers/avati-2017-improv-palliat.pdf][avati-2017-improv-palliat]] - Improving Palliative Care with Deep Learning
  :PROPERTIES:
@@ -34,59 +46,12 @@ See Frank Harrell's blog post: http://www.fharrell.com/post/medml/
 As with any retrospective study not based on an inception cohort with a well-defined “time zero”, it is tricky to define a time zero and somewhat easy to have survival bias and other sampling biases sneak into the analysis. The ML algorithm required division of patients into “positive” and “negative” cases, something not required by regression models. “Positive” cases must have at least 12 months of previous data in the health system, weeding out patients who died quickly. “Negative” cases must have been alive for at least 12 months from the prediction date. It is also not clear how variable censoring times were handled. In standard statistical model, patients entering the system just before the data analysis have short follow-up and are right-censored early, but still contribute some information.
 #+END_QUOTE
 
-* [[/Users/chl/Documents/Papers/efron-1986-boots-method.pdf][efron-1986-boots-method]] - Bootstrap Methods for Standard Errors, Confidence Intervals, and Other Measures of Statistical Accuracy
+* [[/Users/chl/Documents/Papers/bernardes-2016-improv-protein.pdf][bernardes-2016-improv-protein]] - Improvement in protein domain identification is reached by breaking consensus, with the agreement of many profiles and domain co-occurrence
  :PROPERTIES:
- :Custom_ID: efron-1986-boots-method
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/efron-1986-boots-method.pdf
+ :Custom_ID: bernardes-2016-improv-protein
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bernardes-2016-improv-protein.pdf
  :END:
-From the Stata Manual [R] on "bootstrap":
-cite:efron-1986-boots-method describe an alternative to Satterthwaite’s approximation that estimates the ASL by bootstrapping the statistic from the test of equal means. Their idea is to recenter the two samples to the combined sample mean so that the data now conform to the null hypothesis but that the variances within the samples remain unchanged.
-
-#+NAME: auto
-#+BEGIN_SRC Stata
-summarize mpg, meanonly
-scalar omean = r(mean)
-summarize mpg if foreign==0, meanonly
-replace mpg = mpg - r(mean) + scalar(omean) if foreign==0
-summarize mpg if foreign==1, meanonly
-replace mpg = mpg - r(mean) + scalar(omean) if foreign==1
-by foreign, sort: summarize mpg
-keep mpg foreign
-set seed 1
-bootstrap t=r(t), rep(1000) strata(foreign) saving(bsauto2) nodots: ttest mpg, by(foreign) unequal
-#+END_SRC
-
-See also cite:hesterberg-2014-what-teach and Patrick Burns note on resampling (http://www.burns-stat.com/documents/tutorials/the-statistical-bootstrap-and-other-resampling-methods-2/).
-
-* [[/Users/chl/Documents/Papers/jurney-2014-agile-data-scien.pdf][jurney-2014-agile-data-scien]] - Agile Data Science
- :PROPERTIES:
- :Custom_ID: jurney-2014-agile-data-scien
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jurney-2014-agile-data-scien.pdf
- :END:
-Keywords: scalability, NoSQL (Hadoop and MongoDB), cloud computing, big data, data intuition
-Interesting use of personal email data
-
-"In Agile Big Data, a small team of generalists uses scalable, high-level tools and cloud computing to iteratively refine data into increasingly higher states of value. We embrace a software stack leveraging cloud computing, distributed systems, and platforms as a service. Then we use this stack to iteratively publish the intermediate results of even our most in-depth research to snowball value from simple records to predictions and actions that create value and let us capture some of it to turn data into dollars."
-
-See also https://www.oreilly.com/ideas/a-manifesto-for-agile-data-science
-
-Sidenote: There is an example of using the Enron SQL database (Chapter 2, § "SQL").
-
-* [[/Users/chl/Documents/Papers/meier-2015-livin-clojur.pdf][meier-2015-livin-clojur]] - Living Clojure
- :PROPERTIES:
- :Custom_ID: meier-2015-livin-clojur
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/meier-2015-livin-clojur.pdf
- :END:
-See [[https://howistart.org/posts/clojure/1/index.html][How I start]].
-
-* [[/Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf][allen-2016-haskel-progr]] - Haskell Programming from First Principles
- :PROPERTIES:
- :Custom_ID: allen-2016-haskel-progr
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf
- :END:
-One of the best book I read about Haskell, and on functional programming more generally.
-
-A short remark about typography: this book is typesetted using LaTeX; however, the verbatim and math elements appear a bit too small in my view.
+http://www.lcqb.upmc.fr/CLADE/
 
 * [[/Users/chl/Documents/Papers/blandy-2015-why-rust.pdf][blandy-2015-why-rust]] - Why Rust?
  :PROPERTIES:
@@ -150,12 +115,20 @@ Some additional pointers:
 
 **** TODO Read the remaining book.
 
-* [[/Users/chl/Documents/Papers/au-2018-random-fores.pdf][au-2018-random-fores]] - Random forests, decision trees, and categorical predictors: the “absent levels” problem
+* [[/Users/chl/Documents/Papers/bradley-2018-what-categ-theor.pdf][bradley-2018-what-categ-theor]] - What is category theory
  :PROPERTIES:
- :Custom_ID: au-2018-random-fores
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/au-2018-random-fores.pdf
+ :Custom_ID: bradley-2018-what-categ-theor
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bradley-2018-what-categ-theor.pdf
  :END:
-This paper discusses the case of how best to handle catgeorical predictors in RF, in particular the 'absent level' problem, i.e. the case of the indeterminacy over how to handle an observation that has reached a categorical split which was determined when the observation in question’s level was absent during training.
+- Main blog: https://www.math3ma.com
+- Level: graduate student
+
+Category Theory used to reshape and reformulate problems within pure mathematics, including topology, homotopy theory and algebraic geometry, and it has various applications in /chemistry/, neuroscience, systems biology, /natural language processing/, causality, network theory, dynamical systems, and database theory.
+
+Two central themes:
+
+- functorial semantics: C → D ≈ interpretation of C within D; syntax (grammar in NLP) refers to rules for putting things together and semantics (meaning) refers to the meaning of those things.
+- compositionality
 
 * [[/Users/chl/Documents/Papers/bray-2016-near.pdf][bray-2016-near]] - Near-optimal probabilistic rna-seq quantification
  :PROPERTIES:
@@ -167,29 +140,109 @@ Easy to setup (=brew install kallisto=) and time+memory-efficient on fungi data.
 Works on Galaxy server too. Beware that it returns different counts (TPM) than BEDtools [[https://bedtools.readthedocs.io/en/latest/content/tools/multicov.html][multicov]].
 See why: [[https://www.rna-seqblog.com/rpkm-fpkm-and-tpm-clearly-explained/][RPKM, FPKM and TPM, clearly explained]] and [[http://www.cureffi.org/2013/09/12/counts-vs-fpkms-in-rna-seq/][Counts vs. FPKMs in RNA-seq]]. See also this [[http://seqanswers.com/forums/showthread.php?t=24903][thread on SEQanswers]].
 
-* [[/Users/chl/Documents/Papers/rochester-2013-clojur-data.pdf][rochester-2013-clojur-data]] - Clojure Data Analysis Cookbook
+* [[/Users/chl/Documents/Papers/bueno-2013-matur-optim.pdf][bueno-2013-matur-optim]] - Mature Optimization Handbook
  :PROPERTIES:
- :Custom_ID: rochester-2013-clojur-data
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/rochester-2013-clojur-data.pdf
+ :Custom_ID: bueno-2013-matur-optim
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bueno-2013-matur-optim.pdf
  :END:
-A book from the Packt Publishing group.
+[[file:~/Sites/aliquote/content/post/mature-optimization-handbook.md][review]] published on aliquote.org.
 
-Actually, this is the first book by [[http://www.ericrochester.com][Eric Rochester]]. The second covers more advanced techniques and was published one year later: cite:rochester-2014-master-clojur. The [[https://github.com/erochest/clj-data-analysis][website for the book]] includes data used throughout the book, nothing more, but be aware there are a lot of datasets.
-
-"This book is for programmers or data scientists who are familiar with Clojure and want to use it in their data analysis processes."
-
-The first chapter describes various ways to import data (flat files, local database and RDF data), mostly using Incanter backend. I would prefer the author start with more basic tool before dwelling into specialized libraries, especially since [[https://github.com/incanter/incanter][Incanter]] looks almost defunct nowadays (the last blog entry I found said that it was [[https://data-sorcery.org/2016/02/01/incanter-1-5-7/][version 1.5.7, Feb 2016]]). Anyway, this provides a good overview of Incanter's facilities to process external data and convert them in array form, and R or Lispstat users should feel at home. However, starting with Chapter 2 the author will use the [[https://github.com/clojure/data.csv][data.csv]] library.
-
-* [[/Users/chl/Documents/Papers/higginbotham-2015-clojur-brave-true.pdf][higginbotham-2015-clojur-brave-true]] - Clojure for the Brave and True
+* [[/Users/chl/Documents/Papers/buffalo-2015-bioin-data-skill.pdf][buffalo-2015-bioin-data-skill]] - Bioinformatics data skills: reproducible and robust research with open source tools
  :PROPERTIES:
- :Custom_ID: higginbotham-2015-clojur-brave-true
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/higginbotham-2015-clojur-brave-true.pdf
+ :Custom_ID: buffalo-2015-bioin-data-skill
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/buffalo-2015-bioin-data-skill.pdf
  :END:
-The book was published on [[http://leanpub.com/clojure-for-the-brave-and-true][Leanpub]] a while ago but it is not for sale anymore. I don't remember where I got a PDF version of the book, but there is also a website, [[https://www.braveclojure.com][Brave Clojure]], where the book can be read online for free.
+- [[https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?][Sequence Read Archive]]
+- forensic bioinformatics ([[https://projecteuclid.org/euclid.aoas/1267453942][Baggerly and Coombes 2009]])
 
-The first chapters are all about setting up a working environment for writing Clojure code, and it happens to be Emacs + [[https://cider.readthedocs.org/][Cider]]. The Clojure version currently used in the book is 1.6 (alpha3), with Leiningen as the build tool for Clojure projects (+ Clojure 1.5.1 for =lein repl=).
+* [[/Users/chl/Documents/Papers/capella-gutierrez-2014.pdf][capella-gutierrez-2014]] - A phylogenomics approach for selecting robust sets of phylogenetic markers
+ :PROPERTIES:
+ :Custom_ID: capella-gutierrez-2014
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/capella-gutierrez-2014.pdf
+ :END:
+Set of 4 genes in the case of ascomycetous fungal species (/Basidiomycota/):
 
-Overall, the presentation is clear although it remains a bit rough (I mean like in draft mode) with lot of external links to learn more.
+| YHR186C | 1557 | Target of rapamycin complex 1 subunit KOG1     |
+| YMR012W | 1277 | Clustered mitochondria protein 1               |
+| YJL029C |  822 | Vacuolar protein sorting-associated protein 53 |
+| YAR007C |  621 | Replication factor A protein 1                 |
+
+Phylogenetic tree analysis using PhyML, with Robinson and Foulds distance to compare trees. Interesting approach to use train/test dataset and resampling strategy.
+* [[/Users/chl/Documents/Papers/casillas-2017-molec-popul-genet.pdf][casillas-2017-molec-popul-genet]] - Molecular Population Genetics
+ :PROPERTIES:
+ :Custom_ID: casillas-2017-molec-popul-genet
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/casillas-2017-molec-popul-genet.pdf
+ :END:
+Driving forces for /evolution/:
+- natural selection: (ignoring effects of genetic drift) classical (homozygous loci for the wild-type allele) vs. balance (polymorphic loci) hypothesis, which requires to be able to estimate genetic diversity in populations. This has successively be done using allozyme polymorphisms (inconclusive results due to limitations of protein electrophoresis), nucleotide sequence data (using restriction enzymes, before PCR and automated Sanger sequencing), and genome variation.
+- genetic drift,
+- mutation,
+- recombination,
+- gene flux.
+
+* [[/Users/chl/Documents/Papers/castresana-2000-selec-conser.pdf][castresana-2000-selec-conser]] - Selection of conserved blocks from multiple alignments for their use in phylogenetic analysis
+ :PROPERTIES:
+ :Custom_ID: castresana-2000-selec-conser
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/castresana-2000-selec-conser.pdf
+ :END:
+Instead of removing divergent regions in an arbitrary way, or use alternative approach that consist in assigning gap weights highly variable regions, the author proposes an algorithm (=GBlocks=) that accounts for: the degree of conservation of every position, stretches of contiguous nonconserved positions, minimum length support, removing all positions with gaps and nonconserved positions adjacent to them., as well as small block remaining after gap cleaning are also removed. The paper is quite old by now, and probably outdated.
+
+* [[/Users/chl/Documents/Papers/chen-2003-statis-comput-datab.pdf][chen-2003-statis-comput-datab]] - Statistical computing and databases: distributed computing near the data
+ :PROPERTIES:
+ :Custom_ID: chen-2003-statis-comput-datab
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/chen-2003-statis-comput-datab.pdf
+ :END:
+Old stuff but interesting ideas (part of them are now materialized in the dplyr/dbi packages) like performing the data-intensive but algorithmically less sophisticated operations in the database and send back the results to the statistical package which is responsible for the algorithmic flow. The software design includes a CORBA architecture coupled to [[https://www.csm.ornl.gov/pvm/][PVM]] for managing parallel computations.
+
+* [[/Users/chl/Documents/Papers/choi-2017-tree-life.pdf][choi-2017-tree-life]] - A genome tree of life for the fungi kingdom
+ :PROPERTIES:
+ :Custom_ID: choi-2017-tree-life
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/choi-2017-tree-life.pdf
+ :END:
+Gene tree (small number of highly conserved and orthologous genes) vs. genome tree (whole-genome DNA sequence, transcriptome RNA sequence, proteome amino acid sequence, exome DNA sequences, or other genomic features)
+
+The authors rely on the whole-proteome sequences on the Feature Frequency Profile ([[https://github.com/jaejinchoi/FFP][FFP]]), which does not require multiple sequence alignment.
+
+* [[/Users/chl/Documents/Papers/conery-2016-impos-handb.pdf][conery-2016-impos-handb]] - The Imposter's Handbook
+ :PROPERTIES:
+ :Custom_ID: conery-2016-impos-handb
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/conery-2016-impos-handb.pdf
+ :END:
+- [[file:~/Sites/aliquote/content/post/imposter-handbook.md][review]] published on aliquote.org
+- [[https://github.com/imposters-handbook/sample-code][Source code on Github]] (JS, C#, Bash, SQL)
+
+* [[/Users/chl/Documents/Papers/cormen-2013-algor-unloc.pdf][cormen-2013-algor-unloc]] - Algorithms Unlocked
+ :PROPERTIES:
+ :Custom_ID: cormen-2013-algor-unloc
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/cormen-2013-algor-unloc.pdf
+ :END:
+#+BEGIN_QUOTE
+We want two things from a computer algorithm: given an input to a problem, it should always produce a correct solution to the problem, and it should use com- putational resources efficiently while doing so.
+#+END_QUOTE
+
+- exact vs. approximate solution (e.g., RSA and large prime numbers)
+- focusing on the order of growth of the running time as a function of the input size
+- algorithms described in plain English, and not in pseudo-code like in CLRS
+
+* [[/Users/chl/Documents/Papers/danjou-2018-serious-python.pdf][danjou-2018-serious-python]] - Serious Python
+ :PROPERTIES:
+ :Custom_ID: danjou-2018-serious-python
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/danjou-2018-serious-python.pdf
+ :END:
+Nice book to understand the underside of Python, especially regarding package import and path management. Note that this will not teach you Python programming, but it will certainly be helpful to better understand Python, think about design patterns, and how to develop your own projects. Each chapter provides a discussion of important topics in project development, and a brief interview by core developers is provided at the end. Note that some chapters are very specific of some aspects of Python programming, or PL more generally. For instance, chapter 4 deals with timestamp and the importance of timezone.
+
+I learned a few things about packaging, and in particular the number of modules that were developed before =pip=, namely (in chronological order): =distutils=, =setuptools=, =distribute=, =distutils2=, =packaging=, and =distlib=. The latter may eventually replace =setuptools=.
+
+* [[/Users/chl/Documents/Papers/dobin-2013-star.pdf][dobin-2013-star]] - Star: ultrafast universal rna-seq aligner
+ :PROPERTIES:
+ :Custom_ID: dobin-2013-star
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/dobin-2013-star.pdf
+ :END:
+STAR = Spliced Transcripts Alignment to a Reference
+
+Designed to align the non-contiguous sequences directly to the reference genome, instead of short reads to a database of splice junctions or align split-read portions contiguously to a reference genome, or a combination thereof.
+
+/Algorithm/: (1) MMP seed search and (2) clustering and stitching of all the seeds that were aligned to the genome (allowing for only one insertion or deletion) using local scoring scheme.
 
 * [[/Users/chl/Documents/Papers/dorie-2018-autom.pdf][dorie-2018-autom]] - Automated versus do-it-yourself methods for causal inference: Lessons learned from a data analysis competition
  :PROPERTIES:
@@ -206,32 +259,319 @@ See also: [[/Users/chl/Documents/Papers/middleton-2016-bias-amplif.pdf][middleto
 
 Suppose the true model is $Y = \alpha_0 + \alpha_1 X + \alpha_2 Z + u$, and we estimate $Y = \beta_0 + \beta_1X + u$. Then the omitted variable can be considered as a function of $X$ in a conditional regression $Z = \gamma_0 + \gamma_1 X + w$. So we have estimated
 
+$$
 \begin{align*}
 Y & = \beta_0 + \beta_1 X + \beta_2 (\gamma_0 + \gamma_1 X + w) + u \\
   & = (\beta_0 + \beta_2\gamma_0) + (\beta_1 + \gamma_1\beta_2)X + (\beta_2w + u)
 \end{align*}
+$$
 
 Unless $\beta_2 = 0$, $\mathbb E(\hat\beta_1) = \beta_1 + \beta_2\left(\frac{\sum xz}{\sum x^2}\right) \neq 0$, which means that the coefficient of $X$ picks up the part of the influence of $Z$ that was correlated with $X$.
 
-* [[/Users/chl/Documents/Papers/wicherts-2017-weak-spots.pdf][wicherts-2017-weak-spots]] - The weak spots in contemporary science (and how to fix them)
+* [[/Users/chl/Documents/Papers/eddelbuettel-2019-paral-comput.pdf][eddelbuettel-2019-paral-comput]] - Parallel computing with r: a brief review
  :PROPERTIES:
- :Custom_ID: wicherts-2017-weak-spots
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wicherts-2017-weak-spots.pdf
+ :Custom_ID: eddelbuettel-2019-paral-comput
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/eddelbuettel-2019-paral-comput.pdf
  :END:
-Objectives: demonstrate that the pluridisciplinar crisis in science can mainly be accounted for by observer bias, publication bias, misuse of degrees of freedom in statistical analysis of data combined to low statistical power, and errors in the reporting of results.
+Standard HPC stilla round, but it is nowadays overshadowed by cloud computing; Haddop, Spark; deep learning. Bengtsson's =future= package offers a nice abstraction to local and remote parallelism options. A key aspect of concurrency is the /task-switching cost/. Single instruction multiple data (SIMD) and the AVX-512 instruction sets are another example of CPU- and compiler-centric parallel instructions. OpenMP remains a key technology for parallel execution of compiled code.
+Note that parallel execution requires stream-aware RNGs (p.7).
 
-Up to 90% of positive results reported in psychology or psychiatry.
-
-HARKing: /Hypothesizing after Results are Known/---much like "data fishing", or to a lesser extent "data dredging".
-
-Ioannidis's work on reproductibility and misuse of statistical hypothesis testing framework: cite:ioannidis-2005-why-most, cite:ioannidis-2008-why-most, cite:munafo-2017-manif-reprod-scien.
-
-* [[/Users/chl/Documents/Papers/laan-2006-target-maxim.pdf][laan-2006-target-maxim]] - Targeted Maximum Likelihood Learning
+* [[/Users/chl/Documents/Papers/efron-1986-boots-method.pdf][efron-1986-boots-method]] - Bootstrap Methods for Standard Errors, Confidence Intervals, and Other Measures of Statistical Accuracy
  :PROPERTIES:
- :Custom_ID: laan-2006-target-maxim
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/laan-2006-target-maxim.pdf
+ :Custom_ID: efron-1986-boots-method
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/efron-1986-boots-method.pdf
  :END:
-See [[/Users/chl/Documents/Papers/koenker-2016-tmle.pdf][koenker-2016-tmle]] for a good tutorial, as well as this slide deck for Stata: [[https://www.stata.com/meeting/uk17/slides/uk17_Luque-Fernandez.pdf][Ensemble Learning Targeted Maximum Likelihood Estimation for Stata Users]].
+From the Stata Manual [R] on "bootstrap":
+cite:efron-1986-boots-method describe an alternative to Satterthwaite’s approximation that estimates the ASL by bootstrapping the statistic from the test of equal means. Their idea is to recenter the two samples to the combined sample mean so that the data now conform to the null hypothesis but that the variances within the samples remain unchanged.
+
+#+NAME: auto
+#+BEGIN_SRC Stata
+summarize mpg, meanonly
+scalar omean = r(mean)
+summarize mpg if foreign==0, meanonly
+replace mpg = mpg - r(mean) + scalar(omean) if foreign==0
+summarize mpg if foreign==1, meanonly
+replace mpg = mpg - r(mean) + scalar(omean) if foreign==1
+by foreign, sort: summarize mpg
+keep mpg foreign
+set seed 1
+bootstrap t=r(t), rep(1000) strata(foreign) saving(bsauto2) nodots: ttest mpg, by(foreign) unequal
+#+END_SRC
+
+See also cite:hesterberg-2014-what-teach and Patrick Burns note on resampling (http://www.burns-stat.com/documents/tutorials/the-statistical-bootstrap-and-other-resampling-methods-2/).
+
+* [[/Users/chl/Documents/Papers/efron-1996-boots-confid.pdf][efron-1996-boots-confid]] - Bootstrap Confidence Levels For Phylogenetic Trees
+ :PROPERTIES:
+ :Custom_ID: efron-1996-boots-confid
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/efron-1996-boots-confid.pdf
+ :END:
+One of the many applied papers on the bootstrap by Efron, based on the original work of Felsenstein (see also [[file:~/Documents/Papers/felsenstein-2004-infer-phylog.pdf][felsenstein-2004-infer-phylog]]). The aim of bootstrap resampling in phylogenetic reconstruction is to assess the confidence for each clad, based on the proportion of bootstrap trees showing that same clade. In this context, the notion of agreement refers to the topology of the trees and not to the length of its arms. The rationale underlying the bootstrap confidence values depends on a simple multinomial probability model, although a bivariate normal model could also be used (parametric bootstrap).
+
+* [[/Users/chl/Documents/Papers/emms-2015-orthof.pdf][emms-2015-orthof]] - Orthofinder: solving fundamental biases in whole genome comparisons dramatically improves orthogroup inference accuracy
+ :PROPERTIES:
+ :Custom_ID: emms-2015-orthof
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/emms-2015-orthof.pdf
+ :END:
+Two strategies: (1) inferring pairwise relationships between genes in two species, and then extending orthology to multiple species by identifying sets of genes spanning these species in which each gene- pair is an orthologue, (2) identify complete orthogroups; an orthogroup is the set of genes that are descended from a single gene in the last common ancestor of all the species being considered.
+
+Fundamental biases in whole genome comparisons = Gene length bias in BLAST E-values affects the accuracy of orthogroup detection (fixed using normalization, p.9); over- or under-clustering of sequences (aka, phylogenetic distance from sequence similarity scores).
+
+* [[/Users/chl/Documents/Papers/emms-2018-orthof.pdf][emms-2018-orthof]] - Orthofinder2: fast and accurate phylogenomic orthology analysis from gene sequences
+ :PROPERTIES:
+ :Custom_ID: emms-2018-orthof
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/emms-2018-orthof.pdf
+ :END:
+OrthoFinder infers orthogroups, genes trees, gene duplication events, the rooted species tree and extensive comparative genomic statistics. It has been shown to perform better compared to methods that use approximate phylogenetic relationships between genes using "reciprocal best hits" from BLAST (e.g., InParanoid, OrthoMCL and OMA).
+
+Orthofinder provides accurate and scalable ortholog inference using gene trees in 3 stages: (1) orthogroup inference, (2) inference of rooted species and gene trees, and (3) inference of orthologs and gene duplication events from these rooted gene trees. Under the hood, it uses a duplication-loss-coalescent (DLC) resolution algorithm to identify gene duplication events and map them to the species tree.
+
+* [[/Users/chl/Documents/Papers/farrell-2019-math-adven.pdf][farrell-2019-math-adven]] - Math Adventures With Python
+ :PROPERTIES:
+ :Custom_ID: farrell-2019-math-adven
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/farrell-2019-math-adven.pdf
+ :END:
+Keep this in mind for my son in case he happens to use Python at school.
+
+* [[/Users/chl/Documents/Papers/ferry-2019-dna.pdf][ferry-2019-dna]] - The structure of dna
+ :PROPERTIES:
+ :Custom_ID: ferry-2019-dna
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ferry-2019-dna.pdf
+ :END:
+Of historical importance only.
+
+* [[/Users/chl/Documents/Papers/fourment-2018-dubious-ways.pdf][fourment-2018-dubious-ways]] - 19 dubious ways to compute the marginal likelihood of a phylogenetic tree topology
+ :PROPERTIES:
+ :Custom_ID: fourment-2018-dubious-ways
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/fourment-2018-dubious-ways.pdf
+ :END:
+The authors use the JC69 model to benchmark 19 methods for computing the marginla likelihood of a topology with respect to branch lengths. While the slowest, Generalized Stepping Stone (GSS) is the one that performs best. Gamma Laplus Importance Sampling (GLIS) is the best fast method, with performance wlose to GSS.
+
+* [[/Users/chl/Documents/Papers/friedman-1995-littl-schem.pdf][friedman-1995-littl-schem]] - The Little Schemer
+ :PROPERTIES:
+ :Custom_ID: friedman-1995-littl-schem
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/friedman-1995-littl-schem.pdf
+ :END:
+ Beautiful book, very different from SICP in that it focus on basic building blocks (=car=, =cdr=, =cons=, =eq?=, etc.) and use a very pragmatic approach to understanding the structuration and interpretation of forms and s-expr. The penultimate goal of this book (4th ed., after the original /Little Lisper/) is to learn to think in a functional way. The ten commandments are worth keeping in mind for that very specific purpose:
+
+1. When recurring on a list of atoms, =lat=, ask two questions about it: =(null? lat)= and =else=. When recurring on a number, =n=, ask two questions about it: =(zero? n)= and =else=. When recurring on a list of s-expr, =l=, ask three questions about it: =(null? l)=, =(atom? (car l))=, and =else=.
+2. Use =cons= to build lists.
+3. When building a list, describe the first typical element, and then =cons= it into the natural recursion.
+4. Always change at least one argument while recurring. When recurring on a list of atoms, =lat=, use =(cdr lat)=. When recurring on a number, =n=, use =(sub1 n)=. And when recurring on a list of s-expr, =l=, use =(car l)= and =(cdr l)= if neither =(null? l)= nor =(atom? (car l))= are true. It must be changed to be closer to termination. The changing argument must be tested in the termination condition: when using =cdr=, test termination with =null?=, and when using =sub1=, test termination with =zero?=.
+5. When building a value with =÷=, always use 0 for the value of the terminating line, for adding 0 does not change the value of an addition. When building a value with =x=, always use 1 for the value of the terminating line, for multiplying by 1 does not change the value of a multiplication. When building a value with =cons=, always consider =()= for the value of the terminating line.
+6. Simplify only after the function is correct.
+7. Recur on the subparts that are of the same nature:
+   - on the sublists of a list;
+   - on the subexpressions of an arithmetic expression.
+8. Use help functions to abstract from representations.
+9. Abstract common patterns with a new function.
+10. Build functions to collect more than one value at a time.
+
+* [[/Users/chl/Documents/Papers/ghuloum-2006-increm-approac.pdf][ghuloum-2006-increm-approac]] - An incremental approach to compiler construction
+ :PROPERTIES:
+ :Custom_ID: ghuloum-2006-increm-approac
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ghuloum-2006-increm-approac.pdf
+ :END:
+Found by following Thorsten Ball's progress (on Twitter) on his approach to build a [[https://github.com/mrnugget/scheme_x86][Scheme compiler]] from scratch.
+
+* [[/Users/chl/Documents/Papers/gosset-1908-probab-error-mean.pdf][gosset-1908-probab-error-mean]] - The Probable Error of a Mean
+ :PROPERTIES:
+ :Custom_ID: gosset-1908-probab-error-mean
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gosset-1908-probab-error-mean.pdf
+ :END:
+R =datasets::sleepstudy=
+
+Extra R code (Frank Harrell, [[/Users/chl/Documents/Papers/harrell-2017-biost-biomed-resear.pdf][harrell-2017-biost-biomed-resear]])
+
+#+NAME: sleepstudy
+#+BEGIN_SRC R
+drug1 = c(.7, -1.6, -.2, -1.2, -.1, 3.4, 3.7, .8, 0, 2)
+drug2 = c(1.9, .8, 1.1, .1, -.1, 4.4, 5.5, 1.6, 4.6, 3.4)
+d = data.frame(Drug=c(rep('Drug 1', 10), rep('Drug 2', 10), rep('Difference', 10)),
+               extra=c(drug1 , drug2 , drug2 - drug1))
+w = data.frame(drug1, drug2, diff=drug2 - drug1)
+ggplot(d, aes(x=Drug, y=extra)) +
+geom_boxplot(col='lightyellow1', alpha=.3, width=.5) +
+geom_dotplot(binaxis='y', stackdir='center', position='dodge') +
+stat_summary(fun.y=mean, geom="point", col='red', shape=18, size=5) +
+geom_segment(data=w, aes(x='Drug 1', xend='Drug 2', y=drug1, yend=drug2), col=gray(.8)) +
+geom_segment(data=w, aes(x='Drug 1', xend='Difference', y=drug1, yend=drug2 - drug1), col=gray(.8)) +
+xlab('') + ylab('Extra Hours of Sleep') + coord_flip()
+#+END_SRC
+
+* [[/Users/chl/Documents/Papers/gunawardena-2014-model.pdf][gunawardena-2014-model]] - Models in biology: 'accurate descriptions of our pathetic thinking'
+ :PROPERTIES:
+ :Custom_ID: gunawardena-2014-model
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gunawardena-2014-model.pdf
+ :END:
+Emphasizes the role of forward modeling, especially with regard to causality.
+
+#+BEGIN_QUOTE
+Mathematical models come in a variety of flavors, depending on whether the state of a system is measured in discrete units (‘off’ and ‘on’), in continuous concentrations or as probability distributions and whether time and space are themselves treated discretely or continuously.
+#+END_QUOTE
+
+* [[/Users/chl/Documents/Papers/gustedt-2018-moder-c.pdf][gustedt-2018-moder-c]] - Modern C
+ :PROPERTIES:
+ :Custom_ID: gustedt-2018-moder-c
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gustedt-2018-moder-c.pdf
+ :END:
+**** TODO read* [[/Users/chl/Documents/Papers/hailperin-1999-concr-abstr.pdf][hailperin-1999-concr-abstr]] - Concrete abstractions: an introduction to computer science using scheme
+ :PROPERTIES:
+ :Custom_ID: hailperin-1999-concr-abstr
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hailperin-1999-concr-abstr.pdf
+ :END:
+**** TODO Post a review on [[http://aliquote.org]].
+
+* [[/Users/chl/Documents/Papers/hayamizu-2019-rankin.pdf][hayamizu-2019-rankin]] - Ranking top-k trees in tree-based phylogenetic networks
+ :PROPERTIES:
+ :Custom_ID: hayamizu-2019-rankin
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hayamizu-2019-rankin.pdf
+ :END:
+Support tree and linear-time algorithms for counting, enumeration and optimization (Hayamizu's structure theorem, [[https://arxiv.org/abs/1811.05849][arXiv:1811.05849]]).
+
+Top-k ranking problem: list top-k support trees of N = (V,A) in non-increasing order by their likelihood values. This is a generalization of the top-1 ranking problem, which asks for a ML support tree of N
+
+See also: [[https://academic.oup.com/sysbio/article/61/2/228/1646300][Characterizing the Phylogenetic Tree-Search Problem]].
+
+* [[/Users/chl/Documents/Papers/heaton-2012-analy-fungal-networ.pdf][heaton-2012-analy-fungal-networ]] - Analysis of fungal networks
+ :PROPERTIES:
+ :Custom_ID: heaton-2012-analy-fungal-networ
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/heaton-2012-analy-fungal-networ.pdf
+ :END:
+p.14 visualisation of network structure and network extraction
+
+The network topology is defined by classifying junctions (branch points (degree 3), anastomoses and tips (degree 1)) as nodes and the chords between nodes as links. While the number of nodes and links increase over time, there's a selective loss of connections and thinning out of the fine mycellium. This shift can be quantified using the alpha coefficient, which gives the number of closed loops or cycles present as a fraction of the maximum possible for a planar network with the same number of nodes (Euler's polyhedral formula, V - E + F = 2).
+
+The frequency distribution of node strength (i.e., summing the weight of all links connected to the node) shows more diversity than node degree alone, and follows an approximately log-normal distribution for /P. velutina/ networks.
+
+* [[/Users/chl/Documents/Papers/hicks-2018-rna-seq.pdf][hicks-2018-rna-seq]] - On the widespread and critical impact of systematic bias and batch effects in single-cell rna-seq data
+ :PROPERTIES:
+ :Custom_ID: hicks-2018-rna-seq
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hicks-2018-rna-seq.pdf
+ :END:
+#+BEGIN_QUOTE
+We found that the proportion of genes reported as expressed explains a substantial part of observed variability and that this quantity varies systematically across experimental batches. Furthermore, we found that the implemented experimental designs confounded outcomes of interest with batch effects, a design that can bring into question some of the conclusions of these studies.
+#+END_QUOTE
+
+Proposed experimental design (to control batch effects): account for differences in the proportion of detected genes by explicitly including the batch factor as a covariate in a linear regression model, while making use of biological replicates so that multiple batches of cells could be randomized across sequencing runs, flow cells and lanes as in bulk-RNA-Seq.
+
+* [[/Users/chl/Documents/Papers/higginbotham-2015-clojur-brave-true.pdf][higginbotham-2015-clojur-brave-true]] - Clojure for the Brave and True
+ :PROPERTIES:
+ :Custom_ID: higginbotham-2015-clojur-brave-true
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/higginbotham-2015-clojur-brave-true.pdf
+ :END:
+The book was published on [[http://leanpub.com/clojure-for-the-brave-and-true][Leanpub]] a while ago but it is not for sale anymore. I don't remember where I got a PDF version of the book, but there is also a website, [[https://www.braveclojure.com][Brave Clojure]], where the book can be read online for free.
+
+The first chapters are all about setting up a working environment for writing Clojure code, and it happens to be Emacs + [[https://cider.readthedocs.org/][Cider]]. The Clojure version currently used in the book is 1.6 (alpha3), with Leiningen as the build tool for Clojure projects (+ Clojure 1.5.1 for =lein repl=).
+
+Overall, the presentation is clear although it remains a bit rough (I mean like in draft mode) with lot of external links to learn more.
+
+* [[/Users/chl/Documents/Papers/holme-2002-growin.pdf][holme-2002-growin]] - Growing scale-free networks with tunable clustering
+ :PROPERTIES:
+ :Custom_ID: holme-2002-growin
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/holme-2002-growin.pdf
+ :END:
+Social networks, computer networks or metabolic networks have a logarithmically growing average geodesic (shortest path) length and an approximately algebraically decaying distribution of vertex degree.
+
+The degree of an arbitrary vertex increases as the square root of the time, which yields the power-law degree distribution $P(k)\sim k^{-3}$.
+
+See =networkx.powerlaw_cluster_graph=.
+
+* [[/Users/chl/Documents/Papers/horiike-2016-orthol-finder.pdf][horiike-2016-orthol-finder]] - Ortholog-finder: a tool for constructing an ortholog data set
+ :PROPERTIES:
+ :Custom_ID: horiike-2016-orthol-finder
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/horiike-2016-orthol-finder.pdf
+ :END:
+Identifying genuine orthologs among distantly related species is challenging, because genes obtained through horizontal gene transfer (HGT) and out-paralogs derived from gene duplication before speciation are often present among the predicted orthologs.
+
+This software uses 5 stages to alleviate such concern: (1) HGT filtering: Genes derived from HGT could be detected and deleted from the initial sequence data set by examining their base compositions. (2) Out-paralog filtering: Out-paralogs are detected and deleted from the data set based on sequence similarity. (3) Classification of phylogenetic trees: Phylogenetic trees generated for ortholog candidates are classified as monophyletic or polyphyletic trees. (4) Tree splitting: Polyphyletic trees are bisected to obtain monophyletic trees and remove HGT genes and out-paralogs. (5) Threshold changing: Out-paralogs are further excluded from the data set based on the difference in the similarity scores of genuine orthologs and out-paralogs.
+*Remark:* See [[~/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] for an intermediate approach (tolerate recent in-paralogs as unavoidable contamination).
+
+* [[/Users/chl/Documents/Papers/howe-2011-rna-seq-mev.pdf][howe-2011-rna-seq-mev]] - Rna-seq analysis in mev
+ :PROPERTIES:
+ :Custom_ID: howe-2011-rna-seq-mev
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/howe-2011-rna-seq-mev.pdf
+ :END:
+Latest standalone app dates back to 2011 and is Java 6 only. The Shell script included is useful for microarrays only.
+
+* [[/Users/chl/Documents/Papers/huson-2006-applic-phylog.pdf][huson-2006-applic-phylog]] - Application of phylogenetic networks in evolutionary studies
+ :PROPERTIES:
+ :Custom_ID: huson-2006-applic-phylog
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/huson-2006-applic-phylog.pdf
+ :END:
+Phylogenetic networks should be employed when /reticulate events/ such as hybridization, horizontal gene transfer, recombination, or gene duplication and loss are believed to be involved.
+
+Software: [[http://splitstree.org][SplitsTree4]].
+
+ - phylogenetic network = any network in which taxa are represented by nodes and their evolutionary relationships by edges.
+ - split network = combinatorial generalization of phylogenetic trees, designed to represent incompatibilities within and between data sets.
+ - reticulate network = represents evolutionary histories in the presence of reticulate events (nodes with two parents). (See Fig. 1 for an overview )
+
+A split network contains exactly the same information as a list of splits with a weight for each split.
+
+**** TODO Reread later
+
+* [[/Users/chl/Documents/Papers/huson-2011-survey-combin.pdf][huson-2011-survey-combin]] - A survey of combinatorial methods for phylogenetic networks
+ :PROPERTIES:
+ :Custom_ID: huson-2011-survey-combin
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/huson-2011-survey-combin.pdf
+ :END:
+Phylogenetic networks are useful when evolution involves reticulate events (hybridization, horizontal gene transfer, or recombination) or to represent conflicts in a data set that may be caused by mechanisms such as incomplete lineage sorting.
+
+Split networks and quasi-median networks are two examples of unrooted phylogenetic networks.
+
+Sneath P. 1975. [[https://academic.oup.com/sysbio/article/24/3/360/1659116][Cladistic representation of reticulate evolution]]. Syst Zool. 24(3):360–368.
+* [[/Users/chl/Documents/Papers/ignatiadis-2016-data.pdf][ignatiadis-2016-data]] - Data-driven hypothesis weighting increases detection power in genome-scale multiple testing
+ :PROPERTIES:
+ :Custom_ID: ignatiadis-2016-data
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ignatiadis-2016-data.pdf
+ :END:
+Independent hypothesis weighting ([[https://www.bioconductor.org/packages/release/bioc/html/IHW.html][IHW]]): a method that assigns weights using covariates (conditionally) independent of the P-values under the null hypothesis but informative of each test’s power or prior probability of the null hypothesis.
+
+* [[/Users/chl/Documents/Papers/izquierdo-carrasco-2011-algor.pdf][izquierdo-carrasco-2011-algor]] - Algorithms, data structures, and numerics for likelihood-based phylogenetic inference of huge trees
+ :PROPERTIES:
+ :Custom_ID: izquierdo-carrasco-2011-algor
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/izquierdo-carrasco-2011-algor.pdf
+ :END:
+Design of a new search algorithm for large datasets: relies on a /backbone/ tree, to reduce the dimensionality of the search space; basically, the idea is to collapse taxa that are closely related to each other into a single virtual tip. The virtual tips are then interpreted as tips in the backbone tree on which we can conduct the tree search. Optimal tree size reduction factor: R > 0.25.
+
+* [[/Users/chl/Documents/Papers/jones-2004-introd-bioin-algor.pdf][jones-2004-introd-bioin-algor]] - An introduction to bioinformatics algorithms
+ :PROPERTIES:
+ :Custom_ID: jones-2004-introd-bioin-algor
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jones-2004-introd-bioin-algor.pdf
+ :END:
+The authors make use of simplified pseudo-code for all the algorithms discussed in this book -- on the basis that the target audience are biologists. I found it nice, as it is heavily inspired from Python syntax (significant indentation is fine for reading purpose, IMHO). The introductory chapter on computer science (CS) is pretty basic stuff that can be found in any introductory textbook (chapter 2): algorithmic complexity, recursive versus iterative approach, type of algorithms (brute force, branch-and-bound, greedy approach, dynamic programming, divide-and-conquer, machine learning, randomized algorithms), and NP-completeness. It is intended for biologists.
+
+#+BEGIN_QUOTE
+I have indeed been able to apply my skills in this new area, but only after coming to understand that solving biological problems requires far more than clever algorithms: it involves a creative partnership between biologists and mathematical scientists to arrive at an appropriate mathematical model, the acquisition and use of diverse sources of data, and statistical methods to show that the biological patterns and regularities that we discover could not be due to chance. --- Richard Karp
+#+END_QUOTE
+
+For CS folks, the third chapter provides a gentle primer to biology.
+
+See also [[http://www.cs.hunter.cuny.edu/~saad/courses/bioinf/][Bioinformatics Algorithms]], by Saad Mneimneh, which offers solutions to selected exercises from each chapter.
+
+* [[/Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf][jun-2009-ident-mammal]] - Identification of mammalian orthologs using local synteny
+ :PROPERTIES:
+ :Custom_ID: jun-2009-ident-mammal
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf
+ :END:
+- differentiating between genes that have diverged through a speciation event (orthologs) and those derived through duplication events within a species (paralogs). Gene order may be viewed as a measure of conservation, or better gene family evolution.
+- local [[https://en.wikipedia.org/wiki/Synteny][synteny]] (gene order) might be useful to resolve ambiguous sequence based matches between putative orthologs (and [[https://www.ncbi.nlm.nih.gov/pubmed/19553367][retrogenes]]).
+- 93% agreement between coding sequence based orthology (Inparanoid) and local synteny based orthology, with cases of discordance resulting from evolutionary events including [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2884099/][retrotransposition]] and genome rearrangements.
+- intron conservation ratio = #(positional homologous introns)/#(intron positions in protein alignment), in strong agreement with the orthology assignments made by the two methods.
+
+* [[/Users/chl/Documents/Papers/jurney-2014-agile-data-scien.pdf][jurney-2014-agile-data-scien]] - Agile Data Science
+ :PROPERTIES:
+ :Custom_ID: jurney-2014-agile-data-scien
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jurney-2014-agile-data-scien.pdf
+ :END:
+Keywords: scalability, NoSQL (Hadoop and MongoDB), cloud computing, big data, data intuition
+Interesting use of personal email data
+
+"In Agile Big Data, a small team of generalists uses scalable, high-level tools and cloud computing to iteratively refine data into increasingly higher states of value. We embrace a software stack leveraging cloud computing, distributed systems, and platforms as a service. Then we use this stack to iteratively publish the intermediate results of even our most in-depth research to snowball value from simple records to predictions and actions that create value and let us capture some of it to turn data into dollars."
+
+See also https://www.oreilly.com/ideas/a-manifesto-for-agile-data-science
+
+Sidenote: There is an example of using the Enron SQL database (Chapter 2, § "SQL").
 
 * [[/Users/chl/Documents/Papers/kazil-2016-data-wrang-python.pdf][kazil-2016-data-wrang-python]] - Data Wrangling with Python
  :PROPERTIES:
@@ -250,29 +590,105 @@ pprint.pprint(sys.path)
 You just learned how to program. Programming is not about memorizing everything; rather, it is about troubleshooting when things go awry.
 #+END_QUOTE
 
-* [[/Users/chl/Documents/Papers/conery-2016-impos-handb.pdf][conery-2016-impos-handb]] - The Imposter's Handbook
+* [[/Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf][khomtchouk-2018-how-lisp]] - How the strengths of lisp-family languages facilitate building complex and flexible bioinformatics applications
  :PROPERTIES:
- :Custom_ID: conery-2016-impos-handb
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/conery-2016-impos-handb.pdf
+ :Custom_ID: khomtchouk-2018-how-lisp
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf
  :END:
-- [[file:~/Sites/aliquote/content/post/imposter-handbook.md][review]] published on aliquote.org
-- [[https://github.com/imposters-handbook/sample-code][Source code on Github]] (JS, C#, Bash, SQL)
+See also the [[http://biolisp.org][biolisp]] project and, e.g., [[/Users/chl/Documents/Papers/herzeel-2015-elprep.pdf][herzeel-2015-elprep]].
 
-* [[/Users/chl/Documents/Papers/bueno-2013-matur-optim.pdf][bueno-2013-matur-optim]] - Mature Optimization Handbook
+* [[/Users/chl/Documents/Papers/kim-2019-graph-hisat.pdf][kim-2019-graph-hisat]] - Graph-based genome alignment and genotyping with hisat2 and hisat-genotype
  :PROPERTIES:
- :Custom_ID: bueno-2013-matur-optim
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bueno-2013-matur-optim.pdf
+ :Custom_ID: kim-2019-graph-hisat
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kim-2019-graph-hisat.pdf
  :END:
-[[file:~/Sites/aliquote/content/post/mature-optimization-handbook.md][review]] published on aliquote.org.
+[[https://ccb.jhu.edu/software/hisat2/index.shtml][HISAT2]] is the successor of TopHat2. What's new? HISAT2 can align both DNA and RNA sequences using a graph Ferragina Manzini index. This graph-based alignment approach enables much higher alignment sensitivity and accuracy than standard, linear reference-based alignment approaches, especially for highly polymorphic genomic regions.
 
-* [[/Users/chl/Documents/Papers/ripley-2002-statis-method.pdf][ripley-2002-statis-method]] - Statistical methods need software: a view of statistical computing
+* [[/Users/chl/Documents/Papers/kleppmann-2016-desig-data.pdf][kleppmann-2016-desig-data]] - Designing Data-Intensive Applications
  :PROPERTIES:
- :Custom_ID: ripley-2002-statis-method
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ripley-2002-statis-method.pdf
+ :Custom_ID: kleppmann-2016-desig-data
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kleppmann-2016-desig-data.pdf
  :END:
-#+begin_quote
-Let’s not kid ourselves: the most widely used piece of software for statistics is Excel.
-#+end_quote
+Review by [[https://henrikwarne.com/2019/07/27/book-review-designing-data-intensive-applications/][Henrik Warne]].
+
+* [[/Users/chl/Documents/Papers/knuth-2000-dancin-links.pdf][knuth-2000-dancin-links]] - Dancing Links
+ :PROPERTIES:
+ :Custom_ID: knuth-2000-dancin-links
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/knuth-2000-dancin-links.pdf
+ :END:
+https://dancing-links.herokuapp.com
+
+* [[/Users/chl/Documents/Papers/koster-2016-rust-bio.pdf][koster-2016-rust-bio]] - Rust-bio: a fast and safe bioinformatics library
+ :PROPERTIES:
+ :Custom_ID: koster-2016-rust-bio
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/koster-2016-rust-bio.pdf
+ :END:
+https://rust-bio.github.io
+
+* [[/Users/chl/Documents/Papers/laaksonen-2017-compet-progr-handb.pdf][laaksonen-2017-compet-progr-handb]] - Competitive programmer’s handbook
+ :PROPERTIES:
+ :Custom_ID: laaksonen-2017-compet-progr-handb
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/laaksonen-2017-compet-progr-handb.pdf
+ :END:
+When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike @conery-2016-impos-handb, it has more running code, and in a decent language (C++ 11). I wrote a little transcript in Python 3.x: [[~/git/scratch/python/competitive.py]] and a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on aliquote.org.
+
+* [[/Users/chl/Documents/Papers/laan-2006-target-maxim.pdf][laan-2006-target-maxim]] - Targeted Maximum Likelihood Learning
+ :PROPERTIES:
+ :Custom_ID: laan-2006-target-maxim
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/laan-2006-target-maxim.pdf
+ :END:
+See [[/Users/chl/Documents/Papers/koenker-2016-tmle.pdf][koenker-2016-tmle]] for a good tutorial, as well as this slide deck for Stata: [[https://www.stata.com/meeting/uk17/slides/uk17_Luque-Fernandez.pdf][Ensemble Learning Targeted Maximum Likelihood Estimation for Stata Users]].
+
+* [[/Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] - Orthology detection combining clustering and synteny for very large datasets
+ :PROPERTIES:
+ :Custom_ID: lechner-2014-orthol-detec
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf
+ :END:
+- orthology is not a transitive relation so that the problem is different from clustering an input gene set.
+- the authors focus on avoiding false positive orthology assignments within the phylogenetic range of the reported orthologous groups, while tolerating recent in-paralogs (speciation preceding duplication) as unavoidable contamination
+
+* [[/Users/chl/Documents/Papers/lenstra-1992-algor-algeb.pdf][lenstra-1992-algor-algeb]] - Algorithms in algebric number theory
+ :PROPERTIES:
+ :Custom_ID: lenstra-1992-algor-algeb
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/lenstra-1992-algor-algeb.pdf
+ :END:
+#+BEGIN_QUOTE
+The problems in pure mathematics that arise in connection with algorithms have
+all the virtues of good problems.
+#+END_QUOTE
+
+* [[/Users/chl/Documents/Papers/li-2010-rna-seq.pdf][li-2010-rna-seq]] - Rna-seq gene expression estimation with read mapping uncertainty
+ :PROPERTIES:
+ :Custom_ID: li-2010-rna-seq
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/li-2010-rna-seq.pdf
+ :END:
+- Optimal read length = 20-25 bp.
+- Problem with RMPKM measures: the mean expressed transcript length may vary between samples. (When the mean expressed transcript length is 1 kb, 1 TPM is equivalent to 1 RPKM, which corresponds to roughly one transcript per cell in mouse.)
+
+* [[/Users/chl/Documents/Papers/li-2018-minim.pdf][li-2018-minim]] - Minimap2: pairwise alignment for nucleotide sequences
+ :PROPERTIES:
+ :Custom_ID: li-2018-minim
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/li-2018-minim.pdf
+ :END:
+Minimap2 is a general-purpose alignment program to map DNA or long mRNA sequences against a large reference database. It works with accurate short reads of 100 bp in length, 1 kb genomic reads at error rate 15%, full-length noisy Direct RNA or cDNA reads and assembly contigs or closely related full chromosomes of hundreds of megabases in length.
+
+Used in the [[http://www.outils.genomique.biologie.ens.fr/eoulsan2/][Eoulsan]] toolkit.
+
+* [[/Users/chl/Documents/Papers/liu-2014-rna.pdf][liu-2014-rna]] - Rna-seq differential expression studies: more sequence or more replication?
+ :PROPERTIES:
+ :Custom_ID: liu-2014-rna
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/liu-2014-rna.pdf
+ :END:
+Better to sequence less reads but increase the number of biological replicates: this will significantly increase the number of DE genes while the number of sequencing reads have a diminishing return after 10M reads.
+
+* [[/Users/chl/Documents/Papers/love-2014-moder-rna-deseq.pdf][love-2014-moder-rna-deseq]] - Moderated estimation of fold change and dispersion for rna-seq data with deseq2
+ :PROPERTIES:
+ :Custom_ID: love-2014-moder-rna-deseq
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/love-2014-moder-rna-deseq.pdf
+ :END:
+NGS analyses (RNA, CHIP, etc.) need to account for within-group variance estimates when analysing lot of genes, hence the need to pool information across genes. The DESeq approach detects and corrects dispersion estimates that are too low through modeling of the dependence of the dispersion on the average expression strength over all samples. In addition, it provides a novel method for gene ranking and the visualization of stable estimates of effect sizes. The [[https://bioconductor.org/packages/release/bioc/html/DESeq2.html][DESeq2]] package further includes shrunken fold changes (with SE).
+
+See also: [[file:~/Documents/Papers/ignatiadis-2016-data.pdf][ignatiadis-2016-data]], [[file:~/Documents/papers/zhu-2019-heavy.pdf][zhu-2019-heavy]], [[file:~/Documents/Papers/stephens-2017-false.pdf][stephens-2017-false]].
 
 * [[/Users/chl/Documents/Papers/mccullagh-2002-what-statis-model.pdf][mccullagh-2002-what-statis-model]] - What is a statistical model
  :PROPERTIES:
@@ -285,37 +701,24 @@ The author suggests that "most authors do not offer a precise mathematical defin
 
 Starting page 1232 ff., it is all about category theory!
 
-#+begin_quote
+#+BEGIN_QUOTE
 The thesis of this paper is that the logic of every statistical model is founded, implicitly or explicitly, on categories of morphisms of the relevant spaces. The purpose of a category is to ensure that the families of distributions on different sample spaces are logically related to one another and to ensure that the meaning of a parameter is retained from one family to another.
-#+end_quote
+#+END_QUOTE
 
-* [[/Users/chl/Documents/Papers/hailperin-1999-concr-abstr.pdf][hailperin-1999-concr-abstr]] - Concrete abstractions: an introduction to computer science using scheme
+* [[/Users/chl/Documents/Papers/meier-2015-livin-clojur.pdf][meier-2015-livin-clojur]] - Living Clojure
  :PROPERTIES:
- :Custom_ID: hailperin-1999-concr-abstr
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hailperin-1999-concr-abstr.pdf
+ :Custom_ID: meier-2015-livin-clojur
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/meier-2015-livin-clojur.pdf
  :END:
-**** TODO Post a review on [[http://aliquote.org]].
+See [[https://howistart.org/posts/clojure/1/index.html][How I start]].
 
-* [[/Users/chl/Documents/Papers/laaksonen-2017-compet-progr-handb.pdf][laaksonen-2017-compet-progr-handb]] - Competitive programmer’s handbook
+* [[/Users/chl/Documents/Papers/miele-2012-high.pdf][miele-2012-high]] - High-quality sequence clustering guided by network topology and multiple alignment likelihood
  :PROPERTIES:
- :Custom_ID: laaksonen-2017-compet-progr-handb
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/laaksonen-2017-compet-progr-handb.pdf
+ :Custom_ID: miele-2012-high
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/miele-2012-high.pdf
  :END:
-When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike @conery-2016-impos-handb, it has more running code, and in a decent language (C++ 11). I wrote a little transcript in Python 3.x: [[~/git/scratch/python/competitive.py]] and a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on aliquote.org.
-
-* [[/Users/chl/Documents/Papers/stein-2017-elemen-number-theor.pdf][stein-2017-elemen-number-theor]] - Elementary number theory: primes, congruences, and secrets
- :PROPERTIES:
- :Custom_ID: stein-2017-elemen-number-theor
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/stein-2017-elemen-number-theor.pdf
- :END:
-**** TODO Add a few words in [[file:~/Drafts/current/number-theory.org]]
-
-* [[/Users/chl/Documents/Papers/chen-2003-statis-comput-datab.pdf][chen-2003-statis-comput-datab]] - Statistical computing and databases: distributed computing near the data
- :PROPERTIES:
- :Custom_ID: chen-2003-statis-comput-datab
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/chen-2003-statis-comput-datab.pdf
- :END:
-Old stuff but interesting ideas (part of them are now materialized in the dplyr/dbi packages) like performing the data-intensive but algorithmically less sophisticated operations in the database and send back the results to the statistical package which is responsible for the algorithmic flow. The software design includes a CORBA architecture coupled to [[https://www.csm.ornl.gov/pvm/][PVM]] for managing parallel computations.
+- Python 2.7 only
+- Download: http://lbbe.univ-lyon1.fr/Download,3100.html
 
 * [[/Users/chl/Documents/Papers/neil-2018-moder-vim.pdf][neil-2018-moder-vim]] - Modern Vim: Craft Your Development Environment with Vim 8 and Neovim
  :PROPERTIES:
@@ -328,6 +731,182 @@ Useful packages and config for Lisp editing:
 - https://github.com/Shougo/deoplete.nvim
 - https://github.com/kovisoft/slimv
 - https://blog.venanti.us/clojure-vim/
+
+* [[/Users/chl/Documents/Papers/ostlund-2010-inpar.pdf][ostlund-2010-inpar]] - Inparanoid 7: new algorithms and tools for eukaryotic orthology analysis
+ :PROPERTIES:
+ :Custom_ID: ostlund-2010-inpar
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ostlund-2010-inpar.pdf
+ :END:
+See also [[/Users/chl/Documents/Papers/remm-2001-autom-clust.pdf][remm-2001-autom-clust]].
+
+* [[/Users/chl/Documents/Papers/pavlopoulos-2010-ref-tree.pdf][pavlopoulos-2010-ref-tree]] - A reference guide for tree analysis and visualization
+ :PROPERTIES:
+ :Custom_ID: pavlopoulos-2010-ref-tree
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/pavlopoulos-2010-ref-tree.pdf
+ :END:
+Challenge: to handle the overload of information and make it easier to understand and explore very large phylogenetic trees.
+
+- Trees vs. graphs.
+- Cladogram and phylogram (branch lengths are proportional to the amount of inferred evolutionary change).
+- Newick, NHX (enhanced Newick) and Nexus format.
+- Statistical methods: neighbor-joining and UPGMA (distance), maximum parsimony and maximum likelihood (feature matrix), MCMC (both).
+
+* [[/Users/chl/Documents/Papers/piskol-2013-reliab-ident.pdf][piskol-2013-reliab-ident]] - Reliable identification of genomic variants from rna-seq data
+ :PROPERTIES:
+ :Custom_ID: piskol-2013-reliab-ident
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/piskol-2013-reliab-ident.pdf
+ :END:
+Use =cufflinks= after =tophat2= for gene quantification.
+
+RNA-seq data alone enabled the discovery of 40.2% and 47.7% of all coding variants identified by WGS in GM12878 cells and PBMCs, respectively. At the same time, RNA-seq only required a fraction (1/6) of the sequencing effort.
+
+* [[/Users/chl/Documents/Papers/planet-2006-tree-disag.pdf][planet-2006-tree-disag]] - Tree disagreement: measuring and testing incongruence in phylogenies
+ :PROPERTIES:
+ :Custom_ID: planet-2006-tree-disag
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/planet-2006-tree-disag.pdf
+ :END:
+Review of incongruence tests for phylogenetic analysis: character information (character incongruence) vesus those that only consider tree shape or topology (topological incongruence); the latter presents the advantage of being able to compare trees derived from data that may not be strictly comparable or easy to include in the same analysis.
+
+- *Character congruence:* incongruence length difference test, localized incongruence length difference, multiple partitions and pairwise ILD tests, ILD outside of parsimony, parsimony-based tests (permutation and sitewise tests), likelihood-based tests, sitewise testing, non-parametric bootstrapping methods, parametric bootstrapping and partition tests, Bayesian testing
+- *Topological congruence:* consensus-based measurements, tree distances (symmetric difference)
+
+* [[/Users/chl/Documents/Papers/poi-2004-from-help-desk.pdf][poi-2004-from-help-desk]] - From the help desk: some bootstrapping techniques
+ :PROPERTIES:
+ :Custom_ID: poi-2004-from-help-desk
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/poi-2004-from-help-desk.pdf
+ :END:
+ Hypothesis test based on bootstrap resampling:
+
+#+BEGIN_SRC R
+x1 <- d[,1] - mean(d[,1]) + mean(x)
+x2 <- d[,2] - mean(d[,2]) + mean(x)
+B <- 10000        ## no. bootstrap samples
+s <- numeric(B)   ## vector of test statistics
+for (i in 1:B) {
+  x1s <- sample(x1, replace=TRUE)
+  x2s <- sample(x2, replace=TRUE)
+  s[i] <- mean(x1s) - mean(x2s)
+}
+pobs <-  (1 + sum(abs(s) > abs(s0))) / (B+1)
+#+END_SRC
+
+* [[/Users/chl/Documents/Papers/priyam-2019-sequen.pdf][priyam-2019-sequen]] - Sequenceserver: a modern graphical user interface for custom blast databases
+ :PROPERTIES:
+ :Custom_ID: priyam-2019-sequen
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/priyam-2019-sequen.pdf
+ :END:
+Only very basic sequence aligner. Not much compared to good old Wwwblast unfortunately. The only interest is possibly to use the automated converter of Fasta files (=makeblastdb=).
+
+* [[/Users/chl/Documents/Papers/ramos-2014-reach-python-racket.pdf][ramos-2014-reach-python-racket]] - Reaching python from racket
+ :PROPERTIES:
+ :Custom_ID: ramos-2014-reach-python-racket
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ramos-2014-reach-python-racket.pdf
+ :END:
+Via [[https://racket-news.com/2019/09/racket-news-issue-15.html][Racket News #15]].
+
+* [[/Users/chl/Documents/Papers/remm-2001-autom-clust.pdf][remm-2001-autom-clust]] - Automatic clustering of orthologs and in-paralogs from pairwise species comparisons
+ :PROPERTIES:
+ :Custom_ID: remm-2001-autom-clust
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/remm-2001-autom-clust.pdf
+ :END:
+Orthology analysis between humans and invertebrates is often complex because of large numbers of paralogs within protein families. Paralogs that predate the species split (out-paralogs) can easily be confused with true orthologs. Orthologs and in-paralogs are typically detetcted with phylogenetic methods. Alternative approach: ortholog clusters are seeded with a two-way best pairwise match, after which an algorithm for adding in-paralogs is applied.
+
+Software: [[http://inparanoid.sbc.su.se/cgi-bin/index.cgi][Inparanoid]].
+
+* [[/Users/chl/Documents/Papers/ripley-2002-statis-method.pdf][ripley-2002-statis-method]] - Statistical methods need software: a view of statistical computing
+ :PROPERTIES:
+ :Custom_ID: ripley-2002-statis-method
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ripley-2002-statis-method.pdf
+ :END:
+#+BEGIN_QUOTE
+Let’s not kid ourselves: the most widely used piece of software for statistics is Excel.
+#+END_QUOTE
+
+* [[/Users/chl/Documents/Papers/rochester-2013-clojur-data.pdf][rochester-2013-clojur-data]] - Clojure Data Analysis Cookbook
+ :PROPERTIES:
+ :Custom_ID: rochester-2013-clojur-data
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/rochester-2013-clojur-data.pdf
+ :END:
+A book from the Packt Publishing group.
+
+Actually, this is the first book by [[http://www.ericrochester.com][Eric Rochester]]. The second covers more advanced techniques and was published one year later: cite:rochester-2014-master-clojur. The [[https://github.com/erochest/clj-data-analysis][website for the book]] includes data used throughout the book, nothing more, but be aware there are a lot of datasets.
+
+"This book is for programmers or data scientists who are familiar with Clojure and want to use it in their data analysis processes."
+
+The first chapter describes various ways to import data (flat files, local database and RDF data), mostly using Incanter backend. I would prefer the author start with more basic tool before dwelling into specialized libraries, especially since [[https://github.com/incanter/incanter][Incanter]] looks almost defunct nowadays (the last blog entry I found said that it was [[https://data-sorcery.org/2016/02/01/incanter-1-5-7/][version 1.5.7, Feb 2016]]). Anyway, this provides a good overview of Incanter's facilities to process external data and convert them in array form, and R or Lispstat users should feel at home. However, starting with Chapter 2 the author will use the [[https://github.com/clojure/data.csv][data.csv]] library.
+
+* [[/Users/chl/Documents/Papers/savojardo-2020-deepm.pdf][savojardo-2020-deepm]] - Deepmito: accurate prediction of protein sub-mitochondrial localization using convolutional neural networks
+ :PROPERTIES:
+ :Custom_ID: savojardo-2020-deepm
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/savojardo-2020-deepm.pdf
+ :END:
+- Use of deep learning to predict protein localization in four different mitochondrial compartments (matrix, outer, inner and intermembrane regions).
+- Dataset = 424 mito. proteins sharing at most 40% sequence identity (CD-HIT filter), including 166 proteins from fungi.
+
+* [[/Users/chl/Documents/Papers/schliep-2017-inter.pdf][schliep-2017-inter]] - Intertwining phylogenetic trees and networks
+ :PROPERTIES:
+ :Custom_ID: schliep-2017-inter
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/schliep-2017-inter.pdf
+ :END:
+Bifurcating tree hypothesis ([[https://academic.oup.com/sysbio/article/62/3/479/1648670][Mindell 2013]]): the "tree of life" metaphor works well as a strictly bifurcating tree in the absence of reticulate evolution, which results from hybridization, lineage merger, and lateral gene transfer. If this does not hold, phylogenetic networks should be used instead.
+
+[[https://www.phangorn.org][Phangorn]] R package (+ [[https://cran.r-project.org/web/packages/ape/index.html][ape]]): "support value" (nonparametric bootstrap support: Felsenstein 1985; Bayesian posterior probabilities: Rannala & Yang 1996; internode certainty: Salichos, Sta- matakis & Rokas 2014); see also Draper, Hedenäs & Grimm 2007.
+
+* [[/Users/chl/Documents/Papers/sonnhammer-2015-inpar.pdf][sonnhammer-2015-inpar]] - Inparanoid 8: orthology analysis between 273 proteomes, mostly eukaryotic
+ :PROPERTIES:
+ :Custom_ID: sonnhammer-2015-inpar
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/sonnhammer-2015-inpar.pdf
+ :END:
+- 273 species, mainly from Uniprot, including 246 eukaryotes.
+- Orthologs may undergo duplications after the speciation event, generating multiple co-orthologs or inparalogs, which complicates orthology detection. [[http://inparanoid.sbc.su.se/cgi-bin/index.cgi][InParanoid]] allows to generate ortholog groups that include all inparalogs but no outparalogs using a parallel 2-pass BLAST procedure.
+- quadratic runtime scaling with the number of species.
+- [[https://github.com/JoshuaDavid/Neighbor_Joining][Python code]] for neighbor-joining algorithm.
+
+* [[/Users/chl/Documents/Papers/stein-2017-elemen-number-theor.pdf][stein-2017-elemen-number-theor]] - Elementary number theory: primes, congruences, and secrets
+ :PROPERTIES:
+ :Custom_ID: stein-2017-elemen-number-theor
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/stein-2017-elemen-number-theor.pdf
+ :END:
+**** TODO Add a few words in [[file:~/Drafts/current/number-theory.org]]
+
+* [[/Users/chl/Documents/Papers/sturmfels-2007-open-probl.pdf][sturmfels-2007-open-probl]] - Open problems in algebraic statistics
+ :PROPERTIES:
+ :Custom_ID: sturmfels-2007-open-probl
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/sturmfels-2007-open-probl.pdf
+ :END:
+Open problems at the intersection between interactions between algebraic geometry and computational statistics. E.g., Graphical Models with Hidden Variables:
+Our first question concerns three-dimensional contingency tables $(p_{ijk})$ whose indices $i, j, k$ range over a set of four elements, such as the set ${A, C, G, T}$ of DNA bases. Consider the variety of 4×4×4-tables of tensor rank at most 4. There are certain known polynomials of degree at most nine which vanish on this variety. Do they suffice to cut out the variety?
+
+See also: [[/Users/chl/Documents/papers/pistone-2001-algeb-statis.pdf][pistone-2001-algeb-statis]], [[/Users/chl/Documents/Papers/gibilisco-2010-algeb-geomet.pdf][gibilisco-2010-algeb-geomet]].
+
+* [[/Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf][tsamardinos-2017-boots-out]] - Bootstrapping the out-of-sample predictions for efficient and accurate cross-validation
+ :PROPERTIES:
+ :Custom_ID: tsamardinos-2017-boots-out
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf
+ :END:
+Bootstrap Bias Corrected CV = bootstrap the whole process of selecting the best-performing configuration on the out-of-sample predictions of each configuration, without additional training of models. Computationally more efficient, smaller variance and bias compared to nested CV.
+* [[/Users/chl/Documents/Papers/tunbridge-1995-l-system.pdf][tunbridge-1995-l-system]] - An l-systems approach to the modelling of fungal growth
+ :PROPERTIES:
+ :Custom_ID: tunbridge-1995-l-system
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/tunbridge-1995-l-system.pdf
+ :END:
+Complete description of an L-system with rules for ungerminated and germinated spores,
+tip, apical, septum and ordinary segment, and segment from which a branch grows.
+
+**** TODO Try to implement main rules using Racket [[https://docs.racket-lang.org/lindenmayer/index.html][#lang lindenmayer]].
+* [[/Users/chl/Documents/Papers/vandewiele-2020-overl-optim.pdf][vandewiele-2020-overl-optim]] - Overly optimistic prediction results on imbalanced data: flaws and benefits of applying over-sampling
+ :PROPERTIES:
+ :Custom_ID: vandewiele-2020-overl-optim
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/vandewiele-2020-overl-optim.pdf
+ :END:
+Methodological bias = applying over-sampling before partitioning the data into mutually exclusive training and testing sets. Other biased approaches: apply cross-validation on a subset of data subsampled from the original dataset (increases the variance of the obtained results and does not address class imbalance). Carrying out over-sampling before splitting into training and testing sets might leak information from the original testing samples to the artificially generated training samples, leading to overly optimistic validation scores. It is therefore of key importance to carry out the over-sampling after selecting a training and testing set.
+
+* [[/Users/chl/Documents/Papers/volz-2017-scalab-relax.pdf][volz-2017-scalab-relax]] - Scalable Relaxed Clock Phylogenetic Dating
+ :PROPERTIES:
+ :Custom_ID: volz-2017-scalab-relax
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/volz-2017-scalab-relax.pdf
+ :END:
+Molecular clock models assume a constant substitution rate through time, while relaxed clock models allow robust inference of rates and dates. Such models are usually fitted using Bayesian MCMC, which is computatioanally expensive. This paper explores the relevance of ML and LS phylogenetic and molecular clock dating methods, using a Gamma-Poisson mixture model of substitution rates.
 
 * [[/Users/chl/Documents/Papers/watson-2016-lovin-common-lisp.pdf][watson-2016-lovin-common-lisp]] - Loving Common Lisp
  :PROPERTIES:
@@ -363,9 +942,9 @@ Operations on string (=concatenate=, =search=, =subseq= and =string-*=) and the 
 
 Hash tables are to be preferred when lists (coupled with =assoc=) are long. Main functions are =gethash=, =make-hash-table=, and =maphash=. Updating values in a hash table is done using =remhash= or =clrhash=. Note that these functions can modify their arguments, much like =setf= or =setq=, but the latter are macros and not functions.
 
-#+begin_quote
+#+BEGIN_QUOTE
 Functional programming means that we avoid maintaining state inside of functions and treat data as immutable.
-#+end_quote
+#+END_QUOTE
 
 Recall that read-only objects are inherently thread safe.
 
@@ -401,375 +980,18 @@ Input (=*standard-input*=) and output (=*standard-output*=) of Lisp data is hand
 
 The rest of the book describes some application of web and network programming using CLOS classes and various packages (=drakma=, =hunchentoot=). The chapter of querying database is also interesting.
 
-* [[/Users/chl/Documents/Papers/yu-2018-two-method.pdf][yu-2018-two-method]] - Two methods for mapping and visualizing associated data on phylogeny using ggtree
+* [[/Users/chl/Documents/Papers/wicherts-2017-weak-spots.pdf][wicherts-2017-weak-spots]] - The weak spots in contemporary science (and how to fix them)
  :PROPERTIES:
- :Custom_ID: yu-2018-two-method
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/yu-2018-two-method.pdf
+ :Custom_ID: wicherts-2017-weak-spots
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wicherts-2017-weak-spots.pdf
  :END:
-- Two packages: [[http://bioconductor.org/packages/ggtree][ggtree]] for mapping and visualization, and [[http://bioconductor.org/packages/treeio][treeio]] for data parsing ([[https://github.com/GuangchuangYu/treeio][Github]])
-- Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
+Objectives: demonstrate that the pluridisciplinar crisis in science can mainly be accounted for by observer bias, publication bias, misuse of degrees of freedom in statistical analysis of data combined to low statistical power, and errors in the reporting of results.
 
-**** TODO Letunic I, Bork P. 2007. Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation. Bioinformatics 23:127–128.
+Up to 90% of positive results reported in psychology or psychiatry.
 
-* [[/Users/chl/Documents/Papers/bradley-2018-what-categ-theor.pdf][bradley-2018-what-categ-theor]] - What is category theory
- :PROPERTIES:
- :Custom_ID: bradley-2018-what-categ-theor
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bradley-2018-what-categ-theor.pdf
- :END:
-- Main blog: https://www.math3ma.com
-- Level: graduate student
+HARKing: /Hypothesizing after Results are Known/---much like "data fishing", or to a lesser extent "data dredging".
 
-Category Theory used to reshape and reformulate problems within pure mathematics, including topology, homotopy theory and algebraic geometry, and it has various applications in /chemistry/, neuroscience, systems biology, /natural language processing/, causality, network theory, dynamical systems, and database theory.
-
-Two central themes:
-
-- functorial semantics: C → D ≈ interpretation of C within D; syntax (grammar in NLP) refers to rules for putting things together and semantics (meaning) refers to the meaning of those things.
-- compositionality
-
-* [[/Users/chl/Documents/Papers/schliep-2017-inter.pdf][schliep-2017-inter]] - Intertwining phylogenetic trees and networks
- :PROPERTIES:
- :Custom_ID: schliep-2017-inter
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/schliep-2017-inter.pdf
- :END:
-Bifurcating tree hypothesis ([[https://academic.oup.com/sysbio/article/62/3/479/1648670][Mindell 2013]]): the "tree of life" metaphor works well as a strictly bifurcating tree in the absence of reticulate evolution, which results from hybridization, lineage merger, and lateral gene transfer. If this does not hold, phylogenetic networks should be used instead.
-
-[[https://www.phangorn.org][Phangorn]] R package (+ [[https://cran.r-project.org/web/packages/ape/index.html][ape]]): "support value" (nonparametric bootstrap support: Felsenstein 1985; Bayesian posterior probabilities: Rannala & Yang 1996; internode certainty: Salichos, Sta- matakis & Rokas 2014); see also Draper, Hedenäs & Grimm 2007.
-
-* [[/Users/chl/Documents/Papers/buffalo-2015-bioin-data-skill.pdf][buffalo-2015-bioin-data-skill]] - Bioinformatics data skills: reproducible and robust research with open source tools
- :PROPERTIES:
- :Custom_ID: buffalo-2015-bioin-data-skill
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/buffalo-2015-bioin-data-skill.pdf
- :END:
-- [[https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?][Sequence Read Archive]]
-- forensic bioinformatics ([[https://projecteuclid.org/euclid.aoas/1267453942][Baggerly and Coombes 2009]])
-
-* [[/Users/chl/Documents/Papers/danjou-2018-serious-python.pdf][danjou-2018-serious-python]] - Serious Python
- :PROPERTIES:
- :Custom_ID: danjou-2018-serious-python
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/danjou-2018-serious-python.pdf
- :END:
-Nice book to understand the underside of Python, especially regarding package import and path management. Note that this will not teach you Python programming, but it will certainly be helpful to better understand Python, think about design patterns, and how to develop your own projects. Each chapter provides a discussion of important topics in project development, and a brief interview by core developers is provided at the end. Note that some chapters are very specific of some aspects of Python programming, or PL more generally. For instance, chapter 4 deals with timestamp and the importance of timezone.
-
-I learned a few things about packaging, and in particular the number of modules that were developed before =pip=, namely (in chronological order): =distutils=, =setuptools=, =distribute=, =distutils2=, =packaging=, and =distlib=. The latter may eventually replace =setuptools=.
-
-* [[/Users/chl/Documents/Papers/casillas-2017-molec-popul-genet.pdf][casillas-2017-molec-popul-genet]] - Molecular Population Genetics
- :PROPERTIES:
- :Custom_ID: casillas-2017-molec-popul-genet
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/casillas-2017-molec-popul-genet.pdf
- :END:
-Driving forces for /evolution/:
-- natural selection: (ignoring effects of genetic drift) classical (homozygous loci for the wild-type allele) vs. balance (polymorphic loci) hypothesis, which requires to be able to estimate genetic diversity in populations. This has successively be done using allozyme polymorphisms (inconclusive results due to limitations of protein electrophoresis), nucleotide sequence data (using restriction enzymes, before PCR and automated Sanger sequencing), and genome variation.
-- genetic drift,
-- mutation,
-- recombination,
-- gene flux.
-
-* [[/Users/chl/Documents/Papers/altenhoff-2019-oma.pdf][altenhoff-2019-oma]] - OMA standalone: orthology inference among public and custom genomes and transcriptomes
- :PROPERTIES:
- :Custom_ID: altenhoff-2019-oma
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/altenhoff-2019-oma.pdf
- :END:
-- Orthology resources: [[http://eggnogdb.embl.de][eggNOG]], [[http://www.ensembl.org/info/docs/api/compara/index.html][Ensembl Compara]], [[http://inparanoid.sbc.su.se][InParanoid]], [[https://omictools.com/mbgd-tool][MBGD]], [[https://www.orthodb.org][OrthoDB]], [[https://orthomcl.org/orthomcl/][OrthoMCL]], [[http://www.pantherdb.org/genes/][PANTHER]], [[http://phylomedb.org][PhylomeDB]], and [[https://omabrowser.org/oma/home/][OMA]].
-- OMA [[https://omabrowser.org/standalone/][standalone app]], available /via/ Homebrew.
-
-Orthologous and paralogous genes are two types of homologous genes, that is, genes that arise from a common DNA ancestral sequence. Orthologous genes diverged after a speciation event, while paralogous genes diverge from one another within a species. Put another way, the terms orthologous and paralogous describe the relationships between genetic sequence divergence and gene products associated with speciation or genetic duplication. ([[https://sciencing.com/difference-between-orthologous-paralogous-genes-18612.html][The difference between orthologous & paralogous genes]])
-
-* [[/Users/chl/Documents/Papers/cormen-2013-algor-unloc.pdf][cormen-2013-algor-unloc]] - Algorithms Unlocked
- :PROPERTIES:
- :Custom_ID: cormen-2013-algor-unloc
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/cormen-2013-algor-unloc.pdf
- :END:
-#+begin_quote
-We want two things from a computer algorithm: given an input to a problem, it should always produce a correct solution to the problem, and it should use com- putational resources efficiently while doing so.
-#+end_quote
-
-- exact vs. approximate solution (e.g., RSA and large prime numbers)
-- focusing on the order of growth of the running time as a function of the input size
-- algorithms described in plain English, and not in pseudo-code like in CLRS
-
-* [[/Users/chl/Documents/Papers/friedman-1995-littl-schem.pdf][friedman-1995-littl-schem]] - The Little Schemer
- :PROPERTIES:
- :Custom_ID: friedman-1995-littl-schem
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/friedman-1995-littl-schem.pdf
- :END:
- Beautiful book, very different from SICP in that it focus on basic building blocks (=car=, =cdr=, =cons=, =eq?=, etc.) and use a very pragmatic approach to understanding the structuration and interpretation of forms and s-expr. The penultimate goal of this book (4th ed., after the original /Little Lisper/) is to learn to think in a functional way. The ten commandments are worth keeping in mind for that very specific purpose:
-
-1. When recurring on a list of atoms, =lat=, ask two questions about it: =(null? lat)= and =else=. When recurring on a number, =n=, ask two questions about it: =(zero? n)= and =else=. When recurring on a list of s-expr, =l=, ask three questions about it: =(null? l)=, =(atom? (car l))=, and =else=.
-2. Use =cons= to build lists.
-3. When building a list, describe the first typical element, and then =cons= it into the natural recursion.
-4. Always change at least one argument while recurring. When recurring on a list of atoms, =lat=, use =(cdr lat)=. When recurring on a number, =n=, use =(sub1 n)=. And when recurring on a list of s-expr, =l=, use =(car l)= and =(cdr l)= if neither =(null? l)= nor =(atom? (car l))= are true. It must be changed to be closer to termination. The changing argument must be tested in the termination condition: when using =cdr=, test termination with =null?=, and when using =sub1=, test termination with =zero?=.
-5. When building a value with =÷=, always use 0 for the value of the terminating line, for adding 0 does not change the value of an addition. When building a value with =x=, always use 1 for the value of the terminating line, for multiplying by 1 does not change the value of a multiplication. When building a value with =cons=, always consider =()= for the value of the terminating line.
-6. Simplify only after the function is correct.
-7. Recur on the subparts that are of the same nature:
-   - on the sublists of a list;
-   - on the subexpressions of an arithmetic expression.
-8. Use help functions to abstract from representations.
-9. Abstract common patterns with a new function.
-10. Build functions to collect more than one value at a time.
-
-* [[/Users/chl/Documents/Papers/kleppmann-2016-desig-data.pdf][kleppmann-2016-desig-data]] - Designing Data-Intensive Applications
- :PROPERTIES:
- :Custom_ID: kleppmann-2016-desig-data
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kleppmann-2016-desig-data.pdf
- :END:
-Review by [[https://henrikwarne.com/2019/07/27/book-review-designing-data-intensive-applications/][Henrik Warne]].
-
-* [[/Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf][jun-2009-ident-mammal]] - Identification of mammalian orthologs using local synteny
- :PROPERTIES:
- :Custom_ID: jun-2009-ident-mammal
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf
- :END:
-- differentiating between genes that have diverged through a speciation event (orthologs) and those derived through duplication events within a species (paralogs). Gene order may be viewed as a measure of conservation, or better gene family evolution.
-- local [[https://en.wikipedia.org/wiki/Synteny][synteny]] (gene order) might be useful to resolve ambiguous sequence based matches between putative orthologs (and [[https://www.ncbi.nlm.nih.gov/pubmed/19553367][retrogenes]]).
-- 93% agreement between coding sequence based orthology (Inparanoid) and local synteny based orthology, with cases of discordance resulting from evolutionary events including [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2884099/][retrotransposition]] and genome rearrangements.
-- intron conservation ratio = #(positional homologous introns)/#(intron positions in protein alignment), in strong agreement with the orthology assignments made by the two methods.
-
-* [[/Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] - Orthology detection combining clustering and synteny for very large datasets
- :PROPERTIES:
- :Custom_ID: lechner-2014-orthol-detec
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf
- :END:
-- orthology is not a transitive relation so that the problem is different from clustering an input gene set.
-- the authors focus on avoiding false positive orthology assignments within the phylogenetic range of the reported orthologous groups, while tolerating recent in-paralogs (speciation preceding duplication) as unavoidable contamination
-
-* [[/Users/chl/Documents/Papers/li-2018-minim.pdf][li-2018-minim]] - Minimap2: pairwise alignment for nucleotide sequences
- :PROPERTIES:
- :Custom_ID: li-2018-minim
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/li-2018-minim.pdf
- :END:
-Minimap2 is a general-purpose alignment program to map DNA or long mRNA sequences against a large reference database. It works with accurate short reads of 100 bp in length, 1 kb genomic reads at error rate 15%, full-length noisy Direct RNA or cDNA reads and assembly contigs or closely related full chromosomes of hundreds of megabases in length.
-
-Used in the [[http://www.outils.genomique.biologie.ens.fr/eoulsan2/][Eoulsan]] toolkit.
-
-* [[/Users/chl/Documents/Papers/piskol-2013-reliab-ident.pdf][piskol-2013-reliab-ident]] - Reliable identification of genomic variants from rna-seq data
- :PROPERTIES:
- :Custom_ID: piskol-2013-reliab-ident
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/piskol-2013-reliab-ident.pdf
- :END:
-Use =cufflinks= after =tophat2= for gene quantification.
-
-RNA-seq data alone enabled the discovery of 40.2% and 47.7% of all coding variants identified by WGS in GM12878 cells and PBMCs, respectively. At the same time, RNA-seq only required a fraction (1/6) of the sequencing effort.
-
-* [[/Users/chl/Documents/Papers/priyam-2019-sequen.pdf][priyam-2019-sequen]] - Sequenceserver: a modern graphical user interface for custom blast databases
- :PROPERTIES:
- :Custom_ID: priyam-2019-sequen
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/priyam-2019-sequen.pdf
- :END:
-Only very basic sequence aligner. Not much compared to good old Wwwblast unfortunately. The only interest is possibly to use the automated converter of Fasta files (=makeblastdb=).
-
-* [[/Users/chl/Documents/Papers/dobin-2013-star.pdf][dobin-2013-star]] - Star: ultrafast universal rna-seq aligner
- :PROPERTIES:
- :Custom_ID: dobin-2013-star
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/dobin-2013-star.pdf
- :END:
-STAR = Spliced Transcripts Alignment to a Reference
-
-Designed to align the non-contiguous sequences directly to the reference genome, instead of short reads to a database of splice junctions or align split-read portions contiguously to a reference genome, or a combination thereof.
-
-/Algorithm/: (1) MMP seed search and (2) clustering and stitching of all the seeds that were aligned to the genome (allowing for only one insertion or deletion) using local scoring scheme.
-
-* [[/Users/chl/Documents/Papers/ramos-2014-reach-python-racket.pdf][ramos-2014-reach-python-racket]] - Reaching python from racket
- :PROPERTIES:
- :Custom_ID: ramos-2014-reach-python-racket
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ramos-2014-reach-python-racket.pdf
- :END:
-Via [[https://racket-news.com/2019/09/racket-news-issue-15.html][Racket News #15]].
-
-* [[/Users/chl/Documents/Papers/koster-2016-rust-bio.pdf][koster-2016-rust-bio]] - Rust-bio: a fast and safe bioinformatics library
- :PROPERTIES:
- :Custom_ID: koster-2016-rust-bio
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/koster-2016-rust-bio.pdf
- :END:
-https://rust-bio.github.io
-
-* [[/Users/chl/Documents/Papers/gunawardena-2014-model.pdf][gunawardena-2014-model]] - Models in biology: 'accurate descriptions of our pathetic thinking'
- :PROPERTIES:
- :Custom_ID: gunawardena-2014-model
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gunawardena-2014-model.pdf
- :END:
-Emphasizes the role of forward modeling, especially with regard to causality.
-
-#+BEGIN_QUOTE
-Mathematical models come in a variety of flavors, depending on whether the state of a system is measured in discrete units (‘off’ and ‘on’), in continuous concentrations or as probability distributions and whether time and space are themselves treated discretely or continuously.
-#+END_QUOTE
-
-* [[/Users/chl/Documents/Papers/ghuloum-2006-increm-approac.pdf][ghuloum-2006-increm-approac]] - An incremental approach to compiler construction
- :PROPERTIES:
- :Custom_ID: ghuloum-2006-increm-approac
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ghuloum-2006-increm-approac.pdf
- :END:
-Found by following Thorsten Ball's progress (on Twitter) on his approach to build a [[https://github.com/mrnugget/scheme_x86][Scheme compiler]] from scratch.
-
-* [[/Users/chl/Documents/Papers/yendrek-2012-bench-scien.pdf][yendrek-2012-bench-scien]] - The bench scientist's guide to statistical analysis of rna-seq data
- :PROPERTIES:
- :Custom_ID: yendrek-2012-bench-scien
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/yendrek-2012-bench-scien.pdf
- :END:
-Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][conesa-2016-survey-best]] for more up to date material and technologies.
-
-* [[/Users/chl/Documents/Papers/howe-2011-rna-seq-mev.pdf][howe-2011-rna-seq-mev]] - Rna-seq analysis in mev
- :PROPERTIES:
- :Custom_ID: howe-2011-rna-seq-mev
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/howe-2011-rna-seq-mev.pdf
- :END:
-Latest standalone app dates back to 2011 and is Java 6 only. The Shell script included is useful for microarrays only.
-
-* [[/Users/chl/Documents/Papers/love-2014-moder-rna-deseq.pdf][love-2014-moder-rna-deseq]] - Moderated estimation of fold change and dispersion for rna-seq data with deseq2
- :PROPERTIES:
- :Custom_ID: love-2014-moder-rna-deseq
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/love-2014-moder-rna-deseq.pdf
- :END:
-NGS analyses (RNA, CHIP, etc.) need to account for within-group variance estimates when analysing lot of genes, hence the need to pool information across genes. The DESeq approach detects and corrects dispersion estimates that are too low through modeling of the dependence of the dispersion on the average expression strength over all samples. In addition, it provides a novel method for gene ranking and the visualization of stable estimates of effect sizes. The [[https://bioconductor.org/packages/release/bioc/html/DESeq2.html][DESeq2]] package further includes shrunken fold changes (with SE).
-
-See also: [[file:~/Documents/Papers/ignatiadis-2016-data.pdf][ignatiadis-2016-data]], [[file:~/Documents/papers/zhu-2019-heavy.pdf][zhu-2019-heavy]], [[file:~/Documents/Papers/stephens-2017-false.pdf][stephens-2017-false]].
-
-* [[/Users/chl/Documents/Papers/anders-2013-count-rna.pdf][anders-2013-count-rna]] - Count-based differential expression analysis of rna sequencing data using r and bioconductor
- :PROPERTIES:
- :Custom_ID: anders-2013-count-rna
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/anders-2013-count-rna.pdf
- :END:
-De facto standard pipeline for RNA-Seq analysis using =TopHat= + =HTSeq= + =DESeq2=. See also [[file:~/Documents/Papers/kim-2019-graph-hisat.pdf][kim-2019-graph-hisat]] for the successor of =TopHat2=.
-
-See also [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][conesa-2016-survey-best]] for a review of current best pratices and alternative workflows.
-
-Note that =DESeq2= and =edgeR= use different defaults: Regarding /normalization/, edgeR uses the trimmed mean of M values while DESeq relies on a virtual reference sample; dispersion estimates are based on a trended mean in edgeR, whereas DESeq takes the maximum of the individual dispersion estimates and the dispersion-mean trend.
-
-* [[/Users/chl/Documents/Papers/ignatiadis-2016-data.pdf][ignatiadis-2016-data]] - Data-driven hypothesis weighting increases detection power in genome-scale multiple testing
- :PROPERTIES:
- :Custom_ID: ignatiadis-2016-data
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ignatiadis-2016-data.pdf
- :END:
-Independent hypothesis weighting ([[https://www.bioconductor.org/packages/release/bioc/html/IHW.html][IHW]]): a method that assigns weights using covariates (conditionally) independent of the P-values under the null hypothesis but informative of each test’s power or prior probability of the null hypothesis.
-
-* [[/Users/chl/Documents/Papers/farrell-2019-math-adven.pdf][farrell-2019-math-adven]] - Math Adventures With Python
- :PROPERTIES:
- :Custom_ID: farrell-2019-math-adven
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/farrell-2019-math-adven.pdf
- :END:
-Keep this in mind for my son in case he happens to use Python at school.
-
-* [[/Users/chl/Documents/Papers/kim-2019-graph-hisat.pdf][kim-2019-graph-hisat]] - Graph-based genome alignment and genotyping with hisat2 and hisat-genotype
- :PROPERTIES:
- :Custom_ID: kim-2019-graph-hisat
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kim-2019-graph-hisat.pdf
- :END:
-[[https://ccb.jhu.edu/software/hisat2/index.shtml][HISAT2]] is the successor of TopHat2. What's new? HISAT2 can align both DNA and RNA sequences using a graph Ferragina Manzini index. This graph-based alignment approach enables much higher alignment sensitivity and accuracy than standard, linear reference-based alignment approaches, especially for highly polymorphic genomic regions.
-
-* [[/Users/chl/Documents/Papers/castresana-2000-selec-conser.pdf][castresana-2000-selec-conser]] - Selection of conserved blocks from multiple alignments for their use in phylogenetic analysis
- :PROPERTIES:
- :Custom_ID: castresana-2000-selec-conser
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/castresana-2000-selec-conser.pdf
- :END:
-Instead of removing divergent regions in an arbitrary way, or use alternative approach that consist in assigning gap weights highly variable regions, the author proposes an algorithm (=GBlocks=) that accounts for: the degree of conservation of every position, stretches of contiguous nonconserved positions, minimum length support, removing all positions with gaps and nonconserved positions adjacent to them., as well as small block remaining after gap cleaning are also removed. The paper is quite old by now, and probably outdated.
-
-* [[/Users/chl/Documents/Papers/efron-1996-boots-confid.pdf][efron-1996-boots-confid]] - Bootstrap Confidence Levels For Phylogenetic Trees
- :PROPERTIES:
- :Custom_ID: efron-1996-boots-confid
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/efron-1996-boots-confid.pdf
- :END:
-One of the many applied papers on the bootstrap by Efron, based on the original work of Felsenstein (see also [[file:~/Documents/Papers/felsenstein-2004-infer-phylog.pdf][felsenstein-2004-infer-phylog]]). The aim of bootstrap resampling in phylogenetic reconstruction is to assess the confidence for each clad, based on the proportion of bootstrap trees showing that same clade. In this context, the notion of agreement refers to the topology of the trees and not to the length of its arms. The rationale underlying the bootstrap confidence values depends on a simple multinomial probability model, although a bivariate normal model could also be used (parametric bootstrap).
-
-* [[/Users/chl/Documents/Papers/fourment-2018-dubious-ways.pdf][fourment-2018-dubious-ways]] - 19 dubious ways to compute the marginal likelihood of a phylogenetic tree topology
- :PROPERTIES:
- :Custom_ID: fourment-2018-dubious-ways
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/fourment-2018-dubious-ways.pdf
- :END:
-The authors use the JC69 model to benchmark 19 methods for computing the marginla likelihood of a topology with respect to branch lengths. While the slowest, Generalized Stepping Stone (GSS) is the one that performs best. Gamma Laplus Importance Sampling (GLIS) is the best fast method, with performance wlose to GSS.
-
-* [[/Users/chl/Documents/Papers/izquierdo-carrasco-2011-algor.pdf][izquierdo-carrasco-2011-algor]] - Algorithms, data structures, and numerics for likelihood-based phylogenetic inference of huge trees
- :PROPERTIES:
- :Custom_ID: izquierdo-carrasco-2011-algor
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/izquierdo-carrasco-2011-algor.pdf
- :END:
-Design of a new search algorithm for large datasets: relies on a /backbone/ tree, to reduce the dimensionality of the search space; basically, the idea is to collapse taxa that are closely related to each other into a single virtual tip. The virtual tips are then interpreted as tips in the backbone tree on which we can conduct the tree search. Optimal tree size reduction factor: R > 0.25.
-
-* [[/Users/chl/Documents/Papers/hicks-2018-rna-seq.pdf][hicks-2018-rna-seq]] - On the widespread and critical impact of systematic bias and batch effects in single-cell rna-seq data
- :PROPERTIES:
- :Custom_ID: hicks-2018-rna-seq
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hicks-2018-rna-seq.pdf
- :END:
-#+BEGIN_QUOTE
-We found that the proportion of genes reported as expressed explains a substantial part of observed variability and that this quantity varies systematically across experimental batches. Furthermore, we found that the implemented experimental designs confounded outcomes of interest with batch effects, a design that can bring into question some of the conclusions of these studies.
-#+END_QUOTE
-
-Proposed experimental design (to control batch effects): account for differences in the proportion of detected genes by explicitly including the batch factor as a covariate in a linear regression model, while making use of biological replicates so that multiple batches of cells could be randomized across sequencing runs, flow cells and lanes as in bulk-RNA-Seq.
-
-* [[/Users/chl/Documents/Papers/liu-2014-rna.pdf][liu-2014-rna]] - Rna-seq differential expression studies: more sequence or more replication?
- :PROPERTIES:
- :Custom_ID: liu-2014-rna
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/liu-2014-rna.pdf
- :END:
-Better to sequence less reads but increase the number of biological replicates: this will significantly increase the number of DE genes while the number of sequencing reads have a diminishing return after 10M reads.
-
-* [[/Users/chl/Documents/Papers/li-2010-rna-seq.pdf][li-2010-rna-seq]] - Rna-seq gene expression estimation with read mapping uncertainty
- :PROPERTIES:
- :Custom_ID: li-2010-rna-seq
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/li-2010-rna-seq.pdf
- :END:
-- Optimal read length = 20-25 bp.
-- Problem with RMPKM measures: the mean expressed transcript length may vary between samples. (When the mean expressed transcript length is 1 kb, 1 TPM is equivalent to 1 RPKM, which corresponds to roughly one transcript per cell in mouse.)
-
-* [[/Users/chl/Documents/Papers/jones-2004-introd-bioin-algor.pdf][jones-2004-introd-bioin-algor]] - An introduction to bioinformatics algorithms
- :PROPERTIES:
- :Custom_ID: jones-2004-introd-bioin-algor
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jones-2004-introd-bioin-algor.pdf
- :END:
-The authors make use of simplified pseudo-code for all the algorithms discussed in this book -- on the basis that the target audience are biologists. I found it nice, as it is heavily inspired from Python syntax (significant indentation is fine for reading purpose, IMHO). The introductory chapter on computer science (CS) is pretty basic stuff that can be found in any introductory textbook (chapter 2): algorithmic complexity, recursive versus iterative approach, type of algorithms (brute force, branch-and-bound, greedy approach, dynamic programming, divide-and-conquer, machine learning, randomized algorithms), and NP-completeness. It is intended for biologists.
-
-#+BEGIN_QUOTE
-I have indeed been able to apply my skills in this new area, but only after coming to understand that solving biological problems requires far more than clever algorithms: it involves a creative partnership between biologists and mathematical scientists to arrive at an appropriate mathematical model, the acquisition and use of diverse sources of data, and statistical methods to show that the biological patterns and regularities that we discover could not be due to chance. --- Richard Karp
-#+END_QUOTE
-
-For CS folks, the third chapter provides a gentle primer to biology.
-
-See also [[http://www.cs.hunter.cuny.edu/~saad/courses/bioinf/][Bioinformatics Algorithms]], by Saad Mneimneh, which offers solutions to selected exercises from each chapter.
-
-* [[/Users/chl/Documents/Papers/miele-2012-high.pdf][miele-2012-high]] - High-quality sequence clustering guided by network topology and multiple alignment likelihood
- :PROPERTIES:
- :Custom_ID: miele-2012-high
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/miele-2012-high.pdf
- :END:
-- Python 2.7 only
-- Download: http://lbbe.univ-lyon1.fr/Download,3100.html
-
-* [[/Users/chl/Documents/Papers/bernardes-2016-improv-protein.pdf][bernardes-2016-improv-protein]] - Improvement in protein domain identification is reached by breaking consensus, with the agreement of many profiles and domain co-occurrence
- :PROPERTIES:
- :Custom_ID: bernardes-2016-improv-protein
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bernardes-2016-improv-protein.pdf
- :END:
-http://www.lcqb.upmc.fr/CLADE/
-
-* [[/Users/chl/Documents/Papers/choi-2017-tree-life.pdf][choi-2017-tree-life]] - A genome tree of life for the fungi kingdom
- :PROPERTIES:
- :Custom_ID: choi-2017-tree-life
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/choi-2017-tree-life.pdf
- :END:
-Gene tree (small number of highly conserved and orthologous genes) vs. genome tree (whole-genome DNA sequence, transcriptome RNA sequence, proteome amino acid sequence, exome DNA sequences, or other genomic features)
-
-The authors rely on the whole-proteome sequences on the Feature Frequency Profile ([[https://github.com/jaejinchoi/FFP][FFP]]), which does not require multiple sequence alignment.
-
-* [[/Users/chl/Documents/Papers/capella-gutierrez-2014.pdf][capella-gutierrez-2014]] - A phylogenomics approach for selecting robust sets of phylogenetic markers
- :PROPERTIES:
- :Custom_ID: capella-gutierrez-2014
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/capella-gutierrez-2014.pdf
- :END:
-Set of 4 genes in the case of ascomycetous fungal species (/Basidiomycota/):
-
-| YHR186C | 1557 | Target of rapamycin complex 1 subunit KOG1     |
-| YMR012W | 1277 | Clustered mitochondria protein 1               |
-| YJL029C |  822 | Vacuolar protein sorting-associated protein 53 |
-| YAR007C |  621 | Replication factor A protein 1                 |
-
-Phylogenetic tree analysis using PhyML, with Robinson and Foulds distance to compare trees. Interesting approach to use train/test dataset and resampling strategy.
-* [[/Users/chl/Documents/Papers/sturmfels-2007-open-probl.pdf][sturmfels-2007-open-probl]] - Open problems in algebraic statistics
- :PROPERTIES:
- :Custom_ID: sturmfels-2007-open-probl
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/sturmfels-2007-open-probl.pdf
- :END:
-Open problems at the intersection between interactions between algebraic geometry and computational statistics. E.g., Graphical Models with Hidden Variables:
-Our first question concerns three-dimensional contingency tables $(p_{ijk})$ whose indices $i, j, k$ range over a set of four elements, such as the set ${A, C, G, T}$ of DNA bases. Consider the variety of 4×4×4-tables of tensor rank at most 4. There are certain known polynomials of degree at most nine which vanish on this variety. Do they suffice to cut out the variety?
-
-See also: [[/Users/chl/Documents/papers/pistone-2001-algeb-statis.pdf][pistone-2001-algeb-statis]], [[/Users/chl/Documents/Papers/gibilisco-2010-algeb-geomet.pdf][gibilisco-2010-algeb-geomet]].
+Ioannidis's work on reproductibility and misuse of statistical hypothesis testing framework: [[~/Documents/Papers/ioannidis-2005-why-most.pdf][ioannidis-2005-why-most]], [[~/Documents/papers/munafo-2017-manif-reprod-scien.pdf][munafo-2017-manif-reprod-scien]].
 
 * [[/Users/chl/Documents/Papers/yang-2012-molec.pdf][yang-2012-molec]] - Molecular phylogenetics: principles and practice
  :PROPERTIES:
@@ -782,235 +1004,19 @@ The lack of explicit assumptions, as well as failure to correct for multiple cha
 
 Model-based methods (DM, ML and BI) are consistent if the assumed model is correct, while parsimony may be inconsistent under some model-tree combinations.
 
-* [[/Users/chl/Documents/Papers/eddelbuettel-2019-paral-comput.pdf][eddelbuettel-2019-paral-comput]] - Parallel computing with r: a brief review
+* [[/Users/chl/Documents/Papers/yendrek-2012-bench-scien.pdf][yendrek-2012-bench-scien]] - The bench scientist's guide to statistical analysis of rna-seq data
  :PROPERTIES:
- :Custom_ID: eddelbuettel-2019-paral-comput
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/eddelbuettel-2019-paral-comput.pdf
+ :Custom_ID: yendrek-2012-bench-scien
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/yendrek-2012-bench-scien.pdf
  :END:
-Standard HPC stilla round, but it is nowadays overshadowed by cloud computing; Haddop, Spark; deep learning. Bengtsson's =future= package offers a nice abstraction to local and remote parallelism options. A key aspect of concurrency is the /task-switching cost/. Single instruction multiple data (SIMD) and the AVX-512 instruction sets are another example of CPU- and compiler-centric parallel instructions. OpenMP remains a key technology for parallel execution of compiled code.
-Note that parallel execution requires stream-aware RNGs (p.7).
+Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][conesa-2016-survey-best]] for more up to date material and technologies.
 
-* [[/Users/chl/Documents/Papers/heaton-2012-analy-fungal-networ.pdf][heaton-2012-analy-fungal-networ]] - Analysis of fungal networks
+* [[/Users/chl/Documents/Papers/yu-2018-two-method.pdf][yu-2018-two-method]] - Two methods for mapping and visualizing associated data on phylogeny using ggtree
  :PROPERTIES:
- :Custom_ID: heaton-2012-analy-fungal-networ
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/heaton-2012-analy-fungal-networ.pdf
+ :Custom_ID: yu-2018-two-method
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/yu-2018-two-method.pdf
  :END:
-p.14 visualisation of network structure and network extraction
+- Two packages: [[http://bioconductor.org/packages/ggtree][ggtree]] for mapping and visualization, and [[http://bioconductor.org/packages/treeio][treeio]] for data parsing ([[https://github.com/GuangchuangYu/treeio][Github]])
+- Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
-The network topology is defined by classifying junctions (branch points (degree 3), anastomoses and tips (degree 1)) as nodes and the chords between nodes as links. While the number of nodes and links increase over time, there's a selective loss of connections and thinning out of the fine mycellium. This shift can be quantified using the alpha coefficient, which gives the number of closed loops or cycles present as a fraction of the maximum possible for a planar network with the same number of nodes (Euler's polyhedral formula, V - E + F = 2).
-
-The frequency distribution of node strength (i.e., summing the weight of all links connected to the node) shows more diversity than node degree alone, and follows an approximately log-normal distribution for /P. velutina/ networks.
-
-* [[/Users/chl/Documents/Papers/emms-2018-orthof.pdf][emms-2018-orthof]] - Orthofinder2: fast and accurate phylogenomic orthology analysis from gene sequences
- :PROPERTIES:
- :Custom_ID: emms-2018-orthof
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/emms-2018-orthof.pdf
- :END:
-OrthoFinder infers orthogroups, genes trees, gene duplication events, the rooted species tree and extensive comparative genomic statistics. It has been shown to perform better compared to methods that use approximate phylogenetic relationships between genes using "reciprocal best hits" from BLAST (e.g., InParanoid, OrthoMCL and OMA).
-
-Orthofinder provides accurate and scalable ortholog inference using gene trees in 3 stages: (1) orthogroup inference, (2) inference of rooted species and gene trees, and (3) inference of orthologs and gene duplication events from these rooted gene trees. Under the hood, it uses a duplication-loss-coalescent (DLC) resolution algorithm to identify gene duplication events and map them to the species tree.
-
-* [[/Users/chl/Documents/Papers/sonnhammer-2015-inpar.pdf][sonnhammer-2015-inpar]] - Inparanoid 8: orthology analysis between 273 proteomes, mostly eukaryotic
- :PROPERTIES:
- :Custom_ID: sonnhammer-2015-inpar
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/sonnhammer-2015-inpar.pdf
- :END:
-- 273 species, mainly from Uniprot, including 246 eukaryotes.
-- Orthologs may undergo duplications after the speciation event, generating multiple co-orthologs or inparalogs, which complicates orthology detection. [[http://inparanoid.sbc.su.se/cgi-bin/index.cgi][InParanoid]] allows to generate ortholog groups that include all inparalogs but no outparalogs using a parallel 2-pass BLAST procedure.
-- quadratic runtime scaling with the number of species.
-- [[https://github.com/JoshuaDavid/Neighbor_Joining][Python code]] for neighbor-joining algorithm.
-
-* [[/Users/chl/Documents/Papers/horiike-2016-orthol-finder.pdf][horiike-2016-orthol-finder]] - Ortholog-finder: a tool for constructing an ortholog data set
- :PROPERTIES:
- :Custom_ID: horiike-2016-orthol-finder
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/horiike-2016-orthol-finder.pdf
- :END:
-Identifying genuine orthologs among distantly related species is challenging, because genes obtained through horizontal gene transfer (HGT) and out-paralogs derived from gene duplication before speciation are often present among the predicted orthologs.
-
-This software uses 5 stages to alleviate such concern: (1) HGT filtering: Genes derived from HGT could be detected and deleted from the initial sequence data set by examining their base compositions. (2) Out-paralog filtering: Out-paralogs are detected and deleted from the data set based on sequence similarity. (3) Classification of phylogenetic trees: Phylogenetic trees generated for ortholog candidates are classified as monophyletic or polyphyletic trees. (4) Tree splitting: Polyphyletic trees are bisected to obtain monophyletic trees and remove HGT genes and out-paralogs. (5) Threshold changing: Out-paralogs are further excluded from the data set based on the difference in the similarity scores of genuine orthologs and out-paralogs.
-*Remark:* See [[~/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] for an intermediate approach (tolerate recent in-paralogs as unavoidable contamination).
-
-* [[/Users/chl/Documents/Papers/lenstra-1992-algor-algeb.pdf][lenstra-1992-algor-algeb]] - Algorithms in algebric number theory
- :PROPERTIES:
- :Custom_ID: lenstra-1992-algor-algeb
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/lenstra-1992-algor-algeb.pdf
- :END:
-#+BEGIN_QUOTE
-The problems in pure mathematics that arise in connection with algorithms have
-all the virtues of good problems.
-#+END_QUOTE
-
-* [[/Users/chl/Documents/Papers/emms-2015-orthof.pdf][emms-2015-orthof]] - Orthofinder: solving fundamental biases in whole genome comparisons dramatically improves orthogroup inference accuracy
- :PROPERTIES:
- :Custom_ID: emms-2015-orthof
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/emms-2015-orthof.pdf
- :END:
-Two strategies: (1) inferring pairwise relationships between genes in two species, and then extending orthology to multiple species by identifying sets of genes spanning these species in which each gene- pair is an orthologue, (2) identify complete orthogroups; an orthogroup is the set of genes that are descended from a single gene in the last common ancestor of all the species being considered.
-
-Fundamental biases in whole genome comparisons = Gene length bias in BLAST E-values affects the accuracy of orthogroup detection (fixed using normalization, p.9); over- or under-clustering of sequences (aka, phylogenetic distance from sequence similarity scores).
-
-* [[/Users/chl/Documents/Papers/holme-2002-growin.pdf][holme-2002-growin]] - Growing scale-free networks with tunable clustering
- :PROPERTIES:
- :Custom_ID: holme-2002-growin
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/holme-2002-growin.pdf
- :END:
-Social networks, computer networks or metabolic networks have a logarithmically growing average geodesic (shortest path) length and an approximately algebraically decaying distribution of vertex degree.
-
-The degree of an arbitrary vertex increases as the square root of the time, which yields the power-law degree distribution $P(k)\sim k^{-3}$.
-
-See =networkx.powerlaw_cluster_graph=.
-
-* [[/Users/chl/Documents/Papers/hayamizu-2019-rankin.pdf][hayamizu-2019-rankin]] - Ranking top-k trees in tree-based phylogenetic networks
- :PROPERTIES:
- :Custom_ID: hayamizu-2019-rankin
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hayamizu-2019-rankin.pdf
- :END:
-Support tree and linear-time algorithms for counting, enumeration and optimization (Hayamizu's structure theorem, [[https://arxiv.org/abs/1811.05849][arXiv:1811.05849]]).
-
-Top-k ranking problem: list top-k support trees of N = (V,A) in non-increasing order by their likelihood values. This is a generalization of the top-1 ranking problem, which asks for a ML support tree of N
-
-See also: [[https://academic.oup.com/sysbio/article/61/2/228/1646300][Characterizing the Phylogenetic Tree-Search Problem]].
-
-* [[/Users/chl/Documents/Papers/huson-2006-applic-phylog.pdf][huson-2006-applic-phylog]] - Application of phylogenetic networks in evolutionary studies
- :PROPERTIES:
- :Custom_ID: huson-2006-applic-phylog
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/huson-2006-applic-phylog.pdf
- :END:
-Phylogenetic networks should be employed when /reticulate events/ such as hybridization, horizontal gene transfer, recombination, or gene duplication and loss are believed to be involved.
-
-Software: [[http://splitstree.org][SplitsTree4]].
-
- - phylogenetic network = any network in which taxa are represented by nodes and their evolutionary relationships by edges.
- - split network = combinatorial generalization of phylogenetic trees, designed to represent incompatibilities within and between data sets.
- - reticulate network = represents evolutionary histories in the presence of reticulate events (nodes with two parents). (See Fig. 1 for an overview )
-
-A split network contains exactly the same information as a list of splits with a weight for each split.
-
-**** TODO Reread later
-
-* [[/Users/chl/Documents/Papers/volz-2017-scalab-relax.pdf][volz-2017-scalab-relax]] - Scalable Relaxed Clock Phylogenetic Dating
- :PROPERTIES:
- :Custom_ID: volz-2017-scalab-relax
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/volz-2017-scalab-relax.pdf
- :END:
-Molecular clock models assume a constant substitution rate through time, while relaxed clock models allow robust inference of rates and dates. Such models are usually fitted using Bayesian MCMC, which is computatioanally expensive. This paper explores the relevance of ML and LS phylogenetic and molecular clock dating methods, using a Gamma-Poisson mixture model of substitution rates.
-
-* [[/Users/chl/Documents/Papers/pavlopoulos-2010-ref-tree.pdf][pavlopoulos-2010-ref-tree]] - A reference guide for tree analysis and visualization
- :PROPERTIES:
- :Custom_ID: pavlopoulos-2010-ref-tree
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/pavlopoulos-2010-ref-tree.pdf
- :END:
-Challenge: to handle the overload of information and make it easier to understand and explore very large phylogenetic trees.
-
-- Trees vs. graphs.
-- Cladogram and phylogram (branch lengths are proportional to the amount of inferred evolutionary change).
-- Newick, NHX (enhanced Newick) and Nexus format.
-- Statistical methods: neighbor-joining and UPGMA (distance), maximum parsimony and maximum likelihood (feature matrix), MCMC (both).
-
-* [[/Users/chl/Documents/Papers/remm-2001-autom-clust.pdf][remm-2001-autom-clust]] - Automatic clustering of orthologs and in-paralogs from pairwise species comparisons
- :PROPERTIES:
- :Custom_ID: remm-2001-autom-clust
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/remm-2001-autom-clust.pdf
- :END:
-Orthology analysis between humans and invertebrates is often complex because of large numbers of paralogs within protein families. Paralogs that predate the species split (out-paralogs) can easily be confused with true orthologs. Orthologs and in-paralogs are typically detetcted with phylogenetic methods. Alternative approach: ortholog clusters are seeded with a two-way best pairwise match, after which an algorithm for adding in-paralogs is applied.
-
-Software: [[http://inparanoid.sbc.su.se/cgi-bin/index.cgi][Inparanoid]].
-
-* [[/Users/chl/Documents/Papers/ostlund-2010-inpar.pdf][ostlund-2010-inpar]] - Inparanoid 7: new algorithms and tools for eukaryotic orthology analysis
- :PROPERTIES:
- :Custom_ID: ostlund-2010-inpar
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ostlund-2010-inpar.pdf
- :END:
-See also [[/Users/chl/Documents/Papers/remm-2001-autom-clust.pdf][remm-2001-autom-clust]].
-
-* [[/Users/chl/Documents/Papers/planet-2006-tree-disag.pdf][planet-2006-tree-disag]] - Tree disagreement: measuring and testing incongruence in phylogenies
- :PROPERTIES:
- :Custom_ID: planet-2006-tree-disag
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/planet-2006-tree-disag.pdf
- :END:
-Review of incongruence tests for phylogenetic analysis: character information (character incongruence) vesus those that only consider tree shape or topology (topological incongruence); the latter presents the advantage of being able to compare trees derived from data that may not be strictly comparable or easy to include in the same analysis.
-
-- *Character congruence:* incongruence length difference test, localized incongruence length difference, multiple partitions and pairwise ILD tests, ILD outside of parsimony, parsimony-based tests (permutation and sitewise tests), likelihood-based tests, sitewise testing, non-parametric bootstrapping methods, parametric bootstrapping and partition tests, Bayesian testing
-- *Topological congruence:* consensus-based measurements, tree distances (symmetric difference)
-
-* [[/Users/chl/Documents/Papers/knuth-2000-dancin-links.pdf][knuth-2000-dancin-links]] - Dancing Links
- :PROPERTIES:
- :Custom_ID: knuth-2000-dancin-links
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/knuth-2000-dancin-links.pdf
- :END:
-https://dancing-links.herokuapp.com
-
-* [[/Users/chl/Documents/Papers/savojardo-2020-deepm.pdf][savojardo-2020-deepm]] - Deepmito: accurate prediction of protein sub-mitochondrial localization using convolutional neural networks
- :PROPERTIES:
- :Custom_ID: savojardo-2020-deepm
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/savojardo-2020-deepm.pdf
- :END:
-- Use of deep learning to predict protein localization in four different mitochondrial compartments (matrix, outer, inner and intermembrane regions).
-- Dataset = 424 mito. proteins sharing at most 40% sequence identity (CD-HIT filter), including 166 proteins from fungi.
-
-* [[/Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf][khomtchouk-2018-how-lisp]] - How the strengths of lisp-family languages facilitate building complex and flexible bioinformatics applications
- :PROPERTIES:
- :Custom_ID: khomtchouk-2018-how-lisp
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf
- :END:
-See also the [[http://biolisp.org][biolisp]] project and, e.g., [[/Users/chl/Documents/Papers/herzeel-2015-elprep.pdf][herzeel-2015-elprep]].
-
-* [[/Users/chl/Documents/Papers/ferry-2019-dna.pdf][ferry-2019-dna]] - The structure of dna
- :PROPERTIES:
- :Custom_ID: ferry-2019-dna
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ferry-2019-dna.pdf
- :END:
-Of historical importance only.
-
-* [[/Users/chl/Documents/Papers/vandewiele-2020-overl-optim.pdf][vandewiele-2020-overl-optim]] - Overly optimistic prediction results on imbalanced data: flaws and benefits of applying over-sampling
- :PROPERTIES:
- :Custom_ID: vandewiele-2020-overl-optim
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/vandewiele-2020-overl-optim.pdf
- :END:
-Methodological bias = applying over-sampling before partitioning the data into mutually exclusive training and testing sets. Other biased approaches: apply cross-validation on a subset of data subsampled from the original dataset (increases the variance of the obtained results and does not address class imbalance). Carrying out over-sampling before splitting into training and testing sets might leak information from the original testing samples to the artificially generated training samples, leading to overly optimistic validation scores. It is therefore of key importance to carry out the over-sampling after selecting a training and testing set.
-
-* [[/Users/chl/Documents/Papers/poi-2004-from-help-desk.pdf][poi-2004-from-help-desk]] - From the help desk: some bootstrapping techniques
- :PROPERTIES:
- :Custom_ID: poi-2004-from-help-desk
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/poi-2004-from-help-desk.pdf
- :END:
- Hypothesis test based on bootstrap resampling:
-
-#+BEGIN_SRC R
-x1 <- d[,1] - mean(d[,1]) + mean(x)
-x2 <- d[,2] - mean(d[,2]) + mean(x)
-B <- 10000        ## no. bootstrap samples
-s <- numeric(B)   ## vector of test statistics
-for (i in 1:B) {
-  x1s <- sample(x1, replace=TRUE)
-  x2s <- sample(x2, replace=TRUE)
-  s[i] <- mean(x1s) - mean(x2s)
-}
-pobs <-  (1 + sum(abs(s) > abs(s0))) / (B+1)
-#+END_SRC
-
-* [[/Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf][tsamardinos-2017-boots-out]] - Bootstrapping the out-of-sample predictions for efficient and accurate cross-validation
- :PROPERTIES:
- :Custom_ID: tsamardinos-2017-boots-out
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf
- :END:
-Bootstrap Bias Corrected CV = bootstrap the whole process of selecting the best-performing configuration on the out-of-sample predictions of each configuration, without additional training of models. Computationally more efficient, smaller variance and bias compared to nested CV.
-* [[/Users/chl/Documents/Papers/huson-2011-survey-combin.pdf][huson-2011-survey-combin]] - A survey of combinatorial methods for phylogenetic networks
- :PROPERTIES:
- :Custom_ID: huson-2011-survey-combin
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/huson-2011-survey-combin.pdf
- :END:
-Phylogenetic networks are useful when evolution involves reticulate events (hybridization, horizontal gene transfer, or recombination) or to represent conflicts in a data set that may be caused by mechanisms such as incomplete lineage sorting.
-
-Split networks and quasi-median networks are two examples of unrooted phylogenetic networks.
-
-Sneath P. 1975. [[https://academic.oup.com/sysbio/article/24/3/360/1659116][Cladistic representation of reticulate evolution]]. Syst Zool. 24(3):360–368.
-* [[/Users/chl/Documents/Papers/tunbridge-1995-l-system.pdf][tunbridge-1995-l-system]] - An l-systems approach to the modelling of fungal growth
- :PROPERTIES:
- :Custom_ID: tunbridge-1995-l-system
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/tunbridge-1995-l-system.pdf
- :END:
-Complete description of an L-system with rules for ungerminated and germinated spores,
-tip, apical, septum and ordinary segment, and segment from which a branch grows.
-
-**** TODO Try to implement main rules using Racket [[https://docs.racket-lang.org/lindenmayer/index.html][#lang lindenmayer]].
+**** TODO Letunic I, Bork P. 2007. Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation. Bioinformatics 23:127–128.
