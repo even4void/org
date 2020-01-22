@@ -1,4 +1,22 @@
 * Inbox
+** Ten Little Algorithms, Part 1: Russian Peasant Multiplication
+   :PROPERTIES:
+   :ID:       7AE793C9-B2E6-4908-ABA8-3AA0E0771B6D
+   :END:
+ [2020-01-22 Mer 12:43]
+ https://www.embeddedrelated.com/showarticle/760.php
+** Arithmetic articles, problems, and puzzles
+   :PROPERTIES:
+   :ID:       3EC09A4B-FEB2-421D-A588-ABAC95A3433E
+   :END:
+ [2020-01-22 Mer 11:31]
+ https://www.cut-the-knot.org/arithmetic.shtml
+** Le tutoriel Python
+   :PROPERTIES:
+   :ID:       B96CF16C-0212-4F4F-B588-BD7781B2A545
+   :END:
+ [2020-01-22 Mer 09:13]
+ https://docs.python.org/fr/3/tutorial/index.html
 ** Global alignment and alignment extension
    :PROPERTIES:
    :ID:       3078CF97-6EE7-4C99-92C9-6498911DBD9A

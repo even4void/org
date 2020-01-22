@@ -872,7 +872,6 @@ Bifurcating tree hypothesis ([[https://academic.oup.com/sysbio/article/62/3/479/
  :END:
 **** TODO Add a few words in [[file:~/org/drafts/number-theory.org]]
 
-
 * [[/Users/chl/Documents/Papers/sturmfels-2007-open-probl.pdf][sturmfels-2007-open-probl]] - Open problems in algebraic statistics
  :PROPERTIES:
  :Custom_ID: sturmfels-2007-open-probl
@@ -1024,3 +1023,64 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
+* [[/Users/chl/Documents/Papers/erickson-2018-algor.pdf][erickson-2018-algor]] - Algorithms
+ :PROPERTIES:
+ :Custom_ID: erickson-2018-algor
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/erickson-2018-algor.pdf
+ :END:
+See also:
+- Margaret M. Fleck. [[http://mfleck.cs.illinois.edu/building-blocks/][Building Blocks for Theoretical Computer Science]]. Version 1.3 (January 2013)
+- Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. [[https://courses.csail.mit.edu/6.042/spring18/][Mathematics for Computer Science]]. June 2018 revision
+- Pat Morin. [[http://opendatastructures.org/][Open Data Structures]]. Edition 0.1Gβ (January 2016)
+- Don Sheehy. [[https://donsheehy.github.io/datastructures/][A Course in Data Structures and Object-Oriented Design]]. February 2019 or later revision
+
+*Russian (Peasant) multiplication*
+(See also [[http://www.cut-the-knot.org/Curriculum/Algebra/EgyptianMultiplication.shtml][Egyptian Multiplication]])
+
+#+BEGIN_SRC python
+def peasant(x, y):
+    z = 0
+    while y > 0:
+        if y % 2 == 1:
+            z += x
+        x <<= 1
+        y >>= 1
+    return z
+#+END_SRC
+
+Also know as *Ethiopian multiplication*, see, e.g. [[https://rosettacode.org/wiki/Ethiopian_multiplication#Python:_With_tutor._More_Functional][Rosetta]]:
+
+#+BEGIN_SRC python
+halve  = lambda x: x // 2
+double = lambda x: x * 2
+even   = lambda x: not x % 2
+
+def ethiopian(m, n):
+    result = 0
+    while m >= 1:
+        if not even(m):
+            result += n
+        m = halve(m)
+        n = double(n)
+    return result
+#+END_SRC
+
+Quick translation in Scheme (FIXME):
+
+#+BEGIN_SRC scheme
+(define-syntax (while stx)
+  (syntax-case stx ()
+      ((_ condition expression ...)
+       #`(do ()
+           ((not condition))
+           expression
+           ...))))
+
+(define (peasant x y)
+  (let ((z 0))
+  (while (> y 0)
+    (if (odd? y) (set! z (+ z x)))
+    (bitwise-arithmetic-shift-left x 1)
+    (bitwise-arithmetic-shift-right y 1))
+  z))
+#+END_SRC
