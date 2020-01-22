@@ -1,4 +1,10 @@
 * Inbox
+** UnicodeMath: A Nearly Plain-Text Encoding of Mathematics
+   :PROPERTIES:
+   :ID:       A30565D3-2507-4AE3-B4FC-67779A0EC3C6
+   :END:
+ [2020-01-22 Mer 14:47]
+ https://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.1.pdf
 ** Ten Little Algorithms, Part 1: Russian Peasant Multiplication
    :PROPERTIES:
    :ID:       7AE793C9-B2E6-4908-ABA8-3AA0E0771B6D

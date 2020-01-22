@@ -194,6 +194,27 @@ Instead of removing divergent regions in an arbitrary way, or use alternative ap
  :END:
 Old stuff but interesting ideas (part of them are now materialized in the dplyr/dbi packages) like performing the data-intensive but algorithmically less sophisticated operations in the database and send back the results to the statistical package which is responsible for the algorithmic flow. The software design includes a CORBA architecture coupled to [[https://www.csm.ornl.gov/pvm/][PVM]] for managing parallel computations.
 
+* [[/Users/chl/Documents/Papers/chicco-2017-ten-quick.pdf][chicco-2017-ten-quick]] - Ten quick tips for machine learning in computational biology
+ :PROPERTIES:
+ :Custom_ID: chicco-2017-ten-quick
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/chicco-2017-ten-quick.pdf
+ :END:
+1. Check and arrange your input dataset properly
+2. Split your input dataset into three independent subsets (training set, validation set, test set), and use the test set only once you complete training and optimization phases
+3. Frame your biological problem into the right algorithm category
+4. Which algorithm should you choose to start? The simplest one!
+5. Take care of the imbalanced data problem
+6. Optimize each hyper-parameter
+7. Minimize overfitting
+8. Evaluate your algorithm performance with the Matthews correlation coefficient (MCC) or the Precision-Recall curve
+9. Program your software with open source code and platforms
+10. Ask for feedback and help to computer science experts, or to collaborative Q&A online communities
+* [[/Users/chl/Documents/Papers/chin-2019-human-genom.pdf][chin-2019-human-genom]] - Human genome assembly in 100 minutes
+ :PROPERTIES:
+ :Custom_ID: chin-2019-human-genom
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/chin-2019-human-genom.pdf
+ :END:
+Long-read assembly, using an overlap-layout-consensus (OLC) paradigm, requires all-to-all read comparisons, which quadratically scales in computational complexity with the number of reads. [[https://github.com/cschin/peregrine][Peregrine]] can assemble 30x human PacBio CCS read datasets in less than 30 CPU hours and around 100 wall-clock minutes to a high contiguity assembly (N50 > 20Mb).
 * [[/Users/chl/Documents/Papers/choi-2017-tree-life.pdf][choi-2017-tree-life]] - A genome tree of life for the fungi kingdom
  :PROPERTIES:
  :Custom_ID: choi-2017-tree-life
@@ -324,6 +345,67 @@ OrthoFinder infers orthogroups, genes trees, gene duplication events, the rooted
 
 Orthofinder provides accurate and scalable ortholog inference using gene trees in 3 stages: (1) orthogroup inference, (2) inference of rooted species and gene trees, and (3) inference of orthologs and gene duplication events from these rooted gene trees. Under the hood, it uses a duplication-loss-coalescent (DLC) resolution algorithm to identify gene duplication events and map them to the species tree.
 
+* [[/Users/chl/Documents/Papers/erickson-2018-algor.pdf][erickson-2018-algor]] - Algorithms
+ :PROPERTIES:
+ :Custom_ID: erickson-2018-algor
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/erickson-2018-algor.pdf
+ :END:
+See also:
+- Margaret M. Fleck. [[http://mfleck.cs.illinois.edu/building-blocks/][Building Blocks for Theoretical Computer Science]]. Version 1.3 (January 2013)
+- Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. [[https://courses.csail.mit.edu/6.042/spring18/][Mathematics for Computer Science]]. June 2018 revision
+- Pat Morin. [[http://opendatastructures.org/][Open Data Structures]]. Edition 0.1Gβ (January 2016)
+- Don Sheehy. [[https://donsheehy.github.io/datastructures/][A Course in Data Structures and Object-Oriented Design]]. February 2019 or later revision
+
+*Russian (Peasant) multiplication*
+(See also [[http://www.cut-the-knot.org/Curriculum/Algebra/EgyptianMultiplication.shtml][Egyptian Multiplication]])
+
+#+BEGIN_SRC python
+def peasant(x, y):
+    z = 0
+    while y > 0:
+        if y % 2 == 1:
+            z += x
+        x <<= 1
+        y >>= 1
+    return z
+#+END_SRC
+
+Also know as *Ethiopian multiplication*, see, e.g. [[https://rosettacode.org/wiki/Ethiopian_multiplication#Python:_With_tutor._More_Functional][Rosetta]]:
+
+#+BEGIN_SRC python
+halve  = lambda x: x // 2
+double = lambda x: x * 2
+even   = lambda x: not x % 2
+
+def ethiopian(m, n):
+    result = 0
+    while m >= 1:
+        if not even(m):
+            result += n
+        m = halve(m)
+        n = double(n)
+    return result
+#+END_SRC
+
+Quick translation in Scheme (FIXME):
+
+#+BEGIN_SRC scheme
+(define-syntax (while stx)
+  (syntax-case stx ()
+      ((_ condition expression ...)
+       #`(do ()
+           ((not condition))
+           expression
+           ...))))
+
+(define (peasant x y)
+  (let ((z 0))
+  (while (> y 0)
+    (if (odd? y) (set! z (+ z x)))
+    (bitwise-arithmetic-shift-left x 1)
+    (bitwise-arithmetic-shift-right y 1))
+  z))
+#+END_SRC
 * [[/Users/chl/Documents/Papers/farrell-2019-math-adven.pdf][farrell-2019-math-adven]] - Math Adventures With Python
  :PROPERTIES:
  :Custom_ID: farrell-2019-math-adven
@@ -365,6 +447,14 @@ The authors use the JC69 model to benchmark 19 methods for computing the marginl
 9. Abstract common patterns with a new function.
 10. Build functions to collect more than one value at a time.
 
+* [[/Users/chl/Documents/Papers/gavryushkina-2013-recur-algor.pdf][gavryushkina-2013-recur-algor]] - Recursive algorithms for phylogenetic tree counting
+ :PROPERTIES:
+ :Custom_ID: gavryushkina-2013-recur-algor
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gavryushkina-2013-recur-algor.pdf
+ :END:
+In a Bayesian context*, this article describes a quadratic algorithm for counting the number of possible fully ranked trees on n sampled individuals (/aka/ fully ranked tree with sampled ancestors).
+
+(*) A general problem in evolutionary biology is how to reconstruct the phylogenetic tree from sequence data obtained from sampled individuals. Tackling this problem in a Bayesian framework may require counting the number of all possible histories on a sample of individuals.
 * [[/Users/chl/Documents/Papers/ghuloum-2006-increm-approac.pdf][ghuloum-2006-increm-approac]] - An incremental approach to compiler construction
  :PROPERTIES:
  :Custom_ID: ghuloum-2006-increm-approac
@@ -397,7 +487,28 @@ geom_segment(data=w, aes(x='Drug 1', xend='Difference', y=drug1, yend=drug2 - dr
 xlab('') + ylab('Extra Hours of Sleep') + coord_flip()
 #+END_SRC
 
-* [[/Users/chl/Documents/Papers/gunawardena-2014-model.pdf][gunawardena-2014-model]] - Models in biology: 'accurate descriptions of our pathetic thinking'
+* [[/Users/chl/Documents/Papers/greenland-2016-spars-data-bias.pdf][greenland-2016-spars-data-bias]] - Sparse data bias: a problem hiding in plain sight
+ :PROPERTIES:
+ :Custom_ID: greenland-2016-spars-data-bias
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/greenland-2016-spars-data-bias.pdf
+ :END:
+When the data lack adequate case numbers for some combination of risk factor and outcome levels, the resulting estimates of the regression coefficients can have bias away from the null, hence the term "sparse data bias" because it is not limited to small samples.
+
+*Causes:*
+
+- Few outcome events per variable (EPV),asmeasured by the number of failures per variable for Cox proportional hazards and Poisson regression, and the minimum of the numbers of cases and non-cases per variable for logistic regression (for conditional logistic regression, only the numbers within discordant matched sets should be counted)
+- Variables with narrow distributions or with categories that are very uncommon
+- Variables that together almost perfectly predict the outcome (eg, if a combination of discrete covariate levels is found only among the study participants with outcome)
+- Variables that together almost perfectly predict the exposure (eg, if a combination of discrete covariate levels is found only among the study participants who are exposed).
+
+*Solutions:*
+
+- Stepwise variable selection procedures
+- Exact statistical methods (eg, exact logistic regression)
+- Exposure or treatment modelling (eg, propensity scoring, inverse-probability-of- treatment weighting)
+- Penalisation
+
+Penalization produces the most accurate estimates given the information in the penalty; data augmentation version is simple and feasible in all statistical software; can be used as a diagnostic tool for sparse data bias.* [[/Users/chl/Documents/Papers/gunawardena-2014-model.pdf][gunawardena-2014-model]] - Models in biology: 'accurate descriptions of our pathetic thinking'
  :PROPERTIES:
  :Custom_ID: gunawardena-2014-model
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gunawardena-2014-model.pdf
@@ -1023,64 +1134,3 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
-* [[/Users/chl/Documents/Papers/erickson-2018-algor.pdf][erickson-2018-algor]] - Algorithms
- :PROPERTIES:
- :Custom_ID: erickson-2018-algor
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/erickson-2018-algor.pdf
- :END:
-See also:
-- Margaret M. Fleck. [[http://mfleck.cs.illinois.edu/building-blocks/][Building Blocks for Theoretical Computer Science]]. Version 1.3 (January 2013)
-- Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. [[https://courses.csail.mit.edu/6.042/spring18/][Mathematics for Computer Science]]. June 2018 revision
-- Pat Morin. [[http://opendatastructures.org/][Open Data Structures]]. Edition 0.1Gβ (January 2016)
-- Don Sheehy. [[https://donsheehy.github.io/datastructures/][A Course in Data Structures and Object-Oriented Design]]. February 2019 or later revision
-
-*Russian (Peasant) multiplication*
-(See also [[http://www.cut-the-knot.org/Curriculum/Algebra/EgyptianMultiplication.shtml][Egyptian Multiplication]])
-
-#+BEGIN_SRC python
-def peasant(x, y):
-    z = 0
-    while y > 0:
-        if y % 2 == 1:
-            z += x
-        x <<= 1
-        y >>= 1
-    return z
-#+END_SRC
-
-Also know as *Ethiopian multiplication*, see, e.g. [[https://rosettacode.org/wiki/Ethiopian_multiplication#Python:_With_tutor._More_Functional][Rosetta]]:
-
-#+BEGIN_SRC python
-halve  = lambda x: x // 2
-double = lambda x: x * 2
-even   = lambda x: not x % 2
-
-def ethiopian(m, n):
-    result = 0
-    while m >= 1:
-        if not even(m):
-            result += n
-        m = halve(m)
-        n = double(n)
-    return result
-#+END_SRC
-
-Quick translation in Scheme (FIXME):
-
-#+BEGIN_SRC scheme
-(define-syntax (while stx)
-  (syntax-case stx ()
-      ((_ condition expression ...)
-       #`(do ()
-           ((not condition))
-           expression
-           ...))))
-
-(define (peasant x y)
-  (let ((z 0))
-  (while (> y 0)
-    (if (odd? y) (set! z (+ z x)))
-    (bitwise-arithmetic-shift-left x 1)
-    (bitwise-arithmetic-shift-right y 1))
-  z))
-#+END_SRC
