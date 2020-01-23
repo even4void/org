@@ -1,4 +1,10 @@
 * Inbox
+** Why are you changing gc-cons-threshold?
+   :PROPERTIES:
+   :ID:       B13887B6-7F5B-4116-8378-202DCC5854C9
+   :END:
+ [2020-01-22 Mer 15:12]
+ http://bling.github.io/blog/2016/01/18/why-are-you-changing-gc-cons-threshold/
 ** UnicodeMath: A Nearly Plain-Text Encoding of Mathematics
    :PROPERTIES:
    :ID:       A30565D3-2507-4AE3-B4FC-67779A0EC3C6

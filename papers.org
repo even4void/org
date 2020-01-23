@@ -759,16 +759,6 @@ See [[/Users/chl/Documents/Papers/koenker-2016-tmle.pdf][koenker-2016-tmle]] for
 - orthology is not a transitive relation so that the problem is different from clustering an input gene set.
 - the authors focus on avoiding false positive orthology assignments within the phylogenetic range of the reported orthologous groups, while tolerating recent in-paralogs (speciation preceding duplication) as unavoidable contamination
 
-* [[/Users/chl/Documents/Papers/lenstra-1992-algor-algeb.pdf][lenstra-1992-algor-algeb]] - Algorithms in algebric number theory
- :PROPERTIES:
- :Custom_ID: lenstra-1992-algor-algeb
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/lenstra-1992-algor-algeb.pdf
- :END:
-#+BEGIN_QUOTE
-The problems in pure mathematics that arise in connection with algorithms have
-all the virtues of good problems.
-#+END_QUOTE
-
 * [[/Users/chl/Documents/Papers/li-2010-rna-seq.pdf][li-2010-rna-seq]] - Rna-seq gene expression estimation with read mapping uncertainty
  :PROPERTIES:
  :Custom_ID: li-2010-rna-seq
@@ -1134,3 +1124,13 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
+* [[/Users/chl/Documents/Papers/rose-2001-sick.pdf][rose-2001-sick]] - Sick individuals and sick populations
+ :PROPERTIES:
+ :Custom_ID: rose-2001-sick
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/rose-2001-sick.pdf
+ :END:
+A good question to ask is "Why did this patient get this disease at this time?", since it also implies that we care about why it happened and whether it could have been prevented. The individual-centered approach leads to the use of RR, but this approach to the search of causes has to assume heterogeneity of exposure within the study population.
+
+#+BEGIN_QUOTE
+If everyone smoked 20 cigarettes a day, then clinical, case-control and cohort studies alike would lead us to conclude that lung cancer was a genetic disease; and in one sense that would be true, since if everyone is exposed to the necessary agent, then the distribution of cases is wholly determined by individual susceptibility.
+#+END_QUOTE

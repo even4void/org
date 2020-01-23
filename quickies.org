@@ -641,6 +641,37 @@ next(i for i,v in enumerate(l) if is_odd(v))
 #+END_SRC
 
 https://stackoverflow.com/a/1701404
+** regex.match vs. regex.search
+
+=match= only finds a pattern at the beginning of the string; if you need to scan all the string, just use =search= or =regex.match("(.*?*)pattern(.*?*)")= eventually.
+
+See also this [[https://stackoverflow.com/a/49710946][SO post]]:
+
+#+BEGIN_SRC python
+import random
+import re
+import string
+import time
+
+LENGTH = 10
+LIST_SIZE = 1000000
+
+def generate_word():
+    word = [random.choice(string.ascii_lowercase) for _ in range(LENGTH)]
+    word = ''.join(word)
+    return word
+
+wordlist = [generate_word() for _ in range(LIST_SIZE)]
+
+start = time.time()
+[re.search('python', word) for word in wordlist]
+print('search:', time.time() - start)
+
+start = time.time()
+[re.match('(.*?)python(.*?)', word) for word in wordlist]
+print('match:', time.time() - start)
+#+END_SRC
+
 * R
 
 ** I always create small dataframe for illustrations
