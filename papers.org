@@ -1134,3 +1134,25 @@ A good question to ask is "Why did this patient get this disease at this time?",
 #+BEGIN_QUOTE
 If everyone smoked 20 cigarettes a day, then clinical, case-control and cohort studies alike would lead us to conclude that lung cancer was a genetic disease; and in one sense that would be true, since if everyone is exposed to the necessary agent, then the distribution of cases is wholly determined by individual susceptibility.
 #+END_QUOTE
+* [[/Users/chl/Documents/Papers/bagwell-2001-ideal-hash-trees.pdf][bagwell-2001-ideal-hash-trees]] - Ideal Hash Trees
+ :PROPERTIES:
+ :Custom_ID: bagwell-2001-ideal-hash-trees
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bagwell-2001-ideal-hash-trees.pdf
+ :END:
+See also [[https://worace.works/2016/05/24/hash-array-mapped-tries/][Hash Array Mapped Tries]] and Boddil Stokke's talk, [[http://github.bodil.lol/bagwell/][Meeting with Remarkable Trees]].
+* [[/Users/chl/Documents/Papers/aguileta-2014-high-variab.pdf][aguileta-2014-high-variab]] - High variability of mitochondrial gene order among fungi
+ :PROPERTIES:
+ :Custom_ID: aguileta-2014-high-variab
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/aguileta-2014-high-variab.pdf
+ :END:
+Analysis of 38 complete fungal MT genomes, including Podospora Anserina. The authors conclude that unlike the case of Metazoa there exists MT recombination in all fungal phyla, arising as a result of nonhomologous and intrachromosomal recombination, sequence repeats at intergenic region and probably mobile elements dynamic.
+
+*Phylogenetic analysis:* Protein sequences of the ortho- logs shared by all sampled species were aligned using a combi- nation of six different alignment strategies, and these alignments were automatically trimmed with trimAl, and then concatenated. Phylogenetic reconstruction was performed using PhyML and RAxML. Evolutionary rates were estimated with the r8s software.
+* [[/Users/chl/Documents/Papers/meskauskas-2004-simul-colon.pdf][meskauskas-2004-simul-colon]] - Simulating Colonial Growth Of Fungi With The Neighbour-Sensing Model Of Hyphal Growth
+ :PROPERTIES:
+ :Custom_ID: meskauskas-2004-simul-colon
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/meskauskas-2004-simul-colon.pdf
+ :END:
+NS model = vector-based model whereby the growth vector of each virtual hyphal tip is calculated by reference to the surrounding virtual mycelium. It can be seen as an extension of stochastic L-system based approach.
+
+This model can be used to simulate growth in semi-solid substrata like agar or soil, and it can be extended to include a number of other parameters and modelling capabilities that permit initial experimentation on hyphal growth kinetics, and enable realistic simulation of mycelial colonies of filamentous fungi grown in "Petri-dish style" experimental conditions.

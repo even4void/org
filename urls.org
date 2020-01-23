@@ -1,4 +1,16 @@
 * Inbox
+** Probability of finding a particular sequence of base pairs
+   :PROPERTIES:
+   :ID:       86ADA7BD-F71C-453A-93FF-159AF5FB4DD4
+   :END:
+ [2020-01-23 Jeu 15:40]
+ https://stats.stackexchange.com/questions/26988/probability-of-finding-a-particular-sequence-of-base-pairs
+** Probability Of Finding A Dna Sequence In A Window
+   :PROPERTIES:
+   :ID:       A7575339-593A-4FE3-8D48-D84300D204D4
+   :END:
+ [2020-01-23 Jeu 15:21]
+ https://www.biostars.org/p/69354/
 ** Why are you changing gc-cons-threshold?
    :PROPERTIES:
    :ID:       B13887B6-7F5B-4116-8378-202DCC5854C9
