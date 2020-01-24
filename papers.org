@@ -1,4 +1,17 @@
-* [[/Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf][allen-2016-haskel-progr]] - Haskell Programming from First Principles
+* [[/Users/chl/Documents/Papers/aguileta-2014-high-variab.pdf][aguileta-2014-high-variab]] - High variability of mitochondrial gene order among fungi
+ :PROPERTIES:
+ :Custom_ID: aguileta-2014-high-variab
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/aguileta-2014-high-variab.pdf
+ :END:
+Analysis of 38 complete fungal MT genomes, including Podospora Anserina. The authors conclude that unlike the case of Metazoa there exists MT recombination in all fungal phyla, arising as a result of nonhomologous and intrachromosomal recombination, sequence repeats at intergenic region and probably mobile elements dynamic.
+
+*Phylogenetic analysis:* Protein sequences of the ortho- logs shared by all sampled species were aligned using a combi- nation of six different alignment strategies, and these alignments were automatically trimmed with trimAl, and then concatenated. Phylogenetic reconstruction was performed using PhyML and RAxML. Evolutionary rates were estimated with the r8s software.
+* [[/Users/chl/Documents/Papers/alkan-2011-genom.pdf][alkan-2011-genom]] - Genome structural variation discovery and genotyping
+ :PROPERTIES:
+ :Custom_ID: alkan-2011-genom
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/alkan-2011-genom.pdf
+ :END:
+Review of existing technologies and introduction to NGS analysis. Useful glossary.* [[/Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf][allen-2016-haskel-progr]] - Haskell Programming from First Principles
  :PROPERTIES:
  :Custom_ID: allen-2016-haskel-progr
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf
@@ -46,6 +59,12 @@ See Frank Harrell's blog post: http://www.fharrell.com/post/medml/
 As with any retrospective study not based on an inception cohort with a well-defined “time zero”, it is tricky to define a time zero and somewhat easy to have survival bias and other sampling biases sneak into the analysis. The ML algorithm required division of patients into “positive” and “negative” cases, something not required by regression models. “Positive” cases must have at least 12 months of previous data in the health system, weeding out patients who died quickly. “Negative” cases must have been alive for at least 12 months from the prediction date. It is also not clear how variable censoring times were handled. In standard statistical model, patients entering the system just before the data analysis have short follow-up and are right-censored early, but still contribute some information.
 #+END_QUOTE
 
+* [[/Users/chl/Documents/Papers/bagwell-2001-ideal-hash-trees.pdf][bagwell-2001-ideal-hash-trees]] - Ideal Hash Trees
+ :PROPERTIES:
+ :Custom_ID: bagwell-2001-ideal-hash-trees
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bagwell-2001-ideal-hash-trees.pdf
+ :END:
+See also [[https://worace.works/2016/05/24/hash-array-mapped-tries/][Hash Array Mapped Tries]] and Boddil Stokke's talk, [[http://github.bodil.lol/bagwell/][Meeting with Remarkable Trees]].
 * [[/Users/chl/Documents/Papers/bernardes-2016-improv-protein.pdf][bernardes-2016-improv-protein]] - Improvement in protein domain identification is reached by breaking consensus, with the agreement of many profiles and domain co-occurrence
  :PROPERTIES:
  :Custom_ID: bernardes-2016-improv-protein
@@ -115,6 +134,15 @@ Some additional pointers:
 
 **** TODO Read the remaining book.
 
+* [[/Users/chl/Documents/Papers/boneh-2002-twent-years.pdf][boneh-2002-twent-years]] - Twenty years of attacks on the rsa cryptosystem
+ :PROPERTIES:
+ :Custom_ID: boneh-2002-twent-years
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/boneh-2002-twent-years.pdf
+ :END:
+There are many Coppersmith-based attacks, but this mostly resolves around the case where public exponent /e/ is small or when partial knowledge of the secret key is available:
+
+- *Small decryption exponent /e/:* so far the best known attack recovers /e/ if it is less than N^.292. This uses a bivariate version of Coppersmith that lacks a rigorous proof of correctness, but seems to work well in practice. Important open questions are whether /e/ < N^1/2−ε is attackable (the conjecture is that it should be), and whether there are rigorously provable variants of Coppersmith for bivariate or multivariate polynomials.
+- *Partial secret key exposure:* when certain bits of /e/ or the factors /p/, /q/ of /N/ are exposed, it is often possible to recover them completely.
 * [[/Users/chl/Documents/Papers/bradley-2018-what-categ-theor.pdf][bradley-2018-what-categ-theor]] - What is category theory
  :PROPERTIES:
  :Custom_ID: bradley-2018-what-categ-theor
@@ -487,6 +515,18 @@ geom_segment(data=w, aes(x='Drug 1', xend='Difference', y=drug1, yend=drug2 - dr
 xlab('') + ylab('Extra Hours of Sleep') + coord_flip()
 #+END_SRC
 
+* [[/Users/chl/Documents/Papers/gould-2001-statis-softw-certif.pdf][gould-2001-statis-softw-certif]] - Statistical Software Certification
+ :PROPERTIES:
+ :Custom_ID: gould-2001-statis-softw-certif
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gould-2001-statis-softw-certif.pdf
+ :END:
+#+BEGIN_QUOTE
+Stata is instead tested using an automated procedure that involves running 1,064 do-files containing 158,391 lines that cause Stata to execute 38,343,139 commands and produces just over 16 megabytes (473,859 lines) of output.
+#+END_QUOTE
+
+Mostly about the internal process of certification /per se/ rather than scientific computing, except maybe p. 40 ff when the author discuss the problem of false precision: Double precision floating point numbers are stored using 64 bits. Coprocessors, however, use 80 bits, providing extra guard bits to improve accuracy. On the coprocessor, calculations are made using 80 bits and are then handed back to the CPU rounded to 64 bits.
+
+According to [[papers:altman-2004-numer-issues.pdf][altman-2004-numer-issues]], Stata is quite good. For instance, Stata v6 correctly returned the certified values for the π-digits problem.
 * [[/Users/chl/Documents/Papers/greenland-2016-spars-data-bias.pdf][greenland-2016-spars-data-bias]] - Sparse data bias: a problem hiding in plain sight
  :PROPERTIES:
  :Custom_ID: greenland-2016-spars-data-bias
@@ -814,6 +854,14 @@ The thesis of this paper is that the logic of every statistical model is founded
  :END:
 See [[https://howistart.org/posts/clojure/1/index.html][How I start]].
 
+* [[/Users/chl/Documents/Papers/meskauskas-2004-simul-colon.pdf][meskauskas-2004-simul-colon]] - Simulating Colonial Growth Of Fungi With The Neighbour-Sensing Model Of Hyphal Growth
+ :PROPERTIES:
+ :Custom_ID: meskauskas-2004-simul-colon
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/meskauskas-2004-simul-colon.pdf
+ :END:
+NS model = vector-based model whereby the growth vector of each virtual hyphal tip is calculated by reference to the surrounding virtual mycelium. It can be seen as an extension of stochastic L-system based approach.
+
+This model can be used to simulate growth in semi-solid substrata like agar or soil, and it can be extended to include a number of other parameters and modelling capabilities that permit initial experimentation on hyphal growth kinetics, and enable realistic simulation of mycelial colonies of filamentous fungi grown in "Petri-dish style" experimental conditions.
 * [[/Users/chl/Documents/Papers/miele-2012-high.pdf][miele-2012-high]] - High-quality sequence clustering guided by network topology and multiple alignment likelihood
  :PROPERTIES:
  :Custom_ID: miele-2012-high
@@ -939,6 +987,16 @@ This book is for programmers or data scientists who are familiar with Clojure an
 
 The first chapter describes various ways to import data (flat files, local database and RDF data), mostly using Incanter backend. I would prefer the author start with more basic tool before dwelling into specialized libraries, especially since [[https://github.com/incanter/incanter][Incanter]] looks almost defunct nowadays (the last blog entry I found said that it was [[https://data-sorcery.org/2016/02/01/incanter-1-5-7/][version 1.5.7, Feb 2016]]). Anyway, this provides a good overview of Incanter's facilities to process external data and convert them in array form, and R or Lispstat users should feel at home. However, starting with Chapter 2 the author will use the [[https://github.com/clojure/data.csv][data.csv]] library.
 
+* [[/Users/chl/Documents/Papers/rose-2001-sick.pdf][rose-2001-sick]] - Sick individuals and sick populations
+ :PROPERTIES:
+ :Custom_ID: rose-2001-sick
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/rose-2001-sick.pdf
+ :END:
+A good question to ask is "Why did this patient get this disease at this time?", since it also implies that we care about why it happened and whether it could have been prevented. The individual-centered approach leads to the use of RR, but this approach to the search of causes has to assume heterogeneity of exposure within the study population.
+
+#+BEGIN_QUOTE
+If everyone smoked 20 cigarettes a day, then clinical, case-control and cohort studies alike would lead us to conclude that lung cancer was a genetic disease; and in one sense that would be true, since if everyone is exposed to the necessary agent, then the distribution of cases is wholly determined by individual susceptibility.
+#+END_QUOTE
 * [[/Users/chl/Documents/Papers/savojardo-2020-deepm.pdf][savojardo-2020-deepm]] - Deepmito: accurate prediction of protein sub-mitochondrial localization using convolutional neural networks
  :PROPERTIES:
  :Custom_ID: savojardo-2020-deepm
@@ -1124,62 +1182,3 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
-* [[/Users/chl/Documents/Papers/rose-2001-sick.pdf][rose-2001-sick]] - Sick individuals and sick populations
- :PROPERTIES:
- :Custom_ID: rose-2001-sick
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/rose-2001-sick.pdf
- :END:
-A good question to ask is "Why did this patient get this disease at this time?", since it also implies that we care about why it happened and whether it could have been prevented. The individual-centered approach leads to the use of RR, but this approach to the search of causes has to assume heterogeneity of exposure within the study population.
-
-#+BEGIN_QUOTE
-If everyone smoked 20 cigarettes a day, then clinical, case-control and cohort studies alike would lead us to conclude that lung cancer was a genetic disease; and in one sense that would be true, since if everyone is exposed to the necessary agent, then the distribution of cases is wholly determined by individual susceptibility.
-#+END_QUOTE
-* [[/Users/chl/Documents/Papers/bagwell-2001-ideal-hash-trees.pdf][bagwell-2001-ideal-hash-trees]] - Ideal Hash Trees
- :PROPERTIES:
- :Custom_ID: bagwell-2001-ideal-hash-trees
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bagwell-2001-ideal-hash-trees.pdf
- :END:
-See also [[https://worace.works/2016/05/24/hash-array-mapped-tries/][Hash Array Mapped Tries]] and Boddil Stokke's talk, [[http://github.bodil.lol/bagwell/][Meeting with Remarkable Trees]].
-* [[/Users/chl/Documents/Papers/aguileta-2014-high-variab.pdf][aguileta-2014-high-variab]] - High variability of mitochondrial gene order among fungi
- :PROPERTIES:
- :Custom_ID: aguileta-2014-high-variab
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/aguileta-2014-high-variab.pdf
- :END:
-Analysis of 38 complete fungal MT genomes, including Podospora Anserina. The authors conclude that unlike the case of Metazoa there exists MT recombination in all fungal phyla, arising as a result of nonhomologous and intrachromosomal recombination, sequence repeats at intergenic region and probably mobile elements dynamic.
-
-*Phylogenetic analysis:* Protein sequences of the ortho- logs shared by all sampled species were aligned using a combi- nation of six different alignment strategies, and these alignments were automatically trimmed with trimAl, and then concatenated. Phylogenetic reconstruction was performed using PhyML and RAxML. Evolutionary rates were estimated with the r8s software.
-* [[/Users/chl/Documents/Papers/meskauskas-2004-simul-colon.pdf][meskauskas-2004-simul-colon]] - Simulating Colonial Growth Of Fungi With The Neighbour-Sensing Model Of Hyphal Growth
- :PROPERTIES:
- :Custom_ID: meskauskas-2004-simul-colon
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/meskauskas-2004-simul-colon.pdf
- :END:
-NS model = vector-based model whereby the growth vector of each virtual hyphal tip is calculated by reference to the surrounding virtual mycelium. It can be seen as an extension of stochastic L-system based approach.
-
-This model can be used to simulate growth in semi-solid substrata like agar or soil, and it can be extended to include a number of other parameters and modelling capabilities that permit initial experimentation on hyphal growth kinetics, and enable realistic simulation of mycelial colonies of filamentous fungi grown in "Petri-dish style" experimental conditions.
-* [[/Users/chl/Documents/Papers/boneh-2002-twent-years.pdf][boneh-2002-twent-years]] - Twenty years of attacks on the rsa cryptosystem
- :PROPERTIES:
- :Custom_ID: boneh-2002-twent-years
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/boneh-2002-twent-years.pdf
- :END:
-There are many Coppersmith-based attacks, but this mostly resolves around the case where public exponent /e/ is small or when partial knowledge of the secret key is available:
-
-- *Small decryption exponent /e/:* so far the best known attack recovers /e/ if it is less than N^.292. This uses a bivariate version of Coppersmith that lacks a rigorous proof of correctness, but seems to work well in practice. Important open questions are whether /e/ < N^1/2−ε is attackable (the conjecture is that it should be), and whether there are rigorously provable variants of Coppersmith for bivariate or multivariate polynomials.
-- *Partial secret key exposure:* when certain bits of /e/ or the factors /p/, /q/ of /N/ are exposed, it is often possible to recover them completely.
-* [[/Users/chl/Documents/Papers/gould-2001-statis-softw-certif.pdf][gould-2001-statis-softw-certif]] - Statistical Software Certification
- :PROPERTIES:
- :Custom_ID: gould-2001-statis-softw-certif
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gould-2001-statis-softw-certif.pdf
- :END:
-#+BEGIN_QUOTE
-Stata is instead tested using an automated procedure that involves running 1,064 do-files containing 158,391 lines that cause Stata to execute 38,343,139 commands and produces just over 16 megabytes (473,859 lines) of output.
-#+END_QUOTE
-
-Mostly about the internal process of certification /per se/ rather than scientific computing, except maybe p. 40 ff when the author discuss the problem of false precision: Double precision floating point numbers are stored using 64 bits. Coprocessors, however, use 80 bits, providing extra guard bits to improve accuracy. On the coprocessor, calculations are made using 80 bits and are then handed back to the CPU rounded to 64 bits.
-
-According to [[papers:altman-2004-numer-issues.pdf][altman-2004-numer-issues]], Stata is quite good. For instance, Stata v6 correctly returned the certified values for the π-digits problem.
-* [[/Users/chl/Documents/Papers/alkan-2011-genom.pdf][alkan-2011-genom]] - Genome structural variation discovery and genotyping
- :PROPERTIES:
- :Custom_ID: alkan-2011-genom
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/alkan-2011-genom.pdf
- :END:
-Review of existing technologies and introduction to NGS analysis. Useful glossary.
