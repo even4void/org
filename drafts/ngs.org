@@ -3,10 +3,11 @@
 #+STARTUP:      align fold noindent hideblocks fnlocal
 #+OPTIONS:      H:3 num:nil toc:2 ':t *:t ::t f:t |:t -:t
 
-* TODO [2/4]                                                                   :noexport:
+* DONE [4/4]                                                                   :noexport:
+  CLOSED: [2020-01-24 Ven 11:25]
 - [X] "How many reads map onto exons, introns and intergenic regions" on [[https://www.biostars.org/p/131734/][Biostars]]
-- [ ] [[http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.htm][Calling variants with freebayes]]
-- [ ] https://github.com/CBC-UCONN/Variant-Calling-with-Samtools
+- [X] [[http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.htm][Calling variants with freebayes]]
+- [X] https://github.com/CBC-UCONN/Variant-Calling-with-Samtools
 - [X] [[https://is.gd/q5umF6][RPKM, FPKM and TPM, clearly explained]]
 
 

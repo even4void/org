@@ -1156,3 +1156,30 @@ Analysis of 38 complete fungal MT genomes, including Podospora Anserina. The aut
 NS model = vector-based model whereby the growth vector of each virtual hyphal tip is calculated by reference to the surrounding virtual mycelium. It can be seen as an extension of stochastic L-system based approach.
 
 This model can be used to simulate growth in semi-solid substrata like agar or soil, and it can be extended to include a number of other parameters and modelling capabilities that permit initial experimentation on hyphal growth kinetics, and enable realistic simulation of mycelial colonies of filamentous fungi grown in "Petri-dish style" experimental conditions.
+* [[/Users/chl/Documents/Papers/boneh-2002-twent-years.pdf][boneh-2002-twent-years]] - Twenty years of attacks on the rsa cryptosystem
+ :PROPERTIES:
+ :Custom_ID: boneh-2002-twent-years
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/boneh-2002-twent-years.pdf
+ :END:
+There are many Coppersmith-based attacks, but this mostly resolves around the case where public exponent /e/ is small or when partial knowledge of the secret key is available:
+
+- *Small decryption exponent /e/:* so far the best known attack recovers /e/ if it is less than N^.292. This uses a bivariate version of Coppersmith that lacks a rigorous proof of correctness, but seems to work well in practice. Important open questions are whether /e/ < N^1/2−ε is attackable (the conjecture is that it should be), and whether there are rigorously provable variants of Coppersmith for bivariate or multivariate polynomials.
+- *Partial secret key exposure:* when certain bits of /e/ or the factors /p/, /q/ of /N/ are exposed, it is often possible to recover them completely.
+* [[/Users/chl/Documents/Papers/gould-2001-statis-softw-certif.pdf][gould-2001-statis-softw-certif]] - Statistical Software Certification
+ :PROPERTIES:
+ :Custom_ID: gould-2001-statis-softw-certif
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gould-2001-statis-softw-certif.pdf
+ :END:
+#+BEGIN_QUOTE
+Stata is instead tested using an automated procedure that involves running 1,064 do-files containing 158,391 lines that cause Stata to execute 38,343,139 commands and produces just over 16 megabytes (473,859 lines) of output.
+#+END_QUOTE
+
+Mostly about the internal process of certification /per se/ rather than scientific computing, except maybe p. 40 ff when the author discuss the problem of false precision: Double precision floating point numbers are stored using 64 bits. Coprocessors, however, use 80 bits, providing extra guard bits to improve accuracy. On the coprocessor, calculations are made using 80 bits and are then handed back to the CPU rounded to 64 bits.
+
+According to [[papers:altman-2004-numer-issues.pdf][altman-2004-numer-issues]], Stata is quite good. For instance, Stata v6 correctly returned the certified values for the π-digits problem.
+* [[/Users/chl/Documents/Papers/alkan-2011-genom.pdf][alkan-2011-genom]] - Genome structural variation discovery and genotyping
+ :PROPERTIES:
+ :Custom_ID: alkan-2011-genom
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/alkan-2011-genom.pdf
+ :END:
+Review of existing technologies and introduction to NGS analysis. Useful glossary.
