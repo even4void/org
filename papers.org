@@ -417,7 +417,7 @@ def ethiopian(m, n):
 
 Quick translation in Scheme (FIXME):
 
-#+BEGIN_SRC scheme
+#+BEGIN_EXAMPLE
 (define-syntax (while stx)
   (syntax-case stx ()
       ((_ condition expression ...)
@@ -433,7 +433,7 @@ Quick translation in Scheme (FIXME):
     (bitwise-arithmetic-shift-left x 1)
     (bitwise-arithmetic-shift-right y 1))
   z))
-#+END_SRC
+#+END_EXAMPLE
 * [[/Users/chl/Documents/Papers/farrell-2019-math-adven.pdf][farrell-2019-math-adven]] - Math Adventures With Python
  :PROPERTIES:
  :Custom_ID: farrell-2019-math-adven
@@ -1182,3 +1182,69 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
+* [[/Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf][wasserman-2016-topol-data-analy]] - Topological Data Analysis
+ :PROPERTIES:
+ :Custom_ID: wasserman-2016-topol-data-analy
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf
+ :END:
+Topological data analysis = finding structure in data, i.e., clustering, manifold estimation, nonlinear dimension reduction, mode estimation, ridge estimation and [[https://en.wikipedia.org/wiki/Persistent_homology][persistent homology]]. The latter is often what people understand when we talk about topological data analysis. The author extends the notion a bit, but does not discuss shape manifolds. There is another field that deals with the topological and geometric structure of data: computational geometry. The main difference is that in TDA we treat the data as random points whereas in computational geometry the data are usually seen as fixed.
+
+See also the R package [[https://cran.r-project.org/web/packages/TDA/index.html][TDA]].
+* [[/Users/chl/Documents/Papers/altman-2004-numer-issues.pdf][altman-2004-numer-issues]] - Numerical issues in statistical computing for the social scientist
+ :PROPERTIES:
+ :Custom_ID: altman-2004-numer-issues
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/altman-2004-numer-issues.pdf
+ :END:
+Although it is probably a bit outdated by now, I like to refer to this book when it comes to summarize how important dedicated statistical packages are compared to, say, MS Excel (whihc used a single-pass formula for computing the SD of a series of values). More to the point, statistical software dedicated to survey analysis provide better estimates than more general package, except perhaps Stata which has good [[https://www.stata.com/meeting/snasug08/kolenikov_snasug08.pdf][estimators of variance]] for complex surveys.
+
+Sources of inaccuracy in statistical computation: bugs, computer arithmetic, randomized algorithms, approximation and heuristic algorithms, local search algorithms. About computer arithmetic, specifically:
+
+#+BEGIN_QUOTE
+There's a credibility gap: We don't know how much of the computer's answers to believe. Novice computer users solve this problem by implicitly trusting in the computer as an infallible authority; they tend to believe that all digits of a printed answer are significant. Disillusioned computer users have just the opposite approach; they are constantly afraid that their answers are almost meaningless. --- Don Knuth
+#+END_QUOTE
+
+Take away message from computer arithmetic:
+
+1. Rounding errors occur in binary computer arithmetic that are not obvious when one considers only ordinary decimal arithmetic.
+2. Round-off error tends to accumulate when adding large and small numbers --- small numbers tend to "drop off the end" of the addition operator's precision, and what accumulates in the leftmost decimal positions is inaccurate.
+3. Substracting a similar quantity from the result can then "cancel" the relatively accurate numbers in the rightmost decimal places, leaving only the least accurate portions.
+
+Illustration: $i = 1000000000 + 2 - 0.1 - 1000000000$.
+
+*Side note:* The failure of SAS to recover true coefficients of a rare count event model in Table 1.2 should be checked with more recent version of SAS.
+* [[/Users/chl/Documents/Papers/davidson-2011-mathem-model.pdf][davidson-2011-mathem-model]] - Mathematical Modelling Of Fungal Growth And Function
+ :PROPERTIES:
+ :Custom_ID: davidson-2011-mathem-model
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/davidson-2011-mathem-model.pdf
+ :END:
+
+Summary of keynotes given at the SIG meeting on /Mathematical modelling of fungal growth and function/.
+
+Graeme Boswell: discrete-continuous hybrid approach to modelling a fungal mycelium developing in a planar environment. Relies on [[https://en.wikipedia.org/wiki/Michaelis–Menten_kinetics][Michael-Menten dynamics]]. See also [[papers:boswell-2003-mathem-approac.pdf][boswell-2003-mathem-approac]] and [[papers:boswell-2007-devel-fungal.pdf][boswell-2007-devel-fungal]].
+* [[/Users/chl/Documents/Papers/boswell-2012-model.pdf][boswell-2012-model]] - Modelling hyphal networks
+ :PROPERTIES:
+ :Custom_ID: boswell-2012-model
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/boswell-2012-model.pdf
+ :END:
+Review of lattice-based and lattice-free network models.
+
+- lattice-based models: essentially like cellular automata, discrete in time and space. The main limitation is that its topology is constrained by the grid or lattice.
+- lattice-free models: mixture of deterministic and stochastic elements.; neighbour-sensing mathematical model.
+
+*Note:* Hopkins and Boswell (2012) used a circular random walk to model tip orientation and related this to the corresponding FokkerePlanck partial differential equation.
+
+Many papers by [[http://staff.southwales.ac.uk/users/545-gpboswel][Boswell]] on this topic.
+* [[/Users/chl/Documents/Papers/boswell-2003-mathem-approac.pdf][boswell-2003-mathem-approac]] - A mathematical approach to studying fungal mycelia
+ :PROPERTIES:
+ :Custom_ID: boswell-2003-mathem-approac
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/boswell-2003-mathem-approac.pdf
+ :END:
+The model connects physiology at the hyphal level (e.g. tip growth and branching) to growth and function at the mycelial level.
+
+- change in active hyphae in a given area -> new hyphae (laid down by moving tips) + reactivation of inactive hyphae – inactivation of active hyphae
+- change in inactive hyphae in a given area -> inactivation of active hyphae – reactivation of inactive hyphae – degradation of inactive hyphae
+- change in hyphal tips in a given area -> tip movement out of / into area + branching from active hyphae – anastomosis of tips into hyphae
+- change in internal substrate in a given area -> translocation (active and passive mechanisms) + uptake into the fungus from external sources – maintenance costs of hyphae – growth costs of hyphal tips – active translocation costs
+- change in external substrate in a given area -> diffusion of external substrate out of / into area – uptake by fungus
+
+See Fig 1 for an example of the expected power law for radial growth.

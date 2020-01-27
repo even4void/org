@@ -1,4 +1,10 @@
 * Inbox
+** GO Enrichment Analysis (using Galaxy)
+   :PROPERTIES:
+   :ID:       75E88F4A-D506-4B9F-BFEF-6BE8787756CE
+   :END:
+ [2020-01-27 Lun 12:58]
+ https://galaxyproject.github.io/training-material/topics/transcriptomics/tutorials/goenrichment/tutorial.html
 ** Probability of finding a particular sequence of base pairs
    :PROPERTIES:
    :ID:       86ADA7BD-F71C-453A-93FF-159AF5FB4DD4
