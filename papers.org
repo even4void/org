@@ -30,6 +30,28 @@ A short remark about typography: this book is typesetted using LaTeX; however, t
 
 Orthologous and paralogous genes are two types of homologous genes, that is, genes that arise from a common DNA ancestral sequence. Orthologous genes diverged after a speciation event, while paralogous genes diverge from one another within a species. Put another way, the terms orthologous and paralogous describe the relationships between genetic sequence divergence and gene products associated with speciation or genetic duplication. ([[https://sciencing.com/difference-between-orthologous-paralogous-genes-18612.html][The difference between orthologous & paralogous genes]])
 
+* [[/Users/chl/Documents/Papers/altman-2004-numer-issues.pdf][altman-2004-numer-issues]] - Numerical issues in statistical computing for the social scientist
+ :PROPERTIES:
+ :Custom_ID: altman-2004-numer-issues
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/altman-2004-numer-issues.pdf
+ :END:
+Although it is probably a bit outdated by now, I like to refer to this book when it comes to summarize how important dedicated statistical packages are compared to, say, MS Excel (whihc used a single-pass formula for computing the SD of a series of values). More to the point, statistical software dedicated to survey analysis provide better estimates than more general package, except perhaps Stata which has good [[https://www.stata.com/meeting/snasug08/kolenikov_snasug08.pdf][estimators of variance]] for complex surveys.
+
+Sources of inaccuracy in statistical computation: bugs, computer arithmetic, randomized algorithms, approximation and heuristic algorithms, local search algorithms. About computer arithmetic, specifically:
+
+#+BEGIN_QUOTE
+There's a credibility gap: We don't know how much of the computer's answers to believe. Novice computer users solve this problem by implicitly trusting in the computer as an infallible authority; they tend to believe that all digits of a printed answer are significant. Disillusioned computer users have just the opposite approach; they are constantly afraid that their answers are almost meaningless. --- Don Knuth
+#+END_QUOTE
+
+Take away message from computer arithmetic:
+
+1. Rounding errors occur in binary computer arithmetic that are not obvious when one considers only ordinary decimal arithmetic.
+2. Round-off error tends to accumulate when adding large and small numbers --- small numbers tend to "drop off the end" of the addition operator's precision, and what accumulates in the leftmost decimal positions is inaccurate.
+3. Substracting a similar quantity from the result can then "cancel" the relatively accurate numbers in the rightmost decimal places, leaving only the least accurate portions.
+
+Illustration: $i = 1000000000 + 2 - 0.1 - 1000000000$.
+
+*Side note:* The failure of SAS to recover true coefficients of a rare count event model in Table 1.2 should be checked with more recent version of SAS.
 * [[/Users/chl/Documents/Papers/anders-2013-count-rna.pdf][anders-2013-count-rna]] - Count-based differential expression analysis of rna sequencing data using r and bioconductor
  :PROPERTIES:
  :Custom_ID: anders-2013-count-rna
@@ -143,6 +165,32 @@ There are many Coppersmith-based attacks, but this mostly resolves around the ca
 
 - *Small decryption exponent /e/:* so far the best known attack recovers /e/ if it is less than N^.292. This uses a bivariate version of Coppersmith that lacks a rigorous proof of correctness, but seems to work well in practice. Important open questions are whether /e/ < N^1/2−ε is attackable (the conjecture is that it should be), and whether there are rigorously provable variants of Coppersmith for bivariate or multivariate polynomials.
 - *Partial secret key exposure:* when certain bits of /e/ or the factors /p/, /q/ of /N/ are exposed, it is often possible to recover them completely.
+* [[/Users/chl/Documents/Papers/boswell-2003-mathem-approac.pdf][boswell-2003-mathem-approac]] - A mathematical approach to studying fungal mycelia
+ :PROPERTIES:
+ :Custom_ID: boswell-2003-mathem-approac
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/boswell-2003-mathem-approac.pdf
+ :END:
+The model connects physiology at the hyphal level (e.g. tip growth and branching) to growth and function at the mycelial level.
+
+- change in active hyphae in a given area -> new hyphae (laid down by moving tips) + reactivation of inactive hyphae – inactivation of active hyphae
+- change in inactive hyphae in a given area -> inactivation of active hyphae – reactivation of inactive hyphae – degradation of inactive hyphae
+- change in hyphal tips in a given area -> tip movement out of / into area + branching from active hyphae – anastomosis of tips into hyphae
+- change in internal substrate in a given area -> translocation (active and passive mechanisms) + uptake into the fungus from external sources – maintenance costs of hyphae – growth costs of hyphal tips – active translocation costs
+- change in external substrate in a given area -> diffusion of external substrate out of / into area – uptake by fungus
+
+See Fig 1 for an example of the expected power law for radial growth.* [[/Users/chl/Documents/Papers/boswell-2012-model.pdf][boswell-2012-model]] - Modelling hyphal networks
+ :PROPERTIES:
+ :Custom_ID: boswell-2012-model
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/boswell-2012-model.pdf
+ :END:
+Review of lattice-based and lattice-free network models.
+
+- lattice-based models: essentially like cellular automata, discrete in time and space. The main limitation is that its topology is constrained by the grid or lattice.
+- lattice-free models: mixture of deterministic and stochastic elements.; neighbour-sensing mathematical model.
+
+*Note:* Hopkins and Boswell (2012) used a circular random walk to model tip orientation and related this to the corresponding FokkerePlanck partial differential equation.
+
+Many papers by [[http://staff.southwales.ac.uk/users/545-gpboswel][Boswell]] on this topic.
 * [[/Users/chl/Documents/Papers/bradley-2018-what-categ-theor.pdf][bradley-2018-what-categ-theor]] - What is category theory
  :PROPERTIES:
  :Custom_ID: bradley-2018-what-categ-theor
@@ -282,6 +330,15 @@ Nice book to understand the underside of Python, especially regarding package im
 
 I learned a few things about packaging, and in particular the number of modules that were developed before =pip=, namely (in chronological order): =distutils=, =setuptools=, =distribute=, =distutils2=, =packaging=, and =distlib=. The latter may eventually replace =setuptools=.
 
+* [[/Users/chl/Documents/Papers/davidson-2011-mathem-model.pdf][davidson-2011-mathem-model]] - Mathematical Modelling Of Fungal Growth And Function
+ :PROPERTIES:
+ :Custom_ID: davidson-2011-mathem-model
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/davidson-2011-mathem-model.pdf
+ :END:
+
+Summary of keynotes given at the SIG meeting on /Mathematical modelling of fungal growth and function/.
+
+Graeme Boswell: discrete-continuous hybrid approach to modelling a fungal mycelium developing in a planar environment. Relies on [[https://en.wikipedia.org/wiki/Michaelis–Menten_kinetics][Michael-Menten dynamics]]. See also [[papers:boswell-2003-mathem-approac.pdf][boswell-2003-mathem-approac]] and [[papers:boswell-2007-devel-fungal.pdf][boswell-2007-devel-fungal]].
 * [[/Users/chl/Documents/Papers/dobin-2013-star.pdf][dobin-2013-star]] - Star: ultrafast universal rna-seq aligner
  :PROPERTIES:
  :Custom_ID: dobin-2013-star
@@ -1070,6 +1127,14 @@ Methodological bias = applying over-sampling before partitioning the data into m
  :END:
 Molecular clock models assume a constant substitution rate through time, while relaxed clock models allow robust inference of rates and dates. Such models are usually fitted using Bayesian MCMC, which is computatioanally expensive. This paper explores the relevance of ML and LS phylogenetic and molecular clock dating methods, using a Gamma-Poisson mixture model of substitution rates.
 
+* [[/Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf][wasserman-2016-topol-data-analy]] - Topological Data Analysis
+ :PROPERTIES:
+ :Custom_ID: wasserman-2016-topol-data-analy
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf
+ :END:
+Topological data analysis = finding structure in data, i.e., clustering, manifold estimation, nonlinear dimension reduction, mode estimation, ridge estimation and [[https://en.wikipedia.org/wiki/Persistent_homology][persistent homology]]. The latter is often what people understand when we talk about topological data analysis. The author extends the notion a bit, but does not discuss shape manifolds. There is another field that deals with the topological and geometric structure of data: computational geometry. The main difference is that in TDA we treat the data as random points whereas in computational geometry the data are usually seen as fixed.
+
+See also the R package [[https://cran.r-project.org/web/packages/TDA/index.html][TDA]].
 * [[/Users/chl/Documents/Papers/watson-2016-lovin-common-lisp.pdf][watson-2016-lovin-common-lisp]] - Loving Common Lisp
  :PROPERTIES:
  :Custom_ID: watson-2016-lovin-common-lisp
@@ -1182,69 +1247,23 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
-* [[/Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf][wasserman-2016-topol-data-analy]] - Topological Data Analysis
+* [[/Users/chl/Documents/Papers/wu-2014-novel-delaun.pdf][wu-2014-novel-delaun]] - Novel parallel algorithm for constructing delaunay triangulation based on a twofold-divide-and-conquer scheme
  :PROPERTIES:
- :Custom_ID: wasserman-2016-topol-data-analy
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf
+ :Custom_ID: wu-2014-novel-delaun
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wu-2014-novel-delaun.pdf
  :END:
-Topological data analysis = finding structure in data, i.e., clustering, manifold estimation, nonlinear dimension reduction, mode estimation, ridge estimation and [[https://en.wikipedia.org/wiki/Persistent_homology][persistent homology]]. The latter is often what people understand when we talk about topological data analysis. The author extends the notion a bit, but does not discuss shape manifolds. There is another field that deals with the topological and geometric structure of data: computational geometry. The main difference is that in TDA we treat the data as random points whereas in computational geometry the data are usually seen as fixed.
+Multitasking parallel algorithm, in 3 stages: This algorithm automatically divides the planar point set into several non-overlapping subsets along the x-axis and y-axis directions alternately, according to the number of points and their spatial distribution. Next, the Guibas–Stolfi divide-and-conquer algorithm is applied to construct Delaunay sub- triangulations in each subset. Finally, the sub-triangulations are merged based on the binary tree.
 
-See also the R package [[https://cran.r-project.org/web/packages/TDA/index.html][TDA]].
-* [[/Users/chl/Documents/Papers/altman-2004-numer-issues.pdf][altman-2004-numer-issues]] - Numerical issues in statistical computing for the social scientist
+See also:
+
+- [[https://observablehq.com/@mbostock/the-delaunays-dual][The Delaunay’s Dual]] and [[https://github.com/d3/d3-delaunay][d3-delaunay]]
+- [[https://observablehq.com/@mbostock/lloyds-algorithm][Lloyd’s Algorithm]]
+- [[https://bl.ocks.org/mbostock/4341156][Delaunay Triangulation]]
+- [[https://bl.ocks.org/mbostock/cd52a201d7694eb9d890][Voronoi Topology]]
+- [[https://isaacguan.github.io/2017/12/22/Implementation-of-Voronoi-Diagram-and-Delaunay-Triangulation/][Implementation of Voronoi Diagram and Delaunay Triangulation]]
+* [[/Users/chl/Documents/Papers/wu-2009-bacter-archaea.pdf][wu-2009-bacter-archaea]] - A phylogeny-driven genomic encyclopaedia of bacteria and archaea
  :PROPERTIES:
- :Custom_ID: altman-2004-numer-issues
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/altman-2004-numer-issues.pdf
+ :Custom_ID: wu-2009-bacter-archaea
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wu-2009-bacter-archaea.pdf
  :END:
-Although it is probably a bit outdated by now, I like to refer to this book when it comes to summarize how important dedicated statistical packages are compared to, say, MS Excel (whihc used a single-pass formula for computing the SD of a series of values). More to the point, statistical software dedicated to survey analysis provide better estimates than more general package, except perhaps Stata which has good [[https://www.stata.com/meeting/snasug08/kolenikov_snasug08.pdf][estimators of variance]] for complex surveys.
-
-Sources of inaccuracy in statistical computation: bugs, computer arithmetic, randomized algorithms, approximation and heuristic algorithms, local search algorithms. About computer arithmetic, specifically:
-
-#+BEGIN_QUOTE
-There's a credibility gap: We don't know how much of the computer's answers to believe. Novice computer users solve this problem by implicitly trusting in the computer as an infallible authority; they tend to believe that all digits of a printed answer are significant. Disillusioned computer users have just the opposite approach; they are constantly afraid that their answers are almost meaningless. --- Don Knuth
-#+END_QUOTE
-
-Take away message from computer arithmetic:
-
-1. Rounding errors occur in binary computer arithmetic that are not obvious when one considers only ordinary decimal arithmetic.
-2. Round-off error tends to accumulate when adding large and small numbers --- small numbers tend to "drop off the end" of the addition operator's precision, and what accumulates in the leftmost decimal positions is inaccurate.
-3. Substracting a similar quantity from the result can then "cancel" the relatively accurate numbers in the rightmost decimal places, leaving only the least accurate portions.
-
-Illustration: $i = 1000000000 + 2 - 0.1 - 1000000000$.
-
-*Side note:* The failure of SAS to recover true coefficients of a rare count event model in Table 1.2 should be checked with more recent version of SAS.
-* [[/Users/chl/Documents/Papers/davidson-2011-mathem-model.pdf][davidson-2011-mathem-model]] - Mathematical Modelling Of Fungal Growth And Function
- :PROPERTIES:
- :Custom_ID: davidson-2011-mathem-model
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/davidson-2011-mathem-model.pdf
- :END:
-
-Summary of keynotes given at the SIG meeting on /Mathematical modelling of fungal growth and function/.
-
-Graeme Boswell: discrete-continuous hybrid approach to modelling a fungal mycelium developing in a planar environment. Relies on [[https://en.wikipedia.org/wiki/Michaelis–Menten_kinetics][Michael-Menten dynamics]]. See also [[papers:boswell-2003-mathem-approac.pdf][boswell-2003-mathem-approac]] and [[papers:boswell-2007-devel-fungal.pdf][boswell-2007-devel-fungal]].
-* [[/Users/chl/Documents/Papers/boswell-2012-model.pdf][boswell-2012-model]] - Modelling hyphal networks
- :PROPERTIES:
- :Custom_ID: boswell-2012-model
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/boswell-2012-model.pdf
- :END:
-Review of lattice-based and lattice-free network models.
-
-- lattice-based models: essentially like cellular automata, discrete in time and space. The main limitation is that its topology is constrained by the grid or lattice.
-- lattice-free models: mixture of deterministic and stochastic elements.; neighbour-sensing mathematical model.
-
-*Note:* Hopkins and Boswell (2012) used a circular random walk to model tip orientation and related this to the corresponding FokkerePlanck partial differential equation.
-
-Many papers by [[http://staff.southwales.ac.uk/users/545-gpboswel][Boswell]] on this topic.
-* [[/Users/chl/Documents/Papers/boswell-2003-mathem-approac.pdf][boswell-2003-mathem-approac]] - A mathematical approach to studying fungal mycelia
- :PROPERTIES:
- :Custom_ID: boswell-2003-mathem-approac
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/boswell-2003-mathem-approac.pdf
- :END:
-The model connects physiology at the hyphal level (e.g. tip growth and branching) to growth and function at the mycelial level.
-
-- change in active hyphae in a given area -> new hyphae (laid down by moving tips) + reactivation of inactive hyphae – inactivation of active hyphae
-- change in inactive hyphae in a given area -> inactivation of active hyphae – reactivation of inactive hyphae – degradation of inactive hyphae
-- change in hyphal tips in a given area -> tip movement out of / into area + branching from active hyphae – anastomosis of tips into hyphae
-- change in internal substrate in a given area -> translocation (active and passive mechanisms) + uptake into the fungus from external sources – maintenance costs of hyphae – growth costs of hyphal tips – active translocation costs
-- change in external substrate in a given area -> diffusion of external substrate out of / into area – uptake by fungus
-
-See Fig 1 for an example of the expected power law for radial growth.
+See also [[papers:upham-2019-infer.pdf][upham-2019-infer]] and Mike Bostock's [[https://observablehq.com/@mbostock/tree-of-life][Tree of Life]].

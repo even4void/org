@@ -1,4 +1,22 @@
 * Inbox
+** Utilities for Gene Ontology enrichment analysis (C + Python)
+   :PROPERTIES:
+   :ID:       9B33D3BD-496F-47D8-9AAD-BB6E25343016
+   :END:
+ [2020-01-28 Mar 10:36]
+ https://github.com/thecodingdoc/GOUtil
+** Toolkit for genome assembly (feat. P. anserina)
+   :PROPERTIES:
+   :ID:       76C17EBB-8A9E-4448-8A3B-F4F41058A2B5
+   :END:
+ [2020-01-27 Lun 16:54]
+ https://blobtoolkit.genomehubs.org/
+** Fun with Forms (Django)
+   :PROPERTIES:
+   :ID:       3ADBE1C7-5874-4DC8-97A6-AF750C75DBD4
+   :END:
+ [2020-01-27 Lun 16:21]
+ https://www.tangowithdjango.com/book/chapters/forms.html
 ** GO Enrichment Analysis (using Galaxy)
    :PROPERTIES:
    :ID:       75E88F4A-D506-4B9F-BFEF-6BE8787756CE
