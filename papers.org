@@ -1267,3 +1267,18 @@ See also:
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wu-2009-bacter-archaea.pdf
  :END:
 See also [[papers:upham-2019-infer.pdf][upham-2019-infer]] and Mike Bostock's [[https://observablehq.com/@mbostock/tree-of-life][Tree of Life]].
+* [[/Users/chl/Documents/Papers/langmore-2012-applied-data-scien.pdf][langmore-2012-applied-data-scien]] - Applied Data Science
+ :PROPERTIES:
+ :Custom_ID: langmore-2012-applied-data-scien
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/langmore-2012-applied-data-scien.pdf
+ :END:
+Nice applied textbook on "data science" using Unix tools and Python. This is the first time I saw linear regression introduced using Bayesian formalism, then regularization. Lasso penalization is discussed in the case of LOgistic regression. There's also an interesting chapter on high-performance Python (p. 106 ff.).
+
+See also [[https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11239][Data science: An action plan for expanding the technical areas of the field of statistics]], by Cleveland:
+
+- *Multidisciplinary Investigations* (25%): data analysis collaborations in a collection of subject matter areas.
+- *Models and Methods for Data* (20%): statistical models; methods of model building; and methods of estimation and distribution based on probabilistic inference.
+- *Computing with Data* (15%): hardware systems; software systems; and computational algorithms.
+- *Pedagogy* (15%): curriculum planning and approaches to teaching for elementary school, secondary school, college, graduate school, continuing education, and corporate training.
+- *Tool Evaluation* (5%): surveys of tools in use in practice, surveys of perceived needs for new tools, and studies of the processes for developing new tools.
+- *Theory* (20%): foundations of data science; general approaches to models and methods, to computing with data, to teaching, and to tool evaluation; mathematical investigations of models and methods, of computing with data, of teaching, and of evaluation.

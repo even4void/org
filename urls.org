@@ -1,4 +1,16 @@
 * Inbox
+** Standard prelude for Scheme (Programming Praxis)
+   :PROPERTIES:
+   :ID:       6B2D0823-A44D-476F-B1C6-5A0FC05BF2C1
+   :END:
+ [2020-01-28 Mar 16:00]
+ https://programmingpraxis.com/contents/standard-prelude/
+** Standard Prelude for Haskell 98
+   :PROPERTIES:
+   :ID:       6DB5C512-10F1-4355-99F3-3EE28B06A817
+   :END:
+ [2020-01-28 Mar 15:59]
+ https://www.haskell.org/onlinereport/standard-prelude.html
 ** Utilities for Gene Ontology enrichment analysis (C + Python)
    :PROPERTIES:
    :ID:       9B33D3BD-496F-47D8-9AAD-BB6E25343016
