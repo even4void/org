@@ -848,7 +848,21 @@ When I first came across this textbook, the title reminded me of [[~/Sites/aliqu
  :END:
 See [[/Users/chl/Documents/Papers/koenker-2016-tmle.pdf][koenker-2016-tmle]] for a good tutorial, as well as this slide deck for Stata: [[https://www.stata.com/meeting/uk17/slides/uk17_Luque-Fernandez.pdf][Ensemble Learning Targeted Maximum Likelihood Estimation for Stata Users]].
 
-* [[/Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] - Orthology detection combining clustering and synteny for very large datasets
+* [[/Users/chl/Documents/Papers/langmore-2012-applied-data-scien.pdf][langmore-2012-applied-data-scien]] - Applied Data Science
+ :PROPERTIES:
+ :Custom_ID: langmore-2012-applied-data-scien
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/langmore-2012-applied-data-scien.pdf
+ :END:
+Nice applied textbook on "data science" using Unix tools and Python. This is the first time I saw linear regression introduced using Bayesian formalism, then regularization. Lasso penalization is discussed in the case of LOgistic regression. There's also an interesting chapter on high-performance Python (p. 106 ff.).
+
+See also [[https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11239][Data science: An action plan for expanding the technical areas of the field of statistics]], by Cleveland:
+
+- *Multidisciplinary Investigations* (25%): data analysis collaborations in a collection of subject matter areas.
+- *Models and Methods for Data* (20%): statistical models; methods of model building; and methods of estimation and distribution based on probabilistic inference.
+- *Computing with Data* (15%): hardware systems; software systems; and computational algorithms.
+- *Pedagogy* (15%): curriculum planning and approaches to teaching for elementary school, secondary school, college, graduate school, continuing education, and corporate training.
+- *Tool Evaluation* (5%): surveys of tools in use in practice, surveys of perceived needs for new tools, and studies of the processes for developing new tools.
+- *Theory* (20%): foundations of data science; general approaches to models and methods, to computing with data, to teaching, and to tool evaluation; mathematical investigations of models and methods, of computing with data, of teaching, and of evaluation.* [[/Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] - Orthology detection combining clustering and synteny for very large datasets
  :PROPERTIES:
  :Custom_ID: lechner-2014-orthol-detec
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf
@@ -1220,6 +1234,26 @@ HARKing: /Hypothesizing after Results are Known/---much like "data fishing", or 
 
 Ioannidis's work on reproductibility and misuse of statistical hypothesis testing framework: [[~/Documents/Papers/ioannidis-2005-why-most.pdf][ioannidis-2005-why-most]], [[~/Documents/papers/munafo-2017-manif-reprod-scien.pdf][munafo-2017-manif-reprod-scien]].
 
+* [[/Users/chl/Documents/Papers/wu-2009-bacter-archaea.pdf][wu-2009-bacter-archaea]] - A phylogeny-driven genomic encyclopaedia of bacteria and archaea
+ :PROPERTIES:
+ :Custom_ID: wu-2009-bacter-archaea
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wu-2009-bacter-archaea.pdf
+ :END:
+See also [[papers:upham-2019-infer.pdf][upham-2019-infer]] and Mike Bostock's [[https://observablehq.com/@mbostock/tree-of-life][Tree of Life]].
+* [[/Users/chl/Documents/Papers/wu-2014-novel-delaun.pdf][wu-2014-novel-delaun]] - Novel parallel algorithm for constructing delaunay triangulation based on a twofold-divide-and-conquer scheme
+ :PROPERTIES:
+ :Custom_ID: wu-2014-novel-delaun
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wu-2014-novel-delaun.pdf
+ :END:
+Multitasking parallel algorithm, in 3 stages: This algorithm automatically divides the planar point set into several non-overlapping subsets along the x-axis and y-axis directions alternately, according to the number of points and their spatial distribution. Next, the Guibas–Stolfi divide-and-conquer algorithm is applied to construct Delaunay sub- triangulations in each subset. Finally, the sub-triangulations are merged based on the binary tree.
+
+See also:
+
+- [[https://observablehq.com/@mbostock/the-delaunays-dual][The Delaunay’s Dual]] and [[https://github.com/d3/d3-delaunay][d3-delaunay]]
+- [[https://observablehq.com/@mbostock/lloyds-algorithm][Lloyd’s Algorithm]]
+- [[https://bl.ocks.org/mbostock/4341156][Delaunay Triangulation]]
+- [[https://bl.ocks.org/mbostock/cd52a201d7694eb9d890][Voronoi Topology]]
+- [[https://isaacguan.github.io/2017/12/22/Implementation-of-Voronoi-Diagram-and-Delaunay-Triangulation/][Implementation of Voronoi Diagram and Delaunay Triangulation]]
 * [[/Users/chl/Documents/Papers/yang-2012-molec.pdf][yang-2012-molec]] - Molecular phylogenetics: principles and practice
  :PROPERTIES:
  :Custom_ID: yang-2012-molec
@@ -1247,38 +1281,3 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
-* [[/Users/chl/Documents/Papers/wu-2014-novel-delaun.pdf][wu-2014-novel-delaun]] - Novel parallel algorithm for constructing delaunay triangulation based on a twofold-divide-and-conquer scheme
- :PROPERTIES:
- :Custom_ID: wu-2014-novel-delaun
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wu-2014-novel-delaun.pdf
- :END:
-Multitasking parallel algorithm, in 3 stages: This algorithm automatically divides the planar point set into several non-overlapping subsets along the x-axis and y-axis directions alternately, according to the number of points and their spatial distribution. Next, the Guibas–Stolfi divide-and-conquer algorithm is applied to construct Delaunay sub- triangulations in each subset. Finally, the sub-triangulations are merged based on the binary tree.
-
-See also:
-
-- [[https://observablehq.com/@mbostock/the-delaunays-dual][The Delaunay’s Dual]] and [[https://github.com/d3/d3-delaunay][d3-delaunay]]
-- [[https://observablehq.com/@mbostock/lloyds-algorithm][Lloyd’s Algorithm]]
-- [[https://bl.ocks.org/mbostock/4341156][Delaunay Triangulation]]
-- [[https://bl.ocks.org/mbostock/cd52a201d7694eb9d890][Voronoi Topology]]
-- [[https://isaacguan.github.io/2017/12/22/Implementation-of-Voronoi-Diagram-and-Delaunay-Triangulation/][Implementation of Voronoi Diagram and Delaunay Triangulation]]
-* [[/Users/chl/Documents/Papers/wu-2009-bacter-archaea.pdf][wu-2009-bacter-archaea]] - A phylogeny-driven genomic encyclopaedia of bacteria and archaea
- :PROPERTIES:
- :Custom_ID: wu-2009-bacter-archaea
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wu-2009-bacter-archaea.pdf
- :END:
-See also [[papers:upham-2019-infer.pdf][upham-2019-infer]] and Mike Bostock's [[https://observablehq.com/@mbostock/tree-of-life][Tree of Life]].
-* [[/Users/chl/Documents/Papers/langmore-2012-applied-data-scien.pdf][langmore-2012-applied-data-scien]] - Applied Data Science
- :PROPERTIES:
- :Custom_ID: langmore-2012-applied-data-scien
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/langmore-2012-applied-data-scien.pdf
- :END:
-Nice applied textbook on "data science" using Unix tools and Python. This is the first time I saw linear regression introduced using Bayesian formalism, then regularization. Lasso penalization is discussed in the case of LOgistic regression. There's also an interesting chapter on high-performance Python (p. 106 ff.).
-
-See also [[https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11239][Data science: An action plan for expanding the technical areas of the field of statistics]], by Cleveland:
-
-- *Multidisciplinary Investigations* (25%): data analysis collaborations in a collection of subject matter areas.
-- *Models and Methods for Data* (20%): statistical models; methods of model building; and methods of estimation and distribution based on probabilistic inference.
-- *Computing with Data* (15%): hardware systems; software systems; and computational algorithms.
-- *Pedagogy* (15%): curriculum planning and approaches to teaching for elementary school, secondary school, college, graduate school, continuing education, and corporate training.
-- *Tool Evaluation* (5%): surveys of tools in use in practice, surveys of perceived needs for new tools, and studies of the processes for developing new tools.
-- *Theory* (20%): foundations of data science; general approaches to models and methods, to computing with data, to teaching, and to tool evaluation; mathematical investigations of models and methods, of computing with data, of teaching, and of evaluation.

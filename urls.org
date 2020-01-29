@@ -1,4 +1,22 @@
 * Inbox
+** Find number of times a string occurs as a subsequence in given string
+   :PROPERTIES:
+   :ID:       493B5663-7E90-4FAF-A87F-61427CA99C53
+   :END:
+ [2020-01-29 Mer 16:46]
+ https://www.geeksforgeeks.org/find-number-times-string-occurs-given-string/
+** Introduction to Random Strings
+   :PROPERTIES:
+   :ID:       226229C8-AA3A-4E58-8DF2-7E0AA03EA6F6
+   :END:
+ [2020-01-29 Mer 13:30]
+ https://saradoesbioinformatics.blogspot.com/2016/07/introduction-to-random-strings.html
+** Chaos Game Representation of a genetic sequence
+   :PROPERTIES:
+   :ID:       2A35A1B7-2D43-49A0-BB83-D904EE73D4F4
+   :END:
+ [2020-01-29 Mer 12:29]
+ https://towardsdatascience.com/chaos-game-representation-of-a-genetic-sequence-4681f1a67e14
 ** Standard prelude for Scheme (Programming Praxis)
    :PROPERTIES:
    :ID:       6B2D0823-A44D-476F-B1C6-5A0FC05BF2C1
