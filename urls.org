@@ -1,4 +1,16 @@
 * Inbox
+** Command-line Tools can be 235x Faster than your Hadoop Cluster
+   :PROPERTIES:
+   :ID:       7541AC54-C5A8-41A9-85B6-F00095112B5C
+   :END:
+ [2020-01-30 Jeu 10:37]
+ https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html
+** Sorting algorithms in C
+   :PROPERTIES:
+   :ID:       A8D76A87-94B4-4FFE-8246-68D6C6B508C8
+   :END:
+ [2020-01-30 Jeu 10:36]
+ https://github.com/ismdeep/sort-algos-c
 ** Find number of times a string occurs as a subsequence in given string
    :PROPERTIES:
    :ID:       493B5663-7E90-4FAF-A87F-61427CA99C53
