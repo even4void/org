@@ -1,4 +1,34 @@
 * Inbox
+** Looping in Scheme
+   :PROPERTIES:
+   :ID:       BE97043C-BDC4-4994-9944-3FF1C346580D
+   :END:
+ [2020-01-31 Fri 07:59]
+ 36:39: execution error: Non autorisé à envoyer des événements Apple à Safari. (-1743)
+** One-Hour Package (#rstats)
+   :PROPERTIES:
+   :ID:       AEE93FCE-BE48-4FBA-9F4E-058545705573
+   :END:
+ [2020-01-30 Jeu 14:55]
+ https://enpiar.com/2017/08/11/one-hour-package/
+** Columnar File Performance Check-in for Python and R: Parquet, Feather, and FST
+   :PROPERTIES:
+   :ID:       1F6577DC-F546-4C5A-8F8F-F52AC9487116
+   :END:
+ [2020-01-30 Jeu 14:52]
+ https://ursalabs.org/blog/2019-10-columnar-perf/
+** Introducing Apache Arrow Flight: A Framework for Fast Data Transport
+   :PROPERTIES:
+   :ID:       EFF072B8-5A33-477F-B051-537957FFBBF7
+   :END:
+ [2020-01-30 Jeu 14:51]
+ https://arrow.apache.org/blog/2019/10/13/introducing-arrow-flight/
+** Speeding up R and Apache Spark using Apache Arrow
+   :PROPERTIES:
+   :ID:       08C771B1-B476-4E70-AFBB-138A9623C926
+   :END:
+ [2020-01-30 Jeu 14:21]
+ https://arrow.apache.org/blog/2019/01/25/r-spark-improvements/
 ** Command-line Tools can be 235x Faster than your Hadoop Cluster
    :PROPERTIES:
    :ID:       7541AC54-C5A8-41A9-85B6-F00095112B5C
