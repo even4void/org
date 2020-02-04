@@ -1281,3 +1281,18 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
+* [[/Users/chl/Documents/Papers/ackermann-2009-general-mod.pdf][ackermann-2009-general-mod]] - A general modular framework for gene set enrichment analysis
+ :PROPERTIES:
+ :Custom_ID: ackermann-2009-general-mod
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ackermann-2009-general-mod.pdf
+ :END:
+Based on [[https://www.bioconductor.org/packages/release/bioc/html/topGO.html][topGO]] package, three types of enrichment tests depending on the data:
+
+- Tests based on /gene counts/: most popular family of tests, only requires the presence of a list of interesting genes; e.g., Fisher's exact test or binomial tests. See [[papers:draghici-2006-babel.pdf][draghici-2006-babel]].
+- Tests based on /gene scores/ or gene ranks; e.g., Kolgomorov-Smirnov like tests ([[https://en.wikipedia.org/wiki/Gene_set_enrichment_analysis][GSEA]]) or Gentleman's Category, t-test, etc. This paper.
+* [[/Users/chl/Documents/Papers/mitrophanov-2006-statis.pdf][mitrophanov-2006-statis]] - Statistical significance in biological sequence analysis
+ :PROPERTIES:
+ :Custom_ID: mitrophanov-2006-statis
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/mitrophanov-2006-statis.pdf
+ :END:
+Review of sequence alignment score and the estimation of associated p-value in the case of single sequence studies (both score-based and score-free), global and local pairwise sequence alignments, multiple alignments, sequence-to-profile alignments and alignments built with hidden Markov models.

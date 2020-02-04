@@ -1,4 +1,46 @@
 * Inbox
+** LightGBM
+   :PROPERTIES:
+   :ID:       04273433-C2AE-41B0-AA49-2A1EED54231E
+   :END:
+ [2020-02-04 Tue 14:10]
+ https://github.com/Microsoft/LightGBM
+** Phylogenetic trees in Mathematica
+   :PROPERTIES:
+   :ID:       DBDBAB28-B4F7-4638-BEDA-78FCF72B9066
+   :END:
+ [2020-02-04 Tue 13:54]
+ https://mathematica.stackexchange.com/questions/126496/how-to-work-with-phylogenetic-trees
+** NULL Values in SQL Queries
+   :PROPERTIES:
+   :ID:       8A466E33-4D68-4965-AAA3-11EAD24DC62D
+   :END:
+ [2020-02-04 Tue 10:29]
+ https://mitchum.blog/null-values-in-sql-queries/
+** Access your device's terminal from anywhere via the web
+   :PROPERTIES:
+   :ID:       6E08324D-2D63-46A9-B7DB-C3FE41302E74
+   :END:
+ [2020-02-04 Tue 10:28]
+ https://github.com/zhaojh329/rtty
+** Pathfinding Demystified
+   :PROPERTIES:
+   :ID:       6CF77F05-75F5-49DD-B11D-6D7EDCA746B8
+   :END:
+ [2020-02-04 Tue 10:26]
+ https://gabrielgambetta.com/generic-search.html
+** Python package supporting heavy functional programming through currying
+   :PROPERTIES:
+   :ID:       D0C3F993-A330-40F1-9394-03C7864C2F66
+   :END:
+ [2020-02-03 Lun 17:09]
+ https://github.com/jackfirth/pyramda
+** Racket package template ready for Github
+   :PROPERTIES:
+   :ID:       CCEF9AE6-2809-4C44-B6DC-5FF3F4092407
+   :END:
+ [2020-02-03 Lun 17:08]
+ https://github.com/jackfirth/racket-package-template
 ** Looping in Scheme
    :PROPERTIES:
    :ID:       BE97043C-BDC4-4994-9944-3FF1C346580D
