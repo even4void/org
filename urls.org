@@ -1,4 +1,16 @@
 * Inbox
+** Docker implemented in around 100 lines of bash.
+   :PROPERTIES:
+   :ID:       C9E45947-38C1-4202-A943-A2AE77343600
+   :END:
+ [2020-02-05 Wed 09:12]
+ https://github.com/p8952/bocker/blob/master/README.md
+** Using Emacs and Org Mode
+   :PROPERTIES:
+   :ID:       24470BB4-4CC5-479B-95EF-9320F6B29EB9
+   :END:
+ [2020-02-04 Tue 17:13]
+ https://edom.github.io/emacs.html
 ** LightGBM
    :PROPERTIES:
    :ID:       04273433-C2AE-41B0-AA49-2A1EED54231E
