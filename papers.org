@@ -309,7 +309,12 @@ Gene tree (small number of highly conserved and orthologous genes) vs. genome tr
 
 The authors rely on the whole-proteome sequences on the Feature Frequency Profile ([[https://github.com/jaejinchoi/FFP][FFP]]), which does not require multiple sequence alignment.
 
-* [[/Users/chl/Documents/Papers/conery-2016-impos-handb.pdf][conery-2016-impos-handb]] - The Imposter's Handbook
+* [[/Users/chl/Documents/Papers/clifford-2010-statis-analy.pdf][clifford-2010-statis-analy]] - A statistical analysis of probabilistic counting algorithms
+ :PROPERTIES:
+ :Custom_ID: clifford-2010-statis-analy
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/clifford-2010-statis-analy.pdf
+ :END:
+See also [[papers:ertl-2017-new-hyper.pdf][ertl-2017-new-hyper]] and [[https://github.com/evanmiller/SlowerLogLog][SlowerLogLog]] by Evan Miller.* [[/Users/chl/Documents/Papers/conery-2016-impos-handb.pdf][conery-2016-impos-handb]] - The Imposter's Handbook
  :PROPERTIES:
  :Custom_ID: conery-2016-impos-handb
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/conery-2016-impos-handb.pdf
