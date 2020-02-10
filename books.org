@@ -1,3 +1,5 @@
+# -*- ispell-dictionary: "french" -*-
+
 * 2013
 - Haruki Murakami, 1Q84 Tome 3 (Belfond)
 - Haruki Murakami, Underground (Belfond)
@@ -506,12 +508,15 @@
 - Peter Brooke, Le diable c'est l'ennui (Actes Sud)
 - Georges Perec, Espèces d'espaces (Galilée)
 - Georges Perec, Penser/Classer (Seuil)
-- Arnaldur Indridason, Les Fils de la poussière (Points)
+- Arnaldur Indridason, Les fils de la poussière (Points)
 - Treize poèmes de J.L. Borges (Fata Morgana) [♯]
 - Daniel Pennac, La loi du rêveur (Gallimard)
 - Stephen Zweig, Le monde d'hier (Folio)
 - Zakari Dramani-Issifou, Les dires de l'arbre mémoire (Le dé bleu) [♯]
 - Laurent Binet, Civilizations (Grasset)
 - Jean Ristat, Ô vous qui dormez dans les étoiles enchaînées (Gallimard)
+- Philippe Delerm, L'extase du selfie (Seuil)
+- Silvina Ocampo, La musique de la pluie (Folio)
+- Alain-Christophe Restrat, Impasses absolues (Flammarion) [♯]
 
 [♯] Déjà lu par le passé.

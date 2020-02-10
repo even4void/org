@@ -1,4 +1,10 @@
 * Inbox
+** Les enchères en temps réel (RTB), un système complexe
+   :PROPERTIES:
+   :ID:       0FBE2F94-66BF-45FB-BB39-C28A92118F18
+   :END:
+ [2020-02-07 Fri 15:41]
+ missing value
 ** Introduction to numerical analysis
    :PROPERTIES:
    :ID:       350B543D-6BF2-4D12-B9E8-8380DD8928CA
