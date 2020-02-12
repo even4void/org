@@ -1,4 +1,10 @@
 * Inbox
+** Competitive Programming snippets
+   :PROPERTIES:
+   :ID:       AD3C22FE-4D30-4FEC-A741-F97F41D79FAA
+   :END:
+ [2020-02-12 Wed 11:30]
+ https://github.com/sei40kr/competitive-programming-snippets/tree/4c59790fefa8d717f9c3d6bdeb9b4bfd3e039cbc
 ** M-EMACS, a customized full-featured GNU Emacs configuration
    :PROPERTIES:
    :ID:       E2DEE741-03B3-415C-9871-6780AD835617
