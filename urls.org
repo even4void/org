@@ -1,4 +1,22 @@
 * Inbox
+** M-EMACS, a customized full-featured GNU Emacs configuration
+   :PROPERTIES:
+   :ID:       E2DEE741-03B3-415C-9871-6780AD835617
+   :END:
+ [2020-02-11 Tue 11:03]
+ https://github.com/MatthewZMD/.emacs.d
+** Is a Dataframe Just a Table?
+   :PROPERTIES:
+   :ID:       505CEBB3-FB55-4FE0-AC6B-4754B237E880
+   :END:
+ [2020-02-11 Tue 10:30]
+ https://plateau-workshop.org/assets/papers-2019/10.pdf
+** Automatic parallelization with @jit
+   :PROPERTIES:
+   :ID:       27DB6CA9-DCC4-438E-B007-CEB22CB9F943
+   :END:
+ [2020-02-10 Mon 16:17]
+ http://numba.pydata.org/numba-doc/latest/user/parallel.html#numba-parallel
 ** Les enchères en temps réel (RTB), un système complexe
    :PROPERTIES:
    :ID:       0FBE2F94-66BF-45FB-BB39-C28A92118F18
