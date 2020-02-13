@@ -1300,3 +1300,19 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
+* [[/Users/chl/Documents/Papers/belkin-2019-recon.pdf][belkin-2019-recon]] - Reconciling modern machine learning practice and the bias-variance trade-off
+ :PROPERTIES:
+ :Custom_ID: belkin-2019-recon
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/belkin-2019-recon.pdf
+ :END:
+Interesting article on the bias-variance tradeoff in the context of recent ML workflows (NNs, deep learning, etc.). The authors discussed the "unified performance curve" and present compelling evidence that increasing model capacity beyond the point of interpolation results in improved performance in several use cases.
+
+Maybe see [[papers:murphy-2012-machin-learn.pdf][murphy-2012-machin-learn]].
+* [[/Users/chl/Documents/Papers/lartillot-2004-bayes-mixtur.pdf][lartillot-2004-bayes-mixtur]] - A bayesian mixture model for across-site heterogeneities in the amino-acid replacement process
+ :PROPERTIES:
+ :Custom_ID: lartillot-2004-bayes-mixtur
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/lartillot-2004-bayes-mixtur.pdf
+ :END:
+The authors discuss a new model (CAT) for molecular phylogenetics which considers amino acids instead of nucleotides (which makes sense since they are interested in phylogenies going beyond the genus level). The model allows for a number of /K/ classes, each of which is characterized by its own set of equilibrium frequencies, and lets each site "choose" the class under which its substitutional history is to be described. A Dirichlet process prior is used to decide on the best class to chose (the posterior mean then becomes a measure of substitutional heterogeneity). In sum, the CAT model allows to classifies sites into categories: sites are distributed according to a mixture of /K/ distinct classes, each class being characterized by its own substitution matrix. Transition matrices (also called π-vector or /profiles/) can be fixed to pre-specified values (if all relative rates are set to 1, we get a Poisson process).
+
+See also [[papers:lartillot-2009-phylob.pdf][lartillot-2009-phylob]]. Maybe [[papers:dang-2019-stoch-variat.pdf][dang-2019-stoch-variat]].

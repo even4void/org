@@ -1,4 +1,16 @@
 * Inbox
+** Bayesian Phylogenetic Analysis
+   :PROPERTIES:
+   :ID:       0D8FC7D8-584D-4F03-A9B2-774E12E21431
+   :END:
+ [2020-02-13 Thu 14:09]
+ http://www.cbs.dtu.dk/dtucourse/cookbooks/gorm/27615/bayes1.php
+** Tutorial on Bayesian phylogenetic analysis
+   :PROPERTIES:
+   :ID:       13DF1278-79D9-4E54-8245-51C4E9C1BC5E
+   :END:
+ [2020-02-13 Thu 14:05]
+ https://github.com/thednainus/Bayesian_tutorial
 ** Competitive Programming snippets
    :PROPERTIES:
    :ID:       AD3C22FE-4D30-4FEC-A741-F97F41D79FAA
