@@ -1316,3 +1316,9 @@ Maybe see [[papers:murphy-2012-machin-learn.pdf][murphy-2012-machin-learn]].
 The authors discuss a new model (CAT) for molecular phylogenetics which considers amino acids instead of nucleotides (which makes sense since they are interested in phylogenies going beyond the genus level). The model allows for a number of /K/ classes, each of which is characterized by its own set of equilibrium frequencies, and lets each site "choose" the class under which its substitutional history is to be described. A Dirichlet process prior is used to decide on the best class to chose (the posterior mean then becomes a measure of substitutional heterogeneity). In sum, the CAT model allows to classifies sites into categories: sites are distributed according to a mixture of /K/ distinct classes, each class being characterized by its own substitution matrix. Transition matrices (also called π-vector or /profiles/) can be fixed to pre-specified values (if all relative rates are set to 1, we get a Poisson process).
 
 See also [[papers:lartillot-2009-phylob.pdf][lartillot-2009-phylob]]. Maybe [[papers:dang-2019-stoch-variat.pdf][dang-2019-stoch-variat]].
+* [[/Users/chl/Documents/Papers/nascimento-2017-bayes.pdf][nascimento-2017-bayes]] - A biologist’s guide to bayesian phylogenetic analysis
+ :PROPERTIES:
+ :Custom_ID: nascimento-2017-bayes
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/nascimento-2017-bayes.pdf
+ :END:
+*Rules of thumb:* (1) Different substitution models tend to give very similar sequence distance estimates when sequence divergence is less than 10%, so that a simple model can be used even though it may not fit the data. (2) It is more problematic to under-specify than to over-specify the model in Bayesian phylogenetics.
