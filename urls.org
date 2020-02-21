@@ -1,4 +1,10 @@
 * Inbox
+** E Ink color theme for Emacs
+   :PROPERTIES:
+   :ID:       026180F8-8D5C-4BBD-9FB3-67D04A4B4FD7
+   :END:
+ [2020-02-21 Fri 14:57]
+ https://github.com/maio/eink-emacs
 ** Neovim Clojure(Script) tooling over prepl
    :PROPERTIES:
    :ID:       D79DFA03-3C80-49C5-B43B-27D64A27DAF3

@@ -96,6 +96,14 @@ As with any retrospective study not based on an inception cohort with a well-def
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bagwell-2001-ideal-hash-trees.pdf
  :END:
 See also [[https://worace.works/2016/05/24/hash-array-mapped-tries/][Hash Array Mapped Tries]] and Boddil Stokke's talk, [[http://github.bodil.lol/bagwell/][Meeting with Remarkable Trees]].
+* [[/Users/chl/Documents/Papers/belkin-2019-recon.pdf][belkin-2019-recon]] - Reconciling modern machine learning practice and the bias-variance trade-off
+ :PROPERTIES:
+ :Custom_ID: belkin-2019-recon
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/belkin-2019-recon.pdf
+ :END:
+Interesting article on the bias-variance tradeoff in the context of recent ML workflows (NNs, deep learning, etc.). The authors discussed the "unified performance curve" and present compelling evidence that increasing model capacity beyond the point of interpolation results in improved performance in several use cases.
+
+Maybe see [[papers:murphy-2012-machin-learn.pdf][murphy-2012-machin-learn]].
 * [[/Users/chl/Documents/Papers/bernardes-2016-improv-protein.pdf][bernardes-2016-improv-protein]] - Improvement in protein domain identification is reached by breaking consensus, with the agreement of many profiles and domain co-occurrence
  :PROPERTIES:
  :Custom_ID: bernardes-2016-improv-protein
@@ -813,7 +821,20 @@ pprint.pprint(sys.path)
 You just learned how to program. Programming is not about memorizing everything; rather, it is about troubleshooting when things go awry.
 #+END_QUOTE
 
-* [[/Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf][khomtchouk-2018-how-lisp]] - How the strengths of lisp-family languages facilitate building complex and flexible bioinformatics applications
+* [[/Users/chl/Documents/Papers/kelchner-2006-model-use-phylog.pdf][kelchner-2006-model-use-phylog]] - Model use in phylogenetics: nine key questions
+ :PROPERTIES:
+ :Custom_ID: kelchner-2006-model-use-phylog
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kelchner-2006-model-use-phylog.pdf
+ :END:
+(1) What are models in phylogenetics; (2) Must a model be "exact" or merely "good enough"; (3) What phylogenetic applications rely on best-fit models; (4) What happens when a model is "wrong"; (5) How are models selected for nucleotide data; (6) What models are most frequently chosen for sequence data; (7) How can model selection methods be improved; (8) Are all parameters equally important; (9) Will phylogenomics eliminate the need for model selection.
+
+Conceptual models often obeys to the principle of parsimony and they usually share several assumptions, that are not given formal parameters: mutations are independent and identically distributed, tree-like evolution (i.e., lineages arise in a divergent manner without reticulation), stationarity, reversibility, Markov process. Such assumptions are often violated in practice, e.g. prokaryote groups share genes among lineages via lateral gene transfer (incompatible with tree-like evolution).
+
+Most complex model (10 parameters) = [[https://www.carlboettiger.info/2011/03/15/models-in-phylogenetic-inference.html][GTR+I+Γ]] (general time reversible model with corrections for invariant characters and gamma-distributed rate heterogeneity). See also https://arxiv.org/abs/0709.0531v2.
+
+When models matter? Topology is quite robust to midly inadequate models, but when branch lengths matter or when we are interested in testing an alternative phylogenetic hypothesis (e.g., [[https://academic.oup.com/sysbio/article/49/4/652/1678908][Kishino-Hasegawa]], [[https://academic.oup.com/sysbio/article/51/3/492/1616895][Shimodaira-Hasegawa]] and [[https://academic.oup.com/mbe/article/19/4/432/995491][Incongruence Length Difference]] tests), we need more accurate and adequate models.
+
+See also: [[papers:goldman-2000-likel-based.pdf][goldman-2000-likel-based]], [[papers:shimodaira-2002-approx-unbias.pdf][shimodaira-2002-approx-unbias]], [[papers:darlu-2002-when-does.pdf][darlu-2002-when-does]].* [[/Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf][khomtchouk-2018-how-lisp]] - How the strengths of lisp-family languages facilitate building complex and flexible bioinformatics applications
  :PROPERTIES:
  :Custom_ID: khomtchouk-2018-how-lisp
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf
@@ -884,6 +905,14 @@ See also [[https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11239][Data scie
 - orthology is not a transitive relation so that the problem is different from clustering an input gene set.
 - the authors focus on avoiding false positive orthology assignments within the phylogenetic range of the reported orthologous groups, while tolerating recent in-paralogs (speciation preceding duplication) as unavoidable contamination
 
+* [[/Users/chl/Documents/Papers/lartillot-2004-bayes-mixtur.pdf][lartillot-2004-bayes-mixtur]] - A bayesian mixture model for across-site heterogeneities in the amino-acid replacement process
+ :PROPERTIES:
+ :Custom_ID: lartillot-2004-bayes-mixtur
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/lartillot-2004-bayes-mixtur.pdf
+ :END:
+The authors discuss a new model (CAT) for molecular phylogenetics which considers amino acids instead of nucleotides (which makes sense since they are interested in phylogenies going beyond the genus level). The model allows for a number of /K/ classes, each of which is characterized by its own set of equilibrium frequencies, and lets each site "choose" the class under which its substitutional history is to be described. A Dirichlet process prior is used to decide on the best class to chose (the posterior mean then becomes a measure of substitutional heterogeneity). In sum, the CAT model allows to classifies sites into categories: sites are distributed according to a mixture of /K/ distinct classes, each class being characterized by its own substitution matrix. Transition matrices (also called π-vector or /profiles/) can be fixed to pre-specified values (if all relative rates are set to 1, we get a Poisson process).
+
+See also [[papers:lartillot-2009-phylob.pdf][lartillot-2009-phylob]]. Maybe [[papers:dang-2019-stoch-variat.pdf][dang-2019-stoch-variat]].
 * [[/Users/chl/Documents/Papers/li-2010-rna-seq.pdf][li-2010-rna-seq]] - Rna-seq gene expression estimation with read mapping uncertainty
  :PROPERTIES:
  :Custom_ID: li-2010-rna-seq
@@ -972,6 +1001,12 @@ Useful packages and config for Lisp editing:
 - https://github.com/kovisoft/slimv
 - https://blog.venanti.us/clojure-vim/
 
+* [[/Users/chl/Documents/Papers/nascimento-2017-bayes.pdf][nascimento-2017-bayes]] - A biologist’s guide to bayesian phylogenetic analysis
+ :PROPERTIES:
+ :Custom_ID: nascimento-2017-bayes
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/nascimento-2017-bayes.pdf
+ :END:
+*Rules of thumb:* (1) Different substitution models tend to give very similar sequence distance estimates when sequence divergence is less than 10%, so that a simple model can be used even though it may not fit the data. (2) It is more problematic to under-specify than to over-specify the model in Bayesian phylogenetics.
 * [[/Users/chl/Documents/Papers/ostlund-2010-inpar.pdf][ostlund-2010-inpar]] - Inparanoid 7: new algorithms and tools for eukaryotic orthology analysis
  :PROPERTIES:
  :Custom_ID: ostlund-2010-inpar
@@ -1300,39 +1335,3 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
-* [[/Users/chl/Documents/Papers/belkin-2019-recon.pdf][belkin-2019-recon]] - Reconciling modern machine learning practice and the bias-variance trade-off
- :PROPERTIES:
- :Custom_ID: belkin-2019-recon
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/belkin-2019-recon.pdf
- :END:
-Interesting article on the bias-variance tradeoff in the context of recent ML workflows (NNs, deep learning, etc.). The authors discussed the "unified performance curve" and present compelling evidence that increasing model capacity beyond the point of interpolation results in improved performance in several use cases.
-
-Maybe see [[papers:murphy-2012-machin-learn.pdf][murphy-2012-machin-learn]].
-* [[/Users/chl/Documents/Papers/lartillot-2004-bayes-mixtur.pdf][lartillot-2004-bayes-mixtur]] - A bayesian mixture model for across-site heterogeneities in the amino-acid replacement process
- :PROPERTIES:
- :Custom_ID: lartillot-2004-bayes-mixtur
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/lartillot-2004-bayes-mixtur.pdf
- :END:
-The authors discuss a new model (CAT) for molecular phylogenetics which considers amino acids instead of nucleotides (which makes sense since they are interested in phylogenies going beyond the genus level). The model allows for a number of /K/ classes, each of which is characterized by its own set of equilibrium frequencies, and lets each site "choose" the class under which its substitutional history is to be described. A Dirichlet process prior is used to decide on the best class to chose (the posterior mean then becomes a measure of substitutional heterogeneity). In sum, the CAT model allows to classifies sites into categories: sites are distributed according to a mixture of /K/ distinct classes, each class being characterized by its own substitution matrix. Transition matrices (also called π-vector or /profiles/) can be fixed to pre-specified values (if all relative rates are set to 1, we get a Poisson process).
-
-See also [[papers:lartillot-2009-phylob.pdf][lartillot-2009-phylob]]. Maybe [[papers:dang-2019-stoch-variat.pdf][dang-2019-stoch-variat]].
-* [[/Users/chl/Documents/Papers/nascimento-2017-bayes.pdf][nascimento-2017-bayes]] - A biologist’s guide to bayesian phylogenetic analysis
- :PROPERTIES:
- :Custom_ID: nascimento-2017-bayes
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/nascimento-2017-bayes.pdf
- :END:
-*Rules of thumb:* (1) Different substitution models tend to give very similar sequence distance estimates when sequence divergence is less than 10%, so that a simple model can be used even though it may not fit the data. (2) It is more problematic to under-specify than to over-specify the model in Bayesian phylogenetics.
-* [[/Users/chl/Documents/Papers/kelchner-2006-model-use-phylog.pdf][kelchner-2006-model-use-phylog]] - Model use in phylogenetics: nine key questions
- :PROPERTIES:
- :Custom_ID: kelchner-2006-model-use-phylog
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kelchner-2006-model-use-phylog.pdf
- :END:
-(1) What are models in phylogenetics; (2) Must a model be "exact" or merely "good enough"; (3) What phylogenetic applications rely on best-fit models; (4) What happens when a model is "wrong"; (5) How are models selected for nucleotide data; (6) What models are most frequently chosen for sequence data; (7) How can model selection methods be improved; (8) Are all parameters equally important; (9) Will phylogenomics eliminate the need for model selection.
-
-Conceptual models often obeys to the principle of parsimony and they usually share several assumptions, that are not given formal parameters: mutations are independent and identically distributed, tree-like evolution (i.e., lineages arise in a divergent manner without reticulation), stationarity, reversibility, Markov process. Such assumptions are often violated in practice, e.g. prokaryote groups share genes among lineages via lateral gene transfer (incompatible with tree-like evolution).
-
-Most complex model (10 parameters) = [[https://www.carlboettiger.info/2011/03/15/models-in-phylogenetic-inference.html][GTR+I+Γ]] (general time reversible model with corrections for invariant characters and gamma-distributed rate heterogeneity). See also https://arxiv.org/abs/0709.0531v2.
-
-When models matter? Topology is quite robust to midly inadequate models, but when branch lengths matter or when we are interested in testing an alternative phylogenetic hypothesis (e.g., [[https://academic.oup.com/sysbio/article/49/4/652/1678908][Kishino-Hasegawa]], [[https://academic.oup.com/sysbio/article/51/3/492/1616895][Shimodaira-Hasegawa]] and [[https://academic.oup.com/mbe/article/19/4/432/995491][Incongruence Length Difference]] tests), we need more accurate and adequate models.
-
-See also: [[papers:goldman-2000-likel-based.pdf][goldman-2000-likel-based]], [[papers:shimodaira-2002-approx-unbias.pdf][shimodaira-2002-approx-unbias]], [[papers:darlu-2002-when-does.pdf][darlu-2002-when-does]].
