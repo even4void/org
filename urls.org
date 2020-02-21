@@ -1,4 +1,22 @@
 * Inbox
+** Neovim Clojure(Script) tooling over prepl
+   :PROPERTIES:
+   :ID:       D79DFA03-3C80-49C5-B43B-27D64A27DAF3
+   :END:
+ [2020-02-21 Fri 14:21]
+ https://github.com/Olical/conjure
+** Genome Interval Arithmetic in R
+   :PROPERTIES:
+   :ID:       35D28502-8EA2-4989-A40B-A7EA40222137
+   :END:
+ [2020-02-21 Fri 12:30]
+ https://github.com/KlausVigo/valr
+** Embedded database in Rust
+   :PROPERTIES:
+   :ID:       17C2D2AA-4E8D-4B97-BA4B-2AB640CD81EC
+   :END:
+ [2020-02-21 Fri 11:19]
+ https://github.com/spacejam/sled
 ** Bayesian Phylogenetic Analysis
    :PROPERTIES:
    :ID:       0D8FC7D8-584D-4F03-A9B2-774E12E21431
