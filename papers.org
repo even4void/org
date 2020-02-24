@@ -513,6 +513,12 @@ Quick translation in Scheme (FIXME):
     (bitwise-arithmetic-shift-right y 1))
   z))
 #+END_EXAMPLE
+* [[/Users/chl/Documents/Papers/ertl-2017-new-hyper.pdf][ertl-2017-new-hyper]] - New cardinality estimation algorithms for hyperloglog sketches
+ :PROPERTIES:
+ :Custom_ID: ertl-2017-new-hyper
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ertl-2017-new-hyper.pdf
+ :END:
+See also [[https://github.com/evanmiller/SlowerLogLog][SlowerLogLog]] by Evan Miller.
 * [[/Users/chl/Documents/Papers/farrell-2019-math-adven.pdf][farrell-2019-math-adven]] - Math Adventures With Python
  :PROPERTIES:
  :Custom_ID: farrell-2019-math-adven
@@ -527,6 +533,14 @@ Keep this in mind for my son in case he happens to use Python at school.
  :END:
 Of historical importance only.
 
+* [[/Users/chl/Documents/Papers/fischer-2019-space-tree.pdf][fischer-2019-space-tree]] - The space of tree-based phylogenetic networks
+ :PROPERTIES:
+ :Custom_ID: fischer-2019-space-tree
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/fischer-2019-space-tree.pdf
+ :END:
+Phylogenetic networks are trees with additional edges passing between the tree edges, that allow to account for horizontal gene transfer and hybridization.
+
+Geometric approach to phylogenetic networks: consider the set of networks as a space in which one may move between the objects by operations that [[https://en.wikipedia.org/wiki/Tree_rearrangement][change a feature]] of the graph, e.g. nearest neighbor interchange (NNI), subtree prune and regraft (SPR) and tree bisection and reconnection (TBR).
 * [[/Users/chl/Documents/Papers/fourment-2018-dubious-ways.pdf][fourment-2018-dubious-ways]] - 19 dubious ways to compute the marginal likelihood of a phylogenetic tree topology
  :PROPERTIES:
  :Custom_ID: fourment-2018-dubious-ways
@@ -869,6 +883,12 @@ https://dancing-links.herokuapp.com
  :END:
 https://rust-bio.github.io
 
+* [[/Users/chl/Documents/Papers/kunin-2005-net-life.pdf][kunin-2005-net-life]] - The net of life: reconstructing the microbial phylogenetic network
+ :PROPERTIES:
+ :Custom_ID: kunin-2005-net-life
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kunin-2005-net-life.pdf
+ :END:
+Horizontal Gene Transfer is viewed as a scale-free graph, allowing genes to propagate extremely rapidly across microbial species using certain organisms as hubs.
 * [[/Users/chl/Documents/Papers/laaksonen-2017-compet-progr-handb.pdf][laaksonen-2017-compet-progr-handb]] - Competitive programmer’s handbook
  :PROPERTIES:
  :Custom_ID: laaksonen-2017-compet-progr-handb
@@ -1026,6 +1046,12 @@ Challenge: to handle the overload of information and make it easier to understan
 - Newick, NHX (enhanced Newick) and Nexus format.
 - Statistical methods: neighbor-joining and UPGMA (distance), maximum parsimony and maximum likelihood (feature matrix), MCMC (both).
 
+* [[/Users/chl/Documents/Papers/pearl-2018-theor-imped.pdf][pearl-2018-theor-imped]] - Theoretical impediments to machine learning with seven sparks from the causal revolution
+ :PROPERTIES:
+ :Custom_ID: pearl-2018-theor-imped
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/pearl-2018-theor-imped.pdf
+ :END:
+Seven tasks which are beyond reach of current machine learning systems (vs. structural causal models) and examples of tasks ML would fail to solve: (1) How effective is a given treatment in preventing a disease?, (2) Was it the new tax break that caused our sales to go up?, (3) What is the annual health-care costs attributed to obesity?, (4) Can hiring records prove an employer guilty of sex discrimination?, (5) I am about to quit my gob, but should I?
 * [[/Users/chl/Documents/Papers/piskol-2013-reliab-ident.pdf][piskol-2013-reliab-ident]] - Reliable identification of genomic variants from rna-seq data
  :PROPERTIES:
  :Custom_ID: piskol-2013-reliab-ident
@@ -1139,6 +1165,12 @@ Bifurcating tree hypothesis ([[https://academic.oup.com/sysbio/article/62/3/479/
 
 [[https://www.phangorn.org][Phangorn]] R package (+ [[https://cran.r-project.org/web/packages/ape/index.html][ape]]): "support value" (nonparametric bootstrap support: Felsenstein 1985; Bayesian posterior probabilities: Rannala & Yang 1996; internode certainty: Salichos, Sta- matakis & Rokas 2014); see also Draper, Hedenäs & Grimm 2007.
 
+* [[/Users/chl/Documents/Papers/shimodaira-2002-approx-unbias.pdf][shimodaira-2002-approx-unbias]] - An approximately unbiased test of phylogenetic tree selection
+ :PROPERTIES:
+ :Custom_ID: shimodaira-2002-approx-unbias
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/shimodaira-2002-approx-unbias.pdf
+ :END:
+Related to [[https://academic.oup.com/mbe/article/16/8/1114/2925508][Shimodaira–Hasegawa]] test, the AU test adjusts the selection bias overlooked in the standard use of the bootstrap probability and Kishino–Hasegawa tests.
 * [[/Users/chl/Documents/Papers/sonnhammer-2015-inpar.pdf][sonnhammer-2015-inpar]] - Inparanoid 8: orthology analysis between 273 proteomes, mostly eukaryotic
  :PROPERTIES:
  :Custom_ID: sonnhammer-2015-inpar
@@ -1181,6 +1213,12 @@ Complete description of an L-system with rules for ungerminated and germinated s
 tip, apical, septum and ordinary segment, and segment from which a branch grows.
 
 **** TODO Try to implement main rules using Racket [[https://docs.racket-lang.org/lindenmayer/index.html][#lang lindenmayer]].
+* [[/Users/chl/Documents/Papers/upham-2019-infer.pdf][upham-2019-infer]] - Inferring the mammal tree: species-level sets of phylogenies for questions in ecology, evolution, and conservation
+ :PROPERTIES:
+ :Custom_ID: upham-2019-infer
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/upham-2019-infer.pdf
+ :END:
+The authors propose a "backbone-and-patch" approach to tree building applies a newly assembled 31-gene supermatrix to two levels of Bayesian inference: (1) backbone relationships and ages among major lineages, using fossil node or tip dating, and (2) species-level “patch” phylogenies with nonoverlapping in-groups that each correspond to one representa- tive lineage in the backbone.
 * [[/Users/chl/Documents/Papers/vandewiele-2020-overl-optim.pdf][vandewiele-2020-overl-optim]] - Overly optimistic prediction results on imbalanced data: flaws and benefits of applying over-sampling
  :PROPERTIES:
  :Custom_ID: vandewiele-2020-overl-optim

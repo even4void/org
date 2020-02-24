@@ -1,4 +1,16 @@
 * Inbox
+** Sequence simulator
+   :PROPERTIES:
+   :ID:       48871E92-339B-4EFA-ADB7-6A2CF74F2A81
+   :END:
+ [2020-02-24 Mon 13:43]
+ https://github.com/rambaut/Seq-Gen
+** bootstrap supports in large phylogenies
+   :PROPERTIES:
+   :ID:       10447636-FC95-4A82-81D6-344215719956
+   :END:
+ [2020-02-24 Mon 13:35]
+ https://github.com/evolbioinfo/booster
 ** E Ink color theme for Emacs
    :PROPERTIES:
    :ID:       026180F8-8D5C-4BBD-9FB3-67D04A4B4FD7
