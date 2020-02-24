@@ -24,9 +24,9 @@ Ceci étant, l'objet de ce document n'est pas d'arguer pour ou contre l'usage de
 L'objet de ce document est somme tout assez modeste et on s'intéressera essentiellement à quelques "modes" spécifiques, en particulier ceux qui se révèlent le plus utile pour éditer efficacement des documents texte et interagir interactivement avec des shells ou des environnements de type {REPL|Read Eval Print Loop}. L'auteur utilise personnellement Emacs depuis une quinzaine d'années, en connaît le strict minimum pour éditer une grande variété de documents, et se contente la plupart du temps d'utiliser Emacs comme un excellent éditeur de texte. En guise d'illustration, la figure [[fig:emacs-screenshot]] permet de voir à quoi ressemble l'édition de ce document sous Emacs avec le [[https://orgmode.org][mode org]]. En réalité, il ne s'agit pas tout à fait de la version de base d'Emacs, encore appelé Emacs vanilla, mais de [[https://github.com/hlissner/doom-emacs][Doom Emacs]], une configuration particulière d'Emacs incluant un thème et des options bien spécifiques. On se concentrera d'ailleurs sur cette version d'Emacs dans les prochaines sections.
 
 #+CAPTION:   L'édition de ce document sous Emacs
-#+NAME:      fig:emacs-screenshot
-#+LABEL:     fig:emacs-screenshot
-#+ATTR_HTML: :width 640px
+#+NAME:   fig:emacs-screenshot
+#+LABEL:   fig:emacs-screenshot
+#+ATTR_HTML:   :width 640px
 #+ATTR_ORG:  :width 100
 [[./_img/fig-emacs-screenshot.png]]
 
@@ -65,7 +65,6 @@ M-b     C-b
 #+end_example
 
 On passe d'une ligne à la suivante ou à la précédente à l'aide de =C-n= et =C-p=, et d'un paragraphe à l'autre à l'aide de =M-}= et =M-{=. En pratique, comme on peut utiliser les flèches du clavier pour se déplacer d'un caractère à l'autre, ou d'une ligne à l'autre, seules les commandes permettant de naviguer entre les mots ou les blocs de mots (phrases ou paragraphes) se révèlent vraiment intéressantes.
-
 
 ** Fonctions avancées
 ** Recherche simple
