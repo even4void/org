@@ -1373,3 +1373,39 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
+* [[/Users/chl/Documents/Papers/neal-2015-repres-numer.pdf][neal-2015-repres-numer]] - Representing numeric data in 32 bits while preserving 64-bit precision
+ :PROPERTIES:
+ :Custom_ID: neal-2015-repres-numer
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/neal-2015-repres-numer.pdf
+ :END:
+Every number with up to seven significant decimal digits maps to a distinct 32-bit single precision value, with no information loss. However, when these single precision values are converted to 64-bit double precision in the standard (hardware-supported) way and then used in arithmetic operations, the results are in general not the same as if a 64-bit floating-point representation had been used. The problem is that the standard conversion by extending the mantissa of a single precision number with zeros does not produce the correct double precision representation of a number, such as 0.1, whose binary expansion is non-terminating. As an alternative we might consider using decimal floating point but floating point division operation required to convert from a decimal floating point representation is quite slow.
+
+#+BEGIN_QUOTE
+Cowlishaw, M. F. (2003) “Decimal Floating-Point: Algorism for Computers”, in Proceedings of the 16th IEEE Symposium on Computer Arithmetic.
+#+END_QUOTE
+* [[/Users/chl/Documents/Papers/ireland-2020-decip-escher.pdf][ireland-2020-decip-escher]] - Deciphering the regulatory genome of escherichia coli, one hundred promoters at a time
+ :PROPERTIES:
+ :Custom_ID: ireland-2020-decip-escher
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ireland-2020-decip-escher.pdf
+ :END:
+Problem with modern biology is that although we have complete sequence of some important genomes, we know nothing about most of gene regulation (promoters).
+
+First, we show that our method recapitulates regulatory information from known sequences. Then, we examine the regulatory architectures for more than 80 promoters in the E. coli genome which previously had no known regulation. In many cases, we also identify which transcription factors mediate their regulation.
+* [[/Users/chl/Documents/Papers/raschka-2020-machin-learn-python.pdf][raschka-2020-machin-learn-python]] - Machine learning in python: main developments and technology trends in data science, machine learning, and artificial intelligence
+ :PROPERTIES:
+ :Custom_ID: raschka-2020-machin-learn-python
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/raschka-2020-machin-learn-python.pdf
+ :END:
+Interesting review of current data stack in Python. The first part focus on scikit-learn and [[https://github.com/scikit-learn-contrib][contrib]], "classical ML" approaches, including boosting machines (LightGBM), and distributed computing using [[https://ml.dask.org][Dask-ML]]. Little is said about H2O and the Sparkling Water Spark-adapter, though. [[https://www.automl.org][AutoML]] libraries include: [[https://www.cs.ubc.ca/labs/beta/Projects/autoweka/][Auto-Weka]], [[https://automl.github.io/auto-sklearn/master/][Auto-sklearn]], [[https://epistasislab.github.io/tpot/][TPOT]], [[http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html][H20-AutoML]], [[https://autokeras.com][AutoKeras]].
+
+See also [[papers:he-2020-autom.pdf][he-2020-autom]].
+* [[/Users/chl/Documents/Papers/wang-2020-deep.pdf][wang-2020-deep]] - Deep learning for plant genomics and crop improvement
+ :PROPERTIES:
+ :Custom_ID: wang-2020-deep
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wang-2020-deep.pdf
+ :END:
+Advances in statistical modeling: transcriptome-wide association study and deep learning for the prediction of molecular phenotypes from their upstream molecular phenotypes, or directly from genomic DNA sequences.
+
+Convolutional Neural Networks have at least a convolutional layer, which provides them the ability of automatic feature extraction from a contin- uous signal, e.g. DNA/RNA sequence (why is this treated as continuous?!).
+
+See also [[papers:zou-2019-primer-deep.pdf][zou-2019-primer-deep]].
