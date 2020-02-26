@@ -1,4 +1,34 @@
 * Inbox
+** Likelihood of a tree
+   :PROPERTIES:
+   :ID:       6F686781-FED4-44A2-AF29-00433C0978CC
+   :END:
+ [2020-02-26 Wed 11:33]
+ https://www.cs.rice.edu/~ogilvie/comp571/2019/11/27/likelihood-of-a-tree.html
+** Tree comparisons
+   :PROPERTIES:
+   :ID:       2F00A3B8-05ED-46EB-A85B-A7072BA5DFDD
+   :END:
+ [2020-02-26 Wed 11:12]
+ https://www.cs.rice.edu/~ogilvie/comp571/2018/10/18/tree-metrics.html
+** Rainbowing a set of pictures
+   :PROPERTIES:
+   :ID:       B530FEAB-E0B4-4B3F-9D20-F114E3D46622
+   :END:
+ [2020-02-25 Tue 13:42]
+ https://masalmon.eu/2018/01/07/rainbowing/
+** Create fractal trees using R
+   :PROPERTIES:
+   :ID:       5BC10AC4-EC0E-4FF3-9AF8-7E3E686DAC93
+   :END:
+ [2020-02-25 Tue 13:33]
+ https://github.com/andrie/fractaltree/
+** Modern, functional Common Lisp: Myths and best practices
+   :PROPERTIES:
+   :ID:       0D4FF9F8-7E89-40C2-8352-452C1826D07B
+   :END:
+ [2020-02-25 Tue 13:15]
+ https://ambrevar.xyz/modern-common-lisp/index.html
 ** align genomic features with phylogenetic tree
    :PROPERTIES:
    :ID:       1B204FC5-6F4E-4CFD-9828-428726554E45

@@ -772,6 +772,14 @@ Sneath P. 1975. [[https://academic.oup.com/sysbio/article/24/3/360/1659116][Clad
  :END:
 Independent hypothesis weighting ([[https://www.bioconductor.org/packages/release/bioc/html/IHW.html][IHW]]): a method that assigns weights using covariates (conditionally) independent of the P-values under the null hypothesis but informative of each test’s power or prior probability of the null hypothesis.
 
+* [[/Users/chl/Documents/Papers/ireland-2020-decip-escher.pdf][ireland-2020-decip-escher]] - Deciphering the regulatory genome of escherichia coli, one hundred promoters at a time
+ :PROPERTIES:
+ :Custom_ID: ireland-2020-decip-escher
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ireland-2020-decip-escher.pdf
+ :END:
+Problem with modern biology is that although we have complete sequence of some important genomes, we know nothing about most of gene regulation (promoters).
+
+First, we show that our method recapitulates regulatory information from known sequences. Then, we examine the regulatory architectures for more than 80 promoters in the E. coli genome which previously had no known regulation. In many cases, we also identify which transcription factors mediate their regulation.
 * [[/Users/chl/Documents/Papers/izquierdo-carrasco-2011-algor.pdf][izquierdo-carrasco-2011-algor]] - Algorithms, data structures, and numerics for likelihood-based phylogenetic inference of huge trees
  :PROPERTIES:
  :Custom_ID: izquierdo-carrasco-2011-algor
@@ -1027,6 +1035,16 @@ Useful packages and config for Lisp editing:
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/nascimento-2017-bayes.pdf
  :END:
 *Rules of thumb:* (1) Different substitution models tend to give very similar sequence distance estimates when sequence divergence is less than 10%, so that a simple model can be used even though it may not fit the data. (2) It is more problematic to under-specify than to over-specify the model in Bayesian phylogenetics.
+* [[/Users/chl/Documents/Papers/neal-2015-repres-numer.pdf][neal-2015-repres-numer]] - Representing numeric data in 32 bits while preserving 64-bit precision
+ :PROPERTIES:
+ :Custom_ID: neal-2015-repres-numer
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/neal-2015-repres-numer.pdf
+ :END:
+Every number with up to seven significant decimal digits maps to a distinct 32-bit single precision value, with no information loss. However, when these single precision values are converted to 64-bit double precision in the standard (hardware-supported) way and then used in arithmetic operations, the results are in general not the same as if a 64-bit floating-point representation had been used. The problem is that the standard conversion by extending the mantissa of a single precision number with zeros does not produce the correct double precision representation of a number, such as 0.1, whose binary expansion is non-terminating. As an alternative we might consider using decimal floating point but floating point division operation required to convert from a decimal floating point representation is quite slow.
+
+#+BEGIN_QUOTE
+Cowlishaw, M. F. (2003) “Decimal Floating-Point: Algorism for Computers”, in Proceedings of the 16th IEEE Symposium on Computer Arithmetic.
+#+END_QUOTE
 * [[/Users/chl/Documents/Papers/ostlund-2010-inpar.pdf][ostlund-2010-inpar]] - Inparanoid 7: new algorithms and tools for eukaryotic orthology analysis
  :PROPERTIES:
  :Custom_ID: ostlund-2010-inpar
@@ -1105,6 +1123,14 @@ Only very basic sequence aligner. Not much compared to good old Wwwblast unfortu
  :END:
 Via [[https://racket-news.com/2019/09/racket-news-issue-15.html][Racket News #15]]. See also [[https://news.ycombinator.com/item?id=20392448][Racket is an acceptable Python]].
 
+* [[/Users/chl/Documents/Papers/raschka-2020-machin-learn-python.pdf][raschka-2020-machin-learn-python]] - Machine learning in python: main developments and technology trends in data science, machine learning, and artificial intelligence
+ :PROPERTIES:
+ :Custom_ID: raschka-2020-machin-learn-python
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/raschka-2020-machin-learn-python.pdf
+ :END:
+Interesting review of current data stack in Python. The first part focus on scikit-learn and [[https://github.com/scikit-learn-contrib][contrib]], "classical ML" approaches, including boosting machines (LightGBM), and distributed computing using [[https://ml.dask.org][Dask-ML]]. Little is said about H2O and the Sparkling Water Spark-adapter, though. [[https://www.automl.org][AutoML]] libraries include: [[https://www.cs.ubc.ca/labs/beta/Projects/autoweka/][Auto-Weka]], [[https://automl.github.io/auto-sklearn/master/][Auto-sklearn]], [[https://epistasislab.github.io/tpot/][TPOT]], [[http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html][H20-AutoML]], [[https://autokeras.com][AutoKeras]].
+
+See also [[papers:he-2020-autom.pdf][he-2020-autom]].
 * [[/Users/chl/Documents/Papers/remm-2001-autom-clust.pdf][remm-2001-autom-clust]] - Automatic clustering of orthologs and in-paralogs from pairwise species comparisons
  :PROPERTIES:
  :Custom_ID: remm-2001-autom-clust
@@ -1233,7 +1259,16 @@ Methodological bias = applying over-sampling before partitioning the data into m
  :END:
 Molecular clock models assume a constant substitution rate through time, while relaxed clock models allow robust inference of rates and dates. Such models are usually fitted using Bayesian MCMC, which is computatioanally expensive. This paper explores the relevance of ML and LS phylogenetic and molecular clock dating methods, using a Gamma-Poisson mixture model of substitution rates.
 
-* [[/Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf][wasserman-2016-topol-data-analy]] - Topological Data Analysis
+* [[/Users/chl/Documents/Papers/wang-2020-deep.pdf][wang-2020-deep]] - Deep learning for plant genomics and crop improvement
+ :PROPERTIES:
+ :Custom_ID: wang-2020-deep
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wang-2020-deep.pdf
+ :END:
+Advances in statistical modeling: transcriptome-wide association study and deep learning for the prediction of molecular phenotypes from their upstream molecular phenotypes, or directly from genomic DNA sequences.
+
+Convolutional Neural Networks have at least a convolutional layer, which provides them the ability of automatic feature extraction from a contin- uous signal, e.g. DNA/RNA sequence (why is this treated as continuous?!).
+
+See also [[papers:zou-2019-primer-deep.pdf][zou-2019-primer-deep]].* [[/Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf][wasserman-2016-topol-data-analy]] - Topological Data Analysis
  :PROPERTIES:
  :Custom_ID: wasserman-2016-topol-data-analy
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf
@@ -1373,39 +1408,3 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
-* [[/Users/chl/Documents/Papers/neal-2015-repres-numer.pdf][neal-2015-repres-numer]] - Representing numeric data in 32 bits while preserving 64-bit precision
- :PROPERTIES:
- :Custom_ID: neal-2015-repres-numer
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/neal-2015-repres-numer.pdf
- :END:
-Every number with up to seven significant decimal digits maps to a distinct 32-bit single precision value, with no information loss. However, when these single precision values are converted to 64-bit double precision in the standard (hardware-supported) way and then used in arithmetic operations, the results are in general not the same as if a 64-bit floating-point representation had been used. The problem is that the standard conversion by extending the mantissa of a single precision number with zeros does not produce the correct double precision representation of a number, such as 0.1, whose binary expansion is non-terminating. As an alternative we might consider using decimal floating point but floating point division operation required to convert from a decimal floating point representation is quite slow.
-
-#+BEGIN_QUOTE
-Cowlishaw, M. F. (2003) “Decimal Floating-Point: Algorism for Computers”, in Proceedings of the 16th IEEE Symposium on Computer Arithmetic.
-#+END_QUOTE
-* [[/Users/chl/Documents/Papers/ireland-2020-decip-escher.pdf][ireland-2020-decip-escher]] - Deciphering the regulatory genome of escherichia coli, one hundred promoters at a time
- :PROPERTIES:
- :Custom_ID: ireland-2020-decip-escher
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ireland-2020-decip-escher.pdf
- :END:
-Problem with modern biology is that although we have complete sequence of some important genomes, we know nothing about most of gene regulation (promoters).
-
-First, we show that our method recapitulates regulatory information from known sequences. Then, we examine the regulatory architectures for more than 80 promoters in the E. coli genome which previously had no known regulation. In many cases, we also identify which transcription factors mediate their regulation.
-* [[/Users/chl/Documents/Papers/raschka-2020-machin-learn-python.pdf][raschka-2020-machin-learn-python]] - Machine learning in python: main developments and technology trends in data science, machine learning, and artificial intelligence
- :PROPERTIES:
- :Custom_ID: raschka-2020-machin-learn-python
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/raschka-2020-machin-learn-python.pdf
- :END:
-Interesting review of current data stack in Python. The first part focus on scikit-learn and [[https://github.com/scikit-learn-contrib][contrib]], "classical ML" approaches, including boosting machines (LightGBM), and distributed computing using [[https://ml.dask.org][Dask-ML]]. Little is said about H2O and the Sparkling Water Spark-adapter, though. [[https://www.automl.org][AutoML]] libraries include: [[https://www.cs.ubc.ca/labs/beta/Projects/autoweka/][Auto-Weka]], [[https://automl.github.io/auto-sklearn/master/][Auto-sklearn]], [[https://epistasislab.github.io/tpot/][TPOT]], [[http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html][H20-AutoML]], [[https://autokeras.com][AutoKeras]].
-
-See also [[papers:he-2020-autom.pdf][he-2020-autom]].
-* [[/Users/chl/Documents/Papers/wang-2020-deep.pdf][wang-2020-deep]] - Deep learning for plant genomics and crop improvement
- :PROPERTIES:
- :Custom_ID: wang-2020-deep
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wang-2020-deep.pdf
- :END:
-Advances in statistical modeling: transcriptome-wide association study and deep learning for the prediction of molecular phenotypes from their upstream molecular phenotypes, or directly from genomic DNA sequences.
-
-Convolutional Neural Networks have at least a convolutional layer, which provides them the ability of automatic feature extraction from a contin- uous signal, e.g. DNA/RNA sequence (why is this treated as continuous?!).
-
-See also [[papers:zou-2019-primer-deep.pdf][zou-2019-primer-deep]].
