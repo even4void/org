@@ -1,4 +1,16 @@
 * Inbox
+** Vim Cheat Sheet
+   :PROPERTIES:
+   :ID:       DDBB121E-2AD1-4DF8-AC05-7D9B82C3EFEF
+   :END:
+ [2020-02-26 Wed 14:40]
+ https://vim.rtorr.com/
+** Numpy-style docstring
+   :PROPERTIES:
+   :ID:       30765F41-AACB-4AFE-9E46-9F57D595C720
+   :END:
+ [2020-02-26 Wed 13:25]
+ https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard
 ** Likelihood of a tree
    :PROPERTIES:
    :ID:       6F686781-FED4-44A2-AF29-00433C0978CC
