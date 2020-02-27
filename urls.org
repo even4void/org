@@ -1,4 +1,10 @@
 * Inbox
+** Examples using emacs org mode babel inline source code with different backend languages
+   :PROPERTIES:
+   :ID:       B5BFEA18-96BF-4FD4-8211-66E4A6C7CBD7
+   :END:
+ [2020-02-26 Wed 20:32]
+ https://github.com/dfeich/org-babel-examples
 ** Vim Cheat Sheet
    :PROPERTIES:
    :ID:       DDBB121E-2AD1-4DF8-AC05-7D9B82C3EFEF

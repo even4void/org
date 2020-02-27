@@ -1224,7 +1224,17 @@ Our first question concerns three-dimensional contingency tables $(p_{ijk})$ who
 
 See also: [[/Users/chl/Documents/papers/pistone-2001-algeb-statis.pdf][pistone-2001-algeb-statis]], [[/Users/chl/Documents/Papers/gibilisco-2010-algeb-geomet.pdf][gibilisco-2010-algeb-geomet]].
 
-* [[/Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf][tsamardinos-2017-boots-out]] - Bootstrapping the out-of-sample predictions for efficient and accurate cross-validation
+* [[/Users/chl/Documents/Papers/torres-2003-exact-formul.pdf][torres-2003-exact-formul]] - An exact formula for the number of alignments between two dna sequences
+ :PROPERTIES:
+ :Custom_ID: torres-2003-exact-formul
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/torres-2003-exact-formul.pdf
+ :END:
+For two sequences of length 8 and 16 the number of alignments is ≅ 40•10^6. See also [[papers:lange-2002-mathem-statis.pdf][lange-2002-mathem-statis]].
+General formula:
+
+$$ f(n, m) = \sum_{k=0}^{\text{min}(n,m)} 2^k {m \choose k} {n \choose k}. $$
+
+Note that $\sum_{k=0}^n 2^k {n \choose k} = 3^n \leq f(n, n) \leq (1+\sqrt{2})^{2n}$.* [[/Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf][tsamardinos-2017-boots-out]] - Bootstrapping the out-of-sample predictions for efficient and accurate cross-validation
  :PROPERTIES:
  :Custom_ID: tsamardinos-2017-boots-out
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf
@@ -1408,14 +1418,3 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
-* [[/Users/chl/Documents/Papers/torres-2003-exact-formul.pdf][torres-2003-exact-formul]] - An exact formula for the number of alignments between two dna sequences
- :PROPERTIES:
- :Custom_ID: torres-2003-exact-formul
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/torres-2003-exact-formul.pdf
- :END:
-For two sequences of length 8 and 16 the number of alignments is ≅ 40•10^6. See also [[papers:lange-2002-mathem-statis.pdf][lange-2002-mathem-statis]].
-General formula:
-
-$$ f(n, m) = \sum_{k=0}^{\text{min}(n,m)} 2^k {m \choose k} {n \choose k}. $$
-
-Note that $\sum_{k=0}^n 2^k {n \choose k} = 3^n \leq f(n, n) \leq (1+\sqrt{2})^{2n}$.

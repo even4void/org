@@ -1,0 +1,52 @@
+#+TITLE:  The title
+#+AUTHOR: The author
+#+DATE: 26 February, 2020
+#+OPTIONS: num:nil H:2 ^:t |:t
+#+BABEL: :session *R* :dir "." :exports both :tangle yes
+
+
+#+BEGIN_SRC R :exports none
+library(xtable)
+#+END_SRC
+
+Here's a tiny R function:
+
+#+BEGIN_SRC R
+square <- function(x) x*x
+square(1:10)
+#+END_SRC
+
+Here's a toy example to illustrate a linear regression:
+
+#+BEGIN_SRC R :results output :exports both
+n <- 100
+x <- runif(n)
+y <- 1 + 0.8*x + rnorm(n)
+m <- lm(y ~ x)
+r <- xtable(summary(m))
+print(r, type = "html")
+#+END_SRC
+
+Per the Babel doc:
+
+#+BEGIN_SRC R :file 1.png :session :results graphics file :exports result
+library(lattice)
+xyplot(1:10 ~ 1:10)
+#+END_SRC
+
+
+Holy church of Python!
+
+#+BEGIN_SRC python :results output :exports both
+a = 27 // 4
+print(a)
+#+END_SRC
+
+Remember Elisp?
+
+#+BEGIN_SRC emacs-lisp :exports both
+(defun xor (a b)
+  "Exclusive or."
+  (if a (not b) b))
+(xor nil t)
+#+END_SRC
