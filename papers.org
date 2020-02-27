@@ -5,7 +5,7 @@
  :END:
 Based on [[https://www.bioconductor.org/packages/release/bioc/html/topGO.html][topGO]] package, three types of enrichment tests depending on the data:
 
-- Tests based on /gene counts/: most popular family of tests, only requires the presence of a list of interesting genes; e.g., Fisher's exact test or binomial tests. See [[papers:draghici-2006-babel.pdf][draghici-2006-babel]].
+- Tests based on /gene counts/: most popular family of tests, only requires the presence of a list of interesting genes; e.g., Fisher's exact test or binomial tests. See [[/Users/chl/Documents/Papers/draghici-2006-babel.pdf][draghici-2006-babel]].
 - Tests based on /gene scores/ or gene ranks; e.g., Kolgomorov-Smirnov like tests ([[https://en.wikipedia.org/wiki/Gene_set_enrichment_analysis][GSEA]]) or Gentleman's Category, t-test, etc. This paper.
 * [[/Users/chl/Documents/Papers/aguileta-2014-high-variab.pdf][aguileta-2014-high-variab]] - High variability of mitochondrial gene order among fungi
  :PROPERTIES:
@@ -103,7 +103,7 @@ See also [[https://worace.works/2016/05/24/hash-array-mapped-tries/][Hash Array 
  :END:
 Interesting article on the bias-variance tradeoff in the context of recent ML workflows (NNs, deep learning, etc.). The authors discussed the "unified performance curve" and present compelling evidence that increasing model capacity beyond the point of interpolation results in improved performance in several use cases.
 
-Maybe see [[papers:murphy-2012-machin-learn.pdf][murphy-2012-machin-learn]].
+Maybe see [[/Users/chl/Documents/Papers/murphy-2012-machin-learn.pdf][murphy-2012-machin-learn]].
 * [[/Users/chl/Documents/Papers/bernardes-2016-improv-protein.pdf][bernardes-2016-improv-protein]] - Improvement in protein domain identification is reached by breaking consensus, with the agreement of many profiles and domain co-occurrence
  :PROPERTIES:
  :Custom_ID: bernardes-2016-improv-protein
@@ -322,7 +322,7 @@ The authors rely on the whole-proteome sequences on the Feature Frequency Profil
  :Custom_ID: clifford-2010-statis-analy
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/clifford-2010-statis-analy.pdf
  :END:
-See also [[papers:ertl-2017-new-hyper.pdf][ertl-2017-new-hyper]] and [[https://github.com/evanmiller/SlowerLogLog][SlowerLogLog]] by Evan Miller.
+See also [[/Users/chl/Documents/Papers/ertl-2017-new-hyper.pdf][ertl-2017-new-hyper]] and [[https://github.com/evanmiller/SlowerLogLog][SlowerLogLog]] by Evan Miller.
 
 * [[/Users/chl/Documents/Papers/conery-2016-impos-handb.pdf][conery-2016-impos-handb]] - The Imposter's Handbook
  :PROPERTIES:
@@ -362,7 +362,7 @@ I learned a few things about packaging, and in particular the number of modules 
 
 Summary of keynotes given at the SIG meeting on /Mathematical modelling of fungal growth and function/.
 
-Graeme Boswell: discrete-continuous hybrid approach to modelling a fungal mycelium developing in a planar environment. Relies on [[https://en.wikipedia.org/wiki/Michaelis–Menten_kinetics][Michael-Menten dynamics]]. See also [[papers:boswell-2003-mathem-approac.pdf][boswell-2003-mathem-approac]] and [[papers:boswell-2007-devel-fungal.pdf][boswell-2007-devel-fungal]].
+Graeme Boswell: discrete-continuous hybrid approach to modelling a fungal mycelium developing in a planar environment. Relies on [[https://en.wikipedia.org/wiki/Michaelis–Menten_kinetics][Michael-Menten dynamics]]. See also [[/Users/chl/Documents/Papers/boswell-2003-mathem-approac.pdf][boswell-2003-mathem-approac]] and [[/Users/chl/Documents/Papers/boswell-2007-devel-fungal.pdf][boswell-2007-devel-fungal]].
 * [[/Users/chl/Documents/Papers/dobin-2013-star.pdf][dobin-2013-star]] - Star: ultrafast universal rna-seq aligner
  :PROPERTIES:
  :Custom_ID: dobin-2013-star
@@ -621,7 +621,7 @@ Stata is instead tested using an automated procedure that involves running 1,064
 
 Mostly about the internal process of certification /per se/ rather than scientific computing, except maybe p. 40 ff when the author discuss the problem of false precision: Double precision floating point numbers are stored using 64 bits. Coprocessors, however, use 80 bits, providing extra guard bits to improve accuracy. On the coprocessor, calculations are made using 80 bits and are then handed back to the CPU rounded to 64 bits.
 
-According to [[papers:altman-2004-numer-issues.pdf][altman-2004-numer-issues]], Stata is quite good. For instance, Stata v6 correctly returned the certified values for the π-digits problem.
+According to [[/Users/chl/Documents/Papers/altman-2004-numer-issues.pdf][altman-2004-numer-issues]], Stata is quite good. For instance, Stata v6 correctly returned the certified values for the π-digits problem.
 * [[/Users/chl/Documents/Papers/greenland-2016-spars-data-bias.pdf][greenland-2016-spars-data-bias]] - Sparse data bias: a problem hiding in plain sight
  :PROPERTIES:
  :Custom_ID: greenland-2016-spars-data-bias
@@ -881,7 +881,7 @@ Most complex model (10 parameters) = [[https://www.carlboettiger.info/2011/03/15
 
 When models matter? Topology is quite robust to midly inadequate models, but when branch lengths matter or when we are interested in testing an alternative phylogenetic hypothesis (e.g., [[https://academic.oup.com/sysbio/article/49/4/652/1678908][Kishino-Hasegawa]], [[https://academic.oup.com/sysbio/article/51/3/492/1616895][Shimodaira-Hasegawa]] and [[https://academic.oup.com/mbe/article/19/4/432/995491][Incongruence Length Difference]] tests), we need more accurate and adequate models.
 
-See also: [[papers:goldman-2000-likel-based.pdf][goldman-2000-likel-based]], [[papers:shimodaira-2002-approx-unbias.pdf][shimodaira-2002-approx-unbias]], [[papers:darlu-2002-when-does.pdf][darlu-2002-when-does]].* [[/Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf][khomtchouk-2018-how-lisp]] - How the strengths of lisp-family languages facilitate building complex and flexible bioinformatics applications
+See also: [[/Users/chl/Documents/Papers/goldman-2000-likel-based.pdf][goldman-2000-likel-based]], [[/Users/chl/Documents/Papers/shimodaira-2002-approx-unbias.pdf][shimodaira-2002-approx-unbias]], [[/Users/chl/Documents/Papers/darlu-2002-when-does.pdf][darlu-2002-when-does]].* [[/Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf][khomtchouk-2018-how-lisp]] - How the strengths of lisp-family languages facilitate building complex and flexible bioinformatics applications
  :PROPERTIES:
  :Custom_ID: khomtchouk-2018-how-lisp
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf
@@ -927,7 +927,7 @@ Horizontal Gene Transfer is viewed as a scale-free graph, allowing genes to prop
  :Custom_ID: laaksonen-2017-compet-progr-handb
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/laaksonen-2017-compet-progr-handb.pdf
  :END:
-When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike [[papers:conery-2016-impos-handb.pdf][conery-2016-impos-hand]], it has more running code, and in a decent language (C++ 11). I wrote a little [[~/git/scratch/python/competitive.py][transcript]] in Python 3.x and wrote a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on aliquote.org.
+When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike [[/Users/chl/Documents/Papers/conery-2016-impos-handb.pdf][conery-2016-impos-hand]], it has more running code, and in a decent language (C++ 11). I wrote a little [[~/git/scratch/python/competitive.py][transcript]] in Python 3.x and wrote a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on aliquote.org.
 
 * [[/Users/chl/Documents/Papers/laan-2006-target-maxim.pdf][laan-2006-target-maxim]] - Targeted Maximum Likelihood Learning
  :PROPERTIES:
@@ -965,7 +965,7 @@ See also [[https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11239][Data scie
  :END:
 The authors discuss a new model (CAT) for molecular phylogenetics which considers amino acids instead of nucleotides (which makes sense since they are interested in phylogenies going beyond the genus level). The model allows for a number of /K/ classes, each of which is characterized by its own set of equilibrium frequencies, and lets each site "choose" the class under which its substitutional history is to be described. A Dirichlet process prior is used to decide on the best class to chose (the posterior mean then becomes a measure of substitutional heterogeneity). In sum, the CAT model allows to classifies sites into categories: sites are distributed according to a mixture of /K/ distinct classes, each class being characterized by its own substitution matrix. Transition matrices (also called π-vector or /profiles/) can be fixed to pre-specified values (if all relative rates are set to 1, we get a Poisson process).
 
-See also [[papers:lartillot-2009-phylob.pdf][lartillot-2009-phylob]]. Maybe [[papers:dang-2019-stoch-variat.pdf][dang-2019-stoch-variat]].
+See also [[/Users/chl/Documents/Papers/lartillot-2009-phylob.pdf][lartillot-2009-phylob]]. Maybe [[/Users/chl/Documents/Papers/dang-2019-stoch-variat.pdf][dang-2019-stoch-variat]].
 * [[/Users/chl/Documents/Papers/li-2010-rna-seq.pdf][li-2010-rna-seq]] - Rna-seq gene expression estimation with read mapping uncertainty
  :PROPERTIES:
  :Custom_ID: li-2010-rna-seq
@@ -1136,7 +1136,7 @@ for (i in 1:B) {
 pobs <-  (1 + sum(abs(s) > abs(s0))) / (B+1)
 #+END_SRC
 
-See also [[papers:efron-1986-boots-method.pdf][efron-1986-boots-method]].
+See also [[/Users/chl/Documents/Papers/efron-1986-boots-method.pdf][efron-1986-boots-method]].
 * [[/Users/chl/Documents/Papers/priyam-2019-sequen.pdf][priyam-2019-sequen]] - Sequenceserver: a modern graphical user interface for custom blast databases
  :PROPERTIES:
  :Custom_ID: priyam-2019-sequen
@@ -1158,7 +1158,7 @@ Via [[https://racket-news.com/2019/09/racket-news-issue-15.html][Racket News #15
  :END:
 Interesting review of current data stack in Python. The first part focus on scikit-learn and [[https://github.com/scikit-learn-contrib][contrib]], "classical ML" approaches, including boosting machines (LightGBM), and distributed computing using [[https://ml.dask.org][Dask-ML]]. Little is said about H2O and the Sparkling Water Spark-adapter, though. [[https://www.automl.org][AutoML]] libraries include: [[https://www.cs.ubc.ca/labs/beta/Projects/autoweka/][Auto-Weka]], [[https://automl.github.io/auto-sklearn/master/][Auto-sklearn]], [[https://epistasislab.github.io/tpot/][TPOT]], [[http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html][H20-AutoML]], [[https://autokeras.com][AutoKeras]].
 
-See also [[papers:he-2020-autom.pdf][he-2020-autom]].
+See also [[/Users/chl/Documents/Papers/he-2020-autom.pdf][he-2020-autom]].
 * [[/Users/chl/Documents/Papers/remm-2001-autom-clust.pdf][remm-2001-autom-clust]] - Automatic clustering of orthologs and in-paralogs from pairwise species comparisons
  :PROPERTIES:
  :Custom_ID: remm-2001-autom-clust
@@ -1257,7 +1257,7 @@ See also: [[/Users/chl/Documents/papers/pistone-2001-algeb-statis.pdf][pistone-2
  :Custom_ID: torres-2003-exact-formul
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/torres-2003-exact-formul.pdf
  :END:
-For two sequences of length 8 and 16 the number of alignments is ≅ 40•10^6. See also [[papers:lange-2002-mathem-statis.pdf][lange-2002-mathem-statis]].
+For two sequences of length 8 and 16 the number of alignments is ≅ 40•10^6. See also [[/Users/chl/Documents/Papers/lange-2002-mathem-statis.pdf][lange-2002-mathem-statis]].
 General formula:
 
 $$ f(n, m) = \sum_{k=0}^{\text{min}(n,m)} 2^k {m \choose k} {n \choose k}. $$
@@ -1308,7 +1308,7 @@ Advances in statistical modeling: transcriptome-wide association study and deep 
 
 Convolutional Neural Networks have at least a convolutional layer, which provides them the ability of automatic feature extraction from a contin- uous signal, e.g. DNA/RNA sequence (why is this treated as continuous?!).
 
-See also [[papers:zou-2019-primer-deep.pdf][zou-2019-primer-deep]].
+See also [[/Users/chl/Documents/Papers/zou-2019-primer-deep.pdf][zou-2019-primer-deep]].
 
 * [[/Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf][wasserman-2016-topol-data-analy]] - Topological Data Analysis
  :PROPERTIES:
@@ -1408,7 +1408,7 @@ Ioannidis's work on reproductibility and misuse of statistical hypothesis testin
  :Custom_ID: wu-2009-bacter-archaea
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wu-2009-bacter-archaea.pdf
  :END:
-See also [[papers:upham-2019-infer.pdf][upham-2019-infer]] and Mike Bostock's [[https://observablehq.com/@mbostock/tree-of-life][Tree of Life]].
+See also [[/Users/chl/Documents/Papers/upham-2019-infer.pdf][upham-2019-infer]] and Mike Bostock's [[https://observablehq.com/@mbostock/tree-of-life][Tree of Life]].
 * [[/Users/chl/Documents/Papers/wu-2014-novel-delaun.pdf][wu-2014-novel-delaun]] - Novel parallel algorithm for constructing delaunay triangulation based on a twofold-divide-and-conquer scheme
  :PROPERTIES:
  :Custom_ID: wu-2014-novel-delaun
