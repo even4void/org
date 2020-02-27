@@ -322,7 +322,9 @@ The authors rely on the whole-proteome sequences on the Feature Frequency Profil
  :Custom_ID: clifford-2010-statis-analy
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/clifford-2010-statis-analy.pdf
  :END:
-See also [[papers:ertl-2017-new-hyper.pdf][ertl-2017-new-hyper]] and [[https://github.com/evanmiller/SlowerLogLog][SlowerLogLog]] by Evan Miller.* [[/Users/chl/Documents/Papers/conery-2016-impos-handb.pdf][conery-2016-impos-handb]] - The Imposter's Handbook
+See also [[papers:ertl-2017-new-hyper.pdf][ertl-2017-new-hyper]] and [[https://github.com/evanmiller/SlowerLogLog][SlowerLogLog]] by Evan Miller.
+
+* [[/Users/chl/Documents/Papers/conery-2016-impos-handb.pdf][conery-2016-impos-handb]] - The Imposter's Handbook
  :PROPERTIES:
  :Custom_ID: conery-2016-impos-handb
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/conery-2016-impos-handb.pdf
@@ -629,7 +631,7 @@ When the data lack adequate case numbers for some combination of risk factor and
 
 *Causes:*
 
-- Few outcome events per variable (EPV),asmeasured by the number of failures per variable for Cox proportional hazards and Poisson regression, and the minimum of the numbers of cases and non-cases per variable for logistic regression (for conditional logistic regression, only the numbers within discordant matched sets should be counted)
+- Few outcome events per variable (EPV), as measured by the number of failures per variable for Cox proportional hazards and Poisson regression, and the minimum of the numbers of cases and non-cases per variable for logistic regression (for conditional logistic regression, only the numbers within discordant matched sets should be counted)
 - Variables with narrow distributions or with categories that are very uncommon
 - Variables that together almost perfectly predict the outcome (eg, if a combination of discrete covariate levels is found only among the study participants with outcome)
 - Variables that together almost perfectly predict the exposure (eg, if a combination of discrete covariate levels is found only among the study participants who are exposed).
@@ -641,7 +643,9 @@ When the data lack adequate case numbers for some combination of risk factor and
 - Exposure or treatment modelling (eg, propensity scoring, inverse-probability-of- treatment weighting)
 - Penalisation
 
-Penalization produces the most accurate estimates given the information in the penalty; data augmentation version is simple and feasible in all statistical software; can be used as a diagnostic tool for sparse data bias.* [[/Users/chl/Documents/Papers/gunawardena-2014-model.pdf][gunawardena-2014-model]] - Models in biology: 'accurate descriptions of our pathetic thinking'
+Penalization produces the most accurate estimates given the information in the penalty; data augmentation version is simple and feasible in all statistical software; can be used as a diagnostic tool for sparse data bias.
+
+* [[/Users/chl/Documents/Papers/gunawardena-2014-model.pdf][gunawardena-2014-model]] - Models in biology: 'accurate descriptions of our pathetic thinking'
  :PROPERTIES:
  :Custom_ID: gunawardena-2014-model
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gunawardena-2014-model.pdf
@@ -649,7 +653,7 @@ Penalization produces the most accurate estimates given the information in the p
 Emphasizes the role of forward modeling, especially with regard to causality.
 
 #+BEGIN_QUOTE
-Mathematical models come in a variety of flavors, depending on whether the state of a system is measured in discrete units (‘off’ and ‘on’), in continuous concentrations or as probability distributions and whether time and space are themselves treated discretely or continuously.
+Mathematical models come in a variety of flavors, depending on whether the state of a system is measured in discrete units ('off' and 'on'), in continuous concentrations or as probability distributions and whether time and space are themselves treated discretely or continuously.
 #+END_QUOTE
 
 * [[/Users/chl/Documents/Papers/gustedt-2018-moder-c.pdf][gustedt-2018-moder-c]] - Modern C
@@ -709,6 +713,15 @@ The first chapters are all about setting up a working environment for writing Cl
 
 Overall, the presentation is clear although it remains a bit rough (I mean like in draft mode) with lot of external links to learn more.
 
+* [[/Users/chl/Documents/Papers/hippel-2016-how.pdf][hippel-2016-how]] - How many imputations do you need? A two-stage calculation using a quadratic rule
+ :PROPERTIES:
+ :Custom_ID: hippel-2016-how
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hippel-2016-how.pdf
+ :END:
+See also [[https://statisticalhorizons.com/how-many-imputations]].
+
+1. First, carry out a pilot analysis. Impute the data using a convenient number of imputations. (20 imputations is a reasonable default, if it doesn’t take too long.) Estimate the FMI by analyzing the imputed data.
+2. Next, plug the estimated FMI into the formula above to figure out how many imputations you need to achieve a certain value of CV(SE). If you need more imputations than you had in the pilot, then add those imputations and analyze the data again.
 * [[/Users/chl/Documents/Papers/holme-2002-growin.pdf][holme-2002-growin]] - Growing scale-free networks with tunable clustering
  :PROPERTIES:
  :Custom_ID: holme-2002-growin
@@ -729,7 +742,7 @@ Identifying genuine orthologs among distantly related species is challenging, be
 
 This software uses 5 stages to alleviate such concern: (1) HGT filtering: Genes derived from HGT could be detected and deleted from the initial sequence data set by examining their base compositions. (2) Out-paralog filtering: Out-paralogs are detected and deleted from the data set based on sequence similarity. (3) Classification of phylogenetic trees: Phylogenetic trees generated for ortholog candidates are classified as monophyletic or polyphyletic trees. (4) Tree splitting: Polyphyletic trees are bisected to obtain monophyletic trees and remove HGT genes and out-paralogs. (5) Threshold changing: Out-paralogs are further excluded from the data set based on the difference in the similarity scores of genuine orthologs and out-paralogs.
 
-*Remark:* See [[~/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] for an intermediate approach (tolerate recent in-paralogs as unavoidable contamination).
+*Remark:* See [[/Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] for an intermediate approach (tolerate recent in-paralogs as unavoidable contamination).
 
 * [[/Users/chl/Documents/Papers/howe-2011-rna-seq-mev.pdf][howe-2011-rna-seq-mev]] - Rna-seq analysis in mev
  :PROPERTIES:
@@ -786,6 +799,18 @@ First, we show that our method recapitulates regulatory information from known s
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/izquierdo-carrasco-2011-algor.pdf
  :END:
 Design of a new search algorithm for large datasets: relies on a /backbone/ tree, to reduce the dimensionality of the search space; basically, the idea is to collapse taxa that are closely related to each other into a single virtual tip. The virtual tips are then interpreted as tips in the backbone tree on which we can conduct the tree search. Optimal tree size reduction factor: R > 0.25.
+
+* [[/Users/chl/Documents/Papers/jombart-2010-puttin.pdf][jombart-2010-puttin]] - Putting phylogeny into the analysis of biological traits: a methodological approach
+ :PROPERTIES:
+ :Custom_ID: jombart-2010-puttin
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jombart-2010-puttin.pdf
+ :END:
+Phylogenetic comparative methods (PIC, GLS, etc.) aim to correct for phylogeny (viewed as a nuisance factor) in the correlative analysis of biological traits at the species level.
+
+The authors present a method which uses phylogenetic information to uncover the main phylogenetic structures observable in multivariate data associated with a phylogeny. Our approach, phylogenetic principal component analysis (pPCA), extends a methodology developed in spatial ecology (Dray et al., 2008) and in spatial genetics (Jombart et al., 2008) to the analysis of phylogenetic structures in biological features of taxa such as life-history traits.
+
+- Dray, S., Saïd, S., Debias, F., 2008. Spatial ordination of vegetation data using a generalization of Wartenberg’s multivariate spatial correlation. Journal of Vegetation Science 19, 45–56.
+- Jombart, T., Devillard, S., Dufour, A.-B., Pontier, D., 2008. Revealing cryptic spatial patterns in genetic variability by a new multivariate method. Heredity 101, 92–103.
 
 * [[/Users/chl/Documents/Papers/jones-2004-introd-bioin-algor.pdf][jones-2004-introd-bioin-algor]] - An introduction to bioinformatics algorithms
  :PROPERTIES:
@@ -902,7 +927,7 @@ Horizontal Gene Transfer is viewed as a scale-free graph, allowing genes to prop
  :Custom_ID: laaksonen-2017-compet-progr-handb
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/laaksonen-2017-compet-progr-handb.pdf
  :END:
-When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike @conery-2016-impos-handb, it has more running code, and in a decent language (C++ 11). I wrote a little [[~/git/scratch/python/competitive.py][transcript]] in Python 3.x and wrote a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on aliquote.org.
+When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike [[papers:conery-2016-impos-handb.pdf][conery-2016-impos-hand]], it has more running code, and in a decent language (C++ 11). I wrote a little [[~/git/scratch/python/competitive.py][transcript]] in Python 3.x and wrote a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on aliquote.org.
 
 * [[/Users/chl/Documents/Papers/laan-2006-target-maxim.pdf][laan-2006-target-maxim]] - Targeted Maximum Likelihood Learning
  :PROPERTIES:
@@ -972,7 +997,7 @@ Better to sequence less reads but increase the number of biological replicates: 
  :END:
 NGS analyses (RNA, CHIP, etc.) need to account for within-group variance estimates when analysing lot of genes, hence the need to pool information across genes. The DESeq approach detects and corrects dispersion estimates that are too low through modeling of the dependence of the dispersion on the average expression strength over all samples. In addition, it provides a novel method for gene ranking and the visualization of stable estimates of effect sizes. The [[https://bioconductor.org/packages/release/bioc/html/DESeq2.html][DESeq2]] package further includes shrunken fold changes (with SE).
 
-See also: [[file:~/Documents/Papers/ignatiadis-2016-data.pdf][ignatiadis-2016-data]], [[file:~/Documents/papers/zhu-2019-heavy.pdf][zhu-2019-heavy]], [[file:~/Documents/Papers/stephens-2017-false.pdf][stephens-2017-false]].
+See also: [[file:/Users/chl/Documents/Papers/ignatiadis-2016-data.pdf][ignatiadis-2016-data]], [[file:/Users/chl/Documents/papers/zhu-2019-heavy.pdf][zhu-2019-heavy]], [[file:/Users/chl/Documents/Papers/stephens-2017-false.pdf][stephens-2017-false]].
 
 * [[/Users/chl/Documents/Papers/mccullagh-2002-what-statis-model.pdf][mccullagh-2002-what-statis-model]] - What is a statistical model
  :PROPERTIES:
@@ -1017,7 +1042,9 @@ This model can be used to simulate growth in semi-solid substrata like agar or s
  :Custom_ID: mitrophanov-2006-statis
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/mitrophanov-2006-statis.pdf
  :END:
-Review of sequence alignment score and the estimation of associated p-value in the case of single sequence studies (both score-based and score-free), global and local pairwise sequence alignments, multiple alignments, sequence-to-profile alignments and alignments built with hidden Markov models.* [[/Users/chl/Documents/Papers/neil-2018-moder-vim.pdf][neil-2018-moder-vim]] - Modern Vim: Craft Your Development Environment with Vim 8 and Neovim
+Review of sequence alignment score and the estimation of associated p-value in the case of single sequence studies (both score-based and score-free), global and local pairwise sequence alignments, multiple alignments, sequence-to-profile alignments and alignments built with hidden Markov models.
+
+* [[/Users/chl/Documents/Papers/neil-2018-moder-vim.pdf][neil-2018-moder-vim]] - Modern Vim: Craft Your Development Environment with Vim 8 and Neovim
  :PROPERTIES:
  :Custom_ID: neil-2018-moder-vim
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/neil-2018-moder-vim.pdf
@@ -1109,6 +1136,7 @@ for (i in 1:B) {
 pobs <-  (1 + sum(abs(s) > abs(s0))) / (B+1)
 #+END_SRC
 
+See also [[papers:efron-1986-boots-method.pdf][efron-1986-boots-method]].
 * [[/Users/chl/Documents/Papers/priyam-2019-sequen.pdf][priyam-2019-sequen]] - Sequenceserver: a modern graphical user interface for custom blast databases
  :PROPERTIES:
  :Custom_ID: priyam-2019-sequen
@@ -1234,7 +1262,9 @@ General formula:
 
 $$ f(n, m) = \sum_{k=0}^{\text{min}(n,m)} 2^k {m \choose k} {n \choose k}. $$
 
-Note that $\sum_{k=0}^n 2^k {n \choose k} = 3^n \leq f(n, n) \leq (1+\sqrt{2})^{2n}$.* [[/Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf][tsamardinos-2017-boots-out]] - Bootstrapping the out-of-sample predictions for efficient and accurate cross-validation
+Note that $\sum_{k=0}^n 2^k {n \choose k} = 3^n \leq f(n, n) \leq (1+\sqrt{2})^{2n}$.
+
+* [[/Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf][tsamardinos-2017-boots-out]] - Bootstrapping the out-of-sample predictions for efficient and accurate cross-validation
  :PROPERTIES:
  :Custom_ID: tsamardinos-2017-boots-out
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf
@@ -1278,7 +1308,9 @@ Advances in statistical modeling: transcriptome-wide association study and deep 
 
 Convolutional Neural Networks have at least a convolutional layer, which provides them the ability of automatic feature extraction from a contin- uous signal, e.g. DNA/RNA sequence (why is this treated as continuous?!).
 
-See also [[papers:zou-2019-primer-deep.pdf][zou-2019-primer-deep]].* [[/Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf][wasserman-2016-topol-data-analy]] - Topological Data Analysis
+See also [[papers:zou-2019-primer-deep.pdf][zou-2019-primer-deep]].
+
+* [[/Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf][wasserman-2016-topol-data-analy]] - Topological Data Analysis
  :PROPERTIES:
  :Custom_ID: wasserman-2016-topol-data-analy
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf
@@ -1369,7 +1401,7 @@ Up to 90% of positive results reported in psychology or psychiatry.
 
 HARKing: /Hypothesizing after Results are Known/---much like "data fishing", or to a lesser extent "data dredging".
 
-Ioannidis's work on reproductibility and misuse of statistical hypothesis testing framework: [[~/Documents/Papers/ioannidis-2005-why-most.pdf][ioannidis-2005-why-most]], [[~/Documents/papers/munafo-2017-manif-reprod-scien.pdf][munafo-2017-manif-reprod-scien]].
+Ioannidis's work on reproductibility and misuse of statistical hypothesis testing framework: [[/Users/chl/Documents/Papers/ioannidis-2005-why-most.pdf][ioannidis-2005-why-most]], [[/Users/chl/Documents/papers/munafo-2017-manif-reprod-scien.pdf][munafo-2017-manif-reprod-scien]].
 
 * [[/Users/chl/Documents/Papers/wu-2009-bacter-archaea.pdf][wu-2009-bacter-archaea]] - A phylogeny-driven genomic encyclopaedia of bacteria and archaea
  :PROPERTIES:

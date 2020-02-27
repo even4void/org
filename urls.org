@@ -1,4 +1,16 @@
 * Inbox
+** How many imputations do you need?
+   :PROPERTIES:
+   :ID:       660D28FD-062D-47D9-8925-8198468E2FCA
+   :END:
+ [2020-02-27 Thu 13:57]
+ https://statisticalhorizons.com/how-many-imputations
+** A Racket package for playing the TwixT board game
+   :PROPERTIES:
+   :ID:       1A7221B4-9C62-423D-B9B0-4C422DF7003E
+   :END:
+ [2020-02-27 Thu 13:57]
+ https://github.com/jackfirth/twixt
 ** Examples using emacs org mode babel inline source code with different backend languages
    :PROPERTIES:
    :ID:       B5BFEA18-96BF-4FD4-8211-66E4A6C7CBD7

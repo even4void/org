@@ -2,8 +2,8 @@
 #+AUTHOR: The author
 #+DATE: 26 February, 2020
 #+OPTIONS: num:nil H:2 ^:t |:t
-#+BABEL: :session *R* :dir "." :exports both :tangle yes
-
+#+PROPERTY: header-args:R :session *R* :tangle yes
+#+PROPERTY: header-args   :exports both
 
 #+BEGIN_SRC R :exports none
 library(xtable)
@@ -18,7 +18,7 @@ square(1:10)
 
 Here's a toy example to illustrate a linear regression:
 
-#+BEGIN_SRC R :results output :exports both
+#+BEGIN_SRC R :results value html
 n <- 100
 x <- runif(n)
 y <- 1 + 0.8*x + rnorm(n)
@@ -29,7 +29,7 @@ print(r, type = "html")
 
 Per the Babel doc:
 
-#+BEGIN_SRC R :file 1.png :session :results graphics file :exports result
+#+BEGIN_SRC R :file 1.png :results graphics file
 library(lattice)
 xyplot(1:10 ~ 1:10)
 #+END_SRC
@@ -37,10 +37,22 @@ xyplot(1:10 ~ 1:10)
 
 Holy church of Python!
 
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :session
 a = 27 // 4
-print(a)
+a
 #+END_SRC
+
+#+NAME: with-rownames
+| one | 1 | 2 | 3 | 4 |  5 |
+| two | 6 | 7 | 8 | 9 | 10 |
+
+#+BEGIN_SRC python :var tab=with-rownames :rownames yes
+return [[val + 10 for val in row] for row in tab]
+#+END_SRC
+
+#+RESULTS:
+| one | 11 | 12 | 13 | 14 | 15 |
+| two | 16 | 17 | 18 | 19 | 20 |
 
 Remember Elisp?
 
