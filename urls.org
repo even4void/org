@@ -1,4 +1,10 @@
 * Inbox
+** SHA1 and random IDs
+   :PROPERTIES:
+   :ID:       6130FA58-7300-4B80-977E-9B15A302CA8B
+   :END:
+ [2020-02-28 Fri 09:52]
+ https://stackoverflow.com/questions/9407892/how-to-generate-random-sha1-hash-to-use-as-id-in-node-js/14869745#14869745
 ** How many imputations do you need?
    :PROPERTIES:
    :ID:       660D28FD-062D-47D9-8925-8198468E2FCA
