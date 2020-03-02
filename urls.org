@@ -1,798 +1,828 @@
 * Inbox
-** SHA1 and random IDs
+** String match in sliding window                                              :algorithms:
+   :PROPERTIES:
+   :ID:       A3103D34-58C0-4E62-9EEE-D2A492548699
+   :END:
+ [2020-02-28 Fri 14:09]
+ https://stackoverflow.com/questions/15151628/string-match-in-sliding-window
+** Scheme Natural Language Toolkit                                             :racket:nlp:
+   :PROPERTIES:
+   :ID:       257E419D-5FB7-481E-A289-E1AB67D05F4A
+   :END:
+ [2020-02-28 Fri 12:32]
+ https://github.com/dcavar/SNLTK
+** Simple NLP toolkit for an undergraduate class in Racket                     :racket:nlp:
+   :PROPERTIES:
+   :ID:       78DADA44-797D-4BD2-A10C-859F44E8A79C
+   :END:
+ [2020-02-28 Fri 12:25]
+ https://github.com/wboag/Scheme-NLP
+** Practical Racket: Using a JSON REST API                                     :racket:
+   :PROPERTIES:
+   :ID:       47907AC0-7504-4364-902F-7894F1CC5CA9
+   :END:
+ [2020-02-28 Fri 12:23]
+ https://medium.com/chris-opperwall/practical-racket-using-a-json-rest-api-3d85eb11cc2d
+** Càdlàg                                                                      :maths:
+   :PROPERTIES:
+   :ID:       73EA278F-7F84-4282-AB15-654AD6E07462
+   :END:
+ [2020-02-28 Fri 11:07]
+ https://en.wikipedia.org/wiki/C%C3%A0dl%C3%A0g
+** SHA1 and random IDs                                                         :algorithms:
    :PROPERTIES:
    :ID:       6130FA58-7300-4B80-977E-9B15A302CA8B
    :END:
  [2020-02-28 Fri 09:52]
  https://stackoverflow.com/questions/9407892/how-to-generate-random-sha1-hash-to-use-as-id-in-node-js/14869745#14869745
-** How many imputations do you need?
+** How many imputations do you need?                                           :statistics:
    :PROPERTIES:
    :ID:       660D28FD-062D-47D9-8925-8198468E2FCA
    :END:
  [2020-02-27 Thu 13:57]
  https://statisticalhorizons.com/how-many-imputations
-** A Racket package for playing the TwixT board game
+** A Racket package for playing the TwixT board game                           :racket:
    :PROPERTIES:
    :ID:       1A7221B4-9C62-423D-B9B0-4C422DF7003E
    :END:
  [2020-02-27 Thu 13:57]
  https://github.com/jackfirth/twixt
-** Examples using emacs org mode babel inline source code with different backend languages
+** Examples using emacs org mode babel inline source code                      :emacs:org:
    :PROPERTIES:
    :ID:       B5BFEA18-96BF-4FD4-8211-66E4A6C7CBD7
    :END:
  [2020-02-26 Wed 20:32]
  https://github.com/dfeich/org-babel-examples
-** Vim Cheat Sheet
+** Vim Cheat Sheet                                                             :vim:
    :PROPERTIES:
    :ID:       DDBB121E-2AD1-4DF8-AC05-7D9B82C3EFEF
    :END:
  [2020-02-26 Wed 14:40]
  https://vim.rtorr.com/
-** Numpy-style docstring
+** Numpy-style docstring                                                       :python:numpy:
    :PROPERTIES:
    :ID:       30765F41-AACB-4AFE-9E46-9F57D595C720
    :END:
  [2020-02-26 Wed 13:25]
  https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard
-** Likelihood of a tree
+** Likelihood of a tree                                                        :bioinformatics:
    :PROPERTIES:
    :ID:       6F686781-FED4-44A2-AF29-00433C0978CC
    :END:
  [2020-02-26 Wed 11:33]
  https://www.cs.rice.edu/~ogilvie/comp571/2019/11/27/likelihood-of-a-tree.html
-** Tree comparisons
+** Tree comparisons                                                            :bioinformatics:
    :PROPERTIES:
    :ID:       2F00A3B8-05ED-46EB-A85B-A7072BA5DFDD
    :END:
  [2020-02-26 Wed 11:12]
  https://www.cs.rice.edu/~ogilvie/comp571/2018/10/18/tree-metrics.html
-** Rainbowing a set of pictures
+** Rainbowing a set of pictures                                                :rstats:
    :PROPERTIES:
    :ID:       B530FEAB-E0B4-4B3F-9D20-F114E3D46622
    :END:
  [2020-02-25 Tue 13:42]
  https://masalmon.eu/2018/01/07/rainbowing/
-** Create fractal trees using R
+** Create fractal trees using R                                                :rstats:
    :PROPERTIES:
    :ID:       5BC10AC4-EC0E-4FF3-9AF8-7E3E686DAC93
    :END:
  [2020-02-25 Tue 13:33]
  https://github.com/andrie/fractaltree/
-** Modern, functional Common Lisp: Myths and best practices
+** Modern, functional Common Lisp: Myths and best practices                    :lisp:
    :PROPERTIES:
    :ID:       0D4FF9F8-7E89-40C2-8352-452C1826D07B
    :END:
  [2020-02-25 Tue 13:15]
  https://ambrevar.xyz/modern-common-lisp/index.html
-** align genomic features with phylogenetic tree
+** align genomic features with phylogenetic tree                               :bioinformatics:
    :PROPERTIES:
    :ID:       1B204FC5-6F4E-4CFD-9828-428726554E45
    :END:
  [2020-02-24 Mon 15:37]
  http://guangchuangyu.github.io/2016/11/align-genomic-features-with-phylogenetic-tree/
-** Creating Cyclic Data in Racket
+** Creating Cyclic Data in Racket                                              :racket:
    :PROPERTIES:
    :ID:       E79C5669-07E7-47E6-8786-CCBAA25CD47A
    :END:
  [2020-02-24 Mon 15:17]
  http://jeapostrophe.github.io/2013-12-02-sharish-post.html
-** Sequence simulator
+** Sequence simulator                                                          :bioinformatics:
    :PROPERTIES:
    :ID:       48871E92-339B-4EFA-ADB7-6A2CF74F2A81
    :END:
  [2020-02-24 Mon 13:43]
  https://github.com/rambaut/Seq-Gen
-** bootstrap supports in large phylogenies
+** bootstrap supports in large phylogenies                                     :bioinformatics:
    :PROPERTIES:
    :ID:       10447636-FC95-4A82-81D6-344215719956
    :END:
  [2020-02-24 Mon 13:35]
  https://github.com/evolbioinfo/booster
-** E Ink color theme for Emacs
+** E Ink color theme for Emacs                                                 :emacs:
    :PROPERTIES:
    :ID:       026180F8-8D5C-4BBD-9FB3-67D04A4B4FD7
    :END:
  [2020-02-21 Fri 14:57]
  https://github.com/maio/eink-emacs
-** Neovim Clojure(Script) tooling over prepl
+** Neovim Clojure(Script) tooling over prepl                                   :vim:clojure:
    :PROPERTIES:
    :ID:       D79DFA03-3C80-49C5-B43B-27D64A27DAF3
    :END:
  [2020-02-21 Fri 14:21]
  https://github.com/Olical/conjure
-** Genome Interval Arithmetic in R
+** Genome Interval Arithmetic in R                                             :bioinformatics:rstats:
    :PROPERTIES:
    :ID:       35D28502-8EA2-4989-A40B-A7EA40222137
    :END:
  [2020-02-21 Fri 12:30]
  https://github.com/KlausVigo/valr
-** Embedded database in Rust
+** Embedded database in Rust                                                   :database:rust:
    :PROPERTIES:
    :ID:       17C2D2AA-4E8D-4B97-BA4B-2AB640CD81EC
    :END:
  [2020-02-21 Fri 11:19]
  https://github.com/spacejam/sled
-** Bayesian Phylogenetic Analysis
+** Bayesian Phylogenetic Analysis                                              :bioinformatics:bayesian:
    :PROPERTIES:
    :ID:       0D8FC7D8-584D-4F03-A9B2-774E12E21431
    :END:
  [2020-02-13 Thu 14:09]
  http://www.cbs.dtu.dk/dtucourse/cookbooks/gorm/27615/bayes1.php
-** Tutorial on Bayesian phylogenetic analysis
+** Tutorial on Bayesian phylogenetic analysis                                  :bioinformatics:bayesian:
    :PROPERTIES:
    :ID:       13DF1278-79D9-4E54-8245-51C4E9C1BC5E
    :END:
  [2020-02-13 Thu 14:05]
  https://github.com/thednainus/Bayesian_tutorial
-** Competitive Programming snippets
+** Competitive Programming snippets                                            :algorithms:
    :PROPERTIES:
    :ID:       AD3C22FE-4D30-4FEC-A741-F97F41D79FAA
    :END:
  [2020-02-12 Wed 11:30]
  https://github.com/sei40kr/competitive-programming-snippets/tree/4c59790fefa8d717f9c3d6bdeb9b4bfd3e039cbc
-** M-EMACS, a customized full-featured GNU Emacs configuration
+** M-EMACS, a customized full-featured GNU Emacs configuration                 :emacs:
    :PROPERTIES:
    :ID:       E2DEE741-03B3-415C-9871-6780AD835617
    :END:
  [2020-02-11 Tue 11:03]
  https://github.com/MatthewZMD/.emacs.d
-** Is a Dataframe Just a Table?
+** Is a Dataframe Just a Table?                                                :statistics:
    :PROPERTIES:
    :ID:       505CEBB3-FB55-4FE0-AC6B-4754B237E880
    :END:
  [2020-02-11 Tue 10:30]
  https://plateau-workshop.org/assets/papers-2019/10.pdf
-** Automatic parallelization with @jit
+** Automatic parallelization with @jit                                         :python:
    :PROPERTIES:
    :ID:       27DB6CA9-DCC4-438E-B007-CEB22CB9F943
    :END:
  [2020-02-10 Mon 16:17]
  http://numba.pydata.org/numba-doc/latest/user/parallel.html#numba-parallel
-** Les enchères en temps réel (RTB), un système complexe
+** Les enchères en temps réel (RTB), un système complexe                       :misc:
    :PROPERTIES:
    :ID:       0FBE2F94-66BF-45FB-BB39-C28A92118F18
    :END:
  [2020-02-07 Fri 15:41]
  missing value
-** Introduction to numerical analysis
+** Introduction to numerical analysis                                          :numerical:
    :PROPERTIES:
    :ID:       350B543D-6BF2-4D12-B9E8-8380DD8928CA
    :END:
  [2020-02-07 Fri 13:51]
  https://github.com/mitmath/18330
-** Steiner trees
+** Steiner trees                                                               :python:
    :PROPERTIES:
    :ID:       BB2DB7A8-DA2C-4171-9759-FF89D9724469
    :END:
  [2020-02-07 Fri 11:18]
  https://gis.stackexchange.com/questions/307336/generating-steiner-tree-using-network-x-in-python
-** Shortest path and networkx
+** Shortest path and networkx                                                  :python:graphs:
    :PROPERTIES:
    :ID:       20B4ADD5-76BA-4B3D-AE08-C55BEE7E78A0
    :END:
  [2020-02-07 Fri 11:16]
  http://cxhernandez.com/tutorials/networks/2015/03/29/shortest-path.html
-** Lessons From The History Of Attacks On Secure Hash Functions
+** Lessons From The History Of Attacks On Secure Hash Functions                :cryptography:
    :PROPERTIES:
    :ID:       A0F86983-044A-49B3-9D22-C56DD7CDF1F0
    :END:
  [2020-02-07 Fri 11:07]
  https://electriccoin.co/blog/lessons-from-the-history-of-attacks-on-secure-hash-functions/
-** Network analysis in Python
+** Network analysis in Python                                                  :python:graphs:
    :PROPERTIES:
    :ID:       3EB7245A-91F9-44DD-A537-D67B9696B363
    :END:
  [2020-02-05 Wed 14:34]
  https://github.com/wblakecannon/DataCamp/tree/master/21-network-analysis-in-python-(part-1)
-** Numpy group_by and set-operations
+** Numpy group_by and set-operations                                           :python:numpy:
    :PROPERTIES:
    :ID:       CB0654F2-3B00-46EB-8F34-7112213DB8F5
    :END:
  [2020-02-05 Wed 14:14]
  https://github.com/EelcoHoogendoorn/Numpy_arraysetops_EP
-** Docker implemented in around 100 lines of bash.
+** Docker implemented in around 100 lines of bash.                             :docker:
    :PROPERTIES:
    :ID:       C9E45947-38C1-4202-A943-A2AE77343600
    :END:
  [2020-02-05 Wed 09:12]
  https://github.com/p8952/bocker/blob/master/README.md
-** Using Emacs and Org Mode
+** Using Emacs and Org Mode                                                    :emacs:org:
    :PROPERTIES:
    :ID:       24470BB4-4CC5-479B-95EF-9320F6B29EB9
    :END:
  [2020-02-04 Tue 17:13]
  https://edom.github.io/emacs.html
-** LightGBM
+** LightGBM                                                                    :ml:
    :PROPERTIES:
    :ID:       04273433-C2AE-41B0-AA49-2A1EED54231E
    :END:
  [2020-02-04 Tue 14:10]
  https://github.com/Microsoft/LightGBM
-** Phylogenetic trees in Mathematica
+** Phylogenetic trees in Mathematica                                           :bioinformatics:mathematica:
    :PROPERTIES:
    :ID:       DBDBAB28-B4F7-4638-BEDA-78FCF72B9066
    :END:
  [2020-02-04 Tue 13:54]
  https://mathematica.stackexchange.com/questions/126496/how-to-work-with-phylogenetic-trees
-** NULL Values in SQL Queries
+** NULL Values in SQL Queries                                                  :sql:
    :PROPERTIES:
    :ID:       8A466E33-4D68-4965-AAA3-11EAD24DC62D
    :END:
  [2020-02-04 Tue 10:29]
  https://mitchum.blog/null-values-in-sql-queries/
-** Access your device's terminal from anywhere via the web
+** Access your device's terminal from anywhere via the web                     :misc:
    :PROPERTIES:
    :ID:       6E08324D-2D63-46A9-B7DB-C3FE41302E74
    :END:
  [2020-02-04 Tue 10:28]
  https://github.com/zhaojh329/rtty
-** Pathfinding Demystified
+** Pathfinding Demystified                                                     :graphs:
    :PROPERTIES:
    :ID:       6CF77F05-75F5-49DD-B11D-6D7EDCA746B8
    :END:
  [2020-02-04 Tue 10:26]
  https://gabrielgambetta.com/generic-search.html
-** Python package supporting heavy functional programming through currying
+** Python package supporting heavy functional programming through currying     :python:
    :PROPERTIES:
    :ID:       D0C3F993-A330-40F1-9394-03C7864C2F66
    :END:
  [2020-02-03 Lun 17:09]
  https://github.com/jackfirth/pyramda
-** Racket package template ready for Github
+** Racket package template ready for Github                                    :racket:
    :PROPERTIES:
    :ID:       CCEF9AE6-2809-4C44-B6DC-5FF3F4092407
    :END:
  [2020-02-03 Lun 17:08]
  https://github.com/jackfirth/racket-package-template
-** Looping in Scheme
+** Looping in Scheme                                                           :scheme:
    :PROPERTIES:
    :ID:       BE97043C-BDC4-4994-9944-3FF1C346580D
    :END:
  [2020-01-31 Fri 07:59]
  36:39: execution error: Non autorisé à envoyer des événements Apple à Safari. (-1743)
-** One-Hour Package (#rstats)
+** One-Hour Package (#rstats)                                                  :rstats:
    :PROPERTIES:
    :ID:       AEE93FCE-BE48-4FBA-9F4E-058545705573
    :END:
  [2020-01-30 Jeu 14:55]
  https://enpiar.com/2017/08/11/one-hour-package/
-** Columnar File Performance Check-in for Python and R: Parquet, Feather, and FST
+** Columnar File Performance Check-in: Parquet, Feather, and FST               :python:rstats:
    :PROPERTIES:
    :ID:       1F6577DC-F546-4C5A-8F8F-F52AC9487116
    :END:
  [2020-01-30 Jeu 14:52]
  https://ursalabs.org/blog/2019-10-columnar-perf/
-** Introducing Apache Arrow Flight: A Framework for Fast Data Transport
+** Introducing Apache Arrow Flight: A Framework for Fast Data Transport        :arrow:
    :PROPERTIES:
    :ID:       EFF072B8-5A33-477F-B051-537957FFBBF7
    :END:
  [2020-01-30 Jeu 14:51]
  https://arrow.apache.org/blog/2019/10/13/introducing-arrow-flight/
-** Speeding up R and Apache Spark using Apache Arrow
+** Speeding up R and Apache Spark using Apache Arrow                           :arrow:rstats:
    :PROPERTIES:
    :ID:       08C771B1-B476-4E70-AFBB-138A9623C926
    :END:
  [2020-01-30 Jeu 14:21]
  https://arrow.apache.org/blog/2019/01/25/r-spark-improvements/
-** Command-line Tools can be 235x Faster than your Hadoop Cluster
+** Command-line Tools can be 235x Faster than your Hadoop Cluster              :hadoop:cli:
    :PROPERTIES:
    :ID:       7541AC54-C5A8-41A9-85B6-F00095112B5C
    :END:
  [2020-01-30 Jeu 10:37]
  https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html
-** Sorting algorithms in C
+** Sorting algorithms in C                                                     :algorithms:clang:
    :PROPERTIES:
    :ID:       A8D76A87-94B4-4FFE-8246-68D6C6B508C8
    :END:
  [2020-01-30 Jeu 10:36]
  https://github.com/ismdeep/sort-algos-c
-** Find number of times a string occurs as a subsequence in given string
+** Find number of times a string occurs as a subsequence in given string       :algorithms:
    :PROPERTIES:
    :ID:       493B5663-7E90-4FAF-A87F-61427CA99C53
    :END:
  [2020-01-29 Mer 16:46]
  https://www.geeksforgeeks.org/find-number-times-string-occurs-given-string/
-** Introduction to Random Strings
+** Introduction to Random Strings                                              :algorithms:
    :PROPERTIES:
    :ID:       226229C8-AA3A-4E58-8DF2-7E0AA03EA6F6
    :END:
  [2020-01-29 Mer 13:30]
  https://saradoesbioinformatics.blogspot.com/2016/07/introduction-to-random-strings.html
-** Chaos Game Representation of a genetic sequence
+** Chaos Game Representation of a genetic sequence                             :bioinformatics:
    :PROPERTIES:
    :ID:       2A35A1B7-2D43-49A0-BB83-D904EE73D4F4
    :END:
  [2020-01-29 Mer 12:29]
  https://towardsdatascience.com/chaos-game-representation-of-a-genetic-sequence-4681f1a67e14
-** Standard prelude for Scheme (Programming Praxis)
+** Standard prelude for Scheme (Programming Praxis)                            :scheme:
    :PROPERTIES:
    :ID:       6B2D0823-A44D-476F-B1C6-5A0FC05BF2C1
    :END:
  [2020-01-28 Mar 16:00]
  https://programmingpraxis.com/contents/standard-prelude/
-** Standard Prelude for Haskell 98
+** Standard Prelude for Haskell 98                                             :haskell:
    :PROPERTIES:
    :ID:       6DB5C512-10F1-4355-99F3-3EE28B06A817
    :END:
  [2020-01-28 Mar 15:59]
  https://www.haskell.org/onlinereport/standard-prelude.html
-** Utilities for Gene Ontology enrichment analysis (C + Python)
+** Utilities for Gene Ontology enrichment analysis (C + Python)                :bioinformatics:
    :PROPERTIES:
    :ID:       9B33D3BD-496F-47D8-9AAD-BB6E25343016
    :END:
  [2020-01-28 Mar 10:36]
  https://github.com/thecodingdoc/GOUtil
-** Toolkit for genome assembly (feat. P. anserina)
+** Toolkit for genome assembly (feat. P. anserina)                             :bioinformatics:
    :PROPERTIES:
    :ID:       76C17EBB-8A9E-4448-8A3B-F4F41058A2B5
    :END:
  [2020-01-27 Lun 16:54]
  https://blobtoolkit.genomehubs.org/
-** Fun with Forms (Django)
+** Fun with Forms (Django)                                                     :python:django:
    :PROPERTIES:
    :ID:       3ADBE1C7-5874-4DC8-97A6-AF750C75DBD4
    :END:
  [2020-01-27 Lun 16:21]
  https://www.tangowithdjango.com/book/chapters/forms.html
-** GO Enrichment Analysis (using Galaxy)
+** GO Enrichment Analysis (using Galaxy)                                       :bioinformatics:
    :PROPERTIES:
    :ID:       75E88F4A-D506-4B9F-BFEF-6BE8787756CE
    :END:
  [2020-01-27 Lun 12:58]
  https://galaxyproject.github.io/training-material/topics/transcriptomics/tutorials/goenrichment/tutorial.html
-** Probability of finding a particular sequence of base pairs
+** Probability of finding a particular sequence of base pairs                  :bioinformatics:
    :PROPERTIES:
    :ID:       86ADA7BD-F71C-453A-93FF-159AF5FB4DD4
    :END:
  [2020-01-23 Jeu 15:40]
  https://stats.stackexchange.com/questions/26988/probability-of-finding-a-particular-sequence-of-base-pairs
-** Probability Of Finding A Dna Sequence In A Window
+** Probability Of Finding A Dna Sequence In A Window                           :bioinformatics:
    :PROPERTIES:
    :ID:       A7575339-593A-4FE3-8D48-D84300D204D4
    :END:
  [2020-01-23 Jeu 15:21]
  https://www.biostars.org/p/69354/
-** Why are you changing gc-cons-threshold?
+** Why are you changing gc-cons-threshold?                                     :emacs:
    :PROPERTIES:
    :ID:       B13887B6-7F5B-4116-8378-202DCC5854C9
    :END:
  [2020-01-22 Mer 15:12]
  http://bling.github.io/blog/2016/01/18/why-are-you-changing-gc-cons-threshold/
-** UnicodeMath: A Nearly Plain-Text Encoding of Mathematics
+** UnicodeMath: A Nearly Plain-Text Encoding of Mathematics                    :maths:misc:
    :PROPERTIES:
    :ID:       A30565D3-2507-4AE3-B4FC-67779A0EC3C6
    :END:
  [2020-01-22 Mer 14:47]
  https://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.1.pdf
-** Ten Little Algorithms, Part 1: Russian Peasant Multiplication
+** Ten Little Algorithms, Part 1: Russian Peasant Multiplication               :algorithms:
    :PROPERTIES:
    :ID:       7AE793C9-B2E6-4908-ABA8-3AA0E0771B6D
    :END:
  [2020-01-22 Mer 12:43]
  https://www.embeddedrelated.com/showarticle/760.php
-** Arithmetic articles, problems, and puzzles
+** Arithmetic articles, problems, and puzzles                                  :maths:
    :PROPERTIES:
    :ID:       3EC09A4B-FEB2-421D-A588-ABAC95A3433E
    :END:
  [2020-01-22 Mer 11:31]
  https://www.cut-the-knot.org/arithmetic.shtml
-** Le tutoriel Python
+** Le tutoriel Python                                                          :python:
    :PROPERTIES:
    :ID:       B96CF16C-0212-4F4F-B588-BD7781B2A545
    :END:
  [2020-01-22 Mer 09:13]
  https://docs.python.org/fr/3/tutorial/index.html
-** Global alignment and alignment extension
+** Global alignment and alignment extension                                    :bioinformatics:
    :PROPERTIES:
    :ID:       3078CF97-6EE7-4C99-92C9-6498911DBD9A
    :END:
  [2020-01-21 Mar 16:47]
  https://github.com/lh3/ksw2
-** Cleanup virtualfish env after Homebrew upgrade
+** Cleanup virtualfish env after Homebrew upgrade                              :python:cli:
    :PROPERTIES:
    :ID:       40099253-F7FF-4B62-9FDB-22A8D4F4C758
    :END:
  [2020-01-21 Mar 15:06]
  https://stackoverflow.com/questions/23233252/broken-references-in-virtualenvs
-** Rope (data structure)
+** Rope (data structure)                                                       :algorithms:
    :PROPERTIES:
    :ID:       4D2A9DDA-434B-4827-BDC6-F7E742D14DBA
    :END:
  [2020-01-21 Mar 13:56]
  https://en.wikipedia.org/wiki/Rope_(data_structure)
-** A Definition of Closures
+** A Definition of Closures                                                    :lisp:
    :PROPERTIES:
    :ID:       9BC47136-8BFF-4F54-8B5B-87042FD14A01
    :END:
  [2020-01-21 Mar 13:51]
  http://gafter.blogspot.com/2007/01/definition-of-closures.html
-** UNIX Syscalls
+** UNIX Syscalls                                                               :unix:
    :PROPERTIES:
    :ID:       DEE9E033-30EC-411C-9B37-D7AA3D232C13
    :END:
  [2020-01-21 Mar 13:00]
  http://fungi-db.herokuapp.com/view/956
-** Obfuscated Vim code
+** Obfuscated Vim code                                                         :vim:
    :PROPERTIES:
    :ID:       D24E671E-3AFB-4C3B-9AF7-26FB100F1E17
    :END:
  [2020-01-21 Mar 12:29]
  https://www.linusakesson.net/programming/vim/index.php
-** Fun with .Rprofile and customizing R startup
+** Fun with .Rprofile and customizing R startup                                :rstats:
    :PROPERTIES:
    :ID:       566F5F08-B411-4BEF-B49A-C1DA051F77A3
    :END:
  [2020-01-21 Mar 11:57]
  https://www.r-bloggers.com/fun-with-rprofile-and-customizing-r-startup/
-** Nice org config for Doom Emacs
+** Nice org config for Doom Emacs                                              :emacs:
    :PROPERTIES:
    :ID:       86F7E323-8CA4-4CC2-BBB2-4C684CCC18D0
    :END:
  [2020-01-21 Mar 09:50]
  https://github.com/nmartin84/.doom.d
-** xsv is a command line program for indexing, slicing, analyzing, splitting and joining CSV files.
+** xsv for indexing, slicing, analyzing, splitting and joining CSV files.      :misc:
    :PROPERTIES:
    :ID:       BE4EBCDE-87CE-48E6-9DA9-28A7E2DB062D
    :END:
  [2020-01-20 Lun 14:27]
  https://github.com/BurntSushi/xsv
-** Why is quicksort better than other sorting algorithms in practice?
+** Why is quicksort better than other sorting algorithms in practice?          :algorithms:
    :PROPERTIES:
    :ID:       F6AB06B2-AC16-433E-8C0E-0E38F095BED3
    :END:
  [2020-01-20 Lun 14:23]
  https://cs.stackexchange.com/questions/3/why-is-quicksort-better-than-other-sorting-algorithms-in-practice
-** Ergolib is a disparate collection of utilities designed to make programming in Common Lisp easier.
+** Ergolib to make programming in Common Lisp easier.                          :lisp:
  [2020-01-20 Lun 12:28]
  https://github.com/rongarret/ergolib
-** Lisping at JPL
+** Lisping at JPL                                                              :lisp:
  [2020-01-20 Lun 12:26]
  http://flownet.com/gat/jpl-lisp.html
-** R7RS SRFI implementations
+** R7RS SRFI implementations                                                   :scheme:
    :PROPERTIES:
    :ID:       99259404-1186-4D3B-900B-31A0B1DD2214
    :END:
  [2020-01-17 Ven 09:55]
  https://github.com/TaylanUB/scheme-srfis
-** New C standard online
+** New C standard online                                                       :clang:
    :PROPERTIES:
    :ID:       AF334E61-74CF-4EC4-8C51-3D47778C5720
    :END:
  [2020-01-16 Jeu 14:03]
  http://c0x.coding-guidelines.com/
-** A new algorithm for finding a visual center of a polygon
+** A new algorithm for finding a visual center of a polygon                    :algorithms:
    :PROPERTIES:
    :ID:       065D983B-B7AD-442A-9BFE-035D0163B1E4
    :END:
  [2020-01-15 Mer 16:44]
  https://blog.mapbox.com/a-new-algorithm-for-finding-a-visual-center-of-a-polygon-7c77e6492fbc
-** OpenGL Setup in macOS
+** OpenGL Setup in macOS                                                       :misc:
    :PROPERTIES:
    :ID:       92787029-EAEF-4601-B3A6-350C402A229B
    :END:
  [2020-01-15 Mer 15:48]
  https://giovanni.codes/opengl-setup-in-macos/
-** Using OpenGL with Common Lisp
+** Using OpenGL with Common Lisp                                               :lisp:
    :PROPERTIES:
    :ID:       5C70E4EF-31ED-412C-A4AB-17D4F8C33304
    :END:
  [2020-01-15 Mer 15:47]
  https://markbrown778.wordpress.com/2013/04/14/using-opengl-with-common-lisp-and-macos-x/
-** PyOxidizer is a utility for producing binaries that embed Python
+** PyOxidizer is a utility for producing binaries that embed Python            :python:
    :PROPERTIES:
    :ID:       98B97236-C191-459B-B33E-C272ED776925
    :END:
  [2020-01-14 Mar 15:40]
  https://github.com/indygreg/PyOxidizer
-** Why I Keep a Research Blog
+** Why I Keep a Research Blog                                                  :misc:
    :PROPERTIES:
    :ID:       AB0432DE-F04D-40E9-9356-8DC480EA5B5A
    :END:
  [2020-01-13 Lun 16:09]
  http://gregorygundersen.com/blog/2020/01/12/why-research-blog/
-** Heap in Lisp
+** Heap in Lisp                                                                :lisp:
    :PROPERTIES:
    :ID:       597DF12D-8CCC-479E-8D02-2C66C9147E06
    :END:
  [2020-01-10 Ven 19:44]
  http://gms.freeshell.org/lisp-heap/heap.txt
-** List of terms relating to algorithms and data structures
+** List of terms relating to algorithms and data structures                    :algorithms:
    :PROPERTIES:
    :ID:       A707DBDC-12C6-490F-B1BA-3363F79D77E3
    :END:
  [2020-01-10 Ven 14:14]
  https://en.m.wikipedia.org/wiki/List_of_terms_relating_to_algorithms_and_data_structures
-** Graph structures in C
+** Graph structures in C                                                       :graphs:clang:
    :PROPERTIES:
    :ID:       1880D01C-3DED-411D-82E1-90ECD80199D0
    :END:
  [2020-01-10 Ven 14:08]
  https://www.techiedelight.com/implement-graph-data-structure-c/
-** Parallel Processing in Python
+** Parallel Processing in Python                                               :python:
    :PROPERTIES:
    :ID:       0B8A54E0-3287-48ED-94F0-25DCB730A5E0
    :END:
  [2020-01-09 Jeu 14:22]
  https://stackabuse.com/parallel-processing-in-python/
-** Data science for economists
+** Data science for economists                                                 :econ:
    :PROPERTIES:
    :ID:       DDACF1F5-448A-4C1B-A366-B3363DA1CF3E
    :END:
  [2020-01-09 Jeu 10:35]
  https://github.com/uo-ec607/lectures
-** Parallel programming using R
+** Parallel programming using R                                                :rstats:
    :PROPERTIES:
    :ID:       EBD078FF-4EAD-4FCB-A480-205C497BAEFA
    :END:
  [2020-01-09 Jeu 10:33]
  https://raw.githack.com/uo-ec607/lectures/master/12-parallel/12-parallel.html#beware_resource_competition
-** Scientific computing with Rust
+** Scientific computing with Rust                                              :rust:
    :PROPERTIES:
    :ID:       C6A81828-DD6F-44D7-9DAF-D045E59AA5AF
    :END:
  [2020-01-08 Mer 14:27]
  https://rust-sci.github.io/
-** Rust crates for numerical simulation
+** Rust crates for numerical simulation                                        :rust:numerical:
    :PROPERTIES:
    :ID:       C870B658-9B7B-4A21-B991-DBCB46C3E273
    :END:
  [2020-01-08 Mer 14:25]
  https://rustsim.org/
-** Convert .py to .exe
+** Convert .py to .exe                                                         :python:cli:
    :PROPERTIES:
    :ID:       B7147882-7981-4B8A-87B2-EDE9EC8D3989
    :END:
  [2020-01-08 Mer 12:02]
  https://nitratine.net/blog/post/convert-py-to-exe/
-** ZSH higher order functions
+** ZSH higher order functions                                                  :cli:
    :PROPERTIES:
    :ID:       401DF046-A368-42AA-883E-8E8C02173CFE
    :END:
  [2020-01-07 Mar 14:34]
  https://github.com/yogsototh/zsh_functional
-** Gamma function
+** Gamma function                                                                     :statistics:
    :PROPERTIES:
    :ID:       0323F358-24F3-48C3-ADF9-0E119DDE694F
    :END:
  [2020-01-07 Mar 08:09]
  https://probabilityandstats.wordpress.com/2017/08/20/the-gamma-function/
-** Cryptographic libraries for R6RS Scheme
+** Cryptographic libraries for R6RS Scheme                                     :cryptography:scheme:
    :PROPERTIES:
    :ID:       F29F5FF0-6820-4A0F-86FA-D9F6C856DD2F
    :END:
  [2020-01-06 Lun 11:46]
  https://github.com/weinholt/industria
-** Algebric data types and unordered effects
+** Algebric data types and unordered effects                                   :cattheo:
    :PROPERTIES:
    :ID:       08EDD394-A676-4550-96D3-443B2F87640E
    :END:
  [2020-01-06 Lun 11:24]
  https://www.reddit.com/r/haskell/comments/ej8fme/unordered_effects/fd00mk2/
-** Why do Racket hash literals (i.e. #hash()) automatically quote
+** Why do Racket hash literals (i.e. #hash()) automatically quote              :racket:
    :PROPERTIES:
    :ID:       6C09B3DB-725D-4F96-862B-9B0C23D16E79
    :END:
  [2020-01-06 Lun 11:22]
  https://www.reddit.com/r/Racket/comments/ehwz0j/why_do_racket_hash_literals_ie_hash_automatically/fcmb1e5/?context=3
-** Neighbour sensing model for fungi growth
+** Neighbour sensing model for fungi growth                                    :bioinformatics:
  [2019-12-18 Wed 12:07]
  http://www.davidmoore.org.uk/CyberWEB/Cyber04.htm
-** Generative Hyphae Growth Algorithm
+** Generative Hyphae Growth Algorithm                                          :algorithms:
  [2019-12-18 Wed 12:01]
  https://github.com/shaanappel/generative-hyphae-3d
-** Hyphal branching using Processing
+** Hyphal branching using Processing                                           :processing:
  [2019-12-18 Wed 11:13]
  http://www.iaacblog.com/programs/introduction-processing-hyphal-branching/
-** Xylem and hyphae network
+** Xylem and hyphae network                                                    :bioinformatics:
  [2019-12-18 Wed 11:10]
  https://n-e-r-v-o-u-s.com/blog/?p=1218
-** Let's Write an LLVM Specializer for Python!
+** Let's Write an LLVM Specializer for Python!                                 :python:llvm:
  [2019-12-18 Wed 10:58]
  http://dev.stephendiehl.com/numpile/
-** Implementing a JIT Compiled Language with Haskell and LLVM
+** Implementing a JIT Compiled Language with Haskell and LLVM                  :haskell:llvm:
  [2019-12-18 Wed 10:56]
  http://www.stephendiehl.com/llvm/
-** Step-by-Step Guide to Implement Machine Learning
+** Step-by-Step Guide to Implement Machine Learning                            :ml:
  [2019-12-17 Tue 08:30]
  https://www.codeproject.com/Articles/5061034/Step-by-Step-Guide-to-Implement-Machine-Learning-6
-** The Racket Foreign-Function Interface
+** The Racket Foreign-Function Interface                                       :racket:
  [2019-12-16 Mon 16:23]
  http://www.cs.grinnell.edu/~rebelsky/Glimmer/Summer2012/RacketFFI/tutorial.html
-** Tutorial: Using Racket’s FFI (3 parts)
+** Tutorial: Using Racket’s FFI (3 parts)                                      :racket:
  [2019-12-16 Mon 15:59]
  http://prl.ccs.neu.edu/blog/2016/06/27/tutorial-using-racket-s-ffi/
-** Tutorial: Using Racket’s FFI
+** Tutorial: Using Racket’s FFI                                                :racket:
  [2019-12-16 Mon 13:51]
  https://prl.ccs.neu.edu/blog/2016/06/27/tutorial-using-racket-s-ffi/
-** A (mostly) comprehensive guide to calling C from Scheme and vice versa
+** A (mostly) comprehensive guide to calling C from Scheme and vice versa      :scheme:clang:
  [2019-12-16 Mon 13:49]
  https://www.more-magic.net/posts/scheme-c-integration.html
-** Dash Bio is a suite of bioinformatics components
+** Dash Bio is a suite of bioinformatics components                            :plotly:
  [2019-12-13 Fri 10:42]
  https://github.com/plotly/dash-bio
-** Heroku buildpack for R
+** Heroku buildpack for R                                                      :heroku:rstats:
  [2019-12-13 Fri 10:41]
  https://github.com/virtualstaticvoid/heroku-buildpack-r/tree/heroku-16
-** No Pain - No Gain: Using Clojure for Web Apps
+** No Pain - No Gain: Using Clojure for Web Apps                               :clojure:
  [2019-12-12 Thu 18:02]
  https://github.com/tbsschroeder/using-clojure-for-web-apps
-** Functional Data Structures in Typed Racket
+** Functional Data Structures in Typed Racket                                  :racket:
  [2019-12-11 Wed 14:45]
  https://docs.racket-lang.org/functional-data-structures/index.html
-** Scheme/Racket course
+** Scheme/Racket course                                                        :racket:scheme:
  [2019-12-11 Wed 12:32]
  https://courses.cs.washington.edu/courses/cse341/18sp/racket/
-** Microbenchmark in Racket
+** Microbenchmark in Racket                                                    :racket:
  [2019-12-10 Tue 19:39]
  https://www.travishinkelman.com/post/microbenchmarking-in-r-and-racket/
-** Racket and docstrings using at-exp
+** Racket and docstrings using at-exp                                          :racket:
  [2019-12-10 Tue 16:09]
  https://stackoverflow.com/questions/58981544/docstrings-in-racket
-** Challenge: find Twitter memes with suffix arrays
+** Challenge: find Twitter memes with suffix arrays                            :algorithms:
  [2019-12-09 Mon 14:54]
  https://jvns.ca/blog/twitter-memes-challenge/
-** Pharmaceutical Modeling and Simulation for Nonlinear Mixed Effects using Julia
+** Pharmaceutical Modeling and Simulation for NL Mixed Effects using Julia     :julia:statistics:
  [2019-12-09 Mon 10:30]
  https://github.com/PumasAI/Pumas.jl
-** Templates Django
+** Templates Django                                                            :python:django:
  [2019-12-05 Thu 20:09]
  https://tutorial.djangogirls.org/fr/template_extending/
-** Django Photo Gallery Sample
+** Django Photo Gallery Sample                                                 :python:django:
  [2019-12-04 Wed 13:37]
  https://github.com/VelinGeorgiev/django-photo-gallery
-** Useful tips & tricks for R (and more)
+** Useful tips & tricks for R (and more)                                       :rstats:
  [2019-12-04 Wed 13:20]
  https://github.com/hbc/knowledgebase/blob/master/r/R-tips-and-tricks.md
-** Genome browser tracks using Python
+** Genome browser tracks using Python                                          :bioinformatics:python:
  [2019-12-03 Tue 15:19]
  https://pythonawesome.com/python-module-to-plot-beautiful-and-highly-customizable-genome-browser-tracks/
-** Coupled events with Shiny and Plotly in R
+** Coupled events with Shiny and Plotly in R                                   :rstats:shiny:
  [2019-11-28 Thu 16:23]
  https://plot.ly/r/shiny-coupled-events/
-** Visualizing Algorithms
+** Visualizing Algorithms                                                      :algorithms:
  [2019-11-27 Wed 12:52]
  https://bost.ocks.org/mike/algorithms/
-** Docker Cleanup Commands
+** Docker Cleanup Commands                                                     :docker:
  [2019-11-26 Tue 10:41]
  https://www.calazan.com/docker-cleanup-commands/
-** Neat Rust Tricks: Passing Rust Closures to C
+** Neat Rust Tricks: Passing Rust Closures to C                                :rust:
  [2019-11-26 Tue 10:32]
  https://blog.seantheprogrammer.com/neat-rust-tricks-passing-rust-closures-to-c
-** Scheme and Fibonacci
+** Scheme and Fibonacci                                                        :scheme:
  [2019-11-25 Mon 10:51]
  https://www.reddit.com/r/scheme/comments/114jaj/nth_fibonacci_numbers_with_the_golden_ratioracket/
-** How to Override CSS Styles in Jekyll
+** How to Override CSS Styles in Jekyll                                        :misc:
  [2019-11-20 Wed 16:56]
  alias: Expected at most 2 args, got 3
  https://tomkadwill.com/2017/12/16/how-to-override-css-styles-in-jekyll.html
-** Fundamentals of Machine Learning Course at DSR
+** Fundamentals of Machine Learning Course at DSR                              :ml:
  [2019-11-20 Wed 12:53]
  https://github.com/dvgodoy/ML_Fundamentals
-** Advanced Python
+** Advanced Python                                                             :python:
  [2019-11-20 Wed 12:45]
  https://github.com/krother/advanced_python
-** Lot of useful config for neovim/zsh/tmux
+** Lot of useful config for neovim/zsh/tmux                                    :vim:tmux:
  [2019-11-19 Tue 15:34]
  https://github.com/iamrecursion/dotfiles
-** LSP for (neo)vim
+** LSP for (neo)vim                                                            :vim:
  [2019-11-19 Tue 14:20]
  https://github.com/neoclide
-** Fisher–Yates shuffle
+** Fisher–Yates shuffle                                                        :statistics:
  [2019-11-19 Tue 13:15]
  https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
-** DendroPy Phylogenetic Computing Library
+** DendroPy Phylogenetic Computing Library                                     :bioinformatics:
  [2019-11-19 Tue 12:26]
  https://dendropy.org/
-** Flask and Apache WSGI
+** Flask and Apache WSGI                                                       :python:flask:
  [2019-11-19 Tue 12:12]
  https://www.bogotobogo.com/python/Flask/Python_Flask_HelloWorld_App_with_Apache_WSGI_Ubuntu14.php
-** Configurer un webservice Python Flask sur Apache HTTPD
+** Configurer un webservice Python Flask sur Apache HTTPD                      :python:flask:
  [2019-11-19 Tue 12:11]
  https://www.security-helpzone.com/2017/07/03/apache-httpd-configurer-mod_wsgi-pour-utiliser-python-3-flask/
-** Recognizing graphs from images
+** Recognizing graphs from images                                              :graphs:
  [2019-11-19 Tue 12:02]
  https://www.yworks.com/blog/projects-optical-graph-recognition
-** Changes the current Ruby
+** Changes the current Ruby                                                    :ruby:
  [2019-11-18 Mon 11:01]
  https://github.com/postmodern/chruby
-** Comparative Genomics with R
+** Comparative Genomics with R                                                 :bioinformatics:rstats:
  [2019-11-18 Mon 10:38]
  https://hajkd.github.io/orthologr/index.html
-** Introduction to mlr3
+** Introduction to mlr3                                                        :rstats:ml:
  [2019-11-18 Mon 10:23]
  https://github.com/mlr-org/mlr3book
-** Programming For Biology 2019
+** Programming For Biology 2019                                                :bioinformatics:
 [2019-11-13 Wed 13:02]
 https://github.com/prog4biol/pfb2019
-** Programming Talks
+** Programming Talks                                                           :misc:
 [2019-11-07 Jeu 14:29]
 https://github.com/hellerve/programming-talks#hackett
-** A systematic review of health effects of electronic cigarettes
+** A systematic review of health effects of electronic cigarettes              :misc:
 [2019-11-07 Jeu 14:16]
 https://www.who.int/tobacco/industry/product_regulation/BackgroundPapersENDS3_4November-.pdf
-** Making a Simple Website with Flask
+** Making a Simple Website with Flask                                          :python:flask:
 [2019-11-05 Tue 13:21]
 http://oliverelliott.org/article/computing/notes_labsite/
-** AWS for Bioinformatics
+** AWS for Bioinformatics                                                      :bioinformatics:
 [2019-11-05 Tue 13:18]
 http://oliverelliott.org/article/computing/tut_bio_aws_2/
-** which is the meaning of scatterplot between a pair of 2 consecutive pseudo random numbers with respect to the independence of the sequence?
+** scatterplot between a pair of 2 consecutive pseudo random numbers           :maths:
 [2019-11-04 Mon 10:33]
 https://stats.stackexchange.com/questions/433029/which-is-the-meaning-of-scatterplot-between-a-pair-of-2-consecutive-pseudo-rando/434151#434151
-** Remote Desktop Roundup: TeamViewer vs. Splashtop vs. Windows RDP
+** Remote Desktop Roundup: TeamViewer vs. Splashtop vs. Windows RDP            :misc:
 [2019-10-30 Wed 11:24]
 https://www.howtogeek.com/257655/remote-desktop-roundup-teamviewer-vs.-splashtop-vs.-windows-rdp/
-** How to Lock Down TeamViewer for More Secure Remote Access
+** How to Lock Down TeamViewer for More Secure Remote Access                   :misc:
 [2019-10-30 Wed 11:19]
 https://www.howtogeek.com/257376/how-to-lock-down-teamviewer-for-more-secure-remote-access/
-** How secure is TeamViewer for simple remote support?
+** How secure is TeamViewer for simple remote support?                         :misc:
 [2019-10-30 Wed 11:15]
 https://security.stackexchange.com/questions/12152/how-secure-is-teamviewer-for-simple-remote-support
-** Complete list of zsh themes
+** Complete list of zsh themes                                                 :cli:
 [2019-10-30 Wed 10:15]
 https://zshthem.es/all/
-** Owl Numerical System
+** Owl Numerical System                                                        :ocaml:
 [2019-10-30 Wed 09:38]
 https://ocaml.xyz/chapter/index.html
-** Stupid Unix Tricks
+** Stupid Unix Tricks                                                          :unix:cli:
 [2019-10-17 Thu 17:06]
 https://sneak.berlin/20191011/stupid-unix-tricks/
-** How to secure remote access to a Linux server (without SSH keys)
+** How to secure remote access to a Linux server (without SSH keys)            :misc:
 [2019-10-17 Thu 17:04]
 https://medium.com/@chrislange/how-to-secure-remote-access-to-a-linux-server-without-ssh-keys-61a1aa099cfc
-** Creating a Permanent SSH Tunnel Back to Your Mac at Home
+** Creating a Permanent SSH Tunnel Back to Your Mac at Home                    :misc:
 [2019-10-16 Wed 12:04]
 https://tyler.io/creating-a-permanent-ssh-tunnel-back-to-your-mac-at-home/
-** Master Git (part 1)
+** Master Git (part 1)                                                         :git:
 [2019-10-15 Tue 10:49]
 http://artemstar.com/2017/03/26/git/
-** How to Install and Dual Boot Linux and Mac OS
+** How to Install and Dual Boot Linux and Mac OS                               :misc:
 [2019-10-15 Tue 08:53]
 https://www.lifewire.com/dual-boot-linux-and-mac-os-4125733
-** How to Install Ubuntu on a MacBook Pro
+** How to Install Ubuntu on a MacBook Pro                                      :misc:
 [2019-10-15 Tue 08:51]
 https://laptop.ninja/how-to-install-ubuntu-on-a-macbook-pro/
-** tmux in practice: iTerm2 and tmux
+** tmux in practice: iTerm2 and tmux                                           :tmux:cli:
 [2019-10-14 Mon 16:56]
 https://www.freecodecamp.org/news/tmux-in-practice-iterm2-and-tmux-integration-7fb0991c6c01/
-** Tmux Cheat Sheet & Quick Reference
+** Tmux Cheat Sheet & Quick Reference                                          :tmux:
 [2019-10-14 Mon 16:45]
 https://tmuxcheatsheet.com/
-** SSH and tmux
+** SSH and tmux                                                                :tmux:
 [2019-10-14 Mon 15:22]
 https://github.com/ernestk-git/data-scientist-ish/wiki/ssh-tmux?source=post_page---------------------------
-** Using virtualenv with fish shell
+** Using virtualenv with fish shell                                            :python:cli:
 [2019-10-09 Wed 14:59]
 https://riptutorial.com/python/example/9956/using-virtualenv-with-fish-shell
-** Teaching Materials for genome assembly and mapping
+** Teaching Materials for genome assembly and mapping                          :bioinformatics:
 [2019-10-09 Wed 13:44]
 http://www.langmead-lab.org/teaching-materials/
-** bcbio-nextgen
+** bcbio-nextgen                                                               :bioinformatics:
 [2019-10-08 Tue 15:44]
 https://bcbio-nextgen.readthedocs.io/en/latest/contents/introduction.html
-** Suffix arrays: How to compute them fast with Python
+** Suffix arrays: How to compute them fast with Python                         :algorithms:python:
 [2019-10-08 Tue 15:25]
 https://louisabraham.github.io/notebooks/suffix_arrays.html
-** Accurate design of in vitro experiments -- Why does it matter?
+** Accurate design of in vitro experiments -- Why does it matter?              :bioinformatics:
 [2019-10-08 Tue 11:46]
 https://paasp.net/accurate-design-of-in-vitro-experiments-why-does-it-matter/
-** Introduction to RNA-Seq using high-performance computing
+** Introduction to RNA-Seq using high-performance computing                    :bioinformatics:
 [2019-10-08 Tue 10:03]
 https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon/schedule/
-** Lectures for Mathematics 361 (feat. Number Theory)
+** Lectures for Mathematics 361 (feat. Number Theory)                          :maths:numtheo:
 [2019-10-07 Mon 10:35]
 http://people.reed.edu/~jerry/361/lectures/lec.html
-** Hidden features of Python [closed]
+** Hidden features of Python [closed]                                          :python:
 [2019-10-07 Mon 10:09]
 https://stackoverflow.com/questions/101268/hidden-features-of-python
-** Automatic parallelization with @jit
+** Automatic parallelization with @jit                                         :python:
 [2019-10-04 Fri 14:44]
 http://numba.pydata.org/numba-doc/latest/user/parallel.html#explicit-parallel-loops
-** Nice tutorial on genome assembly
+** Nice tutorial on genome assembly                                            :bioinformatics:
 [2019-10-02 Wed 14:17]
 https://homolog.us/Tutorials/book4/p2.1.html
-** More on pipe operators in R
+** More on pipe operators in R                                                 :rstats:
 [2019-10-02 Wed 13:42]
 https://www.datacamp.com/community/tutorials/pipe-r-tutorial
 * Archives
