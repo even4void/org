@@ -1450,3 +1450,10 @@ Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][cones
 - Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
 
 See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
+* [[/Users/chl/Documents/Papers/egidi-2020-ascom.pdf][egidi-2020-ascom]] - A few ascomycota taxa dominate soil fungal communities worldwide
+ :PROPERTIES:
+ :Custom_ID: egidi-2020-ascom
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/egidi-2020-ascom.pdf
+ :END:
+Authors interested in characterizing the identity, global distribution and ecology of dominant soil fungi, based on the analysis of 235 sites distributed across 6 continents.
+*Results:* 83 dominant fungal phylotypes, where the most ubiquitous fungi found were members of the Pezizomycotina (≥98% match), including Sordariomycetes (/Podospora/ and /Chaetomium/), and showed similar level of relative abundance among the sampled habitats.
