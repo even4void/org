@@ -1479,3 +1479,9 @@ See also the [[https://thibautjombart.github.io/treespace/][treespace]] R packag
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/mcmurdie-2013-phylos.pdf
  :END:
 See also [[papers:mcmurdie-2011-phylos.pdf][mcmurdie-2011-phylos]] and [[http://joey711.github.io/phyloseq/][phyloseq: Explore microbiome profiles using R]].
+* [[/Users/chl/Documents/Papers/soicher-2004-algor-mathem.pdf][soicher-2004-algor-mathem]] - Algorithmic Mathematics
+ :PROPERTIES:
+ :Custom_ID: soicher-2004-algor-mathem
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/soicher-2004-algor-mathem.pdf
+ :END:
+Basic overview of number theory and related algorithms, with several exercises and tips at the end.

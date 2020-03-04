@@ -1,4 +1,13 @@
 * Inbox
+** Single-Pass Online Statistics Algorithms
+ [2020-03-04 Wed 15:35]
+ http://www.numericalexpert.com/articles/single_pass_stat/
+** The Britney Spears Problem
+ [2020-03-04 Wed 15:32]
+ https://www.americanscientist.org/article/the-britney-spears-problem
+** Canonical Correlation Analysis in Detail
+ [2020-03-04 Wed 15:26]
+ https://gregorygundersen.com/blog/2018/07/17/cca/#2-scale-invariance
 ** Simple command-line utility to convert CSV files to searchable and sortable HTML table
  [2020-03-04 Wed 11:20]
  https://github.com/vividvilla/csvtotable
