@@ -1473,3 +1473,9 @@ See also [[papers:yoshida-2019-multil.pdf][yoshida-2019-multil]].
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kendall-2016-mappin-phylog.pdf
  :END:
 See also the [[https://thibautjombart.github.io/treespace/][treespace]] R package (and maybe [[https://github.com/thibautjombart/apex][apex]]).
+* [[/Users/chl/Documents/Papers/mcmurdie-2013-phylos.pdf][mcmurdie-2013-phylos]] - Phyloseq: an r package for reproducible interactive analysis and graphics of microbiome census data
+ :PROPERTIES:
+ :Custom_ID: mcmurdie-2013-phylos
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/mcmurdie-2013-phylos.pdf
+ :END:
+See also [[papers:mcmurdie-2011-phylos.pdf][mcmurdie-2011-phylos]] and [[http://joey711.github.io/phyloseq/][phyloseq: Explore microbiome profiles using R]].

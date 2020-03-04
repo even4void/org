@@ -1,11 +1,12 @@
 #+TITLE:  The title
 #+AUTHOR: The author
 #+DATE: 26 February, 2020
-#+OPTIONS: num:nil H:2 ^:t |:t
-#+PROPERTY: header-args:R :session *R* :tangle yes
-#+PROPERTY: header-args   :exports both
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="_assets/worg.css" />
+#+OPTIONS: num:nil H:2 ^:t |:t html-style:nil
+#+PROPERTY: header-args:R :session *R*
+#+PROPERTY: header-args   :exports both :results output
 
-#+BEGIN_SRC R :exports none
+#+BEGIN_SRC R :exports none :results silent
 library(xtable)
 #+END_SRC
 
@@ -15,6 +16,7 @@ Here's a tiny R function:
 square <- function(x) x*x
 square(1:10)
 #+END_SRC
+
 
 Here's a toy example to illustrate a linear regression:
 
@@ -37,7 +39,7 @@ xyplot(1:10 ~ 1:10)
 
 Holy church of Python!
 
-#+BEGIN_SRC python :session
+#+BEGIN_SRC python
 a = 27 // 4
 a
 #+END_SRC
@@ -50,10 +52,6 @@ a
 return [[val + 10 for val in row] for row in tab]
 #+END_SRC
 
-#+RESULTS:
-| one | 11 | 12 | 13 | 14 | 15 |
-| two | 16 | 17 | 18 | 19 | 20 |
-
 Remember Elisp?
 
 #+BEGIN_SRC emacs-lisp :exports both
@@ -62,3 +60,7 @@ Remember Elisp?
   (if a (not b) b))
 (xor nil t)
 #+END_SRC
+
+# Local variables:
+# after-save-hook: org-html-export-to-html
+# end:
