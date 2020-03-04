@@ -1,4 +1,19 @@
 * Inbox
+** Simple command-line utility to convert CSV files to searchable and sortable HTML table
+ [2020-03-04 Wed 11:20]
+ https://github.com/vividvilla/csvtotable
+** treespace: exploration of landscapes of phylogenetic trees
+ [2020-03-03 Tue 16:25]
+ https://thibautjombart.github.io/treespace/
+** Outbreak analytics: a developing data science for informing the response to emerging pathogens
+ [2020-03-03 Tue 16:11]
+ https://royalsocietypublishing.org/doi/10.1098/rstb.2018.0276
+** The Log-Sum-Exp Trick. See also https://stats.stackexchange.com/q/105602
+   :PROPERTIES:
+   :ID:       0DE0C998-08ED-4471-88E3-42127C2F4B36
+   :END:
+ [2020-03-03 Tue 13:33]
+ https://gregorygundersen.com/blog/2020/02/09/log-sum-exp/
 ** Compare tree topologies (Newick) using Python ete3
    :PROPERTIES:
    :ID:       57C6279E-6484-44AB-8F9B-D7A73A5C0F00

@@ -1457,3 +1457,19 @@ See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/arti
  :END:
 Authors interested in characterizing the identity, global distribution and ecology of dominant soil fungi, based on the analysis of 235 sites distributed across 6 continents.
 *Results:* 83 dominant fungal phylotypes, where the most ubiquitous fungi found were members of the Pezizomycotina (≥98% match), including Sordariomycetes (/Podospora/ and /Chaetomium/), and showed similar level of relative abundance among the sampled habitats.
+* [[/Users/chl/Documents/Papers/gori-2016-clust-genes.pdf][gori-2016-clust-genes]] - Clustering genes of common evolutionary history
+ :PROPERTIES:
+ :Custom_ID: gori-2016-clust-genes
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gori-2016-clust-genes.pdf
+ :END:
+*Context:* Multilocus phylogenetic analysis.
+Large-scale simulation study of phylogenetic distances and clustering methods to infer loci of common evolutionary history.
+*Results:* The best-performing combinations are distances accounting for branch lengths followed by spectral clustering or Ward's method.
+
+See also [[papers:yoshida-2019-multil.pdf][yoshida-2019-multil]].
+* [[/Users/chl/Documents/Papers/kendall-2016-mappin-phylog.pdf][kendall-2016-mappin-phylog]] - Mapping phylogenetic trees to reveal distinct patterns of evolution
+ :PROPERTIES:
+ :Custom_ID: kendall-2016-mappin-phylog
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kendall-2016-mappin-phylog.pdf
+ :END:
+See also the [[https://thibautjombart.github.io/treespace/][treespace]] R package (and maybe [[https://github.com/thibautjombart/apex][apex]]).
