@@ -1466,7 +1466,7 @@ Authors interested in characterizing the identity, global distribution and ecolo
 Large-scale simulation study of phylogenetic distances and clustering methods to infer loci of common evolutionary history.
 *Results:* The best-performing combinations are distances accounting for branch lengths followed by spectral clustering or Ward's method.
 
-See also [[papers:yoshida-2019-multil.pdf][yoshida-2019-multil]].
+See also [[~/Documents/Papers/yoshida-2019-multil.pdf][yoshida-2019-multil]].
 * [[/Users/chl/Documents/Papers/kendall-2016-mappin-phylog.pdf][kendall-2016-mappin-phylog]] - Mapping phylogenetic trees to reveal distinct patterns of evolution
  :PROPERTIES:
  :Custom_ID: kendall-2016-mappin-phylog
@@ -1478,7 +1478,7 @@ See also the [[https://thibautjombart.github.io/treespace/][treespace]] R packag
  :Custom_ID: mcmurdie-2013-phylos
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/mcmurdie-2013-phylos.pdf
  :END:
-See also [[papers:mcmurdie-2011-phylos.pdf][mcmurdie-2011-phylos]] and [[http://joey711.github.io/phyloseq/][phyloseq: Explore microbiome profiles using R]].
+See also [[~/Documents/Papers/mcmurdie-2011-phylos.pdf][mcmurdie-2011-phylos]] and [[http://joey711.github.io/phyloseq/][phyloseq: Explore microbiome profiles using R]].
 * [[/Users/chl/Documents/Papers/soicher-2004-algor-mathem.pdf][soicher-2004-algor-mathem]] - Algorithmic Mathematics
  :PROPERTIES:
  :Custom_ID: soicher-2004-algor-mathem
