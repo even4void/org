@@ -414,7 +414,7 @@ Note that parallel execution requires stream-aware RNGs (p.7).
 From the Stata Manual [R] on "bootstrap": [[~/Documents/papers/efron-1986-boots-method.pdf][efron-1986-boots-method]] describe an alternative to Satterthwaite’s approximation that estimates the ASL by bootstrapping the statistic from the test of equal means. Their idea is to recenter the two samples to the combined sample mean so that the data now conform to the null hypothesis but that the variances within the samples remain unchanged.
 
 #+NAME: auto
-#+BEGIN_SRC Stata
+#+BEGIN_SRC stata
 summarize mpg, meanonly
 scalar omean = r(mean)
 summarize mpg if foreign==0, meanonly
@@ -1485,3 +1485,11 @@ See also [[papers:mcmurdie-2011-phylos.pdf][mcmurdie-2011-phylos]] and [[http://
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/soicher-2004-algor-mathem.pdf
  :END:
 Basic overview of number theory and related algorithms, with several exercises and tips at the end.
+* [[/Users/chl/Documents/Papers/clauset-2009-power.pdf][clauset-2009-power]] - Power-law distribution in empirical data
+ :PROPERTIES:
+ :Custom_ID: clauset-2009-power
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/clauset-2009-power.pdf
+ :END:
+1. Estimate the parameters xmin and α of the power-law model using the methods described in Section 3.
+2. Calculate the goodness-of-fit between the data and the power law using the method described in Section 4. If the resulting p-value is greater than 0.1 the power law is a plausible hypothesis for the data, otherwise it is rejected.
+3. Compare the power law with alternative hypotheses via a likelihood ratio test, as described in Section 5. For each alternative, if the calculated likelihood ratio is significantly different from zero, then its sign indicates whether the alternative is favored over the power-law model or not.
