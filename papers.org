@@ -1493,3 +1493,12 @@ Basic overview of number theory and related algorithms, with several exercises a
 1. Estimate the parameters xmin and α of the power-law model using the methods described in Section 3.
 2. Calculate the goodness-of-fit between the data and the power law using the method described in Section 4. If the resulting p-value is greater than 0.1 the power law is a plausible hypothesis for the data, otherwise it is rejected.
 3. Compare the power law with alternative hypotheses via a likelihood ratio test, as described in Section 5. For each alternative, if the calculated likelihood ratio is significantly different from zero, then its sign indicates whether the alternative is favored over the power-law model or not.
+* [[/Users/chl/Documents/Papers/koonin-2011-compar-phylog.pdf][koonin-2011-compar-phylog]] - Comparison of phylogenetic trees and search for a central trend in the 'forest of life'
+ :PROPERTIES:
+ :Custom_ID: koonin-2011-compar-phylog
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/koonin-2011-compar-phylog.pdf
+ :END:
+Tree of Life (TOL) vs. "net of life" (because of horizontal gene transfer in prokaryotes).
+The construction of the trees (about 7000 altogether) provides for an attempt to identify patterns in the Forest of Life (FOL) and address the question whether or not there exists a central trend among the trees that perhaps could be considered an approximation of a TOL.
+Clustering of the Nearly Universal Trees (NUTs) and the entire Forest of Life (FOL) using Classical MultiDimensional Scaling.
+*Note:* Boot Split Distance (the contribution of each split is weighted using the bootstrap values)

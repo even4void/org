@@ -1,0 +1,12 @@
+# -*- ispell-dictionary: "french" -*-
+#+TITLE:        Arbres phylogénétiques
+#+LANG:         fr
+#+STARTUP:      align fold noindent hideblocks fnlocal
+#+OPTIONS:      H:3 num:nil toc:2 ':t *:t ::t f:t |:t -:t
+
+* Introduction
+Un arbre phylogénétique permet de représenter l'évolution d'un ensemble de taxons. L'idée de base derrière cette approche de l'évolution moléculaire des espèces est que les changements génétiques (susbtitutions) s'accumulent au cours du temps. Les modèles de susbtitution permettent de prendre en compte du remplacement des nucléotides (p.ex., a → t) entre les différents taxons à mesure que l'on progresse dans l'arbre phylogénétique. Les motifs de substitution reflètent alors l'histoire évolutionnaire, et l'objet de la phylogénéie est justement de reconstruire des arbres d'évolution à partir des données génétiques.
+
+Un arbre phylogénétique est composé de nœuds terminaux, d'unité taxonomiques hypothétiques (HTU) qui reflètent les ancêtres les plus récents des noeuds considérés. Chaque branche de l'arbre représente la quantité d'évolution, souvent en termes de temps ou de substitution. La distance entre les nœuds terminaux est appelée distance padristique et représente le degré de similarité entre ces deux taxons. Enfin, la racine de l'arbre constitue l'ancêtre commun et est le plus souvent considéré comme un groupe à part.
+
+Pour construire un arbre phylogénétique, on a besoin d'un ensemble de séquences alignées et corrigées.
