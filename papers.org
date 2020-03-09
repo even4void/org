@@ -1502,3 +1502,16 @@ Tree of Life (TOL) vs. "net of life" (because of horizontal gene transfer in pro
 The construction of the trees (about 7000 altogether) provides for an attempt to identify patterns in the Forest of Life (FOL) and address the question whether or not there exists a central trend among the trees that perhaps could be considered an approximation of a TOL.
 Clustering of the Nearly Universal Trees (NUTs) and the entire Forest of Life (FOL) using Classical MultiDimensional Scaling.
 *Note:* Boot Split Distance (the contribution of each split is weighted using the bootstrap values)
+* [[/Users/chl/Documents/Papers/marcet-houben-2011-treek.pdf][marcet-houben-2011-treek]] - Treeko: a duplication-aware algorithm for the comparison of phylogenetic tree
+ :PROPERTIES:
+ :Custom_ID: marcet-houben-2011-treek
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/marcet-houben-2011-treek.pdf
+ :END:
+Two main types of algorithms are available that compute topological distances between phylogenetic trees:
+
+- exploit the topological arrangement of terminal nodes: RF distance, quartet distance, or maximum agreement subtree;
+- minimal number of topological re-arrangements: transposition distance, prune and regraft distance, and tree edit distance.
+
+Both approaches require that the mapping of leaves between the trees is complete and univocal. TreeKO is a novel, duplication-aware algorithm that is able to compare two tree topologies re- gardless of the number of duplications and, at the same time, provide a RF-based distance measure that is evolu- tionarily meaningful and that does not require any prior evolutionary assumption. In addition treeKO, implements the possibility of computing so-called phylome support values (22), and reconciliation-based measures such as the number of inferred duplications and losses events.
+
+See also [[http://etetoolkit.org/documentation/ete-compare/][ete-compare]].
