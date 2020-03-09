@@ -1,4 +1,7 @@
 * Inbox
+** Suppressing Warnings in GCC and Clang
+ [2020-03-06 Fri 09:47]
+ https://nelkinda.com/blog/suppress-warnings-in-gcc-and-clang/
 ** Modern Regression with R
  [2020-03-05 Thu 12:23]
  http://www.stat.cmu.edu/~cshalizi/mreg/15/
