@@ -5,8 +5,77 @@
 #+OPTIONS:      H:3 num:nil toc:2 ':t *:t ::t f:t |:t -:t
 
 * Introduction
-Un arbre phylogénétique permet de représenter l'évolution d'un ensemble de taxons. L'idée de base derrière cette approche de l'évolution moléculaire des espèces est que les changements génétiques (susbtitutions) s'accumulent au cours du temps. Les modèles de susbtitution permettent de prendre en compte du remplacement des nucléotides (p.ex., a → t) entre les différents taxons à mesure que l'on progresse dans l'arbre phylogénétique. Les motifs de substitution reflètent alors l'histoire évolutionnaire, et l'objet de la phylogénéie est justement de reconstruire des arbres d'évolution à partir des données génétiques.
+Un arbre phylogénétique permet de représenter l'évolution d'un ensemble de taxons. L'idée de base derrière cette approche de l'évolution moléculaire des espèces est que les changements génétiques (susbtitutions) s'accumulent au cours du temps. Les [[https://en.wikipedia.org/wiki/Models_of_DNA_evolution][modèles de susbtitution]] permettent de prendre en compte du remplacement des nucléotides (p.ex., a → t) entre les différents taxons à mesure que l'on progresse dans l'arbre phylogénétique.[fn::[[http://www.cs.toronto.edu/~brudno/csc2417_15/evophylo.pdf][Molecular Evolution, Substitution Models, and Phylogenies]]] Les motifs de substitution reflètent alors l'histoire évolutionnaire, et l'objet de la phylogénie est justement de reconstruire des arbres d'évolution à partir des données génétiques.
+
+Notons que l'évolution moléculaire est dominée par des mutations qui restent neutres quant à l'aspect de sélection naturelle.[fn::Une substitution de gène correspond au fait que l'allèle mutant d'un gène remplace l'allèle prédominant dans la population.] Les modèles d'évolution reposent sur l'hypothèse que les séquences génétiques de différentes espèces descendent d'un gène ancestral dans des espèces ancestrales communes, de sorte que toute divergence entre les séquences résulte d'un processus de spéciation. Ces gènes sont essentiellement les mêmes et ils sont appelés gènes orthologues. Cette hypothèse peut ne pas être vérifiée en raison des phénomènes de duplication de gène. Les gènes ayant divergé d'un ancêtre commun par duplication sont appelés paralogues. Il s'agit de gènes différents dans le même organisme.
 
 Un arbre phylogénétique est composé de nœuds terminaux, d'unité taxonomiques hypothétiques (HTU) qui reflètent les ancêtres les plus récents des noeuds considérés. Chaque branche de l'arbre représente la quantité d'évolution, souvent en termes de temps ou de substitution. La distance entre les nœuds terminaux est appelée distance padristique et représente le degré de similarité entre ces deux taxons. Enfin, la racine de l'arbre constitue l'ancêtre commun et est le plus souvent considéré comme un groupe à part.
 
 Pour construire un arbre phylogénétique, on a besoin d'un ensemble de séquences alignées et corrigées.
+
+* Modèles de substitution
+
+Jukes-Cantor Model: Poisson model for substitutions, extended to a continuous time (4-state) Markov process; the probability of a nucleotide $i$ changing into nucleotide $j$ in time $t$ is $P_{ij} = 0.25\big(1-\exp(-4\lambda t)\big)$. Kimura (1980) extended this model by allowing transitions and transversions with different rates.
+
+See also: [[https://math.la.asu.edu/~jtaylor/teaching/Spring2015/APM504/APM504.html][Applied Probability and Stochastic Processes]] (3 Feb), [[http://treethinkers.org/jukes-cantor-model-of-dna-substitution/][Jukes Cantor Model of DNA substitution]], Probability Models for DNA Sequence Evolution by Richard Durrett, 2nd ed. (Springer, 2008).
+
+
+* Logiciels
+
+** R
+
+- [[https://cran.r-project.org/web/packages/ape/index.html][ape]] ([[http://ape-package.ird.fr][www]])
+- [[https://cran.r-project.org/web/packages/apTreeshape/index.html][apTreeshape]]
+- [[https://cran.r-project.org/web/packages/phytools/index.html][phytools]]
+- [[https://cran.r-project.org/web/packages/phangorn/index.html][phangorn]]
+- [[https://cran.r-project.org/web/packages/adephylo/index.html][adephylo]]
+** Python
+
+- [[https://pypi.org/project/phylogeny/][phylogeny]]
+- [[http://etetoolkit.org][ETE]] ([[https://www.r-bloggers.com/phylogenies-in-r-and-python/][example]])
+- [[https://pypi.org/project/DendroPy/][dendropy]] ([[https://academic.oup.com/bioinformatics/article/26/12/1569/287181][article]])
+- [[https://biopython.org/wiki/Phylo][Bio.phylo]]
+** Misc
+11 probabilistic models available in =ape::dist.dna=.
+
+- *raw:* proportion of sites that differ between each pair of sequences
+
+    c *g* c *t* *c* c *t* g *a* c
+    c *a* c *g* *t* c *c* g *g* c     => 5/10 = 0.5
+
+- *JC69:* This model was developed by Jukes and Cantor (1969). It assumes that all substitutions (i.e. a change of a base by another one) have the same probability. This probability is the same for all sites along the DNA sequence. This last assumption can be relaxed by assuming that the substition rate varies among site following a gamma distribution which parameter must be given by the user. By default, no gamma correction is applied. Another assumption is that the base frequencies are balanced and thus equal to 0.25.
+
+"It can be shown that the mean number of base differences at a single position on the mRNA, $\mu$, is related to the observed fraction of residues with single base differences, $p$, by the expression:
+$$ \mu = \frac{3}{4} \ln \frac{3}{3-4 p}. $$"
+-- Thomas H. Jukes, [[http://www.garfield.library.upenn.edu/classics1990/A1990CZ67100002.pdf][How Many Nudeotide Substitutions Actually Took Place?]]
+
+- *K80:* The distance derived by cite:kimura-1980-simpl-method, sometimes referred to as Kimura's 2-parameters distance, has the same underlying assumptions than the Jukes-Cantor distance except that two kinds of substitutions are considered: transitions (A ↔ G, C ↔ T), and transversions (A ↔ C, A ↔ T, C ↔ G, G ↔ T). They are assumed to have different probabilities. A transition is the substitution of a purine (C, T) by another one, or the substitution of a pyrimidine (A, G) by another one. A transversion is the substitution of a purine by a pyrimidine, or vice-versa. Both transition and transversion rates are the same for all sites along the DNA sequence. Jin and Nei (1990) modified the Kimura model to allow for variation among sites following a gamma distribution. Like for the Jukes-Cantor model, the gamma parameter must be given by the user. By default, no gamma correction is applied.
+
+See also: @kimura-1981-estim, @tajima-1984-estim-evolut
+
+Ultrametric trees = triangle inequality + d(x,y) ≤ max(d(x,z), d(y,z)) (max linkage clustering \equiv d(x,y) := max(d(x,z), d(y,z)) while single linkage \equiv d(x,y) := min(d(x,z), d(y,z)))
+
+=ape::DNAbin= : efficient encoding of a sequence (nucleotid or a.a.) using 1 byte (8 bits):
+
+A T C G
+1 0 0 1 1 0 0 0
+        base known
+          alignment gap
+            character unknown
+              unused
+
+[[http://www.bioinformatics.org/sms2/iupac.html][IUPAC code]]:
+
+| Nucleotide       | IUPAC |
+|------------------+-------|
+| A or G           | R     |
+| A or C           | M     |
+| A or T           | W     |
+| G or C           | S     |
+| G or T           | K     |
+| C or T           | Y     |
+| A or G or C      | V     |
+| A or C or T      | H     |
+| A or G or T      | D     |
+| G or C or T      | B     |
+| A or G or C or T | N     |
