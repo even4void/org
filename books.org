@@ -1,4 +1,4 @@
-# -*- ispell-dictionary: "french" -*-
+# -*- ispell-dictionary: "french"; coding: latin-1 -*-
 
 * 2013
 - Haruki Murakami, 1Q84 Tome 3 (Belfond)
@@ -530,6 +530,6 @@
 - Charles Ctos, Le coffret de santal (Gallimard)
 - Jean-Christophe Ruffin, Le suspendu de Conakry (Folio)
 - Fatales (Elle, 2011)
-- Annie Ernaux, Je ne suis pas sortie de ma nuit (Gaillimard)
+- Annie Ernaux, Je ne suis pas sortie de ma nuit (Gallimard)
 
 [♯] Déjà lu par le passé.
