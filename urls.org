@@ -1,8 +1,20 @@
 * Inbox
-** Suppressing Warnings in GCC and Clang
+** Scheme for scientific computing                                             :scheme:
+ [2020-03-10 Tue 14:52]
+ http://fmnt.info/blog/20181029_scheme.html
+** Python instead of Lisp                                                      :python:lisp:
+ [2020-03-10 Tue 11:36]
+ https://www.tfeb.org/fragments/2016/06/09/python-instead-of-lisp/
+** Macros in Racket, part one                                                  :racket:
+ [2020-03-10 Tue 11:33]
+ https://www.tfeb.org/fragments/2015/01/13/macros-in-racket-part-one/
+** Writing syntax-case Macros                                                  :racket:
+ [2020-03-10 Tue 11:33]
+ https://blog.racket-lang.org/2011/04/writing-syntax-case-macros.html
+** Suppressing Warnings in GCC and Clang                                       :clang:
  [2020-03-06 Fri 09:47]
  https://nelkinda.com/blog/suppress-warnings-in-gcc-and-clang/
-** Modern Regression with R
+** Modern Regression with R                                                    :rstats:
  [2020-03-05 Thu 12:23]
  http://www.stat.cmu.edu/~cshalizi/mreg/15/
 ** Single-Pass Online Statistics Algorithms                                    :numerical:

@@ -1515,3 +1515,10 @@ Two main types of algorithms are available that compute topological distances be
 Both approaches require that the mapping of leaves between the trees is complete and univocal. TreeKO is a novel, duplication-aware algorithm that is able to compare two tree topologies re- gardless of the number of duplications and, at the same time, provide a RF-based distance measure that is evolu- tionarily meaningful and that does not require any prior evolutionary assumption. In addition treeKO, implements the possibility of computing so-called phylome support values (22), and reconciliation-based measures such as the number of inferred duplications and losses events.
 
 See also [[http://etetoolkit.org/documentation/ete-compare/][ete-compare]].
+* [[/Users/chl/Documents/Papers/huerta-cepas-2016-ete.pdf][huerta-cepas-2016-ete]] - Ete 3: reconstruction, analysis, and visualization of phylogenomic data
+ :PROPERTIES:
+ :Custom_ID: huerta-cepas-2016-ete
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/huerta-cepas-2016-ete.pdf
+ :END:
+*Website:* [[http://etetoolkit.org]]
+Basic recipe to build a custom workflow: =aligner-trimmer-tester-builder=.
