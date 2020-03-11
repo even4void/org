@@ -1522,3 +1522,17 @@ See also [[http://etetoolkit.org/documentation/ete-compare/][ete-compare]].
  :END:
 *Website:* [[http://etetoolkit.org]]
 Basic recipe to build a custom workflow: =aligner-trimmer-tester-builder=.
+* [[/Users/chl/Documents/Papers/real-2020-autom-zero.pdf][real-2020-autom-zero]] - Automl-zero: evolving machine learning algorithms from scratch
+ :PROPERTIES:
+ :Custom_ID: real-2020-autom-zero
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/real-2020-autom-zero.pdf
+ :END:
+Github: [[https://github.com/google-research/google-research/tree/master/automl_zero]]
+
+See also [[~/Documents/Papers/he-2020-autom.pdf][he-2020-autom]].
+* [[/Users/chl/Documents/Papers/antoniotti-2020-why-you.pdf][antoniotti-2020-why-you]] - Why you cannot (yet) write an “interval arithmetic” library in common lisp
+ :PROPERTIES:
+ :Custom_ID: antoniotti-2020-why-you
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/antoniotti-2020-why-you.pdf
+ :END:
+See also this [[http://within-parens.blogspot.com/2020/03/why-you-cannot-yet-portably-write.html][blog post]].
