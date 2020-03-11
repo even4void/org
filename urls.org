@@ -1,11 +1,32 @@
 * Inbox
-** Rho is yet another array/dataframe package with some typing magic in the access/setting.
+** Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE                    :misc:
+ [2020-03-11 Wed 11:45]
+ https://github.com/CSSEGISandData/COVID-19
+** Big alignments, do they make sense?                                         :bioinformatics:
+ [2020-03-11 Wed 11:35]
+ https://www.drive5.com/muscle/manual/bigalignments.html
+** 5 lesser-known pandas tricks                                                :python:
+ [2020-03-11 Wed 11:35]
+ https://towardsdatascience.com/5-lesser-known-pandas-tricks-e8ab1dd21431
+** The Newick tree format                                                      :bioinformatics:
+ [2020-03-11 Wed 10:57]
+ http://evolution.genetics.washington.edu/phylip/newicktree.html
+** Multiple Sequence Alignment                                                 :bioinformatics:
+ [2020-03-11 Wed 10:48]
+ https://www.ebi.ac.uk/Tools/msa/
+** Open Data Kit                                                               :misc:
+ [2020-03-11 Wed 10:03]
+ http://opendatakit.org/
+** Stata commands designed for Impact Evaluations                              :stata:
+ [2020-03-11 Wed 10:03]
+ https://github.com/worldbank/ietoolkit
+** Rho is yet another array/dataframe package                                  :lisp:
  [2020-03-11 Wed 09:29]
  https://github.com/blindglobe/rho
-** Memory-Efficient Search Trees for Database Management Systems (PDF)
+** Memory-Efficient Search Trees for Database Management Systems (PDF)         :database:
  [2020-03-11 Wed 09:00]
  http://reports-archive.adm.cs.cmu.edu/anon/2020/CMU-CS-20-101.pdf
-** A binary interface let Chez Scheme use Python, Lua, Ruby etc's library
+** A binary interface let Chez Scheme use Python, Lua, Ruby etc's library      :scheme:
  [2020-03-10 Tue 16:14]
  https://guenchi.github.io/Darkart/
 ** Scheme for scientific computing                                             :scheme:
