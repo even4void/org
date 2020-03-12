@@ -1,4 +1,25 @@
 * Inbox
+** Chicken Scheme, and FFI
+ [2020-03-12 Thu 13:39]
+ https://demonastery.org/2011/01/chicken-scheme-and-ffi/
+** MurmurHash2 (64bit) implementation                                          :rust:cryptography:
+ [2020-03-12 Thu 12:28]
+ https://github.com/badboy/murmurhash64-rs
+** SMHasher                                                                    :cryptography:
+ [2020-03-12 Thu 12:17]
+ https://github.com/aappleby/smhasher
+** Resources For Novel Coronavirus COVID-19                                    :mathematica:
+ [2020-03-12 Thu 11:58]
+ https://community.wolfram.com/groups/-/m/t/1872608
+** "Big Data" formats/techniques for informatics programming                   :bioinformatics:
+ [2020-03-11 Wed 15:58]
+ https://github.com/molpopgen/BigDataFormats
+** Uncluttered Stata Graphs                                                    :stata:
+ [2020-03-11 Wed 15:31]
+ https://github.com/graykimbrough/uncluttered-stata-graphs/blob/master/examples/sample_labeled_uncluttered_graph.do
+** Pairwise sequence alignment in Biopython                                    :bioinformatics:python:
+ [2020-03-11 Wed 12:29]
+ http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec:pairwise
 ** Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE                    :misc:
  [2020-03-11 Wed 11:45]
  https://github.com/CSSEGISandData/COVID-19
