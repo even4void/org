@@ -1,4 +1,4 @@
-# -*- ispell-dictionary: "french"; coding: latin-1 -*-
+# -*- ispell-dictionary: "french" -*-
 
 * 2013
 - Haruki Murakami, 1Q84 Tome 3 (Belfond)
@@ -527,9 +527,12 @@
 - Edith Wharton, Les lettres (Folio)
 - Etienne Paulin, Là (Gallimard)
 - Aksinia Mihaylova, Le baiser du temps (Gallimard)
-- Charles Ctos, Le coffret de santal (Gallimard)
+- Charles Cros, Le coffret de santal (Gallimard)
 - Jean-Christophe Ruffin, Le suspendu de Conakry (Folio)
 - Fatales (Elle, 2011)
 - Annie Ernaux, Je ne suis pas sortie de ma nuit (Gallimard)
+- Pierric Bailly, Polichinelle (P.O.L)
+- Jorge Luis Borges, La proximité de la mer (Gallimard)
+- Benoît Reiss, Le petit veilleur (Buchet-Chastel)
 
 [♯] Déjà lu par le passé.
