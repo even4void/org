@@ -451,7 +451,7 @@
 - Blaise Cendrars, Les armoires chinoises (Fata Morgana) [♯]
 - Franz Bartelt, Le fémur de Rimbuad (Folio)
 - Olivier Bourdeaut, Pactum Salis (Finitude)
-- Ragnar Jonasson, Sujór (Points)
+- Ragnar Jonasson, Sujor (Points)
 - L'Ajar, Vivre près des tilleuls (Flammarion)
 - Christine Angot, Un amour impossible (Flammarion)
 - Marc Dugain, Transparence (Gallimard)
@@ -534,5 +534,7 @@
 - Pierric Bailly, Polichinelle (P.O.L)
 - Jorge Luis Borges, La proximité de la mer (Gallimard)
 - Benoît Reiss, Le petit veilleur (Buchet-Chastel)
+- William Faulkner, Une rose pour Emily (Folio)
+- Jean-François Josselin, Quelques jours avec moi (Grasset)
 
 [♯] Déjà lu par le passé.
