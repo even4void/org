@@ -1,4 +1,10 @@
 * Inbox
+** Parametric Survival Distributions
+ [2020-03-19 Thu 09:17]
+ https://github.com/zrmacc/Temporal
+** 300 free MIT-licensed high-quality SVG icons
+ [2020-03-19 Thu 09:14]
+ https://github.com/tabler/tabler-icons
 ** CHICKEN's numeric tower: part 5
  [2020-03-12 Thu 16:14]
  https://www.more-magic.net/posts/numeric-tower-part-5.html
