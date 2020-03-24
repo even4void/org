@@ -1544,3 +1544,9 @@ See also this [[http://within-parens.blogspot.com/2020/03/why-you-cannot-yet-por
 MUSCLE relies on 2 distance measures (k-mer and Kimura distance), and distance matrices are clustered using UPGMA (and not NJ, because "by assuming that in progressive alignment, the best accuracy is obtained at each node by aligning the two profiles that have fewest differences, even if they are not evolutionary neighbors."). The scoring function defined on aligned pairs of profile positions is the log-expectation (LE) score, which is a modified version of the log-average function. Position-specific gap penalties are used, similar to MAFFT.
 
 See other tools for [[https://www.ebi.ac.uk/Tools/msa/][Multiple Sequence Alignment]].
+* [[/Users/chl/Documents/Papers/thompson-2001-towar-reliab.pdf][thompson-2001-towar-reliab]] - Towards a reliable objective function for multiple sequence alignments
+ :PROPERTIES:
+ :Custom_ID: thompson-2001-towar-reliab
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/thompson-2001-towar-reliab.pdf
+ :END:
+The authors propose a new objective scoring function for multiple sequence alignments (norMD), which combines the advantages of the column- scoring techniques with the sensitivity of methods incorporating residue similarity scores. Compared to other approaches, norMD incorporates ab initio sequence information, such as the number, length and similarity of the sequences to be aligned.

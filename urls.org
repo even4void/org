@@ -1,4 +1,7 @@
 * Inbox
+** Computational Statistics
+ [2020-03-24 Tue 09:13]
+ https://statweb.stanford.edu/~susan/courses/s227/
 ** profile.do - useful startups?                                               :stata:
  [2020-03-22 Sun 09:38]
  https://www.statalist.org/forums/forum/general-stata-discussion/general/1405778-profile-do-useful-startups
