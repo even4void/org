@@ -1,4 +1,22 @@
 * Inbox
+** Arthur Charpentier's course
+ [2020-03-31 Tue 20:23]
+ https://github.com/freakonometrics/STT5100
+** Stata kernel magics
+ [2020-03-31 Tue 20:23]
+ https://github.com/kylebarron/stata_kernel/blob/master/docs/src/using_stata_kernel/magics.md
+** Mathematica vs. R
+ [2020-03-31 Tue 20:22]
+ https://github.com/antononcube/MathematicaVsR
+** Vim for VS Code users
+ [2020-03-30 Mon 18:27]
+ https://www.freecodecamp.org/news/vim-for-people-who-use-visual-studio-code/
+** Economics and geospatial analysis (IPython + Stata)
+ [2020-03-30 Mon 17:02]
+ https://econgrowth.github.io/pages/Computation.html
+** Macroeconomics (Stata + IPython)
+ [2020-03-30 Mon 17:01]
+ https://macroeconomics.github.io/pages/Computation.html
 ** Bob Jenkins' ISAAC-32 and ISAAC-64 algorithms, fast cryptographic random number generators
  [2020-03-24 Tue 17:30]
  https://github.com/thephoeron/cl-isaac
