@@ -1,4 +1,10 @@
 * Inbox
+** Journaling with Org
+ [2020-04-01 Wed 09:10]
+ http://howardism.org/Technical/Emacs/journaling-org.html
+** Kubernetes IDE
+ [2020-04-01 Wed 08:44]
+ https://k8slens.dev/
 ** Arthur Charpentier's course
  [2020-03-31 Tue 20:23]
  https://github.com/freakonometrics/STT5100
