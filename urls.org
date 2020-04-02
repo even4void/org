@@ -1,35 +1,53 @@
 * Inbox
-** Journaling with Org
+** Python-3-Cheatsheet                                                         :python:
+ [2020-04-02 Thu 09:10]
+ https://yungnickyoung.github.io/Python-3-Cheatsheet/
+** Jami is free software for universal communication                           :misc:
+ [2020-04-02 Thu 08:44]
+ https://git.jami.net/savoirfairelinux/ring-project/wikis/home
+** How to SSH Properly                                                         :misc:
+ [2020-04-02 Thu 08:43]
+ https://gravitational.com/blog/how-to-ssh-properly/
+** An Overview of Bayesian Inference                                           :bayesian:
+ [2020-04-01 Wed 21:24]
+ https://jaydaigle.net/blog/overview-of-bayesian-inference/
+** Restarts in Common Lisp                                                     :lisp:
+ [2020-04-01 Wed 20:15]
+ https://sulami.github.io/posts/common-lisp-restarts/
+** How Dolt Stores Table Data                                                  :database:
+ [2020-04-01 Wed 20:14]
+ https://www.dolthub.com/blog/2020-04-01-how-dolt-stores-table-data/
+** Journaling with Org                                                         :org:
  [2020-04-01 Wed 09:10]
  http://howardism.org/Technical/Emacs/journaling-org.html
-** Kubernetes IDE
+** Kubernetes IDE                                                              :misc:
  [2020-04-01 Wed 08:44]
  https://k8slens.dev/
-** Arthur Charpentier's course
+** Arthur Charpentier's course                                                 :statistics:
  [2020-03-31 Tue 20:23]
  https://github.com/freakonometrics/STT5100
-** Stata kernel magics
+** Stata kernel magics                                                         :stata:
  [2020-03-31 Tue 20:23]
  https://github.com/kylebarron/stata_kernel/blob/master/docs/src/using_stata_kernel/magics.md
-** Mathematica vs. R
+** Mathematica vs. R                                                           :mathematica:rstats:
  [2020-03-31 Tue 20:22]
  https://github.com/antononcube/MathematicaVsR
-** Vim for VS Code users
+** Vim for VS Code users                                                       :vim:
  [2020-03-30 Mon 18:27]
  https://www.freecodecamp.org/news/vim-for-people-who-use-visual-studio-code/
-** Economics and geospatial analysis (IPython + Stata)
+** Economics and geospatial analysis (IPython + Stata)                         :econ:
  [2020-03-30 Mon 17:02]
  https://econgrowth.github.io/pages/Computation.html
-** Macroeconomics (Stata + IPython)
+** Macroeconomics (Stata + IPython)                                            :python:econ:
  [2020-03-30 Mon 17:01]
  https://macroeconomics.github.io/pages/Computation.html
-** Bob Jenkins' ISAAC-32 and ISAAC-64 algorithms, fast cryptographic random number generators
+** Bob Jenkins' ISAAC-32 and ISAAC-64 algorithms, fast cryptographic RNGs      :cryptography:
  [2020-03-24 Tue 17:30]
  https://github.com/thephoeron/cl-isaac
-** Optimized, pure Common Lisp linear-algebra library
+** Optimized, pure Common Lisp linear-algebra library                          :lisp:
  [2020-03-24 Tue 17:28]
  https://github.com/nklein/gauss
-** Computational Statistics
+** Computational Statistics                                                    :statistics:
  [2020-03-24 Tue 09:13]
  https://statweb.stanford.edu/~susan/courses/s227/
 ** profile.do - useful startups?                                               :stata:

@@ -1,0 +1,9 @@
+* Turnpike Reconstruction
+
+#+FILETAGS: :bioinformatics:algorithms:
+
+*Source:* /An Introduction to Bioinformatics Algorithms/ (Jones and Pevzner), Chapter 4. [[/Users/chl/Documents/Papers/jones-2004-introd-bioin-algor.pdf][jones-2004-introd-bioin-algor]]
+
+The Turnpike reconstruction problem is to reconstruct a point set from the distances. This finds applications in physics and molecular biology (see the references for pointers to more specific information). The name derives from the analogy of points to turnpike exits on east-coast highways. Just as factoring seems harder than multiplication, the reconstruction problem seems harder than the construction problem. Nobody has been able to give an algo- rithm which is guaranteed to work in polynomial time.
+
+Implementation in [[http://nbviewer.ipython.org/gist/tungwaiyip/34b46ebaa4faa7bf5147][Julia]], [[https://github.com/zhuli19901106/Data-Structures-and-Algorithm-Analysis-in-C/commit/196ce844ecd7aa095aefd67dfdfea8ea93602fd3][C++]], and [[https://gist.github.com/marcoscastro/258e976bd2932624178c][Python]].
