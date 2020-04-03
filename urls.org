@@ -1,4 +1,10 @@
 * Inbox
+** Template elements in Org
+ [2020-04-03 Fri 10:48]
+ https://orgmode.org/manual/Template-elements.html#Template-elements
+** Previewing LaTeX fragments
+ [2020-04-03 Fri 10:31]
+ https://orgmode.org/manual/Previewing-LaTeX-fragments.html#Previewing-LaTeX-fragments
 ** Python-3-Cheatsheet                                                         :python:
  [2020-04-02 Thu 09:10]
  https://yungnickyoung.github.io/Python-3-Cheatsheet/
