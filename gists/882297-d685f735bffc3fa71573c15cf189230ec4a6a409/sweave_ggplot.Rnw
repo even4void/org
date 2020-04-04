@@ -1,0 +1,70 @@
+% compile with
+%   R CMD Sweave sweave_ggplot.Rnw
+%   pdflatex sweave_ggplot.tex
+\documentclass[t,ucs,12pt,xcolor=dvipsnames]{beamer}
+\usepackage{fancyvrb}
+
+\title{A sample Sweave demo}
+\author{Author name}
+\date{}
+
+% customize color code chunk (Scode = inline)
+\definecolor{Sinput}{rgb}{0.75,0.19,0.19}
+\definecolor{Soutput}{rgb}{0,0,0}
+\definecolor{Scode}{rgb}{0.75,0.19,0.19}
+
+
+\begin{document}
+% default size for the sweaved graphics
+\setkeys{Gin}{width=0.6\textwidth}
+% default font size and color for R code
+\DefineVerbatimEnvironment{Sinput}{Verbatim}
+{formatcom = {\color{Sinput}},fontsize=\scriptsize}
+\DefineVerbatimEnvironment{Soutput}{Verbatim}
+{formatcom = {\color{Soutput}},fontsize=\footnotesize}
+\DefineVerbatimEnvironment{Scode}{Verbatim}
+{formatcom = {\color{Scode}},fontsize=\small}
+
+\frame{\titlepage}
+
+<<echo=false>>=
+set.seed(101)
+library(ggplot2)
+library(ellipse)
+@
+
+\begin{frame}[fragile]
+<<>>=
+n <- 1000
+x <- rnorm(n, mean=2)
+y <- 1.5 + 0.4*x + rnorm(n)
+df <- data.frame(x=x, y=y)
+
+# take a bootstrap sample
+df <- df[sample(nrow(df), nrow(df), rep=TRUE),]
+
+xc <- with(df, xyTable(x, y))
+df2 <- cbind.data.frame(x=xc$x, y=xc$y, n=xc$number)
+df.ell <- as.data.frame(with(df, ellipse(cor(x, y), 
+                                         scale=c(sd(x),sd(y)), 
+                                         centre=c(mean(x),mean(y)))))
+p1 <- ggplot(data=df2, aes(x=x, y=y)) + 
+  geom_point(aes(size=n), alpha=.6) + 
+  stat_smooth(data=df, method="loess", se=FALSE, color="green") + 
+  stat_smooth(data=df, method="lm") +
+  geom_path(data=df.ell, colour="green", size=1.2)
+@
+\end{frame}
+
+\begin{frame}
+  \begin{figure}
+    \centering
+<<fig=true,echo=false>>=
+print(p1)
+@
+    \caption{Here goes the caption.}
+    \label{fig:p1}
+  \end{figure}
+\end{frame}
+
+\end{document}                                                                              

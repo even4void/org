@@ -1,0 +1,94 @@
+#!/bin/bash
+
+GIST_RECV_URL=http://gist.github.com/%s.txt;
+GIST_POST_URL=http://gist.github.com/gists;
+GIST_DEL_URL=http://gist.github.com/delete;
+GIST_DESC_URL=http://gist.github.com/gists/%s/update_description;
+GITHUB_USER=`git config --global github.user | tr -d \\n`;
+GITHUB_TOKEN=`git config --global github.token | tr -d \\n`;
+GETINDEX="gistfile1";
+
+EXT=".txt";
+NAME="";
+
+while getopts "fhe:dpi:" optname; do
+    case "$optname" in
+	"h")
+		echo "Usage:";
+		echo " `echo $0 | sed 's/.*\///'` [-h|d|p] [-i <file>] [-e <description>] [index]";
+		echo "  Options:";
+		echo "		-h			Print this help text and exit";
+		echo "		-e			Modify the description for a new or existing gist";
+		echo "		-d			Delete an existing gist";
+		echo "		-p			Make a new gist private";
+		echo "		-i			Specify an input file for creating/updating a gist";;
+    "p")
+        PRIVATE="&private=on";;
+	"f")
+		FETCH="true";;
+	"i")
+		INFILE=$OPTARG;;
+	"d")
+		DELETE="true";;
+	"e")
+		DESC=$OPTARG;;
+    *)
+        echo "Unknown error while processing options"; # Should not occur
+        exit;;
+    esac
+done
+shift `expr $OPTIND - 1`;
+
+
+if [ "$INFILE" = "-" ]; then
+	FILENAME=""
+	INFILE="/tmp/gist_`date +%Y_%m_%d_%H_%M_%S`";
+
+	echo -n "" > $INFILE;
+
+	while read; do
+		echo $REPLY >> $INFILE
+	done;
+else
+	FILENAME=$INFILE;
+fi;	
+
+# Create a new gist
+if [ ${#INFILE} -gt 0 ]; then
+	if [ ${#GITHUB_USER} -lt 1 ]; then
+		echo "User name not supplied. Make sure 'git config --global github.user' and 'git config --global github.token' are set correctly";
+		exit 1;
+	fi;
+	if [ $# -gt 0 ]; then
+		GIST_POST_URL="$GIST_POST_URL/$1";
+		GETINDEX=$FILENAME;
+		METHOD="_method=put&";
+	fi;
+	curl -is --data "${METHOD}file_ext[$GETINDEX]=${EXT}&file_name[$GETINDEX]=${FILENAME}${PRIVATE}&login=$GITHUB_USER&token=$GITHUB_TOKEN" --data-urlencode "file_contents[$GETINDEX]@$INFILE" $GIST_POST_URL | sed '/^Location: http:\/\/gist\.github\.com\/*/!d; s///;q' | read PUTINDEX;
+fi;
+
+if [ $# -lt 1 ]; then
+	echo $PUTINDEX;
+	exit 0;
+else
+	PUTINDEX=$1;
+fi;
+
+# Delete a gist
+if [ "$DELETE" = "true" -a ${#GITHUB_USER} -gt 0 ]; then
+	curl -is "$GIST_DEL_URL/${PUTINDEX}?login=$GITHUB_USER&token=$GITHUB_TOKEN" | sed '/^Location: http:\/\/gist\.github\.com\/*/!d; s///;q' | read PUTINDEX;
+fi;
+
+if [ ${#DESC} -gt 0 ]; then
+	curl -is `echo $GIST_DESC_URL | sed -e "s/%s/$PUTINDEX/"` --data "login=$GITHUB_USER&token=$GITHUB_TOKEN" --data-urlencode "description=$DESC" > /dev/null
+fi;
+
+# Fetch a gist
+if [ "$FETCH" = "true" -a ${#INFILE} -lt 1 ]; then
+	curl -s `echo $GIST_RECV_URL | sed -e "s/%s/$PUTINDEX/"`;
+	exit 0;
+fi
+
+echo $PUTINDEX;
+
+

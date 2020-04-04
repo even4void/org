@@ -1,0 +1,78 @@
+#! /usr/bin/env sh
+
+# Post-process Stata do -> log file.
+
+# We should ensure that we use the correct stata program
+# (e.g., might be stata, stata-mp, etc.). I'll put this here 
+# for later update.
+STATA="$(which stata)"
+
+# Process command line options
+usage()
+{
+cat << EOF
+Usage: $0 [-hst] file
+
+This script asks Stata to process a do file and log its output.
+
+OPTIONS:
+  -h  --help    show this message
+  -s  --slave   slave mode (discard Stata command)
+  -t  --tidy    remove all empty lines
+EOF
+}
+SLAVE=0
+TIDY=0
+while getopts ":hst-:" opt; do
+    case $opt in
+	h) 
+	    usage
+	    exit 1 ;;
+	s)
+	    SLAVE=1 ;;
+	t)
+	    TIDY=1 ;;
+	-) 
+	    case $OPTARG in
+		help)
+		    usage
+		    exit 1 ;;
+		slave) 
+	            SLAVE=1 ;;
+		tidy)
+		    TIDY=1 ;;
+		*) 
+	            usage
+		    exit ;;
+	    esac ;;
+	?)
+	    usage
+	    exit ;;
+    esac
+done
+shift $(($OPTIND-1))
+
+# Process do file
+OUTFILE=${1%%.*}.log
+$STATA -q -b do $1
+
+# Delete last two lines ('.', 'end of do file')
+sed -i '' 'N;$!P;$!D;$d' $OUTFILE
+
+# Filter `graph save` command and tidy up blank lines at the end
+# Note that in case graphic file was already generated, it will not
+# filter error message.
+sed -i '' '/^\. graph export/d' $OUTFILE
+sed -i '' '/^(file/d' $OUTFILE
+sed -i '' '/^$/N;/\n$/D' $OUTFILE
+
+# Also delete first blank line and update orginal log file
+sed -i '' '1d' $OUTFILE
+
+if [[ $SLAVE = 1 ]]; then
+    sed -i '' '/^\./d' $OUTFILE
+fi
+
+if [[ $TIDY = 1 ]]; then
+    sed -i '' '/^$/d' $OUTFILE
+fi

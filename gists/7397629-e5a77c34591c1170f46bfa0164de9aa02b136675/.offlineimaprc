@@ -1,0 +1,34 @@
+[general]
+accounts = Gmail
+maxsyncaccounts = 3
+
+[Account Gmail]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = ~/Maildir
+
+folderfilter = lambda foldername: foldername not in ['queue']
+nametrans = lambda folder: re.sub('drafts', '[Gmail].Drafts',
+                           re.sub('sent', '[Gmail].Sent Mail',
+                           re.sub('trash', '[Gmail].Trash', folder)))
+
+[Repository Remote]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = xxxxxxxxxx
+remotepass = xxxxxxxxxx
+ssl = yes
+maxconnections = 5
+realdelete = no
+
+sslcacertfile = /etc/postfix/certs/Equifax_Secure_Certificate_Authority.cer
+
+folderfilter = lambda foldername: foldername not in ['[Gmail]/Spam','[Gmail]/Starred','[Gmail]/All Mail',
+	       	      		  	     	     'aliquote','StackExchange','genim','ciep','cnrs','ovh','job-ads']
+# nametrans = lambda foldername: foldername.replace("[Gmail]/","")
+nametrans = lambda folder: re.sub('.*Drafts$', 'drafts', 
+	    	   	   re.sub('.*Sent Mail$', 'sent',
+    			   re.sub('.*Trash$', 'trash', folder)))
