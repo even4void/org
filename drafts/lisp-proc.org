@@ -1,8 +1,8 @@
 #+TITLE: Lisp Proceedings from the 90s
-#+STARTUP: noindent align showall
+#+STARTUP: noindent align
 #+OPTIONS: num:nil -:t toc:nil ':t *:t
 
-Here are some notes I took while reading some papers from past Lisp conferences, specifically the [[https://dl.acm.org/conference/lfp][LFP: Conference on LISP and Functional Programming]]. See also [[https://lispnews.wordpress.com/2020/04/02/acm-open-access-to-lfp/amp/?__twitter_impression=true][this announcement]] on the Common Lisp Weekly News. Articles are listed in no particular order, except that of my reading.
+Here are some notes I took while reading some papers from past Lisp conferences, specifically the [[https://dl.acm.org/conference/lfp][LFP: Conference on LISP and Functional Programming]]. See also [[https://lispnews.wordpress.com/2020/04/02/acm-open-access-to-lfp/][this announcement]] on the Common Lisp Weekly News. Articles are listed in no particular order, except that of my reading.
 
 ** Abstraction in Numerical Methods, Matthew Halfant and Gerald Jay Sussman
 This article discusses the interest of streams and higher-order abstractions in numerical computing, specifically integration and differentiation via [[https://en.wikipedia.org/wiki/Richardson_extrapolation][Richardson extrapolation]]. The authors use Scheme to provide their illustrations, first on computing π by the method of Archimedes (see also the [[https://en.wikipedia.org/wiki/Method_of_exhaustion][method of exhaustion]]).
