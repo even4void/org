@@ -12,3 +12,8 @@ Z_0 = 1 \cr
 $$
 
 We also define $\pi_n := \Pr(Z_n=0)$ and $\mathbb{P}_{\text{ext}} := \Pr(\exists n\in\mathbb{N}, Z_n = 0)$.
+
+The above model allows to consider a set of particles (from the same family) which are able to generate other particles. Each particle has a probability $p_k$ of generating $k$ independent particles, and this probability is fixed across generations. The children of the $n$th generation belong to the $n+1$th generation. The quantity $Z_n$ represents the number of particles at generation $n$. Each particle $i$ at generation $n$ has $X_{i,n}$ children ($1\le i\le Z_n$), $\pi_n$ is the probability of extinction at generation $n$, and $\mathbb{P}_{\text{ext}}$ is the probability of extinction of the population. If there exists $n$ such that $Z_n = 0$, then the population dies. In other words, the hypotheses of this model are:
+
+- If $p_0 = 0$, then $\forall n\in \mathbb{N}*$, $Z_n \ge 1$ a.s. and $\mathbb{P}_{\text{ext}} = 0$.
+- If $p_0 = 1$, then $\forall n\in \mathbb{N}*$, $Z_n = 0$ a.s. and $\mathbb{P}_{\text{ext}} = 1$.

@@ -171,8 +171,6 @@ Some additional pointers:
 - Evan Miller's review: [[https://www.evanmiller.org/a-taste-of-rust.html][A Taste of Rust]]
 - Jeroen Ooms (@opencpu): [[https://github.com/jeroen/hellorust][Hello Rust]] (Minimal Example of Calling Rust from R using Cargo)
 
-**** TODO Read the remaining book.
-
 * [[/Users/chl/Documents/Papers/boneh-2002-twent-years.pdf][boneh-2002-twent-years]] - Twenty years of attacks on the rsa cryptosystem
  :PROPERTIES:
  :Custom_ID: boneh-2002-twent-years
@@ -765,8 +763,6 @@ Software: [[http://splitstree.org][SplitsTree4]].
  - reticulate network = represents evolutionary histories in the presence of reticulate events (nodes with two parents). (See Fig. 1 for an overview )
 
 A split network contains exactly the same information as a list of splits with a weight for each split.
-
-**** TODO Reread later
 
 * [[/Users/chl/Documents/Papers/huson-2011-survey-combin.pdf][huson-2011-survey-combin]] - A survey of combinatorial methods for phylogenetic networks
  :PROPERTIES:
