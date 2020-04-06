@@ -6,3 +6,5 @@ Here are some notes I took while reading some papers from past Lisp conferences,
 
 ** Abstraction in Numerical Methods, Matthew Halfant and Gerald Jay Sussman
 This article discusses the interest of streams and higher-order abstractions in numerical computing, specifically integration and differentiation via [[https://en.wikipedia.org/wiki/Richardson_extrapolation][Richardson extrapolation]]. The authors use Scheme to provide their illustrations, first on computing π by the method of Archimedes (see also the [[https://en.wikipedia.org/wiki/Method_of_exhaustion][method of exhaustion]]).
+
+*Links:* [[file:src/archimedean.ss][archimedean.ss]], [[https://srfi.schemers.org/srfi-41/][SRFI 41: Streams]]
