@@ -1550,3 +1550,9 @@ See other tools for [[https://www.ebi.ac.uk/Tools/msa/][Multiple Sequence Alignm
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/thompson-2001-towar-reliab.pdf
  :END:
 The authors propose a new objective scoring function for multiple sequence alignments (norMD), which combines the advantages of the column- scoring techniques with the sensitivity of methods incorporating residue similarity scores. Compared to other approaches, norMD incorporates ab initio sequence information, such as the number, length and similarity of the sequences to be aligned.
+* [[/Users/chl/Documents/Papers/simonin-2012-physiol-signif.pdf][simonin-2012-physiol-signif]] - Physiological significance of network organization in fungi
+ :PROPERTIES:
+ :Custom_ID: simonin-2012-physiol-signif
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/simonin-2012-physiol-signif.pdf
+ :END:
+Hyphal fusion is necessary for efficient nutrient translocation in Neurospora crassa. Techniques used: radioisotope trac- ers, stable isotope tracers, and fluorescently labeled proteins, to visualize and quantify nutrient flows and cytoplasmic and nuclear movement. Analysis considers strips at varying excentricity (1.67-cm regions).

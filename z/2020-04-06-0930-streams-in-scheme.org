@@ -1,0 +1,9 @@
+* Streams in Scheme
+
+#+FILETAGS: :scheme:
+
+*Source:* /Structure and interpretation of computer programs/ (Abelson & Sussman). [[/Users/chl/Documents/Papers/abelson-1996-struc-inter.pdf][abelson-1996-struc-inter]]
+
+
+** Links
+[[file:~/org/drafts/lisp-proc.org][lisp-proc.org]]
