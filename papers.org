@@ -1552,3 +1552,25 @@ The authors propose a new objective scoring function for multiple sequence align
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/simonin-2012-physiol-signif.pdf
  :END:
 Hyphal fusion is necessary for efficient nutrient translocation in Neurospora crassa. Techniques used: radioisotope trac- ers, stable isotope tracers, and fluorescently labeled proteins, to visualize and quantify nutrient flows and cytoplasmic and nuclear movement. Analysis considers strips at varying excentricity (1.67-cm regions).
+* [[/Users/chl/Documents/Papers/abelson-1996-struc-inter.pdf][abelson-1996-struc-inter]] - Structure and interpretation of computer programs
+ :PROPERTIES:
+ :Custom_ID: abelson-1996-struc-inter
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/abelson-1996-struc-inter.pdf
+ :END:
+[[file:z/2020-04-06-0930-streams-in-scheme.org]]
+* [[/Users/chl/Documents/Papers/kernighan-1978-elemen-progr-style.pdf][kernighan-1978-elemen-progr-style]] - The elements of programming style
+ :PROPERTIES:
+ :Custom_ID: kernighan-1978-elemen-progr-style
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kernighan-1978-elemen-progr-style.pdf
+ :END:
+Nice introductory example to build an identity matrix in Fortran, which however would read much better using simple imperative code.
+
+#+BEGIN_QUOTE
+Write clearly -- don't be too clever.
+#+END_QUOTE
+
+A related advice is "write clearly -- don't sacrifice clarity for 'efficiency'."
+
+An n-by-n matrix has n^{2} elements, which means n^{2} assignments for its initialization. Multiplying two such matrices or solving n linear equations of n unknowns require on the order of n^{3} operations. If n ≥ 10, the time required to initialize a matrix is not important. What if n < 10? (Hint: I/O operations are more time consuming than arithmetic.)
+
+All rules are listed at the end (pp. 159-161).

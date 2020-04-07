@@ -11,4 +11,5 @@ Streams are a clever idea that allows one to use sequence manipulations without 
 #+END_QUOTE
 
 ** Links
-[[file:~/org/drafts/lisp-proc.org][lisp-proc.org]]
+
+[[file:~/org/drafts/lisp-proc.org]]
