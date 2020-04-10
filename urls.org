@@ -1,26 +1,53 @@
 * Inbox
-** Duo is a collection of colour combinations
+** Clojure babushka                                                            :clojure:
+ [2020-04-10 Fri 19:27]
+ https://github.com/borkdude/babashka
+** Great Looking Tables: gt                                                    :rstats:
+ [2020-04-10 Fri 19:26]
+ https://blog.rstudio.com/2020/04/08/great-looking-tables-gt-0-2/
+** Time Series Forecasting Best Practices & Examples (Microsoft)               :statistics:
+ [2020-04-10 Fri 19:25]
+ https://github.com/microsoft/forecasting
+** Today I learned (tip & tricks)                                              :misc:
+ [2020-04-10 Fri 19:25]
+ http://jonasbn.github.io/til/#itermapp
+** Inspectra is a tool for spectral comparison of graph topology               :python:graphs:
+ [2020-04-10 Fri 19:23]
+ https://github.com/cancerregulome/inspectra
+** Scheme in FORTH in Julia                                                    :julia:scheme:
+ [2020-04-09 Thu 20:08]
+ https://github.com/tgvaughan/scheme.forth.jl
+** The Ten Rules for Data Modeling with DynamoDB                               :database:
+ [2020-04-08 Wed 19:58]
+ https://www.trek10.com/blog/the-ten-rules-for-data-modeling-with-dynamodb
+** Using SIMD to aggregate billions of rows per second (on a laptop)           :database:
+ [2020-04-08 Wed 08:02]
+ https://www.questdb.io/blog/2020/04/02/using-simd-to-aggregate-billions-of-rows-per-second
+** A humble guide to database schema design                                    :database:
+ [2020-04-08 Wed 08:01]
+ https://www.mikealche.com/software-development/a-humble-guide-to-database-schema-design
+** Duo is a collection of colour combinations                                  :misc:
  [2020-04-07 Tue 17:23]
  https://duo.alexpate.uk/
-** A general purpose community detection and network embedding library for research built on NetworkX
+** A general purpose community detection and network embedding library         :graphs:python:
  [2020-04-07 Tue 16:24]
  https://github.com/benedekrozemberczki/karatecluB
-** Code for modelling estimated deaths and cases for COVID19
+** Code for modelling estimated deaths and cases for COVID19                   :statistics:
  [2020-04-06 Mon 20:12]
  https://github.com/ImperialCollegeLondon/covid19model
-** org-protocol-capture-html
+** org-protocol-capture-html                                                   :org:
  [2020-04-06 Mon 17:33]
  https://github.com/alphapapa/org-protocol-capture-html
-** Minecraft Harmony
+** Minecraft Harmony                                                           :misc:
  [2020-04-06 Mon 11:30]
  http://michaellynn.github.io/2020/03/28/minecraft-harmony/
-** Flask app by karpathy on COVID-19
+** Flask app by karpathy on COVID-19                                           :python:
  [2020-04-06 Mon 11:29]
  https://github.com/karpathy/covid-sanity
-** Template elements in Org
+** Template elements in Org                                                    :org:
  [2020-04-03 Fri 10:48]
  https://orgmode.org/manual/Template-elements.html#Template-elements
-** Previewing LaTeX fragments
+** Previewing LaTeX fragments                                                  :org:
  [2020-04-03 Fri 10:31]
  https://orgmode.org/manual/Previewing-LaTeX-fragments.html#Previewing-LaTeX-fragments
 ** Python-3-Cheatsheet                                                         :python:
