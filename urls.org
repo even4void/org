@@ -1,4 +1,7 @@
 * Inbox
+** SIR model in Python
+ [2020-04-11 Sat 09:59]
+ https://johnlekberg.com/blog/2020-04-10-cli-infection.html
 ** Clojure babushka                                                            :clojure:
  [2020-04-10 Fri 19:27]
  https://github.com/borkdude/babashka
