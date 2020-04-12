@@ -1,4 +1,22 @@
 * Inbox
+** A collection of graph classification methods
+ [2020-04-12 Sun 21:02]
+ https://github.com/benedekrozemberczki/awesome-graph-classification
+** So You Want to Be a (Compiler) Wizard
+ [2020-04-12 Sun 20:55]
+ https://belkadan.com/blog/2016/05/So-You-Want-To-Be-A-Compiler-Wizard/
+** Programming Language Theory
+ [2020-04-12 Sun 20:50]
+ https://steshaw.org/plt/
+** Processing and Racket
+ [2020-04-12 Sun 20:45]
+ https://www.hive76.org/2013/06/01/processing-and-racket/
+** Probabilistic programming in Racket
+ [2020-04-12 Sun 20:44]
+ http://rmculpepper.github.io/gamble/
+** covdata package (interesting for ggplot)
+ [2020-04-11 Sat 20:35]
+ 36:39: execution error: Erreur dans Safari : L’application n’est pas ouverte. (-600)
 ** SIR model in Python
  [2020-04-11 Sat 09:59]
  https://johnlekberg.com/blog/2020-04-10-cli-infection.html
