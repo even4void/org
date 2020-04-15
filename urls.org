@@ -1,4 +1,10 @@
 * Inbox
+** How To Take Smart Notes With Org-mode
+ [2020-04-15 Wed 19:18]
+ https://blog.jethro.dev/posts/how_to_take_smart_notes_org/
+** Dash: Virus Phylogenetic Tree
+ [2020-04-15 Wed 09:41]
+ https://github.com/plotly/dash-sample-apps/tree/master/apps/dash-phylogeny
 ** A collection of graph classification methods
  [2020-04-12 Sun 21:02]
  https://github.com/benedekrozemberczki/awesome-graph-classification
