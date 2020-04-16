@@ -1,0 +1,9 @@
+* Programming languages for educational purpose
+
+#+FILETAGS: :scheme:
+
+*Source:* SICP, Acknowledgments, Harold Abelson and Gerald Jay Sussman with Julie Sussman
+
+#+BEGIN_QUOTE
+Marvin Minsky and Seymour Papert formed many of our atti- tudes about programming and its place in our intellectual lives. To them we owe the understanding that computation provides a means of expression for exploring ideas that would otherwise be too complex to deal with precisely. They emphasize that a stu- dent’s ability to write and modify programs provides a powerful medium in which exploring becomes a natural activity.
+#+END_QUOTE

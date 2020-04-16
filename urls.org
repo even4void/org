@@ -1,4 +1,7 @@
 * Inbox
+** A set of keybindings for evil-mode
+ [2020-04-15 Wed 23:24]
+ https://github.com/emacs-evil/evil-collection
 ** How To Take Smart Notes With Org-mode
  [2020-04-15 Wed 19:18]
  https://blog.jethro.dev/posts/how_to_take_smart_notes_org/
