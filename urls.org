@@ -1,4 +1,10 @@
 * Inbox
+** Cross Section Econometrics Syllabus
+ [2020-04-17 Fri 20:15]
+ https://rlhick.people.wm.edu/stories/syllabus_econ407.html
+** Tensorflow with Custom Likelihood Functions
+ [2020-04-17 Fri 20:14]
+ https://rlhick.people.wm.edu/posts/custom-likes-tensorflow.html
 ** A set of keybindings for evil-mode
  [2020-04-15 Wed 23:24]
  https://github.com/emacs-evil/evil-collection
