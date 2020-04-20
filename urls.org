@@ -1,4 +1,10 @@
 * Inbox
+** Introduction to Computational Thinking with Julia
+ [2020-04-20 Mon 13:19]
+ https://github.com/mitmath/6S083
+** Manpages for Scheme
+ [2020-04-20 Mon 12:22]
+ https://github.com/schemedoc/scheme-manpages
 ** Starting to hack on SBCL                                                    :lisp:
  [2020-04-20 Mon 10:49]
  https://pvk.ca/Blog/2013/04/13/starting-to-hack-on-sbcl/
