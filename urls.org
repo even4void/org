@@ -1,38 +1,47 @@
 * Inbox
-** Cross Section Econometrics Syllabus
+** Starting to hack on SBCL                                                    :lisp:
+ [2020-04-20 Mon 10:49]
+ https://pvk.ca/Blog/2013/04/13/starting-to-hack-on-sbcl/
+** A Possible New Backend for Rust                                             :rust:
+ [2020-04-20 Mon 10:43]
+ https://jason-williams.co.uk/a-possible-new-backend-for-rust
+** What does this economist think of epidemiologists?                          :statistics:econ:
+ [2020-04-20 Mon 10:29]
+ https://marginalrevolution.com/marginalrevolution/2020/04/what-does-this-economist-think-of-epidemiology.html
+** Cross Section Econometrics Syllabus                                         :econ:
  [2020-04-17 Fri 20:15]
  https://rlhick.people.wm.edu/stories/syllabus_econ407.html
-** Tensorflow with Custom Likelihood Functions
+** Tensorflow with Custom Likelihood Functions                                 :python:
  [2020-04-17 Fri 20:14]
  https://rlhick.people.wm.edu/posts/custom-likes-tensorflow.html
-** A set of keybindings for evil-mode
+** A set of keybindings for evil-mode                                          :emacs:
  [2020-04-15 Wed 23:24]
  https://github.com/emacs-evil/evil-collection
-** How To Take Smart Notes With Org-mode
+** How To Take Smart Notes With Org-mode                                       :emacs:org:
  [2020-04-15 Wed 19:18]
  https://blog.jethro.dev/posts/how_to_take_smart_notes_org/
-** Dash: Virus Phylogenetic Tree
+** Dash: Virus Phylogenetic Tree                                               :bioinformatics:
  [2020-04-15 Wed 09:41]
  https://github.com/plotly/dash-sample-apps/tree/master/apps/dash-phylogeny
-** A collection of graph classification methods
+** A collection of graph classification methods                                :graphs:
  [2020-04-12 Sun 21:02]
  https://github.com/benedekrozemberczki/awesome-graph-classification
-** So You Want to Be a (Compiler) Wizard
+** So You Want to Be a (Compiler) Wizard                                       :misc:
  [2020-04-12 Sun 20:55]
  https://belkadan.com/blog/2016/05/So-You-Want-To-Be-A-Compiler-Wizard/
-** Programming Language Theory
+** Programming Language Theory                                                 :misc:
  [2020-04-12 Sun 20:50]
  https://steshaw.org/plt/
-** Processing and Racket
+** Processing and Racket                                                       :racket:
  [2020-04-12 Sun 20:45]
  https://www.hive76.org/2013/06/01/processing-and-racket/
-** Probabilistic programming in Racket
+** Probabilistic programming in Racket                                         :racket:
  [2020-04-12 Sun 20:44]
  http://rmculpepper.github.io/gamble/
-** covdata package (interesting for ggplot)
+** covdata package (interesting for ggplot)                                    :rstats:
  [2020-04-11 Sat 20:35]
  36:39: execution error: Erreur dans Safari : L’application n’est pas ouverte. (-600)
-** SIR model in Python
+** SIR model in Python                                                         :python:
  [2020-04-11 Sat 09:59]
  https://johnlekberg.com/blog/2020-04-10-cli-infection.html
 ** Clojure babushka                                                            :clojure:

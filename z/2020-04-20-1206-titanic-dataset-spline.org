@@ -1,0 +1,28 @@
+* On the use of splines for the Titanic dataset
+
+#+FILETAGS: :statistics:rstats:
+
+*Source:* /Regression Modeling Strategies/, Frank Harrell [[/Users/chl/Documents/Papers/harrell-2015-regres-model-strat.pdf][harrell-2015-regres-model-strat]]
+
+A modern take on regression modeling using the beautiful ~rms~ package. Fifteen years of use, and counting. Besides, the following illustrates the use of ~rcs~ to account for possible non-linearities, in this case regarding age of passengers.
+
+#+BEGIN_EXAMPLE
+library(rms)
+dd <- datadist(titanic3)
+options(datadist = "dd")
+f <- lrm(survived ~ rcs(sqrt(age), 5) * sex, data = titanic3)
+print(f)  # or latex(f)
+## Wald statistics
+a <- anova(f)
+print(a)
+plot(a)
+## Odds-ratio & Co.
+s <- summary(f, age = c(2, 21))
+plot(s, log = TRUE)
+## Effect table
+print(s, dec = 2)
+## Nomogram
+plot(nomogram(f, fun = plogis, funlabel = "Prob(survived)"))
+## Plotly
+plotp(Predict(f, age, sex))
+#+END_EXAMPLE
