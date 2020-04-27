@@ -1,4 +1,25 @@
 * Inbox
+** Doing Python Configuration Right
+ [2020-04-27 Mon 18:28]
+ https://whalesalad.com/blog/doing-python-configuration-right
+** Computational Statistics in Python
+ [2020-04-27 Mon 15:20]
+ https://people.duke.edu/~ccc14/sta-663/
+** The less-familiar parts of Lisp for beginners
+ [2020-04-27 Mon 15:11]
+ https://blog.cneufeld.ca/2014/01/the-less-familiar-parts-of-lisp-for-beginners-define-symbol-macro/
+** Basis function approximation to Gaussian processes
+ [2020-04-27 Mon 15:10]
+ https://github.com/gabriuma/basis_functions_approach_to_GP
+** Running from the past
+ [2020-04-27 Mon 15:09]
+ http://blog.sigfpe.com/2018/10/running-from-past.html?m=1
+** Mumble, high quality voice chat application
+ [2020-04-27 Mon 14:38]
+ https://www.mumble.info/
+** direnv – unclutter your .profile
+ [2020-04-27 Mon 14:37]
+ https://direnv.net/
 ** Cox regression and tidymodels                                               :rstats:
  [2020-04-26 Sun 17:57]
  https://github.com/tidymodels/planning/blob/master/survival-analysis/cox_notes_extra.Rmd
