@@ -1,23 +1,26 @@
 * Inbox
-** Doing Python Configuration Right
+** A textlint flycheck checker in Emacs                                        :emacs:
+ [2020-04-28 Tue 13:25]
+ http://www.macs.hw.ac.uk/~rs46/posts/2018-12-29-textlint-flycheck.html
+** Doing Python Configuration Right                                            :python:
  [2020-04-27 Mon 18:28]
  https://whalesalad.com/blog/doing-python-configuration-right
-** Computational Statistics in Python
+** Computational Statistics in Python                                          :python:
  [2020-04-27 Mon 15:20]
  https://people.duke.edu/~ccc14/sta-663/
-** The less-familiar parts of Lisp for beginners
+** The less-familiar parts of Lisp for beginners                               :lisp:
  [2020-04-27 Mon 15:11]
  https://blog.cneufeld.ca/2014/01/the-less-familiar-parts-of-lisp-for-beginners-define-symbol-macro/
-** Basis function approximation to Gaussian processes
+** Basis function approximation to Gaussian processes                                 :bayesian:
  [2020-04-27 Mon 15:10]
  https://github.com/gabriuma/basis_functions_approach_to_GP
-** Running from the past
+** Running from the past                                                       :haskell:
  [2020-04-27 Mon 15:09]
  http://blog.sigfpe.com/2018/10/running-from-past.html?m=1
-** Mumble, high quality voice chat application
+** Mumble, high quality voice chat application                                 :misc:
  [2020-04-27 Mon 14:38]
  https://www.mumble.info/
-** direnv – unclutter your .profile
+** direnv – unclutter your .profile                                            :shell:
  [2020-04-27 Mon 14:37]
  https://direnv.net/
 ** Cox regression and tidymodels                                               :rstats:
