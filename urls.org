@@ -1,4 +1,10 @@
 * Inbox
+** 500_lang-lisp.el
+ [2020-04-29 Mer 17:46]
+ https://github.com/kaz-yos/emacs/blob/master/init.d/500_lang-lisp.el
+** Swank server for r7rs Schemes
+ [2020-04-29 Mer 17:44]
+ https://github.com/ecraven/r7rs-swank
 ** Dialog dataset from online books
  [2020-04-29 Wed 10:17]
  https://github.com/ricsinaruto/gutenberg-dialog
