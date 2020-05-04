@@ -1,11 +1,29 @@
 * Inbox
-** 500_lang-lisp.el
+** Jon Atack Lisp rc files                                                     :emacs:lisp:
+ [2020-05-02 Sat 08:52]
+ https://github.com/jonatack/dotfiles/blob/master/emacs
+** GNU Emacs configuration from Vifon                                          :emacs:
+ [2020-05-02 Sat 08:51]
+ https://github.com/Vifon/emacs-config
+** Game of lige using CL and clinch                                            :lisp:
+ [2020-05-02 Sat 08:51]
+ http://love2d.org/
+** Lisp bindings for OpenGL                                                    :lisp:
+ [2020-05-02 Sat 08:50]
+ http://love2d.org/
+** 2D games in Lua                                                             :misc:
+ [2020-05-02 Sat 08:50]
+ http://love2d.org/
+** Meta-Circular Adventures in Functional Abstraction                          :haskell:
+ [2020-05-01 Fri 20:24]
+ https://hackerfall.com/story/challenging-clojure-in-common-lisp
+** 500_lang-lisp.el                                                            :lisp:
  [2020-04-29 Mer 17:46]
  https://github.com/kaz-yos/emacs/blob/master/init.d/500_lang-lisp.el
-** Swank server for r7rs Schemes
+** Swank server for r7rs Schemes                                               :scheme:
  [2020-04-29 Mer 17:44]
  https://github.com/ecraven/r7rs-swank
-** Dialog dataset from online books
+** Dialog dataset from online books                                            :misc:
  [2020-04-29 Wed 10:17]
  https://github.com/ricsinaruto/gutenberg-dialog
 ** A textlint flycheck checker in Emacs                                        :emacs:

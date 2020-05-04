@@ -20,7 +20,7 @@ ascii(summary(ToothGrowth))
 | 6 | Max.   :33.90 |       | Max.   :2.000 |
 #+end_src
 
-#+BEGIN_SRC R :results output
+#+BEGIN_SRC R :exports results :results output
 Hmisc::describe(ToothGrowth)
 #+END_SRC
 
@@ -29,15 +29,15 @@ Hmisc::describe(ToothGrowth)
 ToothGrowth
 
  3  Variables      60  Observations
---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 len
-       n  missing distinct     Info     Mean      Gmd      .05      .10
-      60        0       43    0.999    18.81    8.839     6.37     8.11
-     .25      .50      .75      .90      .95
-   13.07    19.25    25.27    27.30    29.57
+       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75
+      60        0       43    0.999    18.81    8.839     6.37     8.11    13.07    19.25    25.27
+     .90      .95
+   27.30    29.57
 
 lowest :  4.2  5.2  5.8  6.4  7.0, highest: 29.4 29.5 30.9 32.5 33.9
---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 supp
        n  missing distinct
       60        0        2
@@ -45,7 +45,7 @@ supp
 Value       OJ  VC
 Frequency   30  30
 Proportion 0.5 0.5
---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 dose
        n  missing distinct     Info     Mean      Gmd
       60        0        3    0.889    1.167    0.678
@@ -53,7 +53,7 @@ dose
 Value        0.5   1.0   2.0
 Frequency     20    20    20
 Proportion 0.333 0.333 0.333
---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 #+end_example
 
 #+BEGIN_SRC R :results output
@@ -96,369 +96,6 @@ ToothGrowth %>%
   gt()
 #+END_SRC
 
-#+RESULTS:
-#+begin_export html
-<style>html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
-}
-
-#pxzxpwgpnp .gt_table {
-  display: table;
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#pxzxpwgpnp .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#pxzxpwgpnp .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#pxzxpwgpnp .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 0;
-  padding-bottom: 4px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#pxzxpwgpnp .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pxzxpwgpnp .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#pxzxpwgpnp .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#pxzxpwgpnp .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#pxzxpwgpnp .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#pxzxpwgpnp .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#pxzxpwgpnp .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#pxzxpwgpnp .gt_group_heading {
-  padding: 8px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#pxzxpwgpnp .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#pxzxpwgpnp .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#pxzxpwgpnp .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#pxzxpwgpnp .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#pxzxpwgpnp .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#pxzxpwgpnp .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 12px;
-}
-
-#pxzxpwgpnp .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pxzxpwgpnp .gt_first_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-}
-
-#pxzxpwgpnp .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#pxzxpwgpnp .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#pxzxpwgpnp .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#pxzxpwgpnp .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#pxzxpwgpnp .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding: 4px;
-}
-
-#pxzxpwgpnp .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#pxzxpwgpnp .gt_sourcenote {
-  font-size: 90%;
-  padding: 4px;
-}
-
-#pxzxpwgpnp .gt_left {
-  text-align: left;
-}
-
-#pxzxpwgpnp .gt_center {
-  text-align: center;
-}
-
-#pxzxpwgpnp .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#pxzxpwgpnp .gt_font_normal {
-  font-weight: normal;
-}
-
-#pxzxpwgpnp .gt_font_bold {
-  font-weight: bold;
-}
-
-#pxzxpwgpnp .gt_font_italic {
-  font-style: italic;
-}
-
-#pxzxpwgpnp .gt_super {
-  font-size: 65%;
-}
-
-#pxzxpwgpnp .gt_footnote_marks {
-  font-style: italic;
-  font-size: 65%;
-}
-</style>
-<div id="pxzxpwgpnp" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
-
-  <thead class="gt_col_headings">
-    <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">dose</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">mean</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr>
-      <td class="gt_row gt_center">0.5</td>
-      <td class="gt_row gt_right">13.23</td>
-    </tr>
-    <tr>
-      <td class="gt_row gt_center">1</td>
-      <td class="gt_row gt_right">22.70</td>
-    </tr>
-    <tr>
-      <td class="gt_row gt_center">2</td>
-      <td class="gt_row gt_right">26.06</td>
-    </tr>
-  </tbody>
-
-
-</table></div>
-#+end_export
-
 * Lisp Notebook
 
 #+BEGIN_SRC emacs-lisp
@@ -486,9 +123,6 @@ x = sorted([randint(1, 10) for i in range(0, 9)], reverse=True)
 print("Answer = value %s in sequence %s" % (x[2], x))
 #+END_SRC
 
-#+RESULTS:
-: Answer = value 7 in sequence [10, 10, 7, 6, 5, 3, 3, 3, 2]
-
 Now, in Clojure:
 
 #+BEGIN_SRC clojure
@@ -497,10 +131,6 @@ Now, in Clojure:
     (println x)
     (println c))
 #+END_SRC
-
-#+RESULTS:
-: (9 9 9 9 8 6 6 2 0 0)
-: 9
 
 This does not allow to fix the seed while keeping the laziness (see [[https://kotka.de/blog/2009/11/Taming_the_Bound_Seq.html][Taming the Bound Seq]]). Here is an [[https://stackoverflow.com/a/22460517][alternative solution]] from Stack Overflow:
 
