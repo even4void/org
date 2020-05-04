@@ -1574,3 +1574,20 @@ A related advice is "write clearly -- don't sacrifice clarity for 'efficiency'."
 An n-by-n matrix has n^{2} elements, which means n^{2} assignments for its initialization. Multiplying two such matrices or solving n linear equations of n unknowns require on the order of n^{3} operations. If n ≥ 10, the time required to initialize a matrix is not important. What if n < 10? (Hint: I/O operations are more time consuming than arithmetic.)
 
 All rules are listed at the end (pp. 159-161).
+* [[/Users/chl/Documents/Papers/alhamdoosh-2017-combin.pdf][alhamdoosh-2017-combin]] - Combining multiple tools outperforms individual methods in gene set enrichment analyses
+ :PROPERTIES:
+ :Custom_ID: alhamdoosh-2017-combin
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/alhamdoosh-2017-combin.pdf
+ :END:
+Description of a new approach: ensemble of genes set enrichment analyses ([[http://www.bioconductor.org/packages/EGSEA/][EGSEA]]), which uses 12 algorithms and calculates collective gene set scores. Also provides a brief review of existing approaches: ORA methods vs. enrichment score-based methods or permutation-based testing (including variant thereof, e.g. the "camera method").
+* [[/Users/chl/Documents/Papers/soneson-2013-rna.pdf][soneson-2013-rna]] - A comparison of methods for differential expression analysis of rna-seq data
+ :PROPERTIES:
+ :Custom_ID: soneson-2013-rna
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/soneson-2013-rna.pdf
+ :END:
+This article provides a comparison of eleven methods for differential expression analysis of RNA-seq data.
+
+- *DESeq* is conservative with default settings. It becomes more conservative when outliers are introduced. It generally has low TPR and poor FDR control with 2 samples/condition, while maintaining good FDR control for larger sample sizes, also with outliers. It has medium computational time requirement, increases slightly with sample size.
+- *edgeR* has slightly liberal for small sample sizes with default settings. It becomes more liberal when outliers are introduced. It generally has high TPR and poor FDR control in many cases, worse with outliers. Medium computational time requirement, largely independent of sample size.
+
+See [[/Users/chl/Documents/Papers/anders-2013-count-rna.pdf][anders-2013-count-rna]] for a detailed description of the above R packages.
