@@ -1,11 +1,14 @@
 * Inbox
-** Installing macOS on a separate APFS volume
+** A hands-on introduction to static code analysis                             :misc:
+ [2020-05-05 Tue 07:33]
+ https://deepsource.io/blog/introduction-static-code-analysis/
+** Installing macOS on a separate APFS volume                                  :apple:
  [2020-05-04 Mon 20:22]
  https://support.apple.com/en-us/HT208891
-** How to Make Beautiful Tables in R
+** How to Make Beautiful Tables in R                                           :rstats:
  [2020-05-04 Mon 20:21]
  https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/
-** RMarkdown for Scientists
+** RMarkdown for Scientists                                                    :rstats:
  [2020-05-04 Mon 20:20]
  https://rmd4sci.njtierney.com/
 ** Jon Atack Lisp rc files                                                     :emacs:lisp:

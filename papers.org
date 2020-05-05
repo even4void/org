@@ -1580,6 +1580,9 @@ All rules are listed at the end (pp. 159-161).
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/alhamdoosh-2017-combin.pdf
  :END:
 Description of a new approach: ensemble of genes set enrichment analyses ([[http://www.bioconductor.org/packages/EGSEA/][EGSEA]]), which uses 12 algorithms and calculates collective gene set scores. Also provides a brief review of existing approaches: ORA methods vs. enrichment score-based methods or permutation-based testing (including variant thereof, e.g. the "camera method").
+
+See [[/Users/chl/Documents/Papers/khatri-2012-ten-years.pdf][khatri-2012-ten-years]] regarding limitations of the ORA approach.
+
 * [[/Users/chl/Documents/Papers/soneson-2013-rna.pdf][soneson-2013-rna]] - A comparison of methods for differential expression analysis of rna-seq data
  :PROPERTIES:
  :Custom_ID: soneson-2013-rna
@@ -1591,3 +1594,9 @@ This article provides a comparison of eleven methods for differential expression
 - *edgeR* has slightly liberal for small sample sizes with default settings. It becomes more liberal when outliers are introduced. It generally has high TPR and poor FDR control in many cases, worse with outliers. Medium computational time requirement, largely independent of sample size.
 
 See [[/Users/chl/Documents/Papers/anders-2013-count-rna.pdf][anders-2013-count-rna]] for a detailed description of the above R packages.
+* [[/Users/chl/Documents/Papers/wengrow-2017-common-sense.pdf][wengrow-2017-common-sense]] - A common-sense guide to data structures and algorithms
+ :PROPERTIES:
+ :Custom_ID: wengrow-2017-common-sense
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wengrow-2017-common-sense.pdf
+ :END:
+Short but interesting textbook on general programming principles. It features a mix of Python and Javascript to illustrate major sorting algorithms, big O notation, etc. Available as EPUB locally.
