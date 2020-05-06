@@ -1,4 +1,13 @@
 * Inbox
+** Nice macOS desktop (see also https://is.gd/eeK3Qd)
+ [2020-05-06 Wed 11:40]
+ https://www.reddit.com/r/unixporn/comments/clyqna/chunkwm_my_palenight_macos_rice/
+** Tricky cases in C
+ [2020-05-06 Wed 08:41]
+ http://fabiensanglard.net/c/
+** Books on algorithms
+ [2020-05-06 Wed 08:39]
+ http://fabiensanglard.net/algorithms_and_datastructures/index.php
 ** A hands-on introduction to static code analysis                             :misc:
  [2020-05-05 Tue 07:33]
  https://deepsource.io/blog/introduction-static-code-analysis/
