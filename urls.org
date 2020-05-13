@@ -1,11 +1,20 @@
 * Inbox
-** Nice macOS desktop (see also https://is.gd/eeK3Qd)
+** Packages that take advantage of the Fringe                                  :emacs:
+ [2020-05-12 Tue 16:06]
+ https://www.reddit.com/r/emacs/comments/9hufzz/packages_that_take_advantage_of_the_fringe/
+** Interesting dot files                                                       :unix:
+ [2020-05-12 Tue 10:06]
+ https://github.com/Who23/dots
+** Programming Fonts with Ligatures added                                      :misc:
+ [2020-05-12 Mar 08:06]
+ https://github.com/ToxicFrog/Ligaturizer
+** Nice macOS desktop (see also https://is.gd/eeK3Qd)                          :apple:
  [2020-05-06 Wed 11:40]
  https://www.reddit.com/r/unixporn/comments/clyqna/chunkwm_my_palenight_macos_rice/
-** Tricky cases in C
+** Tricky cases in C                                                           :clang:
  [2020-05-06 Wed 08:41]
  http://fabiensanglard.net/c/
-** Books on algorithms
+** Books on algorithms                                                         :algorithms:
  [2020-05-06 Wed 08:39]
  http://fabiensanglard.net/algorithms_and_datastructures/index.php
 ** A hands-on introduction to static code analysis                             :misc:
@@ -59,7 +68,7 @@
 ** The less-familiar parts of Lisp for beginners                               :lisp:
  [2020-04-27 Mon 15:11]
  https://blog.cneufeld.ca/2014/01/the-less-familiar-parts-of-lisp-for-beginners-define-symbol-macro/
-** Basis function approximation to Gaussian processes                                 :bayesian:
+** Basis function approximation to Gaussian processes                          :bayesian:
  [2020-04-27 Mon 15:10]
  https://github.com/gabriuma/basis_functions_approach_to_GP
 ** Running from the past                                                       :haskell:
