@@ -1,4 +1,22 @@
 * Inbox
+** Large SVDs Dask + CuPy + Zarr + Genomics                                    :python:
+ [2020-05-14 Thu 18:01]
+ https://blog.dask.org/2020/05/13/large-svds
+** Calendar and diary                                                          :emacs:
+ [2020-05-14 Thu 17:46]
+ https://ftp.gnu.org/old-gnu/Manuals/emacs-20.7/html_chapter/emacs_33.html
+** Commands in the Agenda Buffer                                               :emacs:
+ [2020-05-14 Thu 17:46]
+ https://orgmode.org/manual/Agenda-Commands.html#Agenda-Commands
+** evil-org-mode                                                               :emacs:
+ [2020-05-14 Thu 17:46]
+ https://github.com/Somelauw/evil-org-mode
+** Plain TeX reference                                                         :tex:
+ [2020-05-14 Thu 17:45]
+ https://nwalsh.com/tex/texhelp/Plain.html
+** Diary mode                                                                  :emacs:
+ [2020-05-14 Thu 17:45]
+ https://www.emacswiki.org/emacs/DiaryMode
 ** Packages that take advantage of the Fringe                                  :emacs:
  [2020-05-12 Tue 16:06]
  https://www.reddit.com/r/emacs/comments/9hufzz/packages_that_take_advantage_of_the_fringe/
