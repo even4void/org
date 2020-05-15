@@ -1,4 +1,3 @@
-# -*- ispell-dictionary: "french" -*-
 #+TITLE:        Emacs pour l'impatient
 #+LANG:         fr
 #+STARTUP:      align fold noindent hideblocks fnlocal
@@ -19,22 +18,24 @@ I spend most of my time editing in Emacs. I read and send mail with Emacs using 
 --- Richard Stallman, [[https://stallman.org/stallman-computing.html][How I do my computing]]
 #+END_QUOTE
 
-Ceci étant, l'objet de ce document n'est pas d'arguer pour ou contre l'usage de Emacs pour réaliser des tâches plus ou moins complexes. Il n'est pas non plus question de fournir un manuel détaillé concernant l'utilisation d'Emacs et les [[http://ergoemacs.org/emacs/gnu_emacs_keybinding.html][milles et quelques raccourcis clavier]] dont dispose Emacs dans sa configuration de base. Pour cela, il est possible de consulter la [[https://www.gnu.org/software/emacs/tour/][documentation officielle]], les ouvrages publiés chez O'Reilly, par exemple [[http://shop.oreilly.com/product/9780596006488.do][Learning GNU Emacs]], ou les nombreux liens que l'on trouve sur internet : [[https://www.masteringemacs.org][Mastering Emacs]] ou [[http://ergoemacs.org/emacs/emacs.html][Practical Emacs Tutorial]] ; [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]] et [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Emacs org-mode examples and cookbook]] pour le mode org plus spécifiquement
+Ceci étant, l'objet de ce document n'est pas d'arguer pour ou contre l'usage de Emacs pour réaliser des tâches plus ou moins complexes. Il n'est pas non plus question de fournir un manuel détaillé concernant l'utilisation d'Emacs et les [[http://ergoemacs.org/emacs/gnu_emacs_keybinding.html][milles et quelques raccourcis clavier]] dont dispose Emacs dans sa configuration de base. Pour cela, il est possible de consulter la [[https://www.gnu.org/software/emacs/tour/][documentation officielle]], les ouvrages publiés chez O'Reilly, par exemple [[http://shop.oreilly.com/product/9780596006488.do][Learning GNU Emacs]], ou les nombreux liens que l'on trouve sur internet : [[https://www.masteringemacs.org][Mastering Emacs]] ou [[http://ergoemacs.org/emacs/emacs.html][Practical Emacs Tutorial]] ; [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]] et [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Emacs org-mode examples and cookbook]] pour le mode org plus spécifiquement.
 
-L'objet de ce document est somme tout assez modeste et on s'intéressera essentiellement à quelques "modes" spécifiques, en particulier ceux qui se révèlent le plus utile pour éditer efficacement des documents texte et interagir interactivement avec des shells ou des environnements de type {REPL|Read Eval Print Loop}. L'auteur utilise personnellement Emacs depuis une quinzaine d'années, en connaît le strict minimum pour éditer une grande variété de documents, et se contente la plupart du temps d'utiliser Emacs comme un excellent éditeur de texte. En guise d'illustration, la figure [[fig:emacs-screenshot]] permet de voir à quoi ressemble l'édition de ce document sous Emacs avec le [[https://orgmode.org][mode org]]. En réalité, il ne s'agit pas tout à fait de la version de base d'Emacs, encore appelé Emacs vanilla, mais de [[https://github.com/hlissner/doom-emacs][Doom Emacs]], une configuration particulière d'Emacs incluant un thème et des options bien spécifiques. On se concentrera d'ailleurs sur cette version d'Emacs dans les prochaines sections.
+L'objet de ce document est somme toute assez modeste et on s'intéressera essentiellement à quelques "modes" spécifiques, en particulier ceux qui se révèlent le plus utile pour éditer efficacement des documents texte et interagir interactivement avec des shells ou des environnements de type {REPL|Read Eval Print Loop}. L'auteur utilise personnellement Emacs depuis une vingtaine d'années, en connaît le strict minimum pour éditer une grande variété de documents, et se contente la plupart du temps d'utiliser Emacs comme un excellent éditeur de texte. En guise d'illustration, la figure [[fig:emacs-screenshot]] permet de voir à quoi ressemble l'édition de ce document sous Emacs avec le [[https://orgmode.org][mode org]]. En réalité, il ne s'agit pas tout à fait de la version de base d'Emacs, encore appelé Emacs vanilla, mais de [[https://github.com/hlissner/doom-emacs][Doom Emacs]], une configuration particulière d'Emacs incluant un thème et des options bien spécifiques. On se concentrera d'ailleurs sur cette version d'Emacs dans les prochaines sections.
 
 #+CAPTION:   L'édition de ce document sous Emacs
 #+NAME:   fig:emacs-screenshot
 #+LABEL:   fig:emacs-screenshot
 #+ATTR_HTML:   :width 640px
-#+ATTR_ORG:  :width 100
+#+ATTR_ORG:   :width 100
 [[./_img/fig-emacs-screenshot.png]]
+
+** Installation de Doom Emacs
+
+L'installation de Doom Emacs ne pose pas de problème particulier, et tout est clairement détaillé sur Github. Il est recommendé de bien lire la FAQ pour les problèmes les plus courants, et de consulter régulièrement les tickets, notamment en cas de soucis après une mise à jour. A l'image de Spacemacs, Doom Emacs repose sur le mode Evil, même s'il est possible de le désactiver. Ceci étant, en mode insertion, la plupart des commandes Emacs classiques sont disponibles, et donc la différence se voit essentiellement lorsque l'on se retrouve en mode normal ou visuel. Attention toutefois, certaines combinaisons de touches (p.ex. dans le mode calendar ou org) ont été réaffectées pour respecter le mode Evil.
 
 ** Organiser son travail avec Emacs
 
-Encore une fois, il n'est pas question de transformer Emacs en une application tout en un --- pour cela, il suffit de consulter l'excellente page citée plus haut, [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]], mais à l'exploiter comme une boîte à outils centrale dans son travail quotidien. Il est tout à fait possible de n'utiliser Emacs que pour éditer des fichiers textes, voire même en faire l'[[https://github.com/frankjonen/emacs-for-writers][outil de base]] de son travail d'écriture. L'auteur de /Mastering Emacs/ [@petersen-2015-master-emacs] fournit d'ailleurs [[https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs][quelques conseils]] bien utiles pour rédiger un ouvrage sous Emacs.
-
-# FIXME update link [outil de base]
+Encore une fois, il n'est pas question de transformer Emacs en une application tout en un --- pour cela, il suffit de consulter l'excellente page citée plus haut, [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]], mais à l'exploiter comme une boîte à outils centrale dans son travail quotidien. Il est tout à fait possible de n'utiliser Emacs que pour éditer des fichiers texte, voire même en faire l'[[https://github.com/frankjonen/emacs-for-writers][outil de base]] de son travail d'écriture. L'auteur de /Mastering Emacs/ [@petersen-2015-master-emacs] fournit d'ailleurs [[https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs][quelques conseils]] bien utiles pour rédiger un ouvrage sous Emacs.
 
 ** TL;DR
 
@@ -69,7 +70,15 @@ On passe d'une ligne à la suivante ou à la précédente à l'aide de =C-n= et 
 ** Fonctions avancées
 ** Recherche simple
 
-* Gestion de projets
+* Ivy
+* Utiliser un terminal
+
+Emacs fournit un véritable shell écrit en Lisp, =eshell=, et des émulateurs de terminal (=term=, =ansi-term=, =multi-term=). Eshell présente ses intérêts, que l'on discutera plus loin, mais si l'on souhaite travailler avec un véritable terminal et non un émulateur sous Emacs, il est conseillé d'installer le package =vterm=. Attention, il s'agit d'un véritable programme externe, qui doit être compilé avant de pouvoir l'utiliser. Ceci est également valable après chaque mise à jour du package, à l'image de =pdfserver=.
+
+* Gestion des répertoires avec Dired
+* Gestion de projets avec Projectile
+* Gestion de l'agenda et des notes
+* Gestion du courriel
 * Gestion de documents texte
 
 ** Le mode texte simple
@@ -97,6 +106,7 @@ Pour faciliter le balisage de certains éléments, tels que la mise en gras ou e
 
 ** Org
 
+** Latex et Bibtex
 * Gestion des modes de programmation
 
 ** Introduction au mode =progn=
@@ -115,5 +125,3 @@ Dans ce qui suit, on présentera plus en détails le mode Lisp avec en particuli
 ** Lisp et Slime
 
 ** Clojure et Cider
-
-
