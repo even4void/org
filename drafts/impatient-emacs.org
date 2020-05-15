@@ -1,10 +1,9 @@
 #+TITLE:        Emacs pour l'impatient
-#+LANG:         fr
-#+STARTUP:      align fold noindent hideblocks fnlocal
-#+OPTIONS:      H:3 num:nil toc:2 ':t *:t ::t f:t |:t -:t
+#+LANGUAGE:     fr
+#+OPTIONS:      H:3 num:nil toc:t ':t *:t ::t f:t |:t -:t
 
-* TODO [0/2]                                                                   :noexport:
-- [ ] Update to focus on Doom Emacs
+* TODO [1/2]                                                                   :noexport:
+- [X] Update to focus on Doom Emacs
 - [ ] Typical workflow (copy/paste the evil way, search, project, etc.)
 
 * Les bases de l'éditeur Emacs
@@ -37,16 +36,16 @@ L'installation de Doom Emacs ne pose pas de problème particulier, et tout est c
 
 Encore une fois, il n'est pas question de transformer Emacs en une application tout en un --- pour cela, il suffit de consulter l'excellente page citée plus haut, [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]], mais à l'exploiter comme une boîte à outils centrale dans son travail quotidien. Il est tout à fait possible de n'utiliser Emacs que pour éditer des fichiers texte, voire même en faire l'[[https://github.com/frankjonen/emacs-for-writers][outil de base]] de son travail d'écriture. L'auteur de /Mastering Emacs/ [@petersen-2015-master-emacs] fournit d'ailleurs [[https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs][quelques conseils]] bien utiles pour rédiger un ouvrage sous Emacs.
 
-** TL;DR
-
-Voici en quelques mots ce qu'il faut retenir de ce document.
-
-On parlera de programmation lettrée (en anglais, /literate programming/) pour désigner cette approche
+Un immense avantage d'Emacs est la possibilité de lier n'importe quel shell ou process à un buffer dans lequel se trouve un document en cours d'édition (document Org ou code source). Il est alors possible d'évaluer directement des expressions ou des instructions d'un code donné à partir du document source et d'insérer les résultats dans ce même document. A l'extrême, le texte remplace les commentaires d'un code source et on a véritablement un document avec un corps de texte, des éléments balisés contenant du code source et les sorties produites par ce même code source. On parlera de programmation lettrée (en anglais, /literate programming/) pour désigner cette approche :
 
 #+BEGIN_QUOTE
 Let us change our traditional attitude to the construction of programs. Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.
 --- Donald E. Knuth
 #+END_QUOTE
+
+Emacs peut donc d'ores et déjà servir d'éditeur de code et de documentation, quelle que soit la manière dont on envisage la relation entre ces deux constituant d'un programme informatique. Le mode Org offre par exemple une version modernisée de Noweb.
+
+En plus de documents interactifs, Emacs permet de gérer un agenda ainsi que son courriel, organiser des listes de tâches à faire, naviguer dans un système de fichier local ou distant, gérer des projets informatiques à plus grande échelle tout en facilitant l'interaction avec un gestionnaire de version tel que Git.
 
 * Navigation et mouvement de base
 

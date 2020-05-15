@@ -1,4 +1,16 @@
 * Inbox
+** Data.table vs. Rcpp
+ [2020-05-15 Fri 20:07]
+ https://stackoverflow.com/questions/61800528/omitting-the-rows-of-a-data-frame-in-which-there-elements-are-the-same/61820131#61820131
+** Dplyr v1
+ [2020-05-15 Fri 20:01]
+ https://thinkr.fr/hey-quoi-de-neuf-dplyr-le-point-sur-la-v1/
+** Powerlevel10k Zsh theme
+ [2020-05-15 Fri 08:53]
+ https://github.com/romkatv/powerlevel10k
+** Textplot R package
+ [2020-05-15 Fri 08:21]
+ https://github.com/bnosac/textplot
 ** Large SVDs Dask + CuPy + Zarr + Genomics                                    :python:
  [2020-05-14 Thu 18:01]
  https://blog.dask.org/2020/05/13/large-svds
