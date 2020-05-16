@@ -32,20 +32,22 @@ L'objet de ce document est somme toute assez modeste et on s'intéressera essent
 
 L'installation de Doom Emacs ne pose pas de problème particulier, et tout est clairement détaillé sur Github. Il est recommendé de bien lire la FAQ pour les problèmes les plus courants, et de consulter régulièrement les tickets, notamment en cas de soucis après une mise à jour. A l'image de Spacemacs, Doom Emacs repose sur le mode Evil, même s'il est possible de le désactiver. Ceci étant, en mode insertion, la plupart des commandes Emacs classiques sont disponibles, et donc la différence se voit essentiellement lorsque l'on se retrouve en mode normal ou visuel. Attention toutefois, certaines combinaisons de touches (p.ex. dans le mode calendar ou org) ont été réaffectées pour respecter le mode Evil.
 
-** Organiser son travail avec Emacs
+** TL;DR
 
 Encore une fois, il n'est pas question de transformer Emacs en une application tout en un --- pour cela, il suffit de consulter l'excellente page citée plus haut, [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]], mais à l'exploiter comme une boîte à outils centrale dans son travail quotidien. Il est tout à fait possible de n'utiliser Emacs que pour éditer des fichiers texte, voire même en faire l'[[https://github.com/frankjonen/emacs-for-writers][outil de base]] de son travail d'écriture. L'auteur de /Mastering Emacs/ [@petersen-2015-master-emacs] fournit d'ailleurs [[https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs][quelques conseils]] bien utiles pour rédiger un ouvrage sous Emacs.
 
-Un immense avantage d'Emacs est la possibilité de lier n'importe quel shell ou process à un buffer dans lequel se trouve un document en cours d'édition (document Org ou code source). Il est alors possible d'évaluer directement des expressions ou des instructions d'un code donné à partir du document source et d'insérer les résultats dans ce même document. A l'extrême, le texte remplace les commentaires d'un code source et on a véritablement un document avec un corps de texte, des éléments balisés contenant du code source et les sorties produites par ce même code source. On parlera de programmation lettrée (en anglais, /literate programming/) pour désigner cette approche :
+Voici trois des aspects d'Emacs qui le distingue des autres éditeurs largement utilisés pour éditer du texte ou du code source. Premièrement, un des immenses avantages d'Emacs est la possibilité de lier n'importe quel shell ou process à un buffer dans lequel se trouve un document en cours d'édition (document Org ou code source). Il est alors possible d'évaluer directement des expressions ou des instructions d'un code donné à partir du document source et d'insérer les résultats dans ce même document. A l'extrême, le texte remplace les commentaires d'un code source et on a véritablement un document avec un corps de texte, des éléments balisés contenant du code source et les sorties produites par ce même code source. On parlera de programmation lettrée (en anglais, /literate programming/) pour désigner cette approche :
 
 #+BEGIN_QUOTE
 Let us change our traditional attitude to the construction of programs. Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.
 --- Donald E. Knuth
 #+END_QUOTE
 
-Emacs peut donc d'ores et déjà servir d'éditeur de code et de documentation, quelle que soit la manière dont on envisage la relation entre ces deux constituant d'un programme informatique. Le mode Org offre par exemple une version modernisée de Noweb.
+Emacs peut donc d'ores et déjà servir d'éditeur de code et de documentation, quelle que soit la manière dont on envisage la relation entre ces deux constituant d'un programme informatique. Le mode Org, par exemple, offre une version modernisée de Noweb.
 
 En plus de documents interactifs, Emacs permet de gérer un agenda ainsi que son courriel, organiser des listes de tâches à faire, naviguer dans un système de fichier local ou distant, gérer des projets informatiques à plus grande échelle tout en facilitant l'interaction avec un gestionnaire de version tel que Git.
+
+Enfin, si Emacs dispose de paquets dédiés à l'édition de documents en format structuré tels que Markdown ou reStructured text, le mode Org fournit un ensemble incroyable de ressources, tant pour la programmation lettrée que pour l'organisation d'une session de travail. En ce sens, il réunit en un seul paquet les deux points évoqués plus haut, à savoir la possibilité de combiner du texte et du code auto-évalué dans un même document, tout en gérant un projet informatique bien au-delà de ses aspects purement techniques.
 
 * Navigation et mouvement de base
 
@@ -72,7 +74,35 @@ On passe d'une ligne à la suivante ou à la précédente à l'aide de =C-n= et 
 * Ivy
 * Utiliser un terminal
 
-Emacs fournit un véritable shell écrit en Lisp, =eshell=, et des émulateurs de terminal (=term=, =ansi-term=, =multi-term=). Eshell présente ses intérêts, que l'on discutera plus loin, mais si l'on souhaite travailler avec un véritable terminal et non un émulateur sous Emacs, il est conseillé d'installer le package =vterm=. Attention, il s'agit d'un véritable programme externe, qui doit être compilé avant de pouvoir l'utiliser. Ceci est également valable après chaque mise à jour du package, à l'image de =pdfserver=.
+Emacs fournit un véritable shell écrit en Lisp, =eshell=, et des émulateurs de terminal (=term=, =ansi-term=, =multi-term=). Eshell présente ses intérêts, que l'on discutera plus loin, mais si l'on souhaite travailler avec un véritable terminal et non un émulateur sous Emacs, il est conseillé d'installer le package [[https://github.com/akermu/emacs-libvterm][vterm]]. Attention, il s'agit d'un véritable programme externe, qui doit être compilé avant de pouvoir l'utiliser. Ceci est également valable après chaque mise à jour du package, à l'image de =pdfserver=. cite:petersen-2015-master-emacs
+
+** Utilisation de eshell
+
+Contrairement à term et ses variantes, Eshell contitue un véritable shell, et pas seulement un émulateur. Toutes les commandes habituellement disponibles (=cd=, =ls=, =mkdir=, etc.) ont été réécrites en Lisp.
+
+Il est possible de définir des "alias" pour Eshell. Voici par exemple ce que l'on peut mettre dans son fichier de configuration (=doom.d/config.el=) :
+
+#+BEGIN_SRC emacs-lisp
+(after! eshell
+  (set-eshell-alias!
+   "f"   "(other-window 1) && find-file $1"
+   "l"   "ls -lh"
+   ".."  "cd ../"
+   "d"   "dired $1"
+   "gl"  "(call-interactively 'magit-log-current)"
+   "gs"  "magit-status"
+   "gc"  "magit-commit"))
+#+END_SRC
+
+** Configuration de vterm
+
+Par défaut, vterm utilisera le shell défini dans la variable d'environnement $SHELL, si elle est renseignée. Pour redéfinir le shell utilisé par vterm, il suffit de mettre à jour son fichier de configuration (=doom.d/config.el=) :
+
+#+BEGIN_SRC emacs-lisp
+(setq vterm-shell "/bin/zsh")
+#+END_SRC
+
+A partir de là, il n'y a vraiment plus aucune différence entre utiliser Zsh depuis Emacs ou avec une application de terminal. On prendra garde au fait que le shell Fish nécessite quelques étapes de configuration supplémentaires.
 
 * Gestion des répertoires avec Dired
 * Gestion de projets avec Projectile
@@ -95,11 +125,11 @@ En mode d'édition texte (cela est valable également dans le cas de documents M
 L'édition de fichier Markdown peut naturellement se faire en mode texte simple, mais il est préférable d'utiliser le [[https://jblevins.org/projects/markdown-mode/][mode majeur]] correspondant. Un aperçu des principales options du mode Markdown est fourni dans la figure ci-après.
 
 #+CAPTION:   Le mode majeur pour Markdown
-#+NAME:      fig:emacs-markdown-mode
-#+LABEL:     fig:emacs-markdown-mode
-#+ATTR_HTML: :width 640px
-#+ATTR_ORG:  :width 100
-[[./_assets/fig-emacs-markdown-mode.png]]
+#+NAME:   fig:emacs-markdown-mode
+#+LABEL:   fig:emacs-markdown-mode
+#+ATTR_HTML:   :width 640px
+#+ATTR_ORG:   :width 100
+[[./_img/fig-emacs-markdown-mode.png]]
 
 Pour faciliter le balisage de certains éléments, tels que la mise en gras ou en italique, il suffit de sélectionner une partie de texte, qui devient alors la "région active", et d'utiliser le raccourci clavier correspondant en utilisant la séquence =C-c C-s=.
 
