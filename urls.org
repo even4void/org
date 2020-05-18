@@ -1,4 +1,7 @@
 * Inbox
+** Emacs as a Complete Computing Environment
+ [2020-05-18 Mon 10:07]
+ http://doc.rix.si/cce/cce.html
 ** Data.table vs. Rcpp
  [2020-05-15 Fri 20:07]
  https://stackoverflow.com/questions/61800528/omitting-the-rows-of-a-data-frame-in-which-there-elements-are-the-same/61820131#61820131

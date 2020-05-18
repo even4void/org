@@ -1600,3 +1600,19 @@ See [[/Users/chl/Documents/Papers/anders-2013-count-rna.pdf][anders-2013-count-r
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wengrow-2017-common-sense.pdf
  :END:
 Short but interesting textbook on general programming principles. It features a mix of Python and Javascript to illustrate major sorting algorithms, big O notation, etc. Available as EPUB locally.
+* [[/Users/chl/Documents/Papers/alim-2017-local-pore.pdf][alim-2017-local-pore]] - Local pore size correlations determine flow distributions in porous media
+ :PROPERTIES:
+ :Custom_ID: alim-2017-local-pore
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/alim-2017-local-pore.pdf
+ :END:
+The idea of this paper is that local correlations between adjacent pores determine the distribution of fractions of fluid flow propagated from one pore to others that are downstream, and when there is sufficient disorder at the pore scale, these flow rates are partitioned randomly. A combination of two singular and a continuous distributions in flow fractions gives rise to an exponential decay generalizing results previously obtained in a similar description of force distributions in random bead packs.
+* [[/Users/chl/Documents/Papers/alim-2017-mechan-physar.pdf][alim-2017-mechan-physar]] - Mechanism of signal propagation in physarum polycephalum
+ :PROPERTIES:
+ :Custom_ID: alim-2017-mechan-physar
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/alim-2017-mechan-physar.pdf
+ :END:
+The authors discuss a mathematical model whereby a front of increased contraction propagates with a velocity comparable to the flow-driven dispersion of particles. This model is well suited to explain the adaptation of the peristaltic wave to organism size and /P. polycephalum/ ability to find the shortest route between food sources. Like in [[/Users/chl/Documents/Papers/alim-2017-local-pore.pdf][alim-2017-local-pore]] it relies on the hypothesis of mass conservation.
+
+#+BEGIN_QUOTE
+Key time-variant parameters were calculated from every point of a network using custom MATLAB (The MathWorks) code. Briefly, an image from a time series was thresholded to extract just the plasmodial tubes then skeletonized and separated into a connected map of nodes and edges. The skeleton was used to recover the tube radius at every point by finding the largest circle that would still entirely fit within a tube.
+#+END_QUOTE
