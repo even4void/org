@@ -32,6 +32,13 @@ L'objet de ce document est somme toute assez modeste et on s'intéressera essent
 
 L'installation de Doom Emacs ne pose pas de problème particulier, et tout est clairement détaillé sur Github. Il est recommendé de bien lire la FAQ pour les problèmes les plus courants, et de consulter régulièrement les tickets, notamment en cas de soucis après une mise à jour. A l'image de Spacemacs, Doom Emacs repose sur le mode Evil, même s'il est possible de le désactiver. Ceci étant, en mode insertion, la plupart des commandes Emacs classiques sont disponibles, et donc la différence se voit essentiellement lorsque l'on se retrouve en mode normal ou visuel. Attention toutefois, certaines combinaisons de touches (p.ex. dans le mode calendar ou org) ont été réaffectées pour respecter le mode Evil.
 
+# FIXME Préciser JSON/Jansson
+La version 27 d'Emacs est conseillé pour bénéficier des meilleures performances avec le mode =lsp=, notamment en raison du traitement des fichiers JSON. Pour l'installer sous macOS avec Homebrew, il suffit de taper l'instruction suivante :
+
+#+BEGIN_SRC shell
+brew install emacs-plus --without-spacemacs-icon --with-no-titlebar --with-mailutils --with-jansson --with-emacs-27-branch --HEAD
+#+END_SRC
+
 ** TL;DR
 
 Encore une fois, il n'est pas question de transformer Emacs en une application tout en un --- pour cela, il suffit de consulter l'excellente page citée plus haut, [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]], mais à l'exploiter comme une boîte à outils centrale dans son travail quotidien. Il est tout à fait possible de n'utiliser Emacs que pour éditer des fichiers texte, voire même en faire l'[[https://github.com/frankjonen/emacs-for-writers][outil de base]] de son travail d'écriture. L'auteur de /Mastering Emacs/ [@petersen-2015-master-emacs] fournit d'ailleurs [[https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs][quelques conseils]] bien utiles pour rédiger un ouvrage sous Emacs.
@@ -74,7 +81,11 @@ On passe d'une ligne à la suivante ou à la précédente à l'aide de =C-n= et 
 * Ivy
 * Utiliser un terminal
 
-Emacs fournit un véritable shell écrit en Lisp, =eshell=, et des émulateurs de terminal (=term=, =ansi-term=, =multi-term=). Eshell présente ses intérêts, que l'on discutera plus loin, mais si l'on souhaite travailler avec un véritable terminal et non un émulateur sous Emacs, il est conseillé d'installer le package [[https://github.com/akermu/emacs-libvterm][vterm]]. Attention, il s'agit d'un véritable programme externe, qui doit être compilé avant de pouvoir l'utiliser. Ceci est également valable après chaque mise à jour du package, à l'image de =pdfserver=. cite:petersen-2015-master-emacs
+Emacs fournit un véritable shell écrit en Lisp, =eshell=, et des émulateurs de terminal (=term=, =ansi-term=, =multi-term=). Eshell présente ses intérêts, que l'on discutera plus loin, mais si l'on souhaite travailler avec un véritable terminal et non un émulateur sous Emacs, il est conseillé d'installer le package [[https://github.com/akermu/emacs-libvterm][vterm]]. Attention, il s'agit d'un véritable programme externe, qui doit être compilé avant de pouvoir l'utiliser. Ceci est également valable après chaque mise à jour du package ou lorsque l'on change de version d'Emacs, à l'image de =pdf-tools=.
+
+L'utilisation d'un shell sous Emacs peut paraître inutile dans la mesure où il est possible d'attacher un process à un buffer actif, par exemple un shell avec R ou Python pendant que l'on édite un document R Markdown ou un script Python, et puisque le mode =dired= permet d'opérer sur le système de fichiers de manière relativement efficace. Toutefois, cela évite dans bien des cas de lancer un terminal à côté, et le transfert de données (copier-coller de régions par exemple) est beaucoup plus simple lorsque le shell est embarqué dans Emacs directement.
+
+Les sections qui suivent indiquent comment configurer et utiliser les deux principaux shell interactifs sous Emacs.
 
 ** Utilisation de eshell
 
