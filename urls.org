@@ -1,17 +1,59 @@
 * Inbox
-** Emacs as a Complete Computing Environment
+** Benchmark of popular graph/network packages                                 :graphs:
+ [2020-05-18 Mon 11:40]
+ https://www.timlrx.com/2020/05/10/benchmark-of-popular-graph-network-packages-v2/
+** glmnet and naive elastic net solution                                       :statistics:
+ [2020-05-18 Mon 11:39]
+ https://stats.stackexchange.com/questions/326427/why-does-glmnet-use-naive-elastic-net-from-the-zou-hastie-original-paper
+** Create executables with SBCL or CCL                                         :lisp:
+ [2020-05-18 Mon 11:39]
+ https://www.xach.com/lisp/buildapp/
+** HD Wallets                                                                  :misc:
+ [2020-05-18 Mon 11:38]
+ https://learnmeabitcoin.com/guide/hd-wallets
+** Starter repo for building interactive R courses                             :rstats:
+ [2020-05-18 Mon 11:37]
+ https://github.com/ines/course-starter-r
+** ggplot2 extensions                                                          :rstats:
+ [2020-05-18 Mon 11:35]
+ https://exts.ggplot2.tidyverse.org/
+** Using dask and napari to process & view large datasets                      :python:
+ [2020-05-18 Mon 11:34]
+ https://napari.org/tutorials/applications/dask.html
+** Why I use R                                                                 :rstats:
+ [2020-05-18 Mon 11:32]
+ https://shotwell.ca/posts/why_i_use_r/
+** Hacker's CRM – Emacs in the world of CRMs                                   :lisp:
+ [2020-05-18 Mon 11:32]
+ https://github.com/40ants/hacrm
+** A framework for building Modern Web Apps in ClojureScript                   :clojure:
+ [2020-05-18 Mon 11:31]
+ https://day8.github.io/re-frame/re-frame/
+** Building interactive visualizations with React, D3, and TypeScript          :typescript:
+ [2020-05-18 Mon 11:31]
+ https://blog.lucify.com/building-interactive-visualizations-with-react-d3-and-typescript-206c7172b0d2
+** Introducing TypeScript Library Starter Lite                                 :typescript:
+ [2020-05-18 Mon 11:30]
+ https://blog.tonysneed.com/2017/09/15/introducing-typescript-library-starter-lite/
+** My Text Editor Journey: Vim, Spacemacs, Atom and Sublime Text               :emacs:
+ [2020-05-18 Mon 11:30]
+ https://thume.ca/2017/03/04/my-text-editor-journey-vim-spacemacs-atom-and-sublime-text/
+** ADIOS2 for scalable parallel I/O                                            :hpc:
+ [2020-05-18 Mon 11:05]
+ https://csmd.ornl.gov/software/adios2
+** Emacs as a Complete Computing Environment                                   :emacs:
  [2020-05-18 Mon 10:07]
  http://doc.rix.si/cce/cce.html
-** Data.table vs. Rcpp
+** Data.table vs. Rcpp                                                         :rstats:
  [2020-05-15 Fri 20:07]
  https://stackoverflow.com/questions/61800528/omitting-the-rows-of-a-data-frame-in-which-there-elements-are-the-same/61820131#61820131
-** Dplyr v1
+** Dplyr v1                                                                    :rstats:
  [2020-05-15 Fri 20:01]
  https://thinkr.fr/hey-quoi-de-neuf-dplyr-le-point-sur-la-v1/
-** Powerlevel10k Zsh theme
+** Powerlevel10k Zsh theme                                                     :zsh:shell:
  [2020-05-15 Fri 08:53]
  https://github.com/romkatv/powerlevel10k
-** Textplot R package
+** Textplot R package                                                          :rstats:
  [2020-05-15 Fri 08:21]
  https://github.com/bnosac/textplot
 ** Large SVDs Dask + CuPy + Zarr + Genomics                                    :python:
