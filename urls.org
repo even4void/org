@@ -1,4 +1,7 @@
 * Inbox
+** Practical macros in Racket
+ [2020-05-22 Fri 08:37]
+ https://mullikine.github.io/posts/practical-macros-in-racket-and-how-to-work-with-them/
 ** Doom Emacs Workflows
  [2020-05-20 Wed 09:54]
  https://noelwelsh.com/posts/2019-01-10-doom-emacs.html
