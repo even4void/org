@@ -1,17 +1,26 @@
 * Inbox
-** Practical macros in Racket
+** Zippers And Clj                                                             :lisp:clojure:
+ [2020-05-22 Fri 17:10]
+ http://langnostic.inaimathi.ca/posts/zippers-and-clj
+** Organizing Notes With Refile                                                :org:
+ [2020-05-22 Fri 17:04]
+ https://blog.aaronbieber.com/2017/03/19/organizing-notes-with-refile.html
+** Using Org Mode in Hugo                                                      :org:
+ [2020-05-22 Fri 16:55]
+ https://willschenk.com/articles/2019/using_org_mode_in_hugo/
+** Practical macros in Racket                                                  :racket:
  [2020-05-22 Fri 08:37]
  https://mullikine.github.io/posts/practical-macros-in-racket-and-how-to-work-with-them/
-** Doom Emacs Workflows
+** Doom Emacs Workflows                                                        :emacs:
  [2020-05-20 Wed 09:54]
  https://noelwelsh.com/posts/2019-01-10-doom-emacs.html
-** Racket + Swift app
+** Racket + Swift app                                                          :racket:
  [2020-05-20 Mer 09:36]
  https://github.com/Bogdanp/remember
-** Vim codi: interactive scratchpad for hackers
+** Vim codi: interactive scratchpad for hackers                                :vim:
  [2020-05-20 Mer 09:34]
  https://github.com/metakirby5/codi.vim
-** Clocking time with Org-mode
+** Clocking time with Org-mode                                                 :org:
  [2020-05-18 Mon 20:25]
  https://writequit.org/denver-emacs/presentations/2017-04-11-time-clocking-with-org.html
 ** Benchmark of popular graph/network packages                                 :graphs:
