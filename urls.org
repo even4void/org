@@ -1,4 +1,13 @@
 * Inbox
+** The most useful git commands
+ [2020-05-25 Mon 18:36]
+ https://orga.cat/posts/most-useful-git-commands
+** Happy Git and GitHub for the useR
+ [2020-05-25 Mon 18:20]
+ https://happygitwithr.com/
+** Common statistical tests are linear models
+ [2020-05-24 Sun 17:58]
+ https://lindeloev.github.io/tests-as-linear/
 ** Zippers And Clj                                                             :lisp:clojure:
  [2020-05-22 Fri 17:10]
  http://langnostic.inaimathi.ca/posts/zippers-and-clj

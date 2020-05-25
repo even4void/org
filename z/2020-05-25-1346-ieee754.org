@@ -1,0 +1,18 @@
+* IEEE-754 and NA values
+
+#+FILETAGS: :algorithms:clang:
+
+*Source:* [[https://stackoverflow.com/a/1573715][Stack Overflow]]
+
+#+BEGIN_QUOTE
+First off, floating-point numbers are not real numbers, and floating-point arithmetic does not satisfy the axioms of real arithmetic. Trichotomy is not the only property of real arithmetic that does not hold for floats, nor even the most important. For example:
+
+- Addition is not associative.
+- The distributive law does not hold.
+- There are floating-point numbers without inverses.
+
+I could go on. It is not possible to specify a fixed-size arithmetic type that satisfies all of the properties of real arithmetic that we know and love. The 754 committee has to decide to bend or break some of them. This is guided by some pretty simple principles:
+
+1. When we can, we match the behavior of real arithmetic.
+2. When we can't, we try to make the violations as predictable and as easy to diagnose as possible.
+#+END_QUOTE
