@@ -1,11 +1,80 @@
 * Inbox
-** The most useful git commands
+** Dynamic title for Treemacs workspace                                        :emacs:
+ [2020-05-26 Tue 18:17]
+ https://andreyorst.gitlab.io/posts/2020-05-01-dynamic-title-for-treemacs-workspace/
+** dotfiles for various programs                                               :shell:
+ [2020-05-26 Tue 18:16]
+ https://github.com/fiddlerwoaroof/dotfiles
+** Turing.jl : Bayesian inference with probabilistic programming               :julia:
+ [2020-05-26 Tue 18:16]
+ https://turing.ml/dev/
+** Another Emacs config                                                        :emacs:
+ [2020-05-26 Tue 18:14]
+ https://github.com/erwagasore/.emacs.d
+** Using Mathematica with Orgmode                                              :mathematica:org:
+ [2020-05-26 Tue 18:14]
+ https://rgoswami.me/posts/org-mathematica/
+** Monochrome emacs                                                            :emacs:
+ [2020-05-26 Tue 18:14]
+ https://github.com/jaredgorski/nothing.el/blob/master/README.md
+** emacs-vega-view                                                             :emacs:vega:
+ [2020-05-26 Tue 18:11]
+ https://github.com/applied-science/emacs-vega-view/blob/c869defa3c0d9931e8eb4050dbaedb781160410b/README.md
+** Iceberg theme                                                               :emacs:
+ [2020-05-26 Tue 18:11]
+ https://github.com/conao3/iceberg-theme.el/blob/9615307cbd37e698d6939a04128162ef893313cb/README.org
+** Flatland for Emacs                                                          :emacs:
+ [2020-05-26 Tue 18:11]
+ https://github.com/gchp/flatland-emacs
+** Kattis problems                                                             :misc:
+ [2020-05-26 Tue 18:09]
+ https://open.kattis.com/problems
+** Doom's tips and howtos                                                      :emacs:
+ [2020-05-26 Tue 18:09]
+ https://narra.co.za/doom-tips-and-howtos/
+** A life configuring Emacs                                                    :emacs:
+ [2020-05-26 Tue 18:08]
+ https://github.com/alhassy/emacs.d
+** Build a Jekyll blog in minutes                                              :misc:
+ [2020-05-26 Tue 18:08]
+ https://github.com/yyoncho/yyoncho.github.io
+** Yet another emacs config                                                    :emacs:
+ [2020-05-26 Tue 18:08]
+ https://github.com/netromdk/.emacs.d
+** Example of doom config                                                      :emacs:
+ [2020-05-26 Tue 18:07]
+ https://github.com/jethrokuan/dots/blob/master/.doom.d/config.el
+** Mann-Whitney and t-test ARE                                                 :statistics:
+ [2020-05-26 Tue 18:03]
+ https://stats.stackexchange.com/questions/130562/why-is-the-asymptotic-relative-efficiency-of-the-wilcoxon-test-3-pi-compared/130914#130914
+** Tutorials on Topics in Julia Programming                                    :julia:
+ [2020-05-26 Tue 18:02]
+ https://github.com/johnmyleswhite/julia_tutorials
+** Reading IMAP email in Emacs                                                 :emacs:
+ [2020-05-26 Tue 18:00]
+ https://ict4g.net/adolfo/notes/emacs/reading-imap-mail-with-emacs.html
+** Book layout design                                                          :tex:
+ [2020-05-26 Tue 18:00]
+ http://octopusinvitro.tk/blog/code-and-tech/lab-guide-layout-with-latex/
+** Jorgen Schaefers Emacs Config                                               :emacs:
+ [2020-05-26 Tue 17:58]
+ https://www.emacswiki.org/emacs/JorgenSchaefersEmacsConfig
+** NIST Digital Library of Mathematical Functions                              :maths:
+ [2020-05-26 Tue 17:57]
+ https://dlmf.nist.gov/
+** Interactively view and subset phylogenetic trees                            :bioinformatics:rstats:
+ [2020-05-26 Tue 17:56]
+ https://shiny.rstudio.com/gallery/phylo-tree-view-subset.html
+** Subsetting Phylogenetic Trees                                               :bioinformatics:rstats:
+ [2020-05-26 Tue 17:56]
+ https://tbradley1013.github.io/2018/06/19/subsetting-phylogenetic-trees/
+** The most useful git commands                                                :git:
  [2020-05-25 Mon 18:36]
  https://orga.cat/posts/most-useful-git-commands
-** Happy Git and GitHub for the useR
+** Happy Git and GitHub for the useR                                           :git:
  [2020-05-25 Mon 18:20]
  https://happygitwithr.com/
-** Common statistical tests are linear models
+** Common statistical tests are linear models                                  :statistics:rstats:
  [2020-05-24 Sun 17:58]
  https://lindeloev.github.io/tests-as-linear/
 ** Zippers And Clj                                                             :lisp:clojure:
