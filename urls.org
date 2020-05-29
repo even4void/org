@@ -1,4 +1,16 @@
 * Inbox
+** textlint rule to check if all links are alive
+[2020-05-29 Fri 14:05]
+https://github.com/textlint-rule/textlint-rule-no-dead-link
+** Lazy elfeed                                                                 :emacs:
+ [2020-05-28 Thu 17:27]
+ https://karthinks.com/blog/lazy-elfeed/
+** solutions to SICP exercises (in scheme)                                     :scheme:
+ [2020-05-28 Thu 17:26]
+ https://github.com/karthink/sicp
+** holiday hacking swankr                                                      :lisp:rstas:
+ [2020-05-28 Thu 16:39]
+ http://christophe.rhodes.io/notes/blog/feeds/lisp/
 ** Dynamic title for Treemacs workspace                                        :emacs:
  [2020-05-26 Tue 18:17]
  https://andreyorst.gitlab.io/posts/2020-05-01-dynamic-title-for-treemacs-workspace/
