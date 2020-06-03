@@ -1616,3 +1616,17 @@ The authors discuss a mathematical model whereby a front of increased contractio
 #+BEGIN_QUOTE
 Key time-variant parameters were calculated from every point of a network using custom MATLAB (The MathWorks) code. Briefly, an image from a time series was thresholded to extract just the plasmodial tubes then skeletonized and separated into a connected map of nodes and edges. The skeleton was used to recover the tube radius at every point by finding the largest circle that would still entirely fit within a tube.
 #+END_QUOTE
+* [[/Users/chl/Documents/Papers/chang-2006-bigtab.pdf][chang-2006-bigtab]] - Bigtable: a distributed storage system for structured data
+ :PROPERTIES:
+ :Custom_ID: chang-2006-bigtab
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/chang-2006-bigtab.pdf
+ :END:
+#+BEGIN_QUOTE
+Bigtable does not support a full relational data model; instead, it provides clients with a simple data model that supports dynamic control over data layout and format, and allows clients to reason about the locality properties of the data represented in the underlying storage. Data is indexed using row and column names that can be arbitrary strings. Bigtable also treats data as uninterpreted strings, although clients often serialize various forms of struc- tured and semi-structured data into these strings. Clients can control the locality of their data through careful choices in their schemas. Finally, Bigtable schema parameters let clients dynamically control whether to serve data out of memory or from disk.
+#+END_QUOTE
+* [[/Users/chl/Documents/Papers/helland-2015-immut-chang-every.pdf][helland-2015-immut-chang-every]] - Immutability Changes Everything
+ :PROPERTIES:
+ :Custom_ID: helland-2015-immut-chang-every
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/helland-2015-immut-chang-every.pdf
+ :END:
+/Append-only computing/: The truth is the log. The database is a cache of a subset of the log.
