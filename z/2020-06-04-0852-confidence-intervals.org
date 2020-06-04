@@ -1,0 +1,15 @@
+* Confidence intervals and probability statements
+
+#+FILETAGS: :statistics:
+
+*Source:* Larry Wasserman, /All of Statistics/
+[[~/Documents/Papers/wasserman-2004-all-statis.pdf][wasserman-2004-all-statis]]
+
+Confidence intervals are not probability statements about $\theta$.
+
+#+BEGIN_QUOTE
+Consider this example from Berger and Wolpert (1984). Let $\theta$ be a
+fixed, known real number and let $X_l$, $X_2$ be independent random variables
+such that $\Pr(X_i = 1) = \Pr(X_i = -1) = 1/2$. Now define $Y_i = e + X_i$
+and suppose that you only observe $Y_l$ and $Y_2$.
+#+END_QUOTE

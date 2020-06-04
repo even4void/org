@@ -1,0 +1,21 @@
+* Design and font size
+
+#+FILETAGS: :typography:
+
+*Source:* Nikita Tonsky (Twitter)
+
+Use different font sizes to create hierarchy.
+
+To create a scale of font sizes, take the base font size (say 16) and mutliply it by a fixed ratio to get more values:
+
+16 base    = 16    4
+16 * 8/9   = 14    3
+14 * 8/9   = 12.5  2
+12.5 * 8/9 = 11    1
+
+This works in both direction:
+
+16 / 8/9   = 18    5
+18 / 8/9   = 20    6
+
+Popular ratio: 15/16 (minor second), 8/9 (major second), ([1/√5]/2) golden ratio, 5/6 (minor third), 4/5 (major third), 3/4 (perfect fourth).
