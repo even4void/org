@@ -1,4 +1,25 @@
 * Inbox
+** IRC main commands
+[2020-06-05 Fri 10:22]
+https://gist.github.com/xero/2d6e4b061b4ecbeb9f99
+** Setting up Weechat
+[2020-06-04 Thu 20:31]
+https://alexjj.com/blog/2016/setting-up-weechat/
+** Monter une passerelle de communication IRC
+[2020-06-04 Thu 18:00]
+https://dan.lousqui.fr/monter-une-passerelle-de-communication-irc-weechat-glowing-bear-bitlbee-fr.html
+** WeeChat configuration
+[2020-06-04 Thu 17:50]
+https://gist.github.com/pascalpoitras/8406501
+** dot files, configuration, environment settings, etc.
+[2020-06-04 Thu 17:48]
+https://github.com/megalithic/dotfiles
+** Racket libraries for scientific computing
+[2020-06-04 Thu 16:44]
+https://github.com/soegaard/sci
+** Matplotlib styles for scientific plotting
+[2020-06-04 Thu 16:43]
+https://github.com/garrettj403/SciencePlots
 ** textlint rule to check if all links are alive
 [2020-05-29 Fri 14:05]
 https://github.com/textlint-rule/textlint-rule-no-dead-link
