@@ -1,4 +1,10 @@
 * Inbox
+** Cours de maths/ocaml de Michel Quercia
+[2020-06-15 Mon 17:37]
+http://michel.quercia.free.fr/
+** Data Wrangling with R
+[2020-06-15 Mon 09:57]
+https://cengel.github.io/R-data-wrangling/
 ** Pomodoro workflow
 [2020-06-10 Wed 16:19]
 https://blog.viktomas.com/posts/my-workflow/#fn:1
