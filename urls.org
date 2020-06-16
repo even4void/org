@@ -1,6 +1,30 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Emacs: prettier tab-line                                                   :emacs:
+[2020-06-16 Tue 20:41]
+http://amitp.blogspot.com/?m=1
+** neugierig.org: Tech Notes
+[2020-06-16 Tue 20:40]
+http://neugierig.org/software/blog/archive.html
+** Blog of the author of Conjure                                              :clojure:vim:
+[2020-06-16 Tue 20:37]
+https://oli.me.uk/
+** Pipenv: Python Development Workflow for Humans                             :python:
+[2020-06-16 Tue 20:36]
+https://pypi.org/project/pipenv/
+** Rewriting the heart of our sync engine                                     :misc:
+[2020-06-16 Tue 20:35]
+https://dropbox.tech/infrastructure/rewriting-the-heart-of-our-sync-engine
+** Clustering Pollock
+[2020-06-16 Tue 20:35]
+https://gist.github.com/aialenti/d51b830c07bb8ec53556ddae9c9ec352
+** :claw honing                                                               :lisp:
+[2020-06-16 Tue 20:34]
+https://borodust.org/2020/06/12/claw-honing/
+** Bash scripting cheatsheet                                                  :zsh:
+[2020-06-16 Tue 20:25]
+https://devhints.io/bash
 ** Using dates and times in Emacs org-mode                                    :emacs:
 [2020-06-16 Tue 11:49]
 http://members.optusnet.com.au/~charles57/GTD/org_dates/

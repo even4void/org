@@ -49,3 +49,30 @@ https://github.com/dwarvesf/dotfiles
 ** tmux cheatsheet
 [2020-06-16 Tue 11:44]
 https://gist.github.com/henrik/1967800
+** Add Webmention Support
+[2020-06-16 Tue 20:32]
+https://kevin.thecorams.net/site/2019/12/add-webmention-support/
+** Hugo
+[2020-06-16 Tue 20:33]
+https://indieweb.org/Hugo
+**
+[2020-06-16 Tue 20:33]
+https://indieweb.org/Hugo
+** Implementing Webmention on a static website
+[2020-06-16 Tue 20:33]
+https://deluvi.com/blog/webmention/
+** Emacs init file for Mike Hamrick
+[2020-06-16 Tue 20:36]
+https://gitlab.com/spudlyo/dotfiles/-/blob/master/emacs/.emacs.d/init.el
+** Various coding repos                                                       :misc:
+[2020-06-16 Tue 20:38]
+https://bitbucket.org/bos/
+** Eamonn Sullivan's emacs config
+[2020-06-16 Tue 20:39]
+https://github.com/eamonnsullivan/emacs.d
+** Mac OS X tmux config
+[2020-06-16 Tue 20:39]
+https://gist.github.com/jrgcubano/fdcf3a903f56b1af4dca
+** Alain M. Lafon's emacs config
+[2020-06-16 Tue 20:40]
+https://github.com/munen/emacs.d/blob/master/configuration.org

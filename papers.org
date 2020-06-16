@@ -1508,7 +1508,7 @@ Two main types of algorithms are available that compute topological distances be
 - exploit the topological arrangement of terminal nodes: RF distance, quartet distance, or maximum agreement subtree;
 - minimal number of topological re-arrangements: transposition distance, prune and regraft distance, and tree edit distance.
 
-Both approaches require that the mapping of leaves between the trees is complete and univocal. TreeKO is a novel, duplication-aware algorithm that is able to compare two tree topologies re- gardless of the number of duplications and, at the same time, provide a RF-based distance measure that is evolu- tionarily meaningful and that does not require any prior evolutionary assumption. In addition treeKO, implements the possibility of computing so-called phylome support values (22), and reconciliation-based measures such as the number of inferred duplications and losses events.
+Both approaches require that the mapping of leaves between the trees is complete and univocal. TreeKO is a novel, duplication-aware algorithm that is able to compare two tree topologies re- gardless of the number of duplications and, at the same time, provide a RF-based distance measure that is evolutionarily meaningful and that does not require any prior evolutionary assumption. In addition treeKO, implements the possibility of computing so-called phylome support values (22), and reconciliation-based measures such as the number of inferred duplications and losses events.
 
 See also [[http://etetoolkit.org/documentation/ete-compare/][ete-compare]].
 * [[/Users/chl/Documents/Papers/huerta-cepas-2016-ete.pdf][huerta-cepas-2016-ete]] - Ete 3: reconstruction, analysis, and visualization of phylogenomic data
@@ -1622,7 +1622,7 @@ Key time-variant parameters were calculated from every point of a network using 
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/chang-2006-bigtab.pdf
  :END:
 #+BEGIN_QUOTE
-Bigtable does not support a full relational data model; instead, it provides clients with a simple data model that supports dynamic control over data layout and format, and allows clients to reason about the locality properties of the data represented in the underlying storage. Data is indexed using row and column names that can be arbitrary strings. Bigtable also treats data as uninterpreted strings, although clients often serialize various forms of struc- tured and semi-structured data into these strings. Clients can control the locality of their data through careful choices in their schemas. Finally, Bigtable schema parameters let clients dynamically control whether to serve data out of memory or from disk.
+Bigtable does not support a full relational data model; instead, it provides clients with a simple data model that supports dynamic control over data layout and format, and allows clients to reason about the locality properties of the data represented in the underlying storage. Data is indexed using row and column names that can be arbitrary strings. Bigtable also treats data as uninterpreted strings, although clients often serialize various forms of structured and semi-structured data into these strings. Clients can control the locality of their data through careful choices in their schemas. Finally, Bigtable schema parameters let clients dynamically control whether to serve data out of memory or from disk.
 #+END_QUOTE
 * [[/Users/chl/Documents/Papers/helland-2015-immut-chang-every.pdf][helland-2015-immut-chang-every]] - Immutability Changes Everything
  :PROPERTIES:
@@ -1630,3 +1630,27 @@ Bigtable does not support a full relational data model; instead, it provides cli
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/helland-2015-immut-chang-every.pdf
  :END:
 /Append-only computing/: The truth is the log. The database is a cache of a subset of the log.
+* [[/Users/chl/Documents/Papers/efron-2003-secon-thoug-boots.pdf][efron-2003-secon-thoug-boots]] - Second thoughts on the bootstrap
+ :PROPERTIES:
+ :Custom_ID: efron-2003-secon-thoug-boots
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/efron-2003-secon-thoug-boots.pdf
+ :END:
+Plug-in principle: travel from the real world to the bootstrap world simply by plugging in a point estimate $\hat P$ for $P$. This is the only inference step. There may be a problem with the miscentering of the $\hat\sigma^*$ values, as exemplified by the "dilatation pehnomenon", like with [[https://en.wikipedia.org/wiki/James–Stein_estimator][Stein's estimation]]. Second-order (bootstrap t and BCA) accuracy suggested that the bootstrap could provide good approximate confidence intervals, better than the standard $\hat\theta \pm z_{\alpha}\hat\sigma$.
+
+#+BEGIN_QUOTE
+Personally my biggest bootstrap surprise involved the ABC intervals developed with Tom DiCiccio in 1992. The ABC is an analytic approximation to the BCA method that was intended to cut down on the 2000 or so bootstrap simulations required for BCA. In fact, ABC involves no simulation at all, which was the surprise, especially since the method gives excellent results for smoothly differentiable statistics like the correlation coefficient.
+#+END_QUOTE
+
+Illustration with phylogenetic trees: "the tree is a statistic, admittedly a complicated one, and it is reasonable to ask how much trust we can place in the observed features." The statistical interpretation of Felsenstein’s confidence values (whereby the columns of x are resampled, bootstrap trees are constructed and the proportion of bootstrap trees that have the feature of interest simply are counted) is discussed in [[/Users/chl/Documents/Papers/efron-1996-boots-confid.pdf][efron-1996-boots-confid]].
+* [[/Users/chl/Documents/Papers/diciccio-1996-boots-confid-inter.pdf][diciccio-1996-boots-confid-inter]] - Bootstrap Confidence Intervals
+ :PROPERTIES:
+ :Custom_ID: diciccio-1996-boots-confid-inter
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/diciccio-1996-boots-confid-inter.pdf
+ :END:
+Four bootstrap confidence interval procedures: BCa, bootstrap-t, ABC and calibration. See the [[https://cran.r-project.org/package=bootstrap][bootstrap]] R package for ABC and =boot::abc.ci= for calibrated ABC.
+* [[/Users/chl/Documents/Papers/crowther-2020-flexib-param.pdf][crowther-2020-flexib-param]] - A Flexible Parametric Accelerated Failure Time Model
+ :PROPERTIES:
+ :Custom_ID: crowther-2020-flexib-param
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/crowther-2020-flexib-param.pdf
+ :END:
+Accelerated Failure Time (AFT) models as an alternative to classical PH models. Under the AFT model, the effect of covariates act to accelerate or decelerate the time to event of interest. Time-dependent acceleration factors, as well as time-dependent covariates (e.g. delayed entry) are also allowed. Stata and R packages available, as well as [[https://github.com/CamDavidsonPilon/lifelines-replications][Python]] code.
