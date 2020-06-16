@@ -1,1 +1,51 @@
 #+TITLE: refile
+
+* Bookmarks to file
+** How to use matrix.org and vector.im as an IRC client
+[2020-06-16 Tue 11:19]
+https://gist.github.com/fstab/ce805d3001600ac147b79d413668770d
+** Guide to Matrix.org and Riot.im
+[2020-06-16 Tue 11:20]
+https://dzone.com/articles/guide-to-matrixorg-and-riotim
+** Failed to change nick: err_unavailresource after Riot upgrade #828
+[2020-06-16 Tue 11:21]
+https://github.com/matrix-org/matrix-appservice-irc/issues/828
+** matrix-client.el
+[2020-06-16 Tue 11:22]
+https://github.com/alphapapa/matrix-client.el/blob/master/README.org
+** Matrix IRCd
+[2020-06-16 Tue 11:22]
+https://github.com/matrix-org/matrix-ircd/blob/master/README.md
+** Guide: How to use Matrix to participate in IRC rooms
+[2020-06-16 Tue 11:24]
+https://github.com/matrix-org/matrix-appservice-irc/wiki/Guide:-How-to-use-Matrix-to-participate-in-IRC-rooms
+** unsafeClient not ready yet error #944
+[2020-06-16 Tue 11:24]
+https://github.com/matrix-org/matrix-appservice-irc/issues/944
+** Discord bridge
+[2020-06-16 Tue 11:25]
+https://t2bot.io/discord/
+** How to bridge Freenode IRC rooms to Matrix.org
+[2020-06-16 Tue 11:25]
+https://archive.org/details/hpr3034
+** A bridge between Matrix and Discord
+[2020-06-16 Tue 11:25]
+https://github.com/Half-Shot/matrix-appservice-discord
+** IRC and IRC Bouncer
+[2020-06-16 Tue 11:26]
+https://championshuttler.wordpress.com/2017/11/23/irc-and-irc-bouncer/
+** Is there a benefit to using ZNC on my VPS or just having weechat running on it all the time?
+[2020-06-16 Tue 11:27]
+https://www.reddit.com/r/irc/comments/5imdjv/is_there_a_benefit_to_using_znc_on_my_vps_or_just/
+** IRC Reference
+[2020-06-16 Tue 11:38]
+https://gist.github.com/xero/2d6e4b061b4ecbeb9f99
+** private DOOM emacs configuration
+[2020-06-16 Tue 11:40]
+https://github.com/nmartin84/.doom.d
+** Ubuntu / OS X dotfiles using at Dwarves Foundation
+[2020-06-16 Tue 11:41]
+https://github.com/dwarvesf/dotfiles
+** tmux cheatsheet
+[2020-06-16 Tue 11:44]
+https://gist.github.com/henrik/1967800

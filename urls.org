@@ -1,41 +1,187 @@
+# -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
+
 * Inbox
-** Cours de maths/ocaml de Michel Quercia
+** Using dates and times in Emacs org-mode                                    :emacs:
+[2020-06-16 Tue 11:49]
+http://members.optusnet.com.au/~charles57/GTD/org_dates/
+** Richard Stanley's Twelvefold Way                                           :maths:
+[2020-06-16 Tue 11:49]
+https://www.johndcook.com/TwelvefoldWay.pdf
+** ggdist: Visualizations of distributions and uncertainty                    :rstats:
+[2020-06-16 Tue 11:48]
+https://mjskay.github.io/ggdist/
+** Bayesian Methods for Hackers in Python                                     :python:bayesian:
+[2020-06-16 Tue 11:48]
+https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers
+** Community Driven Samples for TypeScript                                    :typescript:
+[2020-06-16 Tue 11:48]
+https://github.com/microsoft/TypeScriptSamples
+** Controlling the terminal                                                   :lisp:
+[2020-06-16 Tue 11:47]
+https://turtleware.eu/posts/Controlling-the-terminal.html
+** IPython magic for parallel profiling                                       :python:
+[2020-06-16 Tue 11:47]
+https://github.com/jcrist/ptime
+** Extended documentation and model examples for rethinking R package         :rstats:bayesian:
+[2020-06-16 Tue 11:47]
+https://github.com/rmcelreath/rethinking_manual?files=1
+** Distance/Similarity between two matrices                                   :maths:
+[2020-06-16 Tue 11:46]
+https://math.stackexchange.com/questions/507742/distance-similarity-between-two-matrices
+** Getting Robinson-Foulds distances for a set of trees                       :phylogenetics:
+[2020-06-16 Tue 11:46]
+http://blog.phytools.org/2013/09/getting-robinson-foulds-distances-for.html
+** Introduction to phylogenies in R                                           :phylogenetics:
+[2020-06-16 Tue 11:45]
+http://www.phytools.org/Cordoba2017/ex/2/Intro-to-phylogenies.html
+** textlint integration with Flycheck                                         :emacs:
+[2020-06-16 Tue 11:45]
+https://github.com/kisaragi-hiu/flycheck-textlint/blob/master/README.md
+** Practical Python Programming                                               :python:
+[2020-06-16 Tue 11:45]
+https://dabeaz-course.github.io/practical-python/
+** basic tmux settings everyone can agree on                                  :tmux:
+[2020-06-16 Tue 11:44]
+https://github.com/tmux-plugins/tmux-sensible
+** tmux Integration Best Practices                                            :tmux:
+[2020-06-16 Tue 11:44]
+https://gitlab.com/gnachman/iterm2/-/wikis/tmux-Integration-Best-Practices
+** Keep Remote SSH Sessions and Processes running                             :cli:
+[2020-06-16 Tue 11:43]
+https://www.tecmint.com/keep-remote-ssh-sessions-running-after-disconnection/
+** Join any server IP on Xbox One, Nintendo Switch, and PS4                   :misc:
+[2020-06-16 Tue 11:43]
+https://github.com/Pugmatt/BedrockConnect
+** Python example of building GLM, GBM and RF Binomial Model with H2O         :python:statistics:
+[2020-06-16 Tue 11:42]
+https://aichamp.wordpress.com/2017/09/29/python-example-of-building-glm-gbm-and-random-forest-binomial-model-with-h2o/
+** Practical Techniques for Interpreting Machine Learning Models              :statistics:
+[2020-06-16 Tue 11:42]
+https://facctconference.org/static/tutorials/hall_interpretable18.pdf
+** Phyllotaxis: Draw Flowers Using Mathematics                                :rstats:
+[2020-06-16 Tue 11:42]
+https://www.datacamp.com/projects/62
+** lsp python High memory usage #832                                          :python:emacs:
+[2020-06-16 Tue 11:41]
+https://github.com/Microsoft/python-language-server/issues/832
+** Common Lisp Array Performance Benchmark                                    :lisp:
+[2020-06-16 Tue 11:41]
+https://github.com/svetlyak40wt/array-performance
+** Seth Brown oddments 2019                                                   :misc:
+[2020-06-16 Tue 11:40]
+https://gist.github.com/seth-brown/4da7a5b774c818acf8deddc4c910f890
+** tmux in practice: iTerm2 and tmux                                          :tmux:
+[2020-06-16 Tue 11:39]
+https://www.freecodecamp.org/news/tmux-in-practice-iterm2-and-tmux-integration-7fb0991c6c01/
+** Mastodon plugin for Bitlbee                                                :irc:
+[2020-06-16 Tue 11:39]
+https://github.com/kensanata/bitlbee-mastodon
+** 256 (Xterm) colors                                                         :cli:
+[2020-06-16 Tue 11:38]
+https://jonasjacek.github.io/colors/
+** Port of Practical Common Lisp samples to Clojure                           :lisp:clojure:
+[2020-06-16 Tue 11:37]
+https://github.com/stuarthalloway/practical-cl-clojure/
+** NIST Standard Reference Database                                           :statistics:
+[2020-06-16 Tue 11:37]
+https://www.itl.nist.gov/div898/strd/
+** Assessing the Numerical Accuracy of SAS Software                           :statistics:
+[2020-06-16 Tue 11:37]
+https://support.sas.com/rnd/app/stat/papers/statisticalaccuracy.pdf
+** numerical accuracy problems with Excel                                     :statistics:
+[2020-06-16 Tue 11:36]
+https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.102.9846
+** Notebook experience in your Clojure namespace                              :clojure:
+[2020-06-16 Tue 11:36]
+https://github.com/scicloj/notespace/blob/master/README.md
+** core.matrix : Multi-dimensional array programming API for Clojure          :clojure:
+[2020-06-16 Tue 11:36]
+https://github.com/mikera/core.matrix
+** The Mann-Whitney U Test                                                    :statistics:
+[2020-06-16 Tue 11:35]
+https://nickredfern.wordpress.com/2011/05/12/the-mann-whitney-u-test/
+** Probability that a DNA motif will occur in a random string                 :statistics:
+[2020-06-16 Tue 11:35]
+https://github.com/feuerbach/motif-stats
+** Maze Algorithms                                                            :misc:
+[2020-06-16 Tue 11:35]
+https://www.jamisbuck.org/mazes/
+** Emacs prettify-symbols-mode in Comments                                    :emacs:
+[2020-06-16 Tue 11:32]
+https://occasionallycogent.com/emacs_prettify_comments/index.html
+** Making the most of Cabal                                                   :haskell:
+[2020-06-16 Tue 11:31]
+https://lukelau.me/haskell/posts/making-the-most-of-cabal/
+** discret 11, the french tv encryption of the 80's                           :misc:
+[2020-06-16 Tue 11:30]
+https://fabiensanglard.net/discret11/index.html
+** Compelling reasons to use emacs 27 or 28 right now?                        :emacs:
+[2020-06-16 Tue 11:30]
+https://www.reddit.com/r/emacs/comments/gy24n5/compelling_reasons_to_use_emacs_27_or_28_right_now/
+** Clojure Refactor from Ivy                                                  :clojure:emacs:
+[2020-06-16 Tue 11:30]
+https://github.com/wandersoncferreira/cljr-ivy/blob/master/README.md
+** Parinfer                                                                   :emacs:
+[2020-06-16 Tue 11:29]
+https://shaunlebron.github.io/parinfer/
+** Emacs Lisp Guide                                                           :emacs:
+[2020-06-16 Tue 11:29]
+https://github.com/chrisdone/elisp-guide
+** Literate Configuration                                                     :emacs:org:
+[2020-06-16 Tue 11:29]
+https://leanpub.com/lit-config/read#leanpub-auto-using-noweb-references-to-structure-your-code
+** Setting Up a ZNC IRC Bouncer to Use Tor                                    :irc:
+[2020-06-16 Tue 11:28]
+https://tom.busby.ninja/setting-up-znc-IRC-bouncer-to-use-tor/
+** Lisp Games Wiki                                                            :lisp:
+[2020-06-16 Tue 11:28]
+https://github.com/lispgames/lispgames.github.io/wiki
+** Template Haskell and Stream-processing programs                            :haskell:
+[2020-06-16 Tue 11:27]
+https://jmtd.net/log/template_haskell/streamgraph/
+** A Clojure babushka for the grey areas of Bash                              :clojure:
+[2020-06-16 Tue 11:27]
+https://github.com/borkdude/babashka
+** Making IRC work like modern messengers using WeeChat, Pushbullet and more  :irc:
+[2020-06-16 Tue 11:26]
+https://iamkelv.in/blog/2017/08/weechat.html
+** Cours de maths/ocaml de Michel Quercia                                     :maths:
 [2020-06-15 Mon 17:37]
 http://michel.quercia.free.fr/
-** Data Wrangling with R
+** Data Wrangling with R                                                      :rstats:
 [2020-06-15 Mon 09:57]
 https://cengel.github.io/R-data-wrangling/
-** Pomodoro workflow
+** Pomodoro workflow                                                          :emacs:
 [2020-06-10 Wed 16:19]
 https://blog.viktomas.com/posts/my-workflow/#fn:1
-** Split comma-separated strings in a column into separate rows
+** Split comma-separated strings in a column into separate rows               :rstats:
 [2020-06-10 Wed 10:26]
 https://stackoverflow.com/questions/13773770/split-comma-separated-strings-in-a-column-into-separate-rows
-** Twitch.tv chat plugin for the Textual IRC client
+** Twitch.tv chat plugin for the Textual IRC client                           :irc:
 [2020-06-10 Wed 07:24]
 https://github.com/sbine/TextualKappa
-** IRC main commands
+** IRC main commands                                                          :irc:
 [2020-06-05 Fri 10:22]
 https://gist.github.com/xero/2d6e4b061b4ecbeb9f99
-** Setting up Weechat
+** Setting up Weechat                                                         :irc:
 [2020-06-04 Thu 20:31]
 https://alexjj.com/blog/2016/setting-up-weechat/
-** Monter une passerelle de communication IRC
+** Monter une passerelle de communication IRC                                 :irc:
 [2020-06-04 Thu 18:00]
 https://dan.lousqui.fr/monter-une-passerelle-de-communication-irc-weechat-glowing-bear-bitlbee-fr.html
-** WeeChat configuration
+** WeeChat configuration                                                      :irc:
 [2020-06-04 Thu 17:50]
 https://gist.github.com/pascalpoitras/8406501
-** dot files, configuration, environment settings, etc.
+** dot files, configuration, environment settings, etc.                       :misc:
 [2020-06-04 Thu 17:48]
 https://github.com/megalithic/dotfiles
-** Racket libraries for scientific computing
+** Racket libraries for scientific computing                                  :racket:
 [2020-06-04 Thu 16:44]
 https://github.com/soegaard/sci
-** Matplotlib styles for scientific plotting
+** Matplotlib styles for scientific plotting                                  :python:
 [2020-06-04 Thu 16:43]
 https://github.com/garrettj403/SciencePlots
-** textlint rule to check if all links are alive
+** textlint rule to check if all links are alive                              :misc:
 [2020-05-29 Fri 14:05]
 https://github.com/textlint-rule/textlint-rule-no-dead-link
 ** Lazy elfeed                                                                 :emacs:
@@ -44,7 +190,7 @@ https://github.com/textlint-rule/textlint-rule-no-dead-link
 ** solutions to SICP exercises (in scheme)                                     :scheme:
  [2020-05-28 Thu 17:26]
  https://github.com/karthink/sicp
-** holiday hacking swankr                                                      :lisp:rstas:
+** holiday hacking swankr                                                      :lisp:rstats:
  [2020-05-28 Thu 16:39]
  http://christophe.rhodes.io/notes/blog/feeds/lisp/
 ** Dynamic title for Treemacs workspace                                        :emacs:
