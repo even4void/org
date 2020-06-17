@@ -1,6 +1,9 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Managing figure size in Pandoc
+[2020-06-17 Wed 11:26]
+https://github.com/jgm/pandoc/issues/261
 ** Emacs: prettier tab-line                                                   :emacs:
 [2020-06-16 Tue 20:41]
 http://amitp.blogspot.com/?m=1

@@ -1,0 +1,17 @@
+* Mean vs. median relative efficiency
+
+#+FILETAGS: :statistics:
+
+*Source:* [[/Users/chl/Documents/Papers/efron-2020-predic-estim-attrib.pdf][efron-2020-predic-estim-attrib]]
+
+Speaking of OLS and squared error, it is better to consider the mean than the median since it is more than half again more efficient. Indeed, it can be shown that:
+
+$$ \mathbb{E}\{(\u{x}-\mu)^2\}/\mathbb{E}\{(\bar{x}-\mu)^2\} = 1.57. $$
+
+The relative efficiency (RE) is defined as the variance of the first estimator divided by that of the second estimator. Since the variance of the sample mean is $\sigma^2/n$, and that of the sample median $\pi\sigma^2\2,$, we have $\text{RE} = (\pi\sigma2/2n) / (\sigma^2/n) = \pi/2 = 1.57$.
+
+If, however, we are interested in prediction, the mean still wins but only by 2%:
+
+$$ \mathbb{E}\{(X-\u{x})^2\}/\mathbb{E}\{(X-\bar{x}\} = 1.02, $$
+
+since most of the prediction error comes from the variability of $X$.

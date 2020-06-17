@@ -1654,3 +1654,17 @@ Four bootstrap confidence interval procedures: BCa, bootstrap-t, ABC and calibra
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/crowther-2020-flexib-param.pdf
  :END:
 Accelerated Failure Time (AFT) models as an alternative to classical PH models. Under the AFT model, the effect of covariates act to accelerate or decelerate the time to event of interest. Time-dependent acceleration factors, as well as time-dependent covariates (e.g. delayed entry) are also allowed. Stata and R packages available, as well as [[https://github.com/CamDavidsonPilon/lifelines-replications][Python]] code.
+* [[/Users/chl/Documents/Papers/efron-2020-predic-estim-attrib.pdf][efron-2020-predic-estim-attrib]] - Prediction, estimation, and attribution
+ :PROPERTIES:
+ :Custom_ID: efron-2020-predic-estim-attrib
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/efron-2020-predic-estim-attrib.pdf
+ :END:
+This article deals with the controversy around prediction versus explanation in statistics and machine learning communities, as a sequel of [[/Users/chl/Documents/Papers/breiman-2001-statis-model.pdf][breiman-2001-statis-model]]. How do the pure prediction algorithms relate to traditional regression methods? In traditional approaches to regression modeling a description of the underlying scientific truth (the “surface”) is formulated, along with a model of the errors that obscure direct observation ("surface plus noise formulation"). On the contrary pure prediction algorithms focus on prediction, to the neglect of estimation and attribution. The idea of boosting is, for example, to have many weak learners that combine effectively to yield low error rate while traditional methods focus on strong individual predictors.
+
+Interesting note on GWAS analysis: Instead of performing a traditional attribution analysis with p = 106 predictors, the GWAS procedure performed 106 analyses with p = 1 and then used a second layer of inference to interpret the results of the first layer. See also comment on local false discovery rate.
+* [[/Users/chl/Documents/Papers/filion-2017-analy-combin.pdf][filion-2017-analy-combin]] - Analytic combinatorics for bioinformatics i: seeding methods
+ :PROPERTIES:
+ :Custom_ID: filion-2017-analy-combin
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/filion-2017-analy-combin.pdf
+ :END:
+See also [[https://www.biorxiv.org/content/10.1101/619155v2][Calibrating seed-based alignment heuristics with Sesame]], and [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1468433/][Choosing the best heuristic for seeded alignment of DNA sequences]].
