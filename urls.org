@@ -1,6 +1,102 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Renjin and R
+[2020-06-17 Wed 21:10]
+https://github.com/applied-science/rdata
+** General-purpose connection pooling library
+[2020-06-17 Wed 21:10]
+https://github.com/fukamachi/anypool?files=1
+** Tidymodels: tidy machine learning in R
+[2020-06-17 Wed 21:10]
+http://www.rebeccabarter.com/blog/2020-03-25_machine_learning/
+** deta: Functional Database Mapping                                          :racket:
+[2020-06-17 Wed 21:09]
+https://deta.defn.io/
+** Spatial aggregation
+[2020-06-17 Wed 21:09]
+https://www.jla-data.net/eng/spatial-aggregation/
+** Maximum Inscribed Circle and Largest Empty Circle in JTS
+[2020-06-17 Wed 21:09]
+http://lin-ear-th-inking.blogspot.com/2020/04/maximum-inscribed-circle-and-largest.html?m=1
+** Projection predictive variable selection
+[2020-06-17 Wed 21:08]
+https://mc-stan.org/projpred/
+** My Rust 2020 ideas
+[2020-06-17 Wed 21:08]
+https://phaazon.net/blog/rust-2020-ideas
+** Fancy Little Lisp λs
+[2020-06-17 Wed 21:07]
+https://lepisma.xyz/2017/12/20/fancy-lambdas.html
+** RE: st: graph export png on linux console                                  :stata:
+[2020-06-17 Wed 21:05]
+https://www.stata.com/statalist/archive/2004-03/msg00600.html
+** Iterate over all pairs of consecutive items in a list
+[2020-06-17 Wed 21:04]
+https://stackoverflow.com/questions/21303224/iterate-over-all-pairs-of-consecutive-items-in-a-list
+** sdl2-examples:basic-test kills slime-repl on macOS #89
+[2020-06-17 Wed 21:04]
+https://github.com/lispgames/cl-sdl2/issues/89
+** Customizing pandoc to generate beautiful pdfs from markdown
+[2020-06-17 Wed 21:03]
+https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/
+** Gene Set Enrichment Analysis (GSEA) User Guide
+[2020-06-17 Wed 21:03]
+https://www.gsea-msigdb.org/gsea/doc/GSEAUserGuideFrame.html
+** StatsFunctionsNotes by JM White
+[2020-06-17 Wed 21:02]
+https://github.com/johnmyleswhite/StatsFunctionsNotes
+** Radford Neale's Statistical Computation
+[2020-06-17 Wed 21:02]
+http://www.utstat.utoronto.ca/~radford/sta410.F15/
+** Basic Clojure affordances for Common Lisp
+[2020-06-17 Wed 21:01]
+https://github.com/inaimathi/clj
+** A Lexical Analyzer Generator
+[2020-06-17 Wed 20:55]
+https://github.com/rigetti/alexa/blob/master/README.md
+** Enhance vector multiplication support #103
+[2020-06-17 Wed 20:55]
+https://github.com/rigetti/magicl/pull/103
+** Programming Language Study–Lisp
+[2020-06-17 Wed 20:54]
+https://adamcross.blog/2020/05/07/programming-language-study-lisp-2/
+** Radical utilities                                                          :lisp:
+[2020-06-17 Wed 20:54]
+https://github.com/vseloved/rutils/blob/master/docs/tutorial.md
+** A modern and consistent Common Lisp string manipulation library
+[2020-06-17 Wed 20:53]
+https://vindarel.github.io/cl-str/#/
+** Data visualizations in Clojure and ClojureScript using Vega and Vega-lite
+[2020-06-17 Wed 20:48]
+https://github.com/metasoarous/oz
+** tidyquery
+[2020-06-17 Wed 20:48]
+https://github.com/ianmcook/tidyquery/blob/master/README.md
+** Statistical Rethinking Week 5
+[2020-06-17 Wed 20:48]
+https://david-salazar.github.io/2020/05/15/statistical-rethinking-week-5-hmc-samples/
+** string utilities                                                           :lisp:
+[2020-06-17 Wed 20:47]
+https://github.com/fiddlerwoaroof/fwoar.lisputils/blob/master/string-utils/split.lisp
+** The End by Evan Martin
+[2020-06-17 Wed 20:47]
+http://neugierig.org/software/chromium/notes/2012/02/the-end.html
+** Eric C. Peterson's homepage
+[2020-06-17 Wed 20:36]
+https://chromotopy.org/
+** Nicholas Carlini's homepage
+[2020-06-17 Wed 20:36]
+https://nicholas.carlini.com/
+** Colin McLear Emacs config
+[2020-06-17 Wed 20:32]
+https://github.com/mclear-tools/dotemacs/blob/master/README.org
+** ox-leanpub: A Leanpub book exporter for Org-mode                           :org:
+[2020-06-17 Wed 20:31]
+https://github.com/zzamboni/ox-leanpub
+** zettel-mode                                                                :emacs:
+[2020-06-17 Wed 20:22]
+https://github.com/Vifon/zettel-mode
 ** Managing figure size in Pandoc
 [2020-06-17 Wed 11:26]
 https://github.com/jgm/pandoc/issues/261
