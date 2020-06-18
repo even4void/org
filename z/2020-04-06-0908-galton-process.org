@@ -1,6 +1,6 @@
 * Galton-Watson process
 
-#+FILETAGS: :bioinformatics:math:
+#+TAGS: :bioinformatics:math:
 
 The Galton-Watson process is part of branching processes. Let $X$ be a random variable (r.v.) with values in $\mathbb{N}$, and for $k\in \mathbb{N}$, $p_k = \Pr(X=k)$ and $m = \mathbb{E}(X) = \sum_{k=0}^{\infty} kp_k < \infty$. Given $(X_{i,j})_{i,j\in\mathbb{N}}$ a family of r.v. with law $\mathbb{P}_X$, we define the sequence $(Z_n)_{n\in\mathbb{N}}$ as follows:
 

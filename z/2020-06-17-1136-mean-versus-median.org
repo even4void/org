@@ -1,8 +1,8 @@
 * Mean vs. median relative efficiency
 
-#+FILETAGS: :statistics:
+#+TAGS: :statistics:
 
-*Source:* [[/Users/chl/Documents/Papers/efron-2020-predic-estim-attrib.pdf][efron-2020-predic-estim-attrib]]
+Source: [[/Users/chl/Documents/Papers/efron-2020-predic-estim-attrib.pdf][efron-2020-predic-estim-attrib]]
 
 Speaking of OLS and squared error, it is better to consider the mean than the median since it is more than half again more efficient. Indeed, it can be shown that:
 

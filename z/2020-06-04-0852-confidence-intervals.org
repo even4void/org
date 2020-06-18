@@ -1,8 +1,8 @@
 * Confidence intervals and probability statements
 
-#+FILETAGS: :statistics:
+#+TAGS: :statistics:
 
-*Source:* Larry Wasserman, /All of Statistics/
+Source: Larry Wasserman, /All of Statistics/
 [[~/Documents/Papers/wasserman-2004-all-statis.pdf][wasserman-2004-all-statis]]
 
 Confidence intervals are not probability statements about $\theta$.

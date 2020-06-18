@@ -1,8 +1,8 @@
 * Design and font size
 
-#+FILETAGS: :typography:
+#+TAGS: :typography:
 
-*Source:* Nikita Tonsky (Twitter)
+Source: Nikita Tonsky (Twitter)
 
 Use different font sizes to create hierarchy.
 

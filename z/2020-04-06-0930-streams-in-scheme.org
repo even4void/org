@@ -1,8 +1,8 @@
 * Streams in Scheme
 
-#+FILETAGS: :scheme:
+#+TAGS: :scheme:
 
-*Source:* /Structure and interpretation of computer programs/ (Abelson & Sussman), §3.5. [[/Users/chl/Documents/Papers/abelson-1996-struc-inter.pdf][abelson-1996-struc-inter]]
+Source: /Structure and interpretation of computer programs/ (Abelson & Sussman), §3.5. [[/Users/chl/Documents/Papers/abelson-1996-struc-inter.pdf][abelson-1996-struc-inter]]
 
 A nice analogy for streams, or infinite sequences, is the time-varying behavior of a quantity x as a function of time x(t): If time is discrete, then a time function is nothing but a (possibly infinite) sequence -- the function itself doesn't change over time. Streams can be implemented as /delayed lists/.
 

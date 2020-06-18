@@ -1,8 +1,8 @@
 * On the use of splines for the Titanic dataset
 
-#+FILETAGS: :statistics:rstats:
+#+TAGS: :statistics:rstats:
 
-*Source:* /Regression Modeling Strategies/, Frank Harrell [[/Users/chl/Documents/Papers/harrell-2015-regres-model-strat.pdf][harrell-2015-regres-model-strat]]
+Source: /Regression Modeling Strategies/, Frank Harrell [[/Users/chl/Documents/Papers/harrell-2015-regres-model-strat.pdf][harrell-2015-regres-model-strat]]
 
 A modern take on regression modeling using the beautiful ~rms~ package. Fifteen years of use, and counting. Besides, the following illustrates the use of ~rcs~ to account for possible non-linearities, in this case regarding age of passengers.
 

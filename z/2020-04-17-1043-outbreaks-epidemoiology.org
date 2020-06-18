@@ -1,8 +1,8 @@
 * Epidemiology and outbreak analysis
 
-#+FILETAGS: :epidemiology:
+#+TAGS: :epidemiology:
 
-*Source:* [[https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0003846][Potential Biases in Estimating Absolute and Relative Case-Fatality Risks during Outbreaks]], Lipsitch et al. [[/Users/chl/Documents/Papers/lipsitch-2015-poten-biases.pdf][lipsitch-2015-poten-biases]]
+Source: [[https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0003846][Potential Biases in Estimating Absolute and Relative Case-Fatality Risks during Outbreaks]], Lipsitch et al. [[/Users/chl/Documents/Papers/lipsitch-2015-poten-biases.pdf][lipsitch-2015-poten-biases]]
 
 #+BEGIN_QUOTE
 We describe two forms of bias that may affect the estimation of the overall CFR—preferential ascertainment of severe cases and bias from reporting delays—and review solutions that have been proposed and implemented in past epidemics. Also of interest is the estimation of the causal impact of specific interventions (e.g., hospitalization, or hospitalization at a particular hospital) on survival, which can be estimated as a relative CFR for two or more groups. When observational data are used for this purpose, three more sources of bias may arise: [[https://pubmed.ncbi.nlm.nih.gov/10366179/][confounding]], survivorship bias, and selection due to preferential inclusion in surveillance datasets of those who are hospitalized and/or die.

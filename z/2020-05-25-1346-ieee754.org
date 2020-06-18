@@ -1,8 +1,8 @@
 * IEEE-754 and NA values
 
-#+FILETAGS: :algorithms:clang:
+#+TAGS: :algorithms:clang:
 
-*Source:* [[https://stackoverflow.com/a/1573715][Stack Overflow]]
+Source: [[https://stackoverflow.com/a/1573715][Stack Overflow]]
 
 #+BEGIN_QUOTE
 First off, floating-point numbers are not real numbers, and floating-point arithmetic does not satisfy the axioms of real arithmetic. Trichotomy is not the only property of real arithmetic that does not hold for floats, nor even the most important. For example:
