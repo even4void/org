@@ -1,3 +1,5 @@
+# -*- ispell-dictionary: "en" -*-
+
 * [[/Users/chl/Documents/Papers/ackermann-2009-general-mod.pdf][ackermann-2009-general-mod]] - A general modular framework for gene set enrichment analysis
  :PROPERTIES:
  :Custom_ID: ackermann-2009-general-mod
@@ -14,13 +16,14 @@ Based on [[https://www.bioconductor.org/packages/release/bioc/html/topGO.html][t
  :END:
 Analysis of 38 complete fungal MT genomes, including Podospora Anserina. The authors conclude that unlike the case of Metazoa there exists MT recombination in all fungal phyla, arising as a result of nonhomologous and intrachromosomal recombination, sequence repeats at intergenic region and probably mobile elements dynamic.
 
-*Phylogenetic analysis:* Protein sequences of the ortho- logs shared by all sampled species were aligned using a combi- nation of six different alignment strategies, and these alignments were automatically trimmed with trimAl, and then concatenated. Phylogenetic reconstruction was performed using PhyML and RAxML. Evolutionary rates were estimated with the r8s software.
+*Phylogenetic analysis:* Protein sequences of the orthologs shared by all sampled species were aligned using a combi- nation of six different alignment strategies, and these alignments were automatically trimmed with trimAl, and then concatenated. Phylogenetic reconstruction was performed using PhyML and RAxML. Evolutionary rates were estimated with the r8s software.
 * [[/Users/chl/Documents/Papers/alkan-2011-genom.pdf][alkan-2011-genom]] - Genome structural variation discovery and genotyping
  :PROPERTIES:
  :Custom_ID: alkan-2011-genom
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/alkan-2011-genom.pdf
  :END:
-Review of existing technologies and introduction to NGS analysis. Useful glossary.* [[/Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf][allen-2016-haskel-progr]] - Haskell Programming from First Principles
+Review of existing technologies and introduction to NGS analysis. Useful glossary.
+* [[/Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf][allen-2016-haskel-progr]] - Haskell Programming from First Principles
  :PROPERTIES:
  :Custom_ID: allen-2016-haskel-progr
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf
@@ -44,7 +47,7 @@ Orthologous and paralogous genes are two types of homologous genes, that is, gen
  :Custom_ID: altman-2004-numer-issues
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/altman-2004-numer-issues.pdf
  :END:
-Although it is probably a bit outdated by now, I like to refer to this book when it comes to summarize how important dedicated statistical packages are compared to, say, MS Excel (whihc used a single-pass formula for computing the SD of a series of values). More to the point, statistical software dedicated to survey analysis provide better estimates than more general package, except perhaps Stata which has good [[https://www.stata.com/meeting/snasug08/kolenikov_snasug08.pdf][estimators of variance]] for complex surveys.
+Although it is probably a bit outdated by now, I like to refer to this book when it comes to summarize how important dedicated statistical packages are compared to, say, MS Excel (which used a single-pass formula for computing the SD of a series of values). More to the point, statistical software dedicated to survey analysis provide better estimates than more general package, except perhaps Stata which has good [[https://www.stata.com/meeting/snasug08/kolenikov_snasug08.pdf][estimators of variance]] for complex surveys.
 
 Sources of inaccuracy in statistical computation: bugs, computer arithmetic, randomized algorithms, approximation and heuristic algorithms, local search algorithms. About computer arithmetic, specifically:
 
@@ -56,7 +59,7 @@ Take away message from computer arithmetic:
 
 1. Rounding errors occur in binary computer arithmetic that are not obvious when one considers only ordinary decimal arithmetic.
 2. Round-off error tends to accumulate when adding large and small numbers --- small numbers tend to "drop off the end" of the addition operator's precision, and what accumulates in the leftmost decimal positions is inaccurate.
-3. Substracting a similar quantity from the result can then "cancel" the relatively accurate numbers in the rightmost decimal places, leaving only the least accurate portions.
+3. Subtracting a similar quantity from the result can then "cancel" the relatively accurate numbers in the rightmost decimal places, leaving only the least accurate portions.
 
 Illustration: $i = 1000000000 + 2 - 0.1 - 1000000000$.
 
@@ -116,7 +119,7 @@ http://www.lcqb.upmc.fr/CLADE/
  :Custom_ID: blandy-2015-why-rust
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/blandy-2015-why-rust.pdf
  :END:
-Rust, like Python, JS or Ruby, is a type safe language with immutable variables by default, but it also allows the use of ~unsafe~ code and ~mut~ able variables. Moreover, "Rust’s particular form of type safety guarantees that concurrent code is free of data races, catching any misuse of mutexes or other synchronization primitives at compile time, and permitting a much less adversarial stance towards exploiting parallelism." In addition, Rust guarantees memory safety thru three key promises: no null pointer dereferences, no dangling pointers and no buffer overruns.
+Rust, like Python, JS or Ruby, is a type safe language with immutable variables by default, but it also allows the use of ~unsafe~ code and ~mut~ able variables. Moreover, "Rust’s particular form of type safety guarantees that concurrent code is free of data races, catching any misuse of mutexes or other synchronization primitives at compile time, and permitting a much less adversarial stance towards exploiting parallelism." In addition, Rust guarantees memory safety through three key promises: no null pointer dereferences, no dangling pointers and no buffer overruns.
 
 Rust offers a flexible macro system (not covered in this short review); see the [[https://doc.rust-lang.org/1.7.0/book/macros.html][official documentation]] or the [[https://rustbyexample.com/macros.html][Rust by Example]]. There are also /generic/ types and functions, like C++ templates, except that in Rust we must specifiy the type of the argument ~T~ (~Ord~ in the example below):
 
@@ -573,9 +576,8 @@ The authors use the JC69 model to benchmark 19 methods for computing the marginl
  :Custom_ID: gavryushkina-2013-recur-algor
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gavryushkina-2013-recur-algor.pdf
  :END:
-In a Bayesian context*, this article describes a quadratic algorithm for counting the number of possible fully ranked trees on n sampled individuals (/aka/ fully ranked tree with sampled ancestors).
+In a Bayesian context,[fn::A general problem in evolutionary biology is how to reconstruct the phylogenetic tree from sequence data obtained from sampled individuals. Tackling this problem in a Bayesian framework may require counting the number of all possible histories on a sample of individuals.] this article describes a quadratic algorithm for counting the number of possible fully ranked trees on n sampled individuals (/aka/ fully ranked tree with sampled ancestors).
 
-(*) A general problem in evolutionary biology is how to reconstruct the phylogenetic tree from sequence data obtained from sampled individuals. Tackling this problem in a Bayesian framework may require counting the number of all possible histories on a sample of individuals.
 * [[/Users/chl/Documents/Papers/ghuloum-2006-increm-approac.pdf][ghuloum-2006-increm-approac]] - An incremental approach to compiler construction
  :PROPERTIES:
  :Custom_ID: ghuloum-2006-increm-approac
@@ -588,14 +590,12 @@ Found by following Thorsten Ball's progress (on Twitter) on his approach to buil
  :Custom_ID: gosset-1908-probab-error-mean
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gosset-1908-probab-error-mean.pdf
  :END:
-R =datasets::sleepstudy=
-
 Extra R code (Frank Harrell, [[/Users/chl/Documents/Papers/harrell-2017-biost-biomed-resear.pdf][harrell-2017-biost-biomed-resear]])
 
-#+NAME: sleepstudy
+#+NAME: datasets::sleepstudy
 #+BEGIN_SRC R
-drug1 = c(.7, -1.6, -.2, -1.2, -.1, 3.4, 3.7, .8, 0, 2)
-drug2 = c(1.9, .8, 1.1, .1, -.1, 4.4, 5.5, 1.6, 4.6, 3.4)
+drug1 = c(0.7, -1.6, -0.2, -1.2, -0.1, 3.4, 3.7, 0.8, 0, 2)
+drug2 = c(1.9, 0.8, 1.1, 0.1, -0.1, 4.4, 5.5, 1.6, 4.6, 3.4)
 d = data.frame(Drug=c(rep('Drug 1', 10), rep('Drug 2', 10), rep('Difference', 10)),
                extra=c(drug1 , drug2 , drug2 - drug1))
 w = data.frame(drug1, drug2, diff=drug2 - drug1)
@@ -852,7 +852,7 @@ See also [[https://www.oreilly.com/ideas/a-manifesto-for-agile-data-science][A m
  :Custom_ID: kazil-2016-data-wrang-python
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kazil-2016-data-wrang-python.pdf
  :END:
-Relatively self-paced introduction to Python data structures and programming. In order to motivate the reader, the authors said that he/she would understand the following three lines by the end of chapter 2, and I believe this should be true even for people who know close to nothing to programming.
+Relatively self-paced introduction to Python data structures and programming. In order to motivate the reader, the authors said they would understand the following three lines by the end of chapter 2, and I believe this should be true even for people who know close to nothing to programming.
 
 #+BEGIN_SRC python
 import sys
@@ -1180,7 +1180,7 @@ Let’s not kid ourselves: the most widely used piece of software for statistics
  :END:
 A book from the Packt Publishing group.
 
-Actually, this is the first book by [[http://www.ericrochester.com][Eric Rochester]]. The second covers more advanced techniques and was published one year later: cite:rochester-2014-master-clojur. The [[https://github.com/erochest/clj-data-analysis][website for the book]] includes data used throughout the book, nothing more, but be aware there are a lot of datasets.
+Actually, this is the first book by [[http://www.ericrochester.com][Eric Rochester]]. The second covers more advanced techniques and was published one year later: cite:rochester-2014-master-clojur. The [[https://github.com/erochest/clj-data-analysis][site for the book]] includes data used throughout the book, nothing more, but be aware there are a lot of datasets.
 
 #+BEGIN_QUOTE
 This book is for programmers or data scientists who are familiar with Clojure and want to use it in their data analysis processes.
@@ -1599,7 +1599,7 @@ See [[/Users/chl/Documents/Papers/anders-2013-count-rna.pdf][anders-2013-count-r
  :Custom_ID: wengrow-2017-common-sense
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wengrow-2017-common-sense.pdf
  :END:
-Short but interesting textbook on general programming principles. It features a mix of Python and Javascript to illustrate major sorting algorithms, big O notation, etc. Available as EPUB locally.
+Short but interesting textbook on general programming principles. It features a mix of Python and JavaScript to illustrate major sorting algorithms, big O notation, etc. Available as EPUB locally.
 * [[/Users/chl/Documents/Papers/alim-2017-local-pore.pdf][alim-2017-local-pore]] - Local pore size correlations determine flow distributions in porous media
  :PROPERTIES:
  :Custom_ID: alim-2017-local-pore
