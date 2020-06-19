@@ -1,6 +1,15 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Awesome Boxes                                                              :tex:
+[2020-06-19 Fri 18:14]
+https://github.com/milouse/latex-awesomebox
+** asdf-vm: Manage multiple runtime versions with a single CLI tool
+[2020-06-19 Fri 18:01]
+https://etienne.depar.is/a-ecrit/switch-back-to-git.html
+** IPFS: A peer-to-peer hypermedia protocol
+[2020-06-19 Fri 18:00]
+https://etienne.depar.is/a-ecrit/switch-back-to-git.html
 ** How to split Git repositories into two
 [2020-06-18 Thu 10:27]
 https://www.endpoint.com/blog/2017/08/14/how-to-split-git-repositories-into-two

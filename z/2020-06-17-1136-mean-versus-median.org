@@ -6,7 +6,7 @@ Speaking of OLS and squared error, it is better to consider the mean than the me
 
 $$ \mathbb{E}\{(\u{x}-\mu)^2\}/\mathbb{E}\{(\bar{x}-\mu)^2\} = 1.57. $$
 
-The relative efficiency (RE) is defined as the variance of the first estimator divided by that of the second estimator. Since the variance of the sample mean is $\sigma^2/n$, and that of the sample median $\pi\sigma^2\2,$, we have $\text{RE} = (\pi\sigma2/2n) / (\sigma^2/n) = \pi/2 = 1.57$.
+The relative efficiency (RE) is defined as the variance of the first estimator divided by that of the second estimator. Since the variance of the sample mean is $\sigma^2/n$, and that of the sample median $\pi\sigma^2/2n$, we have $\text{RE} = (\pi\sigma^2/2n) / (\sigma^2/n) = \pi/2 = 1.57$.
 
 If, however, we are interested in prediction, the mean still wins but only by 2%:
 
