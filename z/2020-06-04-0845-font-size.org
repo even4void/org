@@ -2,11 +2,7 @@
 
 #+TAGS: :typography:
 
-Source: Nikita Tonsky (Twitter)
-
-Use different font sizes to create hierarchy.
-
-To create a scale of font sizes, take the base font size (say 16) and mutliply it by a fixed ratio to get more values:
+Use different font sizes to create hierarchy. To create a scale of font sizes, take the base font size (say 16) and mutliply it by a fixed ratio to get more values:
 
 16 base    = 16    4
 16 * 8/9   = 14    3

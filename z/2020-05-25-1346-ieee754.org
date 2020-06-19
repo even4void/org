@@ -2,8 +2,6 @@
 
 #+TAGS: :algorithms:clang:
 
-Source: [[https://stackoverflow.com/a/1573715][Stack Overflow]]
-
 #+BEGIN_QUOTE
 First off, floating-point numbers are not real numbers, and floating-point arithmetic does not satisfy the axioms of real arithmetic. Trichotomy is not the only property of real arithmetic that does not hold for floats, nor even the most important. For example:
 
@@ -16,3 +14,5 @@ I could go on. It is not possible to specify a fixed-size arithmetic type that s
 1. When we can, we match the behavior of real arithmetic.
 2. When we can't, we try to make the violations as predictable and as easy to diagnose as possible.
 #+END_QUOTE
+
+Source: [[https://stackoverflow.com/a/1573715][Stack Overflow]]
