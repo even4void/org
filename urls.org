@@ -1,112 +1,127 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Calva: Clojure & ClojureScript with Visual Studio Code                     :clojure:vscode:
+[2020-06-26 Fri 17:01]
+https://github.com/BetterThanTomorrow/calva
+** Working with Jupyter Notebooks in Visual Studio Code                       :vscode:python:
+[2020-06-26 Fri 16:59]
+https://code.visualstudio.com/docs/python/jupyter-support
+** Reordering and facetting for ggplot2                                       :rstats:ggplot:
+[2020-06-26 Fri 16:59]
+https://juliasilge.com/blog/reorder-within/
+** Data Structure Optimization for Functional Programs                        :scheme:
+[2020-06-26 Fri 16:49]
+https://github.com/panicz/master-thesis
+** Customizing a Theme for Emacs                                              :emacs:
+[2020-06-26 Fri 12:17]
+https://joshrollinswrites.com/help-desk-head-desk/20200528/
 ** Awesome Boxes                                                              :tex:
 [2020-06-19 Fri 18:14]
 https://github.com/milouse/latex-awesomebox
-** asdf-vm: Manage multiple runtime versions with a single CLI tool
+** asdf-vm: Manage multiple runtime versions with a single CLI tool           :cli:
 [2020-06-19 Fri 18:01]
 https://etienne.depar.is/a-ecrit/switch-back-to-git.html
-** IPFS: A peer-to-peer hypermedia protocol
+** IPFS: A peer-to-peer hypermedia protocol                                   :misc:
 [2020-06-19 Fri 18:00]
 https://etienne.depar.is/a-ecrit/switch-back-to-git.html
-** How to split Git repositories into two
+** How to split Git repositories into two                                     :git:
 [2020-06-18 Thu 10:27]
 https://www.endpoint.com/blog/2017/08/14/how-to-split-git-repositories-into-two
-** Creating and Hosting a Personal Site on GitHub
+** Creating and Hosting a Personal Site on GitHub                             :git:
 [2020-06-18 Thu 09:44]
 http://jmcglone.com/guides/github-pages/
-** Typora and Pandoc : support captions for figures #379
+** Typora and Pandoc : support captions for figures #379                      :pandoc:
 [2020-06-18 Thu 08:16]
 https://github.com/typora/typora-issues/issues/379
-** Renjin and R
+** Renjin and R                                                               :rstats:
 [2020-06-17 Wed 21:10]
 https://github.com/applied-science/rdata
-** General-purpose connection pooling library
+** General-purpose connection pooling library                                 :misc:
 [2020-06-17 Wed 21:10]
 https://github.com/fukamachi/anypool?files=1
-** Tidymodels: tidy machine learning in R
+** Tidymodels: tidy machine learning in R                                     :rstats:
 [2020-06-17 Wed 21:10]
 http://www.rebeccabarter.com/blog/2020-03-25_machine_learning/
 ** deta: Functional Database Mapping                                          :racket:
 [2020-06-17 Wed 21:09]
 https://deta.defn.io/
-** Spatial aggregation
+** Spatial aggregation                                                        :statistics:
 [2020-06-17 Wed 21:09]
 https://www.jla-data.net/eng/spatial-aggregation/
-** Maximum Inscribed Circle and Largest Empty Circle in JTS
+** Maximum Inscribed Circle and Largest Empty Circle in JTS                   :statistics:
 [2020-06-17 Wed 21:09]
 http://lin-ear-th-inking.blogspot.com/2020/04/maximum-inscribed-circle-and-largest.html?m=1
-** Projection predictive variable selection
+** Projection predictive variable selection                                   :statistics:
 [2020-06-17 Wed 21:08]
 https://mc-stan.org/projpred/
-** My Rust 2020 ideas
+** My Rust 2020 ideas                                                         :rust:
 [2020-06-17 Wed 21:08]
 https://phaazon.net/blog/rust-2020-ideas
-** Fancy Little Lisp λs
+** Fancy Little Lisp λs                                                       :lisp:
 [2020-06-17 Wed 21:07]
 https://lepisma.xyz/2017/12/20/fancy-lambdas.html
 ** RE: st: graph export png on linux console                                  :stata:
 [2020-06-17 Wed 21:05]
 https://www.stata.com/statalist/archive/2004-03/msg00600.html
-** Iterate over all pairs of consecutive items in a list
+** Iterate over all pairs of consecutive items in a list                      :python:
 [2020-06-17 Wed 21:04]
 https://stackoverflow.com/questions/21303224/iterate-over-all-pairs-of-consecutive-items-in-a-list
-** sdl2-examples:basic-test kills slime-repl on macOS #89
+** sdl2-examples:basic-test kills slime-repl on macOS #89                     :lisp:
 [2020-06-17 Wed 21:04]
 https://github.com/lispgames/cl-sdl2/issues/89
-** Customizing pandoc to generate beautiful pdfs from markdown
+** Customizing pandoc to generate beautiful pdfs from markdown                :pandoc:
 [2020-06-17 Wed 21:03]
 https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/
-** Gene Set Enrichment Analysis (GSEA) User Guide
+** Gene Set Enrichment Analysis (GSEA) User Guide                             :bioinformatics:
 [2020-06-17 Wed 21:03]
 https://www.gsea-msigdb.org/gsea/doc/GSEAUserGuideFrame.html
-** StatsFunctionsNotes by JM White
+** StatsFunctionsNotes by JM White                                            :julia:
 [2020-06-17 Wed 21:02]
 https://github.com/johnmyleswhite/StatsFunctionsNotes
-** Radford Neale's Statistical Computation
+** Radford Neale's Statistical Computation                                    :statistics:
 [2020-06-17 Wed 21:02]
 http://www.utstat.utoronto.ca/~radford/sta410.F15/
-** Basic Clojure affordances for Common Lisp
+** Basic Clojure affordances for Common Lisp                                  :clojure:
 [2020-06-17 Wed 21:01]
 https://github.com/inaimathi/clj
-** A Lexical Analyzer Generator
+** A Lexical Analyzer Generator                                               :lisp:
 [2020-06-17 Wed 20:55]
 https://github.com/rigetti/alexa/blob/master/README.md
-** Enhance vector multiplication support #103
+** Enhance vector multiplication support #103                                 :lisp:
 [2020-06-17 Wed 20:55]
 https://github.com/rigetti/magicl/pull/103
-** Programming Language Study–Lisp
+** Programming Language Study–Lisp                                            :lisp:
 [2020-06-17 Wed 20:54]
 https://adamcross.blog/2020/05/07/programming-language-study-lisp-2/
 ** Radical utilities                                                          :lisp:
 [2020-06-17 Wed 20:54]
 https://github.com/vseloved/rutils/blob/master/docs/tutorial.md
-** A modern and consistent Common Lisp string manipulation library
+** A modern and consistent Common Lisp string manipulation library            :lisp:
 [2020-06-17 Wed 20:53]
 https://vindarel.github.io/cl-str/#/
-** Data visualizations in Clojure and ClojureScript using Vega and Vega-lite
+** Data visualizations in Clojure and ClojureScript using Vega and Vega-lite  :clojure:
 [2020-06-17 Wed 20:48]
 https://github.com/metasoarous/oz
-** tidyquery
+** tidyquery                                                                  :rstats:
 [2020-06-17 Wed 20:48]
 https://github.com/ianmcook/tidyquery/blob/master/README.md
-** Statistical Rethinking Week 5
+** Statistical Rethinking Week 5                                              :rstats:bayesian:
 [2020-06-17 Wed 20:48]
 https://david-salazar.github.io/2020/05/15/statistical-rethinking-week-5-hmc-samples/
 ** string utilities                                                           :lisp:
 [2020-06-17 Wed 20:47]
 https://github.com/fiddlerwoaroof/fwoar.lisputils/blob/master/string-utils/split.lisp
-** The End by Evan Martin
+** The End by Evan Martin                                                     :misc:
 [2020-06-17 Wed 20:47]
 http://neugierig.org/software/chromium/notes/2012/02/the-end.html
-** Eric C. Peterson's homepage
+** Eric C. Peterson's homepage                                                :misc:
 [2020-06-17 Wed 20:36]
 https://chromotopy.org/
-** Nicholas Carlini's homepage
+** Nicholas Carlini's homepage                                                :misc:
 [2020-06-17 Wed 20:36]
 https://nicholas.carlini.com/
-** Colin McLear Emacs config
+** Colin McLear Emacs config                                                  :emacs:
 [2020-06-17 Wed 20:32]
 https://github.com/mclear-tools/dotemacs/blob/master/README.org
 ** ox-leanpub: A Leanpub book exporter for Org-mode                           :org:
@@ -115,13 +130,13 @@ https://github.com/zzamboni/ox-leanpub
 ** zettel-mode                                                                :emacs:
 [2020-06-17 Wed 20:22]
 https://github.com/Vifon/zettel-mode
-** Managing figure size in Pandoc
+** Managing figure size in Pandoc                                             :pandoc:
 [2020-06-17 Wed 11:26]
 https://github.com/jgm/pandoc/issues/261
 ** Emacs: prettier tab-line                                                   :emacs:
 [2020-06-16 Tue 20:41]
 http://amitp.blogspot.com/?m=1
-** neugierig.org: Tech Notes
+** neugierig.org: Tech Notes                                                  :misc:
 [2020-06-16 Tue 20:40]
 http://neugierig.org/software/blog/archive.html
 ** Blog of the author of Conjure                                              :clojure:vim:
@@ -133,7 +148,7 @@ https://pypi.org/project/pipenv/
 ** Rewriting the heart of our sync engine                                     :misc:
 [2020-06-16 Tue 20:35]
 https://dropbox.tech/infrastructure/rewriting-the-heart-of-our-sync-engine
-** Clustering Pollock
+** Clustering Pollock                                                         :misc:
 [2020-06-16 Tue 20:35]
 https://gist.github.com/aialenti/d51b830c07bb8ec53556ddae9c9ec352
 ** :claw honing                                                               :lisp:

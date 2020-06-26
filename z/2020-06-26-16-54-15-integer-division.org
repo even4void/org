@@ -1,0 +1,7 @@
+* Integer division and multiplication
+
+#+FILETAGS: :computing:
+
+Division is an [[https://en.wikipedia.org/wiki/Division_algorithm][iterative algorithm]] (involving to shift the result from quotient to remainder using a Euclidean measure) while addition can be performed as a succession of bit manipulation tricks. It would be interesting to check whether Newton-Raphson is still used internally for reciprocating a number.
+
+Source: [[https://scicomp.stackexchange.com/q/187][Why is division so much more complex than other arithmetic operations?]]
