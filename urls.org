@@ -1,6 +1,12 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Denis Roegel
+[2020-06-27 Sat 20:49]
+https://members.loria.fr/Roegel/publications.html
+** Statistics for laboratory scientists II
+[2020-06-27 Sat 20:20]
+https://www.biostat.wisc.edu/~kbroman/teaching/labstat/fourth/
 ** Deepmind's AlphaZero algorithm                                             :julia:
 [2020-06-27 Sat 18:53]
 https://github.com/jonathan-laurent/AlphaZero.jl

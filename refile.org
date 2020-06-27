@@ -1,4 +1,3 @@
-#+TITLE: refile
 
 * Bookmarks to file
 ** How to use matrix.org and vector.im as an IRC client
@@ -76,3 +75,218 @@ https://gist.github.com/jrgcubano/fdcf3a903f56b1af4dca
 ** Alain M. Lafon's emacs config
 [2020-06-16 Tue 20:40]
 https://github.com/munen/emacs.d/blob/master/configuration.org
+
+* Safari reading list
+** Statistics for laboratory scientists II
+[2020-06-27 Sat 20:21]
+https://www.biostat.wisc.edu/~kbroman/teaching/labstat/fourth/
+** Data wrangling, exploration, and analysis with R
+[2020-06-27 Sat 20:22]
+https://stat545.com/
+** Explained Visually
+[2020-06-27 Sat 20:23]
+https://setosa.io/ev/
+** Data Mining: Spring 2013
+[2020-06-27 Sat 20:24]
+http://www.stat.cmu.edu/~ryantibs/datamining/
+** Mining of Massive Datasets
+[2020-06-27 Sat 20:24]
+http://www.mmds.org/
+** Support de cours DATA MINING et DATA SCIENCE
+[2020-06-27 Sat 20:24]
+http://eric.univ-lyon2.fr/~ricco/cours/supports_data_mining.html
+** Arcene Data Set
+[2020-06-27 Sat 20:27]
+https://archive.ics.uci.edu/ml/datasets/Arcene
+** STAT 545 by Rao
+[2020-06-27 Sat 20:28]
+https://www.stat.purdue.edu/~varao/STAT545/main.html
+** General Statistical Ideas
+[2020-06-27 Sat 20:28]
+http://biostat.mc.vanderbilt.edu/wiki/Main/ClinStat
+** STAT 133
+[2020-06-27 Sat 20:29]
+http://www.gastonsanchez.com/stat133/lectures/
+** Practical Machine Learning Tools and Techniques
+[2020-06-27 Sat 20:31]
+https://www.cs.waikato.ac.nz/ml/weka/book.html
+** Foundations of Data Science — Spring 2016
+[2020-06-27 Sat 20:31]
+https://data-8.appspot.com/sp16/course
+** Reactive Vega
+[2020-06-27 Sat 20:32]
+http://idl.cs.washington.edu/papers/reactive-vega-architecture/
+** The Lyra Visualization Design Environment
+[2020-06-27 Sat 20:32]
+http://idl.cs.washington.edu/projects/lyra/
+** R for Data Science
+[2020-06-27 Sat 20:33]
+https://r4ds.had.co.nz/
+** Fundamentals of Data Analysis and Visualization                            :stata:
+[2020-06-27 Sat 20:34]
+http://geocenter.github.io/StataTraining/about/
+** Vega & Vega-Lite
+[2020-06-27 Sat 20:34]
+https://vega.github.io/
+** Statistical Modeling with Stata
+[2020-06-27 Sat 20:35]
+http://personalpages.manchester.ac.uk/staff/mark.lunt/stats_course.html
+** Exploring Histograms
+[2020-06-27 Sat 20:35]
+https://www.informationisbeautifulawards.com/showcase/2553
+** The datasaurus
+[2020-06-27 Sat 20:35]
+https://www.autodeskresearch.com/publications/samestats
+** Idyll
+[2020-06-27 Sat 20:36]
+https://idyll-lang.org/
+** Michael Freeman
+[2020-06-27 Sat 20:36]
+http://mfviz.com/
+** Most interactive textbooks are crap
+[2020-06-27 Sat 20:37]
+https://www.refsmmat.com/notebooks/textbooks.html
+** Reading for Programmers
+[2020-06-27 Sat 20:38]
+https://codearsonist.com/reading-for-programmers
+** Easy Lecture Slides Made Difficult with Pandoc and Beamer
+[2020-06-27 Sat 20:39]
+https://andrewgoldstone.com/blog/2014/12/24/slides/
+** Exploring a Data Set in SQL
+[2020-06-27 Sat 20:40]
+https://tapoueh.org/blog/2017/06/exploring-a-data-set-in-sql/
+** Generalized Linear Models                                                  :stata:
+[2020-06-27 Sat 20:41]
+https://data.princeton.edu/wws509
+** Hugo Bowne-Anderson
+[2020-06-27 Sat 20:42]
+http://hugobowne.github.io/
+** necessary-disorder tutorials
+[2020-06-27 Sat 20:42]
+https://necessarydisorder.wordpress.com/
+** Robust Statistics using Stata
+[2020-06-27 Sat 20:43]
+https://www.stata.com/meeting/belgium16/slides/belgium16_verardi.pdf
+** Robust Statistics in Stata (2017)
+[2020-06-27 Sat 20:43]
+https://www.stata.com/meeting/uk17/slides/uk17_Jann2.pdf
+** Machine Learning and Econometrics
+[2020-06-27 Sat 20:44]
+https://web.stanford.edu/class/ee380/Abstracts/140129-slides-Machine-Learning-and-Econometrics.pdf
+** NBER Lectures on Machine Learning
+[2020-06-27 Sat 20:44]
+http://www.nber.org/econometrics_minicourse_2015/nber_slides11.pdf
+** Machine Learning for Microeconometrics
+[2020-06-27 Sat 20:44]
+http://cameron.econ.ucdavis.edu/e240f/trmachinelearningseminar.pdf
+** ldagibbs: A command for Topic Modeling in Stata                            :stata:
+[2020-06-27 Sat 20:45]
+https://warwick.ac.uk/fac/soc/economics/staff/crschwarz/lda_stata.pdf
+** Coding with Mata in Stata
+[2020-06-27 Sat 20:45]
+https://www.schmidheiny.name/teaching/statamata.pdf
+** Mata Programming I
+[2020-06-27 Sat 20:46]
+http://www.ncer.edu.au/events/documents/QUT15S2.slides.pdf
+** Simple data processing with Haskell
+[2020-06-27 Sat 20:47]
+https://medium.com/the-theam-journey/simple-data-processing-with-haskell-b79cea4d0a2d
+** Oliver Kirchkamp
+[2020-06-27 Sat 20:47]
+https://www.kirchkamp.de/teaching-grad.html
+** Why is Difference-in-Difference Estimation Still so Popular in Experimental Analysis?
+[2020-06-27 Sat 20:48]
+https://blogs.worldbank.org/impactevaluations/why-difference-difference-estimation-still-so-popular-experimental-analysis
+** A Visual Guide to Version Control
+[2020-06-27 Sat 20:48]
+https://betterexplained.com/articles/a-visual-guide-to-version-control/
+** Mac keyboard shortcuts
+[2020-06-27 Sat 20:48]
+https://support.apple.com/en-us/HT201236
+** Productizing Data Science at Twitch
+[2020-06-27 Sat 20:49]
+https://blog.twitch.tv/en/2017/06/01/productizing-data-science-at-twitch-67a643fd8c44/
+** Emacs org-mode examples and cookbook
+[2020-06-27 Sat 20:52]
+http://ehneilsen.net/notebook/orgExamples/org-examples.html
+** The Hacker Ways
+[2020-06-27 Sat 20:52]
+https://github.com/juanre/hacker-ways
+** Blogging using org-mode (and nothing else)
+[2020-06-27 Sat 20:53]
+https://ogbe.net/blog/blogging_with_org.html
+** Stata and R Markdown
+[2020-06-27 Sat 20:54]
+https://www.ssc.wisc.edu/~hemken/Stataworkshops/Stata%20and%20R%20Markdown/
+** Where can I find some rich book classes?
+[2020-06-27 Sat 20:55]
+https://tex.stackexchange.com/questions/134215/where-can-i-find-some-rich-book-classes
+** A birds-eye view of optimization algorithms
+[2020-06-27 Sat 20:55]
+http://fa.bianp.net/pages/teaching.html
+** STAT 501 | Regression Methods
+[2020-06-27 Sat 20:56]
+https://online.stat.psu.edu/stat501/node/353
+** Category Theory with Applications in Functional Programming
+[2020-06-27 Sat 20:56]
+http://www.lix.polytechnique.fr/Labo/Ulrich.Fahrenberg/Teaching/09/Fall/CatFunc/
+** Definitions with a Crossover Design
+[2020-06-27 Sat 20:56]
+https://online.stat.psu.edu/stat509/node/126/
+** Biostatistics: ANOVA and Design
+[2020-06-27 Sat 20:57]
+http://www.biostat.umn.edu/~lynn/ph7406.html
+** Making Data Visual
+[2020-06-27 Sat 20:58]
+https://makingdatavisual.github.io/
+** Beaker Browser
+[2020-06-27 Sat 21:00]
+https://beakerbrowser.com/
+** Comprehensive data exploration with python
+[2020-06-27 Sat 21:00]
+https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python
+** Stata and Literate Programming in Emacs Org-Mode
+[2020-06-27 Sat 21:01]
+https://rlhick.people.wm.edu/posts/stata-and-literate-programming-in-emacs-org-mode.html
+** Pretty Magit - Integrating commit leaders
+[2020-06-27 Sat 21:01]
+http://www.modernemacs.com/post/pretty-magit/
+** Working with Git from Emacs
+[2020-06-27 Sat 21:02]
+http://alexott.net/en/writings/emacs-vcs/EmacsGit.html
+** Read Random Rows from A Huge CSV File
+[2020-06-27 Sat 21:02]
+https://statcompute.wordpress.com/2018/04/
+** Reverse engineering stickies.app
+[2020-06-27 Sat 21:03]
+https://lowlevelbits.org/reverse-engineering-stickies.app/
+** doom-emacs-private-xfu
+[2020-06-27 Sat 21:04]
+https://github.com/fuxialexander/doom-emacs-private-xfu
+** Ned Batchelder
+[2020-06-27 Sat 21:04]
+https://nedbatchelder.com/
+** How I got started with Common Lisp in 2017
+[2020-06-27 Sat 21:04]
+https://www.reddit.com/r/lisp/comments/6y3db8/how_i_got_started_with_common_lisp_in_2017/
+** How to Design Programs
+[2020-06-27 Sat 21:06]
+https://htdp.org/2018-01-06/Book/
+** Combinatorial Generation Using Coroutines With Examples in Python
+[2020-06-27 Sat 21:06]
+https://sahandsaba.com/combinatorial-generation-using-coroutines-in-python.html#knuth-4a
+** William Kahan
+[2020-06-27 Sat 21:07]
+https://people.eecs.berkeley.edu/~wkahan/
+** The Ultimate Vim Distribution
+[2020-06-27 Sat 21:07]
+http://vim.spf13.com/
+** Export Settings
+[2020-06-27 Sat 21:07]
+https://orgmode.org/manual/Export-Settings.html#Export-settings
+** Stata commands
+[2020-06-27 Sat 21:08]
+http://staskolenikov.net/stata/Duke/commands.html
+** Jeff Stafford
+[2020-06-27 Sat 21:08]
+https://jstaf.github.io/teaching/
