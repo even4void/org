@@ -1,6 +1,42 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Deepmind's AlphaZero algorithm                                             :julia:
+[2020-06-27 Sat 18:53]
+https://github.com/jonathan-laurent/AlphaZero.jl
+** Pandoc and GH actions
+[2020-06-27 Sat 18:53]
+https://github.com/tdhopper/pandoc_resume/blob/master/.github/workflows/main.yml
+** R from NodeJS, the right way                                               :rstats:node:
+[2020-06-27 Sat 18:52]
+https://github.com/ColinFay/hordes/
+** OpenGL Mathematics                                                         :misc:
+[2020-06-27 Sat 18:45]
+https://glm.g-truc.net/0.9.9/index.html
+** Vim Cheat Sheet                                                            :vim:
+[2020-06-27 Sat 18:45]
+https://vim.rtorr.com/
+** Learn to speak vim                                                         :vim:
+[2020-06-27 Sat 18:45]
+https://yanpritzker.com/learn-to-speak-vim-verbs-nouns-and-modifiers-d7bfed1f6b2d
+** Emacs colors                                                               :emacs:
+[2020-06-27 Sat 18:44]
+http://www.raebear.net/computers/emacs-colors/
+** Beautifying Org Mode in Emacs                                              :org:
+[2020-06-27 Sat 18:44]
+https://zzamboni.org/post/beautifying-org-mode-in-emacs/
+** Yet Another Dotfile Repo
+[2020-06-27 Sat 18:44]
+https://github.com/skwp/dotfiles
+** Org-mode Tutorial / Cheat Sheet
+[2020-06-27 Sat 18:43]
+https://emacsclub.github.io/html/org_tutorial.html
+** Minimal theme for Hugo
+[2020-06-27 Sat 10:37]
+https://themes.gohugo.io/theme/minimal/
+** How are Unix pipes implemented?
+[2020-06-26 Fri 20:37]
+https://medium.com/@mrpowers
 ** Calva: Clojure & ClojureScript with Visual Studio Code                     :clojure:vscode:
 [2020-06-26 Fri 17:01]
 https://github.com/BetterThanTomorrow/calva
