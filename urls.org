@@ -1,6 +1,54 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Cache Oblivious Algorithms
+[2020-06-28 Sun 09:11]
+https://jiahai-feng.github.io/posts/cache-oblivious-algorithms/
+** Apache Spark Tutorial: ML with PySpark
+[2020-06-28 Sun 09:10]
+https://www.datacamp.com/community/tutorials/apache-spark-tutorial-machine-learning
+** Twitch Chat Downloader
+[2020-06-28 Sun 09:10]
+https://github.com/strager/Twitch-Chat-Downloader
+** An eclectic collection of convenience functions for you                    :julia:
+[2020-06-28 Sun 09:09]
+https://github.com/xiaodaigh/DataConvenience.jl
+** Fractal tree in p5.js
+[2020-06-28 Sun 09:08]
+https://editor.p5js.org/jcponce/full/Hhm0-7Exq
+** A nice urn problem
+[2020-06-28 Sun 09:08]
+https://www.cs.cmu.edu/~jlaurent/notes/pick-at-least-one.html
+** Training material for all kinds of transcriptomics analysis
+[2020-06-28 Sun 09:06]
+https://training.galaxyproject.org/training-material/topics/transcriptomics/
+** Publish GitBook to Your GitHub Pages
+[2020-06-28 Sun 09:06]
+http://sangsoonam.github.io/2016/08/02/publish-gitbook-to-your-github-pages.html
+** Algorithms for sampling without replacement
+[2020-06-28 Sun 09:06]
+https://timvieira.github.io/blog/post/2019/09/16/algorithms-for-sampling-without-replacement/
+** Homoiconicity, Lisp, and Program Synthesis
+[2020-06-28 Sun 09:05]
+https://blog.sigplan.org/2020/03/25/homoiconicity-lisp-and-program-synthesis/
+** Typed functional programming in TypeScript
+[2020-06-28 Sun 08:36]
+https://github.com/gcanti/fp-ts
+** Biolisp: Lisp meets biology                                                :lisp:
+[2020-06-28 Sun 08:31]
+https://github.com/biolisp
+** Source Code Linking: Merging C Headers into Rust Modules
+[2020-06-28 Sun 08:30]
+https://immunant.com/blog/2019/12/header_merging/
+** Terminals Are Sexy
+[2020-06-28 Sun 08:30]
+https://terminalsare.sexy/
+** Datalib is a JavaScript data utility library
+[2020-06-28 Sun 08:11]
+http://vega.github.io/datalib/
+** How do i use matomo analytics without consent or cookie banner?
+[2020-06-28 Sun 08:03]
+https://matomo.org/faq/new-to-piwik/how-do-i-use-matomo-analytics-without-consent-or-cookie-banner/
 ** Denis Roegel
 [2020-06-27 Sat 20:49]
 https://members.loria.fr/Roegel/publications.html

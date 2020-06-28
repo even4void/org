@@ -290,3 +290,180 @@ http://staskolenikov.net/stata/Duke/commands.html
 ** Jeff Stafford
 [2020-06-27 Sat 21:08]
 https://jstaf.github.io/teaching/
+** Introduction to Machine Learning for Coders: Launch
+[2020-06-28 Sun 08:05]
+https://www.fast.ai/2018/09/26/ml-launch/
+** Flask 101: Adding, Editing and Displaying Data
+[2020-06-28 Sun 08:05]
+https://www.blog.pythonlibrary.org/2017/12/14/flask-101-adding-editing-and-displaying-data/
+** Flask by Example – Text Processing with Requests, BeautifulSoup, and NLTK
+[2020-06-28 Sun 08:05]
+https://realpython.com/flask-by-example-part-3-text-processing-with-requests-beautifulsoup-nltk/
+** Vagrant: Getting Started
+[2020-06-28 Sun 08:06]
+https://www.vagrantup.com/intro/getting-started
+** Vim after 15 years
+[2020-06-28 Sun 08:07]
+https://statico.github.io/vim3.html
+** Project Euler solutions by Nayuki
+[2020-06-28 Sun 08:11]
+https://www.nayuki.io/page/project-euler-solutions
+** exercism (racket)
+[2020-06-28 Sun 08:12]
+https://github.com/exercism/racket/tree/master/exercises
+** Access log data analysis
+[2020-06-28 Sun 08:12]
+https://blog.exploratory.io/access-log-data-analysis-part1-understanding-your-customer-interactions-adcfeef67d21
+** Simple image vectorization
+[2020-06-28 Sun 08:12]
+https://wordsandbuttons.online/simple_image_vectorization.html
+** Dealing with GenBank files in Biopython
+[2020-06-28 Sun 08:13]
+https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/python/genbank/
+** phylogenetics module of Genome Sciences 541
+[2020-06-28 Sun 08:13]
+https://matsen.github.io/teaching/courses/GS541/
+** Generating Fucntion Tutorial
+[2020-06-28 Sun 08:13]
+https://yuyuan.org/GeneratingFunctionTutorial/
+** Publishing Org-mode files to HTML
+[2020-06-28 Sun 08:14]
+https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html
+** Analyzing RNA-seq data with DESeq2
+[2020-06-28 Sun 08:14]
+https://www.bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html
+** SAMtools: Primer / Tutorial
+[2020-06-28 Sun 08:15]
+http://biobits.org/samtools_primer.html
+** RNA-Seq differential expression work flow using DESeq2
+[2020-06-28 Sun 08:15]
+http://www.sthda.com/english/wiki/rna-seq-differential-expression-work-flow-using-deseq2
+** Short read analysis
+[2020-06-28 Sun 08:15]
+https://biodataprog.github.io/2018_programming-intro/Lectures/12_short_read_analysis.html#5
+** Docker.raw reserving too much size #2297
+[2020-06-28 Sun 08:16]
+https://github.com/docker/for-mac/issues/2297
+** More solutions to SPOJ programming problems
+[2020-06-28 Sun 08:16]
+https://blog.dreamshire.com/more-solutions-to-spoj-programming-problems/
+** Introduction; Master Equation
+[2020-06-28 Sun 08:16]
+https://ocw.mit.edu/courses/physics/8-592j-statistical-physics-in-biology-spring-2011/lecture-notes/introduction/
+** Computational Molecular Biology and Genomics Syllabus
+[2020-06-28 Sun 08:17]
+https://www.cs.cmu.edu/~durand/03-711/2015/
+** Getting Started With Jekyll And GitHub Pages
+[2020-06-28 Sun 08:17]
+https://alexanderjdupree.github.io/blog/guide/tutorial/Getting-Started-With-Jekyll-And-GitHub-Pages/
+** Teaching materials at the Harvard Chan Bioinformatics Core
+[2020-06-28 Sun 08:17]
+https://github.com/hbctraining
+** Django CRUD App With SQLite
+[2020-06-28 Sun 08:18]
+https://github.com/piinalpin/django-crud-sqlite
+** Generating random numbers in R and Racket
+[2020-06-28 Sun 08:18]
+https://www.travishinkelman.com/posts/generating-random-numbers-r-racket/
+** Neil Toronto
+[2020-06-28 Sun 08:27]
+https://www.cs.umd.edu/~ntoronto/
+** Andrew M. Kent
+[2020-06-28 Sun 08:28]
+https://pnwamk.github.io/
+** Efficient and accurate rolling standard deviation
+[2020-06-28 Sun 08:28]
+https://jonisalonen.com/2014/efficient-and-accurate-rolling-standard-deviation/
+** Tracing a Program As It Runs
+[2020-06-28 Sun 08:28]
+https://pymotw.com/2/sys/tracing.html
+** Interface for Machine Learning Modeling, Testing and Training
+[2020-06-28 Sun 08:29]
+https://github.com/plandes/clj-ml-model
+** Advanced Hackery With The Hammerspoon Window Manager
+[2020-06-28 Sun 08:29]
+https://thume.ca/2016/07/16/advanced-hackery-with-the-hammerspoon-window-manager/
+** yabai: Tiling window management for the Mac
+[2020-06-28 Sun 08:29]
+https://github.com/koekeishiya/yabai
+** What’s Wrong With Statistics in Julia? A Reply
+[2020-06-28 Sun 08:30]
+https://web.archive.org/web/20160527011008/http://wizardmac.tumblr.com/post/104019606584/whats-wrong-with-statistics-in-julia-a-reply
+** Regexr
+[2020-06-28 Sun 08:32]
+https://regexr.com/
+** Make a Discord Webhook
+[2020-06-28 Sun 08:32]
+https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22
+** A cross-platform Discord music bot with a clean interface, and that is easy to set up and run yourself!
+[2020-06-28 Sun 08:32]
+https://github.com/jagrosh/MusicBot
+** Introduction to Mathematical Statistics
+[2020-06-28 Sun 08:32]
+http://statweb.stanford.edu/~susan/courses/s200/
+** A complete iTunes movie converter
+[2020-06-28 Sun 08:33]
+https://www.tuneskit.com/m4v-converter/?agency_id=8
+** Darling is a translation layer that lets you run macOS software on Linux
+[2020-06-28 Sun 08:33]
+https://darlinghq.org/
+** Continuation-passing style
+[2020-06-28 Sun 08:34]
+https://en.wikipedia.org/wiki/Continuation-passing_style
+** Sage Gerard
+[2020-06-28 Sun 08:34]
+https://github.com/zyrolasting
+** MATHEMATICA / Mathics tutorial
+[2020-06-28 Sun 08:34]
+http://www.cfm.brown.edu/people/dobrush/am33/Mathematica/
+** rsapkf dotfiles
+[2020-06-28 Sun 08:35]
+https://github.com/rsapkf/dotfiles
+** Rosalind sol in Python
+[2020-06-28 Sun 08:35]
+https://github.com/adelq/rosalind
+** Rosaling sol in Python (bis)
+[2020-06-28 Sun 08:36]
+https://github.com/timothymahajan/Project-Rosalind-Bioinformatics-Stronghold
+** Bayesian Econometrics Introduction
+[2020-06-28 Sun 08:36]
+https://rlhick.people.wm.edu/stories/bayesian_1.html
+** Efficient computation of integer representation as a sum of three squares
+[2020-06-28 Sun 08:37]
+https://mathoverflow.net/questions/104322/efficient-computation-of-integer-representation-as-a-sum-of-three-squares
+** Iterate sum of two squares                                                 :python:
+[2020-06-28 Sun 09:04]
+https://stackoverflow.com/questions/20119967/iterate-sum-of-two-squares
+** Non-English characters in Stata
+[2020-06-28 Sun 09:04]
+https://sites.google.com/site/imirkina/cookbook-stata/non-western-characters-in-stata
+** Stata Tutorial
+[2020-06-28 Sun 09:04]
+https://data.princeton.edu/stata
+** Common lisp cancellation error floating point
+[2020-06-28 Sun 09:05]
+https://duckduckgo.com/?q=common+lisp+cancellation+error+floating+point&t=iphone&ia=qa
+** CI/CD - Serverless Ebook using Gitbook CLI, Github Pages, Github Actions CI/CD, and Calibre
+[2020-06-28 Sun 09:06]
+https://devops.novalagung.com/en/cicd-serverless-ebook-gitbook-github-pages-actions-calibre.html
+** Emacs Configuration
+[2020-06-28 Sun 09:07]
+https://emacs.christianbaeuerlein.com/
+** doom-emacs-literate-config
+[2020-06-28 Sun 09:07]
+https://github.com/Brettm12345/doom-emacs-literate-config
+** jethrokuan dot files
+[2020-06-28 Sun 09:08]
+https://github.com/jethrokuan/dots/blob/master/.doom.d/config.el
+** Eli Zaretskii emacs files
+[2020-06-28 Sun 09:09]
+http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7a7090029437ae7981d3bba9722bdc8f4695fed3
+** Building a Machine Learning (ML) Model with PySpark
+[2020-06-28 Sun 09:10]
+https://towardsdatascience.com/first-time-machine-learning-model-with-pyspark-3684cf406f54
+** Seeing Theory
+[2020-06-28 Sun 09:11]
+https://seeing-theory.brown.edu/
+** Jacobi Theta functions #373
+[2020-06-28 Sun 09:11]
+https://github.com/boostorg/math/issues/373
