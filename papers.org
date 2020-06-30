@@ -1668,3 +1668,9 @@ Interesting note on GWAS analysis: Instead of performing a traditional attributi
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/filion-2017-analy-combin.pdf
  :END:
 See also [[https://www.biorxiv.org/content/10.1101/619155v2][Calibrating seed-based alignment heuristics with Sesame]], and [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1468433/][Choosing the best heuristic for seeded alignment of DNA sequences]].
+* [[/Users/chl/Documents/Papers/pavone-2020-using.pdf][pavone-2020-using]] - Using reference models in variable selection
+ :PROPERTIES:
+ :Custom_ID: pavone-2020-using
+ :INTERLEAVE_PDF: /Users/chl/Documents/Papers/pavone-2020-using.pdf
+ :END:
+A reference model is used to mimic the data-generating process, under the assumption of an M-complete framework whereby such a model reflects our beliefs about the future data in the best possible way and has passed model checking and criticism. When using a bayesian reference model, the idea is to project its predictive distribution to a reduced model leading to projection predictive variable selection approach. See also [[http://mc-stan.org/projpred]]. Side note: Now I know that what I've been using 8 years ago for variable selection using rerandomization or bootstrap may be called something like "Bootstrap inclusion frequencies" (see Fig. 1).
