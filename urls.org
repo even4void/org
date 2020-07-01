@@ -1,6 +1,21 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Manhattan plot for genomic analysis                                        :rstats:bioinformatics:
+[2020-07-01 Wed 14:00]
+https://github.com/YinLiLin/CMplot
+** Mastering JQ: Part 1
+[2020-07-01 Wed 13:55]
+https://codefaster.substack.com/p/mastering-jq-part-1-59c
+** Is it possible to use an Apple Time Capsule just as a network attached backup drive and not a router?
+[2020-07-01 Wed 13:52]
+https://apple.stackexchange.com/questions/256405/is-it-possible-to-use-an-apple-time-capsule-just-as-a-network-attached-backup-dr#265394
+** zsh-interactive-cd
+[2020-07-01 Wed 07:47]
+https://github.com/changyuheng/zsh-interactive-cd
+** tmux-fzf
+[2020-07-01 Wed 07:09]
+https://github.com/sainnhe/tmux-fzf
 ** A curated directory of 450+ Mac menu bar apps
 [2020-06-30 Tue 16:49]
 https://macmenubar.com/
