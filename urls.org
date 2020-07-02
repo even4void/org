@@ -1,6 +1,18 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** The Vi Lovers Home Page								:vim:
+[2020-07-02 Thu 21:01]
+https://thomer.com/vi/vi.html
+** Bookmarking with org-mode								:org:
+[2020-07-02 Thu 20:47]
+https://dewaka.com/blog/2020/04/08/bookmarking-with-org-mode/
+** Introduction to MicroK8s
+[2020-07-01 Wed 20:46]
+https://microk8s.io/docs
+** Training Course on Galaxy for Bioinformatics tool developers
+[2020-07-01 Wed 14:28]
+https://crs4.github.io/Galaxy4Developers/lectures/05.get_galaxy_up_and_running/
 ** Manhattan plot for genomic analysis                                        :rstats:bioinformatics:
 [2020-07-01 Wed 14:00]
 https://github.com/YinLiLin/CMplot
