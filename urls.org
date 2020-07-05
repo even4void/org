@@ -1,6 +1,57 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** In built LSP is amazing
+[2020-07-04 Sat 10:33]
+https://www.reddit.com/r/neovim/comments/gxcbui/in_built_lsp_is_amazing/
+** Vim sertup for LSP
+[2020-07-04 Sat 10:18]
+https://www.reddit.com/r/neovim/comments/grrxli/start_to_finish_example_of_setting_up_built_in/fs14ak8/
+** Markdown Writing Tricks
+[2020-07-03 Fri 19:34]
+https://jdhao.github.io/2020/06/01/markdown_writing_tricks/
+** A powerful, minimalist development environment with cutting-edge features
+[2020-07-03 Fri 14:50]
+https://github.com/ctaylo21/jarvis
+** A guide to modern Web Development with (Neo)vim
+[2020-07-03 Fri 14:47]
+https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/
+** Vim Anti-Patterns
+[2020-07-03 Fri 14:45]
+https://news.ycombinator.com/item?id=12643887
+** In Praise of the FZF Plugin for Vim
+[2020-07-03 Fri 14:35]
+https://randre03.github.io/in_praise_of_fzf/
+** vim swoop
+[2020-07-03 Fri 14:34]
+https://github.com/pelodelfuego/vim-swoop
+** vim tips and tricks
+[2020-07-03 Fri 14:34]
+https://www.cs.swarthmore.edu/oldhelp/vim/home.html
+** Why you should be using fzf
+[2020-07-03 Fri 14:24]
+https://www.freecodecamp.org/news/fzf-a-command-line-fuzzy-finder-missing-demo-a7de312403ff/
+** A Road to Common Lisp
+[2020-07-03 Fri 14:24]
+https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/
+** ghcid for the win!
+[2020-07-03 Fri 14:21]
+https://www.parsonsmatt.org/2018/05/19/ghcid_for_the_win.html
+** How To Create An IndieWeb Profile
+[2020-07-03 Fri 12:51]
+https://kevq.uk/how-to-create-an-indieweb-profile/
+** The world's most private search engine
+[2020-07-03 Fri 12:45]
+https://www.startpage.com/
+** Nice wallpaper
+[2020-07-03 Fri 12:45]
+https://wallhaven.cc/w/zm6qmw
+** How To Install and Configure Syncthing to Synchronize Directories on Ubuntu
+[2020-07-03 Fri 12:44]
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-syncthing-to-synchronize-directories-on-ubuntu-14-04
+** How To Synchronize Directories using Syncthing on Ubuntu
+[2020-07-03 Fri 12:44]
+https://linoxide.com/ubuntu-how-to/setup-syncthing-synchronize-directories-ubuntu-16-04/
 ** The Vi Lovers Home Page								:vim:
 [2020-07-02 Thu 21:01]
 https://thomer.com/vi/vi.html

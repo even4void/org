@@ -76,6 +76,9 @@ https://gist.github.com/jrgcubano/fdcf3a903f56b1af4dca
 [2020-06-16 Tue 20:40]
 https://github.com/munen/emacs.d/blob/master/configuration.org
 
+** Random dotfiles
+[2020-07-04 Sat 10:33]
+https://github.com/kdheepak/dotfiles
 * Safari reading list
 ** Statistics for laboratory scientists II
 [2020-06-27 Sat 20:21]
