@@ -1,6 +1,21 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Getting Started in Data Analysis using Stata and R
+[2020-07-06 Mon 12:54]
+https://dss.princeton.edu/training/
+** Nice website using a Gemini backend
+[2020-07-06 Mon 12:53]
+http://dctrud.sdf.org/
+** A Gentle Introduction to Non-determinism in Scheme
+[2020-07-06 Mon 12:36]
+https://ebzzry.io/en/amb/
+** Scripting in Common Lisp
+[2020-07-06 Mon 12:33]
+https://ebzzry.io/en/script-lisp/
+** Compiler Explorer
+[2020-07-06 Mon 11:35]
+https://github.com/compiler-explorer/compiler-explorer
 ** In built LSP is amazing
 [2020-07-04 Sat 10:33]
 https://www.reddit.com/r/neovim/comments/gxcbui/in_built_lsp_is_amazing/
