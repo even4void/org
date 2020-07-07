@@ -1,6 +1,12 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Invitation to Intermediate Julia
+[2020-07-07 Tue 07:42]
+https://github.com/dpsanders/intermediate_julia
+** NetBSD Internals
+[2020-07-07 Tue 07:40]
+https://www.netbsd.org/docs/internals/en/index.html
 ** Getting Started in Data Analysis using Stata and R
 [2020-07-06 Mon 12:54]
 https://dss.princeton.edu/training/
