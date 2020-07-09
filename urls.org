@@ -1,175 +1,193 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
-** Invitation to Intermediate Julia
+** Emacs Color Themes by Jason Blevins                                        :emacs:
+[2020-07-09 Thu 17:58]
+https://jblevins.org/projects/emacs-color-themes/
+** Git squash                                                                 :git:
+[2020-07-09 Thu 17:51]
+https://stackabuse.com/git-squash-multiple-commits-in-to-one-commit/
+** Changing a commit message                                                  :git:
+[2020-07-09 Thu 17:15]
+https://docs.github.com/en/github/committing-changes-to-your-project/changing-a-commit-message
+** Curve curvature in numpy                                                   :python:
+[2020-07-09 Thu 11:42]
+https://stackoverflow.com/questions/28269379/curve-curvature-in-numpy
+** Google convention for Python docstring                                     :python:
+[2020-07-08 Wed 21:02]
+https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
+** Automatic support for ligatures like in emacs-mac #222                     :emacs:
+[2020-07-08 Wed 10:31]
+https://github.com/d12frosted/homebrew-emacs-plus/issues/222
+** Invitation to Intermediate Julia                                           :julia:
 [2020-07-07 Tue 07:42]
 https://github.com/dpsanders/intermediate_julia
-** NetBSD Internals
+** NetBSD Internals                                                           :unix:
 [2020-07-07 Tue 07:40]
 https://www.netbsd.org/docs/internals/en/index.html
-** Getting Started in Data Analysis using Stata and R
+** Getting Started in Data Analysis using Stata and R                         :rstats:stata:
 [2020-07-06 Mon 12:54]
 https://dss.princeton.edu/training/
-** Nice website using a Gemini backend
+** Nice website using a Gemini backend                                        :misc:
 [2020-07-06 Mon 12:53]
 http://dctrud.sdf.org/
-** A Gentle Introduction to Non-determinism in Scheme
+** A Gentle Introduction to Non-determinism in Scheme                         :scheme:
 [2020-07-06 Mon 12:36]
 https://ebzzry.io/en/amb/
-** Scripting in Common Lisp
+** Scripting in Common Lisp                                                   :lisp:
 [2020-07-06 Mon 12:33]
 https://ebzzry.io/en/script-lisp/
-** Compiler Explorer
+** Compiler Explorer                                                          :misc:
 [2020-07-06 Mon 11:35]
 https://github.com/compiler-explorer/compiler-explorer
-** In built LSP is amazing
+** In built LSP is amazing                                                    :emacs:
 [2020-07-04 Sat 10:33]
 https://www.reddit.com/r/neovim/comments/gxcbui/in_built_lsp_is_amazing/
-** Vim sertup for LSP
+** Vim setup for LSP                                                         :vim:
 [2020-07-04 Sat 10:18]
 https://www.reddit.com/r/neovim/comments/grrxli/start_to_finish_example_of_setting_up_built_in/fs14ak8/
-** Markdown Writing Tricks
+** Markdown Writing Tricks                                                    :misc:
 [2020-07-03 Fri 19:34]
 https://jdhao.github.io/2020/06/01/markdown_writing_tricks/
 ** A powerful, minimalist development environment with cutting-edge features
 [2020-07-03 Fri 14:50]
 https://github.com/ctaylo21/jarvis
-** A guide to modern Web Development with (Neo)vim
+** A guide to modern Web Development with (Neo)vim                            :vim:
 [2020-07-03 Fri 14:47]
 https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/
-** Vim Anti-Patterns
+** Vim Anti-Patterns                                                          :vim:
 [2020-07-03 Fri 14:45]
 https://news.ycombinator.com/item?id=12643887
-** In Praise of the FZF Plugin for Vim
+** In Praise of the FZF Plugin for Vim                                        :vim:
 [2020-07-03 Fri 14:35]
 https://randre03.github.io/in_praise_of_fzf/
-** vim swoop
+** vim swoop                                                                  :vim:
 [2020-07-03 Fri 14:34]
 https://github.com/pelodelfuego/vim-swoop
-** vim tips and tricks
+** vim tips and tricks                                                        :vim:
 [2020-07-03 Fri 14:34]
 https://www.cs.swarthmore.edu/oldhelp/vim/home.html
-** Why you should be using fzf
+** Why you should be using fzf                                                :cli:
 [2020-07-03 Fri 14:24]
 https://www.freecodecamp.org/news/fzf-a-command-line-fuzzy-finder-missing-demo-a7de312403ff/
-** A Road to Common Lisp
+** A Road to Common Lisp                                                      :lisp:
 [2020-07-03 Fri 14:24]
 https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/
-** ghcid for the win!
+** ghcid for the win!                                                         :haskell:
 [2020-07-03 Fri 14:21]
 https://www.parsonsmatt.org/2018/05/19/ghcid_for_the_win.html
-** How To Create An IndieWeb Profile
+** How To Create An IndieWeb Profile                                          :web:
 [2020-07-03 Fri 12:51]
 https://kevq.uk/how-to-create-an-indieweb-profile/
-** The world's most private search engine
+** The world's most private search engine                                     :misc:
 [2020-07-03 Fri 12:45]
 https://www.startpage.com/
-** Nice wallpaper
+** Nice wallpaper                                                             :misc:
 [2020-07-03 Fri 12:45]
 https://wallhaven.cc/w/zm6qmw
-** How To Install and Configure Syncthing to Synchronize Directories on Ubuntu
+** How To Install and Configure Syncthing to Synchronize Directories on Ubuntu :misc:
 [2020-07-03 Fri 12:44]
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-syncthing-to-synchronize-directories-on-ubuntu-14-04
-** How To Synchronize Directories using Syncthing on Ubuntu
+** How To Synchronize Directories using Syncthing on Ubuntu                   :misc:
 [2020-07-03 Fri 12:44]
 https://linoxide.com/ubuntu-how-to/setup-syncthing-synchronize-directories-ubuntu-16-04/
-** The Vi Lovers Home Page								:vim:
+** The Vi Lovers Home Page                                                    :vim:
 [2020-07-02 Thu 21:01]
 https://thomer.com/vi/vi.html
-** Bookmarking with org-mode								:org:
+** Bookmarking with org-mode :org:
 [2020-07-02 Thu 20:47]
 https://dewaka.com/blog/2020/04/08/bookmarking-with-org-mode/
-** Introduction to MicroK8s
+** Introduction to MicroK8s                                                   :misc:
 [2020-07-01 Wed 20:46]
 https://microk8s.io/docs
-** Training Course on Galaxy for Bioinformatics tool developers
+** Training Course on Galaxy for Bioinformatics tool developers               :bioinformatics:
 [2020-07-01 Wed 14:28]
 https://crs4.github.io/Galaxy4Developers/lectures/05.get_galaxy_up_and_running/
 ** Manhattan plot for genomic analysis                                        :rstats:bioinformatics:
 [2020-07-01 Wed 14:00]
 https://github.com/YinLiLin/CMplot
-** Mastering JQ: Part 1
+** Mastering JQ: Part 1                                                       :cli:
 [2020-07-01 Wed 13:55]
 https://codefaster.substack.com/p/mastering-jq-part-1-59c
-** Is it possible to use an Apple Time Capsule just as a network attached backup drive and not a router?
+** Is it possible to use an Apple Time Capsule just as a network attached backup drive and not a router? :apple:
 [2020-07-01 Wed 13:52]
 https://apple.stackexchange.com/questions/256405/is-it-possible-to-use-an-apple-time-capsule-just-as-a-network-attached-backup-dr#265394
-** zsh-interactive-cd
+** zsh-interactive-cd                                                         :zsh:
 [2020-07-01 Wed 07:47]
 https://github.com/changyuheng/zsh-interactive-cd
-** tmux-fzf
+** tmux-fzf                                                                   :cli:
 [2020-07-01 Wed 07:09]
 https://github.com/sainnhe/tmux-fzf
-** A curated directory of 450+ Mac menu bar apps
+** A curated directory of 450+ Mac menu bar apps                              :apple:
 [2020-06-30 Tue 16:49]
 https://macmenubar.com/
-** A GitBook Example for Teaching
+** A GitBook Example for Teaching                                             :misc:
 [2020-06-28 Sun 18:44]
 https://cjvanlissa.github.io/gitbook-demo/
-** bookdown: Authoring Books and Technical Documents with R Markdown
+** bookdown: Authoring Books and Technical Documents with R Markdown          :misc:
 [2020-06-28 Sun 18:44]
 https://bookdown.org/yihui/bookdown/
-** Gitbook Plugin Index of Figures
+** Gitbook Plugin Index of Figures                                            :misc:
 [2020-06-28 Sun 18:43]
 https://github.com/geblanco/gitbook-plugin-index-of-figures
-** Cache Oblivious Algorithms
+** Cache Oblivious Algorithms                                                 :algorithms:
 [2020-06-28 Sun 09:11]
 https://jiahai-feng.github.io/posts/cache-oblivious-algorithms/
-** Apache Spark Tutorial: ML with PySpark
+** Apache Spark Tutorial: ML with PySpark                                     :statistics:python:
 [2020-06-28 Sun 09:10]
 https://www.datacamp.com/community/tutorials/apache-spark-tutorial-machine-learning
-** Twitch Chat Downloader
+** Twitch Chat Downloader                                                     :misc:
 [2020-06-28 Sun 09:10]
 https://github.com/strager/Twitch-Chat-Downloader
 ** An eclectic collection of convenience functions for you                    :julia:
 [2020-06-28 Sun 09:09]
 https://github.com/xiaodaigh/DataConvenience.jl
-** Fractal tree in p5.js
+** Fractal tree in p5.js                                                      :processing:
 [2020-06-28 Sun 09:08]
 https://editor.p5js.org/jcponce/full/Hhm0-7Exq
-** A nice urn problem
+** A nice urn problem                                                         :statistics:
 [2020-06-28 Sun 09:08]
 https://www.cs.cmu.edu/~jlaurent/notes/pick-at-least-one.html
-** Training material for all kinds of transcriptomics analysis
+** Training material for all kinds of transcriptomics analysis                :bioinformatics:
 [2020-06-28 Sun 09:06]
 https://training.galaxyproject.org/training-material/topics/transcriptomics/
-** Publish GitBook to Your GitHub Pages
+** Publish GitBook to Your GitHub Pages                                       :misc:
 [2020-06-28 Sun 09:06]
 http://sangsoonam.github.io/2016/08/02/publish-gitbook-to-your-github-pages.html
-** Algorithms for sampling without replacement
+** Algorithms for sampling without replacement                                :algorithms:
 [2020-06-28 Sun 09:06]
 https://timvieira.github.io/blog/post/2019/09/16/algorithms-for-sampling-without-replacement/
-** Homoiconicity, Lisp, and Program Synthesis
+** Homoiconicity, Lisp, and Program Synthesis                                 :lisp:
 [2020-06-28 Sun 09:05]
 https://blog.sigplan.org/2020/03/25/homoiconicity-lisp-and-program-synthesis/
-** Typed functional programming in TypeScript
+** Typed functional programming in TypeScript                                 :typescript:
 [2020-06-28 Sun 08:36]
 https://github.com/gcanti/fp-ts
 ** Biolisp: Lisp meets biology                                                :lisp:
 [2020-06-28 Sun 08:31]
 https://github.com/biolisp
-** Source Code Linking: Merging C Headers into Rust Modules
+** Source Code Linking: Merging C Headers into Rust Modules                   :rust:clang:
 [2020-06-28 Sun 08:30]
 https://immunant.com/blog/2019/12/header_merging/
-** Terminals Are Sexy
+** Terminals Are Sexy                                                         :cli:
 [2020-06-28 Sun 08:30]
 https://terminalsare.sexy/
-** Datalib is a JavaScript data utility library
+** Datalib is a JavaScript data utility library                               :javascript:
 [2020-06-28 Sun 08:11]
 http://vega.github.io/datalib/
-** How do i use matomo analytics without consent or cookie banner?
+** How do i use matomo analytics without consent or cookie banner?            :web:
 [2020-06-28 Sun 08:03]
 https://matomo.org/faq/new-to-piwik/how-do-i-use-matomo-analytics-without-consent-or-cookie-banner/
-** Denis Roegel
+** Denis Roegel                                                               :misc:
 [2020-06-27 Sat 20:49]
 https://members.loria.fr/Roegel/publications.html
-** Statistics for laboratory scientists II
+** Statistics for laboratory scientists II                                    :statistics:
 [2020-06-27 Sat 20:20]
 https://www.biostat.wisc.edu/~kbroman/teaching/labstat/fourth/
 ** Deepmind's AlphaZero algorithm                                             :julia:
 [2020-06-27 Sat 18:53]
 https://github.com/jonathan-laurent/AlphaZero.jl
-** Pandoc and GH actions
+** Pandoc and GH actions                                                      :pandoc:git:
 [2020-06-27 Sat 18:53]
 https://github.com/tdhopper/pandoc_resume/blob/master/.github/workflows/main.yml
 ** R from NodeJS, the right way                                               :rstats:node:
@@ -190,16 +208,16 @@ http://www.raebear.net/computers/emacs-colors/
 ** Beautifying Org Mode in Emacs                                              :org:
 [2020-06-27 Sat 18:44]
 https://zzamboni.org/post/beautifying-org-mode-in-emacs/
-** Yet Another Dotfile Repo
+** Yet Another Dotfile Repo                                                   :misc:
 [2020-06-27 Sat 18:44]
 https://github.com/skwp/dotfiles
-** Org-mode Tutorial / Cheat Sheet
+** Org-mode Tutorial / Cheat Sheet                                            :org:
 [2020-06-27 Sat 18:43]
 https://emacsclub.github.io/html/org_tutorial.html
-** Minimal theme for Hugo
+** Minimal theme for Hugo                                                     :hugo:
 [2020-06-27 Sat 10:37]
 https://themes.gohugo.io/theme/minimal/
-** How are Unix pipes implemented?
+** How are Unix pipes implemented?                                            :unix:
 [2020-06-26 Fri 20:37]
 https://medium.com/@mrpowers
 ** Calva: Clojure & ClojureScript with Visual Studio Code                     :clojure:vscode:
