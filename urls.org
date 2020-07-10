@@ -1,6 +1,21 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Curvature and Radius of Curvature                                          :maths:
+[2020-07-10 Fri 11:12]
+https://www.math24.net/curvature-radius/
+** Common Lisp Tutorial by Neil Munro                                         :lisp:
+[2020-07-10 Fri 11:12]
+https://www.youtube.com/watch?v=G726Wkqd2aQ&app=desktop
+** Comparative Genomics with R                                                :rstats:bioinformatics:
+[2020-07-10 Fri 10:55]
+https://github.com/drostlab/orthologr
+** web forms handling library for Common Lisp                                 :lisp:
+[2020-07-10 Fri 10:55]
+https://github.com/mmontone/cl-forms
+** Computational workflows for metagenomics tasks                             :bioinformatics:
+[2020-07-10 Fri 10:54]
+https://github.com/bhattlab/bhattlab_workflows
 ** Emacs Color Themes by Jason Blevins                                        :emacs:
 [2020-07-09 Thu 17:58]
 https://jblevins.org/projects/emacs-color-themes/
@@ -43,13 +58,13 @@ https://github.com/compiler-explorer/compiler-explorer
 ** In built LSP is amazing                                                    :emacs:
 [2020-07-04 Sat 10:33]
 https://www.reddit.com/r/neovim/comments/gxcbui/in_built_lsp_is_amazing/
-** Vim setup for LSP                                                         :vim:
+** Vim setup for LSP                                                          :vim:
 [2020-07-04 Sat 10:18]
 https://www.reddit.com/r/neovim/comments/grrxli/start_to_finish_example_of_setting_up_built_in/fs14ak8/
 ** Markdown Writing Tricks                                                    :misc:
 [2020-07-03 Fri 19:34]
 https://jdhao.github.io/2020/06/01/markdown_writing_tricks/
-** A powerful, minimalist development environment with cutting-edge features
+** A powerful, minimalist development environment                             :cli:vim:
 [2020-07-03 Fri 14:50]
 https://github.com/ctaylo21/jarvis
 ** A guide to modern Web Development with (Neo)vim                            :vim:
@@ -94,7 +109,7 @@ https://linoxide.com/ubuntu-how-to/setup-syncthing-synchronize-directories-ubunt
 ** The Vi Lovers Home Page                                                    :vim:
 [2020-07-02 Thu 21:01]
 https://thomer.com/vi/vi.html
-** Bookmarking with org-mode :org:
+** Bookmarking with org-mode                                                  :org:
 [2020-07-02 Thu 20:47]
 https://dewaka.com/blog/2020/04/08/bookmarking-with-org-mode/
 ** Introduction to MicroK8s                                                   :misc:
