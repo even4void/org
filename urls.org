@@ -1,6 +1,51 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Creating Randomness Without Math.random                                    :javascript:
+[2020-07-13 Mon 18:29]
+https://healeycodes.com/creating-randomness/
+** Rust is Surprisingly Good as a Server Language                             :rust:
+[2020-07-13 Mon 18:28]
+https://stu2b50.dev/posts/rust-is-surpris76171
+** Alexis King - “Effects for Less”                                           :haskell:
+[2020-07-12 Sun 20:38]
+https://www.youtube.com/watch?v=0jI-AlWEwYI
+** Polysemy: Mea Culpa                                                        :haskell:
+[2020-07-12 Sun 20:38]
+https://reasonablypolymorphic.com/
+** Haskell by Example                                                         :haskell:
+[2020-07-12 Sun 20:20]
+https://lotz84.github.io/haskellbyexample/
+** Tricking Haskell into being dynamic                                        :haskell:
+[2020-07-12 Sun 20:20]
+https://begriffs.com/posts/2013-08-16-tricking-haskell-into-being-dynamic.html
+** A Quick Tour of Haskell Syntax                                             :haskell:
+[2020-07-12 Sun 20:20]
+https://prajitr.github.io/quick-haskell-syntax/
+** Rust implementation of Tim Bray's topfew tool                              :rust:
+[2020-07-12 Sun 20:19]
+https://github.com/djc/topfew-rs
+** TypeScript vs. PureScript                                                  :typescript:
+[2020-07-10 Fri 17:28]
+https://blog.logrocket.com/typescript-vs-purescript-not-all-compilers-are-created-equal-c16dadaa7d3e/
+** Purescript: Haskell + Javascript                                           :haskell:
+[2020-07-10 Fri 17:28]
+https://mmhaskell.com/purescript
+** Scripting in Haskell and PureScript                                        :haskell:
+[2020-07-10 Fri 17:26]
+https://dev.to/riccardoodone/scripting-in-haskell-and-purescript-5cic
+** More monads in OCaml                                                       :ocaml:
+[2020-07-10 Fri 17:23]
+http://blog.haberkucharsky.com/technology/2015/07/21/more-monads-in-ocaml.html
+** Introductions to Haskell                                                   :haskell:
+[2020-07-10 Fri 17:21]
+https://wiki.haskell.org/Tutorials
+** Strings and Tries; Haskell Versus OCaml                                    :haskell:ocaml:
+[2020-07-10 Fri 17:20]
+https://thealmarty.com/2018/11/20/strings-and-tries-haskell-versus-ocaml/
+** Which of Haskell and OCaml is more practical?                              :haskell:ocaml:
+[2020-07-10 Fri 17:19]
+https://www.quora.com/Which-of-Haskell-and-OCaml-is-more-practical-For-example-in-which-aspect-will-each-play-a-key-role/answer/Tikhon-Jelvis
 ** Curvature and Radius of Curvature                                          :maths:
 [2020-07-10 Fri 11:12]
 https://www.math24.net/curvature-radius/
