@@ -1,6 +1,18 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Karabiner God Mode
+[2020-07-14 Tue 09:20]
+https://medium.com/@nikitavoloboev/karabiner-god-mode-7407a5ddc8f6
+** From Vim to Emacs+Evil chaotic migration guide
+[2020-07-14 Tue 08:22]
+https://juanjoalvarez.net/es/detail/2014/sep/19/vim-emacsevil-chaotic-migration-guide/
+** Evil guide                                                                 :emacs:
+[2020-07-14 Tue 07:57]
+https://github.com/noctuid/evil-guide
+** Testing Firefox more efficiently with machine learning
+[2020-07-13 Mon 20:36]
+https://hacks.mozilla.org/2020/07/testing-firefox-more-efficiently-with-machine-learning/
 ** Creating Randomness Without Math.random                                    :javascript:
 [2020-07-13 Mon 18:29]
 https://healeycodes.com/creating-randomness/
