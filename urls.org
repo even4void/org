@@ -1,6 +1,21 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** PureScript by Example
+[2020-07-15 Wed 18:38]
+https://book.purescript.org/
+** Purescript vs. Haskell
+[2020-07-15 Wed 18:33]
+https://github.com/purescript/documentation/blob/master/language/Differences-from-Haskell.md
+** On python@3.8 via Homebrew
+[2020-07-15 Wed 12:18]
+https://stackoverflow.com/questions/62881878/reinstall-python-packages-after-homebrew-python3-8-update
+** Interesting dotfiles by Claudio Jolowicz
+[2020-07-15 Wed 10:56]
+https://github.com/cjolowicz/dotfiles
+** pipx: Install and Run Python Applications in Isolated Environments
+[2020-07-15 Wed 10:50]
+https://pypi.org/project/pipx/
 ** Karabiner God Mode
 [2020-07-14 Tue 09:20]
 https://medium.com/@nikitavoloboev/karabiner-god-mode-7407a5ddc8f6
