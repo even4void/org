@@ -1,31 +1,58 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
-** PureScript by Example
+** Howard Abrams' dotfiles                                                    :emacs:
+[2020-07-20 Mon 12:47]
+https://github.com/howardabrams/dot-files
+** Andersson Trees                                                            :algorithms:
+[2020-07-20 Mon 12:43]
+https://eternallyconfuzzled.com/andersson-trees-c-a-balanced-binary-search-tree-using-split-and-skew
+** Self-balancing Trees                                                       :algorithms:
+[2020-07-20 Mon 12:41]
+https://sigpipe.macromates.com/2009/self-balancing-trees/
+** Statistics for Applications                                                :statistics:
+[2020-07-20 Mon 12:41]
+https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/lecture-slides/
+** IHP is a modern batteries-included Web Framework                           :haskell:
+[2020-07-20 Mon 12:37]
+https://ihp.digitallyinduced.com/
+** Code & Things: Stata, SAS code and random lectures.
+[2020-07-17 Ven 21:24]
+https://coloradosph.cuanschutz.edu/education/departments/health-systems-management-policy/research/perraillon/code-things
+** A Note on Interpreting Multinomial Logit Coefficients
+[2020-07-17 Ven 21:23]
+https://data.princeton.edu/wws509/stata/mlogit
+** Continuations by example                                                   :scheme:
+[2020-07-17 Fri 08:43]
+http://matt.might.net/articles/programming-with-continuations--exceptions-backtracking-search-threads-generators-coroutines/
+** Path To Beginnery in Functional Programming with Haskell                   :haskell:
+[2020-07-16 Thu 20:28]
+https://barrymoo.dev/blog/path-to-beginnery-in-functional-programming-with-haskell-1
+** PureScript by Example                                                      :purescript:
 [2020-07-15 Wed 18:38]
 https://book.purescript.org/
-** Purescript vs. Haskell
+** Purescript vs. Haskell                                                     :purescript:haskell:
 [2020-07-15 Wed 18:33]
 https://github.com/purescript/documentation/blob/master/language/Differences-from-Haskell.md
-** On python@3.8 via Homebrew
+** On python@3.8 via Homebrew                                                 :python:
 [2020-07-15 Wed 12:18]
 https://stackoverflow.com/questions/62881878/reinstall-python-packages-after-homebrew-python3-8-update
-** Interesting dotfiles by Claudio Jolowicz
+** Interesting dotfiles by Claudio Jolowicz                                   :misc:
 [2020-07-15 Wed 10:56]
 https://github.com/cjolowicz/dotfiles
-** pipx: Install and Run Python Applications in Isolated Environments
+** pipx: Install and Run Python Applications in Isolated Environments         :python:
 [2020-07-15 Wed 10:50]
 https://pypi.org/project/pipx/
-** Karabiner God Mode
+** Karabiner God Mode                                                         :apple:
 [2020-07-14 Tue 09:20]
 https://medium.com/@nikitavoloboev/karabiner-god-mode-7407a5ddc8f6
-** From Vim to Emacs+Evil chaotic migration guide
+** From Vim to Emacs+Evil chaotic migration guide                             :vim:emacs:
 [2020-07-14 Tue 08:22]
 https://juanjoalvarez.net/es/detail/2014/sep/19/vim-emacsevil-chaotic-migration-guide/
 ** Evil guide                                                                 :emacs:
 [2020-07-14 Tue 07:57]
 https://github.com/noctuid/evil-guide
-** Testing Firefox more efficiently with machine learning
+** Testing Firefox more efficiently with machine learning                     :misc:
 [2020-07-13 Mon 20:36]
 https://hacks.mozilla.org/2020/07/testing-firefox-more-efficiently-with-machine-learning/
 ** Creating Randomness Without Math.random                                    :javascript:
