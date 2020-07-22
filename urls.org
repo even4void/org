@@ -1,6 +1,21 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Scour is an SVG optimizer/cleaner                                          :python:
+[2020-07-22 Wed 19:36]
+https://github.com/scour-project/scour
+** Simon Jackman’s Bayesian Model Examples in Stan                            :rstats:bayesian:
+[2020-07-22 Wed 19:25]
+https://jrnold.github.io/bugs-examples-in-stan/index.html
+** finalfit: Quickly Create Elegant Regression Results Tables and Plots when Modelling :rstats:
+[2020-07-22 Wed 18:59]
+https://cran.r-project.org/web/packages/finalfit/
+** Developing R Packages with usethis and GitLab CI
+[2020-07-22 Wed 08:15]
+https://blog.methodsconsultants.com/posts/developing-r-packages-with-usethis-and-gitlab-ci-part-iii/
+** A practical guide to Spacemacs                                             :emacs:
+[2020-07-21 Tue 21:13]
+https://practicalli.github.io/spacemacs/
 ** Howard Abrams' dotfiles                                                    :emacs:
 [2020-07-20 Mon 12:47]
 https://github.com/howardabrams/dot-files

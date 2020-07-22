@@ -1,0 +1,11 @@
+* Slurping and barfing
+
+#+FILETAGS: :lisp:
+
+Slurp and barf refers to part of structural editing whereby we pull something into an s-expression, or conversely push out something from the s-expression. These operations can be carried out in a rightward or leftward manner. They are of course available in Emacs under the [[http://danmidwood.com/content/2014/11/21/animated-paredit.html][paredit]] package. [[https://github.com/guns/vim-sexp][Vim-sexp]] provides similar functionalities for Vi(m).
+
+#+BEGIN_EXAMPLE
+(a b (c d) e)
+(a (b c d) e) ;; slurp left
+(a (b c) d e) ;; barf right
+#+END_EXAMPLE
