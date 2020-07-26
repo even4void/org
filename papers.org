@@ -1,28 +1,6 @@
 # -*- ispell-dictionary: "en" -*-
-
-* [[/Users/chl/Documents/Papers/ackermann-2009-general-mod.pdf][ackermann-2009-general-mod]] - A general modular framework for gene set enrichment analysis
- :PROPERTIES:
- :Custom_ID: ackermann-2009-general-mod
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ackermann-2009-general-mod.pdf
- :END:
-Based on [[https://www.bioconductor.org/packages/release/bioc/html/topGO.html][topGO]] package, three types of enrichment tests depending on the data:
-
-- Tests based on /gene counts/: most popular family of tests, only requires the presence of a list of interesting genes; e.g., Fisher's exact test or binomial tests. See [[/Users/chl/Documents/Papers/draghici-2006-babel.pdf][draghici-2006-babel]].
-- Tests based on /gene scores/ or gene ranks; e.g., Kolgomorov-Smirnov like tests ([[https://en.wikipedia.org/wiki/Gene_set_enrichment_analysis][GSEA]]) or Gentleman's Category, t-test, etc. This paper.
-* [[/Users/chl/Documents/Papers/aguileta-2014-high-variab.pdf][aguileta-2014-high-variab]] - High variability of mitochondrial gene order among fungi
- :PROPERTIES:
- :Custom_ID: aguileta-2014-high-variab
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/aguileta-2014-high-variab.pdf
- :END:
-Analysis of 38 complete fungal MT genomes, including Podospora Anserina. The authors conclude that unlike the case of Metazoa there exists MT recombination in all fungal phyla, arising as a result of nonhomologous and intrachromosomal recombination, sequence repeats at intergenic region and probably mobile elements dynamic.
-
-*Phylogenetic analysis:* Protein sequences of the orthologs shared by all sampled species were aligned using a combi- nation of six different alignment strategies, and these alignments were automatically trimmed with trimAl, and then concatenated. Phylogenetic reconstruction was performed using PhyML and RAxML. Evolutionary rates were estimated with the r8s software.
-* [[/Users/chl/Documents/Papers/alkan-2011-genom.pdf][alkan-2011-genom]] - Genome structural variation discovery and genotyping
- :PROPERTIES:
- :Custom_ID: alkan-2011-genom
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/alkan-2011-genom.pdf
- :END:
-Review of existing technologies and introduction to NGS analysis. Useful glossary.
+# Broken links are only apparent since most of the PDFs can be retrieved from the USB-64 backup.
+# chl, 2020-07-26
 * [[/Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf][allen-2016-haskel-progr]] - Haskell Programming from First Principles
  :PROPERTIES:
  :Custom_ID: allen-2016-haskel-progr
@@ -31,16 +9,6 @@ Review of existing technologies and introduction to NGS analysis. Useful glossar
 One of the best book I read about Haskell, and on functional programming more generally.
 
 A short remark about typography: this book is typesetted using LaTeX; however, the verbatim and math elements appear a bit too small in my view.
-
-* [[/Users/chl/Documents/Papers/altenhoff-2019-oma.pdf][altenhoff-2019-oma]] - OMA standalone: orthology inference among public and custom genomes and transcriptomes
- :PROPERTIES:
- :Custom_ID: altenhoff-2019-oma
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/altenhoff-2019-oma.pdf
- :END:
-- Orthology resources: [[http://eggnogdb.embl.de][eggNOG]], [[http://www.ensembl.org/info/docs/api/compara/index.html][Ensembl Compara]], [[http://inparanoid.sbc.su.se][InParanoid]], [[https://omictools.com/mbgd-tool][MBGD]], [[https://www.orthodb.org][OrthoDB]], [[https://orthomcl.org/orthomcl/][OrthoMCL]], [[http://www.pantherdb.org/genes/][PANTHER]], [[http://phylomedb.org][PhylomeDB]], and [[https://omabrowser.org/oma/home/][OMA]].
-- OMA [[https://omabrowser.org/standalone/][standalone app]], available /via/ Homebrew.
-
-Orthologous and paralogous genes are two types of homologous genes, that is, genes that arise from a common DNA ancestral sequence. Orthologous genes diverged after a speciation event, while paralogous genes diverge from one another within a species. Put another way, the terms orthologous and paralogous describe the relationships between genetic sequence divergence and gene products associated with speciation or genetic duplication. ([[https://sciencing.com/difference-between-orthologous-paralogous-genes-18612.html][The difference between orthologous & paralogous genes]])
 
 * [[/Users/chl/Documents/Papers/altman-2004-numer-issues.pdf][altman-2004-numer-issues]] - Numerical issues in statistical computing for the social scientist
  :PROPERTIES:
@@ -64,17 +32,6 @@ Take away message from computer arithmetic:
 Illustration: $i = 1000000000 + 2 - 0.1 - 1000000000$.
 
 *Side note:* The failure of SAS to recover true coefficients of a rare count event model in Table 1.2 should be checked with more recent version of SAS.
-* [[/Users/chl/Documents/Papers/anders-2013-count-rna.pdf][anders-2013-count-rna]] - Count-based differential expression analysis of rna sequencing data using r and bioconductor
- :PROPERTIES:
- :Custom_ID: anders-2013-count-rna
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/anders-2013-count-rna.pdf
- :END:
-De facto standard pipeline for RNA-Seq analysis using =TopHat= + =HTSeq= + =DESeq2=. See also [[file:~/Documents/Papers/kim-2019-graph-hisat.pdf][kim-2019-graph-hisat]] for the successor of =TopHat2=.
-
-See also [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][conesa-2016-survey-best]] for a review of current best pratices and alternative workflows.
-
-Note that =DESeq2= and =edgeR= use different defaults: Regarding /normalization/, edgeR uses the trimmed mean of M values while DESeq relies on a virtual reference sample; dispersion estimates are based on a trended mean in edgeR, whereas DESeq takes the maximum of the individual dispersion estimates and the dispersion-mean trend.
-
 * [[/Users/chl/Documents/Papers/au-2018-random-fores.pdf][au-2018-random-fores]] - Random forests, decision trees, and categorical predictors: the “absent levels” problem
  :PROPERTIES:
  :Custom_ID: au-2018-random-fores
@@ -107,13 +64,6 @@ See also [[https://worace.works/2016/05/24/hash-array-mapped-tries/][Hash Array 
 Interesting article on the bias-variance tradeoff in the context of recent ML workflows (NNs, deep learning, etc.). The authors discussed the "unified performance curve" and present compelling evidence that increasing model capacity beyond the point of interpolation results in improved performance in several use cases.
 
 Maybe see [[/Users/chl/Documents/Papers/murphy-2012-machin-learn.pdf][murphy-2012-machin-learn]].
-* [[/Users/chl/Documents/Papers/bernardes-2016-improv-protein.pdf][bernardes-2016-improv-protein]] - Improvement in protein domain identification is reached by breaking consensus, with the agreement of many profiles and domain co-occurrence
- :PROPERTIES:
- :Custom_ID: bernardes-2016-improv-protein
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bernardes-2016-improv-protein.pdf
- :END:
-http://www.lcqb.upmc.fr/CLADE/
-
 * [[/Users/chl/Documents/Papers/blandy-2015-why-rust.pdf][blandy-2015-why-rust]] - Why Rust?
  :PROPERTIES:
  :Custom_ID: blandy-2015-why-rust
@@ -183,32 +133,6 @@ There are many Coppersmith-based attacks, but this mostly resolves around the ca
 
 - *Small decryption exponent /e/:* so far the best known attack recovers /e/ if it is less than N^.292. This uses a bivariate version of Coppersmith that lacks a rigorous proof of correctness, but seems to work well in practice. Important open questions are whether /e/ < N^1/2−ε is attackable (the conjecture is that it should be), and whether there are rigorously provable variants of Coppersmith for bivariate or multivariate polynomials.
 - *Partial secret key exposure:* when certain bits of /e/ or the factors /p/, /q/ of /N/ are exposed, it is often possible to recover them completely.
-* [[/Users/chl/Documents/Papers/boswell-2003-mathem-approac.pdf][boswell-2003-mathem-approac]] - A mathematical approach to studying fungal mycelia
- :PROPERTIES:
- :Custom_ID: boswell-2003-mathem-approac
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/boswell-2003-mathem-approac.pdf
- :END:
-The model connects physiology at the hyphal level (e.g. tip growth and branching) to growth and function at the mycelial level.
-
-- change in active hyphae in a given area -> new hyphae (laid down by moving tips) + reactivation of inactive hyphae – inactivation of active hyphae
-- change in inactive hyphae in a given area -> inactivation of active hyphae – reactivation of inactive hyphae – degradation of inactive hyphae
-- change in hyphal tips in a given area -> tip movement out of / into area + branching from active hyphae – anastomosis of tips into hyphae
-- change in internal substrate in a given area -> translocation (active and passive mechanisms) + uptake into the fungus from external sources – maintenance costs of hyphae – growth costs of hyphal tips – active translocation costs
-- change in external substrate in a given area -> diffusion of external substrate out of / into area – uptake by fungus
-
-See Fig 1 for an example of the expected power law for radial growth.* [[/Users/chl/Documents/Papers/boswell-2012-model.pdf][boswell-2012-model]] - Modelling hyphal networks
- :PROPERTIES:
- :Custom_ID: boswell-2012-model
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/boswell-2012-model.pdf
- :END:
-Review of lattice-based and lattice-free network models.
-
-- lattice-based models: essentially like cellular automata, discrete in time and space. The main limitation is that its topology is constrained by the grid or lattice.
-- lattice-free models: mixture of deterministic and stochastic elements.; neighbour-sensing mathematical model.
-
-*Note:* Hopkins and Boswell (2012) used a circular random walk to model tip orientation and related this to the corresponding FokkerePlanck partial differential equation.
-
-Many papers by [[http://staff.southwales.ac.uk/users/545-gpboswel][Boswell]] on this topic.
 * [[/Users/chl/Documents/Papers/bradley-2018-what-categ-theor.pdf][bradley-2018-what-categ-theor]] - What is category theory
  :PROPERTIES:
  :Custom_ID: bradley-2018-what-categ-theor
@@ -224,16 +148,6 @@ Two central themes:
 - functorial semantics: C → D ≈ interpretation of C within D; syntax (grammar in NLP) refers to rules for putting things together and semantics (meaning) refers to the meaning of those things.
 - compositionality
 
-* [[/Users/chl/Documents/Papers/bray-2016-near.pdf][bray-2016-near]] - Near-optimal probabilistic rna-seq quantification
- :PROPERTIES:
- :Custom_ID: bray-2016-near
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/bray-2016-near.pdf
- :END:
-Easy to setup (=brew install kallisto=) and time+memory-efficient on fungi data.
-
-Works on Galaxy server too. Beware that it returns different counts (TPM) than BEDtools [[https://bedtools.readthedocs.io/en/latest/content/tools/multicov.html][multicov]].
-See why: [[https://www.rna-seqblog.com/rpkm-fpkm-and-tpm-clearly-explained/][RPKM, FPKM and TPM, clearly explained]] and [[http://www.cureffi.org/2013/09/12/counts-vs-fpkms-in-rna-seq/][Counts vs. FPKMs in RNA-seq]]. See also this [[http://seqanswers.com/forums/showthread.php?t=24903][thread on SEQanswers]].
-
 * [[/Users/chl/Documents/Papers/bueno-2013-matur-optim.pdf][bueno-2013-matur-optim]] - Mature Optimization Handbook
  :PROPERTIES:
  :Custom_ID: bueno-2013-matur-optim
@@ -248,38 +162,6 @@ See why: [[https://www.rna-seqblog.com/rpkm-fpkm-and-tpm-clearly-explained/][RPK
  :END:
 - [[https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?][Sequence Read Archive]]
 - forensic bioinformatics ([[https://projecteuclid.org/euclid.aoas/1267453942][Baggerly and Coombes 2009]])
-
-* [[/Users/chl/Documents/Papers/capella-gutierrez-2014.pdf][capella-gutierrez-2014]] - A phylogenomics approach for selecting robust sets of phylogenetic markers
- :PROPERTIES:
- :Custom_ID: capella-gutierrez-2014
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/capella-gutierrez-2014.pdf
- :END:
-Set of 4 genes in the case of ascomycetous fungal species (/Basidiomycota/):
-
-| YHR186C | 1557 | Target of rapamycin complex 1 subunit KOG1     |
-| YMR012W | 1277 | Clustered mitochondria protein 1               |
-| YJL029C |  822 | Vacuolar protein sorting-associated protein 53 |
-| YAR007C |  621 | Replication factor A protein 1                 |
-
-Phylogenetic tree analysis using PhyML, with Robinson and Foulds distance to compare trees. Interesting approach to use train/test dataset and resampling strategy.
-* [[/Users/chl/Documents/Papers/casillas-2017-molec-popul-genet.pdf][casillas-2017-molec-popul-genet]] - Molecular Population Genetics
- :PROPERTIES:
- :Custom_ID: casillas-2017-molec-popul-genet
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/casillas-2017-molec-popul-genet.pdf
- :END:
-Driving forces for /evolution/:
-- natural selection: (ignoring effects of genetic drift) classical (homozygous loci for the wild-type allele) vs. balance (polymorphic loci) hypothesis, which requires to be able to estimate genetic diversity in populations. This has successively be done using allozyme polymorphisms (inconclusive results due to limitations of protein electrophoresis), nucleotide sequence data (using restriction enzymes, before PCR and automated Sanger sequencing), and genome variation.
-- genetic drift,
-- mutation,
-- recombination,
-- gene flux.
-
-* [[/Users/chl/Documents/Papers/castresana-2000-selec-conser.pdf][castresana-2000-selec-conser]] - Selection of conserved blocks from multiple alignments for their use in phylogenetic analysis
- :PROPERTIES:
- :Custom_ID: castresana-2000-selec-conser
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/castresana-2000-selec-conser.pdf
- :END:
-Instead of removing divergent regions in an arbitrary way, or use alternative approach that consist in assigning gap weights highly variable regions, the author proposes an algorithm (=GBlocks=) that accounts for: the degree of conservation of every position, stretches of contiguous nonconserved positions, minimum length support, removing all positions with gaps and nonconserved positions adjacent to them., as well as small block remaining after gap cleaning are also removed. The paper is quite old by now, and probably outdated.
 
 * [[/Users/chl/Documents/Papers/chen-2003-statis-comput-datab.pdf][chen-2003-statis-comput-datab]] - Statistical computing and databases: distributed computing near the data
  :PROPERTIES:
@@ -303,21 +185,6 @@ Old stuff but interesting ideas (part of them are now materialized in the dplyr/
 8. Evaluate your algorithm performance with the Matthews correlation coefficient (MCC) or the Precision-Recall curve
 9. Program your software with open source code and platforms
 10. Ask for feedback and help to computer science experts, or to collaborative Q&A online communities
-* [[/Users/chl/Documents/Papers/chin-2019-human-genom.pdf][chin-2019-human-genom]] - Human genome assembly in 100 minutes
- :PROPERTIES:
- :Custom_ID: chin-2019-human-genom
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/chin-2019-human-genom.pdf
- :END:
-Long-read assembly, using an overlap-layout-consensus (OLC) paradigm, requires all-to-all read comparisons, which quadratically scales in computational complexity with the number of reads. [[https://github.com/cschin/peregrine][Peregrine]] can assemble 30x human PacBio CCS read datasets in less than 30 CPU hours and around 100 wall-clock minutes to a high contiguity assembly (N50 > 20Mb).
-* [[/Users/chl/Documents/Papers/choi-2017-tree-life.pdf][choi-2017-tree-life]] - A genome tree of life for the fungi kingdom
- :PROPERTIES:
- :Custom_ID: choi-2017-tree-life
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/choi-2017-tree-life.pdf
- :END:
-Gene tree (small number of highly conserved and orthologous genes) vs. genome tree (whole-genome DNA sequence, transcriptome RNA sequence, proteome amino acid sequence, exome DNA sequences, or other genomic features)
-
-The authors rely on the whole-proteome sequences on the Feature Frequency Profile ([[https://github.com/jaejinchoi/FFP][FFP]]), which does not require multiple sequence alignment.
-
 * [[/Users/chl/Documents/Papers/clifford-2010-statis-analy.pdf][clifford-2010-statis-analy]] - A statistical analysis of probabilistic counting algorithms
  :PROPERTIES:
  :Custom_ID: clifford-2010-statis-analy
@@ -354,26 +221,6 @@ We want two things from a computer algorithm: given an input to a problem, it sh
 Nice book to understand the underside of Python, especially regarding package import and path management. Note that this will not teach you Python programming, but it will certainly be helpful to better understand Python, think about design patterns, and how to develop your own projects. Each chapter provides a discussion of important topics in project development, and a brief interview by core developers is provided at the end. Note that some chapters are very specific of some aspects of Python programming, or PL more generally. For instance, chapter 4 deals with timestamp and the importance of timezone.
 
 I learned a few things about packaging, and in particular the number of modules that were developed before =pip=, namely (in chronological order): =distutils=, =setuptools=, =distribute=, =distutils2=, =packaging=, and =distlib=. The latter may eventually replace =setuptools=.
-
-* [[/Users/chl/Documents/Papers/davidson-2011-mathem-model.pdf][davidson-2011-mathem-model]] - Mathematical Modelling Of Fungal Growth And Function
- :PROPERTIES:
- :Custom_ID: davidson-2011-mathem-model
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/davidson-2011-mathem-model.pdf
- :END:
-
-Summary of keynotes given at the SIG meeting on /Mathematical modelling of fungal growth and function/.
-
-Graeme Boswell: discrete-continuous hybrid approach to modelling a fungal mycelium developing in a planar environment. Relies on [[https://en.wikipedia.org/wiki/Michaelis–Menten_kinetics][Michael-Menten dynamics]]. See also [[/Users/chl/Documents/Papers/boswell-2003-mathem-approac.pdf][boswell-2003-mathem-approac]] and [[/Users/chl/Documents/Papers/boswell-2007-devel-fungal.pdf][boswell-2007-devel-fungal]].
-* [[/Users/chl/Documents/Papers/dobin-2013-star.pdf][dobin-2013-star]] - Star: ultrafast universal rna-seq aligner
- :PROPERTIES:
- :Custom_ID: dobin-2013-star
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/dobin-2013-star.pdf
- :END:
-STAR = Spliced Transcripts Alignment to a Reference
-
-Designed to align the non-contiguous sequences directly to the reference genome, instead of short reads to a database of splice junctions or align split-read portions contiguously to a reference genome, or a combination thereof.
-
-/Algorithm/: (1) MMP seed search and (2) clustering and stitching of all the seeds that were aligned to the genome (allowing for only one insertion or deletion) using local scoring scheme.
 
 * [[/Users/chl/Documents/Papers/dorie-2018-autom.pdf][dorie-2018-autom]] - Automated versus do-it-yourself methods for causal inference: Lessons learned from a data analysis competition
  :PROPERTIES:
@@ -436,24 +283,6 @@ See also [[~/Documents/papers/hesterberg-2014-what-teach.pdf][hesterberg-2014-wh
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/efron-1996-boots-confid.pdf
  :END:
 One of the many applied papers on the bootstrap by Efron, based on the original work of Felsenstein (see also [[file:~/Documents/Papers/felsenstein-2004-infer-phylog.pdf][felsenstein-2004-infer-phylog]]). The aim of bootstrap resampling in phylogenetic reconstruction is to assess the confidence for each clad, based on the proportion of bootstrap trees showing that same clade. In this context, the notion of agreement refers to the topology of the trees and not to the length of its arms. The rationale underlying the bootstrap confidence values depends on a simple multinomial probability model, although a bivariate normal model could also be used (parametric bootstrap).
-
-* [[/Users/chl/Documents/Papers/emms-2015-orthof.pdf][emms-2015-orthof]] - Orthofinder: solving fundamental biases in whole genome comparisons dramatically improves orthogroup inference accuracy
- :PROPERTIES:
- :Custom_ID: emms-2015-orthof
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/emms-2015-orthof.pdf
- :END:
-Two strategies: (1) inferring pairwise relationships between genes in two species, and then extending orthology to multiple species by identifying sets of genes spanning these species in which each gene- pair is an orthologue, (2) identify complete orthogroups; an orthogroup is the set of genes that are descended from a single gene in the last common ancestor of all the species being considered.
-
-Fundamental biases in whole genome comparisons = Gene length bias in BLAST E-values affects the accuracy of orthogroup detection (fixed using normalization, p.9); over- or under-clustering of sequences (aka, phylogenetic distance from sequence similarity scores).
-
-* [[/Users/chl/Documents/Papers/emms-2018-orthof.pdf][emms-2018-orthof]] - Orthofinder2: fast and accurate phylogenomic orthology analysis from gene sequences
- :PROPERTIES:
- :Custom_ID: emms-2018-orthof
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/emms-2018-orthof.pdf
- :END:
-OrthoFinder infers orthogroups, genes trees, gene duplication events, the rooted species tree and extensive comparative genomic statistics. It has been shown to perform better compared to methods that use approximate phylogenetic relationships between genes using "reciprocal best hits" from BLAST (e.g., InParanoid, OrthoMCL and OMA).
-
-Orthofinder provides accurate and scalable ortholog inference using gene trees in 3 stages: (1) orthogroup inference, (2) inference of rooted species and gene trees, and (3) inference of orthologs and gene duplication events from these rooted gene trees. Under the hood, it uses a duplication-loss-coalescent (DLC) resolution algorithm to identify gene duplication events and map them to the species tree.
 
 * [[/Users/chl/Documents/Papers/erickson-2018-algor.pdf][erickson-2018-algor]] - Algorithms
  :PROPERTIES:
@@ -529,28 +358,6 @@ See also [[https://github.com/evanmiller/SlowerLogLog][SlowerLogLog]] by Evan Mi
  :END:
 Keep this in mind for my son in case he happens to use Python at school.
 
-* [[/Users/chl/Documents/Papers/ferry-2019-dna.pdf][ferry-2019-dna]] - The structure of dna
- :PROPERTIES:
- :Custom_ID: ferry-2019-dna
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ferry-2019-dna.pdf
- :END:
-Of historical importance only.
-
-* [[/Users/chl/Documents/Papers/fischer-2019-space-tree.pdf][fischer-2019-space-tree]] - The space of tree-based phylogenetic networks
- :PROPERTIES:
- :Custom_ID: fischer-2019-space-tree
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/fischer-2019-space-tree.pdf
- :END:
-Phylogenetic networks are trees with additional edges passing between the tree edges, that allow to account for horizontal gene transfer and hybridization.
-
-Geometric approach to phylogenetic networks: consider the set of networks as a space in which one may move between the objects by operations that [[https://en.wikipedia.org/wiki/Tree_rearrangement][change a feature]] of the graph, e.g. nearest neighbor interchange (NNI), subtree prune and regraft (SPR) and tree bisection and reconnection (TBR).
-* [[/Users/chl/Documents/Papers/fourment-2018-dubious-ways.pdf][fourment-2018-dubious-ways]] - 19 dubious ways to compute the marginal likelihood of a phylogenetic tree topology
- :PROPERTIES:
- :Custom_ID: fourment-2018-dubious-ways
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/fourment-2018-dubious-ways.pdf
- :END:
-The authors use the JC69 model to benchmark 19 methods for computing the marginla likelihood of a topology with respect to branch lengths. While the slowest, Generalized Stepping Stone (GSS) is the one that performs best. Gamma Laplus Importance Sampling (GLIS) is the best fast method, with performance wlose to GSS.
-
 * [[/Users/chl/Documents/Papers/friedman-1995-littl-schem.pdf][friedman-1995-littl-schem]] - The Little Schemer
  :PROPERTIES:
  :Custom_ID: friedman-1995-littl-schem
@@ -570,13 +377,6 @@ The authors use the JC69 model to benchmark 19 methods for computing the marginl
 8. Use help functions to abstract from representations.
 9. Abstract common patterns with a new function.
 10. Build functions to collect more than one value at a time.
-
-* [[/Users/chl/Documents/Papers/gavryushkina-2013-recur-algor.pdf][gavryushkina-2013-recur-algor]] - Recursive algorithms for phylogenetic tree counting
- :PROPERTIES:
- :Custom_ID: gavryushkina-2013-recur-algor
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gavryushkina-2013-recur-algor.pdf
- :END:
-In a Bayesian context,[fn::A general problem in evolutionary biology is how to reconstruct the phylogenetic tree from sequence data obtained from sampled individuals. Tackling this problem in a Bayesian framework may require counting the number of all possible histories on a sample of individuals.] this article describes a quadratic algorithm for counting the number of possible fully ranked trees on n sampled individuals (/aka/ fully ranked tree with sampled ancestors).
 
 * [[/Users/chl/Documents/Papers/ghuloum-2006-increm-approac.pdf][ghuloum-2006-increm-approac]] - An incremental approach to compiler construction
  :PROPERTIES:
@@ -667,39 +467,6 @@ Mathematical models come in a variety of flavors, depending on whether the state
  :END:
 **** TODO Post a review on [[http://aliquote.org]].
 
-* [[/Users/chl/Documents/Papers/hayamizu-2019-rankin.pdf][hayamizu-2019-rankin]] - Ranking top-k trees in tree-based phylogenetic networks
- :PROPERTIES:
- :Custom_ID: hayamizu-2019-rankin
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hayamizu-2019-rankin.pdf
- :END:
-Support tree and linear-time algorithms for counting, enumeration and optimization (Hayamizu's structure theorem, [[https://arxiv.org/abs/1811.05849][arXiv:1811.05849]]).
-
-Top-k ranking problem: list top-k support trees of N = (V,A) in non-increasing order by their likelihood values. This is a generalization of the top-1 ranking problem, which asks for a ML support tree of N
-
-See also: [[https://academic.oup.com/sysbio/article/61/2/228/1646300][Characterizing the Phylogenetic Tree-Search Problem]].
-
-* [[/Users/chl/Documents/Papers/heaton-2012-analy-fungal-networ.pdf][heaton-2012-analy-fungal-networ]] - Analysis of fungal networks
- :PROPERTIES:
- :Custom_ID: heaton-2012-analy-fungal-networ
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/heaton-2012-analy-fungal-networ.pdf
- :END:
-p.14 visualisation of network structure and network extraction
-
-The network topology is defined by classifying junctions (branch points (degree 3), anastomoses and tips (degree 1)) as nodes and the chords between nodes as links. While the number of nodes and links increase over time, there's a selective loss of connections and thinning out of the fine mycellium. This shift can be quantified using the alpha coefficient, which gives the number of closed loops or cycles present as a fraction of the maximum possible for a planar network with the same number of nodes (Euler's polyhedral formula, V - E + F = 2).
-
-The frequency distribution of node strength (i.e., summing the weight of all links connected to the node) shows more diversity than node degree alone, and follows an approximately log-normal distribution for /P. velutina/ networks.
-
-* [[/Users/chl/Documents/Papers/hicks-2018-rna-seq.pdf][hicks-2018-rna-seq]] - On the widespread and critical impact of systematic bias and batch effects in single-cell rna-seq data
- :PROPERTIES:
- :Custom_ID: hicks-2018-rna-seq
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/hicks-2018-rna-seq.pdf
- :END:
-#+BEGIN_QUOTE
-We found that the proportion of genes reported as expressed explains a substantial part of observed variability and that this quantity varies systematically across experimental batches. Furthermore, we found that the implemented experimental designs confounded outcomes of interest with batch effects, a design that can bring into question some of the conclusions of these studies.
-#+END_QUOTE
-
-Proposed experimental design (to control batch effects): account for differences in the proportion of detected genes by explicitly including the batch factor as a covariate in a linear regression model, while making use of biological replicates so that multiple batches of cells could be randomized across sequencing runs, flow cells and lanes as in bulk-RNA-Seq.
-
 * [[/Users/chl/Documents/Papers/higginbotham-2015-clojur-brave-true.pdf][higginbotham-2015-clojur-brave-true]] - Clojure for the Brave and True
  :PROPERTIES:
  :Custom_ID: higginbotham-2015-clojur-brave-true
@@ -720,94 +487,6 @@ See also [[https://statisticalhorizons.com/how-many-imputations]].
 
 1. First, carry out a pilot analysis. Impute the data using a convenient number of imputations. (20 imputations is a reasonable default, if it doesn’t take too long.) Estimate the FMI by analyzing the imputed data.
 2. Next, plug the estimated FMI into the formula above to figure out how many imputations you need to achieve a certain value of CV(SE). If you need more imputations than you had in the pilot, then add those imputations and analyze the data again.
-* [[/Users/chl/Documents/Papers/holme-2002-growin.pdf][holme-2002-growin]] - Growing scale-free networks with tunable clustering
- :PROPERTIES:
- :Custom_ID: holme-2002-growin
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/holme-2002-growin.pdf
- :END:
-Social networks, computer networks or metabolic networks have a logarithmically growing average geodesic (shortest path) length and an approximately algebraically decaying distribution of vertex degree.
-
-The degree of an arbitrary vertex increases as the square root of the time, which yields the power-law degree distribution $P(k)\sim k^{-3}$.
-
-See =networkx.powerlaw_cluster_graph=.
-
-* [[/Users/chl/Documents/Papers/horiike-2016-orthol-finder.pdf][horiike-2016-orthol-finder]] - Ortholog-finder: a tool for constructing an ortholog data set
- :PROPERTIES:
- :Custom_ID: horiike-2016-orthol-finder
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/horiike-2016-orthol-finder.pdf
- :END:
-Identifying genuine orthologs among distantly related species is challenging, because genes obtained through horizontal gene transfer (HGT) and out-paralogs derived from gene duplication before speciation are often present among the predicted orthologs.
-
-This software uses 5 stages to alleviate such concern: (1) HGT filtering: Genes derived from HGT could be detected and deleted from the initial sequence data set by examining their base compositions. (2) Out-paralog filtering: Out-paralogs are detected and deleted from the data set based on sequence similarity. (3) Classification of phylogenetic trees: Phylogenetic trees generated for ortholog candidates are classified as monophyletic or polyphyletic trees. (4) Tree splitting: Polyphyletic trees are bisected to obtain monophyletic trees and remove HGT genes and out-paralogs. (5) Threshold changing: Out-paralogs are further excluded from the data set based on the difference in the similarity scores of genuine orthologs and out-paralogs.
-
-*Remark:* See [[/Users/chl/Documents/Papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]] for an intermediate approach (tolerate recent in-paralogs as unavoidable contamination).
-
-* [[/Users/chl/Documents/Papers/howe-2011-rna-seq-mev.pdf][howe-2011-rna-seq-mev]] - Rna-seq analysis in mev
- :PROPERTIES:
- :Custom_ID: howe-2011-rna-seq-mev
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/howe-2011-rna-seq-mev.pdf
- :END:
-Latest standalone app dates back to 2011 and is Java 6 only. The Shell script included is useful for microarrays only.
-
-* [[/Users/chl/Documents/Papers/huson-2006-applic-phylog.pdf][huson-2006-applic-phylog]] - Application of phylogenetic networks in evolutionary studies
- :PROPERTIES:
- :Custom_ID: huson-2006-applic-phylog
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/huson-2006-applic-phylog.pdf
- :END:
-Phylogenetic networks should be employed when /reticulate events/ such as hybridization, horizontal gene transfer, recombination, or gene duplication and loss are believed to be involved.
-
-Software: [[http://splitstree.org][SplitsTree4]].
-
- - phylogenetic network = any network in which taxa are represented by nodes and their evolutionary relationships by edges.
- - split network = combinatorial generalization of phylogenetic trees, designed to represent incompatibilities within and between data sets.
- - reticulate network = represents evolutionary histories in the presence of reticulate events (nodes with two parents). (See Fig. 1 for an overview )
-
-A split network contains exactly the same information as a list of splits with a weight for each split.
-
-* [[/Users/chl/Documents/Papers/huson-2011-survey-combin.pdf][huson-2011-survey-combin]] - A survey of combinatorial methods for phylogenetic networks
- :PROPERTIES:
- :Custom_ID: huson-2011-survey-combin
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/huson-2011-survey-combin.pdf
- :END:
-Phylogenetic networks are useful when evolution involves reticulate events (hybridization, horizontal gene transfer, or recombination) or to represent conflicts in a data set that may be caused by mechanisms such as incomplete lineage sorting.
-
-Split networks and quasi-median networks are two examples of unrooted phylogenetic networks.
-
-Sneath P. 1975. [[https://academic.oup.com/sysbio/article/24/3/360/1659116][Cladistic representation of reticulate evolution]]. Syst Zool. 24(3):360–368.
-* [[/Users/chl/Documents/Papers/ignatiadis-2016-data.pdf][ignatiadis-2016-data]] - Data-driven hypothesis weighting increases detection power in genome-scale multiple testing
- :PROPERTIES:
- :Custom_ID: ignatiadis-2016-data
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ignatiadis-2016-data.pdf
- :END:
-Independent hypothesis weighting ([[https://www.bioconductor.org/packages/release/bioc/html/IHW.html][IHW]]): a method that assigns weights using covariates (conditionally) independent of the P-values under the null hypothesis but informative of each test’s power or prior probability of the null hypothesis.
-
-* [[/Users/chl/Documents/Papers/ireland-2020-decip-escher.pdf][ireland-2020-decip-escher]] - Deciphering the regulatory genome of escherichia coli, one hundred promoters at a time
- :PROPERTIES:
- :Custom_ID: ireland-2020-decip-escher
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ireland-2020-decip-escher.pdf
- :END:
-Problem with modern biology is that although we have complete sequence of some important genomes, we know nothing about most of gene regulation (promoters).
-
-First, we show that our method recapitulates regulatory information from known sequences. Then, we examine the regulatory architectures for more than 80 promoters in the E. coli genome which previously had no known regulation. In many cases, we also identify which transcription factors mediate their regulation.
-* [[/Users/chl/Documents/Papers/izquierdo-carrasco-2011-algor.pdf][izquierdo-carrasco-2011-algor]] - Algorithms, data structures, and numerics for likelihood-based phylogenetic inference of huge trees
- :PROPERTIES:
- :Custom_ID: izquierdo-carrasco-2011-algor
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/izquierdo-carrasco-2011-algor.pdf
- :END:
-Design of a new search algorithm for large datasets: relies on a /backbone/ tree, to reduce the dimensionality of the search space; basically, the idea is to collapse taxa that are closely related to each other into a single virtual tip. The virtual tips are then interpreted as tips in the backbone tree on which we can conduct the tree search. Optimal tree size reduction factor: R > 0.25.
-
-* [[/Users/chl/Documents/Papers/jombart-2010-puttin.pdf][jombart-2010-puttin]] - Putting phylogeny into the analysis of biological traits: a methodological approach
- :PROPERTIES:
- :Custom_ID: jombart-2010-puttin
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jombart-2010-puttin.pdf
- :END:
-Phylogenetic comparative methods (PIC, GLS, etc.) aim to correct for phylogeny (viewed as a nuisance factor) in the correlative analysis of biological traits at the species level.
-
-The authors present a method which uses phylogenetic information to uncover the main phylogenetic structures observable in multivariate data associated with a phylogeny. Our approach, phylogenetic principal component analysis (pPCA), extends a methodology developed in spatial ecology (Dray et al., 2008) and in spatial genetics (Jombart et al., 2008) to the analysis of phylogenetic structures in biological features of taxa such as life-history traits.
-
-- Dray, S., Saïd, S., Debias, F., 2008. Spatial ordination of vegetation data using a generalization of Wartenberg’s multivariate spatial correlation. Journal of Vegetation Science 19, 45–56.
-- Jombart, T., Devillard, S., Dufour, A.-B., Pontier, D., 2008. Revealing cryptic spatial patterns in genetic variability by a new multivariate method. Heredity 101, 92–103.
-
 * [[/Users/chl/Documents/Papers/jones-2004-introd-bioin-algor.pdf][jones-2004-introd-bioin-algor]] - An introduction to bioinformatics algorithms
  :PROPERTIES:
  :Custom_ID: jones-2004-introd-bioin-algor
@@ -822,16 +501,6 @@ I have indeed been able to apply my skills in this new area, but only after comi
 For CS folks, the third chapter provides a gentle primer to biology.
 
 See also [[http://www.cs.hunter.cuny.edu/~saad/courses/bioinf/][Bioinformatics Algorithms]], by Saad Mneimneh, which offers solutions to selected exercises from each chapter.
-
-* [[/Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf][jun-2009-ident-mammal]] - Identification of mammalian orthologs using local synteny
- :PROPERTIES:
- :Custom_ID: jun-2009-ident-mammal
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/jun-2009-ident-mammal.pdf
- :END:
-- differentiating between genes that have diverged through a speciation event (orthologs) and those derived through duplication events within a species (paralogs). Gene order may be viewed as a measure of conservation, or better gene family evolution.
-- local [[https://en.wikipedia.org/wiki/Synteny][synteny]] (gene order) might be useful to resolve ambiguous sequence based matches between putative orthologs (and [[https://www.ncbi.nlm.nih.gov/pubmed/19553367][retrogenes]]).
-- 93% agreement between coding sequence based orthology (Inparanoid) and local synteny based orthology, with cases of discordance resulting from evolutionary events including [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2884099/][retrotransposition]] and genome rearrangements.
-- intron conservation ratio = #(positional homologous introns)/#(intron positions in protein alignment), in strong agreement with the orthology assignments made by the two methods.
 
 * [[/Users/chl/Documents/Papers/jurney-2014-agile-data-scien.pdf][jurney-2014-agile-data-scien]] - Agile Data Science
  :PROPERTIES:
@@ -864,26 +533,6 @@ pprint.pprint(sys.path)
 You just learned how to program. Programming is not about memorizing everything; rather, it is about troubleshooting when things go awry.
 #+END_QUOTE
 
-* [[/Users/chl/Documents/Papers/kelchner-2006-model-use-phylog.pdf][kelchner-2006-model-use-phylog]] - Model use in phylogenetics: nine key questions
- :PROPERTIES:
- :Custom_ID: kelchner-2006-model-use-phylog
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kelchner-2006-model-use-phylog.pdf
- :END:
-(1) What are models in phylogenetics; (2) Must a model be "exact" or merely "good enough"; (3) What phylogenetic applications rely on best-fit models; (4) What happens when a model is "wrong"; (5) How are models selected for nucleotide data; (6) What models are most frequently chosen for sequence data; (7) How can model selection methods be improved; (8) Are all parameters equally important; (9) Will phylogenomics eliminate the need for model selection.
-
-Conceptual models often obeys to the principle of parsimony and they usually share several assumptions, that are not given formal parameters: mutations are independent and identically distributed, tree-like evolution (i.e., lineages arise in a divergent manner without reticulation), stationarity, reversibility, Markov process. Such assumptions are often violated in practice, e.g. prokaryote groups share genes among lineages via lateral gene transfer (incompatible with tree-like evolution).
-
-Most complex model (10 parameters) = [[https://www.carlboettiger.info/2011/03/15/models-in-phylogenetic-inference.html][GTR+I+Γ]] (general time reversible model with corrections for invariant characters and gamma-distributed rate heterogeneity). See also https://arxiv.org/abs/0709.0531v2.
-
-When models matter? Topology is quite robust to midly inadequate models, but when branch lengths matter or when we are interested in testing an alternative phylogenetic hypothesis (e.g., [[https://academic.oup.com/sysbio/article/49/4/652/1678908][Kishino-Hasegawa]], [[https://academic.oup.com/sysbio/article/51/3/492/1616895][Shimodaira-Hasegawa]] and [[https://academic.oup.com/mbe/article/19/4/432/995491][Incongruence Length Difference]] tests), we need more accurate and adequate models.
-
-See also: [[/Users/chl/Documents/Papers/goldman-2000-likel-based.pdf][goldman-2000-likel-based]], [[/Users/chl/Documents/Papers/shimodaira-2002-approx-unbias.pdf][shimodaira-2002-approx-unbias]], [[/Users/chl/Documents/Papers/darlu-2002-when-does.pdf][darlu-2002-when-does]].* [[/Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf][khomtchouk-2018-how-lisp]] - How the strengths of lisp-family languages facilitate building complex and flexible bioinformatics applications
- :PROPERTIES:
- :Custom_ID: khomtchouk-2018-how-lisp
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/khomtchouk-2018-how-lisp.pdf
- :END:
-See also the [[http://biolisp.org][biolisp]] project and, e.g., [[/Users/chl/Documents/Papers/herzeel-2015-elprep.pdf][herzeel-2015-elprep]].
-
 * [[/Users/chl/Documents/Papers/kim-2019-graph-hisat.pdf][kim-2019-graph-hisat]] - Graph-based genome alignment and genotyping with hisat2 and hisat-genotype
  :PROPERTIES:
  :Custom_ID: kim-2019-graph-hisat
@@ -905,19 +554,6 @@ Review by [[https://henrikwarne.com/2019/07/27/book-review-designing-data-intens
  :END:
 https://dancing-links.herokuapp.com
 
-* [[/Users/chl/Documents/Papers/koster-2016-rust-bio.pdf][koster-2016-rust-bio]] - Rust-bio: a fast and safe bioinformatics library
- :PROPERTIES:
- :Custom_ID: koster-2016-rust-bio
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/koster-2016-rust-bio.pdf
- :END:
-https://rust-bio.github.io
-
-* [[/Users/chl/Documents/Papers/kunin-2005-net-life.pdf][kunin-2005-net-life]] - The net of life: reconstructing the microbial phylogenetic network
- :PROPERTIES:
- :Custom_ID: kunin-2005-net-life
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kunin-2005-net-life.pdf
- :END:
-Horizontal Gene Transfer is viewed as a scale-free graph, allowing genes to propagate extremely rapidly across microbial species using certain organisms as hubs.
 * [[/Users/chl/Documents/Papers/laaksonen-2017-compet-progr-handb.pdf][laaksonen-2017-compet-progr-handb]] - Competitive programmer’s handbook
  :PROPERTIES:
  :Custom_ID: laaksonen-2017-compet-progr-handb
@@ -954,47 +590,6 @@ See also [[https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11239][Data scie
 - orthology is not a transitive relation so that the problem is different from clustering an input gene set.
 - the authors focus on avoiding false positive orthology assignments within the phylogenetic range of the reported orthologous groups, while tolerating recent in-paralogs (speciation preceding duplication) as unavoidable contamination
 
-* [[/Users/chl/Documents/Papers/lartillot-2004-bayes-mixtur.pdf][lartillot-2004-bayes-mixtur]] - A bayesian mixture model for across-site heterogeneities in the amino-acid replacement process
- :PROPERTIES:
- :Custom_ID: lartillot-2004-bayes-mixtur
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/lartillot-2004-bayes-mixtur.pdf
- :END:
-The authors discuss a new model (CAT) for molecular phylogenetics which considers amino acids instead of nucleotides (which makes sense since they are interested in phylogenies going beyond the genus level). The model allows for a number of /K/ classes, each of which is characterized by its own set of equilibrium frequencies, and lets each site "choose" the class under which its substitutional history is to be described. A Dirichlet process prior is used to decide on the best class to chose (the posterior mean then becomes a measure of substitutional heterogeneity). In sum, the CAT model allows to classifies sites into categories: sites are distributed according to a mixture of /K/ distinct classes, each class being characterized by its own substitution matrix. Transition matrices (also called π-vector or /profiles/) can be fixed to pre-specified values (if all relative rates are set to 1, we get a Poisson process).
-
-See also [[/Users/chl/Documents/Papers/lartillot-2009-phylob.pdf][lartillot-2009-phylob]]. Maybe [[/Users/chl/Documents/Papers/dang-2019-stoch-variat.pdf][dang-2019-stoch-variat]].
-* [[/Users/chl/Documents/Papers/li-2010-rna-seq.pdf][li-2010-rna-seq]] - Rna-seq gene expression estimation with read mapping uncertainty
- :PROPERTIES:
- :Custom_ID: li-2010-rna-seq
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/li-2010-rna-seq.pdf
- :END:
-- Optimal read length = 20-25 bp.
-- Problem with RMPKM measures: the mean expressed transcript length may vary between samples. (When the mean expressed transcript length is 1 kb, 1 TPM is equivalent to 1 RPKM, which corresponds to roughly one transcript per cell in mouse.)
-
-* [[/Users/chl/Documents/Papers/li-2018-minim.pdf][li-2018-minim]] - Minimap2: pairwise alignment for nucleotide sequences
- :PROPERTIES:
- :Custom_ID: li-2018-minim
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/li-2018-minim.pdf
- :END:
-Minimap2 is a general-purpose alignment program to map DNA or long mRNA sequences against a large reference database. It works with accurate short reads of 100 bp in length, 1 kb genomic reads at error rate 15%, full-length noisy Direct RNA or cDNA reads and assembly contigs or closely related full chromosomes of hundreds of megabases in length.
-
-Used in the [[http://www.outils.genomique.biologie.ens.fr/eoulsan2/][Eoulsan]] toolkit.
-
-* [[/Users/chl/Documents/Papers/liu-2014-rna.pdf][liu-2014-rna]] - Rna-seq differential expression studies: more sequence or more replication?
- :PROPERTIES:
- :Custom_ID: liu-2014-rna
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/liu-2014-rna.pdf
- :END:
-Better to sequence less reads but increase the number of biological replicates: this will significantly increase the number of DE genes while the number of sequencing reads have a diminishing return after 10M reads.
-
-* [[/Users/chl/Documents/Papers/love-2014-moder-rna-deseq.pdf][love-2014-moder-rna-deseq]] - Moderated estimation of fold change and dispersion for rna-seq data with deseq2
- :PROPERTIES:
- :Custom_ID: love-2014-moder-rna-deseq
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/love-2014-moder-rna-deseq.pdf
- :END:
-NGS analyses (RNA, CHIP, etc.) need to account for within-group variance estimates when analysing lot of genes, hence the need to pool information across genes. The DESeq approach detects and corrects dispersion estimates that are too low through modeling of the dependence of the dispersion on the average expression strength over all samples. In addition, it provides a novel method for gene ranking and the visualization of stable estimates of effect sizes. The [[https://bioconductor.org/packages/release/bioc/html/DESeq2.html][DESeq2]] package further includes shrunken fold changes (with SE).
-
-See also: [[file:/Users/chl/Documents/Papers/ignatiadis-2016-data.pdf][ignatiadis-2016-data]], [[file:/Users/chl/Documents/papers/zhu-2019-heavy.pdf][zhu-2019-heavy]], [[file:/Users/chl/Documents/Papers/stephens-2017-false.pdf][stephens-2017-false]].
-
 * [[/Users/chl/Documents/Papers/mccullagh-2002-what-statis-model.pdf][mccullagh-2002-what-statis-model]] - What is a statistical model
  :PROPERTIES:
  :Custom_ID: mccullagh-2002-what-statis-model
@@ -1017,29 +612,6 @@ The thesis of this paper is that the logic of every statistical model is founded
  :END:
 See [[https://howistart.org/posts/clojure/1/index.html][How I start]].
 
-* [[/Users/chl/Documents/Papers/meskauskas-2004-simul-colon.pdf][meskauskas-2004-simul-colon]] - Simulating Colonial Growth Of Fungi With The Neighbour-Sensing Model Of Hyphal Growth
- :PROPERTIES:
- :Custom_ID: meskauskas-2004-simul-colon
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/meskauskas-2004-simul-colon.pdf
- :END:
-NS model = vector-based model whereby the growth vector of each virtual hyphal tip is calculated by reference to the surrounding virtual mycelium. It can be seen as an extension of stochastic L-system based approach.
-
-This model can be used to simulate growth in semi-solid substrata like agar or soil, and it can be extended to include a number of other parameters and modelling capabilities that permit initial experimentation on hyphal growth kinetics, and enable realistic simulation of mycelial colonies of filamentous fungi grown in "Petri-dish style" experimental conditions.
-* [[/Users/chl/Documents/Papers/miele-2012-high.pdf][miele-2012-high]] - High-quality sequence clustering guided by network topology and multiple alignment likelihood
- :PROPERTIES:
- :Custom_ID: miele-2012-high
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/miele-2012-high.pdf
- :END:
-- Python 2.7 only
-- Download: http://lbbe.univ-lyon1.fr/Download,3100.html
-
-* [[/Users/chl/Documents/Papers/mitrophanov-2006-statis.pdf][mitrophanov-2006-statis]] - Statistical significance in biological sequence analysis
- :PROPERTIES:
- :Custom_ID: mitrophanov-2006-statis
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/mitrophanov-2006-statis.pdf
- :END:
-Review of sequence alignment score and the estimation of associated p-value in the case of single sequence studies (both score-based and score-free), global and local pairwise sequence alignments, multiple alignments, sequence-to-profile alignments and alignments built with hidden Markov models.
-
 * [[/Users/chl/Documents/Papers/neil-2018-moder-vim.pdf][neil-2018-moder-vim]] - Modern Vim: Craft Your Development Environment with Vim 8 and Neovim
  :PROPERTIES:
  :Custom_ID: neil-2018-moder-vim
@@ -1052,12 +624,6 @@ Useful packages and config for Lisp editing:
 - https://github.com/kovisoft/slimv
 - https://blog.venanti.us/clojure-vim/
 
-* [[/Users/chl/Documents/Papers/nascimento-2017-bayes.pdf][nascimento-2017-bayes]] - A biologist’s guide to bayesian phylogenetic analysis
- :PROPERTIES:
- :Custom_ID: nascimento-2017-bayes
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/nascimento-2017-bayes.pdf
- :END:
-*Rules of thumb:* (1) Different substitution models tend to give very similar sequence distance estimates when sequence divergence is less than 10%, so that a simple model can be used even though it may not fit the data. (2) It is more problematic to under-specify than to over-specify the model in Bayesian phylogenetics.
 * [[/Users/chl/Documents/Papers/neal-2015-repres-numer.pdf][neal-2015-repres-numer]] - Representing numeric data in 32 bits while preserving 64-bit precision
  :PROPERTIES:
  :Custom_ID: neal-2015-repres-numer
@@ -1068,50 +634,12 @@ Every number with up to seven significant decimal digits maps to a distinct 32-b
 #+BEGIN_QUOTE
 Cowlishaw, M. F. (2003) “Decimal Floating-Point: Algorism for Computers”, in Proceedings of the 16th IEEE Symposium on Computer Arithmetic.
 #+END_QUOTE
-* [[/Users/chl/Documents/Papers/ostlund-2010-inpar.pdf][ostlund-2010-inpar]] - Inparanoid 7: new algorithms and tools for eukaryotic orthology analysis
- :PROPERTIES:
- :Custom_ID: ostlund-2010-inpar
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/ostlund-2010-inpar.pdf
- :END:
-See also [[/Users/chl/Documents/Papers/remm-2001-autom-clust.pdf][remm-2001-autom-clust]].
-
-* [[/Users/chl/Documents/Papers/pavlopoulos-2010-ref-tree.pdf][pavlopoulos-2010-ref-tree]] - A reference guide for tree analysis and visualization
- :PROPERTIES:
- :Custom_ID: pavlopoulos-2010-ref-tree
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/pavlopoulos-2010-ref-tree.pdf
- :END:
-Challenge: to handle the overload of information and make it easier to understand and explore very large phylogenetic trees.
-
-- Trees vs. graphs.
-- Cladogram and phylogram (branch lengths are proportional to the amount of inferred evolutionary change).
-- Newick, NHX (enhanced Newick) and Nexus format.
-- Statistical methods: neighbor-joining and UPGMA (distance), maximum parsimony and maximum likelihood (feature matrix), MCMC (both).
-
 * [[/Users/chl/Documents/Papers/pearl-2018-theor-imped.pdf][pearl-2018-theor-imped]] - Theoretical impediments to machine learning with seven sparks from the causal revolution
  :PROPERTIES:
  :Custom_ID: pearl-2018-theor-imped
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/pearl-2018-theor-imped.pdf
  :END:
 Seven tasks which are beyond reach of current machine learning systems (vs. structural causal models) and examples of tasks ML would fail to solve: (1) How effective is a given treatment in preventing a disease?, (2) Was it the new tax break that caused our sales to go up?, (3) What is the annual health-care costs attributed to obesity?, (4) Can hiring records prove an employer guilty of sex discrimination?, (5) I am about to quit my gob, but should I?
-* [[/Users/chl/Documents/Papers/piskol-2013-reliab-ident.pdf][piskol-2013-reliab-ident]] - Reliable identification of genomic variants from rna-seq data
- :PROPERTIES:
- :Custom_ID: piskol-2013-reliab-ident
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/piskol-2013-reliab-ident.pdf
- :END:
-Use =cufflinks= after =tophat2= for gene quantification.
-
-RNA-seq data alone enabled the discovery of 40.2% and 47.7% of all coding variants identified by WGS in GM12878 cells and PBMCs, respectively. At the same time, RNA-seq only required a fraction (1/6) of the sequencing effort.
-
-* [[/Users/chl/Documents/Papers/planet-2006-tree-disag.pdf][planet-2006-tree-disag]] - Tree disagreement: measuring and testing incongruence in phylogenies
- :PROPERTIES:
- :Custom_ID: planet-2006-tree-disag
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/planet-2006-tree-disag.pdf
- :END:
-Review of incongruence tests for phylogenetic analysis: character information (character incongruence) vesus those that only consider tree shape or topology (topological incongruence); the latter presents the advantage of being able to compare trees derived from data that may not be strictly comparable or easy to include in the same analysis.
-
-- *Character congruence:* incongruence length difference test, localized incongruence length difference, multiple partitions and pairwise ILD tests, ILD outside of parsimony, parsimony-based tests (permutation and sitewise tests), likelihood-based tests, sitewise testing, non-parametric bootstrapping methods, parametric bootstrapping and partition tests, Bayesian testing
-- *Topological congruence:* consensus-based measurements, tree distances (symmetric difference)
-
 * [[/Users/chl/Documents/Papers/poi-2004-from-help-desk.pdf][poi-2004-from-help-desk]] - From the help desk: some bootstrapping techniques
  :PROPERTIES:
  :Custom_ID: poi-2004-from-help-desk
@@ -1133,13 +661,6 @@ pobs <-  (1 + sum(abs(s) > abs(s0))) / (B+1)
 #+END_SRC
 
 See also [[/Users/chl/Documents/Papers/efron-1986-boots-method.pdf][efron-1986-boots-method]].
-* [[/Users/chl/Documents/Papers/priyam-2019-sequen.pdf][priyam-2019-sequen]] - Sequenceserver: a modern graphical user interface for custom blast databases
- :PROPERTIES:
- :Custom_ID: priyam-2019-sequen
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/priyam-2019-sequen.pdf
- :END:
-Only very basic sequence aligner. Not much compared to good old Wwwblast unfortunately. The only interest is possibly to use the automated converter of Fasta files (=makeblastdb=).
-
 * [[/Users/chl/Documents/Papers/ramos-2014-reach-python-racket.pdf][ramos-2014-reach-python-racket]] - Reaching python from racket
  :PROPERTIES:
  :Custom_ID: ramos-2014-reach-python-racket
@@ -1155,15 +676,6 @@ Via [[https://racket-news.com/2019/09/racket-news-issue-15.html][Racket News #15
 Interesting review of current data stack in Python. The first part focus on scikit-learn and [[https://github.com/scikit-learn-contrib][contrib]], "classical ML" approaches, including boosting machines (LightGBM), and distributed computing using [[https://ml.dask.org][Dask-ML]]. Little is said about H2O and the Sparkling Water Spark-adapter, though. [[https://www.automl.org][AutoML]] libraries include: [[https://www.cs.ubc.ca/labs/beta/Projects/autoweka/][Auto-Weka]], [[https://automl.github.io/auto-sklearn/master/][Auto-sklearn]], [[https://epistasislab.github.io/tpot/][TPOT]], [[http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html][H20-AutoML]], [[https://autokeras.com][AutoKeras]].
 
 See also [[/Users/chl/Documents/Papers/he-2020-autom.pdf][he-2020-autom]].
-* [[/Users/chl/Documents/Papers/remm-2001-autom-clust.pdf][remm-2001-autom-clust]] - Automatic clustering of orthologs and in-paralogs from pairwise species comparisons
- :PROPERTIES:
- :Custom_ID: remm-2001-autom-clust
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/remm-2001-autom-clust.pdf
- :END:
-Orthology analysis between humans and invertebrates is often complex because of large numbers of paralogs within protein families. Paralogs that predate the species split (out-paralogs) can easily be confused with true orthologs. Orthologs and in-paralogs are typically detetcted with phylogenetic methods. Alternative approach: ortholog clusters are seeded with a two-way best pairwise match, after which an algorithm for adding in-paralogs is applied.
-
-Software: [[http://inparanoid.sbc.su.se/cgi-bin/index.cgi][Inparanoid]].
-
 * [[/Users/chl/Documents/Papers/ripley-2002-statis-method.pdf][ripley-2002-statis-method]] - Statistical methods need software: a view of statistical computing
  :PROPERTIES:
  :Custom_ID: ripley-2002-statis-method
@@ -1198,39 +710,6 @@ A good question to ask is "Why did this patient get this disease at this time?",
 #+BEGIN_QUOTE
 If everyone smoked 20 cigarettes a day, then clinical, case-control and cohort studies alike would lead us to conclude that lung cancer was a genetic disease; and in one sense that would be true, since if everyone is exposed to the necessary agent, then the distribution of cases is wholly determined by individual susceptibility.
 #+END_QUOTE
-* [[/Users/chl/Documents/Papers/savojardo-2020-deepm.pdf][savojardo-2020-deepm]] - Deepmito: accurate prediction of protein sub-mitochondrial localization using convolutional neural networks
- :PROPERTIES:
- :Custom_ID: savojardo-2020-deepm
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/savojardo-2020-deepm.pdf
- :END:
-- Use of deep learning to predict protein localization in four different mitochondrial compartments (matrix, outer, inner and intermembrane regions).
-- Dataset = 424 mito. proteins sharing at most 40% sequence identity (CD-HIT filter), including 166 proteins from fungi.
-
-* [[/Users/chl/Documents/Papers/schliep-2017-inter.pdf][schliep-2017-inter]] - Intertwining phylogenetic trees and networks
- :PROPERTIES:
- :Custom_ID: schliep-2017-inter
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/schliep-2017-inter.pdf
- :END:
-Bifurcating tree hypothesis ([[https://academic.oup.com/sysbio/article/62/3/479/1648670][Mindell 2013]]): the "tree of life" metaphor works well as a strictly bifurcating tree in the absence of reticulate evolution, which results from hybridization, lineage merger, and lateral gene transfer. If this does not hold, phylogenetic networks should be used instead.
-
-[[https://www.phangorn.org][Phangorn]] R package (+ [[https://cran.r-project.org/web/packages/ape/index.html][ape]]): "support value" (nonparametric bootstrap support: Felsenstein 1985; Bayesian posterior probabilities: Rannala & Yang 1996; internode certainty: Salichos, Sta- matakis & Rokas 2014); see also Draper, Hedenäs & Grimm 2007.
-
-* [[/Users/chl/Documents/Papers/shimodaira-2002-approx-unbias.pdf][shimodaira-2002-approx-unbias]] - An approximately unbiased test of phylogenetic tree selection
- :PROPERTIES:
- :Custom_ID: shimodaira-2002-approx-unbias
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/shimodaira-2002-approx-unbias.pdf
- :END:
-Related to [[https://academic.oup.com/mbe/article/16/8/1114/2925508][Shimodaira–Hasegawa]] test, the AU test adjusts the selection bias overlooked in the standard use of the bootstrap probability and Kishino–Hasegawa tests.
-* [[/Users/chl/Documents/Papers/sonnhammer-2015-inpar.pdf][sonnhammer-2015-inpar]] - Inparanoid 8: orthology analysis between 273 proteomes, mostly eukaryotic
- :PROPERTIES:
- :Custom_ID: sonnhammer-2015-inpar
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/sonnhammer-2015-inpar.pdf
- :END:
-- 273 species, mainly from Uniprot, including 246 eukaryotes.
-- Orthologs may undergo duplications after the speciation event, generating multiple co-orthologs or inparalogs, which complicates orthology detection. [[http://inparanoid.sbc.su.se/cgi-bin/index.cgi][InParanoid]] allows to generate ortholog groups that include all inparalogs but no outparalogs using a parallel 2-pass BLAST procedure.
-- quadratic runtime scaling with the number of species.
-- [[https://github.com/JoshuaDavid/Neighbor_Joining][Python code]] for neighbor-joining algorithm.
-
 * [[/Users/chl/Documents/Papers/stein-2017-elemen-number-theor.pdf][stein-2017-elemen-number-theor]] - Elementary number theory: primes, congruences, and secrets
  :PROPERTIES:
  :Custom_ID: stein-2017-elemen-number-theor
@@ -1248,63 +727,18 @@ Our first question concerns three-dimensional contingency tables $(p_{ijk})$ who
 
 See also: [[/Users/chl/Documents/papers/pistone-2001-algeb-statis.pdf][pistone-2001-algeb-statis]], [[/Users/chl/Documents/Papers/gibilisco-2010-algeb-geomet.pdf][gibilisco-2010-algeb-geomet]].
 
-* [[/Users/chl/Documents/Papers/torres-2003-exact-formul.pdf][torres-2003-exact-formul]] - An exact formula for the number of alignments between two dna sequences
- :PROPERTIES:
- :Custom_ID: torres-2003-exact-formul
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/torres-2003-exact-formul.pdf
- :END:
-For two sequences of length 8 and 16 the number of alignments is ≅ 40•10^6. See also [[/Users/chl/Documents/Papers/lange-2002-mathem-statis.pdf][lange-2002-mathem-statis]].
-General formula:
-
-$$ f(n, m) = \sum_{k=0}^{\text{min}(n,m)} 2^k {m \choose k} {n \choose k}. $$
-
-Note that $\sum_{k=0}^n 2^k {n \choose k} = 3^n \leq f(n, n) \leq (1+\sqrt{2})^{2n}$.
-
 * [[/Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf][tsamardinos-2017-boots-out]] - Bootstrapping the out-of-sample predictions for efficient and accurate cross-validation
  :PROPERTIES:
  :Custom_ID: tsamardinos-2017-boots-out
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/tsamardinos-2017-boots-out.pdf
  :END:
 Bootstrap Bias Corrected CV = bootstrap the whole process of selecting the best-performing configuration on the out-of-sample predictions of each configuration, without additional training of models. Computationally more efficient, smaller variance and bias compared to nested CV.
-* [[/Users/chl/Documents/Papers/tunbridge-1995-l-system.pdf][tunbridge-1995-l-system]] - An l-systems approach to the modelling of fungal growth
- :PROPERTIES:
- :Custom_ID: tunbridge-1995-l-system
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/tunbridge-1995-l-system.pdf
- :END:
-Complete description of an L-system with rules for ungerminated and germinated spores,
-tip, apical, septum and ordinary segment, and segment from which a branch grows.
-
-**** TODO Try to implement main rules using Racket [[https://docs.racket-lang.org/lindenmayer/index.html][#lang lindenmayer]].
-* [[/Users/chl/Documents/Papers/upham-2019-infer.pdf][upham-2019-infer]] - Inferring the mammal tree: species-level sets of phylogenies for questions in ecology, evolution, and conservation
- :PROPERTIES:
- :Custom_ID: upham-2019-infer
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/upham-2019-infer.pdf
- :END:
-The authors propose a "backbone-and-patch" approach to tree building applies a newly assembled 31-gene supermatrix to two levels of Bayesian inference: (1) backbone relationships and ages among major lineages, using fossil node or tip dating, and (2) species-level “patch” phylogenies with nonoverlapping in-groups that each correspond to one representa- tive lineage in the backbone.
 * [[/Users/chl/Documents/Papers/vandewiele-2020-overl-optim.pdf][vandewiele-2020-overl-optim]] - Overly optimistic prediction results on imbalanced data: flaws and benefits of applying over-sampling
  :PROPERTIES:
  :Custom_ID: vandewiele-2020-overl-optim
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/vandewiele-2020-overl-optim.pdf
  :END:
 Methodological bias = applying over-sampling before partitioning the data into mutually exclusive training and testing sets. Other biased approaches: apply cross-validation on a subset of data subsampled from the original dataset (increases the variance of the obtained results and does not address class imbalance). Carrying out over-sampling before splitting into training and testing sets might leak information from the original testing samples to the artificially generated training samples, leading to overly optimistic validation scores. It is therefore of key importance to carry out the over-sampling after selecting a training and testing set.
-
-* [[/Users/chl/Documents/Papers/volz-2017-scalab-relax.pdf][volz-2017-scalab-relax]] - Scalable Relaxed Clock Phylogenetic Dating
- :PROPERTIES:
- :Custom_ID: volz-2017-scalab-relax
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/volz-2017-scalab-relax.pdf
- :END:
-Molecular clock models assume a constant substitution rate through time, while relaxed clock models allow robust inference of rates and dates. Such models are usually fitted using Bayesian MCMC, which is computatioanally expensive. This paper explores the relevance of ML and LS phylogenetic and molecular clock dating methods, using a Gamma-Poisson mixture model of substitution rates.
-
-* [[/Users/chl/Documents/Papers/wang-2020-deep.pdf][wang-2020-deep]] - Deep learning for plant genomics and crop improvement
- :PROPERTIES:
- :Custom_ID: wang-2020-deep
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wang-2020-deep.pdf
- :END:
-Advances in statistical modeling: transcriptome-wide association study and deep learning for the prediction of molecular phenotypes from their upstream molecular phenotypes, or directly from genomic DNA sequences.
-
-Convolutional Neural Networks have at least a convolutional layer, which provides them the ability of automatic feature extraction from a contin- uous signal, e.g. DNA/RNA sequence (why is this treated as continuous?!).
-
-See also [[/Users/chl/Documents/Papers/zou-2019-primer-deep.pdf][zou-2019-primer-deep]].
 
 * [[/Users/chl/Documents/Papers/wasserman-2016-topol-data-analy.pdf][wasserman-2016-topol-data-analy]] - Topological Data Analysis
  :PROPERTIES:
@@ -1399,12 +833,6 @@ HARKing: /Hypothesizing after Results are Known/---much like "data fishing", or 
 
 Ioannidis's work on reproductibility and misuse of statistical hypothesis testing framework: [[/Users/chl/Documents/Papers/ioannidis-2005-why-most.pdf][ioannidis-2005-why-most]], [[/Users/chl/Documents/papers/munafo-2017-manif-reprod-scien.pdf][munafo-2017-manif-reprod-scien]].
 
-* [[/Users/chl/Documents/Papers/wu-2009-bacter-archaea.pdf][wu-2009-bacter-archaea]] - A phylogeny-driven genomic encyclopaedia of bacteria and archaea
- :PROPERTIES:
- :Custom_ID: wu-2009-bacter-archaea
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wu-2009-bacter-archaea.pdf
- :END:
-See also [[/Users/chl/Documents/Papers/upham-2019-infer.pdf][upham-2019-infer]] and Mike Bostock's [[https://observablehq.com/@mbostock/tree-of-life][Tree of Life]].
 * [[/Users/chl/Documents/Papers/wu-2014-novel-delaun.pdf][wu-2014-novel-delaun]] - Novel parallel algorithm for constructing delaunay triangulation based on a twofold-divide-and-conquer scheme
  :PROPERTIES:
  :Custom_ID: wu-2014-novel-delaun
@@ -1419,62 +847,6 @@ See also:
 - [[https://bl.ocks.org/mbostock/4341156][Delaunay Triangulation]]
 - [[https://bl.ocks.org/mbostock/cd52a201d7694eb9d890][Voronoi Topology]]
 - [[https://isaacguan.github.io/2017/12/22/Implementation-of-Voronoi-Diagram-and-Delaunay-Triangulation/][Implementation of Voronoi Diagram and Delaunay Triangulation]]
-* [[/Users/chl/Documents/Papers/yang-2012-molec.pdf][yang-2012-molec]] - Molecular phylogenetics: principles and practice
- :PROPERTIES:
- :Custom_ID: yang-2012-molec
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/yang-2012-molec.pdf
- :END:
-Molecular phylogenetics is being used to classify metagenomic sequences; to identify genes, regulatory elements, and noncoding RNAs in newly sequenced genomes; to interpret modern and ancient individual genomes; and to reconstruct ancestral genomes. Phylogeny reconstruction methods are either (pairwise) distance- or character-based. Character-based methods include maximum parsimony (MP) --- the only approach that is not model-based and thus does not require a substitution model, maximum likelihood (ML) and Bayesian inference (BI) methods. The tree score is the minimum number of changes for MP, the log-likelihood value for ML, and the posterior probability for BI. To reduce complexity, heuristic tree search algorithms are used.
-
-The lack of explicit assumptions, as well as failure to correct for multiple changes at the same site or to accommodate parallel changes on two long branches, renders the parsimony approach somewhat weak. ML has a clear advantage over distance or parsimony methods if we seek to understand the process of sequence evolution. Bayesian phylogenetics makes use of sophisticated models, like the relaxed clock model to infer rooted trees.
-
-Model-based methods (DM, ML and BI) are consistent if the assumed model is correct, while parsimony may be inconsistent under some model-tree combinations.
-
-* [[/Users/chl/Documents/Papers/yendrek-2012-bench-scien.pdf][yendrek-2012-bench-scien]] - The bench scientist's guide to statistical analysis of rna-seq data
- :PROPERTIES:
- :Custom_ID: yendrek-2012-bench-scien
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/yendrek-2012-bench-scien.pdf
- :END:
-Quite outdated; see [[file:~/Documents/Papers/conesa-2016-survey-best.pdf][conesa-2016-survey-best]] for more up to date material and technologies.
-
-* [[/Users/chl/Documents/Papers/yu-2018-two-method.pdf][yu-2018-two-method]] - Two methods for mapping and visualizing associated data on phylogeny using ggtree
- :PROPERTIES:
- :Custom_ID: yu-2018-two-method
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/yu-2018-two-method.pdf
- :END:
-- Two packages: [[http://bioconductor.org/packages/ggtree][ggtree]] for mapping and visualization, and [[http://bioconductor.org/packages/treeio][treeio]] for data parsing ([[https://github.com/GuangchuangYu/treeio][Github]])
-- Bookdown textbook: [[https://yulab-smu.github.io/treedata-book/][Data Integration, Manipulation and Visualization of Phylogenetic Trees]]
-
-See also Letunic I, Bork P. 2007. [[https://academic.oup.com/bioinformatics/article/23/1/127/188940][Interactive Tree Of Life (iTOL): an online tool for phylogenetic tree display and annotation]]. Bioinformatics 23:127–128, and [[https://itol.embl.de][iTOL]].
-* [[/Users/chl/Documents/Papers/egidi-2020-ascom.pdf][egidi-2020-ascom]] - A few ascomycota taxa dominate soil fungal communities worldwide
- :PROPERTIES:
- :Custom_ID: egidi-2020-ascom
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/egidi-2020-ascom.pdf
- :END:
-Authors interested in characterizing the identity, global distribution and ecology of dominant soil fungi, based on the analysis of 235 sites distributed across 6 continents.
-*Results:* 83 dominant fungal phylotypes, where the most ubiquitous fungi found were members of the Pezizomycotina (≥98% match), including Sordariomycetes (/Podospora/ and /Chaetomium/), and showed similar level of relative abundance among the sampled habitats.
-* [[/Users/chl/Documents/Papers/gori-2016-clust-genes.pdf][gori-2016-clust-genes]] - Clustering genes of common evolutionary history
- :PROPERTIES:
- :Custom_ID: gori-2016-clust-genes
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/gori-2016-clust-genes.pdf
- :END:
-*Context:* Multilocus phylogenetic analysis.
-Large-scale simulation study of phylogenetic distances and clustering methods to infer loci of common evolutionary history.
-*Results:* The best-performing combinations are distances accounting for branch lengths followed by spectral clustering or Ward's method.
-
-See also [[~/Documents/Papers/yoshida-2019-multil.pdf][yoshida-2019-multil]].
-* [[/Users/chl/Documents/Papers/kendall-2016-mappin-phylog.pdf][kendall-2016-mappin-phylog]] - Mapping phylogenetic trees to reveal distinct patterns of evolution
- :PROPERTIES:
- :Custom_ID: kendall-2016-mappin-phylog
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/kendall-2016-mappin-phylog.pdf
- :END:
-See also the [[https://thibautjombart.github.io/treespace/][treespace]] R package (and maybe [[https://github.com/thibautjombart/apex][apex]]).
-* [[/Users/chl/Documents/Papers/mcmurdie-2013-phylos.pdf][mcmurdie-2013-phylos]] - Phyloseq: an r package for reproducible interactive analysis and graphics of microbiome census data
- :PROPERTIES:
- :Custom_ID: mcmurdie-2013-phylos
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/mcmurdie-2013-phylos.pdf
- :END:
-See also [[~/Documents/Papers/mcmurdie-2011-phylos.pdf][mcmurdie-2011-phylos]] and [[http://joey711.github.io/phyloseq/][phyloseq: Explore microbiome profiles using R]].
 * [[/Users/chl/Documents/Papers/soicher-2004-algor-mathem.pdf][soicher-2004-algor-mathem]] - Algorithmic Mathematics
  :PROPERTIES:
  :Custom_ID: soicher-2004-algor-mathem
@@ -1489,35 +861,6 @@ Basic overview of number theory and related algorithms, with several exercises a
 1. Estimate the parameters xmin and α of the power-law model using the methods described in Section 3.
 2. Calculate the goodness-of-fit between the data and the power law using the method described in Section 4. If the resulting p-value is greater than 0.1 the power law is a plausible hypothesis for the data, otherwise it is rejected.
 3. Compare the power law with alternative hypotheses via a likelihood ratio test, as described in Section 5. For each alternative, if the calculated likelihood ratio is significantly different from zero, then its sign indicates whether the alternative is favored over the power-law model or not.
-* [[/Users/chl/Documents/Papers/koonin-2011-compar-phylog.pdf][koonin-2011-compar-phylog]] - Comparison of phylogenetic trees and search for a central trend in the 'forest of life'
- :PROPERTIES:
- :Custom_ID: koonin-2011-compar-phylog
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/koonin-2011-compar-phylog.pdf
- :END:
-Tree of Life (TOL) vs. "net of life" (because of horizontal gene transfer in prokaryotes).
-The construction of the trees (about 7000 altogether) provides for an attempt to identify patterns in the Forest of Life (FOL) and address the question whether or not there exists a central trend among the trees that perhaps could be considered an approximation of a TOL.
-Clustering of the Nearly Universal Trees (NUTs) and the entire Forest of Life (FOL) using Classical MultiDimensional Scaling.
-*Note:* Boot Split Distance (the contribution of each split is weighted using the bootstrap values)
-* [[/Users/chl/Documents/Papers/marcet-houben-2011-treek.pdf][marcet-houben-2011-treek]] - Treeko: a duplication-aware algorithm for the comparison of phylogenetic tree
- :PROPERTIES:
- :Custom_ID: marcet-houben-2011-treek
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/marcet-houben-2011-treek.pdf
- :END:
-Two main types of algorithms are available that compute topological distances between phylogenetic trees:
-
-- exploit the topological arrangement of terminal nodes: RF distance, quartet distance, or maximum agreement subtree;
-- minimal number of topological re-arrangements: transposition distance, prune and regraft distance, and tree edit distance.
-
-Both approaches require that the mapping of leaves between the trees is complete and univocal. TreeKO is a novel, duplication-aware algorithm that is able to compare two tree topologies re- gardless of the number of duplications and, at the same time, provide a RF-based distance measure that is evolutionarily meaningful and that does not require any prior evolutionary assumption. In addition treeKO, implements the possibility of computing so-called phylome support values (22), and reconciliation-based measures such as the number of inferred duplications and losses events.
-
-See also [[http://etetoolkit.org/documentation/ete-compare/][ete-compare]].
-* [[/Users/chl/Documents/Papers/huerta-cepas-2016-ete.pdf][huerta-cepas-2016-ete]] - Ete 3: reconstruction, analysis, and visualization of phylogenomic data
- :PROPERTIES:
- :Custom_ID: huerta-cepas-2016-ete
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/huerta-cepas-2016-ete.pdf
- :END:
-*Website:* [[http://etetoolkit.org]]
-Basic recipe to build a custom workflow: =aligner-trimmer-tester-builder=.
 * [[/Users/chl/Documents/Papers/real-2020-autom-zero.pdf][real-2020-autom-zero]] - Automl-zero: evolving machine learning algorithms from scratch
  :PROPERTIES:
  :Custom_ID: real-2020-autom-zero
@@ -1532,26 +875,6 @@ See also [[~/Documents/Papers/he-2020-autom.pdf][he-2020-autom]].
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/antoniotti-2020-why-you.pdf
  :END:
 See also this [[http://within-parens.blogspot.com/2020/03/why-you-cannot-yet-portably-write.html][blog post]].
-* [[/Users/chl/Documents/Papers/edgar-2004-muscl.pdf][edgar-2004-muscl]] - MUSCLE: multiple sequence alignment with high accuracy and high throughput
- :PROPERTIES:
- :Custom_ID: edgar-2004-muscl
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/edgar-2004-muscl.pdf
- :END:
-MUSCLE relies on 2 distance measures (k-mer and Kimura distance), and distance matrices are clustered using UPGMA (and not NJ, because "by assuming that in progressive alignment, the best accuracy is obtained at each node by aligning the two profiles that have fewest differences, even if they are not evolutionary neighbors."). The scoring function defined on aligned pairs of profile positions is the log-expectation (LE) score, which is a modified version of the log-average function. Position-specific gap penalties are used, similar to MAFFT.
-
-See other tools for [[https://www.ebi.ac.uk/Tools/msa/][Multiple Sequence Alignment]].
-* [[/Users/chl/Documents/Papers/thompson-2001-towar-reliab.pdf][thompson-2001-towar-reliab]] - Towards a reliable objective function for multiple sequence alignments
- :PROPERTIES:
- :Custom_ID: thompson-2001-towar-reliab
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/thompson-2001-towar-reliab.pdf
- :END:
-The authors propose a new objective scoring function for multiple sequence alignments (norMD), which combines the advantages of the column- scoring techniques with the sensitivity of methods incorporating residue similarity scores. Compared to other approaches, norMD incorporates ab initio sequence information, such as the number, length and similarity of the sequences to be aligned.
-* [[/Users/chl/Documents/Papers/simonin-2012-physiol-signif.pdf][simonin-2012-physiol-signif]] - Physiological significance of network organization in fungi
- :PROPERTIES:
- :Custom_ID: simonin-2012-physiol-signif
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/simonin-2012-physiol-signif.pdf
- :END:
-Hyphal fusion is necessary for efficient nutrient translocation in Neurospora crassa. Techniques used: radioisotope trac- ers, stable isotope tracers, and fluorescently labeled proteins, to visualize and quantify nutrient flows and cytoplasmic and nuclear movement. Analysis considers strips at varying excentricity (1.67-cm regions).
 * [[/Users/chl/Documents/Papers/abelson-1996-struc-inter.pdf][abelson-1996-struc-inter]] - Structure and interpretation of computer programs
  :PROPERTIES:
  :Custom_ID: abelson-1996-struc-inter
@@ -1574,48 +897,12 @@ A related advice is "write clearly -- don't sacrifice clarity for 'efficiency'."
 An n-by-n matrix has n^{2} elements, which means n^{2} assignments for its initialization. Multiplying two such matrices or solving n linear equations of n unknowns require on the order of n^{3} operations. If n ≥ 10, the time required to initialize a matrix is not important. What if n < 10? (Hint: I/O operations are more time consuming than arithmetic.)
 
 All rules are listed at the end (pp. 159-161).
-* [[/Users/chl/Documents/Papers/alhamdoosh-2017-combin.pdf][alhamdoosh-2017-combin]] - Combining multiple tools outperforms individual methods in gene set enrichment analyses
- :PROPERTIES:
- :Custom_ID: alhamdoosh-2017-combin
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/alhamdoosh-2017-combin.pdf
- :END:
-Description of a new approach: ensemble of genes set enrichment analyses ([[http://www.bioconductor.org/packages/EGSEA/][EGSEA]]), which uses 12 algorithms and calculates collective gene set scores. Also provides a brief review of existing approaches: ORA methods vs. enrichment score-based methods or permutation-based testing (including variant thereof, e.g. the "camera method").
-
-See [[/Users/chl/Documents/Papers/khatri-2012-ten-years.pdf][khatri-2012-ten-years]] regarding limitations of the ORA approach.
-
-* [[/Users/chl/Documents/Papers/soneson-2013-rna.pdf][soneson-2013-rna]] - A comparison of methods for differential expression analysis of rna-seq data
- :PROPERTIES:
- :Custom_ID: soneson-2013-rna
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/soneson-2013-rna.pdf
- :END:
-This article provides a comparison of eleven methods for differential expression analysis of RNA-seq data.
-
-- *DESeq* is conservative with default settings. It becomes more conservative when outliers are introduced. It generally has low TPR and poor FDR control with 2 samples/condition, while maintaining good FDR control for larger sample sizes, also with outliers. It has medium computational time requirement, increases slightly with sample size.
-- *edgeR* has slightly liberal for small sample sizes with default settings. It becomes more liberal when outliers are introduced. It generally has high TPR and poor FDR control in many cases, worse with outliers. Medium computational time requirement, largely independent of sample size.
-
-See [[/Users/chl/Documents/Papers/anders-2013-count-rna.pdf][anders-2013-count-rna]] for a detailed description of the above R packages.
 * [[/Users/chl/Documents/Papers/wengrow-2017-common-sense.pdf][wengrow-2017-common-sense]] - A common-sense guide to data structures and algorithms
  :PROPERTIES:
  :Custom_ID: wengrow-2017-common-sense
  :INTERLEAVE_PDF: /Users/chl/Documents/Papers/wengrow-2017-common-sense.pdf
  :END:
 Short but interesting textbook on general programming principles. It features a mix of Python and JavaScript to illustrate major sorting algorithms, big O notation, etc. Available as EPUB locally.
-* [[/Users/chl/Documents/Papers/alim-2017-local-pore.pdf][alim-2017-local-pore]] - Local pore size correlations determine flow distributions in porous media
- :PROPERTIES:
- :Custom_ID: alim-2017-local-pore
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/alim-2017-local-pore.pdf
- :END:
-The idea of this paper is that local correlations between adjacent pores determine the distribution of fractions of fluid flow propagated from one pore to others that are downstream, and when there is sufficient disorder at the pore scale, these flow rates are partitioned randomly. A combination of two singular and a continuous distributions in flow fractions gives rise to an exponential decay generalizing results previously obtained in a similar description of force distributions in random bead packs.
-* [[/Users/chl/Documents/Papers/alim-2017-mechan-physar.pdf][alim-2017-mechan-physar]] - Mechanism of signal propagation in physarum polycephalum
- :PROPERTIES:
- :Custom_ID: alim-2017-mechan-physar
- :INTERLEAVE_PDF: /Users/chl/Documents/Papers/alim-2017-mechan-physar.pdf
- :END:
-The authors discuss a mathematical model whereby a front of increased contraction propagates with a velocity comparable to the flow-driven dispersion of particles. This model is well suited to explain the adaptation of the peristaltic wave to organism size and /P. polycephalum/ ability to find the shortest route between food sources. Like in [[/Users/chl/Documents/Papers/alim-2017-local-pore.pdf][alim-2017-local-pore]] it relies on the hypothesis of mass conservation.
-
-#+BEGIN_QUOTE
-Key time-variant parameters were calculated from every point of a network using custom MATLAB (The MathWorks) code. Briefly, an image from a time series was thresholded to extract just the plasmodial tubes then skeletonized and separated into a connected map of nodes and edges. The skeleton was used to recover the tube radius at every point by finding the largest circle that would still entirely fit within a tube.
-#+END_QUOTE
 * [[/Users/chl/Documents/Papers/chang-2006-bigtab.pdf][chang-2006-bigtab]] - Bigtable: a distributed storage system for structured data
  :PROPERTIES:
  :Custom_ID: chang-2006-bigtab

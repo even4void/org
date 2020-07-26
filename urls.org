@@ -1,6 +1,39 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** A working guide to boosted regression trees                                :statistics:
+[2020-07-24 Fri 21:02]
+https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2656.2008.01390.x
+** Probability calibration in scikit-learn                                    :python:
+[2020-07-24 Fri 20:56]
+https://scikit-learn.org/stable/modules/calibration.html
+** The @property Decorator in Python                                          :python:
+[2020-07-24 Fri 20:55]
+https://www.freecodecamp.org/news/python-property-decorator/
+** An Introduction to the Harrell"verse"                                      :rstats:
+[2020-07-24 Fri 09:41]
+https://www.nicholas-ollberding.com/post/an-introduction-to-the-harrell-verse-predictive-modeling-using-the-hmisc-and-rms-packages/
+** Biomedical Statistics                                                      :rstats:
+[2020-07-24 Fri 09:01]
+https://a-little-book-of-r-for-biomedical-statistics.readthedocs.io/en/latest/index.html
+** gccemacs                                                                   :emacs:
+[2020-07-23 Thu 21:05]
+http://akrl.sdf.org/gccemacs.html
+** Primer design system                                                       :github:web:
+[2020-07-23 Thu 08:55]
+https://primer.style/
+** The Data Visualisation Catalogue                                           :dataviz:
+[2020-07-22 Wed 21:46]
+https://datavizcatalogue.com/index.html
+** Apple memory management                                                    :apple:
+[2020-07-22 Wed 21:11]
+https://developer.apple.com/library/archive/documentation/Performance/Conceptual/ManagingMemory/ManagingMemory.html
+** Luca Cambiaghi's private Doom config                                       :emacs:
+[2020-07-22 Wed 21:07]
+https://lccambiaghi.github.io/.doom.d/readme.html
+** Tufte Org Mode                                                             :emacs:org:
+[2020-07-22 Wed 21:07]
+https://github.com/tsdye/tufte-org-mode
 ** Scour is an SVG optimizer/cleaner                                          :python:
 [2020-07-22 Wed 19:36]
 https://github.com/scour-project/scour
@@ -10,7 +43,7 @@ https://jrnold.github.io/bugs-examples-in-stan/index.html
 ** finalfit: Quickly Create Elegant Regression Results Tables and Plots when Modelling :rstats:
 [2020-07-22 Wed 18:59]
 https://cran.r-project.org/web/packages/finalfit/
-** Developing R Packages with usethis and GitLab CI
+** Developing R Packages with usethis and GitLab CI                           :rstats:
 [2020-07-22 Wed 08:15]
 https://blog.methodsconsultants.com/posts/developing-r-packages-with-usethis-and-gitlab-ci-part-iii/
 ** A practical guide to Spacemacs                                             :emacs:
@@ -31,10 +64,10 @@ https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-
 ** IHP is a modern batteries-included Web Framework                           :haskell:
 [2020-07-20 Mon 12:37]
 https://ihp.digitallyinduced.com/
-** Code & Things: Stata, SAS code and random lectures.
+** Code & Things: Stata, SAS code and random lectures.                        :stata:
 [2020-07-17 Ven 21:24]
 https://coloradosph.cuanschutz.edu/education/departments/health-systems-management-policy/research/perraillon/code-things
-** A Note on Interpreting Multinomial Logit Coefficients
+** A Note on Interpreting Multinomial Logit Coefficients                      :statistics:
 [2020-07-17 Ven 21:23]
 https://data.princeton.edu/wws509/stata/mlogit
 ** Continuations by example                                                   :scheme:
