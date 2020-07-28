@@ -1,6 +1,18 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Type hints cheat sheet                                                     :python:
+[2020-07-28 Tue 10:09]
+https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
+** Most positive bignum                                                       :lisp:
+[2020-07-28 Tue 09:36]
+https://www.jwz.org/blog/2008/03/most-positive-bignum/
+** Is it possible to ditch OS X and install BSD on my 3rd Gen Macbook Pro     :apple:
+[2020-07-26 Sun 18:42]
+https://apple.stackexchange.com/questions/123512/is-it-possible-to-ditch-os-x-and-install-bsd-on-my-3rd-gen-macbook-pro
+** FreeBSD on a MacBook Pro                                                   :apple:
+[2020-07-26 Sun 18:42]
+https://news.ycombinator.com/item?id=13027506
 ** A working guide to boosted regression trees                                :statistics:
 [2020-07-24 Fri 21:02]
 https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2656.2008.01390.x

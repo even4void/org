@@ -1,0 +1,12 @@
+* Scheme and equality testing
+
+#+FILETAGS: :scheme:
+
+=eq?= compares object identity, which is inappropriate to compare floats. Indeed, many Schemes will store floating-point values on the heap, and represent them by a pointer into the storage. Two different floating-point operations may result in different heap allocations, but =eq?= may compare the pointers rather than the values they point to. On the other hand, =eqv?= is used to distinguish numbers by their exactness flag, while === is appropriate when we want to distinguish numbers by their value only, irrespective of exactness flag. For instance, =(eq? +inf.0 (abs (exp 1000.0)))= will return =#f=.
+
+#+BEGIN_EXAMPLE
+(define infinite?
+  (and (number? obj) (= +inf.0 (abs obj))))
+#+END_EXAMPLE
+
+Source: Riastradh on IRC #scheme (via [[https://matrix.to/#/!zkpjmpoWAKcjkiQMxo:matrix.org/$1595918671364028nueUE:matrix.org?via=matrix.org][Matrix]])
