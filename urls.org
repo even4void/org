@@ -1,6 +1,135 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** A simple and extensible shell script for managing your todo.txt file       :cli:
+[2020-08-04 Tue 16:08]
+https://github.com/todotxt/todo.txt-cli
+** Magit tutorial - Rebase                                                    :emacs:
+[2020-08-04 Tue 15:18]
+https://www.lvguowei.me/post/magit-rebase-2/
+** SIMD interface for SBCL                                                    :lisp:
+[2020-08-04 Tue 15:11]
+https://github.com/marcoheisig/sb-simd
+** high performance code for parallel computers                               :lisp:
+[2020-08-04 Tue 15:10]
+https://github.com/marcoheisig/Petalisp
+** Adam Clipala's homepage                                                    :misc:
+[2020-08-04 Tue 10:28]
+http://www.schizomaniac.net/
+** Conal Elliott's homepage                                                   :haskell:
+[2020-08-04 Tue 10:27]
+http://conal.net/
+** Moving around                                                              :vim:
+[2020-08-04 Tue 10:20]
+https://vim.fandom.com/wiki/Moving_around
+** Nice bayesian simulations in R                                             :rstats:bayesian:
+[2020-08-04 Tue 10:10]
+https://www.rdatagen.net/
+** zetteldeft                                                                 :emacs:
+[2020-08-04 Tue 09:45]
+https://www.eliasstorms.net/zetteldeft/zetteldeft.html#install
+** Tandem: A virtual office for remote teams                                  :misc:
+[2020-08-04 Tue 09:44]
+https://tandem.chat/
+** Apple Style Guide                                                          :apple:
+[2020-08-04 Tue 09:39]
+https://help.apple.com/applestyleguide/#/apsg1eef9171
+** netromdk's Emacs config                                                    :emacs:
+[2020-08-04 Tue 09:33]
+https://github.com/netromdk/.emacs.d
+** Emacs and the Language Server Protocol                                     :emacs:
+[2020-08-04 Tue 08:58]
+https://www.mortens.dev/blog/emacs-and-the-language-server-protocol/index.html
+** WebAssembly 1.0                                                            :web:
+[2020-08-04 Tue 08:57]
+https://webassembly.org/
+** WebAssembly                                                                :web:
+[2020-08-04 Tue 08:57]
+https://developer.mozilla.org/en-US/docs/WebAssembly
+** PostgreSQL beginner guide                                                  :database:
+[2020-08-04 Tue 08:57]
+https://knowledgepill.it/posts/postgresql-basics-guide/
+** Godot engine                                                               :game:
+[2020-08-04 Tue 08:56]
+https://godotengine.org/
+** Clojurescript re-frame                                                     :web:clojure:
+[2020-08-04 Tue 08:55]
+https://github.com/day8/re-frame
+** Quit and Hide macOS Apps from the Command+Tab Interface                    :apple:
+[2020-08-04 Tue 07:50]
+https://www.howtogeek.com/322054/quit-and-hide-macos-apps-from-the-commandtab-interface/
+** Animated floating graph nodes                                              :javascript:
+[2020-08-03 Mon 21:14]
+https://www.nayuki.io/page/animated-floating-graph-nodes
+** Web-first game engine                                                      :web:
+[2020-08-03 Mon 21:14]
+https://playcanvas.com/
+** Designing a physics engine                                                 :misc:
+[2020-08-03 Mon 21:13]
+https://blog.winter.dev/2020/designing-a-physics-engine/
+** Insert mode keybindings                                                    :vim:
+[2020-08-03 Mon 21:13]
+https://www.reddit.com/r/vim/comments/4w0lib/do_you_use_insert_mode_keybindings/
+** Open Tree of Life                                                          :misc:bioinformatics:
+[2020-08-03 Mon 21:12]
+https://tree.opentreeoflife.org/opentree/argus/ottol@155361/Podospora-pauciseta
+** Install FreeBSD 11 on MacBook                                              :unix:
+[2020-08-03 Mon 21:09]
+https://forums.freebsd.org/threads/install-on-macbook.65873/
+** How to install NetBSD/amd64 current on MacBook                             :unix:
+[2020-08-03 Mon 21:08]
+https://wiki.netbsd.org/users/ryoon/how_to_install_netbsd_amd64_to_macbook_air_11_inch/
+** Create FreeBSD installation memstick on OS-X                               :unix:
+[2020-08-03 Mon 21:08]
+https://people.freebsd.org/~seanc/freebsd/create-memstick-osx/
+** Dual Booting OS X and FreeBSD 9                                            :unix:
+[2020-08-03 Mon 21:05]
+https://www.glenbarber.us/2011/11/12/Dual-Booting-OS-X-and-FreeBSD-9.html
+** Streamlink – Ouvrir un stream Twitch ou Youtube dans VLC                   :misc:
+[2020-08-03 Mon 21:00]
+https://korben.info/streamlink-ouvrir-stream-twitch-youtube-vlc.html
+** ix: command line pastebin                                                  :cli:
+[2020-08-03 Mon 19:57]
+http://ix.io/
+** A philosophical difference between Haskell and Lisp                        :haskell:lisp:
+[2020-08-03 Mon 19:51]
+https://chrisdone.com/posts/haskell-lisp-philosophy-difference/
+** One line - Dark Mode using CSS                                             :web:
+[2020-08-03 Mon 18:37]
+https://dev.to/akhilarjun/one-line-dark-mode-using-css-24li
+** Memory Ballooning in VirtualBox                                            :misc:
+[2020-08-02 Sun 22:04]
+http://www.virtualbox.org/manual/ch04.html#guestadd-balloon
+** How to Install and Dual-Boot Linux and macOS                               :unix:
+[2020-08-02 Sun 21:30]
+https://www.lifewire.com/dual-boot-linux-and-mac-os-4125733
+** Sélection d’un autre disque de démarrage                                   :apple:
+[2020-08-02 Sun 21:29]
+https://support.apple.com/fr-fr/HT202796
+** Cryptanalytic Attacks on Pseudorandom Number Generators                    :cryptography:
+[2020-08-02 Sun 20:59]
+https://www.schneier.com/academic/archives/1998/01/cryptanalytic_attack.html
+** Recommendation for Random Number Generation Using Deterministic Random Bit Generators :cryptography:
+[2020-08-02 Sun 20:58]
+https://csrc.nist.gov/publications/detail/sp/800-90a/archive/2012-01-23
+** Writing a file system from scratch in Rust                                 :rust:
+[2020-07-28 Mar 21:16]
+https://blog.carlosgaldino.com/writing-a-file-system-from-scratch-in-rust.html
+** Various solutions for HackerRank (bis)                                     :misc:
+[2020-07-28 Mar 21:15]
+https://github.com/RodneyShag/HackerRank_solutions
+** Various solutions for HackerRank                                           :misc:
+[2020-07-28 Mar 21:15]
+https://github.com/srgnk/HackerRank
+** Book list                                                                  :misc:
+[2020-07-28 Mar 21:14]
+https://0x0.st/iwJL.txt
+** Doom Emacs Configuration                                                   :emacs:
+[2020-07-28 Mar 21:14]
+https://tecosaur.github.io/emacs-config/config.html
+** Historical programming-language groups disappearing from Google            :lisp:
+[2020-07-28 Tue 20:55]
+https://lwn.net/Articles/827233/
 ** Type hints cheat sheet                                                     :python:
 [2020-07-28 Tue 10:09]
 https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
