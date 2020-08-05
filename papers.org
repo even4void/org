@@ -1,4 +1,3 @@
-# -*- ispell-dictionary: "en" -*-
 # Broken links are only apparent since most of the PDFs can be retrieved from the USB-64 backup.
 # chl, 2020-07-26
 * [[/Users/chl/Documents/Papers/allen-2016-haskel-progr.pdf][allen-2016-haskel-progr]] - Haskell Programming from First Principles
