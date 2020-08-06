@@ -1,6 +1,12 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** squashing commits with rebase                                              :git:
+[2020-08-06 Thu 09:39]
+http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html
+** Methods of Signing with GPG                                                :cli:
+[2020-08-05 Wed 09:46]
+https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e
 ** A simple and extensible shell script for managing your todo.txt file       :cli:
 [2020-08-04 Tue 16:08]
 https://github.com/todotxt/todo.txt-cli
