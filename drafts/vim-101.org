@@ -1,0 +1,29 @@
+#+TITLE: Vim 101
+
+Former Emacs user here. Trying to uncover the basics of Vim keybindings, especially for selection, movement and action on text objects, when using Doom Emacs (yes, just cheating, I'm still an Emacs guy).
+
+* The very basic stuff
+
+** Motion
+
+   |---------+------------------------------------------------------------|
+   | Key(s)  | Description                                                |
+   |---------+------------------------------------------------------------|
+   | b       | move cursor to previous word                               |
+   | w       | move cursor to next word                                   |
+   | (       | move cursor to previous s-expression                       |
+   | )       | move cursor to next s-expression                           |
+   | 0       | Go to beginning of line                                    |
+   | $       | Go to end of line                                          |
+   | gg      | Go to beginning of buffer                                  |
+   | G       | Go to end of buffer                                        |
+   | :X      | Go to line number X                                        |
+   | f<char> | Go to next occurrence of char on line                      |
+   | F<char> | Go to previous occurrence of char on line                  |
+   | C-u     | Scroll to previous screen                                  |
+   | C-d     | Scroll to next screen                                      |
+   | o       | Toggle between beginning and ending of selection           |
+   | %       | Toggle between beginning and ending of matching delimiters |
+   | {       | Jump to next empty line                                    |
+   | }       | Jump to previous empty line                                |
+   |---------+------------------------------------------------------------|

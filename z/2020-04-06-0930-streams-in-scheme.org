@@ -8,7 +8,7 @@ A nice analogy for streams, or infinite sequences, is the time-varying behavior 
 Streams are a clever idea that allows one to use sequence manipulations without incurring the costs of manipulating sequences as lists. With streams we can achieve the best of both worlds: We can formulate programs elegantly as sequence manipulations, while attaining the efficiency of incremental computation. The basic idea is to arrange to construct a stream only partially, and to pass the partial construction to the program that consumes the stream. If the consumer attempts to access a part of the stream that has not yet been constructed, the stream will automatically construct just enough more of itself to produce the required part, thus preserving the illusion that the entire stream exists.
 #+END_QUOTE
 
-Source: /Structure and interpretation of computer programs/ (Abelson & Sussman), §3.5. [[/Users/chl/Documents/Papers/abelson-1996-struc-inter.pdf][abelson-1996-struc-inter]]
+Source: /Structure and interpretation of computer programs/ (Abelson & Sussman), §3.5. [[/Users/chl/Documents/papers/abelson-1996-struc-inter.pdf][abelson-1996-struc-inter]]
 
 ** Links
 

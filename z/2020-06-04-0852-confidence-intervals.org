@@ -11,4 +11,4 @@ such that $\Pr(X_i = 1) = \Pr(X_i = -1) = 1/2$. Now define $Y_i = e + X_i$
 and suppose that you only observe $Y_l$ and $Y_2$.
 #+END_QUOTE
 
-Source: [[~/Documents/Papers/wasserman-2004-all-statis.pdf][wasserman-2004-all-statis]]
+Source: [[~/Documents/papers/wasserman-2004-all-statis.pdf][wasserman-2004-all-statis]]

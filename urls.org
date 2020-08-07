@@ -1,6 +1,12 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** A handy list of essential key bindings to commands in Emacs                 :emacs:vim:
+ [2020-08-07 Ven 19:11]
+ https://github.com/leeorengel/my-emacs-keybindings
+** From Vim to Emacs+Evil chaotic migration guide                              :emacs:vim:
+ [2020-08-07 Ven 19:00]
+ https://juanjoalvarez.net/es/detail/2014/sep/19/vim-emacsevil-chaotic-migration-guide/
 ** squashing commits with rebase                                              :git:
 [2020-08-06 Thu 09:39]
 http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html

@@ -25,4 +25,4 @@ plot(nomogram(f, fun = plogis, funlabel = "Prob(survived)"))
 plotp(Predict(f, age, sex))
 #+END_EXAMPLE
 
-Source: [[/Users/chl/Documents/Papers/harrell-2015-regres-model-strat.pdf][harrell-2015-regres-model-strat]]
+Source: [[/Users/chl/Documents/papers/harrell-2015-regres-model-strat.pdf][harrell-2015-regres-model-strat]]

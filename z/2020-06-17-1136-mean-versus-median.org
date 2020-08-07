@@ -14,4 +14,4 @@ $$ \mathbb{E}\{(X-\u{x})^2\}/\mathbb{E}\{(X-\bar{x}\} = 1.02, $$
 
 since most of the prediction error comes from the variability of $X$.
 
-Source: [[/Users/chl/Documents/Papers/efron-2020-predic-estim-attrib.pdf][efron-2020-predic-estim-attrib]]
+Source: [[/Users/chl/Documents/papers/efron-2020-predic-estim-attrib.pdf][efron-2020-predic-estim-attrib]]
