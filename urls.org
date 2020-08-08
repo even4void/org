@@ -1,6 +1,9 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Mac keyboard shortcuts                                                      :apple:
+ [2020-08-07 Ven 23:23]
+ https://support.apple.com/en-us/HT201236
 ** A handy list of essential key bindings to commands in Emacs                 :emacs:vim:
  [2020-08-07 Ven 19:11]
  https://github.com/leeorengel/my-emacs-keybindings

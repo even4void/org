@@ -2,28 +2,30 @@
 
 Former Emacs user here. Trying to uncover the basics of Vim keybindings, especially for selection, movement and action on text objects, when using Doom Emacs (yes, just cheating, I'm still an Emacs guy).
 
-* The very basic stuff
+* Basic stuff
 
 ** Motion
 
-   |---------+------------------------------------------------------------|
-   | Key(s)  | Description                                                |
-   |---------+------------------------------------------------------------|
-   | b       | move cursor to previous word                               |
-   | w       | move cursor to next word                                   |
-   | (       | move cursor to previous s-expression                       |
-   | )       | move cursor to next s-expression                           |
-   | 0       | Go to beginning of line                                    |
-   | $       | Go to end of line                                          |
-   | gg      | Go to beginning of buffer                                  |
-   | G       | Go to end of buffer                                        |
-   | :X      | Go to line number X                                        |
-   | f<char> | Go to next occurrence of char on line                      |
-   | F<char> | Go to previous occurrence of char on line                  |
-   | C-u     | Scroll to previous screen                                  |
-   | C-d     | Scroll to next screen                                      |
-   | o       | Toggle between beginning and ending of selection           |
-   | %       | Toggle between beginning and ending of matching delimiters |
-   | {       | Jump to next empty line                                    |
-   | }       | Jump to previous empty line                                |
-   |---------+------------------------------------------------------------|
+Basically, what I usually want to do is: move at the beginning or end of current (physical) line -- in insert mode I use standard Emacs keybinds =C-a= and =C-e=, jump to the previous or next word (but this is generally to yank or delete this word), or to the previous or next blank line (useful in =text-mode= and =prog-mode=). I also like moving between opening and closing brackets or parenthesis. Finally, I find it useful to quickly jump to a specific line number.
+
+|---------+------------------------------------------------------------|
+| Keys    | Description                                                |
+|---------+------------------------------------------------------------|
+| b       | move cursor to previous word                               |
+| w       | move cursor to next word                                   |
+| 0       | Go to beginning of line                                    |
+| $       | Go to end of line                                          |
+| gg      | Go to beginning of buffer                                  |
+| G       | Go to end of buffer                                        |
+| :X      | Go to line number X                                        |
+| f<char> | Go to next occurrence of char on line                      |
+| F<char> | Go to previous occurrence of char on line                  |
+| C-u     | Scroll to previous screen                                  |
+| C-d     | Scroll to next screen                                      |
+| o       | Toggle between beginning and ending of selection           |
+| %       | Toggle between beginning and ending of matching delimiters |
+| (       | Jump to beginning of paragraph                             |
+| )       | Jump to end of paragraph                                   |
+| {       | Jump to next empty line                                    |
+| }       | Jump to previous empty line                                |
+|---------+------------------------------------------------------------|
