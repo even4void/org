@@ -1,5 +1,26 @@
 #+TITLE: scratchpad
 
+* Mathematica
+
+#+NAME: example-table
+  | 1 | 4 |
+  | 2 | 4 |
+  | 3 | 6 |
+  | 4 | 8 |
+  | 7 | 0 |
+
+#+BEGIN_SRC mathematica :var x=example-table :results raw
+  (1+Transpose@x) // TeXForm
+#+END_SRC
+
+#+RESULTS:
+\left(
+\begin{array}{ccccc}
+ 2 & 3 & 4 & 5 & 8 \\
+ 5 & 5 & 7 & 9 & 1 \\
+\end{array}
+\right)
+
 * R Notebook
 
 #+BEGIN_SRC R :results output org
