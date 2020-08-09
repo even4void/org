@@ -12,8 +12,22 @@ I shall put additional references at a later point. \autocite{neil-2018-moder-vi
 
 ** Motion
 
-Basically, what I usually want to do is: move at the beginning or end of current (physical) line -- in insert mode I use standard Emacs keybinds =C-a= and =C-e=, jump to the previous or next word (but this is generally to yank or delete this word), or to the previous or next blank line (useful in =text-mode= and =prog-mode=). I also like moving between opening and closing brackets or parenthesis. Finally, I find it useful to quickly jump to a specific line number.[fn::Here's a footnote]
+Basically, what I usually want to do is: move at the beginning or end of current (physical) line -- in insert mode I use standard Emacs keybinds =C-a= and =C-e=, jump to the previous or next word (but this is generally to yank or delete this word), or to the previous or next blank line (useful in =text-mode= and =prog-mode=). I also like moving between opening and closing brackets or parenthesis. Finally, I find it useful to quickly jump to a specific line number.
 
+So basically, given the following snippet of text, I want to be able to jump quickly to position A, B, C and D, or to select region delimited by either two of these anchors:
+
+#+BEGIN_EXAMPLE
+The quick brown fox jumps over the lazy dog.
+^   ^                          ^           ^
+A   B                          C           D
+#+END_EXAMPLE
+
+There are more complex scenarios but I feel like these are basically the most common jumps: A is the begining of a sentence (or line), A--B corresponds to moving to the beginning of the next word, A--C is a jump to next word that start with a 't', and D is the end of the sentence (or line), which means that A--D is akin to jumping from the beginning to the end of the sentence.
+
+#+NAME:    tab:motion
+#+LABEL:   tab:motion
+#+CAPTION: Basic shortcuts for motion in visual mode
+|---------+------------------------------------------------------------|
 |---------+------------------------------------------------------------|
 | Keys    | Description                                                |
 |---------+------------------------------------------------------------|
@@ -34,6 +48,7 @@ Basically, what I usually want to do is: move at the beginning or end of current
 | )       | Jump to end of paragraph                                   |
 | {       | Jump to next empty line                                    |
 | }       | Jump to previous empty line                                |
+|---------+------------------------------------------------------------|
 |---------+------------------------------------------------------------|
 
 \printbibliography

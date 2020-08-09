@@ -5,7 +5,8 @@
 This document includes some of the core elements I want to use when writing handouts and short notes. Prerequisites are actually quite simple: It should be easy to include bibliographic entries from a general (or local) Bibtex database,\autocite{knuth-1984-texbook} and it should support Latex math notation right away; footnote should be managed by Org while following Tufte's conventions (=\marginpar=).[fn::Like this anonymous inlline footnote.]
 
 * TODOs                                                                        :noexport:
-** TODO Ideally I would like that =\tabular= like environment generated from Org during exporting be converted automagically to =booktabs= format.
+** CANC Ideally I would like that =\tabular= like environment generated from Org during exporting be converted automagically to =booktabs= format.
+CLOSED: [2020-08-09 Dim 19:44]
 ** TODO Figure hyperlink seem to jump to the wrong place (footnote number instead of figure caption).
 
 * Testing general settings
