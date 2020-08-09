@@ -1,0 +1,107 @@
+#+TITLE: Tufte Handout sample document
+#+AUTHOR: chl
+#+DATE: August 2020
+
+This document includes some of the core elements I want to use when writing handouts and short notes. Prerequisites are actually quite simple: It should be easy to include bibliographic entries from a general (or local) Bibtex database,\autocite{knuth-1984-texbook} and it should support Latex math notation right away; footnote should be managed by Org while following Tufte's conventions (=\marginpar=).[fn::Like this anonymous inlline footnote.]
+
+* TODOs                                                                        :noexport:
+** TODO Ideally I would like that =\tabular= like environment generated from Org during exporting be converted automagically to =booktabs= format.
+** TODO Figure hyperlink seem to jump to the wrong place (footnote number instead of figure caption).
+
+* Testing general settings
+
+Although some folks don't like underlined URLs in PDF documents, I like to make it explicit when there's something to click on so I will use a little hack found on [[https://tex.stackexchange.com/a/311205][Stack Overflow]]:
+
+#+BEGIN_EXAMPLE
+\makeatletter
+\patchcmd{\hyper@link@}
+    {{\Hy@tempb}{#4}}
+    {{\Hy@tempb}{\ul{#4}}}
+    {}{}
+\makeatother
+#+END_EXAMPLE
+
+Let's try some quotes. This should come up indented correctly when using the =QUOTE= or =VERSE= environment, but of course we need to beyond a single line to see this in action:
+
+#+BEGIN_QUOTE
+Science is what we understand well enough to explain to a computer. Art is everything else we do. --- Donald Knuth
+#+END_QUOTE
+
+The show must go on. Let's try some French literature now:
+
+#+BEGIN_VERSE
+Il y a toujours, puisque je le dis,
+Puisque je l’affirme,
+Au bout du chagrin
+Une fenêtre ouverte,
+Une fenêtre éclairée,
+Il y a toujours un rêve qui veille,
+Désir à combler, Faim à satisfaire,
+Un cœur généreux,
+Une main tendue, une main ouverte,
+Des yeux attentifs,
+Une vie, la vie à se partager.
+
+  --- Paul Éluard
+#+END_VERSE
+
+* Testing Babel
+
+** Mathematica
+
+Let us use the following sample table and apply a =Transpose=:
+
+#+NAME: example-table
+  | 1 | 4 |
+  | 2 | 4 |
+  | 3 | 6 |
+  | 4 | 8 |
+  | 7 | 0 |
+
+#+BEGIN_SRC mathematica :var x=example-table :results raw :exports both
+  (1+Transpose@x)
+#+END_SRC
+
+#+RESULTS:
+| 2 | 3 | 4 | 5 | 8 |
+| 5 | 5 | 7 | 9 | 1 |
+
+** Python
+
+#+BEGIN_SRC python :results output :exports both
+from random import seed, randint
+seed(101)
+x = sorted([randint(1, 10) for i in range(0, 9)], reverse=True)
+print("Answer = value %s in sequence %s" % (x[2], x))
+#+END_SRC
+
+* Testing math
+
+This is rough copy/pasting of one my z-notes.
+
+The Galton-Watson process is part of branching processes. Let $X$ be a random variable (r.v.) with values in $\mathbb{N}$, and for $k\in \mathbb{N}$, $p_k = \Pr(X=k)$ and $m = \mathbb{E}(X) = \sum_{k=0}^{\infty} kp_k < \infty$. Given $(X_{i,j})_{i,j\in\mathbb{N}}$ a family of r.v. with law $\mathbb{P}_X$, we define the sequence $(Z_n)_{n\in\mathbb{N}}$ as follows:
+
+$$\begin{cases}
+Z_0 = 1 \cr
+\forall n \in \mathbb{N},\: Z_{n+1} = \sum_{i=1}^{Z_n} X_{i,n}
+\end{cases}$$
+
+We also define $\pi_n := \Pr(Z_n=0)$ and $\mathbb{P}_{\text{ext}} := \Pr(\exists n\in\mathbb{N}, Z_n = 0)$.
+
+The above model allows to consider a set of particles (from the same family) which are able to generate other particles. Each particle has a probability $p_k$ of generating $k$ independent particles, and this probability is fixed across generations. The children of the $n$th generation belong to the \(n+1\)th generation. The quantity $Z_n$ represents the number of particles at generation $n$. Each particle $i$ at generation $n$ has $X_{i,n}$ children ($1\le i\le Z_n$), $\pi_n$ is the probability of extinction at generation $n$, and $\mathbb{P}_{\text{ext}}$ is the probability of extinction of the population. If there exists $n$ such that $Z_n = 0$, then the population dies. In other words, the hypotheses of this model are:
+
+- If $p_0 = 0$, then $\forall n\in \mathbb{N}*$, $Z_n \ge 1$ a.s. and $\mathbb{P}_{\text{ext}} = 0$.
+- If $p_0 = 1$, then $\forall n\in \mathbb{N}*$, $Z_n = 0$ a.s. and $\mathbb{P}_{\text{ext}} = 1$.
+
+* Testing figure environment
+
+Again, this should be quite simple to display Fig. [[fig:emacs-screenshot]], but see below.
+
+#+CAPTION:    A little screenshot from another Org document
+#+NAME:       fig:emacs-screenshot
+#+LABEL:      fig:emacs-screenshot
+#+ATTR_HTML:  :width 640px
+#+ATTR_ORG:   :width 100
+[[./_img/fig-emacs-screenshot.png]]
+
+\printbibliography

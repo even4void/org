@@ -1,6 +1,9 @@
 # -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
 
 * Inbox
+** Mathias’s sensible hacker defaults for macOS (dotfiles)                    :cli:
+[2020-08-09 Dim 10:18]
+https://github.com/mathiasbynens/dotfiles
 ** Mac keyboard shortcuts                                                      :apple:
  [2020-08-07 Ven 23:23]
  https://support.apple.com/en-us/HT201236

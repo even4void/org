@@ -12,7 +12,7 @@ I shall put additional references at a later point. \autocite{neil-2018-moder-vi
 
 ** Motion
 
-Basically, what I usually want to do is: move at the beginning or end of current (physical) line -- in insert mode I use standard Emacs keybinds =C-a= and =C-e=, jump to the previous or next word (but this is generally to yank or delete this word), or to the previous or next blank line (useful in =text-mode= and =prog-mode=). I also like moving between opening and closing brackets or parenthesis. Finally, I find it useful to quickly jump to a specific line number.
+Basically, what I usually want to do is: move at the beginning or end of current (physical) line -- in insert mode I use standard Emacs keybinds =C-a= and =C-e=, jump to the previous or next word (but this is generally to yank or delete this word), or to the previous or next blank line (useful in =text-mode= and =prog-mode=). I also like moving between opening and closing brackets or parenthesis. Finally, I find it useful to quickly jump to a specific line number.[fn::Here's a footnote]
 
 |---------+------------------------------------------------------------|
 | Keys    | Description                                                |

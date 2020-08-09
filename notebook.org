@@ -10,16 +10,13 @@
   | 7 | 0 |
 
 #+BEGIN_SRC mathematica :var x=example-table :results raw
-  (1+Transpose@x) // TeXForm
+  (1+Transpose@x)
 #+END_SRC
 
 #+RESULTS:
-\left(
-\begin{array}{ccccc}
- 2 & 3 & 4 & 5 & 8 \\
- 5 & 5 & 7 & 9 & 1 \\
-\end{array}
-\right)
+| 2 | 3 | 4 | 5 | 8 |
+| 5 | 5 | 7 | 9 | 1 |
+
 
 * R Notebook
 
