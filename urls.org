@@ -1,4 +1,7 @@
 * Inbox
+** Lazy Elfeed                                                                :emacs:
+[2020-08-13 Jeu 18:05]
+https://karthinks.com/blog/lazy-elfeed/
 ** GenomicRanges and genomic Rle-objects for Python                           :python:bioinformatics:
 [2020-08-13 Jeu 14:59]
 https://github.com/biocore-ntnu/pyranges
