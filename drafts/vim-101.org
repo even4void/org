@@ -22,7 +22,7 @@ The quick brown fox jumps over the lazy dog.
 A   B                          C           D
 #+END_EXAMPLE
 
-There are more complex scenarios but I feel like these are basically the most common jumps: A is the begining of a sentence (or line), A--B corresponds to moving to the beginning of the next word, A--C is a jump to next word that start with a 't', and D is the end of the sentence (or line), which means that A--D is akin to jumping from the beginning to the end of the sentence.
+There are more complex scenarios but I feel like these are the most common jumps: A is the beginning of a sentence (or line), A--B corresponds to moving to the beginning of the next word, A--C is a jump to next word that start with a 't', and D is the end of the sentence (or line), which means that A--D is akin to jumping from the beginning to the end of the sentence.
 
 #+NAME:    tab:motion
 #+LABEL:   tab:motion
@@ -50,5 +50,28 @@ There are more complex scenarios but I feel like these are basically the most co
 | }       | Jump to previous empty line                                |
 |---------+------------------------------------------------------------|
 |---------+------------------------------------------------------------|
+
+The shortcuts listed in Table [[tab:motion2]] are specific to Doom Emacs and are usually mapped under the =g= or =z= prefix operator. There are also keybindings specific to =prog-mode= like =gd= or =gD=: they are mapped to the corresponding =xref-find-*= functions unless the [[https://emacs-lsp.github.io/lsp-mode/][lsp]] package is installed in which case they are associated to =lsp-find-*= functions.
+
+#+NAME:    tab:motion2
+#+LABEL:   tab:motion2
+#+CAPTION: Motion shortcuts in visual mode for Doom Emacs
+|------+-----------------------------------|
+|------+-----------------------------------|
+| Keys | Description                       |
+|------+-----------------------------------|
+| g;   | Goto last change                  |
+| g^   | First non blank character         |
+| g0   | Jump to beginning of visual line  |
+| gm   | Jump to middle of visual line     |
+| g$   | Jump to end of visual line        |
+| gd   | Go to definition                  |
+| gD   | Go to references                  |
+| zz   | Scroll line to center (of screen) |
+| zb   | Scroll line to bottom             |
+| zt   | Scroll line to top                |
+|------+-----------------------------------|
+|------+-----------------------------------|
+
 
 \printbibliography

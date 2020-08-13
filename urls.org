@@ -1,6 +1,28 @@
-# -*- ispell-dictionary: nil; flycheck-disabled-checkers: (textlint) -*-
-
 * Inbox
+** GenomicRanges and genomic Rle-objects for Python                           :python:bioinformatics:
+[2020-08-13 Jeu 14:59]
+https://github.com/biocore-ntnu/pyranges
+** An optics (lenses, prisms, traversals, etc.) library for Racket            :racket:
+[2020-08-13 Jeu 11:14]
+https://github.com/jackfirth/glass
+** Single Page Applications using Rust                                        :rust:
+[2020-08-13 Jeu 11:12]
+http://www.sheshbabu.com/posts/rust-wasm-yew-single-page-application/
+** Make the less Command More Powerful                                        :cli:
+[2020-08-13 Jeu 11:12]
+https://www.topbug.net/blog/2016/09/27/make-gnu-less-more-powerful/
+** Building a BASIC Interpreter, '80s Style, Part 2                           :compiler:
+[2020-08-13 Jeu 11:12]
+https://able.bio/kerrishotts/building-a-basic-interpreter-80s-style-part-2--e91250f1
+** Let's Build a Compiler, by Jack Crenshaw                                   :compiler:
+[2020-08-13 Jeu 11:09]
+https://compilers.iecc.com/crenshaw/
+** The Law Of Least Surprise Lattice For Emacs                                :emacs:
+[2020-08-13 Jeu 08:36]
+https://github.com/grettke/lolsmacs
+** Good Morning, Your Mac Keeps A Log Of All Your Downloads                   :apple:
+[2020-08-13 Jeu 08:34]
+https://www.macgasm.net/news/tips/good-morning-your-mac-keeps-a-log-of-all-your-downloads/
 ** Les fiches à bébert                                                        :tex:
 [2020-08-09 Dim 18:16]
 http://www.lesfichesabebert.fr/index.html
@@ -2059,7 +2081,7 @@ https://github.com/textlint-rule/textlint-rule-no-dead-link
    :END:
  [2020-01-06 Lun 11:46]
  https://github.com/weinholt/industria
-** Algebric data types and unordered effects                                   :cattheo:
+** Algebric data types and unordered effects                                   :haskell:
    :PROPERTIES:
    :ID:       08EDD394-A676-4550-96D3-443B2F87640E
    :END:
