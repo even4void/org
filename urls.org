@@ -1,4 +1,22 @@
 * Inbox
+** Emacs configuration with Org Mode                                          :emacs:
+[2020-08-14 Ven 21:22]
+https://github.com/andreyorst/dotfiles/tree/master/.config/emacs
+** JuliaDB                                                                    :julia:
+[2020-08-14 Ven 21:14]
+https://juliadata.github.io/JuliaDB.jl/latest/
+** Parallel Seam Carving                                                      :algorithms:
+[2020-08-14 Ven 21:13]
+https://shwestrick.github.io/2020/07/29/seam-carve.html
+** Finger Trees                                                               :algorithms:
+[2020-08-14 Ven 21:13]
+https://github.com/clojure/data.finger-tree
+** Office Drama on macOS                                                      :apple:
+[2020-08-14 Ven 21:11]
+https://objective-see.com/blog/blog_0x4B.html
+** Modern C for C++ Peeps                                                     :clang:
+[2020-08-14 Ven 21:08]
+https://floooh.github.io/2019/09/27/modern-c-for-cpp-peeps.html
 ** Lazy Elfeed                                                                :emacs:
 [2020-08-13 Jeu 18:05]
 https://karthinks.com/blog/lazy-elfeed/

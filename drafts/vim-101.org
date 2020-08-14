@@ -10,6 +10,16 @@ I shall put additional references at a later point. \autocite{neil-2018-moder-vi
 
 * Basic stuff
 
+** Selection
+
+Let us consider the following example:
+
+#+BEGIN_EXAMPLE
+The quick brown fox jumps over the lazy dog.
+#+END_EXAMPLE
+
+To select the first word in the above example, =yw= can be used when the cursor is set to the first character. If this is not the case, a moving at the beginning of the visual line (=0=) will suffice (see next section). To select the whole line, =yy= or =y$= could be used instead. In these two cases, the instruction for yanking, =y=, can be replaced with =d=, to delete, or =c=, to edit in place. On any given character, =r= allow to switch to replace mode and to edit the character under the cursor. Unlike Emacs, the cursor is always positioned on a character, and not in between.
+
 ** Motion
 
 Basically, what I usually want to do is: move at the beginning or end of current (physical) line -- in insert mode I use standard Emacs keybinds =C-a= and =C-e=, jump to the previous or next word (but this is generally to yank or delete this word), or to the previous or next blank line (useful in =text-mode= and =prog-mode=). I also like moving between opening and closing brackets or parenthesis. Finally, I find it useful to quickly jump to a specific line number.
