@@ -1,363 +1,350 @@
 * Feeds                                                                        :elfeed:
 ** Mute                                                                       :mute:
-*** [[https://aliquote.org/index.xml][aliquot]]
-*** [[https://annoying.technology/index.xml][Annoying Technology]]
-*** [[https://danielmiessler.com/feed/][Daniel Miessler]]
-*** [[https://daringfireball.net/feeds/main][Daring Fireball]]
-*** [[http://www.madore.org/~david/weblog/weblog.rss][David Madore's WebLog]]
-*** [[https://inessential.com/xml/rss.xml][inessential.com]]
-*** [[https://www.baty.blog/feed.rss][Jack Baty's Coping Mechanism]]
-*** [[https://www.baty.net/index.xml][Jack Baty on Jack Baty's weblog]]
-*** [[http://feeds.kottke.org/main][kottke.org]]
-*** [[https://lwn.net/headlines/newrss][LWN.net]]
-*** [[https://www.manton.org/feed.xml][Manton Reece]]
-*** [[https://mjtsai.com/blog/feed/][Michael Tsai]]
-*** [[http://planet.lisp.org/rss20.xml][Planet Lisp]]
-*** [[https://groups.google.com/forum/feed/r-sig-mac/topics/rss.xml?num=15][R Special Interest Group on Mac Development]]
-*** [[https://rweekly.org/atom.xml][RWeekly.org - Blogs to Learn R from the Community]]
-*** [[https://serokell.io/blog.rss.xml][Serokell Blog]]
-*** [[https://multithreaded.stitchfix.com/feed.xml][Stitch Fix Technology – Multithreaded]]
-** Dead?                                                                      :noshow:
-*** [[https://www.0xroy.me/feed.xml][0xroy’s notes]]
-*** [[http://amitp.blogspot.com/feeds/posts/default][Amit's Thoughts]]
+*** [[https://aliquote.org/index.xml][aliquot]]                             :aliquote:
+*** [[https://danielmiessler.com/feed/][Daniel Miessler]]                                                          :misc:
+*** [[https://daringfireball.net/feeds/main][Daring Fireball]]                                                          :generative:
+*** [[http://www.madore.org/~david/weblog/weblog.rss][David Madore's WebLog]]                                                    :misc:
+*** [[https://inessential.com/xml/rss.xml][inessential.com]]	     :misc:
+*** [[https://www.baty.net/index.xml][Jack Baty on Jack Baty's weblog]]                                          :apple:misc:
+*** [[https://www.baty.blog/feed.rss][Jack Baty's Coping Mechanism]]                                             :apple:misc:
+*** [[https://jlelse.blog/index.xml][jlelse's Blog]]                                                            :misc:
+*** [[http://feeds.kottke.org/main][kottke.org]]                                                               :news:
+*** [[https://lwn.net/headlines/newrss][LWN.net]]                                                                  :unix:news:
+*** [[https://www.manton.org/feed.xml][Manton Reece]]                                                             :news:
+*** [[https://martinfowler.com/feed.atom][Martin Fowler]]                                                            :misc:
+*** [[https://mjtsai.com/blog/feed/][Michael Tsai]]                                                             :news:apple:
+*** [[http://planet.lisp.org/rss20.xml][Planet Lisp]]                                                              :lisp:news:
+*** [[https://serokell.io/blog.rss.xml][Serokell Blog]]                                                            :haskell:news:
+*** [[https://simonwillison.net/atom/everything/][Simon Willison's Weblog]]                                                  :sql:
+*** [[https://multithreaded.stitchfix.com/feed.xml][Stitch Fix Technology – Multithreaded]]                                    :misc:
+*** [[http://stratechery.com/feed/][Stratechery by Ben Thompson]]                                              :news:
+*** [[https://blog.acolyer.org/feed/][the morning paper]]                                                        :news:
 ** Dev                                                                        :dev:
 *** [[https://etc.ruricolist.com/feed/][&c.]]                                                                      :lisp:
-*** [[https://alternativebit.fr/posts/index.xml][AlternativeBit]]                                                           :haskell:
-*** [[https://rushter.com/blog/feed/][Artem Golubin]]                                                            :python:
-*** [[https://bitemyapp.com/rss.xml][bitemyapp.com]]                                                            :haskell:
-*** [[https://lexi-lambda.github.io/feeds/all.rss.xml][Alexis King's Blog: Alexis King's Blog]]                                   :haskell:racket:
 *** [[http://funcall.blogspot.com/feeds/posts/default?alt=rss][Abstract Heresies]]                                                        :lisp:
+*** [[https://lexi-lambda.github.io/feeds/all.rss.xml][Alexis King's Blog: Alexis King's Blog]]                                   :haskell:racket:
+*** [[https://alternativebit.fr/posts/index.xml][AlternativeBit]]                                                           :haskell:
 *** [[https://blog.klipse.tech//feed.xml][An interactive journey into functional programming ]]                      :clojure:
+*** [[https://rushter.com/blog/feed/][Artem Golubin]]                                                            :python:
+*** [[https://brandur.org/articles.atom][Articles - brandur.org]]                                                   :rust:postgres:
+*** [[https://beepb00p.xyz/rss.xml][beepb00p]]                                                                 :python:emacs:
+*** [[https://milesmcbain.xyz/rss/][Before I Sleep]]                                                           :rstats:
+*** [[http://bitemyapp.com/atom.xml][bitemyapp]]                                                                :haskell:
+*** [[https://bitemyapp.com/rss.xml][bitemyapp.com]]                                                            :haskell:
+*** [[https://byorgey.wordpress.com/feed/][blog :: Brent -> [String]]]                                                :haskell:competitive:
+*** [[https://bor0.wordpress.com/feed/][bor0's blog]]                                                              :lisp:racket:
+*** [[https://skerritt.blog/rss/][Brandon's Blog]]                                                           :python:competitive:
+*** [[https://blog.carlosgaldino.com/atom.xml][carlosgaldino]]                                                            :rust:algorithms:
+*** [[http://chris.eidhof.nl//index.xml][Chris Eidhof]]                                                             :apple:
+*** [[https://chris-martin.org/rss.xml][Chris Martin]]                                                             :haskell:
+*** [[https://chrispenner.ca/atom.xml][Chris Penner]]                                                             :haskell:python:
 *** [[http://40ants.com/lisp-project-of-the-day/rss.xml][Common Lisp Project of the Day]]                                           :lisp:
 *** [[https://lisptips.com/rss][Common Lisp Tips]]                                                         :lisp:
 *** [[https://lispnews.wordpress.com/feed/][Common Lisp Weekly News]]                                                  :lisp:news:
 *** [[https://lemire.me/blog/feed/][Daniel Lemire's blog]]                                                     :compiler:clang:
+*** [[https://www.darkchestnut.com/feed.xml][Dark Chestnut]]                                                            :lisp:
 *** [[http://stuartsierra.com/feed][Digital Digressions by Stuart Sierra]]                                     :clojure:
+*** [[https://dmerej.info/blog/index.xml][dmerej's blog]]                                                            :python:
+*** [[http://can3p.github.io/atom.xml][Dmitry Petrov]]                                                            :lisp:
 *** [[https://eli.thegreenplace.net/feeds/all.atom.xml][Eli Bendersky's website]]                                                  :go:python:clojure:
+*** [[https://blog.regehr.org/feed][Embedded in Academia]]                                                     :compiler:clang:
+*** [[http://endlessparentheses.com/atom.xml][Endless Parentheses]]                                                      :emacs:clojure:
+*** [[http://blog.yossarian.net/feed.xml][ENOSUCHBLOG]]                                                              :python:rust:
 *** [[http://www.evanmiller.org/news.xml][Evan Miller’s News]]                                                       :compiler:
+*** [[https://ericlippert.com/feed/][Fabulous adventures in coding]]                                            :gamedev:csharp:
+*** [[https://people.gnome.org/~federico/blog/feeds/atom.xml][Federico's Blog]]                                                          :unix:rust:
+*** [[https://blog.filippo.io/rss/][Filippo.io]]                                                               :go:
+*** [[https://flowing.systems/feed.xml][flowing → systems]]                                                        :idris:
+*** [[http://fmnt.info/feed/atom.xml][Francesco Montanari]]                                                      :racket:scheme:
+*** [[https://www.geekabyte.io/feeds/posts/default][geekAbyte]]                                                                :rust:
+*** [[https://shapeshed.com/atom.xml][George Ornbo]]                                                             :unix:go:
+*** [[https://gregoryszorc.com/blog/feed][Gregory Szorc's Digital Home]]                                             :rust:python:
+*** [[http://www.lihaoyi.com/feed][Haoyi's Programming Blog]]                                                 :scala:
+*** [[http://www.philipzucker.com/feed/][Hey There Buddo!]]                                                         :python:ocaml:julia:
+*** [[https://bphogan.com/index.xml][Home on bphogan.com]]                                                      :clojure:misc:
+*** [[https://inconvergent.net/atom.xml][inconvergent]]                                                             :generative:dataviz:lisp:
+*** [[https://safiire.github.io/atom.xml][Irken Kitties]]                                                            :haskell:algorithms:competitive:
+*** [[https://jcarroll.com.au/index.xml][Irregularly Scheduled Programming]]                                        :rstats:
+*** [[http://jakob.space/feed.xml][Jakob's Personal Webpage]]                                                 :lisp:scheme:competitive:
+*** [[https://gustedt.wordpress.com/feed/][Jens Gustedt's Blog]]                                                      :clang:
+*** [[http://zerolib.com/feed.xml][John Jacobsen]]                                                            :lisp:clojure:generative:
+*** [[https://blog.josephmorag.com/index.xml][Joseph Morag]]                                                             :compiler:clang:
+*** [[https://www.snellman.net/blog/rss-index.xml][Juho Snellman's Weblog]]                                                   :lisp:clang:misc:
+*** [[https://julien.danjou.info/rss/][Julien Danjou]]                                                            :python:postgres:
+*** [[https://lambdaisland.com/feeds/blog.atom][Lambda Island]]                                                            :clojure:
+*** [[https://alhassy.github.io/feed.xml][Life & Computing Science]]                                                 :emacs:lisp:
 *** [[http://lisp-univ-etc.blogspot.com/feeds/posts/default/-/en][Lisp, the Universe and Everything]]                                        :lisp:
+*** [[https://lisper.in/feed.xml][Lisper.in]]                                                                :lisp:
+*** [[http://www.lispology.com/rss?JHE+3][Lispology]]                                                                :lisp:
+*** [[http://ivory.idyll.org/blog/feeds/all.rss.xml][Living in an Ivory Basement]]                                              :python:
+*** [[http://newartisans.com/rss.xml][Lost in Technopolis]]                                                      :haskell:
+*** [[https://lukeplant.me.uk/blog/atom/index.xml][Luke Plant's home page]]                                                   :elm:python:
+*** [[https://blog.poisson.chat/rss.xml][Lysxia's blog]]                                                            :haskell:clang:
+*** [[https://macwright.org/rss.xml][macwright.com]]                                                            :javascript:
+*** [[http://blog.markwatson.com/feeds/posts/default][Mark Watson's artificial intelligence and machine learning blog]]          :lisp:scheme:clojure:
+*** [[https://martinheinz.dev/rss/][Martin Heinz's Blog]]                                                      :python:postgres:
+*** [[https://martin-thoma.com/feeds/index.xml][Martin Thoma]]                                                             :python:
+*** [[http://metaredux.com/feed.xml][Meta Redux]]                                                               :emacs:ruby:clojure:
+*** [[http://adventures.michaelfbryan.com/index.xml][Michael-F-Bryan]]                                                          :rust:
+*** [[https://morgenthum.dev/rss.xml][morgenthum.dev - software development and architecture]]                   :haskell:
+*** [[https://www.mortens.dev/feeds/all.atom.xml][Morten's Dev]]                                                             :emacs:clang:
+*** [[https://nedbatchelder.com/blog/rss.xml][Ned Batchelder's blog]]                                                    :python:
+*** [[http://nullprogram.com/feed][null program]]                                                             :emacs:python:
 *** [[https://oleb.net/blog/atom.xml][Ole Begemann]]                                                             :apple:
+*** [[https://www.parsonsmatt.org/feed.xml][Overcoming Software]]                                                      :haskell:misc:
+*** [[https://owoga.com/rss/][Owoga]]                                                                    :misc:
+*** [[https://www.pvk.ca/atom.xml][Paul Khuong: some Lisp]]                                                   :lisp:
+*** [[https://travisdowns.github.io/feed.xml][Performance Matters]]                                                      :compiler:clang:
+*** [[https://phaazon.net/blog/feed][phaazon.net blog]]                                                         :rust:haskell:vim:
+*** [[https://pointersgonewild.com/feed/][Pointers Gone Wild]]                                                       :compiler:
+*** [[https://0x0f0f0f.github.io/posts/index.xml][Posts on 0x0f0f0f]]                                                        :clang:ocaml:scheme:
+*** [[https://blog.nelhage.com/atom.xml][Posts on Made of Bugs]]                                                    :misc:
+*** [[https://www.greghendershott.com/feeds/all.rss.xml][Posts tagged "all"]]                                                       :racket:emacs:
+*** [[http://programmingpraxis.com/feed/][Programming Praxis]]                                                       :scheme:awk:algorithms:
+*** [[https://www.nayuki.io/rss20.xml][Project Nayuki]]                                                           :algorithms:clojure:python:
+*** [[https://racket-news.com/feeds/all.rss.xml][Racket News: Racket News]]                                                 :racket:news:
+*** [[https://reasonablypolymorphic.com/feed.rss][Reasonably Polymorphic]]                                                   :haskell:
+*** [[https://ro-che.info/articles/rss.xml][Roman Cheplyaka]]                                                          :haskell:rstats:bioinformatics:
+*** [[https://sagegerard.com/index.rss.xml][SageGerard.com]]                                                           :racket:
+*** [[http://blog.fogus.me/feed/][Send More Paramedics]]                                                     :clojure:javascript:
+*** [[http://gigasquidsoftware.com/atom.xml][Squid's Blog]]                                                             :clojure:
 *** [[http://www.stephendiehl.com/feed.rss][Stephen Diehl]]                                                            :haskell:
 *** [[http://feeds2.feedburner.com/stevelosh][Steve Losh]]                                                               :lisp:vim:
-*** [[https://phaazon.net/blog/feed][phaazon.net blog]]                                                         :rust:haskell:vim:
-*** [[http://gigasquidsoftware.com/atom.xml][Squid's Blog]]                                                             :clojure:
-*** [[https://racket-news.com/feeds/all.rss.xml][Racket News: Racket News]]                                                 :racket:news:
+*** [[https://stjepang.github.io/feed.xml][Stjepan’s blog]]                                                           :rust:
+*** [[https://www.strchr.com/?feed=/][strchr.com updates]]                                                       :misc:
+*** [[http://neugierig.org/software/blog/atom.xml][Tech Notes]]                                                               :javascript:typescript:
+*** [[http://technomancy.us/feed/atom.xml][Technomancy]]                                                              :emacs:clojure:
+*** [[https://tapoueh.org/index.xml][The Art of PostgreSQL]]                                                    :postgres:
+*** [[https://alex-hhh.github.io/feeds/all.rss.xml][The Blog of Alex Harsányi: The Blog of Alex Harsányi]]                     :racket:
+*** [[https://floooh.github.com/feed.xml][The Brain Dump]]                                                           :clang:
+*** [[http://blog.cleancoder.com/atom.xml][The Clean Code Blog]]                                                      :clojure:
+*** [[http://calculist.org/feed.xml][The Little Calculist]]                                                     :rust:
+*** [[https://blog.plover.com/index.rss][The Universe of Discourse]]                                                :haskell:recreational:
+*** [[https://thomashoneyman.com/index.xml][Thomas Honeyman]]                                                          :haskell:purescript:infosec:
+*** [[https://thorstenball.com/atom.xml][Thorsten Ball]]                                                            :go:vim:
+*** [[https://www.travishinkelman.com/index.xml][Travis Hinkelman]]                                                         :scheme:racket:rstats:
+*** [[http://troubles.md/index.xml][troubles.md]]                                                              :rust:
+*** [[https://tychoish.com/index.xml][tychoish]]                                                                 :lisp:emacs:
+*** [[https://jrms-random-blog.blogspot.com/feeds/posts/default][Unsyndicated]]                                                             :misc:lisp:
+*** [[http://blog.vmchale.com/atom][Vanessa McHale's blog]]                                                    :haskell:idris:
+*** [[https://blog.veitheller.de/feed.rss][Veit's Blog]]                                                              :scheme:
+*** [[https://www.jimhester.com/post/index.xml][Videos / Posts on Jim Hester]]                                             :rstats:
+*** [[https://weinholt.se/feed.xml][weinholt.se]]                                                              :scheme:
+*** [[https://williamyaoh.com/feed.atom][William Yao's Haskell Musings]]                                            :haskell:
+*** [[http://www.linusakesson.net/rssfeed.php][www.linusakesson.net]]                                                     :compiler:
+*** [[https://yarmo.eu/rss/all][Yarmo's blog and notes]]                                                   :misc:
+*** [[https://lispblog.xach.com/rss][Zach Beane Common Lisp]]                                                   :lisp:
+*** [[https://tymoon.eu/api/reader/atom][妖怪世捨て人]]                                                             :gamedev:
 ** Editors                                                                    :editors:
 *** [[https://writequit.org/posts.xml][(:wq - Feed)]]                                                             :emacs:git:
 *** [[http://xenodium.com/rss.xml][Alvaro Ramirez's notes]]                                                   :emacs:
 *** [[https://andreyorst.gitlab.io/feed.xml][Andrey Orst]]                                                              :emacs:
 *** [[https://sanctum.geek.nz/arabesque/feed/][Arabesque]]                                                                :vim:
 *** [[http://www.cachestocaches.com/feed/][CachesToCaches]]                                                           :emacs:
+*** [[https://blog.binchen.org/rss.xml][Chen's blog]]                                                              :emacs:
+*** [[https://blog.kdheepak.com/rss.xml][Dheepak Krishnamurthy's Blog]]                                             :vim:apple:
 *** [[https://www.gonsie.com/blorg/feed.xml][Elsa Gonsiorowski]]                                                        :emacs:
 *** [[http://sachachua.com/blog/category/emacs/feed/][Emacs - Sacha Chua]]                                                       :emacs:news:
 *** [[https://emacsair.me/feed.xml][Emacsair]]                                                                 :emacs:
+*** [[http://www.howardism.org/index.xml][Howardism]]                                                                :emacs:
+*** [[http://irreal.org/blog/?feed=rss2][Irreal]]                                                                   :emacs:apple:
+*** [[https://jherrlin.github.io/index.xml][jherrlin]]                                                                 :emacs:
+*** [[https://manuel-uberti.github.io/feed.xml][Manuel Uberti]]                                                            :emacs:
+*** [[https://ekaschalk.github.io/index.xml][Modern Emacs on Modern Emacs]]                                             :emacs:
+*** [[https://vfoley.xyz/index.xml][Occasionally sane]]                                                        :misc:
+*** [[https://ambrevar.xyz/atom.xml][Pierre Neidhardt's homepage]]                                              :emacs:
+*** [[http://pragmaticemacs.com/feed/][Pragmatic Emacs]]                                                          :emacs:
+*** [[https://joshrollinswrites.com/index.xml][The Art of Not Asking Why]]                                                :emacs:org:
 *** [[https://with-emacs.com/rss.xml][with-emacs]]                                                               :emacs:
+*** [[https://christiantietze.de/feed.atom][Worklog of Christian Tietze]]                                              :emacs:apple:
+*** [[http://www.mycpu.org/feed.xml][Yet Another Technical Blog]]                                               :emacs:clang:compiler:
 ** Maths                                                                      :maths:
 *** [[https://wiseodd.github.io/feed.xml][Agustinus Kristiadi's Blog]]                                               :maths:
 *** [[https://kaygun.tumblr.com/rss][Atabey Kaygun]]                                                            :lisp:clojure:
-*** [[https://gilkalai.wordpress.com/feed/][Combinatorics and more]]
-*** [[https://golem.ph.utexas.edu/category/atom10.xml][The n-Category Café]]
+*** [[https://gilkalai.wordpress.com/feed/][Combinatorics and more]]                                                   :misc:
+*** [[http://feeds.feedburner.com/TheEndeavour][John D. Cook]]                                                             :misc:
+*** [[https://jeremykun.com/feed/][Math ∩ Programming]]                                                       :python:misc:
+*** [[https://mattbaker.blog/feed/][Matt Baker's Math Blog]]                                                   :misc:
+*** [[https://www.mostlymaths.net/feeds/posts/default][Mostly Maths]]                                                             :diary:
+*** [[https://nhigham.com/feed/][Nick Higham]]                                                              :misc:
 *** [[http://blog.stephenwolfram.com/feed/][Stephen Wolfram Blog]]                                                     :mathematica:
+*** [[https://golem.ph.utexas.edu/category/atom10.xml][The n-Category Café]]                                                      :misc:
+*** [[https://terrytao.wordpress.com/feed/][What's new]]                                                               :misc:
 ** Stats                                                                      :stats:
+*** [[https://lpalmieri.com/index.xml][A (machine) learning journal]]                                             :ml:
 *** [[https://andrewpwheeler.wordpress.com/feed/][Andrew Wheeler]]                                                           :econ:python:rstats:
 *** [[https://machinelearning.apple.com/feed.xml][Apple Machine Learning Journal]]                                           :ml:
-*** [[https://lpalmieri.com/index.xml][A (machine) learning journal]]                                             :ml:
 *** [[https://notstatschat.rbind.io/index.xml][Biased and Inefficient]]                                                   :rstats:survey:
+*** [[https://liorpachter.wordpress.com/feed/][Bits of DNA]]                                                              :bioinformatics:
 *** [[https://kieranhealy.org/blog/index.xml][Blogs on kieranhealy.org]]                                                 :rstats:econ:
+*** [[https://chris-said.io/atom.xml][Chris Said]]                                                               :econ:
+*** [[http://codeandculture.wordpress.com/feed/][Code and Culture]]                                                         :stata:econ:
 *** [[http://darrenjw.wordpress.com/feed/][Darren Wilkinson's blog]]                                                  :scala:bayesian:
+*** [[https://dataorigami.net/blogs/napkin-folding.atom][DataOrigami - Napkin Folding]]                                             :python:ml:
 *** [[http://www.brodrigues.co/index.xml][Econometrics and Free Software]]                                           :econ:
 *** [[https://freakonometrics.hypotheses.org/feed][Freakonometrics]]                                                          :rstats:
 *** [[http://freerangestats.info/feed.xml][free range statistics]]                                                    :rstats:econ:
-*** [[https://reconlearn.org/index.xml][reconlearn.org]]                                                           :ml:
-*** [[https://rud.is/b/feed/][rud.is]]                                                                   :rstats:
-*** [[http://nsaunders.wordpress.com/feed/][What You're Doing Is Rather Desperate]]                                    :bioinformatics:
-*** [[http://radfordneal.wordpress.com/feed/][Radford Neal's blog]]                                                      :rstats:
-*** [[http://fharrell.com/index.xml][Statistical Thinking on Statistical Thinking]]                             :rstats:bayesian:
-*** [[http://www.cs.rice.edu/~ogilvie/feed.xml][Species and Gene Evolution]]                                               :bioinformatics:
+*** [[http://fanhuan.github.io/en/feed/][Huan Fan]]                                                                 :bioinformatics:python:
+*** [[https://blogs.princeton.edu/imabandit/feed/][I’m a bandit]]                                                             :ml:
+*** [[http://www.johnmyleswhite.com/feed/][John Myles White]]                                                         :julia:rstats:
+*** [[https://hunch.net/?feed=rss2][Machine Learning (Theory)]]                                                :ml:
+*** [[https://blog.ml.cmu.edu/feed/][Machine Learning Blog | ML@CMU | Carnegie Mellon University]]              :ml:
+*** [[https://francisbach.com/feed/][Machine Learning Research Blog]]                                           :ml:
+*** [[http://yaroslavvb.blogspot.com/atom.xml][Machine Learning, etc]]                                                    :ml:
 *** [[https://mathematicaforprediction.wordpress.com/feed/][Mathematica for prediction algorithms]]                                    :mathematica:rstats:
+*** [[https://vuorre.netlify.app/index.xml][Matti Vuorre]]                                                             :misc:
+*** [[https://feeds.feedburner.com/exarg][Open Source is Everything]]                                                :misc:
+*** [[https://andrewgoldstone.com/post/index.xml][Posts on Andrew Goldstone]]                                                :rstats:
+*** [[https://www.monicaalexander.com/posts/index.xml][Posts on Monica Alexander]]                                                :rstats:bayesian:
+*** [[http://fharrell.com/post/index.xml][Posts on Statistical Thinking]]                                            :rstats:bayesian:
+*** [[https://www.allendowney.com/blog/feed/][Probably Overthinking It]]                                                 :python:bayesian:
+*** [[http://sumsar.net/atom.xml][Publishable Stuff]]                                                        :bayesian:
+*** [[https://f.briatte.org/r/rss][R / Notes]]                                                                :rstats:
+*** [[https://feeds.feedburner.com/RPsychologist][R Psychologist RSS feed (last 10 posts)]]                                  :rstats:
+*** [[https://groups.google.com/forum/feed/r-sig-mac/topics/rss.xml?num=15][R Special Interest Group on Mac Development]]                              :rstats:apple:
+*** [[https://ryxcommar.com/feed/][r y x, r]]                                                                 :python:ml:
+*** [[http://radfordneal.wordpress.com/feed/][Radford Neal's blog]]                                                      :rstats:
+*** [[https://reconlearn.org/index.xml][reconlearn.org]]                                                           :ml:
+*** [[http://feeds.feedburner.com/ProfessorRobJHyndman][Rob J Hyndman]]                                                            :rstats:
+*** [[https://rud.is/b/feed/][rud.is]]                                                                   :rstats:
+*** [[https://rweekly.org/atom.xml][RWeekly.org - Blogs to Learn R from the Community]]                        :rstats:news:
+*** [[https://simplystatistics.org/index.xml][Simply Statistics]]                                                        :misc:
+*** [[http://www.cs.rice.edu/~ogilvie/feed.xml][Species and Gene Evolution]]                                               :bioinformatics:
+*** [[https://statisticalhorizons.com/feed][Statistical Horizons]]                                                     :news:
+*** [[http://fharrell.com/index.xml][Statistical Thinking on Statistical Thinking]]                             :rstats:bayesian:
+*** [[http://feeds.feedburner.com/TheGrandLocus?format=xml][The Grand Locus]]                                                          :misc:algorithms:
+*** [[https://www.refsmmat.com/rss.xml][the refsmmat report - All posts]]                                          :rstats:
+*** [[http://blog.stata.com/feed/][The Stata Blog]]                                                           :stata:news:
+*** [[https://mailund.github.io/r-programmer-blog/index.xml][The Working R Programmer]]                                                 :rstats:
+*** [[http://bactra.org/weblog/index.rss][Three-Toed Sloth]]                                                         :rstats:
+*** [[http://tomasp.net/rss.xml][Tomas Petricek - Languages and tools, open-source, ...]]                   :rstats:dataviz:journalism:
+*** [[https://quinnj.home.blog/feed/][Traitement de Données]]                                                    :julia:
+*** [[http://varianceexplained.org/feed.xml][Variance Explained]]                                                       :rstats:
+*** [[http://nsaunders.wordpress.com/feed/][What You're Doing Is Rather Desperate]]                                    :bioinformatics:
 ** Tech                                                                       :tech:
-*** [[https://leancrew.com/all-this/feed/][And now it’s all this]]                                                    :apple:
-*** [[https://vxlabs.com/index.xml][vxlabs]]                                                                   :emacs:
 *** [[https://alistapart.com/main/feed/][A List Apart: The Full Feed]]                                              :news:
 *** [[https://alexschroeder.ch/wiki/feed/full/][Alex Schroeder: Diary]]                                                    :diary:
-*** [[http://third-bit.com/feed.xml][The Third Bit]]
+*** [[https://leancrew.com/all-this/feed/][And now it’s all this]]                                                    :apple:
+*** [[https://annoying.technology/index.xml][Annoying Technology]]                                                      :apple:
+*** [[https://begriffs.com/atom.xml][begriffs.com]]                                                             :sql:vim:
+*** [[https://werd.io/content/posts/?_t=rss][Ben Werdmüller]]                                                           :misc:
+*** [[https://ma.ttias.be/blog/index.xml][Blog archive by Mattias Geniar on ma.ttias.be]]                            :unix:php:
+*** [[https://blog.einval.eu/posts/index.xml][Blog on EINVAL: Valid solutions for invalid problems]]                     :emacs:unix:
+*** [[https://www.hillelwayne.com/post/index.xml][Blog on Hillel Wayne]]                                                     :misc:
+*** [[http://brendandawes.com/blog/feed/][Brendan Dawes Blog Feed]]                                                  :misc:
 *** [[http://brett.trpstra.net/brettterpstra][BrettTerpstra.com - The Mad Science of Brett Terpstra]]                    :apple:
 *** [[https://www.rousette.org.uk/index.xml][but she's a girl...]]                                                      :org:
 *** [[https://bzg.fr/index.xml][bzg]]                                                                      :news:
-*** [[https://scriptingosx.com/feed/][Scripting OS X]]                                                           :apple:
-*** [[https://thedorkweb.substack.com/feed/][The Dork Web]]                                                             :news:
+*** [[https://cestlaz.github.io/rss.xml][C'est la Z]]                                                               :misc:emacs:
+*** [[http://cxhernandez.com/feed.xml][Carlos Xavier Hernández]]                                                  :dataviz:
+*** [[https://changelog.com/posts/feed][Changelog]]                                                                :news:
+*** [[http://www.cpdiehl.org/atom.xml][Chris Diehl]]                                                              :misc:
+*** [[https://v5.chriskrycho.com/feed.xml][Chris Krycho]]                                                             :misc:
+*** [[http://corte.si/rss.xml][corte.si]]                                                                 :infosec:
+*** [[https://dan.lousqui.fr/all.rss.xml][Dan Lousqui]]                                                              :infosec:
+*** [[https://danluu.com/atom.xml][Dan Luu]]                                                                  :unix:misc:
+*** [[http://www.defmacro.org/feed.xml][defmacro]]                                                                 :rstats:lisp:
+*** [[https://sivers.org/en.atom][Derek Sivers]]                                                             :misc:
+*** [[https://www.spinellis.gr/blog/dds-blog-rss.xml][Diomidis D. Spinellis Web Log]]                                            :unix:
+*** [[https://feeds.feedburner.com/dcurtis][Dustin Curtis]]                                                            :apple:
+*** [[http://dustycloud.org/blog/index.xml][DustyCloud Brainstorms]]                                                   :gamedev:
 *** [[http://eagereyes.org/rss.xml][eagereyes]]                                                                :dataviz:
+*** [[https://www.evanjones.ca/index.rss][Evan Jones - Software Engineer | Computer Scientist]]                      :misc:
+*** [[https://fangpenlin.com/feed.xml][Fang-Pen's coding note]]                                                   :misc:
+*** [[https://www.sacrideo.us/rss/][Fastidious Elegance]]                                                      :misc:
+*** [[http://stefanoborini.com/feed.xml][Fly, Crash, Raise Exception]]                                              :clang:python:
+*** [[https://tfeb.org/fragments/feeds/all.rss.xml][Fragments: Fragments]]                                                     :misc:
+*** [[https://rakhim.org/index.xml][Home on Rakhim.org]]                                                       :emacs:apple:
+*** [[http://hongchao.me/feed.xml][Hongchao's Notes]]                                                         :crypto:
+*** [[http://hypercritical.co/feeds/main][Hypercritical]]                                                            :apple:
+*** [[http://www.informatimago.com/blog/feed.xml][Informatimago]]                                                            :lisp:
+*** [[https://feeds.feedburner.com/JakeMccrarysMusings][Jake McCrary]]                                                             :unix:misc:
+*** [[https://occasionallycogent.com/feed.xml][James Cash's blog]]                                                        :emacs:misc:
+*** [[https://jrsinclair.com/index.rss][James Sinclair]]                                                           :misc:
+*** [[https://www.jefftk.com/news.rss][Jeff Kaufman's Writing]]                                                   :misc:
+*** [[https://jmtd.net/log/index.atom][Jonathan Dowland's Weblog]]                                                :misc:
+*** [[https://joshbradley.me/index.xml][Josh Bradley]]                                                             :misc:
+*** [[https://jcs.org/rss][joshua stein]]                                                             :unix:
+*** [[http://journal.stuffwithstuff.com/rss.xml][journal.stuffwithstuff.com]]                                               :misc:
+*** [[https://julesh.com/feed/][Jules Hedges]]                                                             :misc:
+*** [[https://jvns.ca/atom.xml][Julia Evans]]                                                              :unix:
+*** [[https://kevq.uk/feed/][Kev Quirk]]                                                                :misc:
+*** [[http://lambda-the-ultimate.org/rss.xml][Lambda the Ultimate - Programming Languages Weblog]]                       :lisp:scheme:news:
+*** [[https://leahneukirchen.org/blog/index.atom][leah blogs]]                                                               :vim:unix:
+*** [[http://www.lostgarden.com/feeds/posts/default][Lost Garden]]                                                              :gamedev:news:
+*** [[http://brooker.co.za/blog/rss.xml][Marc Brooker's Blog]]                                                      :econ:
+*** [[http://mbork.pl?action=rss][Marcin Borkowski: Homepage]]                                               :emacs:git:
+*** [[http://marco.org/rss][Marco.org]]                                                                :misc:
+*** [[https://mdhughes.tech/feed/][Mark writes]]                                                              :scheme:misc:
+*** [[http://matt.might.net/articles/feed.rss][Matt Might's blog]]                                                        :lisp:clang:
+*** [[http://feeds.feedburner.com/MeltingAsphalt][Melting Asphalt]]                                                          :misc:
+*** [[http://meow.noopkat.com/rss/][meow machine]]                                                             :javascript:
+*** [[http://notes.eatonphil.com/rss.xml][My notes]]                                                                 :sql:http:
+*** [[https://ngoldbaum.github.io/index.xml][Nathan Goldbaum]]                                                          :python:
+*** [[https://nibblestew.blogspot.com/feeds/posts/default][Nibble Stew]]                                                              :misc:
+*** [[https://noonker.github.io/index.xml][Noonker]]                                                                  :emacs:infosec:
+*** [[https://archive.casouri.cat/note/rss.xml][Notes]]                                                                    :emacs:
+*** [[http://okmij.org/ftp/rss.xml][okmij.org]]                                                                :misc:
+*** [[https://oli.me.uk/feed.xml][Oliver Caldwell's blog]]                                                   :vim:clojure:
+*** [[https://www.eidel.io/feed.xml][Oliver Eidel - Articles]]                                                  :misc:
+*** [[https://www.tbray.org/ongoing/ongoing.atom][ongoing by Tim Bray]]                                                      :misc:
+*** [[https://danielsz.github.io/atom.xml][Perfumed Nightmare]]                                                       :lisp:clojure:emacs:
+*** [[https://planspace.org/rss.xml][plan ➔ space]]                                                             :misc:
+*** [[http://plasmasturm.org/feed][plasmasturm.org]]                                                          :misc:
+*** [[https://politbistro.hypotheses.org/feed][Polit’bistro]]                                                             :econ:
+*** [[https://hypirion.com/rss/all][Polymatheia]]                                                              :misc:
+*** [[https://www.leeholmes.com/blog/feed/][Precision Computing]]                                                      :infosec:
+*** [[https://programmingisterrible.com/rss][programming is terrible]]                                                  :erlang:
+*** [[https://www.benrady.com/atom.xml][Radyology]]                                                                :misc:
+*** [[https://blog.jessfraz.com/index.xml][Ramblings from Jessie]]                                                    :misc:
+*** [[https://rambo.codes/feed.xml][Rambo Codes]]                                                              :apple:
+*** [[https://raphlinus.github.io/feed.xml][Raph Levien’s blog]]                                                       :gamedev:
+*** [[http://morrick.me/feed][Riccardo Mori]]                                                            :apple:
+*** [[https://feeds.feedburner.com/robinsloan][Robin's blog]]                                                             :misc:diary:
+*** [[http://blog.rongarret.info/feeds/posts/default][Rondam Ramblings]]                                                         :misc:
+*** [[https://www.schneier.com/blog/atom.xml][Schneier on Security]]                                                     :infosec:
+*** [[https://scriptingosx.com/feed/][Scripting OS X]]                                                           :apple:
+*** [[https://www.seancassidy.me/atom.xml][sean cassidy]]                                                             :misc:crypto:
+*** [[https://standblog.org/blog/feed/atom][Standblog]]                                                                :infosec:http:
+*** [[http://stevenrosenberg.net/blog/index.rss2][Steven Rosenberg]]                                                         :unix:misc:
+*** [[http://techsnuffle.com/feed.xml][TechSnuffle]]                                                              :misc:diary:
+*** [[https://toroid.org/etc/index.atom][The Advisory Boar]]                                                        :unix:
+*** [[https://thedorkweb.substack.com/feed/][The Dork Web]]                                                             :news:
+*** [[https://eamonnsullivan.co.uk/feed.xml][The one thing necessary]]                                                  :misc:
+*** [[http://shape-of-code.coding-guidelines.com/feed/][The Shape of Code]]                                                        :compiler:rstats:
+*** [[http://feedpress.me/TheTechnium][The Technium]]                                                             :misc:
+*** [[http://third-bit.com/feed.xml][The Third Bit]]                                                            :misc:
+*** [[https://irrlab.com/feed/][thoughts…]]                                                                :unix:news:
+*** [[https://blog.viktomas.com/index.xml][Tomas Vik]]                                                                :infosec:
+*** [[https://tech.tonyballantyne.com/feed/][Tony Ballantyne Tech]]                                                     :emacs:python:
+*** [[http://leahneukirchen.org/trivium/index.atom][Trivium]]                                                                  :misc:diary:
+*** [[https://twobithistory.org/feed.xml][Two-Bit History]]                                                          :unix:misc:
+*** [[https://tyler.io/feed/][tyler.io]]                                                                 :apple:
+*** [[https://underjord.io/feed.xml][Underjord]]                                                                :misc:
+*** [[https://usesthis.com/feed.atom][Uses This]]                                                                :news:
+*** [[https://vincent.bernat.ch/en/blog/atom.xml][Vincent Bernat]]                                                           :unix:http:
+*** [[https://vis4.net/blog/atom.xml][vis4.net]]                                                                 :dataviz:
+*** [[https://blog.vivekhaldar.com/rss][Vivek Haldar]]                                                             :misc:
+*** [[https://vxlabs.com/index.xml][vxlabs]]                                                                   :emacs:
+*** [[http://feeds.feedburner.com/WalkingRandomly][Walking Randomly]]                                                         :misc:
+*** [[https://sandymaguire.me/feed.rss][We Can Solve This]]                                                        :misc:
+*** [[https://willschenk.com/feed.xml][Will Schenk]]                                                              :misc:
+*** [[https://zanshin.net/atom.xml][Zanshin.net - Technology and Life]]                                        :apple:
+*** [[https://etienne.depar.is/feeds/index.xml][Étienne Deparis]]                                                          :python:misc:
 ** Web                                                                        :web:
 *** [[http://feeds.feedburner.com/2ality?format=xml][2ality – JavaScript and more]]                                             :javascript:typescript:
-*** [[http://tonsky.me/blog/atom.xml][tonsky.me]]                                                                :clojure:apple:
 *** [[https://andregarzia.com/feeds/all.rss.xml][AndreGarzia.com: AndreGarzia.com]]                                         :racket:
-** TODO
-*** [[https://ar.al/index.xml][Aral Balkan]]
-*** [[https://brandur.org/articles.atom][Articles - brandur.org]]
-*** [[https://beepb00p.xyz/rss.xml][beepb00p]]
-*** [[https://milesmcbain.xyz/rss/][Before I Sleep]]
-*** [[https://begriffs.com/atom.xml][begriffs.com]]
-*** [[https://werd.io/content/posts/?_t=rss][Ben Werdmüller]]
-*** [[http://bitemyapp.com/atom.xml][bitemyapp]]
-*** [[https://liorpachter.wordpress.com/feed/][Bits of DNA]]
-*** [[http://blog.vmchale.com/atom][blog]]
-*** [[https://byorgey.wordpress.com/feed/][blog :: Brent -> [String]]]
-*** [[https://ma.ttias.be/blog/index.xml][Blog archive by Mattias Geniar on ma.ttias.be]]
-*** [[https://blog.einval.eu/posts/index.xml][Blog on EINVAL: Valid solutions for invalid problems]]
-*** [[https://www.hillelwayne.com/post/index.xml][Blog on Hillel Wayne]]
-*** [[https://bor0.wordpress.com/feed/][bor0's blog]]
-*** [[https://skerritt.blog/rss/][Brandon's Blog]]
-*** [[http://brendandawes.com/blog/feed/][Brendan Dawes Blog Feed]]
-*** [[https://cestlaz.github.io/rss.xml][C'est la Z]]
-*** [[http://cxhernandez.com/feed.xml][Carlos Xavier Hernández]]
-*** [[https://blog.carlosgaldino.com/atom.xml][carlosgaldino]]
-*** [[https://changelog.com/posts/feed][Changelog]]
-*** [[https://blog.binchen.org/rss.xml][Chen's blog]]
-*** [[https://chrisalbon.com/index.xml][Chris Albon]]
-*** [[http://www.cpdiehl.org/atom.xml][Chris Diehl]]
-*** [[http://chris.eidhof.nl//index.xml][Chris Eidhof]]
-*** [[https://v4.chriskrycho.com/feed.xml][Chris Krycho]]
-*** [[https://chris-martin.org/rss.xml][Chris Martin]]
-*** [[https://chrispenner.ca/atom.xml][Chris Penner]]
-*** [[https://chris-said.io/atom.xml][Chris Said]]
-*** [[http://codeandculture.wordpress.com/feed/][Code and Culture]]
-*** [[http://corte.si/rss.xml][corte.si]]
-*** [[https://dan.lousqui.fr/all.rss.xml][Dan Lousqui]]
-*** [[https://danluu.com/atom.xml][Dan Luu]]
-*** [[https://www.darkchestnut.com/feed.xml][Dark Chestnut]]
-*** [[https://dataorigami.net/blogs/napkin-folding.atom][DataOrigami - Napkin Folding]]
-*** [[https://rhettinger.wordpress.com/feed/][Deep Thoughts by Raymond Hettinger]]
-*** [[http://www.defmacro.org/feed.xml][defmacro]]
-*** [[https://defn.io/index.xml][defn.io]]
-*** [[https://sivers.org/en.atom][Derek Sivers]]
-*** [[https://blog.kdheepak.com/rss.xml][Dheepak Krishnamurthy's Blog]]
-*** [[https://www.spinellis.gr/blog/dds-blog-rss.xml][Diomidis D. Spinellis Web Log]]
-*** [[https://dmerej.info/blog/index.xml][dmerej's blog]]
-*** [[http://can3p.github.io/atom.xml][Dmitry Petrov]]
-*** [[http://www.drbunsen.org/feed.xml][Dr. Bunsen Blog]]
-*** [[https://feeds.feedburner.com/dcurtis][Dustin Curtis]]
-*** [[http://dustycloud.org/blog/index.xml][DustyCloud Brainstorms]]
-*** [[https://blog.regehr.org/feed][Embedded in Academia]]
-*** [[http://endlessparentheses.com/atom.xml][Endless Parentheses]]
-*** [[http://blog.yossarian.net/feed.xml][ENOSUCHBLOG]]
-*** [[https://www.evanjones.ca/index.rss][Evan Jones - Software Engineer | Computer Scientist]]
-*** [[https://etienne.depar.is/feeds/index.xml][Étienne Deparis]]
-*** [[https://ericlippert.com/feed/][Fabulous adventures in coding]]
-*** [[https://fangpenlin.com/feed.xml][Fang-Pen's coding note]]
-*** [[https://www.sacrideo.us/rss/][Fastidious Elegance]]
-*** [[https://people.gnome.org/~federico/blog/feeds/atom.xml][Federico's Blog]]
-*** [[https://ferd.ca/feed.rss][Ferd.ca]]
-*** [[https://blog.filippo.io/rss/][Filippo.io]]
-*** [[https://flowing.systems/feed.xml][flowing → systems]]
-*** [[http://stefanoborini.com/feed.xml][Fly, Crash, Raise Exception]]
-*** [[https://tfeb.org/fragments/feeds/all.rss.xml][Fragments: Fragments]]
-*** [[http://fmnt.info/feed/atom.xml][Francesco Montanari]]
-*** [[https://www.geekabyte.io/feeds/posts/default][geekAbyte]]
-*** [[https://shapeshed.com/atom.xml][George Ornbo]]
-*** [[https://gregoryszorc.com/blog/feed][Gregory Szorc's Digital Home]]
-*** [[https://grisha.org/atom.xml][Gregory Trubetskoy]]
-*** [[http://www.lihaoyi.com/feed][Haoyi's Programming Blog]]
-*** [[http://www.philipzucker.com/feed/][Hey There Buddo!]]
-*** [[https://bphogan.com/index.xml][Home on bphogan.com]]
-*** [[https://rakhim.org/index.xml][Home on Rakhim.org]]
-*** [[http://hongchao.me/feed.xml][Hongchao's Notes]]
-*** [[http://www.howardism.org/index.xml][Howardism]]
-*** [[http://fanhuan.github.io/en/feed/][Huan Fan]]
-*** [[http://hypercritical.co/feeds/main][Hypercritical]]
-*** [[http://www.ibm.com/developerworks/views/opensource/rss/libraryview.jsp?site_id=1&contentarea_by=Open%20source&topic_by=&product_by=&type_by=All%20Types&search_by=&industry_by=&sort_by=Date&series_title_by=][IBM Developer : Open source]]
-*** [[https://inconvergent.net/atom.xml][inconvergent]]
-*** [[https://increment.com/feed.xml][Increment]]
-*** [[http://www.informatimago.com/blog/feed.xml][Informatimago]]
-*** [[https://safiire.github.io/atom.xml][Irken Kitties]]
-*** [[http://irreal.org/blog/?feed=rss2][Irreal]]
-*** [[https://jcarroll.com.au/index.xml][Irregularly Scheduled Programming]]
-*** [[https://blogs.princeton.edu/imabandit/feed/][I’m a bandit]]
-*** [[https://jacobian.org/atom/entries/][Jacob Kaplan-Moss]]
-*** [[https://feeds.feedburner.com/JakeMccrarysMusings][Jake McCrary]]
-*** [[http://jakob.space/feed.xml][Jakob's Personal Webpage]]
-*** [[https://occasionallycogent.com/feed.xml][James Cash's blog]]
-*** [[https://jrsinclair.com/index.rss][James Sinclair]]
-*** [[https://www.jefftk.com/news.rss][Jeff Kaufman's Writing]]
-*** [[https://gustedt.wordpress.com/feed/][Jens Gustedt's Blog]]
-*** [[https://jherrlin.github.io/index.xml][jherrlin]]
-*** [[https://jlelse.blog/index.xml][jlelse's Blog]]
-*** [[http://feeds.feedburner.com/TheEndeavour][John D. Cook]]
-*** [[http://zerolib.com/feed.xml][John Jacobsen]]
-*** [[http://www.johnmyleswhite.com/feed/][John Myles White]]
-*** [[https://jmtd.net/log/index.atom][Jonathan Dowland's Weblog]]
-*** [[https://blog.josephmorag.com/index.xml][Joseph Morag]]
-*** [[https://joshbradley.me/index.xml][Josh Bradley | Marketer, Engineer, Analyst on Josh Bradley | Marketer, Coder, Analyst]]
-*** [[https://jcs.org/rss][joshua stein]]
-*** [[http://journal.stuffwithstuff.com/rss.xml][journal.stuffwithstuff.com]]
-*** [[https://www.snellman.net/blog/rss-index.xml][Juho Snellman's Weblog]]
-*** [[https://julesh.com/feed/][Jules Hedges]]
-*** [[https://jvns.ca/atom.xml][Julia Evans]]
-*** [[https://julien.danjou.info/rss/][Julien Danjou]]
-*** [[https://kevq.uk/feed/][Kev Quirk]]
-*** [[http://david.monniaux.free.fr/dotclear/index.php/feed/atom][La vie est mal configurée]]
-*** [[https://lambdaisland.com/feeds/episodes.atom?2019-07-22T09:41:53.235Z][Lambda Island]]
-*** [[http://lambda-the-ultimate.org/rss.xml][Lambda the Ultimate - Programming Languages Weblog]]
-*** [[https://leahneukirchen.org/blog/index.atom][leah blogs]]
-*** [[https://alhassy.github.io/feed.xml][Life & Computing Science]]
-*** [[https://lisper.in/feed.xml][Lisper.in]]
-*** [[http://www.lispology.com/rss?JHE+3][Lispology]]
-*** [[http://ivory.idyll.org/blog/feeds/all.rss.xml][Living in an Ivory Basement]]
-*** [[http://www.lostgarden.com/feeds/posts/default][Lost Garden]]
-*** [[http://newartisans.com/rss.xml][Lost in Technopolis]]
-*** [[https://lukeplant.me.uk/blog/atom/index.xml][Luke Plant's home page]]
-*** [[https://blog.poisson.chat/rss.xml][Lysxia's blog]]
-*** [[https://hunch.net/?feed=rss2][Machine Learning (Theory)]]
-*** [[https://blog.ml.cmu.edu/feed/][Machine Learning Blog | ML@CMU | Carnegie Mellon University]]
-*** [[https://francisbach.com/feed/][Machine Learning Research Blog]]
-*** [[http://yaroslavvb.blogspot.com/atom.xml][Machine Learning, etc]]
-*** [[https://macwright.org/rss.xml][macwright.com]]
-*** [[https://manuel-uberti.github.io/feed.xml][Manuel Uberti]]
-*** [[http://brooker.co.za/blog/rss.xml][Marc Brooker's Blog]]
-*** [[http://mbork.pl?action=rss][Marcin Borkowski: Homepage]]
-*** [[http://marco.org/rss][Marco.org]]
-*** [[http://blog.markwatson.com/feeds/posts/default][Mark Watson's artificial intelligence and machine learning blog]]
-*** [[https://mdhughes.tech/feed/][Mark writes]]
-*** [[https://martinfowler.com/feed.atom][Martin Fowler]]
-*** [[https://martinheinz.dev/rss/][Martin Heinz's Blog]]
-*** [[https://martin-thoma.com/feeds/index.xml][Martin Thoma]]
-*** [[https://jeremykun.com/feed/][Math ∩ Programming]]
-*** [[https://mattbaker.blog/feed/][Matt Baker's Math Blog]]
-*** [[http://matt.might.net/articles/feed.rss][Matt Might's blog]]
-*** [[https://mattsegal.dev/feeds/rss.xml][Matt Segal Dev]]
-*** [[https://vuorre.netlify.app/index.xml][Matti Vuorre]]
-*** [[http://feeds.feedburner.com/MeltingAsphalt][Melting Asphalt]]
-*** [[http://meow.noopkat.com/rss/][meow machine]]
-*** [[http://metaredux.com/feed.xml][Meta Redux]]
-*** [[http://adventures.michaelfbryan.com/index.xml][Michael-F-Bryan]]
-*** [[https://ekaschalk.github.io/index.xml][Modern Emacs on Modern Emacs]]
-*** [[https://morgenthum.dev/rss.xml][morgenthum.dev - software development and architecture]]
-*** [[https://www.mortens.dev/feeds/all.atom.xml][Morten's Dev]]
-*** [[https://www.mostlymaths.net/feeds/posts/default][Mostly Maths]]
-*** [[https://mostlymaths.net/index.xml][mostlymaths.net]]
-*** [[http://notes.eatonphil.com/rss.xml][My notes]]
-*** [[https://ngoldbaum.github.io/index.xml][Nathan Goldbaum]]
-*** [[https://nedbatchelder.com/blog/rss.xml][Ned Batchelder's blog]]
-*** [[https://nibblestew.blogspot.com/feeds/posts/default][Nibble Stew]]
-*** [[https://nhigham.com/feed/][Nick Higham]]
-*** [[https://noonker.github.io/index.xml][Noonker]]
-*** [[https://archive.casouri.cat/note/rss.xml][Notes]]
-*** [[http://nullprogram.com/blog/index.rss][null program]]
-*** [[https://vfoley.xyz/index.xml][Occasionally sane]]
-*** [[http://okmij.org/ftp/rss.xml][okmij.org]]
-*** [[https://oli.me.uk/feed.xml][Oliver Caldwell's blog]]
-*** [[https://www.eidel.io/feed.xml][Oliver Eidel - Articles]]
-*** [[https://www.tbray.org/ongoing/ongoing.atom][ongoing by Tim Bray]]
-*** [[https://feedpress.me/tnb][Open Folder]]
-*** [[https://feeds.feedburner.com/exarg][Open Source is Everything]]
-*** [[https://www.parsonsmatt.org/feed.xml][Overcoming Software]]
-*** [[https://owoga.com/rss/][Owoga]]
-*** [[https://www.pvk.ca/atom.xml][Paul Khuong: some Lisp]]
-*** [[https://travisdowns.github.io/feed.xml][Performance Matters]]
-*** [[https://danielsz.github.io/atom.xml][Perfumed Nightmare]]
-*** [[https://ambrevar.xyz/atom.xml][Pierre Neidhardt's homepage]]
-*** [[https://planspace.org/rss.xml][plan ➔ space]]
-*** [[http://plasmasturm.org/feed][plasmasturm.org]]
-*** [[https://blog.ploeh.dk/rss.xml][ploeh blog]]
-*** [[https://pointersgonewild.com/feed/][Pointers Gone Wild]]
-*** [[https://politbistro.hypotheses.org/feed][Polit’bistro]]
-*** [[https://hypirion.com/rss/all][Polymatheia]]
-*** [[https://vincent.demeester.fr/index.xml][Posts]]
-*** [[https://0x0f0f0f.github.io/posts/index.xml][Posts on 0x0f0f0f]]
-*** [[https://andrewgoldstone.com/post/index.xml][Posts on Andrew Goldstone]]
-*** [[https://blog.nelhage.com/atom.xml][Posts on Made of Bugs]]
-*** [[https://www.monicaalexander.com/posts/index.xml][Posts on Monica Alexander]]
-*** [[http://fharrell.com/post/index.xml][Posts on Statistical Thinking]]
-*** [[https://www.greghendershott.com/feeds/all.rss.xml][Posts tagged "all"]]
-*** [[http://pragmaticemacs.com/feed/][Pragmatic Emacs]]
-*** [[https://www.leeholmes.com/blog/feed/][Precision Computing]]
-*** [[https://www.allendowney.com/blog/feed/][Probably Overthinking It]]
-*** [[https://programmingisterrible.com/rss][programming is terrible]]
-*** [[http://programmingpraxis.com/feed/][Programming Praxis]]
-*** [[https://www.nayuki.io/rss20.xml][Project Nayuki]]
-*** [[http://sumsar.net/atom.xml][Publishable Stuff]]
-*** [[https://f.briatte.org/r/rss][R / Notes]]
-*** [[https://feeds.feedburner.com/RPsychologist][R Psychologist RSS feed (last 10 posts)]]
-*** [[https://ryxcommar.com/feed/][r y x, r]]
-*** [[https://www.benrady.com/atom.xml][Radyology]]
-*** [[https://blog.jessfraz.com/index.xml][Ramblings from Jessie]]
-*** [[https://rambo.codes/feed.xml][Rambo Codes]]
-*** [[https://raphlinus.github.io/feed.xml][Raph Levien’s blog]]
-*** [[https://reasonablypolymorphic.com/feed.rss][Reasonably Polymorphic]]
-*** [[http://morrick.me/feed][Riccardo Mori]]
-*** [[http://feeds.feedburner.com/ProfessorRobJHyndman][Rob J Hyndman]]
-*** [[https://feeds.feedburner.com/robinsloan][Robin's blog]]
-*** [[https://ro-che.info/articles/rss.xml][Roman Cheplyaka]]
-*** [[http://blog.rongarret.info/feeds/posts/default][Rondam Ramblings]]
-*** [[https://sagegerard.com/index.rss.xml][SageGerard.com]]
-*** [[https://www.schneier.com/blog/atom.xml][Schneier on Security]]
-*** [[http://feeds.hanselman.com/ScottHanselman][Scott Hanselman's Blog]]
-*** [[https://www.seancassidy.me/atom.xml][sean cassidy]]
-*** [[http://blog.fogus.me/feed/][Send More Paramedics]]
-*** [[https://simonwillison.net/atom/everything/][Simon Willison's Weblog]]
-*** [[https://simplystatistics.org/index.xml][Simply Statistics]]
-*** [[https://so.nwalsh.com/feed.rss][so…]]
-*** [[https://standblog.org/blog/feed/atom][Standblog]]
-*** [[https://statisticalhorizons.com/feed][Statistical Horizons]]
-*** [[http://stevenrosenberg.net/blog/index.rss2][Steven Rosenberg]]
-*** [[https://stjepang.github.io/feed.xml][Stjepan’s blog]]
-*** [[http://stratechery.com/feed/][Stratechery by Ben Thompson]]
-*** [[https://www.strchr.com/?feed=/][strchr.com updates]]
-*** [[http://neugierig.org/software/blog/atom.xml][Tech Notes]]
-*** [[http://technomancy.us/feed/atom.xml][Technomancy]]
-*** [[http://techsnuffle.com/feed.xml][TechSnuffle]]
-*** [[https://toroid.org/etc/index.atom][The Advisory Boar]]
-*** [[https://joshrollinswrites.com/index.xml][The Art of Not Asking Why]]
-*** [[https://tapoueh.org/index.xml][The Art of PostgreSQL]]
-*** [[https://alex-hhh.github.io/feeds/all.rss.xml][The Blog of Alex Harsányi: The Blog of Alex Harsányi]]
-*** [[https://floooh.github.com/feed.xml][The Brain Dump]]
-*** [[http://blog.cleancoder.com/atom.xml][The Clean Code Blog]]
-*** [[http://feeds.feedburner.com/TheGrandLocus?format=xml][The Grand Locus]]
-*** [[http://calculist.org/feed.xml][The Little Calculist]]
-*** [[https://blog.acolyer.org/feed/][the morning paper]]
-*** [[https://eamonnsullivan.co.uk/feed.xml][The one thing necessary]]
-*** [[https://www.refsmmat.com/rss.xml][the refsmmat report - All posts]]
-*** [[http://shape-of-code.coding-guidelines.com/feed/][The Shape of Code]]
-*** [[http://blog.stata.com/feed/][The Stata Blog]]
-*** [[http://feedpress.me/TheTechnium][The Technium]]
-*** [[https://blog.plover.com/index.rss][The Universe of Discourse]]
-*** [[https://mailund.github.io/r-programmer-blog/index.xml][The Working R Programmer]]
-*** [[https://thomashoneyman.com/index.xml][Thomas Honeyman]]
-*** [[https://thorstenball.com/atom.xml][Thorsten Ball]]
-*** [[https://meyerweb.com/eric/thoughts/rss2/full][Thoughts From Eric]]
-*** [[https://irrlab.com/feed/][thoughts…]]
-*** [[http://bactra.org/weblog/index.rss][Three-Toed Sloth]]
-*** [[http://tomasp.net/rss.xml][Tomas Petricek - Languages and tools, open-source, philosophy of science and F# coding]]
-*** [[https://blog.viktomas.com/index.xml][Tomas Vik]]
-*** [[https://tech.tonyballantyne.com/feed/][Tony Ballantyne Tech]]
-*** [[https://quinnj.home.blog/feed/][Traitement de Données]]
-*** [[https://www.travishinkelman.com/index.xml][Travis Hinkelman]]
-*** [[http://leahneukirchen.org/trivium/index.atom][Trivium]]
-*** [[http://troubles.md/index.xml][troubles.md]]
-*** [[https://twobithistory.org/feed.xml][Two-Bit History]]
-*** [[https://tychoish.com/index.xml][tychoish]]
-*** [[https://tyler.io/feed/][tyler.io]]
-*** [[https://bradleytaunt.com/atom.xml][Ugly Duck]]
-*** [[https://underjord.io/feed.xml][Underjord]]
-*** [[https://jrms-random-blog.blogspot.com/feeds/posts/default][Unsyndicated]]
-*** [[https://usesthis.com/feed.atom][Uses This]]
-*** [[http://varianceexplained.org/feed.xml][Variance Explained]]
-*** [[https://blog.veitheller.de/feed.rss][Veit's Blog]]
-*** [[https://www.jimhester.com/post/index.xml][Videos / Posts on Jim Hester]]
-*** [[https://vincent.bernat.ch/en/blog/atom.xml][Vincent Bernat]]
-*** [[https://vis4.net/blog/atom.xml][vis4.net]]
-*** [[https://blog.vivekhaldar.com/rss][Vivek Haldar]]
-*** [[http://feeds.feedburner.com/WalkingRandomly][Walking Randomly]]
-*** [[https://sandymaguire.me/feed.rss][We Can Solve This]]
-*** [[https://weinholt.se/feed.xml][weinholt.se]]
-*** [[https://www.wezm.net/feed/][Wesley Moore]]
-*** [[https://terrytao.wordpress.com/feed/][What's new]]
-*** [[https://willschenk.com/feed.xml][Will Schenk]]
-*** [[https://williamyaoh.com/feed.atom][William Yao's Haskell Musings]]
-*** [[https://christiantietze.de/feed.atom][Worklog of Christian Tietze]]
-*** [[http://www.linusakesson.net/rssfeed.php][www.linusakesson.net]]
-*** [[https://yarmo.eu/rss/all][Yarmo's blog and notes]]
-*** [[http://www.mycpu.org/feed.xml][Yet Another Technical Blog]]
-*** [[https://lispblog.xach.com/rss][Zach Beane Common Lisp]]
-*** [[https://zanshin.net/atom.xml][Zanshin.net - Technology and Life]]
-*** [[https://lthms.xyz/rss][~lthms]]
-*** [[https://tymoon.eu/api/reader/atom][妖怪世捨て人]]
+*** [[https://defn.io/index.xml][defn.io]]                                                                  :racket:http:
+*** [[https://ferd.ca/feed.rss][Ferd.ca]]                                                                  :erlang:http:
+*** [[https://grisha.org/atom.xml][Gregory Trubetskoy]]                                                       :sql:postgres:crypto:
+*** [[https://increment.com/feed.xml][Increment]]                                                                :news:
+*** [[https://jacobian.org/atom/entries/][Jacob Kaplan-Moss]]                                                        :python:http:
+*** [[http://david.monniaux.free.fr/dotclear/index.php/feed/atom][La vie est mal configurée]]                                                :infosec:
+*** [[https://mattsegal.dev/feeds/rss.xml][Matt Segal Dev]]                                                           :python:http:
+*** [[https://feedpress.me/tnb][Open Folder]]                                                              :python:http:
+*** [[https://blog.ploeh.dk/rss.xml][ploeh blog]]                                                               :http:csharp:
+*** [[https://so.nwalsh.com/feed.rss][so…]]                                                                      :http:
+*** [[https://meyerweb.com/eric/thoughts/rss2/full][Thoughts From Eric]]                                                       :javascript:css:
+*** [[http://tonsky.me/blog/atom.xml][tonsky.me]]                                                                :clojure:apple:
+*** [[https://bradleytaunt.com/atom.xml][Ugly Duck]]                                                                :http:
+*** [[https://vincent.demeester.fr/index.xml][Vincent Demeester's posts]]                                                :http:
