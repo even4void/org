@@ -18,7 +18,21 @@ Let us consider the following example:
 The quick brown fox jumps over the lazy dog.
 #+END_EXAMPLE
 
-To select the first word in the above example, =yw= can be used when the cursor is set to the first character. If this is not the case, a moving at the beginning of the visual line (=0=) will suffice (see next section). To select the whole line, =yy= or =y$= could be used instead. In these two cases, the instruction for yanking, =y=, can be replaced with =d=, to delete, or =c=, to edit in place. On any given character, =r= allow to switch to replace mode and to edit the character under the cursor. Unlike Emacs, the cursor is always positioned on a character, and not in between.
+In normal mode, to select the first word in the above example, =yw= can be used when the cursor is set to the first character. If this is not the case, moving at the beginning of the visual line (=0=) will suffice (see next section). To select the whole line, =yy= (same as =Y=) or =y$= could be used instead. In these two cases, the instruction for yanking, =y=, can be replaced with =d=, to delete, or =c=, to edit in place. On any given character, =r= allow to switch to replace mode and to edit the character under the cursor. Unlike Emacs, the cursor is always positioned on a character, and not in between.
+
+A simple alternative to =yw= is =yiw= (or =yaw=): these commands allow to yank the current word excluding (or including) the surrounding whitespaces. Also, =yf<char>= will yank from the current cursor position up to and including the character =<char>=. See next section about the =f= (or =F=) instruction. Technically, those kind of instructions imply a motion (=y{motion}=), like =iw= (inside word). Unlike =yw=, =yW= will select the whole object, including special character like -, # or ::. In the following Racket snippet, the cursor is on the first letter of the function name, =largest-prime-factor=:
+
+#+BEGIN_EXAMPLE
+(require math)
+
+(define (largest-prime-factor x)
+         ^
+ (apply max (map car (factorize x))))
+#+END_EXAMPLE
+
+In this case, =yw= will only yank largest while =yW= will yank the full function name.
+
+Copy, cut and paste do not involve the system clipboard (like =pbcopy= and =pbpaste= on macOS) but Vim default register (=""=). In insert mode, the last object copied can be pasted using =C-r "= (this is the default value). In normal mode, we use =""p=. As a final note, instead of pasting in place (i.e., without moving the cursor afterwards), one may use =gp= (paste after) or =gP= (paste before) to move the cursor after the pasted object.
 
 ** Motion
 
@@ -34,9 +48,10 @@ A   B                          C           D
 
 There are more complex scenarios but I feel like these are the most common jumps: A is the beginning of a sentence (or line), A--B corresponds to moving to the beginning of the next word, A--C is a jump to next word that start with a 't', and D is the end of the sentence (or line), which means that A--D is akin to jumping from the beginning to the end of the sentence.
 
-#+NAME:    tab:motion
-#+LABEL:   tab:motion
-#+CAPTION: Basic shortcuts for motion in visual mode
+#+NAME:      tab:motion
+#+LABEL:     tab:motion
+#+ATTR_HTML: :border 2 :rules all :frame border :width 100%
+#+CAPTION:   Basic shortcuts for motion in visual mode
 |---------+------------------------------------------------------------|
 |---------+------------------------------------------------------------|
 | Keys    | Description                                                |
@@ -63,9 +78,10 @@ There are more complex scenarios but I feel like these are the most common jumps
 
 The shortcuts listed in Table [[tab:motion2]] are specific to Doom Emacs and are usually mapped under the =g= or =z= prefix operator. There are also keybindings specific to =prog-mode= like =gd= or =gD=: they are mapped to the corresponding =xref-find-*= functions unless the [[https://emacs-lsp.github.io/lsp-mode/][lsp]] package is installed in which case they are associated to =lsp-find-*= functions.
 
-#+NAME:    tab:motion2
-#+LABEL:   tab:motion2
-#+CAPTION: Motion shortcuts in visual mode for Doom Emacs
+#+NAME:      tab:motion2
+#+LABEL:     tab:motion2
+#+ATTR_HTML: :border 2 :rules all :frame border :width 100%
+#+CAPTION:   Motion shortcuts in visual mode for Doom Emacs
 |------+-----------------------------------|
 |------+-----------------------------------|
 | Keys | Description                       |
@@ -84,4 +100,4 @@ The shortcuts listed in Table [[tab:motion2]] are specific to Doom Emacs and are
 |------+-----------------------------------|
 
 
-\printbibliography
+#+LATEX: \printbibliography

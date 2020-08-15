@@ -617,6 +617,10 @@ See [[https://howistart.org/posts/clojure/1/index.html][How I start]].
  :INTERLEAVE_PDF: /Users/chl/Documents/papers/neil-2018-moder-vim.pdf
  :END:
 
+
+
+Sidenote:
+
 Useful packages and config for Lisp editing:
 - https://mendo.zone/fun/neovim-setup-haskell/
 - https://github.com/Shougo/deoplete.nvim

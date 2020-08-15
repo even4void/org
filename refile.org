@@ -1,3 +1,10 @@
+* Read later
+** [[https://www.quebecscience.qc.ca/societe/asperger-vivre-en-societe-quand-on-ne-sait-pas-mentir/]]
+** [[https://www.philosophine.fr/asperger-fatigue/]]
+** [[https://www.quora.com/Are-there-any-disorders-that-are-similar-to-Aspergers-and-if-so-what-are-they]]
+** [[https://spectredelautisme.com]]
+** [[https://solmaz.io/2019/04/20/equilibrium-cryptoeconomic-networks/][Equilibrium in Cryptoeconomic Networks]]
+
 * Bookmarks to file
 ** How to use matrix.org and vector.im as an IRC client
 [2020-06-16 Tue 11:19]

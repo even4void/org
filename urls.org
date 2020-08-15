@@ -1,4 +1,10 @@
 * Inbox
+** Table Styling with ATTR_HTML and ATTR_CSS                                  :org:
+[2020-08-15 Sam 19:51]
+https://ox-hugo.scripter.co/test/posts/table-styling/
+** How to insert screenshots in Org documents on macOS                        :org:
+[2020-08-14 Ven 22:18]
+https://zzamboni.org/post/how-to-insert-screenshots-in-org-documents-on-macos/
 ** Emacs configuration with Org Mode                                          :emacs:
 [2020-08-14 Ven 21:22]
 https://github.com/andreyorst/dotfiles/tree/master/.config/emacs
