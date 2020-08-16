@@ -1,4 +1,25 @@
 * Inbox
+** Beautifying Org Mode in Emacs                                              :org:
+[2020-08-16 Dim 12:24]
+https://zzamboni.org/post/beautifying-org-mode-in-emacs/
+** Beautify Org mode                                                          :org:
+[2020-08-16 Dim 12:22]
+https://mstempl.netlify.app/post/beautify-org-mode/
+** A screencast series about Doom                                             :emacs:
+[2020-08-16 Dim 12:15]
+https://zaiste.net/courses/emacs-doom/
+** Process Improvement Using Data                                             :rstats:
+[2020-08-16 Dim 12:13]
+https://learnche.org/pid/
+** matplotlib-backend-kitty                                                   :cli:python:
+[2020-08-16 Dim 08:15]
+https://github.com/jktr/matplotlib-backend-kitty
+** termpdf.py: A graphical pdf (and epub and cbz) viewer                      :cli:
+[2020-08-16 Dim 08:13]
+https://github.com/dsanson/termpdf.py
+** kitty.conf including nord color theme                                      :cli:
+[2020-08-15 Sam 22:06]
+https://gist.github.com/marcusramberg/64010234c95a93d953e8c79fdaf94192
 ** Table Styling with ATTR_HTML and ATTR_CSS                                  :org:
 [2020-08-15 Sam 19:51]
 https://ox-hugo.scripter.co/test/posts/table-styling/

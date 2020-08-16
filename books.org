@@ -1,5 +1,3 @@
-# -*- ispell-dictionary: nil -*-
-
 * 2013
 - Haruki Murakami, 1Q84 Tome 3 (Belfond)
 - Haruki Murakami, Underground (Belfond)
@@ -26,7 +24,7 @@
 - Stefan Zweig, Le bouquiniste Mendel (Sillage)
 - Rainer Maria Rilke, Poupées (Rivages poche)
 - Jérôme Ferrari, Le Sermon de la chute de Rome (Actes Sud, Babel)
-- Max Jacob, L'homme de cristal (Gallimard) [♯]
+- Max Jacob, L'homme de cristal (Gallimard) [#]
 - Leopold von Sacher-Masoch, La Vénus à la fourrure (Pocket)
 - Dominique Paravel, Uniques (Serge Safran)
 - Alexis Jenni, Élucidations (Gallimard)
@@ -91,7 +89,7 @@
 - Philippe Delerm, Elle marchait sur un fil (Seuil)
 - Lyonel Trouillot, La Belle Amour humaine (Babel)
 - Natsuki Ikezawa, La femme qui dort (Picquier poche)
-- Emily Dickinson, Quarante-sept poèmes (La Dogana) [♯]
+- Emily Dickinson, Quarante-sept poèmes (La Dogana) [#]
 - Jorge Luis Borges, Le livre de sable (Folio)
 - Nathalie Quintane, Descente de médiums (P.O.L)
 - Gabriel Garcia Marquez, Mémoire de mes putains tristes (Livre de Poche)
@@ -112,7 +110,7 @@
 - Vladimir Maïakovski, Comment écrire des vers (La Nerthe)
 - Paulo Coelho, Adultère (Flammarion)
 - Laurent Nunez, Les récidivistes (Rivages poche)
-- Lise Mathieu, Le bonheur ne dort que d'un oeil (Le Castor Astral) [♯]
+- Lise Mathieu, Le bonheur ne dort que d'un oeil (Le Castor Astral) [#]
 - Maurice Maeterlinck, Serres chaudes, Quinze chansons, La Princesse Maleine (Gallimard)
 - William Faulkner, Le bruit et la fureur (Folio)
 - John Irving, À moi seul bien des personnages (Points)
@@ -155,17 +153,17 @@
 
 * 2015
 - André de Richaud, La nuit aveuglante (Insomnies)
-- Pierre Courtaud, Histoire(s) du dormeur (éditions du limon) [♯]
+- Pierre Courtaud, Histoire(s) du dormeur (éditions du limon) [#]
 - Stieg Larsson, La fille qui rêvait d'un bidon d'essence et d'une allumette (Actes Sud)
 - Stieg Larsson, La reine dans le palais des courants d'air (Actes Sud)
 - Françoise Rey, La femme de papier (Ramsay)
 - Teju Cole, Open City (10/18)
-- Eurydice El-Etr, La fiancée du verbe être (La Délirante) [♯]
+- Eurydice El-Etr, La fiancée du verbe être (La Délirante) [#]
 - Nous sommes Charlie (Livre de Poche)
 - Loïc Merle, Seul, invaincu (Actes Sud)
 - James Salter, Un bonheur parfait (Points)
 - Le dictionnaire de la rature (Actes Sud)
-- Raymond Bozier, Abattoirs 26 (Pauvert) [♯]
+- Raymond Bozier, Abattoirs 26 (Pauvert) [#]
 - Jérôme Ferrari, Le principe (Actes Sud)
 - Aki Shimazaki, Azami (Leméac/Actes Sud)
 - Lars Kepler, Le pacte (Babel Noir)
@@ -173,25 +171,25 @@
 - Sylvie Weil, Selfie (Buchet Castel)
 - Nathalie Peyrebonne, La silhouette, c'est peu (Phébus)
 - Daniel Pennac, Ancien malade des hôpitaux de Paris (Folio)
-- Michel Leiris, Mots sans mémoire (Gallimard) [♯]
+- Michel Leiris, Mots sans mémoire (Gallimard) [#]
 - Alexis Sarola, Médecin dans le 93 (Cherche Midi)
-- Didier van Cauwelaert, Corps étranger (Livre de poche) [♯]
+- Didier van Cauwelaert, Corps étranger (Livre de poche) [#]
 - Jean-Loup Chiflet, Oxymore, mon amour ! (Points)
 - Haruki Murakami, Chroniques de l'oiseau à ressort (10/18)
-- Marieke Aucante, Elle et lui (Climats) [♯]
-- E, Bouche de toutes parts (L'obligé de la couleur de ses lèvres) [♯]
-- Julien Fischer, Etoiles amères (Editions personnelles) [♯]
-- Vladimir Nabokov, La transparence des choses (Folio) [♯]
-- Rezvani, La nuit transfigurée (Folio) [♯]
-- William Blake, Le mariage du ciel et de l'enfer (Allia) [♯]
-- Marc Aurèle, Pensées (Les Belles Lettres) [♯]
+- Marieke Aucante, Elle et lui (Climats) [#]
+- E, Bouche de toutes parts (L'obligé de la couleur de ses lèvres) [#]
+- Julien Fischer, Etoiles amères (Editions personnelles) [#]
+- Vladimir Nabokov, La transparence des choses (Folio) [#]
+- Rezvani, La nuit transfigurée (Folio) [#]
+- William Blake, Le mariage du ciel et de l'enfer (Allia) [#]
+- Marc Aurèle, Pensées (Les Belles Lettres) [#]
 - Roberto Bolano, Les détectives sauvages (Folio)
 - Roberto Bolano, 2666 (Folio)
 - David Lagercrantz, Millenium 4, Ce qui ne me tue pas (Actes Sud)
 - Christian Bobin, Noireclaire (Gallimard)
 - Philippe Delerm, Les eaux troubles du Mojito (Seuil)
 - Nathalie Hug, L'enfant-rien (Livre de Poche)
-- Ludmila Oulitskaïa, Sonietchka (Gallimard) [♯]
+- Ludmila Oulitskaïa, Sonietchka (Gallimard) [#]
 - Pef, Petit éloge de la lecture (Folio)
 - Mathieu Larnaudie, Strangulation (Babel)
 - Véronique Poulain, Les mots qu'on ne me dit pas (Le Livre de Poche)
@@ -229,7 +227,7 @@
 - Marina de Van, Rose Minuit (Allia)
 - Astrid Manfredi, La petite barbare (Belfond)
 - Didier van Cauwelaert, Le principe de Pauline (Livre de Poche)
-- Dostoïevski, Les carnets du sous-sol (Babel) [♯]
+- Dostoïevski, Les carnets du sous-sol (Babel) [#]
 - Virgine Despentes, Vernon Subutex 1 (Grasset)
 - Virgine Despentes, Vernon Subutex 2 (Grasset)
 - Nancy Huston, Le club des miracles relatifs (Actes Sud)
@@ -253,7 +251,7 @@
 - Donna Leon, Deux veuves pour un testament (Points)
 - Dr Michel Guilbert, C'est grave docteur ? (Les éditions de l'opportun)
 - Léo Malet, 120, rue de la Gare (Pocket)
-- Stefan Zweig, Le joueur d'échecs (Le livre de poche) [♯]
+- Stefan Zweig, Le joueur d'échecs (Le livre de poche) [#]
 - Mark Twain, La vie privée d'Adam et Eve (Proverbe)
 - Miguel Bonnefoy, Le voyage d'Octavio (Rivages poche)
 - Yasmina Reza, Babylone (Flammarion)
@@ -266,9 +264,9 @@
 - Emmanuelle Richard, Pour la peau (Editions de l'Olivier)
 - David Foenkinos, La tête de l'emploi (J'ai lu)
 - Régis Jauffret, Cannibales (Seuil)
-- Fernando Arrabal, La Pierre de la Folie : Livre panique (Maelström) [♯]
+- Fernando Arrabal, La Pierre de la Folie : Livre panique (Maelström) [#]
 - Caroline Gaudriault, Un petit homme dans un vaste monde
-- Pascal Garnier, Contes gouttes (L'entreligne) [♯]
+- Pascal Garnier, Contes gouttes (L'entreligne) [#]
 - Marcus Malte, Le garçon (Zulma)
 - Nahal Tajadod, Les simples prétextes du bonheur (JC Lattès)
 - Régis Jauffret, Cannibales (Seuil)
@@ -291,7 +289,7 @@
 - Guillaume Musso, La fille de Brooklyn (Pocket)
 - Agnès Martin-Lugand, Désolée, je suis attendue (Pocket)
 - Laurent Binet, HHhH (Le livre de Poche)
-- Jules Verne, Voyage au centre de la Terre (Pléïade) [♯]
+- Jules Verne, Voyage au centre de la Terre (Pléïade) [#]
 - Catherine Poulain, Le grand marin (Points)
 - Olivier Bourdeaut, En attendant Bojangles (Folio)
 - Charles Baudelaire, Journaux intimes
@@ -377,7 +375,7 @@
 - Marcus Greil, Lipstick Traces (Allia)
 - David Nicholls, Un jour (10/18)
 - Peter Hook, Substance : New Order vu de l'intérieur (Le mot et le reste)
-- George Orwell, 1984 (Gallimard) [♯]
+- George Orwell, 1984 (Gallimard) [#]
 - Toni Morrison, Beloved (10/18)
 - Sylvia Plath, Dessins (La Table Ronde)
 - Andrée Chedid, La femme de Job (Calmann-Lévy)
@@ -422,10 +420,10 @@
 - Andreï Makine, Le pays du lieutenant Schreiber (Grasset)
 - Peter Brank, Ciel d'Enfer (Itinéraires)
 - Jacques Réda, Les cinq points cardinaux (Fata Morgana)
-- Jean-Luc Sarré, Extérieur blanc (Flammarion) [♯]
+- Jean-Luc Sarré, Extérieur blanc (Flammarion) [#]
 - Michel Onfray, Le deuil de la mélancolie (Laffon)
-- Marc Aurèle, Pensées (Les Belles Lettres) [♯]
-- Nietsche, Humain trop humain I (Folio) [♯]
+- Marc Aurèle, Pensées (Les Belles Lettres) [#]
+- Nietsche, Humain trop humain I (Folio) [#]
 - Patrick Baud, Nanofictions (Flammarion)
 - Haruki Murakami, Le meurtre du commandeur (Actes Sud)
 - Patti Smith, Dévotion (Gallimard)
@@ -448,7 +446,7 @@
 - Grégoire Delacourt, Mon père (JC Lattès)
 - Edna O'Brien, L'objet d'amour
 - Martin Diwo, Pour te perdre un peu moins (Plon)
-- Blaise Cendrars, Les armoires chinoises (Fata Morgana) [♯]
+- Blaise Cendrars, Les armoires chinoises (Fata Morgana) [#]
 - Franz Bartelt, Le fémur de Rimbuad (Folio)
 - Olivier Bourdeaut, Pactum Salis (Finitude)
 - Ragnar Jonasson, Sujor (Points)
@@ -471,26 +469,26 @@
 - Thierry Laget, Proust, prix Goncourt (Gallimard)
 - Laetitia Colombani, Les victorieuses (Grasset)
 - Antonio Moresco, La petite lumière (Verdier)
-- Anaïs Nin, Une espionne dans la maison de l'amour (Stock) [♯]
+- Anaïs Nin, Une espionne dans la maison de l'amour (Stock) [#]
 - Henri Miller, Lire aux cabinets (Folio)
 - Akira Mizubayashi, Petit éloge de l'errance (Folio)
 - Gaëlle Obiégly, Petit éloge de la jalousie (Folio)
 - Agnès Renaut, Qu'as-tu fait de ta soeur ? (Grasset)
-- Anaïs Nin, Les enfants de l'albatros (Stock) [♯]
-- Anaïs Nin, Les miroirs dans le jardin (Stock) [♯]
+- Anaïs Nin, Les enfants de l'albatros (Stock) [#]
+- Anaïs Nin, Les miroirs dans le jardin (Stock) [#]
 - Régine Detambel, Petit éloge de la peau (Folio)
 - Karine Tuil, Les choses humaines (Gallimard)
 - Caryl Férey, Petit éloge de l'excès (Folio)
 - Clément Lépidis, La fontaine de Skopelos (Seuil)
-- Anaïs Nin, Les chambres du coeur (Stock) [♯]
+- Anaïs Nin, Les chambres du coeur (Stock) [#]
 - Patrick Rambaud, Troisième chronique du règne de Nicolas Ier (Grasset)
 - Emmanuelle Bayamack-Tam, Arcadie (Gallimard)
 - Françoise Sagan, Aux quatre coins du coeur (Plon)
-- Marguerite Duras, Le square (Folio) [♯]
+- Marguerite Duras, Le square (Folio) [#]
 - Magnus Mills, Retenir les bêtes (10/18)
 - Jean-Christophe Rufin, Check-point (Folio)
-- Françoise Sagan, Le garde du coeur (Presses Pocket) [♯]
-- Françoise Sagan, Les merveilleux nuages (Presses Pocket) [♯]
+- Françoise Sagan, Le garde du coeur (Presses Pocket) [#]
+- Françoise Sagan, Les merveilleux nuages (Presses Pocket) [#]
 - Herbjørg Wassmo, Le pire des silences (10/18)
 - Muriel Barbery, L'élégance du hérisson (Gallimard)
 - Piero Chiara, Le 28 octobre (La fosse aux ours)
@@ -498,32 +496,32 @@
 - Françoise Nyssen, Plaisir et nécessité (Stock)
 - Viviane Cerf, La dame aux nénuphars (Des femmes)
 - Sara Lövestam, Chacun sa vérité (Pocket)
-- Françoise Sagan, Avec mon meilleur souvenir (Folio) [♯]
-- Françoise Sagan, Dans un mois, dans un an (Presses Pocket) [♯]
+- Françoise Sagan, Avec mon meilleur souvenir (Folio) [#]
+- Françoise Sagan, Dans un mois, dans un an (Presses Pocket) [#]
 - Michel Douard, Un couple de singes (La manufacture de livres)
 - Fred Uhlman, L'ami retrouvé (Folio)
 
 * 2020
-- Rimbaud, Poésies (Pléïade) [♯]
+- Rimbaud, Poésies (Pléïade) [#]
 - Peter Brooke, Le diable c'est l'ennui (Actes Sud)
 - Georges Perec, Espèces d'espaces (Galilée)
 - Georges Perec, Penser/Classer (Seuil)
 - Arnaldur Indridason, Les fils de la poussière (Points)
-- Treize poèmes de J.L. Borges (Fata Morgana) [♯]
+- Treize poèmes de J.L. Borges (Fata Morgana) [#]
 - Daniel Pennac, La loi du rêveur (Gallimard)
 - Stephen Zweig, Le monde d'hier (Folio)
-- Zakari Dramani-Issifou, Les dires de l'arbre mémoire (Le dé bleu) [♯]
+- Zakari Dramani-Issifou, Les dires de l'arbre mémoire (Le dé bleu) [#]
 - Laurent Binet, Civilizations (Grasset)
 - Jean Ristat, Ô vous qui dormez dans les étoiles enchaînées (Gallimard)
 - Philippe Delerm, L'extase du selfie (Seuil)
 - Silvina Ocampo, La musique de la pluie (Folio)
-- Alain-Christophe Restrat, Impasses absolues (Flammarion) [♯]
+- Alain-Christophe Restrat, Impasses absolues (Flammarion) [#]
 - Vincent Almendros, Faire mouche (Les éditions de Minuit)
 - Irina Teodorescu, Ni poète ni animal (Flammarion)
 - Hervé Prudon, Devant la mort (Gallimard)
 - Alicia Gallienne, L'autre moitié du songe m'appartient (Gallimard)
 - David Foenkinos, Les souvenirs (Folio)
-- Hugo Claus, Une douce destruction (De Fallois) [♯]
+- Hugo Claus, Une douce destruction (De Fallois) [#]
 - Edith Wharton, Les lettres (Folio)
 - Etienne Paulin, Là (Gallimard)
 - Aksinia Mihaylova, Le baiser du temps (Gallimard)
@@ -556,7 +554,7 @@
 - Tiphaine Samoyault, La cour des adieux (Maurice Nadeau)
 - Shirley Goldfarb, Carnets (Petit Quai Voltaire)
 - Jessie Burton, Les filles au lion (Folio)
-- Boileau-Narcejac, Celle qui n'était plus (Folio) [♯]
+- Boileau-Narcejac, Celle qui n'était plus (Folio) [#]
 - Fabrice Caro, Le discours (Folio)
 - David Foenkinos, Deux soeurs (Folio)
 - Edouard Louis, Qui a tué mon père (Points)
@@ -573,5 +571,6 @@
 - Jørn Riel, Le piège à renard du seigneur (10/18)
 - Salvatore Basile, Petits miracles au bureau des objets trouvés (Folio)
 - Olivia Ruiz, La commode aux tiroirs de couleurs (JC Lattès)
+- Grégoire Delacourt, La femme qui ne vieilissait pas (Livre de Poche)
 
-[♯] Déjà lu par le passé.
+[#] Déjà lu par le passé.

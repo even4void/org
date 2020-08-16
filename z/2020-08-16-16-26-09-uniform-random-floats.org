@@ -1,0 +1,13 @@
+* Generating Uniform random floats
+
+#+FILETAGS: :algorithms:clang:
+
+The naive approach of generating an integer in {0, 1, ..., 2^k - 1} for some k and dividing by 2^k, as used by, e.g., Boost.Random and GCC 4.8's implementation of C++11 uniform_real_distribution, gives a nonuniform distribution:
+
+- If k is 64, a natural choice for the source of bits, then because the set {0, 1, ..., 2^53 - 1} is represented exactly, whereas many subsets of {2^53, 2^53 + 1, ..., 2^64 - 1} are rounded to common floating-point numbers, outputs in [0, 2^-11) are underrepresented.
+
+- If k is 53, in an attempt to avoid nonuniformity due to rounding, then numbers in (0, 2^-53) and 1 will never be output. These outputs have very small, but nonnegligible, probability: the Bitcoin network today randomly guesses solutions every ten minutes to problems for which random guessing has much, much lower probability of success, closer to 2^-64.
+
+See also: [[http://llvm.org/bugs/show_bug.cgi?id=18767][LLVM #18767]] and [[http://open-std.org/JTC1/SC22/WG21/docs/lwg-active.html#2524][LWG #2524]].
+
+Source: Taylor R Campbell, [[http://mumble.net/~campbell/tmp/random_real.c]]
