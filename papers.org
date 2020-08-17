@@ -964,3 +964,10 @@ See also [[https://www.biorxiv.org/content/10.1101/619155v2][Calibrating seed-ba
  :INTERLEAVE_PDF: /Users/chl/Documents/papers/pavone-2020-using.pdf
  :END:
 A reference model is used to mimic the data-generating process, under the assumption of an M-complete framework whereby such a model reflects our beliefs about the future data in the best possible way and has passed model checking and criticism. When using a bayesian reference model, the idea is to project its predictive distribution to a reduced model leading to projection predictive variable selection approach. See also [[http://mc-stan.org/projpred]]. Side note: Now I know that what I've been using 8 years ago for variable selection using rerandomization or bootstrap may be called something like "Bootstrap inclusion frequencies" (see Fig. 1).
+* [[/Users/chl/Documents/papers/clinger-1988-implem-strat-contin.pdf][clinger-1988-implem-strat-contin]] - Implementation strategies for continuations
+ :PROPERTIES:
+ :Custom_ID: clinger-1988-implem-strat-contin
+ :INTERLEAVE_PDF: /Users/chl/Documents/papers/clinger-1988-implem-strat-contin.pdf
+ :END:
+Continuations (=call/cc= in Scheme) are generally used to manipulate the flow of control in a program, which means that they are close to =GOTO= statements in imperative languages.
+See [[https://www.scheme.com/tspl3/further.html#./further:h3][§3.3. Continuations]] of TSPL3 and [[https://docs.racket-lang.org/reference/cont.html][§10.4 Continuations]] of the Racket Reference guide.

@@ -30,13 +30,13 @@ A simple alternative to =yw= is =yiw= (or =yaw=): these commands allow to yank t
  (apply max (map car (factorize x))))
 #+END_EXAMPLE
 
-In this case, =yw= will only yank largest while =yW= will yank the full function name.
+In this case, =yw= will only yank largest while =yW= will yank the full function name. Using motion (see next section), we could also use =y%= to yank the function name and its parameter, that is all text objects occurring between the parenthesis.
 
 Copy, cut and paste do not involve the system clipboard (like =pbcopy= and =pbpaste= on macOS) but Vim default register (=""=). In insert mode, the last object copied can be pasted using =C-r "= (this is the default value). In normal mode, we use =""p=. As a final note, instead of pasting in place (i.e., without moving the cursor afterwards), one may use =gp= (paste after) or =gP= (paste before) to move the cursor after the pasted object.
 
 ** Motion
 
-Basically, what I usually want to do is: move at the beginning or end of current (physical) line -- in insert mode I use standard Emacs keybinds =C-a= and =C-e=, jump to the previous or next word (but this is generally to yank or delete this word), or to the previous or next blank line (useful in =text-mode= and =prog-mode=). I also like moving between opening and closing brackets or parenthesis. Finally, I find it useful to quickly jump to a specific line number.
+Basically, what I usually want to do is: move at the beginning or end of current (physical) line -- in insert mode I use standard Emacs keybindings =C-a= and =C-e=,[fn::To use standard Emacs movements to jump to the beginning or end of line in insert mode, one can use (in Vim): =inoremap <C-e> <C-o>$= and =inoremap <C-a> <C-o>0=. With Evil, this becomes (see [[https://stackoverflow.com/a/16226006][Evil Mode best practice]] on Stack Overflow): =(define-key evil-normal-state-map "\C-e" 'evil-end-of-line)=, with similar instructions for =evil-motion-state-map= and =evil-visual-state-map=. Note that the =evil-insert-state-map= is not necessary with Doom Emacs.] jump to the previous or next word (but this is generally to yank or delete this word), or to the previous or next blank line (useful in =text-mode= and =prog-mode=). I also like moving between opening and closing brackets or parenthesis. Finally, I find it useful to quickly jump to a specific line number.
 
 So basically, given the following snippet of text, I want to be able to jump quickly to position A, B, C and D, or to select region delimited by either two of these anchors:
 
@@ -46,10 +46,10 @@ The quick brown fox jumps over the lazy dog.
 A   B                          C           D
 #+END_EXAMPLE
 
-There are more complex scenarios but I feel like these are the most common jumps: A is the beginning of a sentence (or line), A--B corresponds to moving to the beginning of the next word, A--C is a jump to next word that start with a 't', and D is the end of the sentence (or line), which means that A--D is akin to jumping from the beginning to the end of the sentence.
+There are more complex scenarios but I feel like these are the most common jumps: A is the beginning of a sentence (or line), A--B corresponds to moving to the beginning of the next word, A--C is a jump to next word that start with a 't', and D is the end of the sentence (or line), which means that A--D is akin to jumping from the beginning to the end of the sentence. Common keybindings appear in Table [[tab:motion1]]. Note that =[= and =]= are prefix operators, much like =z= or =g,= in Doom Emacs. They are generally used to navigate in the buffer list, or to jump to the next or previous error or Git hunk.
 
-#+NAME:      tab:motion
-#+LABEL:     tab:motion
+#+NAME:      tab:motion1
+#+LABEL:     tab:motion1
 #+ATTR_HTML: :border 2 :rules all :frame border :width 100%
 #+CAPTION:   Basic shortcuts for motion in visual mode
 |---------+------------------------------------------------------------|
@@ -76,7 +76,8 @@ There are more complex scenarios but I feel like these are the most common jumps
 |---------+------------------------------------------------------------|
 |---------+------------------------------------------------------------|
 
-The shortcuts listed in Table [[tab:motion2]] are specific to Doom Emacs and are usually mapped under the =g= or =z= prefix operator. There are also keybindings specific to =prog-mode= like =gd= or =gD=: they are mapped to the corresponding =xref-find-*= functions unless the [[https://emacs-lsp.github.io/lsp-mode/][lsp]] package is installed in which case they are associated to =lsp-find-*= functions.
+The shortcuts listed in Table [[tab:motion2]] are specific to Doom Emacs and are usually mapped under the =g= or =z= prefix operator. There are also keybindings specific to =prog-mode= like =gd= or =gD=: they are mapped to the corresponding =xref-find-*= functions unless the [[https://emacs-lsp.github.io/lsp-mode/][lsp]] package is installed in which case they are associated to =lsp-find-*= functions. Likewise, =[l= and =]l= in an Org buffer can be used to jump to the previous or next link (in the EWW browser, it is just =<tab>= and =s-<tab>=).
+
 
 #+NAME:      tab:motion2
 #+LABEL:     tab:motion2

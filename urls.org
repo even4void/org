@@ -1,4 +1,7 @@
 * Inbox
+** Index of /~campbell                                                        :misc:
+[2020-08-16 Dim 22:08]
+http://mumble.net/~campbell/
 ** Beautifying Org Mode in Emacs                                              :org:
 [2020-08-16 Dim 12:24]
 https://zzamboni.org/post/beautifying-org-mode-in-emacs/

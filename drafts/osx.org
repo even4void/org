@@ -1,0 +1,9 @@
+#+TITLE: OSX configuration
+#+AUTHOR: chl
+#+DATE: August 2020
+
+This document is intended to document my current settings, which predates macOS, hence the title: OS X.
+
+Virtual box
+
+Built-in boxes from [[https://www.osboxes.org]] come with default credentials: Username = osboxes, Password = osboxes.org, same password for root.
