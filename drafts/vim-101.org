@@ -6,7 +6,13 @@ Former Emacs user here. Trying to uncover the basics of Vim keybindings, especia
 
 Hereafter, I will consider only three kind of operation: motion, transformations and actions. Motion or movement refers to moving around in the buffer. Transformations are applied to text objects, whether it is a single object (e.g., adjacent word or line) or a visual selection. Finally, actions are all other operations that can operate on a per-buffer basis or on the current selection. I'm not interested in keybindings specific of a particular mode (e.g., VCS, Markdown, Org) although I may record some shortcuts specific to =prog-mode=.
 
-I shall put additional references at a later point. \autocite{neil-2018-moder-vim} In the meantime, here's a nice overview of why Vim may be a good companion for programming stuff, written by Steve Losh: [[https://stevelosh.com/blog/2010/09/coming-home-to-vim/][Coming Home to Vim]].
+I shall put additional references at a later point. \autocite{neil-2018-moder-vim} In the meantime, here's a nice overview of why Vim may be a good companion for programming stuff, written by Steve Losh: [[https://stevelosh.com/blog/2010/09/coming-home-to-vim/][Coming Home to Vim]]. The document [[https://github.com/noctuid/evil-guide][Emacs/Evil for Vim Users]] provides an excellent introduction to the difference between Emacs and Vim terminolgy (e.g., what does 'yanking' means in Emacs or Vim), and how Evil compares to standard Vim. Some keybindings specific to Emacs remain import, though, e.g.:
+
+#+BEGIN_QUOTE
+Some people prefer to learn Emacs' keybindings first without using evil. I never did, but Sacha Chua’s visual guide for emacs beginners might be a good resource for those who want to. Tuhdo’s guides are also very good.
+
+I’ve been able to get by without almost ever using Emacs' default keybindings. The exceptions for me are =C-g= and =C-h=. Even if you don’t plan on learning emacs’ keybindings in full, I recommend learning these when starting out.
+#+END_QUOTE
 
 * Basic stuff
 
@@ -26,8 +32,8 @@ A simple alternative to =yw= is =yiw= (or =yaw=): these commands allow to yank t
 (require math)
 
 (define (largest-prime-factor x)
-         ^
- (apply max (map car (factorize x))))
+        ^
+(apply max (map car (factorize x))))
 #+END_EXAMPLE
 
 In this case, =yw= will only yank largest while =yW= will yank the full function name. Using motion (see next section), we could also use =y%= to yank the function name and its parameter, that is all text objects occurring between the parenthesis.
