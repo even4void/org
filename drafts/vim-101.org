@@ -4,15 +4,17 @@
 
 Former Emacs user here. Trying to uncover the basics of Vim keybindings, especially for selection, movement and action on text objects, when using Doom Emacs (yes, just cheating, I'm still an Emacs guy).
 
+* Overview
+
 Hereafter, I will consider only three kind of operation: motion, transformations and actions. Motion or movement refers to moving around in the buffer. Transformations are applied to text objects, whether it is a single object (e.g., adjacent word or line) or a visual selection. Finally, actions are all other operations that can operate on a per-buffer basis or on the current selection. I'm not interested in keybindings specific of a particular mode (e.g., VCS, Markdown, Org) although I may record some shortcuts specific to =prog-mode=.
 
-I shall put additional references at a later point. \autocite{neil-2018-moder-vim} In the meantime, here's a nice overview of why Vim may be a good companion for programming stuff, written by Steve Losh: [[https://stevelosh.com/blog/2010/09/coming-home-to-vim/][Coming Home to Vim]]. The document [[https://github.com/noctuid/evil-guide][Emacs/Evil for Vim Users]] provides an excellent introduction to the difference between Emacs and Vim terminolgy (e.g., what does 'yanking' means in Emacs or Vim), and how Evil compares to standard Vim. Some keybindings specific to Emacs remain import, though, e.g.:
+I shall put additional references at a later point. \autocite{neil-2018-moder-vim} In the meantime, here's a nice overview of why Vim may be a good companion for programming stuff, written by Steve Losh: [[https://stevelosh.com/blog/2010/09/coming-home-to-vim/][Coming Home to Vim]]. The document [[https://github.com/noctuid/evil-guide][Emacs/Evil for Vim Users]] provides an excellent introduction to the difference between Emacs and Vim terminolgy (e.g., what does 'yanking' means in Emacs or Vim), and how Evil compares to standard Vim.
 
 #+BEGIN_QUOTE
-Some people prefer to learn Emacs' keybindings first without using evil. I never did, but Sacha Chua’s visual guide for emacs beginners might be a good resource for those who want to. Tuhdo’s guides are also very good.
-
-I’ve been able to get by without almost ever using Emacs' default keybindings. The exceptions for me are =C-g= and =C-h=. Even if you don’t plan on learning emacs’ keybindings in full, I recommend learning these when starting out.
+I’ve been able to get by without almost ever using Emacs' default keybindings. The exceptions for me are =C-g= and =C-h=. Even if you don’t plan on learning emacs’ keybindings in full, I recommend learning these when starting out. --- Fox Kiester
 #+END_QUOTE
+
+Indeed, the =C-g= shortcut remain important as it allows to break almost everything in Emacs, but the help system is easily accessible using Doom Emacs using the leader key (=SPC=) only. Likewise, =C-c C-c= remains ubiquitous in various modes, both in Doom and vanilla Emacs.
 
 * Basic stuff
 

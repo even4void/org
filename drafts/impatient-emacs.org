@@ -1,10 +1,13 @@
-#+TITLE:        Emacs pour l'impatient
-#+LANGUAGE:     fr
-#+OPTIONS:      H:3 num:nil toc:t ':t *:t ::t f:t |:t -:t
+#+TITLE:   Emacs pour l'impatient
+#+AUTHOR:  chl
+#+DATE:    Février 2020
+#+OPTIONS: H:3 num:nil toc:t ':t *:t ::t f:t |:t -:t
 
 * TODO [1/2]                                                                   :noexport:
 - [X] Update to focus on Doom Emacs
+- [ ] Harmoniser les capatures d'écran (thème Nord et terminal)
 - [ ] Typical workflow (copy/paste the evil way, search, project, etc.)
+- [-] § Mouvements de base : terminer principaux raccourcis de mouvement en mode insertion/Emacs
 
 * Les bases de l'éditeur Emacs
 
@@ -22,10 +25,10 @@ Ceci étant, l'objet de ce document n'est pas d'arguer pour ou contre l'usage de
 L'objet de ce document est somme toute assez modeste et on s'intéressera essentiellement à quelques "modes" spécifiques, en particulier ceux qui se révèlent le plus utile pour éditer efficacement des documents texte et interagir interactivement avec des shells ou des environnements de type {REPL|Read Eval Print Loop}. L'auteur utilise personnellement Emacs depuis une vingtaine d'années, en connaît le strict minimum pour éditer une grande variété de documents, et se contente la plupart du temps d'utiliser Emacs comme un excellent éditeur de texte. En guise d'illustration, la figure [[fig:emacs-screenshot]] permet de voir à quoi ressemble l'édition de ce document sous Emacs avec le [[https://orgmode.org][mode org]]. En réalité, il ne s'agit pas tout à fait de la version de base d'Emacs, encore appelé Emacs vanilla, mais de [[https://github.com/hlissner/doom-emacs][Doom Emacs]], une configuration particulière d'Emacs incluant un thème et des options bien spécifiques. On se concentrera d'ailleurs sur cette version d'Emacs dans les prochaines sections.
 
 #+CAPTION:   L'édition de ce document sous Emacs
-#+NAME:   fig:emacs-screenshot
-#+LABEL:   fig:emacs-screenshot
-#+ATTR_HTML:   :width 640px
-#+ATTR_ORG:   :width 100
+#+NAME:      fig:emacs-screenshot
+#+LABEL:     fig:emacs-screenshot
+#+ATTR_HTML: :width 640px
+#+ATTR_ORG:  :width 100
 [[./_img/fig-emacs-screenshot.png]]
 
 ** Installation de Doom Emacs
@@ -36,18 +39,20 @@ L'installation de Doom Emacs ne pose pas de problème particulier, et tout est c
 La version 27 d'Emacs est conseillé pour bénéficier des meilleures performances avec le mode =lsp=, notamment en raison du traitement des fichiers JSON. Pour l'installer sous macOS avec Homebrew, il suffit de taper l'instruction suivante :
 
 #+BEGIN_SRC shell
-brew install emacs-plus --without-spacemacs-icon --with-no-titlebar --with-mailutils --with-jansson --with-emacs-27-branch --HEAD
+brew install emacs-plus --without-spacemacs-icon --with-no-titlebar \
+    --with-mailutils --with-jansson --with-emacs-27-branch --HEAD
 #+END_SRC
+
+Depuis 2020, les formules Homebrew ont été mises à jour de sorte qu'il suffit de taper =brew install emacs-plus@27= ou =emacs-plus@28= pour installer le version courante (27.1 depuis août 2020) ou la version de développement (=HEAD=, compilée depuis Github).
 
 ** TL;DR
 
-Encore une fois, il n'est pas question de transformer Emacs en une application tout en un --- pour cela, il suffit de consulter l'excellente page citée plus haut, [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]], mais à l'exploiter comme une boîte à outils centrale dans son travail quotidien. Il est tout à fait possible de n'utiliser Emacs que pour éditer des fichiers texte, voire même en faire l'[[https://github.com/frankjonen/emacs-for-writers][outil de base]] de son travail d'écriture. L'auteur de /Mastering Emacs/ [@petersen-2015-master-emacs] fournit d'ailleurs [[https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs][quelques conseils]] bien utiles pour rédiger un ouvrage sous Emacs.
+Encore une fois, il n'est pas question de transformer Emacs en une application tout en un --- pour cela, il suffit de consulter l'excellente page citée plus haut, [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]], mais à l'exploiter comme une boîte à outils centrale dans son travail quotidien. Il est tout à fait possible de n'utiliser Emacs que pour éditer des fichiers texte, voire même en faire l'[[https://github.com/frankjonen/emacs-for-writers][outil de base]] de son travail d'écriture. L'auteur de /Mastering Emacs/ \autocite{petersen-2015-master-emacs} fournit d'ailleurs [[https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs][quelques conseils]] bien utiles pour rédiger un ouvrage sous Emacs.
 
 Voici trois des aspects d'Emacs qui le distingue des autres éditeurs largement utilisés pour éditer du texte ou du code source. Premièrement, un des immenses avantages d'Emacs est la possibilité de lier n'importe quel shell ou process à un buffer dans lequel se trouve un document en cours d'édition (document Org ou code source). Il est alors possible d'évaluer directement des expressions ou des instructions d'un code donné à partir du document source et d'insérer les résultats dans ce même document. A l'extrême, le texte remplace les commentaires d'un code source et on a véritablement un document avec un corps de texte, des éléments balisés contenant du code source et les sorties produites par ce même code source. On parlera de programmation lettrée (en anglais, /literate programming/) pour désigner cette approche :
 
 #+BEGIN_QUOTE
-Let us change our traditional attitude to the construction of programs. Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.
---- Donald E. Knuth
+Let us change our traditional attitude to the construction of programs. Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. --- Donald E. Knuth
 #+END_QUOTE
 
 Emacs peut donc d'ores et déjà servir d'éditeur de code et de documentation, quelle que soit la manière dont on envisage la relation entre ces deux constituant d'un programme informatique. Le mode Org, par exemple, offre une version modernisée de Noweb.
@@ -59,9 +64,16 @@ Enfin, si Emacs dispose de paquets dédiés à l'édition de documents en format
 * Navigation et mouvement de base
 
 ** Organisation des fichiers et des buffers
+
+Ce que l'on appelle un buffer, comme sous Vim, correspond en réalité à une vue d'un fichier du système de fichiers lui-même. Ainsi, le même fichier physique peut être affiché dans différents buffers, voire dans différentes fenêtres d'Emacs. Ceci étant, avec Doom Emacs les fenêtres sont regroupées sous la forme de "workspaces".
+
+La gestion des buffers se fait à partir du menu
+
 ** Mouvements de base
 
-Il existe un excellent tutoriel de Guy Lapalme, [[http://www.iro.umontreal.ca/~lokbani/cours/ift1166/sessions/administration/gnuemacs.intro][GNU-EMACS - Presentation simplifiee]], qui couvre l'essentiel des commandes permettant de se déplacer dans un fichier et des raccourcis associés. En voici une adaptation exploitant les fonctionnalités propres à Spacemacs. Dans ce qui suit, on utilisera le mode hybride qui permet d'utiliser tous les raccourcis Emacs en mode /insertion/, et les raccourcis Vi en mode /normal/. Voici un moyen mnémotechnique pour retenir les commandes de déplacement sur une ligne de texte : la direction du déplacement se contrôle avec =b= pour "backward" (reculer) et =f= pour "forward" (avancer), l'unité de déplacement est soit le caractère (=C= ou =^=) soit le mot (=M= ou =ESC=). Les commandes =C-a= et =C-e=, également très utiles dans un terminal Unix, permettent d'aller en début et en fin de ligne (physique) ; avec =M-a= et =M-e=, le déplacement porte sur la phrase entière. Quant à =M-<= et =M->=, cela permet d'aller au tout début ou à la toute fin du tampon ou "buffer". Voici une illustration sur un texte arbitraire dans lequel la position du curseur est représentée par le symbole =|= :
+Il existe un excellent tutoriel de Guy Lapalme, [[http://www.iro.umontreal.ca/~lokbani/cours/ift1166/sessions/administration/gnuemacs.intro][GNU-EMACS - Presentation simplifiee]], qui couvre l'essentiel des commandes permettant de se déplacer dans un fichier et des raccourcis associés. Spacemacs offre un mode hybride qui permet de conserver les raccourcis Emacs en mode insertion et les raccourcis Vim en mode normal. Avec Doom Emacs, le mode Evil qui permet d'émuler le comportement Vim sous Emacs peut être activé de manière globale et donc on dispose également de cette distinction de raccourcis selon le mode d'édition courant (insertion versus normal ou visuel, principalement). Notons toutefois que tous les arccourcis Emacs ne sont pas respectés en mode insertion : par exemple, =C-n= décrit ci-après ne fonctionnera pas sous Doom.
+
+Dans ce qui suit, on utilisera le mode hybride qui permet d'utiliser tous les raccourcis Emacs en mode /insertion/, et les raccourcis Vi en mode /normal/. Voici un moyen mnémotechnique pour retenir les commandes de déplacement sur une ligne de texte : la direction du déplacement se contrôle avec =b= pour "backward" (reculer) et =f= pour "forward" (avancer), l'unité de déplacement est soit le caractère (=C= ou =^=) soit le mot (=M= ou =ESC=). Les commandes =C-a= et =C-e=, également très utiles dans un terminal Unix, permettent d'aller en début et en fin de ligne (physique) ; avec =M-a= et =M-e=, le déplacement porte sur la phrase entière. Quant à =M-<= et =M->=, cela permet d'aller au tout début ou à la toute fin du tampon ou "buffer". Voici une illustration sur un texte arbitraire dans lequel la position du curseur est représentée par le symbole =|= :
 
 #+begin_example
 Vivre, c'est passer d'un e|space à un autre en essayant le plus possible de ne pas se cogner.
@@ -74,6 +86,8 @@ M-b     C-b
 #+end_example
 
 On passe d'une ligne à la suivante ou à la précédente à l'aide de =C-n= et =C-p=, et d'un paragraphe à l'autre à l'aide de =M-}= et =M-{=. En pratique, comme on peut utiliser les flèches du clavier pour se déplacer d'un caractère à l'autre, ou d'une ligne à l'autre, seules les commandes permettant de naviguer entre les mots ou les blocs de mots (phrases ou paragraphes) se révèlent vraiment intéressantes.
+
+On trouvera dans le document [[https://aliquote.org/pub/vim-101.pdf][Vim 101]] une description exhaustive du mode Evil et des raccourcis associés, principalement pour la sélection et les déplacements dans un document.
 
 ** Fonctions avancées
 ** Recherche simple
@@ -89,9 +103,7 @@ Les sections qui suivent indiquent comment configurer et utiliser les deux princ
 
 ** Utilisation de eshell
 
-Contrairement à term et ses variantes, Eshell contitue un véritable shell, et pas seulement un émulateur. Toutes les commandes habituellement disponibles (=cd=, =ls=, =mkdir=, etc.) ont été réécrites en Lisp.
-
-Il est possible de définir des "alias" pour Eshell. Voici par exemple ce que l'on peut mettre dans son fichier de configuration (=doom.d/config.el=) :
+Contrairement à term et ses variantes, Eshell contitue un véritable shell, et pas seulement un émulateur. Toutes les commandes habituellement disponibles (=cd=, =ls=, =mkdir=, etc.) ont été réécrites en Lisp. L'intérêt d'Eshell par rapport aux autres émulateurs ou pseudo-émulateurs de terminal est qu'il autorise l'usage de commandes Emacs-Lisp. par exemple, il est possible d'appeler la fonction =magit-status= du package Magit directement dans le shell. Plus généralement, il est possible de définir des "alias" pour Eshell. Voici par exemple ce que l'on peut mettre dans son fichier de configuration (=doom.d/config.el=) :
 
 #+BEGIN_SRC emacs-lisp
 (after! eshell
@@ -107,7 +119,7 @@ Il est possible de définir des "alias" pour Eshell. Voici par exemple ce que l'
 
 ** Configuration de vterm
 
-Par défaut, vterm utilisera le shell défini dans la variable d'environnement $SHELL, si elle est renseignée. Pour redéfinir le shell utilisé par vterm, il suffit de mettre à jour son fichier de configuration (=doom.d/config.el=) :
+Le package vterm est assez récent et il repose sur la librairie [[https://github.com/neovim/libvterm][libvterm]] développée par les concepteurs de Neovim, qui propose un véritable émulateur de terminal contrairement aux anciennces version de Vim. Par défaut, vterm utilisera le shell défini dans la variable d'environnement $SHELL, si elle est renseignée. Pour redéfinir le shell utilisé par vterm, il suffit de mettre à jour son fichier de configuration (=doom.d/config.el=) :
 
 #+BEGIN_SRC emacs-lisp
 (setq vterm-shell "/bin/zsh")
@@ -116,7 +128,17 @@ Par défaut, vterm utilisera le shell défini dans la variable d'environnement $
 A partir de là, il n'y a vraiment plus aucune différence entre utiliser Zsh depuis Emacs ou avec une application de terminal. On prendra garde au fait que le shell Fish nécessite quelques étapes de configuration supplémentaires.
 
 * Gestion des répertoires avec Dired
+
+Bien qu'il soit tout à fait possible de naviguer dans son système de fichiers en utilisant un terminal ou un explorateur de fichier externe, Emacs fournit un outil très puissant pour gérer ses fichiers : le mode =dired=.
+
+
 * Gestion de projets avec Projectile
+
+Les commandes de gestion de projets sont accessibles à l'aide du raccourci =SPC-p=.
+
+SPC-p p
+
+
 * Gestion de l'agenda et des notes
 * Gestion du courriel
 * Gestion de documents texte
@@ -125,21 +147,21 @@ A partir de là, il n'y a vraiment plus aucune différence entre utiliser Zsh de
 
 Emacs offre les mêmes fonctionnalités d'édition de texte simple qu'un éditeur tel que vi(m), Sublime, Atom ou VS Code.
 
-Plutôt que de laisser courir le texte indéfiniment sur la même ligne (il s'agit du mode ~longlines-mode~), il est possible de formater l'affichage du texte dans le buffer à l'aide de modes mineurs. On distingue alors principalement le mode avec arrêt automatique sur le bord de la fenêtre (~visual-line-mode~) ou à un certain nombre de caractères (~auto-fill-mode~). Dans le premier cas de figure, cela n'affecte pas le rendu final du document texte (chaque ligne reste disposée sur une seule et même ligne physique), alors que dans le second cas de figure le document final est vraiment formaté selon le nombre de colonnes spécifiées, généralement 80 charactères pour respecter les limitations de certains terminaux.
+Plutôt que de laisser courir le texte indéfiniment sur la même ligne (il s'agit du mode =longlines-mode=), il est possible de formater l'affichage du texte dans le buffer à l'aide de modes mineurs. On distingue alors principalement le mode avec arrêt automatique sur le bord de la fenêtre (=visual-line-mode=) ou à un certain nombre de caractères (=auto-fill-mode=). Dans le premier cas de figure, cela n'affecte pas le rendu final du document texte (chaque ligne reste disposée sur une seule et même ligne physique), alors que dans le second cas de figure le document final est vraiment formaté selon le nombre de colonnes spécifiées, généralement 80 charactères pour respecter les limitations de certains terminaux.
 
 Pour le reste, on dispose des commandes de base de Emacs concernant n'importe quelle saisie de texte. Il peut exister des subtilités selon, par exemple, que le mode "électrique" est activé ou non,
 
-En mode d'édition texte (cela est valable également dans le cas de documents Markdown ou Org), il est toujours possible d'activer le correcteur orthographique qui généralement repose sur le programme ~ispell~ ou son équivalent ~aspell~. Il peut être nécessaire de modifier le dictionnaire choisi par défaut à l'aide de la commande ~ispell-change-dictionnary~. Lorsqu'un mot présente une erreur, il est sous-ligné et il est alors possible de le corriger en tapant =M-$= (~ispell-word~) : une sous-fenêtre propose différents choix possibles pour le remplacement et il suffit d'indiquer le numéro correspondant ou à défaut de taper sur la touche entrée.
+En mode d'édition texte (cela est valable également dans le cas de documents Markdown ou Org), il est toujours possible d'activer le correcteur orthographique qui généralement repose sur le programme =ispell= ou son équivalent =aspell=. Il peut être nécessaire de modifier le dictionnaire choisi par défaut à l'aide de la commande =ispell-change-dictionnary=. Lorsqu'un mot présente une erreur, il est sous-ligné et il est alors possible de le corriger en tapant =M-$= (=ispell-word=) : une sous-fenêtre propose différents choix possibles pour le remplacement et il suffit d'indiquer le numéro correspondant ou à défaut de taper sur la touche entrée.
 
 ** Markdown
 
 L'édition de fichier Markdown peut naturellement se faire en mode texte simple, mais il est préférable d'utiliser le [[https://jblevins.org/projects/markdown-mode/][mode majeur]] correspondant. Un aperçu des principales options du mode Markdown est fourni dans la figure ci-après.
 
 #+CAPTION:   Le mode majeur pour Markdown
-#+NAME:   fig:emacs-markdown-mode
-#+LABEL:   fig:emacs-markdown-mode
-#+ATTR_HTML:   :width 640px
-#+ATTR_ORG:   :width 100
+#+NAME:      fig:emacs-markdown-mode
+#+LABEL:     fig:emacs-markdown-mode
+#+ATTR_HTML: :width 640px
+#+ATTR_ORG:  :width 100
 [[./_img/fig-emacs-markdown-mode.png]]
 
 Pour faciliter le balisage de certains éléments, tels que la mise en gras ou en italique, il suffit de sélectionner une partie de texte, qui devient alors la "région active", et d'utiliser le raccourci clavier correspondant en utilisant la séquence =C-c C-s=.
@@ -151,7 +173,7 @@ Pour faciliter le balisage de certains éléments, tels que la mise en gras ou e
 
 ** Introduction au mode =progn=
 
-En plus de son support amélioré pour les différents modes texte (texte brut, Markdown, Org et bien d'autres), Emacs permet d'éditer du code dans presque n'importe quel langage de programmation. Les plus connus sont bien évidemment les modes pour Emacs Lisp et C, mais on verra d'autres langages, en particulier Python, Clojure, Scheme, la manière de configurer les modes associés et les principaux outils disponibles sous Emacs pour interagir avec le code dans ces modes. Indépendemment du langage, Emacs offre un ensemble de fonctionnalités commune à tous les modes de programmation, encore appelé ~progn-mode~. Cela comprend la gestion automatique des parenthèses, de l'indentation, des commentaires, etc.
+En plus de son support amélioré pour les différents modes texte (texte brut, Markdown, Org et bien d'autres), Emacs permet d'éditer du code dans presque n'importe quel langage de programmation. Les plus connus sont bien évidemment les modes pour Emacs Lisp et C, mais on verra d'autres langages, en particulier Python, Clojure, Scheme, la manière de configurer les modes associés et les principaux outils disponibles sous Emacs pour interagir avec le code dans ces modes. Indépendemment du langage, Emacs offre un ensemble de fonctionnalités commune à tous les modes de programmation, encore appelé =progn-mode=. Cela comprend la gestion automatique des parenthèses, de l'indentation, des commentaires, etc.
 
 ** Emacs Lisp
 
@@ -165,3 +187,5 @@ Dans ce qui suit, on présentera plus en détails le mode Lisp avec en particuli
 ** Lisp et Slime
 
 ** Clojure et Cider
+
+#+LATEX: \printbibliography

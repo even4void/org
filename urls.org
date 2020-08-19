@@ -1,4 +1,22 @@
 * Inbox
+** Emacs In a Box                                                              :emacs:
+[2020-08-18 Tue 11:56]
+https://caiorss.github.io/Emacs-Elisp-Programming/
+** Emacs mini manual series                                                    :emacs:
+[2020-08-18 Tue 09:22]
+https://tuhdo.github.io/
+** Chez SRFI (bis)                                                             :scheme:
+[2020-08-18 Tue 09:16]
+https://github.com/fedeinthemix/chez-srfi
+** Chez SRFIs                                                                  :scheme:
+[2020-08-18 Tue 09:15]
+https://github.com/arcfide/chez-srfi
+** Getting started with Akku package manager for Scheme                        :scheme:
+[2020-08-18 Tue 09:12]
+https://www.travishinkelman.com/posts/getting-started-with-akku-package-manager-for-scheme/
+** Guide to MIT Scheme                                                         :scheme:
+[2020-08-18 Tue 09:05]
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/tools/scheme/
 ** Index of /~campbell                                                        :misc:
 [2020-08-16 Dim 22:08]
 http://mumble.net/~campbell/
