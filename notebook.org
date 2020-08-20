@@ -120,6 +120,16 @@ ToothGrowth %>%
 (+ 1 3)
 #+END_SRC
 
+#+RESULTS:
+: 4
+
+* Stata Notebook
+
+#+BEGIN_SRC stata :results output
+webuse lbw
+list in 1/2
+list in 1/5
+#+END_SRC
 
 * Python Notebook
 

@@ -1,9 +1,8 @@
 #+TITLE:   Emacs pour l'impatient
 #+AUTHOR:  chl
 #+DATE:    Février 2020
-#+OPTIONS: H:3 num:nil toc:t ':t *:t ::t f:t |:t -:t
 
-* TODO [1/2]                                                                   :noexport:
+* TODO [1/4]                                                                    :noexport:
 - [X] Update to focus on Doom Emacs
 - [ ] Harmoniser les capatures d'écran (thème Nord et terminal)
 - [ ] Typical workflow (copy/paste the evil way, search, project, etc.)
@@ -87,7 +86,36 @@ M-b     C-b
 
 On passe d'une ligne à la suivante ou à la précédente à l'aide de =C-n= et =C-p=, et d'un paragraphe à l'autre à l'aide de =M-}= et =M-{=. En pratique, comme on peut utiliser les flèches du clavier pour se déplacer d'un caractère à l'autre, ou d'une ligne à l'autre, seules les commandes permettant de naviguer entre les mots ou les blocs de mots (phrases ou paragraphes) se révèlent vraiment intéressantes.
 
-On trouvera dans le document [[https://aliquote.org/pub/vim-101.pdf][Vim 101]] une description exhaustive du mode Evil et des raccourcis associés, principalement pour la sélection et les déplacements dans un document.
+On trouvera dans le document [[https://aliquote.org/pub/vim-101.pdf][Vim 101]] une description exhaustive du mode Evil et des raccourcis associés, principalement pour la sélection et les déplacements dans un document. Pour l'essentiel, l'édition du texte se déroule en mode insertion (=i= pour y accéder depuis le mode normal), et les mouvements ou transformations de texte sont réalisées en mode normal (=ESC= pour y accéder depuis le mode insertion). On dispose également d'un mode visuel (=v= pour y accéder depuis le mode normal) ou de remplacement (=R= pour y accéder depuis le mode normal). Les principaux raccourcis pour se déplacer sont indiqués dans le tableau [[tab:motion]] (reproduit de [[https://aliquote.org/pub/vim-101.pdf][Vim 101]]).
+
+
+#+NAME:      tab:motion
+#+LABEL:     tab:motion
+#+ATTR_HTML: :border 2 :rules all :frame border :width 100%
+#+CAPTION:   Raccourcis de base pour les déplacements en mode visuel
+|---------+------------------------------------------------------------|
+|---------+------------------------------------------------------------|
+| Clavier | Description                                                |
+|---------+------------------------------------------------------------|
+| b       | Déplacer le curseur au mot précédent                       |
+| w       | Déplacer le curseur au mot suivant                         |
+| 0       | Aller en début de ligne                                    |
+| $       | Aller en fin de ligne                                      |
+| gg      | Aller au début du buffer                                   |
+| G       | Aller à la fin du buffer                                   |
+| :X      | Aller à la ligne numéro x                                  |
+| f<char> | Aller à la prochaine occurrence du caractère               |
+| F<char> | Aller à la précédente occurrence du caractère              |
+| C-u     | Aller à l'écran précédent                                  |
+| C-d     | Aller à l'écran suivant                                    |
+| o       | Alterner entre le début et la fin de la sélection visuelle |
+| %       | Alterner entre le début et la fin des délimiteurs appariés |
+| (       | Aller au début du paragraphe                               |
+| )       | Aller à la fin du paragraphe                               |
+| {       | Aller à la prochaine ligne vide                            |
+| }       | Aller à la précédente ligne vide                           |
+|---------+------------------------------------------------------------|
+|---------+------------------------------------------------------------|
 
 ** Fonctions avancées
 ** Recherche simple
@@ -164,7 +192,17 @@ L'édition de fichier Markdown peut naturellement se faire en mode texte simple,
 #+ATTR_ORG:  :width 100
 [[./_img/fig-emacs-markdown-mode.png]]
 
-Pour faciliter le balisage de certains éléments, tels que la mise en gras ou en italique, il suffit de sélectionner une partie de texte, qui devient alors la "région active", et d'utiliser le raccourci clavier correspondant en utilisant la séquence =C-c C-s=.
+Pour faciliter le balisage de certains éléments, tels que la mise en gras ou en italique, il suffit de sélectionner une partie de texte, qui devient alors la "région active", et d'utiliser le raccourci clavier correspondant en utilisant la séquence =C-c C-s=. Il est également possible de définir ses propres raccourcis clavier. Par exemple, dans le fichier =doom.d/+bindings.el=, on peut rajouter les instructions suivantes :
+
+#+BEGIN_SRC emacs-lisp
+(map!
+ (:map markdown-mode-map ;; (GUI only)
+  :i "s-i" #'markdown-insert-italic
+  :i "s-b" #'markdown-insert-bold))
+#+END_SRC
+
+
+Le raccourci =C-c C-d= est utilisé pour réaliser des actions telles que basculer d'une référence de note de bas de page à la note de bas de page elle-même, alterner entre les références et les définitions, etc.
 
 ** Org
 
@@ -174,6 +212,8 @@ Pour faciliter le balisage de certains éléments, tels que la mise en gras ou e
 ** Introduction au mode =progn=
 
 En plus de son support amélioré pour les différents modes texte (texte brut, Markdown, Org et bien d'autres), Emacs permet d'éditer du code dans presque n'importe quel langage de programmation. Les plus connus sont bien évidemment les modes pour Emacs Lisp et C, mais on verra d'autres langages, en particulier Python, Clojure, Scheme, la manière de configurer les modes associés et les principaux outils disponibles sous Emacs pour interagir avec le code dans ces modes. Indépendemment du langage, Emacs offre un ensemble de fonctionnalités commune à tous les modes de programmation, encore appelé =progn-mode=. Cela comprend la gestion automatique des parenthèses, de l'indentation, des commentaires, etc.
+
+Le package [[https://emacs-lsp.github.io/lsp-mode/][lsp-mode]] est très utile pour enrichir les fonctionnalités de base d'Emacs pour l'édition de code source. Il s'intègre de manière non obstructive aux autres outils (make, GDB, etc.) et peut remplacer les fonctions =xref-find-*= classiques pour naviguer entre les références et les définitions. Avec Doom, le raccourci =K= permet d'accéder à la documentation de l'objet sous le curseur, et l'aide en ligne est affichée via Eldoc.
 
 ** Emacs Lisp
 

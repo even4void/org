@@ -1,4 +1,7 @@
 * Inbox
+** Chez Scheme as the Racket VM #HN                                             :racket:
+ [2020-08-20 Jeu 14:24]
+ https://news.ycombinator.com/item?id=13656397
 ** Emacs In a Box                                                              :emacs:
 [2020-08-18 Tue 11:56]
 https://caiorss.github.io/Emacs-Elisp-Programming/
