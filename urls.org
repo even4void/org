@@ -1,4 +1,22 @@
 * Inbox
+** genomic data processing and analysis                                         :bioinformatics:
+ [2020-08-21 Ven 19:38]
+ https://github.com/simonhmartin/genomics_general
+** Game Programming Patterns                                                    :game:
+ [2020-08-21 Ven 19:37]
+ https://gameprogrammingpatterns.com/contents.html
+** Algorithmes et structures de données                                         :algorithms:
+ [2020-08-21 Ven 19:37]
+ https://github.com/ocuisenaire/ASD1-notebooks
+** stylewarning/cl-permutation                                                  :lisp:
+ [2020-08-21 Ven 19:36]
+ https://github.com/stylewarning/cl-permutation
+** Permutations using recursion                                                 :lisp:
+ [2020-08-21 Ven 19:35]
+ http://www.lispology.com/show?1FZG
+** GCC x86 Performance Hints                                                    :compiler:
+ [2020-08-21 Ven 19:26]
+ https://software.intel.com/content/www/us/en/develop/blogs/gcc-x86-performance-hints.html
 ** Chez Scheme as the Racket VM #HN                                             :racket:
  [2020-08-20 Jeu 14:24]
  https://news.ycombinator.com/item?id=13656397

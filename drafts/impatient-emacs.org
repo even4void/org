@@ -2,17 +2,15 @@
 #+AUTHOR:  chl
 #+DATE:    Février 2020
 
-* TODO [1/4]                                                                    :noexport:
+* TODO [3/4]                                                                    :noexport:
 - [X] Update to focus on Doom Emacs
-- [ ] Harmoniser les capatures d'écran (thème Nord et terminal)
+- [X] Harmoniser les captures d'écran (thème Nord et terminal)
 - [ ] Typical workflow (copy/paste the evil way, search, project, etc.)
-- [-] § Mouvements de base : terminer principaux raccourcis de mouvement en mode insertion/Emacs
+- [X] § Mouvements de base : terminer principaux raccourcis de mouvement en mode insertion/Emacs
 
-* Les bases de l'éditeur Emacs
+* Emacs en quelques mots
 
-** Emacs en quelques mots
-
-Emacs est un éditeur de texte, voire un [[https://news.ycombinator.com/item?id=6291620][système d'exploitation à part entière]] diront certains. Des débats enflammés ont lieu régulièrement entre les partisans d'Emacs et ceux de Vi(m), un autre éditeur Unix versatile, tout comme on retrouve des discussions sans fin sur l'usage des taquets de tabulation ou des espaces pour l'indentation des blocs en Python. Et bien sûr, Richard Stallman, adossé à la [[https://www.fsf.org][FSF]], n'est jamais bien loin lorsque l'on évoque le logiciel Emacs, même si pour l'essentiel la maintenance et le développement d'Emacs est réalisé par un groupe de volontaires bénévoles.
+Emacs est un éditeur de texte, voire un [[https://news.ycombinator.com/item?id=6291620][système d'exploitation à part entière]] diront certains. Des débats enflammés ont lieu régulièrement entre les partisans d'Emacs et ceux de Vi(m), un autre éditeur Unix versatile, tout comme on retrouve des discussions sans fin sur l'usage des taquets de tabulation ou des espaces pour l'indentation des blocs en Python. Et bien sûr, Richard Stallman, adossé à la [[https://www.fsf.org][FSF]] pendant bien longtemps, n'était jamais bien loin lorsque l'on évoquait le logiciel Emacs, même si pour l'essentiel la maintenance et le développement d'Emacs est réalisé par un groupe de volontaires bénévoles, et qu'on ne parle plus guère de R. Stallman depuis son retrait de la FSF.
 
 #+BEGIN_QUOTE
 I spend most of my time editing in Emacs. I read and send mail with Emacs using M-x rmail and C-x m. I have no experience with any other email client programs. In principle I would be glad to know about other free email clients, but learning about them is not a priority for me and I don't have time.
@@ -21,32 +19,40 @@ I spend most of my time editing in Emacs. I read and send mail with Emacs using 
 
 Ceci étant, l'objet de ce document n'est pas d'arguer pour ou contre l'usage de Emacs pour réaliser des tâches plus ou moins complexes. Il n'est pas non plus question de fournir un manuel détaillé concernant l'utilisation d'Emacs et les [[http://ergoemacs.org/emacs/gnu_emacs_keybinding.html][milles et quelques raccourcis clavier]] dont dispose Emacs dans sa configuration de base. Pour cela, il est possible de consulter la [[https://www.gnu.org/software/emacs/tour/][documentation officielle]], les ouvrages publiés chez O'Reilly, par exemple [[http://shop.oreilly.com/product/9780596006488.do][Learning GNU Emacs]], ou les nombreux liens que l'on trouve sur internet : [[https://www.masteringemacs.org][Mastering Emacs]] ou [[http://ergoemacs.org/emacs/emacs.html][Practical Emacs Tutorial]] ; [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]] et [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Emacs org-mode examples and cookbook]] pour le mode org plus spécifiquement.
 
-L'objet de ce document est somme toute assez modeste et on s'intéressera essentiellement à quelques "modes" spécifiques, en particulier ceux qui se révèlent le plus utile pour éditer efficacement des documents texte et interagir interactivement avec des shells ou des environnements de type {REPL|Read Eval Print Loop}. L'auteur utilise personnellement Emacs depuis une vingtaine d'années, en connaît le strict minimum pour éditer une grande variété de documents, et se contente la plupart du temps d'utiliser Emacs comme un excellent éditeur de texte. En guise d'illustration, la figure [[fig:emacs-screenshot]] permet de voir à quoi ressemble l'édition de ce document sous Emacs avec le [[https://orgmode.org][mode org]]. En réalité, il ne s'agit pas tout à fait de la version de base d'Emacs, encore appelé Emacs vanilla, mais de [[https://github.com/hlissner/doom-emacs][Doom Emacs]], une configuration particulière d'Emacs incluant un thème et des options bien spécifiques. On se concentrera d'ailleurs sur cette version d'Emacs dans les prochaines sections.
+L'objet de ce document est somme toute assez modeste et on s'intéressera essentiellement à quelques "modes" spécifiques, en particulier ceux qui se révèlent le plus utile pour éditer efficacement des documents texte et interagir interactivement avec des shells ou des environnements de type {REPL|Read Eval Print Loop}. L'auteur utilise personnellement Emacs depuis une vingtaine d'années, en connaît le strict minimum pour éditer une grande variété de documents, et se contente la plupart du temps d'utiliser Emacs comme un excellent éditeur de texte. En guise d'illustration, la figure [[fig:emacs-screenshot-gui]] permet de voir à quoi ressemble l'édition de ce document sous Emacs avec le [[https://orgmode.org][mode org]]. En réalité, il ne s'agit pas tout à fait de la version de base d'Emacs, encore appelé Emacs vanilla, mais de [[https://github.com/hlissner/doom-emacs][Doom Emacs]], une configuration particulière d'Emacs incluant un thème et des options bien spécifiques. On se concentrera d'ailleurs sur cette version d'Emacs dans les prochaines sections.
 
 #+CAPTION:   L'édition de ce document sous Emacs
-#+NAME:      fig:emacs-screenshot
-#+LABEL:     fig:emacs-screenshot
+#+NAME:      fig:emacs-screenshot-gui
+#+LABEL:     fig:emacs-screenshot-gui
 #+ATTR_HTML: :width 640px
 #+ATTR_ORG:  :width 100
-[[./_img/fig-emacs-screenshot.png]]
+[[./_img/fig-impatient-emacs-001.png]]
+
+* Les bases de l'éditeur Emacs
 
 ** Installation de Doom Emacs
 
-L'installation de Doom Emacs ne pose pas de problème particulier, et tout est clairement détaillé sur Github. Il est recommendé de bien lire la FAQ pour les problèmes les plus courants, et de consulter régulièrement les tickets, notamment en cas de soucis après une mise à jour. A l'image de Spacemacs, Doom Emacs repose sur le mode Evil, même s'il est possible de le désactiver. Ceci étant, en mode insertion, la plupart des commandes Emacs classiques sont disponibles, et donc la différence se voit essentiellement lorsque l'on se retrouve en mode normal ou visuel. Attention toutefois, certaines combinaisons de touches (p.ex. dans le mode calendar ou org) ont été réaffectées pour respecter le mode Evil.
+L'installation de Doom Emacs ne pose pas de problème particulier, et tout est clairement détaillé sur Github. Il est recommendé de bien lire la FAQ pour les problèmes les plus courants, et de consulter régulièrement les tickets, notamment en cas de soucis après une mise à jour. A l'image de Spacemacs, Doom Emacs repose sur le mode Evil, même s'il est possible de le désactiver. Ceci étant, en mode insertion, la plupart des commandes Emacs classiques sont disponibles, et donc la différence se voit essentiellement lorsque l'on se retrouve en mode normal ou visuel. Attention toutefois, certaines combinaisons de touches (p.ex. dans le mode calendar ou org) ont été réaffectées pour respecter le mode Evil (voir la section Navigation et mouvements de base).
 
-# FIXME Préciser JSON/Jansson
-La version 27 d'Emacs est conseillé pour bénéficier des meilleures performances avec le mode =lsp=, notamment en raison du traitement des fichiers JSON. Pour l'installer sous macOS avec Homebrew, il suffit de taper l'instruction suivante :
+Pour installer Emacs sous macOS avec Homebrew, il suffit de taper l'instruction suivante :
 
 #+BEGIN_SRC shell
 brew install emacs-plus --without-spacemacs-icon --with-no-titlebar \
     --with-mailutils --with-jansson --with-emacs-27-branch --HEAD
 #+END_SRC
 
-Depuis 2020, les formules Homebrew ont été mises à jour de sorte qu'il suffit de taper =brew install emacs-plus@27= ou =emacs-plus@28= pour installer le version courante (27.1 depuis août 2020) ou la version de développement (=HEAD=, compilée depuis Github).
+Depuis 2020, les formules Homebrew ont été mises à jour de sorte qu'il suffit de taper =brew install emacs-plus@27= ou =emacs-plus@28= pour installer le version courante (27.1 depuis août 2020) ou la version de développement (=HEAD=, compilée depuis Github). La version 27 d'Emacs est conseillé pour bénéficier des meilleures performances avec le mode =lsp=, notamment en raison de l'option de traitement des fichiers JSON.
+
+Emacs est parfaitement fonctionnel dans un terminal, et il est possible d'appliquer le même thème de couleur qu'en mode GUI sous réserve d'utiliser un terminal en mode 24 bits. La documentation de Doom Emacs fournit les [[https://github.com/hlissner/doom-emacs/tree/develop/modules/os/tty][instructions nécessaires]]. [fn::Sans utiliser de configuration spécifique, sous réserve de disposer du bon fichier =terminfo=, on peut toujours lancer Emacs en mode terminal de la manière suivante : =env TERM=xterm-24bit emacs -nw=.]
+
+** Particularités de Doom Emacs
+
+leader key = =SPC=
+local leader key = =SPC m=
 
 ** TL;DR
 
-Encore une fois, il n'est pas question de transformer Emacs en une application tout en un --- pour cela, il suffit de consulter l'excellente page citée plus haut, [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]], mais à l'exploiter comme une boîte à outils centrale dans son travail quotidien. Il est tout à fait possible de n'utiliser Emacs que pour éditer des fichiers texte, voire même en faire l'[[https://github.com/frankjonen/emacs-for-writers][outil de base]] de son travail d'écriture. L'auteur de /Mastering Emacs/ \autocite{petersen-2015-master-emacs} fournit d'ailleurs [[https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs][quelques conseils]] bien utiles pour rédiger un ouvrage sous Emacs.
+Encore une fois, il n'est pas question de transformer Emacs en une application tout en un --- pour cela, il suffit de consulter l'excellente page citée plus haut, [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]], mais à l'exploiter comme une boîte à outils centrale dans son travail quotidien. Il est tout à fait possible de n'utiliser Emacs que pour éditer des fichiers texte, voire même en faire l'[[https://github.com/frankjonen/emacs-for-writers][outil de base]] de son travail d'écriture. L'auteur de /Mastering Emacs/ \autocite[][l'auteur fournit par ailleurs de nombreux exemples de configuration pour Emacs dans la plupart des modes sur son site personnel.]{petersen-2015-master-emacs} fournit d'ailleurs [[https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs][quelques conseils]] bien utiles pour rédiger un ouvrage sous Emacs.
 
 Voici trois des aspects d'Emacs qui le distingue des autres éditeurs largement utilisés pour éditer du texte ou du code source. Premièrement, un des immenses avantages d'Emacs est la possibilité de lier n'importe quel shell ou process à un buffer dans lequel se trouve un document en cours d'édition (document Org ou code source). Il est alors possible d'évaluer directement des expressions ou des instructions d'un code donné à partir du document source et d'insérer les résultats dans ce même document. A l'extrême, le texte remplace les commentaires d'un code source et on a véritablement un document avec un corps de texte, des éléments balisés contenant du code source et les sorties produites par ce même code source. On parlera de programmation lettrée (en anglais, /literate programming/) pour désigner cette approche :
 
@@ -66,11 +72,11 @@ Enfin, si Emacs dispose de paquets dédiés à l'édition de documents en format
 
 Ce que l'on appelle un buffer, comme sous Vim, correspond en réalité à une vue d'un fichier du système de fichiers lui-même. Ainsi, le même fichier physique peut être affiché dans différents buffers, voire dans différentes fenêtres d'Emacs. Ceci étant, avec Doom Emacs les fenêtres sont regroupées sous la forme de "workspaces".
 
-La gestion des buffers se fait à partir du menu
+La gestion des buffers se fait à partir du menu =SPC-b=. mais on dispose également des raccourcis Emacs standards, =C-x f= (ouvrir) et =C-x k= (fermer), ainsi que de quelques autres raccourcis bien pratiques : =SPC SPC= et =SPC ,=.
 
 ** Mouvements de base
 
-Il existe un excellent tutoriel de Guy Lapalme, [[http://www.iro.umontreal.ca/~lokbani/cours/ift1166/sessions/administration/gnuemacs.intro][GNU-EMACS - Presentation simplifiee]], qui couvre l'essentiel des commandes permettant de se déplacer dans un fichier et des raccourcis associés. Spacemacs offre un mode hybride qui permet de conserver les raccourcis Emacs en mode insertion et les raccourcis Vim en mode normal. Avec Doom Emacs, le mode Evil qui permet d'émuler le comportement Vim sous Emacs peut être activé de manière globale et donc on dispose également de cette distinction de raccourcis selon le mode d'édition courant (insertion versus normal ou visuel, principalement). Notons toutefois que tous les arccourcis Emacs ne sont pas respectés en mode insertion : par exemple, =C-n= décrit ci-après ne fonctionnera pas sous Doom.
+Il existe un excellent tutoriel de Guy Lapalme, [[http://www.iro.umontreal.ca/~lokbani/cours/ift1166/sessions/administration/gnuemacs.intro][GNU-EMACS - Presentation simplifiee]], qui couvre l'essentiel des commandes permettant de se déplacer dans un fichier et des raccourcis associés. Spacemacs offre un mode hybride qui permet de conserver les raccourcis Emacs en mode insertion et les raccourcis Vim en mode normal. Avec Doom Emacs, le mode Evil qui permet d'émuler le comportement Vim sous Emacs peut être activé de manière globale et donc on dispose également de cette distinction de raccourcis selon le mode d'édition courant (insertion versus normal ou visuel, principalement). Notons toutefois que tous les raccourcis Emacs ne sont pas respectés en mode insertion : par exemple, =C-n= décrit ci-après ne fonctionnera pas sous Doom.
 
 Dans ce qui suit, on utilisera le mode hybride qui permet d'utiliser tous les raccourcis Emacs en mode /insertion/, et les raccourcis Vi en mode /normal/. Voici un moyen mnémotechnique pour retenir les commandes de déplacement sur une ligne de texte : la direction du déplacement se contrôle avec =b= pour "backward" (reculer) et =f= pour "forward" (avancer), l'unité de déplacement est soit le caractère (=C= ou =^=) soit le mot (=M= ou =ESC=). Les commandes =C-a= et =C-e=, également très utiles dans un terminal Unix, permettent d'aller en début et en fin de ligne (physique) ; avec =M-a= et =M-e=, le déplacement porte sur la phrase entière. Quant à =M-<= et =M->=, cela permet d'aller au tout début ou à la toute fin du tampon ou "buffer". Voici une illustration sur un texte arbitraire dans lequel la position du curseur est représentée par le symbole =|= :
 
@@ -84,7 +90,7 @@ Vivre, c'e|st passer d'un espace à un autre en essayant le plus possible de ne 
 M-b     C-b
 #+end_example
 
-On passe d'une ligne à la suivante ou à la précédente à l'aide de =C-n= et =C-p=, et d'un paragraphe à l'autre à l'aide de =M-}= et =M-{=. En pratique, comme on peut utiliser les flèches du clavier pour se déplacer d'un caractère à l'autre, ou d'une ligne à l'autre, seules les commandes permettant de naviguer entre les mots ou les blocs de mots (phrases ou paragraphes) se révèlent vraiment intéressantes.
+On passe d'une ligne à la suivante ou à la précédente à l'aide de =C-n= et =C-p=, et d'un paragraphe à l'autre à l'aide de =M-}= et =M-{=. En pratique, comme on peut utiliser les flèches du clavier pour se déplacer d'un caractère à l'autre, ou d'une ligne à l'autre, seules les commandes permettant de naviguer entre les mots ou les blocs de mots (phrases ou paragraphes) se révèlent vraiment intéressantes.[fn::Notons que avec Doom Emacs, les raccourcis =C-n= et =C-p= sont déjà réservés.]
 
 On trouvera dans le document [[https://aliquote.org/pub/vim-101.pdf][Vim 101]] une description exhaustive du mode Evil et des raccourcis associés, principalement pour la sélection et les déplacements dans un document. Pour l'essentiel, l'édition du texte se déroule en mode insertion (=i= pour y accéder depuis le mode normal), et les mouvements ou transformations de texte sont réalisées en mode normal (=ESC= pour y accéder depuis le mode insertion). On dispose également d'un mode visuel (=v= pour y accéder depuis le mode normal) ou de remplacement (=R= pour y accéder depuis le mode normal). Les principaux raccourcis pour se déplacer sont indiqués dans le tableau [[tab:motion]] (reproduit de [[https://aliquote.org/pub/vim-101.pdf][Vim 101]]).
 
@@ -120,7 +126,12 @@ On trouvera dans le document [[https://aliquote.org/pub/vim-101.pdf][Vim 101]] u
 ** Fonctions avancées
 ** Recherche simple
 
+Voici les principales manières de rechercher du texte ou un symbole dans un document : =/=, =SPC-/=, =*= et =SPC-*=. Les deux premières reposent sont des outils assez rapides pour marquer les occurrences d'un motif en utilisant le raccourci Vim ou =swiper= du package Ivy (voir section suivante). Dans le premier cas, toutes les occurrences sont surlignées de manière incrémentale à mesure que le motif de recherche est trouvé ; une fois qu'on a obtenu le résultat désiré, il suffit de valider en appuyant sur entrée, et à partir de là il est possible de visiter chaque occurrence en appuyant sur =n=. Le raccourci =SPC-/= (ou =SPC-s b=) permet d'appeler swiper (ou swiper-all) permet de réaliser la même chose mais en affichant chaque ligne contenant le motif recherché dans un minibuffer. Les deux dernières instructions, =*= et =SPC-*=, permettent de surligner le symbole sous le curseur dans tout le document, ou dans tout le projet, respectivement.
+
 * Ivy
+
+On a vu dans les paragraphes précédents deux des principaux outils de recherche textuelle proposé par le package [[https://oremacs.com/swiper/][Ivy]].
+
 * Utiliser un terminal
 
 Emacs fournit un véritable shell écrit en Lisp, =eshell=, et des émulateurs de terminal (=term=, =ansi-term=, =multi-term=). Eshell présente ses intérêts, que l'on discutera plus loin, mais si l'on souhaite travailler avec un véritable terminal et non un émulateur sous Emacs, il est conseillé d'installer le package [[https://github.com/akermu/emacs-libvterm][vterm]]. Attention, il s'agit d'un véritable programme externe, qui doit être compilé avant de pouvoir l'utiliser. Ceci est également valable après chaque mise à jour du package ou lorsque l'on change de version d'Emacs, à l'image de =pdf-tools=.
@@ -181,16 +192,21 @@ Pour le reste, on dispose des commandes de base de Emacs concernant n'importe qu
 
 En mode d'édition texte (cela est valable également dans le cas de documents Markdown ou Org), il est toujours possible d'activer le correcteur orthographique qui généralement repose sur le programme =ispell= ou son équivalent =aspell=. Il peut être nécessaire de modifier le dictionnaire choisi par défaut à l'aide de la commande =ispell-change-dictionnary=. Lorsqu'un mot présente une erreur, il est sous-ligné et il est alors possible de le corriger en tapant =M-$= (=ispell-word=) : une sous-fenêtre propose différents choix possibles pour le remplacement et il suffit d'indiquer le numéro correspondant ou à défaut de taper sur la touche entrée.
 
+Le dictionnaire sélectionné par défaut est défini à partir de la variable d'environnement =$LANG= du terminal, ou de la variable =flyspell-default-dictionary= si elle est définie. Dans le cas où l'on est amené à éditer fréquemment des documents dans deux langues, il est préférable de définir un raccourci clavier permettant d'alterner rapidement entre les deux dictionnaires, comme suggéré sur le site de Flyspell :
+
+#+BEGIN_SRC emacs-lisp
+(defun ispell-cycle-dictionary ()
+  "Cycle between fr <-> en dictionaries"
+  (interactive)
+  (let* ((curr ispell-current-dictionary)
+         (next (if (string= curr "fr") "en" "fr")))
+        (ispell-change-dictionary next)
+        (message "Dictionary switched from %s to %s" curr next)))
+#+END_SRC
+
 ** Markdown
 
-L'édition de fichier Markdown peut naturellement se faire en mode texte simple, mais il est préférable d'utiliser le [[https://jblevins.org/projects/markdown-mode/][mode majeur]] correspondant. Un aperçu des principales options du mode Markdown est fourni dans la figure ci-après.
-
-#+CAPTION:   Le mode majeur pour Markdown
-#+NAME:      fig:emacs-markdown-mode
-#+LABEL:     fig:emacs-markdown-mode
-#+ATTR_HTML: :width 640px
-#+ATTR_ORG:  :width 100
-[[./_img/fig-emacs-markdown-mode.png]]
+L'édition de fichier Markdown peut naturellement se faire en mode texte simple, mais il est préférable d'utiliser le [[https://jblevins.org/projects/markdown-mode/][mode majeur]] correspondant. Les raccourcis sont disponibles sous le "local leader key" (=SPC m=).
 
 Pour faciliter le balisage de certains éléments, tels que la mise en gras ou en italique, il suffit de sélectionner une partie de texte, qui devient alors la "région active", et d'utiliser le raccourci clavier correspondant en utilisant la séquence =C-c C-s=. Il est également possible de définir ses propres raccourcis clavier. Par exemple, dans le fichier =doom.d/+bindings.el=, on peut rajouter les instructions suivantes :
 
@@ -201,8 +217,22 @@ Pour faciliter le balisage de certains éléments, tels que la mise en gras ou e
   :i "s-b" #'markdown-insert-bold))
 #+END_SRC
 
-
 Le raccourci =C-c C-d= est utilisé pour réaliser des actions telles que basculer d'une référence de note de bas de page à la note de bas de page elle-même, alterner entre les références et les définitions, etc.
+
+Concernant la visualisation du document Markdown, il est possible d'utiliser le mode grip ou un visualisateur externe. Sous macOS, l'application Marked2 convient parfaitement et il suffit de la définir comme visualisateur par défaut. Voici un exemple de configuration possible : [fn::La première instruction n'est indispensable mais permet de s'assurer que [[https://github.com/polymode/poly-markdown][poly-markdown]] n'est pas activé lorsqu'il s'agit d'un simple document Markdown.]
+
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'auto-mode-alist '("\\.md" . markdown-mode))
+(setq markdown-open-command "/usr/local/bin/mark"
+      markdown-command "/usr/local/bin/multimarkdown"
+      markdown-enable-math t
+      markdown-fontify-code-blocks-natively t
+      markdown-hide-markup t
+      markdown-gfm-uppercase-checkbox t
+      markdown-list-item-bullets '("◎" "◎" "○" "◆" "◇" "►" "•")
+      markdown-header-scaling-values '(1.1 1.0 1.0 1.0 1.0 1.0))
+#+END_SRC
+
 
 ** Org
 

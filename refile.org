@@ -6,6 +6,7 @@
 ** [[https://solmaz.io/2019/04/20/equilibrium-cryptoeconomic-networks/][Equilibrium in Cryptoeconomic Networks]]
 ** https://sixthhappiness.github.io/index.html
 ** [[https://36-750.github.io][Statistical Computing]]
+** [[https://see.stanford.edu/Course/CS107][CS107 - Programming Paradigms]] ([[https://github.com/sergeynikiforov/CS107][Github]])
 
 * Bookmarks to file
 ** How to use matrix.org and vector.im as an IRC client
