@@ -1,4 +1,19 @@
 * Inbox
+** Literal Examples                                                             :org:
+ [2020-08-22 Sam 16:37]
+ https://orgmode.org/manual/Literal-Examples.html
+** Never leave IRC again with ZNC                                               :irc:
+ [2020-08-22 Sam 13:37]
+ https://fedoramagazine.org/never-leave-irc-znc/
+** Tips on Emacs Lisp programming                                               :emacs:
+ [2020-08-22 Sam 13:34]
+ http://nic.ferrier.me.uk/blog/2012_07/tips-and-tricks-for-emacslisp
+** Python Optimization Tricks                                                   :python:
+ [2020-08-22 Sam 09:31]
+ https://github.com/pawangeek/Python-Resources/blob/master/Cool-stuff/Python-Tricks.md
+** Which is faster in Python: x**.5 or math.sqrt(x)?                            :python:
+ [2020-08-22 Sam 09:29]
+ https://stackoverflow.com/questions/327002/which-is-faster-in-python-x-5-or-math-sqrtx
 ** genomic data processing and analysis                                         :bioinformatics:
  [2020-08-21 Ven 19:38]
  https://github.com/simonhmartin/genomics_general
