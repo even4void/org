@@ -123,6 +123,13 @@ ToothGrowth %>%
 #+RESULTS:
 : 4
 
+#+BEGIN_SRC emacs-lisp -n -r
+  (save-excursion                 (ref:sc)
+     (goto-char (point-min))      (ref:jump)
+#+END_SRC
+
+In line [[(sc)]] we remember the current position. [[(jump)][Line (jump)]] jumps to point-min.
+
 * Stata Notebook
 
 #+BEGIN_SRC stata :results output

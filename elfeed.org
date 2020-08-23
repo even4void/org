@@ -1,10 +1,10 @@
 * Feeds                                                                        :elfeed:
 ** Mute                                                                       :mute:
-*** [[https://aliquote.org/index.xml][aliquot]]                             :aliquote:
+*** [[https://aliquote.org/index.xml][aliquot]]                                                                 :aliquote:
 *** [[https://danielmiessler.com/feed/][Daniel Miessler]]                                                          :misc:
 *** [[https://daringfireball.net/feeds/main][Daring Fireball]]                                                          :generative:
 *** [[http://www.madore.org/~david/weblog/weblog.rss][David Madore's WebLog]]                                                    :misc:
-*** [[https://inessential.com/xml/rss.xml][inessential.com]]	     :misc:
+*** [[https://inessential.com/xml/rss.xml][inessential.com]]                                                          :misc:
 *** [[https://www.baty.net/index.xml][Jack Baty on Jack Baty's weblog]]                                          :apple:misc:
 *** [[https://www.baty.blog/feed.rss][Jack Baty's Coping Mechanism]]                                             :apple:misc:
 *** [[https://jlelse.blog/index.xml][jlelse's Blog]]                                                            :misc:
@@ -12,7 +12,7 @@
 *** [[https://lwn.net/headlines/newrss][LWN.net]]                                                                  :unix:news:
 *** [[https://www.manton.org/feed.xml][Manton Reece]]                                                             :news:
 *** [[https://martinfowler.com/feed.atom][Martin Fowler]]                                                            :misc:
-*** [[https://mjtsai.com/blog/feed/][Michael Tsai]]                                                             :news:apple:
+*** [[https://mjtsai.com/blog/feed/][Michael Tsai]]                                                             :apple:news:
 *** [[http://planet.lisp.org/rss20.xml][Planet Lisp]]                                                              :lisp:news:
 *** [[https://serokell.io/blog.rss.xml][Serokell Blog]]                                                            :haskell:news:
 *** [[https://simonwillison.net/atom/everything/][Simon Willison's Weblog]]                                                  :sql:
@@ -67,6 +67,7 @@
 *** [[https://jcarroll.com.au/index.xml][Irregularly Scheduled Programming]]                                        :rstats:
 *** [[http://jakob.space/feed.xml][Jakob's Personal Webpage]]                                                 :lisp:scheme:competitive:
 *** [[https://gustedt.wordpress.com/feed/][Jens Gustedt's Blog]]                                                      :clang:
+*** [[https://joeyh.name/blog/index.rss][Joey Hess]]                                                                :haskell:
 *** [[http://zerolib.com/feed.xml][John Jacobsen]]                                                            :lisp:clojure:generative:
 *** [[https://blog.josephmorag.com/index.xml][Joseph Morag]]                                                             :compiler:clang:
 *** [[https://www.snellman.net/blog/rss-index.xml][Juho Snellman's Weblog]]                                                   :lisp:clang:misc:
@@ -305,6 +306,7 @@
 *** [[https://www.schneier.com/blog/atom.xml][Schneier on Security]]                                                     :infosec:
 *** [[https://scriptingosx.com/feed/][Scripting OS X]]                                                           :apple:
 *** [[https://www.seancassidy.me/atom.xml][sean cassidy]]                                                             :misc:crypto:
+*** [[https://sgfault.com/feed.xml][Segmentation Fault]]                                                       :misc:
 *** [[https://standblog.org/blog/feed/atom][Standblog]]                                                                :infosec:http:
 *** [[http://stevenrosenberg.net/blog/index.rss2][Steven Rosenberg]]                                                         :unix:misc:
 *** [[http://techsnuffle.com/feed.xml][TechSnuffle]]                                                              :misc:diary:
@@ -342,7 +344,7 @@
 *** [[http://david.monniaux.free.fr/dotclear/index.php/feed/atom][La vie est mal configurée]]                                                :infosec:
 *** [[https://mattsegal.dev/feeds/rss.xml][Matt Segal Dev]]                                                           :python:http:
 *** [[https://feedpress.me/tnb][Open Folder]]                                                              :python:http:
-*** [[https://blog.ploeh.dk/rss.xml][ploeh blog]]                                                               :http:csharp:
+*** [[https://blog.ploeh.dk/rss.xml][ploeh blog]]                                                               :csharp:http:
 *** [[https://so.nwalsh.com/feed.rss][so…]]                                                                      :http:
 *** [[https://meyerweb.com/eric/thoughts/rss2/full][Thoughts From Eric]]                                                       :javascript:css:
 *** [[http://tonsky.me/blog/atom.xml][tonsky.me]]                                                                :clojure:apple:

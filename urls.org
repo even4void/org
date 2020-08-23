@@ -1,4 +1,28 @@
 * Inbox
+** DSM-5 ASD diagnostic                                                         :misc:
+ [2020-08-23 Dim 20:13]
+ https://www.iancommunity.org/diagnostic-criteria-autism
+** zsh options                                                                  :zsh:
+ [2020-08-23 Dim 18:16]
+ http://zsh.sourceforge.net/Doc/Release/Options.html#Options
+** Python, Scheme, C                                                            :misc:
+ [2020-08-23 Sun 13:11]
+ https://www.laurentbloch.net/MySpip3/Python-Scheme-C
+** Downloading YouTube Video using VLC                                          :cli:
+ [2020-08-23 Sun 10:16]
+ https://www.bogotobogo.com/VideoStreaming/VLC/Downloading_YouTube_Video_using_VLC.php
+** moreutils                                                                    :cli:
+ [2020-08-22 Sam 17:52]
+ https://joeyh.name/code/moreutils/
+** Setting Up an IRC Bouncer                                                    :irc:
+ [2020-08-22 Sam 17:50]
+ https://sgfault.com/2018/07/28/irc-bouncer-setup.html
+** Vagrant Up and Running in 5 Minutes                                          :cli:
+ [2020-08-22 Sam 17:47]
+ https://sgfault.com/2018/07/29/vagrant-in-five-mins.html
+** Exercices en Scheme                                                          :scheme:
+ [2020-08-22 Sam 17:42]
+ https://pages.lip6.fr/Christian.Queinnec/Teaching/scheme/enonces.html
 ** Literal Examples                                                             :org:
  [2020-08-22 Sam 16:37]
  https://orgmode.org/manual/Literal-Examples.html
@@ -2419,7 +2443,7 @@ https://homolog.us/Tutorials/book4/p2.1.html
 [2019-10-02 Wed 13:42]
 https://www.datacamp.com/community/tutorials/pipe-r-tutorial
 * Archives
-(NOTE: in decreasing order, i.e. newer comes last)
+# NOTE: in decreasing order, i.e. newer comes last)
 ** Check this new series of posts from Stata blog
 [2018-02-15 Thu 21:01]
 https://blog.stata.com/2018/02/15/programming-an-estimation-command-in-stata-preparing-to-write-a-plugin/
