@@ -8,7 +8,7 @@ Former Emacs user here. Trying to uncover the basics of Vim keybindings, especia
 
 Hereafter, I will consider only three kind of operation: motion, transformations and actions. Motion or movement refers to moving around in the buffer. Transformations are applied to text objects, whether it is a single object (e.g., adjacent word or line) or a visual selection. Finally, actions are all other operations that can operate on a per-buffer basis or on the current selection. I'm not interested in keybindings specific of a particular mode (e.g., VCS, Markdown, Org) although I may record some shortcuts specific to =prog-mode=.
 
-I shall put additional references at a later point. \autocite{neil-2018-moder-vim} In the meantime, here's a nice overview of why Vim may be a good companion for programming stuff, written by Steve Losh: [[https://stevelosh.com/blog/2010/09/coming-home-to-vim/][Coming Home to Vim]]. The document [[https://github.com/noctuid/evil-guide][Emacs/Evil for Vim Users]] provides an excellent introduction to the difference between Emacs and Vim terminolgy (e.g., what does 'yanking' means in Emacs or Vim), and how Evil compares to standard Vim.
+There are many good references on Vim itself, or Vim best practices. \autocite{robbins-2008-learn-vi,neil-2018-moder-vim} In the meantime, here's a nice overview of why Vim may be a good companion for programming stuff, written by Steve Losh: [[https://stevelosh.com/blog/2010/09/coming-home-to-vim/][Coming Home to Vim]]. The document [[https://github.com/noctuid/evil-guide][Emacs/Evil for Vim Users]] provides an excellent introduction to the difference between Emacs and Vim terminolgy (e.g., what does 'yanking' means in Emacs or Vim), and how Evil compares to standard Vim. Finally, I recommend the [[http://tnerual.eriogerg.free.fr/vim.html][Vim quick reference card]] for a handy cheat sheet.
 
 #+BEGIN_QUOTE
 I’ve been able to get by without almost ever using Emacs' default keybindings. The exceptions for me are =C-g= and =C-h=. Even if you don’t plan on learning emacs’ keybindings in full, I recommend learning these when starting out. --- Fox Kiester
@@ -18,33 +18,38 @@ Indeed, the =C-g= shortcut remain important as it allows to break almost everyth
 
 * Basic stuff
 
-** Selection
+** Modes
 
-Let us consider the following example:
+We can distinguish two main modes in Vim: Normal mode and Insert mode. Insert mode is for writing text per se while Normal mode is reserved for moving around or altering text under the cursor or nearby. In addition to Normal mode, there is also a visual mode, which can operate from point under cursor, line or block. Normal and visual are discussed in the next section. The following paragraphs summarize the main commands that can be used to enter Insert mode.[fn::See also [[https://gist.github.com/dmsul/8bb08c686b70d5a68da0e2cb81cd857f][Vim Crash Course]], which largely inspired this section.]
 
-#+BEGIN_EXAMPLE
-The quick brown fox jumps over the lazy dog.
-#+END_EXAMPLE
+Whenever we want to write down something, we press =i= or =a= to enter Insert mode before or after the current character. To go back to Normal mode, we just have to press =<Esc>=. There other ways to switch to Insert mode, as detailed in Table [[tab:mode1]].
 
-In normal mode, to select the first word in the above example, =yw= can be used when the cursor is set to the first character. If this is not the case, moving at the beginning of the visual line (=0=) will suffice (see next section). To select the whole line, =yy= (same as =Y=) or =y$= could be used instead. In these two cases, the instruction for yanking, =y=, can be replaced with =d=, to delete, or =c=, to edit in place. On any given character, =r= allow to switch to replace mode and to edit the character under the cursor. Unlike Emacs, the cursor is always positioned on a character, and not in between.
+#+NAME:      tab:mode1
+#+LABEL:     tab:mode1
+#+ATTR_HTML: :border 2 :rules all :frame border :width 100%
+#+CAPTION:   Switching between normal and Insert modes
+|---------+------------------------------------------------------------------|
+| Keys    | Description                                                      |
+|---------+------------------------------------------------------------------|
+| I       | Switch to Insert mode at the beginning of the current line       |
+| A       | Switch to Insert mode After the end of the current line          |
+| o       | Add a new line after the current line and switch to Insert mode  |
+| O       | Add a new line before the current line and switch to Insert mode |
+| c<char> | Change text from cursor until occurrence of <char>               |
+| cc      | Change the whole line                                            |
+| C       | Changes from here to end of line                                 |
+|---------+------------------------------------------------------------------|
+|---------+------------------------------------------------------------------|
 
-A simple alternative to =yw= is =yiw= (or =yaw=): these commands allow to yank the current word excluding (or including) the surrounding whitespaces. Also, =yf<char>= will yank from the current cursor position up to and including the character =<char>=. See next section about the =f= (or =F=) instruction. Technically, those kind of instructions imply a motion (=y{motion}=), like =iw= (inside word). Unlike =yw=, =yW= will select the whole object, including special character like -, # or ::. In the following Racket snippet, the cursor is on the first letter of the function name, =largest-prime-factor=:
-
-#+BEGIN_EXAMPLE
-(require math)
-
-(define (largest-prime-factor x)
-        ^
-(apply max (map car (factorize x))))
-#+END_EXAMPLE
-
-In this case, =yw= will only yank largest while =yW= will yank the full function name. Using motion (see next section), we could also use =y%= to yank the function name and its parameter, that is all text objects occurring between the parenthesis.
-
-Copy, cut and paste do not involve the system clipboard (like =pbcopy= and =pbpaste= on macOS) but Vim default register (=""=). In insert mode, the last object copied can be pasted using =C-r "= (this is the default value). In normal mode, we use =""p=. As a final note, instead of pasting in place (i.e., without moving the cursor afterwards), one may use =gp= (paste after) or =gP= (paste before) to move the cursor after the pasted object.
+Normal mode is a bit specific to Vim or other modal editors like [[http://kakoune.org][Kakoune]] or [[https://github.com/emacs-evil/evil][Evil]] mode in Emacs. Insert mode is what we usually expect from the state of a classical text editor: characters are printed as you write them. However, there is an additional mode that bear similarities with Insert mode: replacement mode. In this case, =r= means to replace the current character with the next character typed, while =R= is used to replace characters until going back to Normal mode (=<Esc>=). Other variants for in-place replacement are detailed in Table [[tab:mode1]]. Note that some of these key combinations appear as shorthand for more general key compositions. For instance, =C= may be seen as =Di=, and =o= as =$a<Enter>= (or =A<Enter>=). This is where Vim really rocks: You don't need to learn a lot of keybindings, rather how to combine them efficiently.
 
 ** Motion
 
-Basically, what I usually want to do is: move at the beginning or end of current (physical) line -- in insert mode I use standard Emacs keybindings =C-a= and =C-e=,[fn::To use standard Emacs movements to jump to the beginning or end of line in insert mode, one can use (in Vim): =inoremap <C-e> <C-o>$= and =inoremap <C-a> <C-o>0=. With Evil, this becomes (see [[https://stackoverflow.com/a/16226006][Evil Mode best practice]] on Stack Overflow): =(define-key evil-normal-state-map "\C-e" 'evil-end-of-line)=, with similar instructions for =evil-motion-state-map= and =evil-visual-state-map=. Note that the =evil-insert-state-map= is not necessary with Doom Emacs.] jump to the previous or next word (but this is generally to yank or delete this word), or to the previous or next blank line (useful in =text-mode= and =prog-mode=). I also like moving between opening and closing brackets or parenthesis. Finally, I find it useful to quickly jump to a specific line number.
+Normal mode is the main mode, together with Visual mode, we use to jump to different locations in a buffer or to select part of it. We can consider two (complementary) approaches for moving around in a buffer: moving by entity (e.g., character, word, matching brackets, line, or block), or by matching pattern after a search query. Most of the time, this is followed by an edit operation (in Insert mode), and then we go back to Normal mode for further operations.
+
+The quadriumvirat for Vim motion by character are the =hjkl= keys. No matter what other say, the arrow keys are also a good fit in many cases. Combined with the =<fn>= key on a Mac, this allows for both moving in all direction, and scrolling page. However, they remain useful if you want to combine them with a quantifier, e.g. =5j= to jump to the fifth line after the current one, or =>5j= to indent the current line and the next 5.
+
+Basically, what I usually want to do is: move at the beginning or end of current (physical) line -- in Insert mode I use standard Emacs keybindings =C-a= and =C-e=,[fn::To use standard Emacs movements to jump to the beginning or end of line in Insert mode, one can use (in Vim): =inoremap <C-e> <C-o>$= and =inoremap <C-a> <C-o>0=. With Evil, this becomes (see [[https://stackoverflow.com/a/16226006][Evil Mode best practice]] on Stack Overflow): =(define-key evil-normal-state-map "\C-e" 'evil-end-of-line)=, with similar instructions for =evil-motion-state-map= and =evil-visual-state-map=. Note that the =evil-insert-state-map= is not necessary with Doom Emacs.] jump to the previous or next word (but this is generally to yank or delete this word), or to the previous or next blank line (useful in =text-mode= and =prog-mode=). I also like moving between opening and closing brackets or parenthesis. Finally, I find it useful to quickly jump to a specific line number.
 
 So basically, given the following snippet of text, I want to be able to jump quickly to position A, B, C and D, or to select region delimited by either two of these anchors:
 
@@ -54,7 +59,7 @@ The quick brown fox jumps over the lazy dog.
 A   B                          C           D
 #+END_EXAMPLE
 
-There are more complex scenarios but I feel like these are the most common jumps: A is the beginning of a sentence (or line), A--B corresponds to moving to the beginning of the next word, A--C is a jump to next word that start with a 't', and D is the end of the sentence (or line), which means that A--D is akin to jumping from the beginning to the end of the sentence. Common keybindings appear in Table [[tab:motion1]]. Note that =[= and =]= are prefix operators, much like =z= or =g,= in Doom Emacs. They are generally used to navigate in the buffer list, or to jump to the next or previous error or Git hunk.
+There are more complex scenarios but I feel like these are the most common jumps: A is the beginning of a sentence (or line), A--B corresponds to moving to the beginning of the next word, A--C is a jump to next word that start with a 't', and D is the end of the sentence (or line), which means that A--D is akin to jumping from the beginning to the end of the sentence. Common keybindings appear in Table [[tab:motion1]].[fn::Note that =[= and =]= are prefix operators, much like =z= or =g,= in Doom Emacs. They are generally used to navigate in the buffer list, or to jump to the next or previous error or Git hunk. See also Table [[tab:motion2]].] Of note, Emacs offers a visual-line-mode which allows to wrap words at the right edge of the window while redefining simple editing commands to act on visual lines, not logical lines. This may be confusing at first since =$= will jump to the end of the current line, but then =j= or =k= will jump to the beginning or end of the visual block, not the previous or next visual line.
 
 #+NAME:      tab:motion1
 #+LABEL:     tab:motion1
@@ -108,5 +113,32 @@ The shortcuts listed in Table [[tab:motion2]] are specific to Doom Emacs and are
 |------+-----------------------------------|
 |------+-----------------------------------|
 
+** Selection
+
+As seen above, motion does constitute the most important aspect of Vim actions in Normal mode. Motion can also be used in conjunction with specific action, e.g. delete all the characters until the next comma, or copy the text within the matching parenthesis. Let us consider the following example:
+
+#+BEGIN_EXAMPLE
+The quick brown fox jumps over the lazy dog.
+#+END_EXAMPLE
+
+In Normal mode, to select the first word in the above example, =yw= can be used when the cursor is set to the first character. If this is not the case, moving at the beginning of the visual line (=0=) will suffice (see next section). To select the whole line, =yy= (same as =Y=) or =y$= could be used instead. In these two cases, the instruction for yanking, =y=, can be replaced with =d=, to delete, or =c=, to edit in place. On any given character, =r= allow to switch to replace mode and to edit the character under the cursor. Unlike Emacs, the cursor is always positioned on a character, and not in between.
+
+A simple alternative to =yw= is =yiw= (or =yaw=): these commands allow to yank the current word excluding (or including) the surrounding whitespaces. Also, =yf<char>= will yank from the current cursor position up to and including the character =<char>=. See next section about the =f= (or =F=) instruction. Technically, those kind of instructions imply a motion (=y{motion}=), like =iw= (inside word). Unlike =yw=, =yW= will select the whole object, including special character like -, # or ::. In the following Racket snippet, the cursor is on the first letter of the function name, =largest-prime-factor=:
+
+#+BEGIN_EXAMPLE
+(require math)
+
+(define (largest-prime-factor x)
+        ^
+(apply max (map car (factorize x))))
+#+END_EXAMPLE
+
+In this case, =yw= will only yank largest while =yW= will yank the full function name. Using motion (see next section), we could also use =y%= to yank the function name and its parameter, that is all text objects occurring between the parenthesis.
+
+Copy, cut and paste do not involve the system clipboard (like =pbcopy= and =pbpaste= on macOS) but Vim default register (=""=). In Insert mode, the last object copied can be pasted using =C-r "= (this is the default value). In Normal mode, we use =""p=. As a final note, instead of pasting in place (i.e., without moving the cursor afterwards), one may use =gp= (paste after) or =gP= (paste before) to move the cursor after the pasted object.
+
+* Advanced stuff
+
+wip
 
 #+LATEX: \printbibliography
