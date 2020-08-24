@@ -1,4 +1,19 @@
 * Inbox
+** Principal Component Analysis                                                 :statistics:
+ [2020-08-24 Lun 20:59]
+ https://leimao.github.io/article/Principal-Component-Analysis/
+** Cursive is a TUI (Text User Interface) library for rust                      :rust:
+ [2020-08-24 Lun 20:58]
+ https://github.com/gyscos/cursive
+** latexindent: Can't locate Log/Log4perl.pm                                    :tex:emacs:
+ [2020-08-24 Lun 16:06]
+ https://tex.stackexchange.com/questions/445521/latexindent-cant-locate-log-log4perl-pm-in-inc-you-may-need-to-install-the-l
+** Typesetting a Textbook                                                       :tex:
+ [2020-08-24 Lun 12:57]
+ https://optics.byu.edu/clsfile
+** Useful Latex macros                                                          :tex:
+ [2020-08-24 Lun 12:54]
+ http://jeffe.cs.illinois.edu/pubs/latex.html
 ** Chance of short SHA1 hash collision at 7 character hash string               :misc:
  [2020-08-24 Lun 10:36]
  https://github.com/source-foundry/font-v/issues/2
