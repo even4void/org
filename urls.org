@@ -1,4 +1,10 @@
 * Inbox
+** Chance of short SHA1 hash collision at 7 character hash string               :misc:
+ [2020-08-24 Lun 10:36]
+ https://github.com/source-foundry/font-v/issues/2
+** A book to use more the keyboard, less the mouse                              :cli:
+ [2020-08-24 Lun 09:57]
+ https://themouseless.dev/
 ** DSM-5 ASD diagnostic                                                         :misc:
  [2020-08-23 Dim 20:13]
  https://www.iancommunity.org/diagnostic-criteria-autism
