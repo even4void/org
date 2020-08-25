@@ -1,23 +1,27 @@
-OUT_DIR=/Users/chl/org/.export
-OUT_FILES=$(patsubst %.org,$(OUT_DIR)/%.pdf,$(wildcard *.org))
+# Time-stamp: <2020-08-25 08:43:30 chl>
+#
+# General purpose Makefile to compile all documents in my Org directory.
+#
+# Requires: (in current working directory)
+# - 'eval.el':    Org stuff for first PDF target
+# - 'macros.tex': TeX stuff for second PDF target
+.PHONY: all clean veryclean
 
-.PHONY: all clean veryclean dist
-
-all: dist
-
-dist: $(OUT_DIR) $(OUT_FILES)
-
-$(OUT_DIR):
-	mkdir -v -p $(OUT_DIR)
+all: pdf
 
 %.pdf: %.org
 	emacs --batch -l setup.el --eval '(progn (find-file "$<") (org-latex-export-to-pdf))'
+	mv $*.tex $*.tex~  # keep a copy in case we need it
 
-$(OUT_DIR)/%.pdf: %.pdf
-	mv $< $(OUT_DIR)
+%.pdf: %.tex
+	latexmk -pdflatex=luatex -pdf $<
 
 clean:
-	rm *.{bbl,tex}
+	latexmk -c
+	-rm *.tex~
+	rm *.{bbl,synctex.gz}
 
 veryclean:
-	rm dist/*.pdf dist/fig-*.png
+	latexmk -C
+	-rm *.tex~
+	-rm *.{bbl,synctex.gz}

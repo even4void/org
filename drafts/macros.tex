@@ -1,0 +1,36 @@
+% From: Tim Morgan <morgan@uci-icsa>
+% Produce verbatim listings of various sorts
+ 
+\def\uncatcodespecials{\def\do##1{\catcode`##1=12 } \dospecials}
+ 
+\def\setupverbatim{%
+    \par \tt \spaceskip=0pt     % Make sure we get fixed tt spacing
+    \obeylines\uncatcodespecials\obeyspaces\verbatimdefs
+}
+ 
+% This macro turns on verbatim mode until ?endverbatim is seen.
+\def\verbatim{\begingroup \setupverbatim
+  \parskip=0pt plus .05\baselineskip \parindent=0pt
+   \catcode`\ =13 \catcode`\^^M=13 \catcode`\?=0
+   \verbatimgobble}
+{\catcode`\^^M=13{\catcode`\ =13\gdef\verbatimdefs{\def^^M{\ \par}\let =\ }}
+  \gdef\verbatimgobble#1^^M{}}
+ 
+% This defines ?endverbatim to end the group which begins with \verbatim
+\let\endverbatim=\endgroup
+ 
+% Input a file in verbatim mode.  Sometimes useful for including
+% real-life examples into a paper.
+\def\verbfile#1{\begingroup\setupverbatim
+    \parskip=0pt plus .05\baselineskip \parindent=0pt
+    \input#1 \endgroup
+}
+ 
+% This is the same as the above, but it adds line numbers to each
+% line of the file printed.
+\newcount\lineno
+\def\listing#1{\lineno=0\begingroup\setupverbatim
+    \parskip=0pt plus .05\baselineskip \parindent=20pt
+    \everypar{\advance\lineno by 1 \llap{\the\lineno\ \ }}\input#1
+    \endgroup
+}

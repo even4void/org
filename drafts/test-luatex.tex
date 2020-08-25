@@ -1,0 +1,39 @@
+\ifdefined\directlua
+  \input luaotfload.sty
+\fi
+\font\tenrm="Alegreya" at 10pt
+\tenrm
+
+\input macros.tex
+
+\parindent 0pt
+
+Comme on dispose du moteur Luatex et des polices OTF, il est tout à fait possible d'écrire en français sans se préoccuper des accents. On peut écrire des expressions mathématiques très facilement. Par exemple, la fonction $f \colon D \to {\bf R}$, avec $D$ un sous-ensemble de $\bf R$, est dite continue si, pour tout $\epsilon > 0$ et pour tout $x \in D$, il existe un $\delta > 0$ tel que si $y \in D$ vérifie $|y - x| < \delta$, alors $$|f(y) - f(x)| < \epsilon.$$
+
+Il est également possible d'inclure du code source dans un environnement de type {\tt verbatim} à l'aide d'une simple macro, comme illustré ci-dessous :
+\bigskip
+
+\verbatim
+from sympy import isprime
+
+def isperm(a, b):
+    return sorted(str(a)) == sorted(str(b))
+
+a, f = 1487, 1
+d = 3330
+while True:
+    a += 3-f
+    f = -f
+    b, c = a+d, a+2*d
+    if all(elt is True for elt in map(isprime, [a, b, c])) and \
+       isperm(a, b) and isperm(b, c):
+        break
+
+print(str(a)+str(b)+str(c))
+?endgroup
+
+\bigskip
+En somme, on peut très bien se passer de Latex et revenir vers les bases, \TeX !
+
+Reste à voir : comment faire de beaux tableaux, inclure des figures, inclure les ligatures dans le code et comment gérer une bibliographie\dots
+\bye
