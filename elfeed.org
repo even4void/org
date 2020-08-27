@@ -259,6 +259,7 @@
 *** [[http://hongchao.me/feed.xml][Hongchao's Notes]]                                                         :crypto:
 *** [[http://hypercritical.co/feeds/main][Hypercritical]]                                                            :apple:
 *** [[http://www.informatimago.com/blog/feed.xml][Informatimago]]                                                            :lisp:
+*** [[http://jacquesmattheij.com/rss.xml][Jacques Mattheij]]                                                         :misc:
 *** [[https://feeds.feedburner.com/JakeMccrarysMusings][Jake McCrary]]                                                             :unix:misc:
 *** [[https://occasionallycogent.com/feed.xml][James Cash's blog]]                                                        :emacs:misc:
 *** [[https://jrsinclair.com/index.rss][James Sinclair]]                                                           :misc:

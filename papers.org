@@ -354,13 +354,19 @@ See also [[/Users/chl/Documents/papers/he-2020-autom.pdf][he-2020-autom]].
 [[file:~/Sites/aliquote/content/post/mature-optimization-handbook.md][Review]] published on aliquote.org.
 
 ** Models in biology: 'accurate descriptions of our pathetic thinking' ([[/Users/chl/Documents/papers/gunawardena-2014-model.pdf][gunawardena-2014-model]])
-Emphasizes the role of forward modeling, especially with regard to causality.
+Emphasizes the role of forward modeling, especially with respect to causality.
 
 #+BEGIN_QUOTE
 Mathematical models come in a variety of flavors, depending on whether the state of a system is measured in discrete units ('off' and 'on'), in continuous concentrations or as probability distributions and whether time and space are themselves treated discretely or continuously.
 #+END_QUOTE
 
 ** Modern Vim: Craft Your Development Environment with Vim 8 and Neovim ([[/Users/chl/Documents/papers/neil-2018-moder-vim.pdf][neil-2018-moder-vim]])
+This is mostly about Neovim, but there are many references to Vim; sort of, what's available in Neovim that has been incorporated in Vim, except for package management. The author describes the builtin plugin system (no need for pathogen or vim-plug), the FZF plugin (instead of Ctrl-P) --- I have no interest in semantic organization of files in a project (=tpope/vim-projectionist=), how to use the quickfix list (with tmux adapter), and the builtin terminal emulator (there's no insert mode, instead it's called "terminal mode"; use =C-\ C-n= to toggle between Terminal and Normal mode). I didn't read the chpater about sessions because I don't need them, but overall I like this book a lot: the style is clear and concise and the examples are well put. The appendix provides interesting discussion regarding Language Server Protocol in Vim. There's also a brief discussion on the future of Vim 8 (and Neovim).
+
+#+BEGIN_QUOTE
+Vim is not a shell or an Operating System. You will not be able to run a shell inside Vim or use it to control a debugger. This should work the other way around: Use Vim as a component from a shell or in an IDE. --- Bram Moolenaar (Vim documentation)
+#+END_QUOTE
+
 Sidenote:
 
 Useful packages and config for Lisp editing:
