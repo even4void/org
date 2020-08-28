@@ -1,4 +1,16 @@
 * Inbox
+** Morris's Algorithm for Approximate Counting                                  :algorithms:
+ [2020-08-28 Ven 21:33]
+ https://arpitbhayani.me/blogs/morris-counter
+** REPORTTIME in zsh                                                            :zsh:
+ [2020-08-28 Ven 21:21]
+ https://nuclearsquid.com/writings/reporttime-in-zsh/
+** GitHub Markdown CSS demo                                                     :web:
+ [2020-08-28 Ven 21:15]
+ https://sindresorhus.com/github-markdown-css/
+** Org-Docco                                                                    :org:
+ [2020-08-28 Ven 10:39]
+ https://eschulte.github.io/org-docco/org-docco.html
 ** Principal Component Analysis                                                 :statistics:
  [2020-08-24 Lun 20:59]
  https://leimao.github.io/article/Principal-Component-Analysis/
