@@ -1,4 +1,31 @@
 * Inbox
+** Filename extension for Scheme                                                :scheme:
+ [2020-08-29 Sam 19:50]
+ https://stackoverflow.com/a/36242004
+** Intel Intrinsics Guide                                                       :compiler:
+ [2020-08-29 Sam 19:50]
+ https://software.intel.com/sites/landingpage/IntrinsicsGuide/
+** When optimizations cross the border of sanity                                :compiler:apple:
+ [2020-08-29 Sam 14:11]
+ http://gruntthepeon.free.fr/blog/index.php/2018/12/12/79-when-optimizations-cross-the-border-of-sanity
+** What is the minimum supported SSE flag that can be enabled on macOS?         :compiler:apple:
+ [2020-08-29 Sam 14:02]
+ https://stackoverflow.com/a/45921250
+** How does mtune actually work?                                                :compiler:
+ [2020-08-29 Sam 13:58]
+ https://stackoverflow.com/q/44490331
+** Software optimization resources                                              :compiler:
+ [2020-08-29 Sam 13:58]
+ https://agner.org/optimize/
+** How to generate Python manula in Info format                                 :python:emacs:
+ [2020-08-29 Sam 13:41]
+ https://stackoverflow.com/a/42739005
+** Download MacOS Mojave .APP, DMG, ISO, Bootable USB image                     :apple:
+ [2020-08-29 Sam 12:29]
+ https://macbold.com/download-macos-mojave-app-dmg-iso-bootable-usb-image-official-version/
+** Algebraic Structure and Protocols                                            :algorithms:
+ [2020-08-29 Sam 09:20]
+ https://www.fewbutripe.com/swift/math/algebra/2015/02/17/algebraic-structure-and-protocols.html
 ** Morris's Algorithm for Approximate Counting                                  :algorithms:
  [2020-08-28 Ven 21:33]
  https://arpitbhayani.me/blogs/morris-counter

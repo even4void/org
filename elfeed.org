@@ -223,6 +223,7 @@
 *** [[http://varianceexplained.org/feed.xml][Variance Explained]]                                                       :rstats:
 *** [[http://nsaunders.wordpress.com/feed/][What You're Doing Is Rather Desperate]]                                    :bioinformatics:
 ** Tech                                                                       :tech:
+*** [[https://adityam.github.io/context-blog/][A Blog about ConTeXt]]                                                     :tex:
 *** [[https://alistapart.com/main/feed/][A List Apart: The Full Feed]]                                              :news:
 *** [[https://alexschroeder.ch/wiki/feed/full/][Alex Schroeder: Diary]]                                                    :diary:
 *** [[https://leancrew.com/all-this/feed/][And now it’s all this]]                                                    :apple:
