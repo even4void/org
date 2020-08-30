@@ -109,6 +109,7 @@
 *** [[https://sagegerard.com/index.rss.xml][SageGerard.com]]                                                           :racket:
 *** [[http://blog.fogus.me/feed/][Send More Paramedics]]                                                     :clojure:javascript:
 *** [[http://gigasquidsoftware.com/atom.xml][Squid's Blog]]                                                             :clojure:
+*** [[https://stopa.io/feed.rss][Stepan Parunashvili]]                                                      :javascript:lisp:
 *** [[http://www.stephendiehl.com/feed.rss][Stephen Diehl]]                                                            :haskell:
 *** [[http://feeds2.feedburner.com/stevelosh][Steve Losh]]                                                               :lisp:vim:
 *** [[https://stjepang.github.io/feed.xml][Stjepan’s blog]]                                                           :rust:

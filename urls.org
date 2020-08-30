@@ -1,4 +1,22 @@
 * Inbox
+** palmerpenguins for data exploration and visualization                        :rstats:
+ [2020-08-30 Dim 12:19]
+ https://github.com/allisonhorst/palmerpenguins
+** How to: pow(real, real) in x86                                               :clang:
+ [2020-08-30 Dim 12:18]
+ https://stackoverflow.com/questions/4638473/how-to-powreal-real-in-x86/4638502#4638502
+** Deobfuscating code for fun and no profit round 2                             :clang:
+ [2020-08-30 Dim 12:11]
+ https://medium.com/@LainIwakura/deobfuscating-code-for-fun-and-no-profit-round-2-60d78b67ebce
+** UNIX Seventh Edition (PDP-11)                                                :unix:
+ [2020-08-30 Dim 12:09]
+ http://a.papnet.eu/UNIX/v7/Installation
+** Guide to Rustc Development                                                   :rust:
+ [2020-08-30 Dim 11:59]
+ https://rustc-dev-guide.rust-lang.org/
+** Vi, movement commands, efficiency, and me                                    :vim:
+ [2020-08-30 Dim 11:56]
+ https://utcc.utoronto.ca/~cks/space/blog/unix/ViInefficientMovement
 ** Filename extension for Scheme                                                :scheme:
  [2020-08-29 Sam 19:50]
  https://stackoverflow.com/a/36242004
