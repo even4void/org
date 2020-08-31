@@ -1,4 +1,32 @@
 * Inbox
+** sled theoretical performance guide                                           :misc:
+ [2020-08-31 Mon 16:36]
+ https://sled.rs/perf.html
+** Fast reference to common SRFI                                                :scheme:
+ [2020-08-31 Mon 15:49]
+ http://fmnt.info/blog/20190218_srfi.html
+** Darkart: Chez Scheme's Forign Library Interface                              :scheme:python:
+ [2020-08-31 Mon 15:46]
+ https://github.com/guenchi/Darkart
+** Akku: Integration with Emacs and Geiser                                      :emacs:scheme:
+ [2020-08-31 Mon 15:10]
+ https://gitlab.com/akkuscm/akku/-/wikis/Integration-with-Emacs-and-Geiser
+** Clojure library that wraps Apache Spark
+ [2020-08-31 Mon 09:23]
+ https://github.com/zero-one-group/geni
+** Descriptive Stats with C++ and Boost                                         :clang:perl:
+ [2020-08-30 Sun 21:43]
+ https://www.nu42.com/2016/12/descriptive-stats-with-cpp-boost.html
+** StatsLib is a templated C++ library of statistical distribution functions    :clang:statistics:
+ [2020-08-30 Sun 21:37]
+ https://github.com/kthohr/stats
+** C++ libraries for statistical computing                                      :clang:statistics:
+ [2020-08-30 Sun 21:29]
+ https://stats.stackexchange.com/q/7358
+** ULPs Plots Reveal Math Function Accuracy                                     :maths:
+ [2020-08-30 Sun 20:50]
+ https://blogs.mathworks.com/cleve/2017/01/23/ulps-plots-reveal-math-function-accurary/
+* Archives 2020
 ** palmerpenguins for data exploration and visualization                        :rstats:
  [2020-08-30 Dim 12:19]
  https://github.com/allisonhorst/palmerpenguins
@@ -2520,7 +2548,7 @@ https://homolog.us/Tutorials/book4/p2.1.html
 ** More on pipe operators in R                                                 :rstats:
 [2019-10-02 Wed 13:42]
 https://www.datacamp.com/community/tutorials/pipe-r-tutorial
-* Archives
+* Archives 2019
 # NOTE: in decreasing order, i.e. newer comes last)
 ** Check this new series of posts from Stata blog
 [2018-02-15 Thu 21:01]
