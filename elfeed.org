@@ -47,6 +47,7 @@
 *** [[https://dmerej.info/blog/index.xml][dmerej's blog]]                                                            :python:
 *** [[http://can3p.github.io/atom.xml][Dmitry Petrov]]                                                            :lisp:
 *** [[https://eli.thegreenplace.net/feeds/all.atom.xml][Eli Bendersky's website]]                                                  :go:python:clojure:
+*** [[https://emacsninja.com/feed.atom][Emacs Ninja]]                                                              :emacs:lisp:clojure:
 *** [[https://blog.regehr.org/feed][Embedded in Academia]]                                                     :compiler:clang:
 *** [[http://endlessparentheses.com/atom.xml][Endless Parentheses]]                                                      :emacs:clojure:
 *** [[http://blog.yossarian.net/feed.xml][ENOSUCHBLOG]]                                                              :python:rust:

@@ -1,4 +1,25 @@
 * Inbox
+** An analysis and visualization platform for 'omics data                       :bioinformatics:
+ [2020-09-01 Tue 16:14]
+ https://github.com/merenlab/anvio
+** Search in git                                                                :git:
+ [2020-09-01 Tue 14:28]
+ https://euandre.org/til/2020/08/16/search-in-git.html
+** chibi math stats                                                             :scheme:
+ [2020-09-01 Tue 13:21]
+ http://snow-fort.org/s/gmail.com/alexshinn/chibi/math/stats/0.1/index.html
+** A Common Lisp PostgreSQL programming interface                               :lisp:sql:
+ [2020-09-01 Tue 12:46]
+ https://github.com/marijnh/Postmodern
+** C++ Core Guidelines                                                          :clang:
+ [2020-08-31 Mon 21:23]
+ https://github.com/isocpp/CppCoreGuidelines
+** As above, so below: Bare metal Rust generics                                 :rust:
+ [2020-08-31 Mon 21:22]
+ https://www.ecorax.net/as-above-so-below-2/
+** Optionality in the type systems of Julia and Rust                            :julia:rust:
+ [2020-08-31 Mon 16:40]
+ https://andreaskroepelin.de/blog/sum_types/
 ** sled theoretical performance guide                                           :misc:
  [2020-08-31 Mon 16:36]
  https://sled.rs/perf.html

@@ -1,0 +1,26 @@
+#+TITLE:  L'essentiel du langage C
+#+AUTHOR: chl
+#+DATE:   Septembre 2020
+
+Il s'agit d'une traduction française du document /Essential C/ de Nick Parlante [NP], disponible à l'adresse suivante : [[http://cslibrary.stanford.edu/101/]]. Les exemples ont été testés avec =clang-10=.
+
+* Introduction
+
+* Types de base et opérateurs
+Le langage C fournit un ensemble standard et minimal de types de données de base. Ces types sont également appelés types "primitifs". Des structures de données plus complexes peuvent être construites à partir de ces types de base.
+
+** Les entiers
+Les types "intégraux" en C forment une famille de types d'entiers. Ils se comportent tous comme des entiers et peuvent être mélangés et utilisés de manière similaire. Les différences sont dues au nombre différent de bits ("largeurs") utilisés pour implémenter chaque type --- les types les plus larges peuvent stocker une plus grande gamme de valeurs.
+
+- char :: Caractère ASCII d'au moins 8 bits. En pratique, un caractère est toujours un octet de 8 bits, ce qui est suffisant pour stocker un seul caractère ASCII. Huit bits fournissent une plage signée de -128..127 ou une plage non signée de 0..255. Le type =char= est également la "plus petite unité adressable" pour la machine --- chaque octet en mémoire a sa propre adresse.
+- short :: Petit nombre entier d'au moins 16 bits, ce qui donne une plage signée de -32768..32767. La taille typique est de 16 bits. Ce type est peu utilisé.
+- int :: Nombre entier par défaut codé en règle générale sur 32 bits. Ce type est défini comme étant la taille "la plus confortable" pour l'ordinateur. Si vous ne vous souciez pas vraiment de la plage d'une variable entière, déclarez la =int= car il est probable qu'il s'agit d'une taille appropriée (16 ou 32 bits) qui fonctionne bien pour cette machine.
+- long :: Grand nombre entier d'au moins 32 bits. La taille typique est de 32 bits, ce qui donne une plage signée d'environ -2 milliards ... +2 milliards. Certains compilateurs prennent en charge les "long long" pour les ints de 64 bits.
+
+Les types d'entiers peuvent être précédés du qualificatif non signé qui interdit de représenter des nombres négatifs, mais qui double le plus grand nombre positif représentable. Par exemple, une implémentation 16 bits de =short= peut stocker des nombres dans la plage -32768..32767, tandis qu'un =short= non signé peut stocker des valeurs dans la plage 0..65535. Vous pouvez considérer les pointeurs comme une forme de long non signé sur une machine avec des pointeurs de 4 octets. Selon NP, il vaut mieux éviter d'utiliser un non signé, sauf si vous en avez vraiment besoin. Cela a tendance à causer plus de malentendus et de problèmes que cela n'en vaut la peine.
+
+** Problèmes de portabilité
+Au lieu de définir les tailles exactes des types d'entiers, C définit des limites inférieures. Cela facilite la mise en œuvre des compilateurs C sur un large éventail de matériel. Malheureusement, cela conduit parfois à des bogues où un programme s'exécute différemment sur une machine 16 bits que sur une machine 32 bits. En particulier, si vous concevez une fonction qui sera implémentée sur plusieurs machines différentes, il est bon d'utiliser typedefs pour mettre en place des types comme =Int32= pour 32 bit int et =Int16= pour 16 bit int. De cette façon, vous pouvez prototyper une fonction =Foo(Int32)= et être sûr que les typedefs de chaque machine seront réglés de manière à ce que la fonction prenne vraiment un =int= 32 bits. De cette façon, le code se comportera de la même façon sur toutes les différentes machines.
+
+** Les constantes de type char
+Une constante de caractère s'écrit avec des guillemets simples (') comme 'A' ou 'z'. La constante "A" n'est en fait qu'un synonyme de la valeur entière ordinaire 65, qui est la valeur ASCII de "A" en majuscules. Il existe des cas particuliers de constantes de caractères, tels que "\t" pour tabulation, pour les caractères qui ne sont pas pratiques à taper sur un clavier.
