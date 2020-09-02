@@ -1,4 +1,7 @@
 * Inbox
+** The algebra (and calculus!) of algebraic data types                          :haskell:
+ [2020-09-02 Wed 09:48]
+ https://codewords.recurse.com/issues/three/algebra-and-calculus-of-algebraic-data-types
 ** An analysis and visualization platform for 'omics data                       :bioinformatics:
  [2020-09-01 Tue 16:14]
  https://github.com/merenlab/anvio

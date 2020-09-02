@@ -1,8 +1,11 @@
-#+TITLE:  L'essentiel du langage C
-#+AUTHOR: chl
-#+DATE:   Septembre 2020
+#+TITLE:    L'essentiel du langage C
+#+AUTHOR:   chl
+#+DATE:     Septembre 2020
+#+LANGUAGE: fr
 
-Il s'agit d'une traduction française du document /Essential C/ de Nick Parlante [NP], disponible à l'adresse suivante : [[http://cslibrary.stanford.edu/101/]]. Les exemples ont été testés avec =clang-10=.
+Il s'agit d'une traduction française, incorporant quelques adaptations de style, du document /Essential C/ de Nick Parlante [NP], disponible à l'adresse suivante : [[http://cslibrary.stanford.edu/101/]]. Les exemples ont été testés avec =clang-10=.
+
+Quelques remarques : Les concepts présentés dans ce document concernent essentiellement les premières versions du langage C,\autocite{kernighan-1988-c-progr-languag} en particulier le standard [[https://en.wikipedia.org/wiki/ANSI_C][ANSI C]] (C89). Des notes en marge fournissent des précisions concernant les standards contemporains (C11, C17), tirés d'ouvrages récents.\autocite{gustedt-2018-moder-c,klemens-2012-centur-c} En principe, les compilateurs modernes qui implémentent les versions les plus récentes sont à même de générer des exécutables produisant des résultats identiques aux versions antérieures, incluant C89. De fait, les exemples proposés par l'auteur peuvent être testés sur n'importe quel ordinateur récent disposant d'un compilateur C (GCC, LLVM, Apple Command-Line Tools, etc.).
 
 * Introduction
 
@@ -17,10 +20,37 @@ Les types "intégraux" en C forment une famille de types d'entiers. Ils se compo
 - int :: Nombre entier par défaut codé en règle générale sur 32 bits. Ce type est défini comme étant la taille "la plus confortable" pour l'ordinateur. Si vous ne vous souciez pas vraiment de la plage d'une variable entière, déclarez la =int= car il est probable qu'il s'agit d'une taille appropriée (16 ou 32 bits) qui fonctionne bien pour cette machine.
 - long :: Grand nombre entier d'au moins 32 bits. La taille typique est de 32 bits, ce qui donne une plage signée d'environ -2 milliards ... +2 milliards. Certains compilateurs prennent en charge les "long long" pour les ints de 64 bits.
 
+# TOOD byte, size_t, uint8, etc.
+# /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h
+
 Les types d'entiers peuvent être précédés du qualificatif non signé qui interdit de représenter des nombres négatifs, mais qui double le plus grand nombre positif représentable. Par exemple, une implémentation 16 bits de =short= peut stocker des nombres dans la plage -32768..32767, tandis qu'un =short= non signé peut stocker des valeurs dans la plage 0..65535. Vous pouvez considérer les pointeurs comme une forme de long non signé sur une machine avec des pointeurs de 4 octets. Selon NP, il vaut mieux éviter d'utiliser un non signé, sauf si vous en avez vraiment besoin. Cela a tendance à causer plus de malentendus et de problèmes que cela n'en vaut la peine.
 
 ** Problèmes de portabilité
 Au lieu de définir les tailles exactes des types d'entiers, C définit des limites inférieures. Cela facilite la mise en œuvre des compilateurs C sur un large éventail de matériel. Malheureusement, cela conduit parfois à des bogues où un programme s'exécute différemment sur une machine 16 bits que sur une machine 32 bits. En particulier, si vous concevez une fonction qui sera implémentée sur plusieurs machines différentes, il est bon d'utiliser typedefs pour mettre en place des types comme =Int32= pour 32 bit int et =Int16= pour 16 bit int. De cette façon, vous pouvez prototyper une fonction =Foo(Int32)= et être sûr que les typedefs de chaque machine seront réglés de manière à ce que la fonction prenne vraiment un =int= 32 bits. De cette façon, le code se comportera de la même façon sur toutes les différentes machines.
 
 ** Les constantes de type char
-Une constante de caractère s'écrit avec des guillemets simples (') comme 'A' ou 'z'. La constante "A" n'est en fait qu'un synonyme de la valeur entière ordinaire 65, qui est la valeur ASCII de "A" en majuscules. Il existe des cas particuliers de constantes de caractères, tels que "\t" pour tabulation, pour les caractères qui ne sont pas pratiques à taper sur un clavier.
+Une constante de caractère s'écrit avec des guillemets simples (') comme 'A' ou 'z'. La constante "A" n'est en fait qu'un synonyme de la valeur entière ordinaire 65, qui est la valeur ASCII de "A" en majuscules. Il existe des cas particuliers de constantes de caractères, tels que "=\t=" pour tabulation, pour les caractères qui ne sont pas pratiques à taper sur un clavier.
+
+#+NAME:      tab:1
+#+LABEL:     tab:1
+#+ATTR_HTML: :border 2 :rules all :frame border :width 100%
+#+CAPTION:   Exemples de constantes de type char
+|--------+-------------------------------------------------------------|
+|--------+-------------------------------------------------------------|
+| char   | Signification                                               |
+|--------+-------------------------------------------------------------|
+| 'A'    | A en lettre capitale                                        |
+| '=\n='   | retour à la ligne                                           |
+| '=\t='   | taquet de tabulation                                        |
+| '=\0='   | le caractère "null", soit l'entier 0                        |
+| '=\012=' | le caractère de valeur octale 12, soit le nombre décimal 10 |
+|--------+-------------------------------------------------------------|
+|--------+-------------------------------------------------------------|
+
+** Les constantes de type int
+Les nombres dans le code source tels que 234 sont par défaut de type =int=. Ils peuvent être suivis d'un "L" (majuscule ou minuscule) pour indiquer que la constante doit être longue, par exemple =42L=. Une constante entière peut être écrite avec un =0x= de tête pour indiquer qu'elle est exprimée en hexadécimal --- =0x10= est une façon d'exprimer le nombre 16. De même, une constante peut être écrite en octal en la faisant précéder de "0" --- =012= est une façon d'exprimer le nombre 10.
+
+** Composition de types et promotion
+Les types intégraux peuvent être mélangés dans des expressions arithmétiques car ils ne sont en fait que des entiers avec des variations de leur taille (ou largeur). Par exemple, =char= et =int= peuvent être combinés dans des expressions arithmétiques telles que =('b' + 5)=. Comment le compilateur traite-t-il les différentes largeurs présentes dans une telle expression ? Dans un tel cas, le compilateur "favorise" le plus petit type (=char=) pour qu'il ait la même taille que le plus grand type (=int=) avant de combiner les valeurs. Les promotions sont déterminées au moment de la compilation en fonction uniquement des types de valeurs dans les expressions. Les promotions ne perdent pas d'informations, elles convertissent toujours d'un type à un type plus grand et compatible pour éviter de perdre des informations.
+
+#+LATEX: \printbibliography

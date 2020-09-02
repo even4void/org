@@ -1,6 +1,7 @@
-#+TITLE:   Emacs pour l'impatient
-#+AUTHOR:  chl
-#+DATE:    Février 2020
+#+TITLE:    Emacs pour l'impatient
+#+AUTHOR:   chl
+#+DATE:     Février 2020
+#+LANGUAGE: fr
 
 * TODO [3/4]                                                                    :noexport:
 - [X] Update to focus on Doom Emacs
@@ -10,7 +11,7 @@
 
 * Emacs en quelques mots
 
-Emacs est un éditeur de texte, voire un [[https://news.ycombinator.com/item?id=6291620][système d'exploitation à part entière]] diront certains. Des débats enflammés ont lieu régulièrement entre les partisans d'Emacs et ceux de Vi(m), un autre éditeur Unix versatile, tout comme on retrouve des discussions sans fin sur l'usage des taquets de tabulation ou des espaces pour l'indentation des blocs en Python. Et bien sûr, Richard Stallman, adossé à la [[https://www.fsf.org][FSF]] pendant bien longtemps, n'était jamais bien loin lorsque l'on évoquait le logiciel Emacs, même si pour l'essentiel la maintenance et le développement d'Emacs est réalisé par un groupe de volontaires bénévoles, et qu'on ne parle plus guère de R. Stallman depuis son retrait de la FSF.
+Emacs est un éditeur de texte, voire un système d'exploitation à part entière diront certains sur [[https://news.ycombinator.com/item?id=6291620][Hacker News]] (et bien avant !). Des débats enflammés ont lieu régulièrement entre les partisans d'Emacs et ceux de Vi(m), un autre éditeur Unix versatile, tout comme on retrouve des discussions sans fin sur l'usage des taquets de tabulation ou des espaces pour l'indentation des blocs en Python. Et bien sûr, Richard Stallman, adossé à la [[https://www.fsf.org][FSF]] pendant bien longtemps, n'était jamais bien loin lorsque l'on évoquait le logiciel Emacs, même si pour l'essentiel la maintenance et le développement d'Emacs est réalisé par un groupe de volontaires bénévoles, et qu'on ne parle plus guère de R. Stallman depuis son retrait de la FSF.
 
 #+BEGIN_QUOTE
 I spend most of my time editing in Emacs. I read and send mail with Emacs using M-x rmail and C-x m. I have no experience with any other email client programs. In principle I would be glad to know about other free email clients, but learning about them is not a priority for me and I don't have time.
