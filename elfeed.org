@@ -112,7 +112,7 @@
 *** [[http://gigasquidsoftware.com/atom.xml][Squid's Blog]]                                                             :clojure:
 *** [[https://stopa.io/feed.rss][Stepan Parunashvili]]                                                      :javascript:lisp:
 *** [[http://www.stephendiehl.com/feed.rss][Stephen Diehl]]                                                            :haskell:
-*** [[http://feeds2.feedburner.com/stevelosh][Steve Losh]]                                                               :lisp:vim:
+*** [[http://feeds2.feedburner.com/stevelosh][Steve Losh]]		 :lisp:vim:
 *** [[https://stjepang.github.io/feed.xml][Stjepan’s blog]]                                                           :rust:
 *** [[https://www.strchr.com/?feed=/][strchr.com updates]]                                                       :misc:
 *** [[http://neugierig.org/software/blog/atom.xml][Tech Notes]]                                                               :javascript:typescript:
@@ -120,6 +120,7 @@
 *** [[https://tapoueh.org/index.xml][The Art of PostgreSQL]]                                                    :postgres:
 *** [[https://alex-hhh.github.io/feeds/all.rss.xml][The Blog of Alex Harsányi: The Blog of Alex Harsányi]]                     :racket:
 *** [[https://floooh.github.com/feed.xml][The Brain Dump]]                                                           :clang:
+*** [[https://blog.aaronbieber.com/posts/index.xml][The Chronicle]]                                                            :emacs
 *** [[http://blog.cleancoder.com/atom.xml][The Clean Code Blog]]                                                      :clojure:
 *** [[http://calculist.org/feed.xml][The Little Calculist]]                                                     :rust:
 *** [[https://blog.plover.com/index.rss][The Universe of Discourse]]                                                :haskell:recreational:

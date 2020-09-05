@@ -1,4 +1,16 @@
 * Inbox
+** cl-flat-tree                                                                 :lisp:elfeed:
+ [2020-09-03 Thu 17:07]
+ http://40ants.com/lisp-project-of-the-day/2020/08/0167-cl-flat-tree.html
+** Do a pile of work better                                                     :python:elfeed:
+ [2020-09-03 Thu 16:40]
+ https://nedbatchelder.com//blog/202008/do_a_pile_of_work_better.html
+** Programming with Categories                                                  :haskell:
+ [2020-09-03 Thu 12:24]
+ http://brendanfong.com/programmingcats.html
+** Lisp is Not an Acceptable Lisp                                               :lisp:
+ [2020-09-03 Thu 11:46]
+ https://steve-yegge.blogspot.com/2006/04/lisp-is-not-acceptable-lisp.html?m=1
 ** The algebra (and calculus!) of algebraic data types                          :haskell:
  [2020-09-02 Wed 09:48]
  https://codewords.recurse.com/issues/three/algebra-and-calculus-of-algebraic-data-types
