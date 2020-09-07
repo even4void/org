@@ -1,4 +1,31 @@
 * Inbox
+** Key Binding Conventions                                                      :emacs:
+ [2020-09-07 Mon 12:36]
+ https://www.gnu.org/software/emacs/manual/html_node/elisp/Key-Binding-Conventions.html
+** Keyboard shortcuts for Firefox                                               :misc:
+ [2020-09-07 Mon 09:21]
+ https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly
+** Numeric Haskell: A Vector Tutorial                                           :haskell:
+ [2020-09-06 Sun 22:20]
+ https://wiki.haskell.org/Numeric_Haskell:_A_Vector_Tutorial
+** 8086 microcode disassembled                                                  :compiler:
+ [2020-09-06 Sun 22:19]
+ https://www.reenigne.org/blog/8086-microcode-disassembled/
+** The evolution of psychiatry                                                  :misc:
+ [2020-09-06 Sun 22:18]
+ https://worksinprogress.co/issue/the-evolution-of-psychiatry/
+** Scheme immutable data structures                                             :scheme:
+ [2020-09-06 Sun 22:14]
+ https://github.com/kevinwortman/Scheme-immutable-data-structures
+** Faking Useful Refinement Types in Racket                                     :racket:
+ [2020-09-06 Sun 22:01]
+ https://gmb.is/refinement-types
+** Using Multiple Dictionaries for Spellchecking in Emacs                       :emacs:
+ [2020-09-06 Sun 09:25]
+ https://irreal.org/blog/?p=9097
+** Another Thesaurus for Emacs                                                  :emacs:
+ [2020-09-06 Sun 09:21]
+ https://irreal.org/blog/?p=9102
 ** cl-flat-tree                                                                 :lisp:elfeed:
  [2020-09-03 Thu 17:07]
  http://40ants.com/lisp-project-of-the-day/2020/08/0167-cl-flat-tree.html
