@@ -1,4 +1,22 @@
 * Inbox
+** emacs-haskell-config                                                         :emacs:haskell:
+ [2020-09-08 Tue 14:47]
+ https://github.com/massyl/emacs-haskell-config
+** DNA Sequence simulator                                                       :bioinformatics:
+ [2020-09-08 Tue 11:44]
+ https://github.com/rambaut/Seq-Gen
+** BOOSTER is a new way of computing bootstrap supports in large phylogenies    :bioinformatics:
+ [2020-09-08 Tue 11:37]
+ https://github.com/evolbioinfo/booster
+** seq2science                                                                  :bioinformatics:
+ [2020-09-08 Tue 11:26]
+ https://vanheeringen-lab.github.io/seq2science/
+** Happy Haskell Programming                                                    :haskell:emacs:
+ [2020-09-08 Tue 11:23]
+ https://github.com/kazu-yamamoto/hhp
+** Emacs + Dante + Brittany + Stack                                             :emacs:haskell:
+ [2020-09-08 Tue 11:20]
+ https://www.reddit.com/r/haskell/comments/e5gcq0/best_emacs_experience_for_haskell/f9kp8uk/
 ** Key Binding Conventions                                                      :emacs:
  [2020-09-07 Mon 12:36]
  https://www.gnu.org/software/emacs/manual/html_node/elisp/Key-Binding-Conventions.html

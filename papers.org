@@ -688,3 +688,13 @@ Some additional pointers:
 
 ** Why you cannot (yet) write an “interval arithmetic” library in common lisp ([[/Users/chl/Documents/papers/antoniotti-2020-why-you.pdf][antoniotti-2020-why-you]])
 See also this [[http://within-parens.blogspot.com/2020/03/why-you-cannot-yet-portably-write.html][blog post]].
+** Calculating the sample size required for developing a clinical prediction model ([[/Users/chl/Documents/papers/riley-2020-calcul.pdf][riley-2020-calcul]])
+Fine distinction between the 10 EPV and 10 EPP rules of thumb: it's important to consider the total number of predictor parameters considered and not variables (which may have several associated $\beta$ parameters) or parameters included in the final model. The very inconsistent recommendations about EPP suggest that it is actually context specific and depends not only on the number of events relative to the number of candidate predictor parameters but also on the total number of participants, the outcome proportion (incidence) in the study population, and the expected predictive performance of the model.
+
+Recall what Frank Harrell advocates for logistic regression (n=96 to assess the intercept only):
+
+#+BEGIN_QUOTE
+A simple way to do this is to calculate the sample size needed to precisely estimate (within a small margin of error) the intercept in a model when no predictors are included (the null model).
+#+END_QUOTE
+
+This yields the following estimate (when aiming at computing a precise estimate of the overall outcome risk): With a binary outcome that occurs in half of individuals, a sample size of at least 385 people is needed to target a confidence interval of 0.45 to 0.55 for the overall outcome proportion, and thus an error of at most 0.05 around the true value of 0.5. To achieve the same margin of error with outcome proportions of 0.1 and 0.2, at least 139 and 246 participants, respectively, are required. For time-to-event outcomes, a key time point needs to be identified, along with the anticipated outcome event rate. For example, with an anticipated event rate of 10 per 100 person years of the entire follow-up, the sample size must include a total of 2366 person years of follow-up to ensure an expected margin of error of ≤0.05 in the estimate of a 10 year outcome probability of 0.63, such that the expected confidence interval is 0.58 to 0.68. See Fig. 1 and Box 1.
