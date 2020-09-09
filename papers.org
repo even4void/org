@@ -4,7 +4,7 @@
 
 * Reading notes
 
-Links will likely not work outside this computer.
+Internal links (PDFs and other Org files) will likely not work outside this computer.
 
 ** A common-sense guide to data structures and algorithms ([[/Users/chl/Documents/papers/wengrow-2017-common-sense.pdf][wengrow-2017-common-sense]])
 Short but interesting textbook on general programming principles. It features a mix of Python and JavaScript to illustrate major sorting algorithms, big O notation, etc. Available as EPUB locally.
@@ -688,6 +688,7 @@ Some additional pointers:
 
 ** Why you cannot (yet) write an “interval arithmetic” library in common lisp ([[/Users/chl/Documents/papers/antoniotti-2020-why-you.pdf][antoniotti-2020-why-you]])
 See also this [[http://within-parens.blogspot.com/2020/03/why-you-cannot-yet-portably-write.html][blog post]].
+
 ** Calculating the sample size required for developing a clinical prediction model ([[/Users/chl/Documents/papers/riley-2020-calcul.pdf][riley-2020-calcul]])
 Fine distinction between the 10 EPV and 10 EPP rules of thumb: it's important to consider the total number of predictor parameters considered and not variables (which may have several associated $\beta$ parameters) or parameters included in the final model. The very inconsistent recommendations about EPP suggest that it is actually context specific and depends not only on the number of events relative to the number of candidate predictor parameters but also on the total number of participants, the outcome proportion (incidence) in the study population, and the expected predictive performance of the model.
 

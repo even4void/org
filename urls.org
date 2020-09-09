@@ -1,4 +1,13 @@
 * Inbox
+** Lets-Plot is a ggplot2-like backend for Jupyter notebook                     :python:
+ [2020-09-09 Wed 15:09]
+ https://github.com/JetBrains/lets-plot
+** Parsing JSON is a Minefield                                                  :misc:
+ [2020-09-08 Tue 16:52]
+ http://seriot.ch/parsing_json.php
+** Setting up your Haskell development environment                              :haskell:
+ [2020-09-08 Tue 15:38]
+ https://www.vacationlabs.com/haskell/environment-setup.html
 ** emacs-haskell-config                                                         :emacs:haskell:
  [2020-09-08 Tue 14:47]
  https://github.com/massyl/emacs-haskell-config
