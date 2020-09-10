@@ -6,16 +6,16 @@
 
 Internal links (PDFs and other Org files) will likely not work outside this computer.
 
-** A common-sense guide to data structures and algorithms ([[/Users/chl/Documents/papers/wengrow-2017-common-sense.pdf][wengrow-2017-common-sense]])
+** A common-sense guide to data structures and algorithms ([[papers:wengrow-2017-common-sense.pdf][wengrow-2017-common-sense]])
 Short but interesting textbook on general programming principles. It features a mix of Python and JavaScript to illustrate major sorting algorithms, big O notation, etc. Available as EPUB locally.
 
-** A Flexible Parametric Accelerated Failure Time Model ([[/Users/chl/Documents/papers/crowther-2020-flexib-param.pdf][crowther-2020-flexib-param]])
+** A Flexible Parametric Accelerated Failure Time Model ([[papers:crowther-2020-flexib-param.pdf][crowther-2020-flexib-param]])
 Accelerated Failure Time (AFT) models as an alternative to classical PH models. Under the AFT model, the effect of covariates act to accelerate or decelerate the time to event of interest. Time-dependent acceleration factors, as well as time-dependent covariates (e.g. delayed entry) are also allowed. Stata and R packages available, as well as [[https://github.com/CamDavidsonPilon/lifelines-replications][Python]] code.
 
-** A statistical analysis of probabilistic counting algorithms ([[/Users/chl/Documents/papers/clifford-2010-statis-analy.pdf][clifford-2010-statis-analy]])
-See also [[/Users/chl/Documents/papers/ertl-2017-new-hyper.pdf][ertl-2017-new-hyper]] and [[https://github.com/evanmiller/SlowerLogLog][SlowerLogLog]] by Evan Miller.
+** A statistical analysis of probabilistic counting algorithms ([[papers:clifford-2010-statis-analy.pdf][clifford-2010-statis-analy]])
+See also [[papers:ertl-2017-new-hyper.pdf][ertl-2017-new-hyper]] and [[https://github.com/evanmiller/SlowerLogLog][SlowerLogLog]] by Evan Miller.
 
-** Agile Data Science ([[/Users/chl/Documents/papers/jurney-2014-agile-data-scien.pdf][jurney-2014-agile-data-scien]])
+** Agile Data Science ([[papers:jurney-2014-agile-data-scien.pdf][jurney-2014-agile-data-scien]])
 Keywords: scalability, NoSQL (Hadoop and MongoDB), cloud computing, big data, data intuition
 Interesting use of personal email data:
 
@@ -27,10 +27,10 @@ See also [[https://www.oreilly.com/ideas/a-manifesto-for-agile-data-science][A m
 
 *Sidenote:* There is an example of using the Enron SQL database (Chapter 2, § "SQL").
 
-** Algorithmic Mathematics ([[/Users/chl/Documents/papers/soicher-2004-algor-mathem.pdf][soicher-2004-algor-mathem]])
+** Algorithmic Mathematics ([[papers:soicher-2004-algor-mathem.pdf][soicher-2004-algor-mathem]])
 Basic overview of number theory and related algorithms, with several exercises and tips at the end.
 
-** Algorithms ([[/Users/chl/Documents/papers/erickson-2018-algor.pdf][erickson-2018-algor]])
+** Algorithms ([[papers:erickson-2018-algor.pdf][erickson-2018-algor]])
 See also:
 - Margaret M. Fleck. [[http://mfleck.cs.illinois.edu/building-blocks/][Building Blocks for Theoretical Computer Science]]. Version 1.3 (January 2013)
 - Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. [[https://courses.csail.mit.edu/6.042/spring18/][Mathematics for Computer Science]]. June 2018 revision
@@ -88,7 +88,7 @@ Quick translation in Scheme (FIXME):
   z))
 #+END_EXAMPLE
 
-** Algorithms Unlocked ([[/Users/chl/Documents/papers/cormen-2013-algor-unloc.pdf][cormen-2013-algor-unloc]])
+** Algorithms Unlocked ([[papers:cormen-2013-algor-unloc.pdf][cormen-2013-algor-unloc]])
 #+BEGIN_QUOTE
 We want two things from a computer algorithm: given an input to a problem, it should always produce a correct solution to the problem, and it should use com- putational resources efficiently while doing so.
 #+END_QUOTE
@@ -97,10 +97,10 @@ We want two things from a computer algorithm: given an input to a problem, it sh
 - focusing on the order of growth of the running time as a function of the input size
 - algorithms described in plain English, and not in pseudo-code like in CLRS
 
-** An incremental approach to compiler construction ([[/Users/chl/Documents/papers/ghuloum-2006-increm-approac.pdf][ghuloum-2006-increm-approac]])
+** An incremental approach to compiler construction ([[papers:ghuloum-2006-increm-approac.pdf][ghuloum-2006-increm-approac]])
 Found by following Thorsten Ball's progress (on Twitter) on his approach to build a [[https://github.com/mrnugget/scheme_x86][Scheme compiler]] from scratch.
 
-** An introduction to bioinformatics algorithms ([[/Users/chl/Documents/papers/jones-2004-introd-bioin-algor.pdf][jones-2004-introd-bioin-algor]])
+** An introduction to bioinformatics algorithms ([[papers:jones-2004-introd-bioin-algor.pdf][jones-2004-introd-bioin-algor]])
 The authors make use of simplified pseudo-code for all the algorithms discussed in this book -- on the basis that the target audience are biologists. I found it nice, as it is heavily inspired from Python syntax (significant indentation is fine for reading purpose, IMHO). The introductory chapter on computer science (CS) is pretty basic stuff that can be found in any introductory textbook (chapter 2): algorithmic complexity, recursive versus iterative approach, type of algorithms (brute force, branch-and-bound, greedy approach, dynamic programming, divide-and-conquer, machine learning, randomized algorithms), and NP-completeness. It is intended for biologists.
 
 #+BEGIN_QUOTE
@@ -111,10 +111,10 @@ For CS folks, the third chapter provides a gentle primer to biology.
 
 See also [[http://www.cs.hunter.cuny.edu/~saad/courses/bioinf/][Bioinformatics Algorithms]], by Saad Mneimneh, which offers solutions to selected exercises from each chapter.
 
-** Analytic combinatorics for bioinformatics i: seeding methods ([[/Users/chl/Documents/papers/filion-2017-analy-combin.pdf][filion-2017-analy-combin]])
+** Analytic combinatorics for bioinformatics i: seeding methods ([[papers:filion-2017-analy-combin.pdf][filion-2017-analy-combin]])
 See also [[https://www.biorxiv.org/content/10.1101/619155v2][Calibrating seed-based alignment heuristics with Sesame]], and [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1468433/][Choosing the best heuristic for seeded alignment of DNA sequences]].
 
-** Applied Data Science ([[/Users/chl/Documents/papers/langmore-2012-applied-data-scien.pdf][langmore-2012-applied-data-scien]])
+** Applied Data Science ([[papers:langmore-2012-applied-data-scien.pdf][langmore-2012-applied-data-scien]])
 Nice applied textbook on "data science" using Unix tools and Python. This is the first time I saw linear regression introduced using Bayesian formalism, then regularization. Lasso penalization is discussed in the case of LOgistic regression. There's also an interesting chapter on high-performance Python (p. 106 ff.).
 
 See also [[https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11239][Data science: An action plan for expanding the technical areas of the field of statistics]], by Cleveland:
@@ -126,12 +126,12 @@ See also [[https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11239][Data scie
 - *Tool Evaluation* (5%): surveys of tools in use in practice, surveys of perceived needs for new tools, and studies of the processes for developing new tools.
 - *Theory* (20%): foundations of data science; general approaches to models and methods, to computing with data, to teaching, and to tool evaluation; mathematical investigations of models and methods, of computing with data, of teaching, and of evaluation.
 
-** Automated versus do-it-yourself methods for causal inference: Lessons learned from a data analysis competition ([[/Users/chl/Documents/papers/dorie-2018-autom.pdf][dorie-2018-autom]])
+** Automated versus do-it-yourself methods for causal inference: Lessons learned from a data analysis competition ([[papers:dorie-2018-autom.pdf][dorie-2018-autom]])
 Focus on semi-parametric and nonparametric causal inference methodology, with a particular emphasis on the comparison between 30 different approaches through the "[[https://docs.google.com/document/d/1p5xdeJVY5GdBC2ar_3wVjaboph0PemXulnMD5OojOCI/edit][causal inference data analysis competition]]", hosted during the [[http://jenniferhill7.wixsite.com/acic-2016][2016 Atlantic Causal Inference Conference Competition]].
 
 Some caveats when assessing causal inference methods: (1) few methods compared and unfair comparisons, (2) testing grounds not calibrated to "real life", and (3) file drawer effect. The later ressembles what is commonly impacting meta-analytical studies. It reminds me of a critic of machine elarning algorithms that are always developed and calibrated on exiting data sets, like those available on UCI, with reference to existing benchmarks---hence inducing a confirmation bias---and that would probably perform poorly on real life data (I didn't find the reference). See also this online article, [[https://www.mckinsey.com/business-functions/risk/our-insights/controlling-machine-learning-algorithms-and-their-biases][Controlling machine-learning algorithms and their biases]], by Tobias Baer and Vishnu Kamalnath, regarding human biases.
 
-See also: [[/Users/chl/Documents/papers/middleton-2016-bias-amplif.pdf][middleton-2016-bias-amplif]].
+See also: [[papers:middleton-2016-bias-amplif.pdf][middleton-2016-bias-amplif]].
 
 *Sidenote*: Omitted variable bias
 
@@ -146,22 +146,22 @@ $$
 
 Unless $\beta_2 = 0$, $\mathbb E(\hat\beta_1) = \beta_1 + \beta_2\left(\frac{\sum xz}{\sum x^2}\right) \neq 0$, which means that the coefficient of $X$ picks up the part of the influence of $Z$ that was correlated with $X$.
 
-** Bigtable: a distributed storage system for structured data ([[/Users/chl/Documents/papers/chang-2006-bigtab.pdf][chang-2006-bigtab]])
+** Bigtable: a distributed storage system for structured data ([[papers:chang-2006-bigtab.pdf][chang-2006-bigtab]])
 #+BEGIN_QUOTE
 Bigtable does not support a full relational data model; instead, it provides clients with a simple data model that supports dynamic control over data layout and format, and allows clients to reason about the locality properties of the data represented in the underlying storage. Data is indexed using row and column names that can be arbitrary strings. Bigtable also treats data as uninterpreted strings, although clients often serialize various forms of structured and semi-structured data into these strings. Clients can control the locality of their data through careful choices in their schemas. Finally, Bigtable schema parameters let clients dynamically control whether to serve data out of memory or from disk.
 #+END_QUOTE
 
-** Bioinformatics data skills: reproducible and robust research with open source tools ([[/Users/chl/Documents/papers/buffalo-2015-bioin-data-skill.pdf][buffalo-2015-bioin-data-skill]])
+** Bioinformatics data skills: reproducible and robust research with open source tools ([[papers:buffalo-2015-bioin-data-skill.pdf][buffalo-2015-bioin-data-skill]])
 - [[https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?][Sequence Read Archive]]
 - forensic bioinformatics ([[https://projecteuclid.org/euclid.aoas/1267453942][Baggerly and Coombes 2009]])
 
-** Bootstrap Confidence Intervals ([[/Users/chl/Documents/papers/diciccio-1996-boots-confid-inter.pdf][diciccio-1996-boots-confid-inter]])
+** Bootstrap Confidence Intervals ([[papers:diciccio-1996-boots-confid-inter.pdf][diciccio-1996-boots-confid-inter]])
 Four bootstrap confidence interval procedures: BCa, bootstrap-t, ABC and calibration. See the [[https://cran.r-project.org/package=bootstrap][bootstrap]] R package for ABC and =boot::abc.ci= for calibrated ABC.
 
-** Bootstrap Confidence Levels For Phylogenetic Trees ([[/Users/chl/Documents/papers/efron-1996-boots-confid.pdf][efron-1996-boots-confid]])
+** Bootstrap Confidence Levels For Phylogenetic Trees ([[papers:efron-1996-boots-confid.pdf][efron-1996-boots-confid]])
 One of the many applied papers on the bootstrap by Efron, based on the original work of Felsenstein (see also [[file:~/Documents/papers/felsenstein-2004-infer-phylog.pdf][felsenstein-2004-infer-phylog]]). The aim of bootstrap resampling in phylogenetic reconstruction is to assess the confidence for each clad, based on the proportion of bootstrap trees showing that same clade. In this context, the notion of agreement refers to the topology of the trees and not to the length of its arms. The rationale underlying the bootstrap confidence values depends on a simple multinomial probability model, although a bivariate normal model could also be used (parametric bootstrap).
 
-** Bootstrap Methods for Standard Errors, Confidence Intervals, and Other Measures of Statistical Accuracy ([[/Users/chl/Documents/papers/efron-1986-boots-method.pdf][efron-1986-boots-method]])
+** Bootstrap Methods for Standard Errors, Confidence Intervals, and Other Measures of Statistical Accuracy ([[papers:efron-1986-boots-method.pdf][efron-1986-boots-method]])
 From the Stata Manual [R] on "bootstrap": [[~/Documents/papers/efron-1986-boots-method.pdf][efron-1986-boots-method]] describe an alternative to Satterthwaite’s approximation that estimates the ASL by bootstrapping the statistic from the test of equal means. Their idea is to recenter the two samples to the combined sample mean so that the data now conform to the null hypothesis but that the variances within the samples remain unchanged.
 
 #+NAME: auto
@@ -180,10 +180,10 @@ bootstrap t=r(t), rep(1000) strata(foreign) saving(bsauto2) nodots: ttest mpg, b
 
 See also [[~/Documents/papers/hesterberg-2014-what-teach.pdf][hesterberg-2014-what-teach]] and Patrick Burns note on [[http://www.burns-stat.com/documents/tutorials/the-statistical-bootstrap-and-other-resampling-methods-2/][resampling]]. See also [[~/Documents/papers/poi-2004-from-help-desk.pdf][poi-2004-from-help-desk]] and the corresponding entry for R code.
 
-** Bootstrapping the out-of-sample predictions for efficient and accurate cross-validation ([[/Users/chl/Documents/papers/tsamardinos-2017-boots-out.pdf][tsamardinos-2017-boots-out]])
+** Bootstrapping the out-of-sample predictions for efficient and accurate cross-validation ([[papers:tsamardinos-2017-boots-out.pdf][tsamardinos-2017-boots-out]])
 Bootstrap Bias Corrected CV = bootstrap the whole process of selecting the best-performing configuration on the out-of-sample predictions of each configuration, without additional training of models. Computationally more efficient, smaller variance and bias compared to nested CV.
 
-** Clojure Data Analysis Cookbook ([[/Users/chl/Documents/papers/rochester-2013-clojur-data.pdf][rochester-2013-clojur-data]])
+** Clojure Data Analysis Cookbook ([[papers:rochester-2013-clojur-data.pdf][rochester-2013-clojur-data]])
 A book from the Packt Publishing group.
 
 Actually, this is the first book by [[http://www.ericrochester.com][Eric Rochester]]. The second covers more advanced techniques and was published one year later: cite:rochester-2014-master-clojur. The [[https://github.com/erochest/clj-data-analysis][site for the book]] includes data used throughout the book, nothing more, but be aware there are a lot of datasets.
@@ -194,23 +194,23 @@ This book is for programmers or data scientists who are familiar with Clojure an
 
 The first chapter describes various ways to import data (flat files, local database and RDF data), mostly using Incanter backend. I would prefer the author start with more basic tool before dwelling into specialized libraries, especially since [[https://github.com/incanter/incanter][Incanter]] looks almost defunct nowadays (the last blog entry I found said that it was [[https://data-sorcery.org/2016/02/01/incanter-1-5-7/][version 1.5.7, Feb 2016]]). Anyway, this provides a good overview of Incanter's facilities to process external data and convert them in array form, and R or Lispstat users should feel at home. However, starting with Chapter 2 the author will use the [[https://github.com/clojure/data.csv][data.csv]] library.
 
-** Clojure for the Brave and True ([[/Users/chl/Documents/papers/higginbotham-2015-clojur-brave-true.pdf][higginbotham-2015-clojur-brave-true]])
+** Clojure for the Brave and True ([[papers:higginbotham-2015-clojur-brave-true.pdf][higginbotham-2015-clojur-brave-true]])
 The book was published on [[http://leanpub.com/clojure-for-the-brave-and-true][Leanpub]] a while ago but it is not for sale anymore. I don't remember where I got a PDF version of the book, but there is also a website, [[https://www.braveclojure.com][Brave Clojure]], where the book can be read online for free.
 
 The first chapters are all about setting up a working environment for writing Clojure code, and it happens to be Emacs + [[https://cider.readthedocs.org/][Cider]]. The Clojure version currently used in the book is 1.6 (alpha3), with Leiningen as the build tool for Clojure projects (+ Clojure 1.5.1 for =lein repl=).
 
 Overall, the presentation is clear although it remains a bit rough (I mean like in draft mode) with lot of external links to learn more.
 
-** Competitive programmer’s handbook ([[/Users/chl/Documents/papers/laaksonen-2017-compet-progr-handb.pdf][laaksonen-2017-compet-progr-handb.pdf]]]])
- When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike [[/Users/chl/Documents/papers/conery-2016-impos-handb.pdf][conery-2016-impos-hand]], it has more running code, and in a decent language (C++ 11). I wrote a little [[~/git/scratch/python/competitive.py][transcript]] in Python 3.x and wrote a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on aliquote.org.
+** Competitive programmer’s handbook ([[papers:laaksonen-2017-compet-progr-handb.pdf][laaksonen-2017-compet-progr-handb.pdf]]]])
+ When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike [[papers:conery-2016-impos-handb.pdf][conery-2016-impos-hand]], it has more running code, and in a decent language (C++ 11). I wrote a little [[~/git/scratch/python/competitive.py][transcript]] in Python 3.x and wrote a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on aliquote.org.
 
-** Concrete abstractions: an introduction to computer science using scheme ([[/Users/chl/Documents/papers/hailperin-1999-concr-abstr.pdf][hailperin-1999-concr-abstr]])
+** Concrete abstractions: an introduction to computer science using scheme ([[papers:hailperin-1999-concr-abstr.pdf][hailperin-1999-concr-abstr]])
 ***** TODO Post a review on [[http://aliquote.org]].
 
-** Dancing Links ([[/Users/chl/Documents/papers/knuth-2000-dancin-links.pdf][knuth-2000-dancin-links]])
+** Dancing Links ([[papers:knuth-2000-dancin-links.pdf][knuth-2000-dancin-links]])
 [[https://dancing-links.herokuapp.com]]
 
-** Data Wrangling with Python ([[/Users/chl/Documents/papers/kazil-2016-data-wrang-python.pdf][kazil-2016-data-wrang-python]])
+** Data Wrangling with Python ([[papers:kazil-2016-data-wrang-python.pdf][kazil-2016-data-wrang-python]])
 Relatively self-paced introduction to Python data structures and programming. In order to motivate the reader, the authors said they would understand the following three lines by the end of chapter 2, and I believe this should be true even for people who know close to nothing to programming.
 
 #+BEGIN_SRC python
@@ -223,10 +223,10 @@ pprint.pprint(sys.path)
 You just learned how to program. Programming is not about memorizing everything; rather, it is about troubleshooting when things go awry.
 #+END_QUOTE
 
-** Designing Data-Intensive Applications ([[/Users/chl/Documents/papers/kleppmann-2016-desig-data.pdf][kleppmann-2016-desig-data]])
+** Designing Data-Intensive Applications ([[papers:kleppmann-2016-desig-data.pdf][kleppmann-2016-desig-data]])
 Review by [[https://henrikwarne.com/2019/07/27/book-review-designing-data-intensive-applications/][Henrik Warne]].
 
-** From the help desk: some bootstrapping techniques ([[/Users/chl/Documents/papers/poi-2004-from-help-desk.pdf][poi-2004-from-help-desk]])
+** From the help desk: some bootstrapping techniques ([[papers:poi-2004-from-help-desk.pdf][poi-2004-from-help-desk]])
 Hypothesis test based on bootstrap resampling:
 
 #+BEGIN_SRC R
@@ -242,42 +242,42 @@ for (i in 1:B) {
 pobs <-  (1 + sum(abs(s) > abs(s0))) / (B+1)
 #+END_SRC
 
-See also [[/Users/chl/Documents/papers/efron-1986-boots-method.pdf][efron-1986-boots-method]].
+See also [[papers:efron-1986-boots-method.pdf][efron-1986-boots-method]].
 
-** Graph-based genome alignment and genotyping with hisat2 and hisat-genotype ([[/Users/chl/Documents/papers/kim-2019-graph-hisat.pdf][kim-2019-graph-hisat]])
+** Graph-based genome alignment and genotyping with hisat2 and hisat-genotype ([[papers:kim-2019-graph-hisat.pdf][kim-2019-graph-hisat]])
 [[https://ccb.jhu.edu/software/hisat2/index.shtml][HISAT2]] is the successor of TopHat2. What's new? HISAT2 can align both DNA and RNA sequences using a graph Ferragina Manzini index. This graph-based alignment approach enables much higher alignment sensitivity and accuracy than standard, linear reference-based alignment approaches, especially for highly polymorphic genomic regions.
 
-** Haskell Programming from First Principles ([[/Users/chl/Documents/papers/allen-2016-haskel-progr.pdf][allen-2016-haskel-progr]])
+** Haskell Programming from First Principles ([[papers:allen-2016-haskel-progr.pdf][allen-2016-haskel-progr]])
 One of the best book I read about Haskell, and on functional programming more generally.
 
 A short remark about typography: this book is typesetted using LaTeX; however, the verbatim and math elements appear a bit too small in my view.
 
-** How many imputations do you need? A two-stage calculation using a quadratic rule ([[/Users/chl/Documents/papers/hippel-2016-how.pdf][hippel-2016-how]])
+** How many imputations do you need? A two-stage calculation using a quadratic rule ([[papers:hippel-2016-how.pdf][hippel-2016-how]])
 See also [[https://statisticalhorizons.com/how-many-imputations]].
 
 1. First, carry out a pilot analysis. Impute the data using a convenient number of imputations. (20 imputations is a reasonable default, if it doesn’t take too long.) Estimate the FMI by analyzing the imputed data.
 2. Next, plug the estimated FMI into the formula above to figure out how many imputations you need to achieve a certain value of CV(SE). If you need more imputations than you had in the pilot, then add those imputations and analyze the data again.
 
-** Ideal Hash Trees ([[/Users/chl/Documents/papers/bagwell-2001-ideal-hash-trees.pdf][bagwell-2001-ideal-hash-trees]])
+** Ideal Hash Trees ([[papers:bagwell-2001-ideal-hash-trees.pdf][bagwell-2001-ideal-hash-trees]])
 See also [[https://worace.works/2016/05/24/hash-array-mapped-tries/][Hash Array Mapped Tries]] and Boddil Stokke's talk, [[http://github.bodil.lol/bagwell/][Meeting with Remarkable Trees]].
 
-** Immutability Changes Everything ([[/Users/chl/Documents/papers/helland-2015-immut-chang-every.pdf][helland-2015-immut-chang-every]])
+** Immutability Changes Everything ([[papers:helland-2015-immut-chang-every.pdf][helland-2015-immut-chang-every]])
 /Append-only computing/: The truth is the log. The database is a cache of a subset of the log.
 
-** Implementation strategies for continuations ([[/Users/chl/Documents/papers/clinger-1988-implem-strat-contin.pdf][clinger-1988-implem-strat-contin]])
+** Implementation strategies for continuations ([[papers:clinger-1988-implem-strat-contin.pdf][clinger-1988-implem-strat-contin]])
 Continuations (=call/cc= in Scheme) are generally used to manipulate the flow of control in a program, which means that they are close to =GOTO= statements in imperative languages.
 See [[https://www.scheme.com/tspl3/further.html#./further:h3][§3.3. Continuations]] of TSPL3 and [[https://docs.racket-lang.org/reference/cont.html][§10.4 Continuations]] of the Racket Reference guide.
-** Improving Palliative Care with Deep Learning ([[/Users/chl/Documents/papers/avati-2017-improv-palliat.pdf][avati-2017-improv-palliat]])
+** Improving Palliative Care with Deep Learning ([[papers:avati-2017-improv-palliat.pdf][avati-2017-improv-palliat]])
 See Frank Harrell's blog post: http://www.fharrell.com/post/medml/
 
 #+BEGIN_QUOTE
 As with any retrospective study not based on an inception cohort with a well-defined “time zero”, it is tricky to define a time zero and somewhat easy to have survival bias and other sampling biases sneak into the analysis. The ML algorithm required division of patients into “positive” and “negative” cases, something not required by regression models. “Positive” cases must have at least 12 months of previous data in the health system, weeding out patients who died quickly. “Negative” cases must have been alive for at least 12 months from the prediction date. It is also not clear how variable censoring times were handled. In standard statistical model, patients entering the system just before the data analysis have short follow-up and are right-censored early, but still contribute some information.
 #+END_QUOTE
 
-** Living Clojure ([[/Users/chl/Documents/papers/meier-2015-livin-clojur.pdf][meier-2015-livin-clojur]])
+** Living Clojure ([[papers:meier-2015-livin-clojur.pdf][meier-2015-livin-clojur]])
 See [[https://howistart.org/posts/clojure/1/index.html][How I start]].
 
-** Loving Common Lisp ([[/Users/chl/Documents/papers/watson-2016-lovin-common-lisp.pdf][watson-2016-lovin-common-lisp]])
+** Loving Common Lisp ([[papers:watson-2016-lovin-common-lisp.pdf][watson-2016-lovin-common-lisp]])
 On [[https://github.com/mark-watson/loving-common-lisp][Github]] (depends on [[https://github.com/mmaul/clml][clml]]), cloned locally in [[~/git/sandbox]].
 
 There are still some proof-reading lacking here and there but overall it is quite readable. The very first part of the book is all about data types in Common Lisp. All examples are illustrated using SBCL.
@@ -345,22 +345,22 @@ Input (=*standard-input*=) and output (=*standard-output*=) of Lisp data is hand
 
 The rest of the book describes some application of web and network programming using CLOS classes and various packages (=drakma=, =hunchentoot=). The chapter of querying database is also interesting.
 
-** Machine learning in python: main developments and technology trends in data science, machine learning, and artificial intelligence ([[/Users/chl/Documents/papers/raschka-2020-machin-learn-python.pdf][raschka-2020-machin-learn-python]])
+** Machine learning in python: main developments and technology trends in data science, machine learning, and artificial intelligence ([[papers:raschka-2020-machin-learn-python.pdf][raschka-2020-machin-learn-python]])
 Interesting review of current data stack in Python. The first part focus on scikit-learn and [[https://github.com/scikit-learn-contrib][contrib]], "classical ML" approaches, including boosting machines (LightGBM), and distributed computing using [[https://ml.dask.org][Dask-ML]]. Little is said about H2O and the Sparkling Water Spark-adapter, though. [[https://www.automl.org][AutoML]] libraries include: [[https://www.cs.ubc.ca/labs/beta/Projects/autoweka/][Auto-Weka]], [[https://automl.github.io/auto-sklearn/master/][Auto-sklearn]], [[https://epistasislab.github.io/tpot/][TPOT]], [[http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html][H20-AutoML]], [[https://autokeras.com][AutoKeras]].
 
-See also [[/Users/chl/Documents/papers/he-2020-autom.pdf][he-2020-autom]].
+See also [[papers:he-2020-autom.pdf][he-2020-autom]].
 
-** Mature Optimization Handbook ([[/Users/chl/Documents/papers/bueno-2013-matur-optim.pdf][bueno-2013-matur-optim]])
+** Mature Optimization Handbook ([[papers:bueno-2013-matur-optim.pdf][bueno-2013-matur-optim]])
 [[file:~/Sites/aliquote/content/post/mature-optimization-handbook.md][Review]] published on aliquote.org.
 
-** Models in biology: 'accurate descriptions of our pathetic thinking' ([[/Users/chl/Documents/papers/gunawardena-2014-model.pdf][gunawardena-2014-model]])
+** Models in biology: 'accurate descriptions of our pathetic thinking' ([[papers:gunawardena-2014-model.pdf][gunawardena-2014-model]])
 Emphasizes the role of forward modeling, especially with respect to causality.
 
 #+BEGIN_QUOTE
 Mathematical models come in a variety of flavors, depending on whether the state of a system is measured in discrete units ('off' and 'on'), in continuous concentrations or as probability distributions and whether time and space are themselves treated discretely or continuously.
 #+END_QUOTE
 
-** Modern Vim: Craft Your Development Environment with Vim 8 and Neovim ([[/Users/chl/Documents/papers/neil-2018-moder-vim.pdf][neil-2018-moder-vim]])
+** Modern Vim: Craft Your Development Environment with Vim 8 and Neovim ([[papers:neil-2018-moder-vim.pdf][neil-2018-moder-vim]])
 This is mostly about Neovim, but there are many references to Vim; sort of, what's available in Neovim that has been incorporated in Vim, except for package management. The author describes the builtin plugin system (no need for pathogen or vim-plug), the FZF plugin (instead of Ctrl-P) --- I have no interest in semantic organization of files in a project (=tpope/vim-projectionist=), how to use the quickfix list (with tmux adapter), and the builtin terminal emulator (there's no insert mode, instead it's called "terminal mode"; use =C-\ C-n= to toggle between Terminal and Normal mode). I didn't read the chpater about sessions because I don't need them, but overall I like this book a lot: the style is clear and concise and the examples are well put. The appendix provides interesting discussion regarding Language Server Protocol in Vim. There's also a brief discussion on the future of Vim 8 (and Neovim).
 
 #+BEGIN_QUOTE
@@ -375,10 +375,10 @@ Useful packages and config for Lisp editing:
 - https://github.com/kovisoft/slimv
 - https://blog.venanti.us/clojure-vim/
 
-** New cardinality estimation algorithms for hyperloglog sketches ([[/Users/chl/Documents/papers/ertl-2017-new-hyper.pdf][ertl-2017-new-hyper]])
+** New cardinality estimation algorithms for hyperloglog sketches ([[papers:ertl-2017-new-hyper.pdf][ertl-2017-new-hyper]])
 See also [[https://github.com/evanmiller/SlowerLogLog][SlowerLogLog]] by Evan Miller.
 
-** Novel parallel algorithm for constructing delaunay triangulation based on a twofold-divide-and-conquer scheme ([[/Users/chl/Documents/papers/wu-2014-novel-delaun.pdf][wu-2014-novel-delaun]])
+** Novel parallel algorithm for constructing delaunay triangulation based on a twofold-divide-and-conquer scheme ([[papers:wu-2014-novel-delaun.pdf][wu-2014-novel-delaun]])
 Multitasking parallel algorithm, in 3 stages: This algorithm automatically divides the planar point set into several non-overlapping subsets along the x-axis and y-axis directions alternately, according to the number of points and their spatial distribution. Next, the Guibas–Stolfi divide-and-conquer algorithm is applied to construct Delaunay sub- triangulations in each subset. Finally, the sub-triangulations are merged based on the binary tree.
 
 See also:
@@ -389,7 +389,7 @@ See also:
 - [[https://bl.ocks.org/mbostock/cd52a201d7694eb9d890][Voronoi Topology]]
 - [[https://isaacguan.github.io/2017/12/22/Implementation-of-Voronoi-Diagram-and-Delaunay-Triangulation/][Implementation of Voronoi Diagram and Delaunay Triangulation]]
 
-** Numerical issues in statistical computing for the social scientist ([[/Users/chl/Documents/papers/altman-2004-numer-issues.pdf][altman-2004-numer-issues]])
+** Numerical issues in statistical computing for the social scientist ([[papers:altman-2004-numer-issues.pdf][altman-2004-numer-issues]])
 Although it is probably a bit outdated by now, I like to refer to this book when it comes to summarize how important dedicated statistical packages are compared to, say, MS Excel (which used a single-pass formula for computing the SD of a series of values). More to the point, statistical software dedicated to survey analysis provide better estimates than more general package, except perhaps Stata which has good [[https://www.stata.com/meeting/snasug08/kolenikov_snasug08.pdf][estimators of variance]] for complex surveys.
 
 Sources of inaccuracy in statistical computation: bugs, computer arithmetic, randomized algorithms, approximation and heuristic algorithms, local search algorithms. About computer arithmetic, specifically:
@@ -408,77 +408,77 @@ Illustration: $i = 1000000000 + 2 - 0.1 - 1000000000$.
 
 *Side note:* The failure of SAS to recover true coefficients of a rare count event model in Table 1.2 should be checked with more recent version of SAS.
 
-** Open problems in algebraic statistics ([[/Users/chl/Documents/papers/sturmfels-2007-open-probl.pdf][sturmfels-2007-open-probl]])
+** Open problems in algebraic statistics ([[papers:sturmfels-2007-open-probl.pdf][sturmfels-2007-open-probl]])
 Open problems at the intersection between interactions between algebraic geometry and computational statistics. E.g., Graphical Models with Hidden Variables:
 Our first question concerns three-dimensional contingency tables $(p_{ijk})$ whose indices $i, j, k$ range over a set of four elements, such as the set ${A, C, G, T}$ of DNA bases. Consider the variety of 4×4×4-tables of tensor rank at most 4. There are certain known polynomials of degree at most nine which vanish on this variety. Do they suffice to cut out the variety?
 
-See also: [[/Users/chl/Documents/papers/pistone-2001-algeb-statis.pdf][pistone-2001-algeb-statis]], [[/Users/chl/Documents/papers/gibilisco-2010-algeb-geomet.pdf][gibilisco-2010-algeb-geomet]].
+See also: [[papers:pistone-2001-algeb-statis.pdf][pistone-2001-algeb-statis]], [[papers:gibilisco-2010-algeb-geomet.pdf][gibilisco-2010-algeb-geomet]].
 
-** Orthology detection combining clustering and synteny for very large datasets ([[/Users/chl/Documents/papers/lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]])
+** Orthology detection combining clustering and synteny for very large datasets ([[papers:lechner-2014-orthol-detec.pdf][lechner-2014-orthol-detec]])
 - orthology is not a transitive relation so that the problem is different from clustering an input gene set.
 - the authors focus on avoiding false positive orthology assignments within the phylogenetic range of the reported orthologous groups, while tolerating recent in-paralogs (speciation preceding duplication) as unavoidable contamination
 
-** Overly optimistic prediction results on imbalanced data: flaws and benefits of applying over-sampling ([[/Users/chl/Documents/papers/vandewiele-2020-overl-optim.pdf][vandewiele-2020-overl-optim]])
+** Overly optimistic prediction results on imbalanced data: flaws and benefits of applying over-sampling ([[papers:vandewiele-2020-overl-optim.pdf][vandewiele-2020-overl-optim]])
 Methodological bias = applying over-sampling before partitioning the data into mutually exclusive training and testing sets. Other biased approaches: apply cross-validation on a subset of data subsampled from the original dataset (increases the variance of the obtained results and does not address class imbalance). Carrying out over-sampling before splitting into training and testing sets might leak information from the original testing samples to the artificially generated training samples, leading to overly optimistic validation scores. It is therefore of key importance to carry out the over-sampling after selecting a training and testing set.
 
-** Parallel computing with r: a brief review ([[/Users/chl/Documents/papers/eddelbuettel-2019-paral-comput.pdf][eddelbuettel-2019-paral-comput]])
+** Parallel computing with r: a brief review ([[papers:eddelbuettel-2019-paral-comput.pdf][eddelbuettel-2019-paral-comput]])
 Standard HPC stilla round, but it is nowadays overshadowed by cloud computing; Haddop, Spark; deep learning. Bengtsson's =future= package offers a nice abstraction to local and remote parallelism options. A key aspect of concurrency is the /task-switching cost/. Single instruction multiple data (SIMD) and the AVX-512 instruction sets are another example of CPU- and compiler-centric parallel instructions. OpenMP remains a key technology for parallel execution of compiled code.
 Note that parallel execution requires stream-aware RNGs (p.7).
 
-** Power-law distribution in empirical data ([[/Users/chl/Documents/papers/clauset-2009-power.pdf][clauset-2009-power]])
+** Power-law distribution in empirical data ([[papers:clauset-2009-power.pdf][clauset-2009-power]])
 1. Estimate the parameters xmin and α of the power-law model using the methods described in Section 3.
 2. Calculate the goodness-of-fit between the data and the power law using the method described in Section 4. If the resulting p-value is greater than 0.1 the power law is a plausible hypothesis for the data, otherwise it is rejected.
 3. Compare the power law with alternative hypotheses via a likelihood ratio test, as described in Section 5. For each alternative, if the calculated likelihood ratio is significantly different from zero, then its sign indicates whether the alternative is favored over the power-law model or not.
- ** Automl-zero: evolving machine learning algorithms from scratch ([[/Users/chl/Documents/papers/real-2020-autom-zero.pdf][real-2020-autom-zero]])
+ ** Automl-zero: evolving machine learning algorithms from scratch ([[papers:real-2020-autom-zero.pdf][real-2020-autom-zero]])
 Github: [[https://github.com/google-research/google-research/tree/master/automl_zero]]
 
 See also [[~/Documents/papers/he-2020-autom.pdf][he-2020-autom]].
 
-** Prediction, estimation, and attribution ([[/Users/chl/Documents/papers/efron-2020-predic-estim-attrib.pdf][efron-2020-predic-estim-attrib]])
-This article deals with the controversy around prediction versus explanation in statistics and machine learning communities, as a sequel of [[/Users/chl/Documents/papers/breiman-2001-statis-model.pdf][breiman-2001-statis-model]]. How do the pure prediction algorithms relate to traditional regression methods? In traditional approaches to regression modeling a description of the underlying scientific truth (the “surface”) is formulated, along with a model of the errors that obscure direct observation ("surface plus noise formulation"). On the contrary pure prediction algorithms focus on prediction, to the neglect of estimation and attribution. The idea of boosting is, for example, to have many weak learners that combine effectively to yield low error rate while traditional methods focus on strong individual predictors.
+** Prediction, estimation, and attribution ([[papers:efron-2020-predic-estim-attrib.pdf][efron-2020-predic-estim-attrib]])
+This article deals with the controversy around prediction versus explanation in statistics and machine learning communities, as a sequel of [[papers:breiman-2001-statis-model.pdf][breiman-2001-statis-model]]. How do the pure prediction algorithms relate to traditional regression methods? In traditional approaches to regression modeling a description of the underlying scientific truth (the “surface”) is formulated, along with a model of the errors that obscure direct observation ("surface plus noise formulation"). On the contrary pure prediction algorithms focus on prediction, to the neglect of estimation and attribution. The idea of boosting is, for example, to have many weak learners that combine effectively to yield low error rate while traditional methods focus on strong individual predictors.
 
 Interesting note on GWAS analysis: Instead of performing a traditional attribution analysis with p = 106 predictors, the GWAS procedure performed 106 analyses with p = 1 and then used a second layer of inference to interpret the results of the first layer. See also comment on local false discovery rate.
 
-** Random forests, decision trees, and categorical predictors: the “absent levels” problem ([[/Users/chl/Documents/papers/au-2018-random-fores.pdf][au-2018-random-fores]])
+** Random forests, decision trees, and categorical predictors: the “absent levels” problem ([[papers:au-2018-random-fores.pdf][au-2018-random-fores]])
 This paper discusses the case of how best to handle catgeorical predictors in RF, in particular the 'absent level' problem, i.e. the case of the indeterminacy over how to handle an observation that has reached a categorical split which was determined when the observation in question’s level was absent during training.
 
-** Reaching python from racket ([[/Users/chl/Documents/papers/ramos-2014-reach-python-racket.pdf][ramos-2014-reach-python-racket]])
+** Reaching python from racket ([[papers:ramos-2014-reach-python-racket.pdf][ramos-2014-reach-python-racket]])
 Via [[https://racket-news.com/2019/09/racket-news-issue-15.html][Racket News #15]]. See also [[https://news.ycombinator.com/item?id=20392448][Racket is an acceptable Python]].
 
-** Reconciling modern machine learning practice and the bias-variance trade-off ([[/Users/chl/Documents/papers/belkin-2019-recon.pdf][belkin-2019-recon]])
+** Reconciling modern machine learning practice and the bias-variance trade-off ([[papers:belkin-2019-recon.pdf][belkin-2019-recon]])
 Interesting article on the bias-variance tradeoff in the context of recent ML workflows (NNs, deep learning, etc.). The authors discussed the "unified performance curve" and present compelling evidence that increasing model capacity beyond the point of interpolation results in improved performance in several use cases.
 
-Maybe see [[/Users/chl/Documents/papers/murphy-2012-machin-learn.pdf][murphy-2012-machin-learn]].
+Maybe see [[papers:murphy-2012-machin-learn.pdf][murphy-2012-machin-learn]].
 
-** Representing numeric data in 32 bits while preserving 64-bit precision ([[/Users/chl/Documents/papers/neal-2015-repres-numer.pdf][neal-2015-repres-numer]])
+** Representing numeric data in 32 bits while preserving 64-bit precision ([[papers:neal-2015-repres-numer.pdf][neal-2015-repres-numer]])
 Every number with up to seven significant decimal digits maps to a distinct 32-bit single precision value, with no information loss. However, when these single precision values are converted to 64-bit double precision in the standard (hardware-supported) way and then used in arithmetic operations, the results are in general not the same as if a 64-bit floating-point representation had been used. The problem is that the standard conversion by extending the mantissa of a single precision number with zeros does not produce the correct double precision representation of a number, such as 0.1, whose binary expansion is non-terminating. As an alternative we might consider using decimal floating point but floating point division operation required to convert from a decimal floating point representation is quite slow.
 
 #+BEGIN_QUOTE
 Cowlishaw, M. F. (2003) “Decimal Floating-Point: Algorism for Computers”, in Proceedings of the 16th IEEE Symposium on Computer Arithmetic.
 #+END_QUOTE
 
-** Second thoughts on the bootstrap ([[/Users/chl/Documents/papers/efron-2003-secon-thoug-boots.pdf][efron-2003-secon-thoug-boots]])
+** Second thoughts on the bootstrap ([[papers:efron-2003-secon-thoug-boots.pdf][efron-2003-secon-thoug-boots]])
 Plug-in principle: travel from the real world to the bootstrap world simply by plugging in a point estimate $\hat P$ for $P$. This is the only inference step. There may be a problem with the miscentering of the $\hat\sigma^*$ values, as exemplified by the "dilatation pehnomenon", like with [[https://en.wikipedia.org/wiki/James–Stein_estimator][Stein's estimation]]. Second-order (bootstrap t and BCA) accuracy suggested that the bootstrap could provide good approximate confidence intervals, better than the standard $\hat\theta \pm z_{\alpha}\hat\sigma$.
 
 #+BEGIN_QUOTE
 Personally my biggest bootstrap surprise involved the ABC intervals developed with Tom DiCiccio in 1992. The ABC is an analytic approximation to the BCA method that was intended to cut down on the 2000 or so bootstrap simulations required for BCA. In fact, ABC involves no simulation at all, which was the surprise, especially since the method gives excellent results for smoothly differentiable statistics like the correlation coefficient.
 #+END_QUOTE
 
-Illustration with phylogenetic trees: "the tree is a statistic, admittedly a complicated one, and it is reasonable to ask how much trust we can place in the observed features." The statistical interpretation of Felsenstein’s confidence values (whereby the columns of x are resampled, bootstrap trees are constructed and the proportion of bootstrap trees that have the feature of interest simply are counted) is discussed in [[/Users/chl/Documents/papers/efron-1996-boots-confid.pdf][efron-1996-boots-confid]].
+Illustration with phylogenetic trees: "the tree is a statistic, admittedly a complicated one, and it is reasonable to ask how much trust we can place in the observed features." The statistical interpretation of Felsenstein’s confidence values (whereby the columns of x are resampled, bootstrap trees are constructed and the proportion of bootstrap trees that have the feature of interest simply are counted) is discussed in [[papers:efron-1996-boots-confid.pdf][efron-1996-boots-confid]].
 
-** Serious Python ([[/Users/chl/Documents/papers/danjou-2018-serious-python.pdf][danjou-2018-serious-python]])
+** Serious Python ([[papers:danjou-2018-serious-python.pdf][danjou-2018-serious-python]])
 Nice book to understand the underside of Python, especially regarding package import and path management. Note that this will not teach you Python programming, but it will certainly be helpful to better understand Python, think about design patterns, and how to develop your own projects. Each chapter provides a discussion of important topics in project development, and a brief interview by core developers is provided at the end. Note that some chapters are very specific of some aspects of Python programming, or PL more generally. For instance, chapter 4 deals with timestamp and the importance of timezone.
 
 I learned a few things about packaging, and in particular the number of modules that were developed before =pip=, namely (in chronological order): =distutils=, =setuptools=, =distribute=, =distutils2=, =packaging=, and =distlib=. The latter may eventually replace =setuptools=.
 
-** Sick individuals and sick populations ([[/Users/chl/Documents/papers/rose-2001-sick.pdf][rose-2001-sick]])
+** Sick individuals and sick populations ([[papers:rose-2001-sick.pdf][rose-2001-sick]])
 A good question to ask is "Why did this patient get this disease at this time?", since it also implies that we care about why it happened and whether it could have been prevented. The individual-centered approach leads to the use of RR, but this approach to the search of causes has to assume heterogeneity of exposure within the study population.
 
 #+BEGIN_QUOTE
 If everyone smoked 20 cigarettes a day, then clinical, case-control and cohort studies alike would lead us to conclude that lung cancer was a genetic disease; and in one sense that would be true, since if everyone is exposed to the necessary agent, then the distribution of cases is wholly determined by individual susceptibility.
 #+END_QUOTE
 
-** Sparse data bias: a problem hiding in plain sight ([[/Users/chl/Documents/papers/greenland-2016-spars-data-bias.pdf][greenland-2016-spars-data-bias]])
+** Sparse data bias: a problem hiding in plain sight ([[papers:greenland-2016-spars-data-bias.pdf][greenland-2016-spars-data-bias]])
 When the data lack adequate case numbers for some combination of risk factor and outcome levels, the resulting estimates of the regression coefficients can have bias away from the null, hence the term "sparse data bias" because it is not limited to small samples.
 
 *Causes:*
@@ -497,27 +497,27 @@ When the data lack adequate case numbers for some combination of risk factor and
 
 Penalization produces the most accurate estimates given the information in the penalty; data augmentation version is simple and feasible in all statistical software; can be used as a diagnostic tool for sparse data bias.
 
-** Statistical computing and databases: distributed computing near the data ([[/Users/chl/Documents/papers/chen-2003-statis-comput-datab.pdf][chen-2003-statis-comput-datab]])
+** Statistical computing and databases: distributed computing near the data ([[papers:chen-2003-statis-comput-datab.pdf][chen-2003-statis-comput-datab]])
 Old stuff but interesting ideas (part of them are now materialized in the dplyr/dbi packages) like performing the data-intensive but algorithmically less sophisticated operations in the database and send back the results to the statistical package which is responsible for the algorithmic flow. The software design includes a CORBA architecture coupled to [[https://www.csm.ornl.gov/pvm/][PVM]] for managing parallel computations.
 
-** Statistical methods need software: a view of statistical computing ([[/Users/chl/Documents/papers/ripley-2002-statis-method.pdf][ripley-2002-statis-method]])
+** Statistical methods need software: a view of statistical computing ([[papers:ripley-2002-statis-method.pdf][ripley-2002-statis-method]])
 #+BEGIN_QUOTE
 Let’s not kid ourselves: the most widely used piece of software for statistics is Excel.
 #+END_QUOTE
 
-** Statistical Software Certification ([[/Users/chl/Documents/papers/gould-2001-statis-softw-certif.pdf][gould-2001-statis-softw-certif]])
+** Statistical Software Certification ([[papers:gould-2001-statis-softw-certif.pdf][gould-2001-statis-softw-certif]])
 #+BEGIN_QUOTE
 Stata is instead tested using an automated procedure that involves running 1,064 do-files containing 158,391 lines that cause Stata to execute 38,343,139 commands and produces just over 16 megabytes (473,859 lines) of output.
 #+END_QUOTE
 
 Mostly about the internal process of certification /per se/ rather than scientific computing, except maybe p. 40 ff when the author discuss the problem of false precision: Double precision floating point numbers are stored using 64 bits. Coprocessors, however, use 80 bits, providing extra guard bits to improve accuracy. On the coprocessor, calculations are made using 80 bits and are then handed back to the CPU rounded to 64 bits.
 
-According to [[/Users/chl/Documents/papers/altman-2004-numer-issues.pdf][altman-2004-numer-issues]], Stata is quite good. For instance, Stata v6 correctly returned the certified values for the π-digits problem.
+According to [[papers:altman-2004-numer-issues.pdf][altman-2004-numer-issues]], Stata is quite good. For instance, Stata v6 correctly returned the certified values for the π-digits problem.
 
-** Targeted Maximum Likelihood Learning ([[/Users/chl/Documents/papers/laan-2006-target-maxim.pdf][laan-2006-target-maxim]])
-See [[/Users/chl/Documents/papers/koenker-2016-tmle.pdf][koenker-2016-tmle]] for a good tutorial, as well as this slide deck for Stata: [[https://www.stata.com/meeting/uk17/slides/uk17_Luque-Fernandez.pdf][Ensemble Learning Targeted Maximum Likelihood Estimation for Stata Users]].
+** Targeted Maximum Likelihood Learning ([[papers:laan-2006-target-maxim.pdf][laan-2006-target-maxim]])
+See [[papers:koenker-2016-tmle.pdf][koenker-2016-tmle]] for a good tutorial, as well as this slide deck for Stata: [[https://www.stata.com/meeting/uk17/slides/uk17_Luque-Fernandez.pdf][Ensemble Learning Targeted Maximum Likelihood Estimation for Stata Users]].
 
-** Ten quick tips for machine learning in computational biology ([[/Users/chl/Documents/papers/chicco-2017-ten-quick.pdf][chicco-2017-ten-quick]])
+** Ten quick tips for machine learning in computational biology ([[papers:chicco-2017-ten-quick.pdf][chicco-2017-ten-quick]])
 1. Check and arrange your input dataset properly
 2. Split your input dataset into three independent subsets (training set, validation set, test set), and use the test set only once you complete training and optimization phases
 3. Frame your biological problem into the right algorithm category
@@ -529,7 +529,7 @@ See [[/Users/chl/Documents/papers/koenker-2016-tmle.pdf][koenker-2016-tmle]] for
 9. Program your software with open source code and platforms
 10. Ask for feedback and help to computer science experts, or to collaborative Q&A online communities
 
-** The elements of programming style ([[/Users/chl/Documents/papers/kernighan-1978-elemen-progr-style.pdf][kernighan-1978-elemen-progr-style]])
+** The elements of programming style ([[papers:kernighan-1978-elemen-progr-style.pdf][kernighan-1978-elemen-progr-style]])
 Nice introductory example to build an identity matrix in Fortran, which however would read much better using simple imperative code.
 
 #+BEGIN_QUOTE
@@ -542,11 +542,11 @@ An n-by-n matrix has n^{2} elements, which means n^{2} assignments for its initi
 
 All rules are listed at the end (pp. 159-161).
 
-** The Imposter's Handbook ([[/Users/chl/Documents/papers/conery-2016-impos-handb.pdf][conery-2016-impos-handb]])
+** The Imposter's Handbook ([[papers:conery-2016-impos-handb.pdf][conery-2016-impos-handb]])
 - [[file:~/Sites/aliquote/content/post/imposter-handbook.md][review]] published on aliquote.org
 - [[https://github.com/imposters-handbook/sample-code][Source code on Github]] (JS, C#, Bash, SQL)
 
-** The Little Schemer ([[/Users/chl/Documents/papers/friedman-1995-littl-schem.pdf][friedman-1995-littl-schem]])
+** The Little Schemer ([[papers:friedman-1995-littl-schem.pdf][friedman-1995-littl-schem]])
  Beautiful book, very different from SICP in that it focus on basic building blocks (=car=, =cdr=, =cons=, =eq?=, etc.) and use a very pragmatic approach to understanding the structuration and interpretation of forms and s-expr. The penultimate goal of this book (4th ed., after the original /Little Lisper/) is to learn to think in a functional way. The ten commandments are worth keeping in mind for that very specific purpose:
 
 1. When recurring on a list of atoms, =lat=, ask two questions about it: =(null? lat)= and =else=. When recurring on a number, =n=, ask two questions about it: =(zero? n)= and =else=. When recurring on a list of s-expr, =l=, ask three questions about it: =(null? l)=, =(atom? (car l))=, and =else=.
@@ -562,8 +562,8 @@ All rules are listed at the end (pp. 159-161).
 9. Abstract common patterns with a new function.
 10. Build functions to collect more than one value at a time.
 
-** The Probable Error of a Mean ([[/Users/chl/Documents/papers/gosset-1908-probab-error-mean.pdf][gosset-1908-probab-error-mean]])
-Extra R code (Frank Harrell, [[/Users/chl/Documents/papers/harrell-2017-biost-biomed-resear.pdf][harrell-2017-biost-biomed-resear]])
+** The Probable Error of a Mean ([[papers:gosset-1908-probab-error-mean.pdf][gosset-1908-probab-error-mean]])
+Extra R code (Frank Harrell, [[papers:harrell-2017-biost-biomed-resear.pdf][harrell-2017-biost-biomed-resear]])
 
 #+NAME: datasets::sleepstudy
 #+BEGIN_SRC R
@@ -581,33 +581,33 @@ geom_segment(data=w, aes(x='Drug 1', xend='Difference', y=drug1, yend=drug2 - dr
 xlab('') + ylab('Extra Hours of Sleep') + coord_flip()
 #+END_SRC
 
-** The weak spots in contemporary science (and how to fix them) ([[/Users/chl/Documents/papers/wicherts-2017-weak-spots.pdf][wicherts-2017-weak-spots]])
+** The weak spots in contemporary science (and how to fix them) ([[papers:wicherts-2017-weak-spots.pdf][wicherts-2017-weak-spots]])
 Objectives: demonstrate that the pluridisciplinar crisis in science can mainly be accounted for by observer bias, publication bias, misuse of degrees of freedom in statistical analysis of data combined to low statistical power, and errors in the reporting of results.
 
 Up to 90% of positive results reported in psychology or psychiatry.
 
 HARKing: /Hypothesizing after Results are Known/---much like "data fishing", or to a lesser extent "data dredging".
 
-Ioannidis's work on reproductibility and misuse of statistical hypothesis testing framework: [[/Users/chl/Documents/papers/ioannidis-2005-why-most.pdf][ioannidis-2005-why-most]], [[/Users/chl/Documents/papers/munafo-2017-manif-reprod-scien.pdf][munafo-2017-manif-reprod-scien]].
+Ioannidis's work on reproductibility and misuse of statistical hypothesis testing framework: [[papers:ioannidis-2005-why-most.pdf][ioannidis-2005-why-most]], [[papers:munafo-2017-manif-reprod-scien.pdf][munafo-2017-manif-reprod-scien]].
 
-** Theoretical impediments to machine learning with seven sparks from the causal revolution ([[/Users/chl/Documents/papers/pearl-2018-theor-imped.pdf][pearl-2018-theor-imped]])
+** Theoretical impediments to machine learning with seven sparks from the causal revolution ([[papers:pearl-2018-theor-imped.pdf][pearl-2018-theor-imped]])
 Seven tasks which are beyond reach of current machine learning systems (vs. structural causal models) and examples of tasks ML would fail to solve: (1) How effective is a given treatment in preventing a disease?, (2) Was it the new tax break that caused our sales to go up?, (3) What is the annual health-care costs attributed to obesity?, (4) Can hiring records prove an employer guilty of sex discrimination?, (5) I am about to quit my gob, but should I?
 
-** Topological Data Analysis ([[/Users/chl/Documents/papers/wasserman-2016-topol-data-analy.pdf][wasserman-2016-topol-data-analy]])
+** Topological Data Analysis ([[papers:wasserman-2016-topol-data-analy.pdf][wasserman-2016-topol-data-analy]])
 Topological data analysis = finding structure in data, i.e., clustering, manifold estimation, nonlinear dimension reduction, mode estimation, ridge estimation and [[https://en.wikipedia.org/wiki/Persistent_homology][persistent homology]]. The latter is often what people understand when we talk about topological data analysis. The author extends the notion a bit, but does not discuss shape manifolds. There is another field that deals with the topological and geometric structure of data: computational geometry. The main difference is that in TDA we treat the data as random points whereas in computational geometry the data are usually seen as fixed.
 
 See also the R package [[https://cran.r-project.org/web/packages/TDA/index.html][TDA]].
 
-** Twenty years of attacks on the rsa cryptosystem ([[/Users/chl/Documents/papers/boneh-2002-twent-years.pdf][boneh-2002-twent-years]])
+** Twenty years of attacks on the rsa cryptosystem ([[papers:boneh-2002-twent-years.pdf][boneh-2002-twent-years]])
 There are many Coppersmith-based attacks, but this mostly resolves around the case where public exponent /e/ is small or when partial knowledge of the secret key is available:
 
 - *Small decryption exponent /e/:* so far the best known attack recovers /e/ if it is less than N^.292. This uses a bivariate version of Coppersmith that lacks a rigorous proof of correctness, but seems to work well in practice. Important open questions are whether /e/ < N^1/2−ε is attackable (the conjecture is that it should be), and whether there are rigorously provable variants of Coppersmith for bivariate or multivariate polynomials.
 - *Partial secret key exposure:* when certain bits of /e/ or the factors /p/, /q/ of /N/ are exposed, it is often possible to recover them completely.
 
-** Using reference models in variable selection ([[/Users/chl/Documents/papers/pavone-2020-using.pdf][pavone-2020-using]])
+** Using reference models in variable selection ([[papers:pavone-2020-using.pdf][pavone-2020-using]])
 A reference model is used to mimic the data-generating process, under the assumption of an M-complete framework whereby such a model reflects our beliefs about the future data in the best possible way and has passed model checking and criticism. When using a bayesian reference model, the idea is to project its predictive distribution to a reduced model leading to projection predictive variable selection approach. See also [[http://mc-stan.org/projpred]]. Side note: Now I know that what I've been using 8 years ago for variable selection using rerandomization or bootstrap may be called something like "Bootstrap inclusion frequencies" (see Fig. 1).
 
-** What is a statistical model ([[/Users/chl/Documents/papers/mccullagh-2002-what-statis-model.pdf][mccullagh-2002-what-statis-model]])
+** What is a statistical model ([[papers:mccullagh-2002-what-statis-model.pdf][mccullagh-2002-what-statis-model]])
 From [[https://www.johndcook.com/blog/2018/04/14/categorical-data-analysis/][John D Cook's blog]].
 
 The author suggests that "most authors do not offer a precise mathematical definition of a statistical model", and gives 12 examples of ill-posed statitsical models from an inferential perspective.
@@ -618,7 +618,7 @@ Starting page 1232 ff., it is all about category theory!
 The thesis of this paper is that the logic of every statistical model is founded, implicitly or explicitly, on categories of morphisms of the relevant spaces. The purpose of a category is to ensure that the families of distributions on different sample spaces are logically related to one another and to ensure that the meaning of a parameter is retained from one family to another.
 #+END_QUOTE
 
-** What is category theory ([[/Users/chl/Documents/papers/bradley-2018-what-categ-theor.pdf][bradley-2018-what-categ-theor]])
+** What is category theory ([[papers:bradley-2018-what-categ-theor.pdf][bradley-2018-what-categ-theor]])
 - Main blog: https://www.math3ma.com
 - Level: graduate student
 
@@ -629,7 +629,7 @@ Two central themes:
 - functorial semantics: C → D ≈ interpretation of C within D; syntax (grammar in NLP) refers to rules for putting things together and semantics (meaning) refers to the meaning of those things.
 - compositionality
 
-** Why Rust? ([[/Users/chl/Documents/papers/blandy-2015-why-rust.pdf][blandy-2015-why-rust]])
+** Why Rust? ([[papers:blandy-2015-why-rust.pdf][blandy-2015-why-rust]])
 Rust, like Python, JS or Ruby, is a type safe language with immutable variables by default, but it also allows the use of ~unsafe~ code and ~mut~ able variables. Moreover, "Rust’s particular form of type safety guarantees that concurrent code is free of data races, catching any misuse of mutexes or other synchronization primitives at compile time, and permitting a much less adversarial stance towards exploiting parallelism." In addition, Rust guarantees memory safety through three key promises: no null pointer dereferences, no dangling pointers and no buffer overruns.
 
 Rust offers a flexible macro system (not covered in this short review); see the [[https://doc.rust-lang.org/1.7.0/book/macros.html][official documentation]] or the [[https://rustbyexample.com/macros.html][Rust by Example]]. There are also /generic/ types and functions, like C++ templates, except that in Rust we must specifiy the type of the argument ~T~ (~Ord~ in the example below):
@@ -686,10 +686,10 @@ Some additional pointers:
 - Evan Miller's review: [[https://www.evanmiller.org/a-taste-of-rust.html][A Taste of Rust]]
 - Jeroen Ooms (@opencpu): [[https://github.com/jeroen/hellorust][Hello Rust]] (Minimal Example of Calling Rust from R using Cargo)
 
-** Why you cannot (yet) write an “interval arithmetic” library in common lisp ([[/Users/chl/Documents/papers/antoniotti-2020-why-you.pdf][antoniotti-2020-why-you]])
+** Why you cannot (yet) write an “interval arithmetic” library in common lisp ([[papers:antoniotti-2020-why-you.pdf][antoniotti-2020-why-you]])
 See also this [[http://within-parens.blogspot.com/2020/03/why-you-cannot-yet-portably-write.html][blog post]].
 
-** Calculating the sample size required for developing a clinical prediction model ([[/Users/chl/Documents/papers/riley-2020-calcul.pdf][riley-2020-calcul]])
+** Calculating the sample size required for developing a clinical prediction model ([[papers:riley-2020-calcul.pdf][riley-2020-calcul]])
 Fine distinction between the 10 EPV and 10 EPP rules of thumb: it's important to consider the total number of predictor parameters considered and not variables (which may have several associated $\beta$ parameters) or parameters included in the final model. The very inconsistent recommendations about EPP suggest that it is actually context specific and depends not only on the number of events relative to the number of candidate predictor parameters but also on the total number of participants, the outcome proportion (incidence) in the study population, and the expected predictive performance of the model.
 
 Recall what Frank Harrell advocates for logistic regression (n=96 to assess the intercept only):

@@ -1,2641 +1,2341 @@
 * Inbox
-** Lets-Plot is a ggplot2-like backend for Jupyter notebook                     :python:
+** Notes on making scatterplots in matplotlib and seaborn :python:
+ [2020-09-10 Thu 14:04]
+ https://andrewpwheeler.com/2020/09/04/notes-on-making-scatterplots-in-matplotlib-and-seaborn/
+** grstyle: Customizing Stata graphs made easy :stata:
+ [2020-09-10 Thu 14:02]
+ http://repec.sowi.unibe.ch/stata/grstyle/
+** Modern R :rstats:
+ [2020-09-10 Thu 13:49]
+ https://github.com/b-rodrigues/modern_R
+** shell/AWK/Perl-like scripting in OCaml :ocaml:elfeed:
+ [2020-09-10 Thu 13:30]
+ http://okmij.org/ftp/ML/myawk/index.html
+** Ergonomic Haskell 1 - Records :haskell:
+ [2020-09-10 Thu 13:23]
+ https://codygman.dev/posts/2020-09-07-Ergonomic_haskell_1_records.html
+** Crit-bit trees :algorithms:cryptography:
+ [2020-09-10 Thu 10:45]
+ https://cr.yp.to/critbit.html
+** Lets-Plot is a ggplot2-like backend for Jupyter notebook :python:
  [2020-09-09 Wed 15:09]
  https://github.com/JetBrains/lets-plot
-** Parsing JSON is a Minefield                                                  :misc:
+** Parsing JSON is a Minefield :misc:
  [2020-09-08 Tue 16:52]
  http://seriot.ch/parsing_json.php
-** Setting up your Haskell development environment                              :haskell:
+** Setting up your Haskell development environment :haskell:
  [2020-09-08 Tue 15:38]
  https://www.vacationlabs.com/haskell/environment-setup.html
-** emacs-haskell-config                                                         :emacs:haskell:
+** emacs-haskell-config :emacs:haskell:
  [2020-09-08 Tue 14:47]
  https://github.com/massyl/emacs-haskell-config
-** DNA Sequence simulator                                                       :bioinformatics:
+** DNA Sequence simulator :bioinformatics:
  [2020-09-08 Tue 11:44]
  https://github.com/rambaut/Seq-Gen
-** BOOSTER is a new way of computing bootstrap supports in large phylogenies    :bioinformatics:
+** BOOSTER is a new way of computing bootstrap supports in large phylogenies :bioinformatics:
  [2020-09-08 Tue 11:37]
  https://github.com/evolbioinfo/booster
-** seq2science                                                                  :bioinformatics:
+** seq2science :bioinformatics:
  [2020-09-08 Tue 11:26]
  https://vanheeringen-lab.github.io/seq2science/
-** Happy Haskell Programming                                                    :haskell:emacs:
+** Happy Haskell Programming :haskell:emacs:
  [2020-09-08 Tue 11:23]
  https://github.com/kazu-yamamoto/hhp
-** Emacs + Dante + Brittany + Stack                                             :emacs:haskell:
+** Emacs + Dante + Brittany + Stack :emacs:haskell:
  [2020-09-08 Tue 11:20]
  https://www.reddit.com/r/haskell/comments/e5gcq0/best_emacs_experience_for_haskell/f9kp8uk/
-** Key Binding Conventions                                                      :emacs:
+** Key Binding Conventions :emacs:
  [2020-09-07 Mon 12:36]
  https://www.gnu.org/software/emacs/manual/html_node/elisp/Key-Binding-Conventions.html
-** Keyboard shortcuts for Firefox                                               :misc:
+** Keyboard shortcuts for Firefox :misc:
  [2020-09-07 Mon 09:21]
  https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly
-** Numeric Haskell: A Vector Tutorial                                           :haskell:
+** Numeric Haskell: A Vector Tutorial :haskell:
  [2020-09-06 Sun 22:20]
  https://wiki.haskell.org/Numeric_Haskell:_A_Vector_Tutorial
-** 8086 microcode disassembled                                                  :compiler:
+** 8086 microcode disassembled :compiler:
  [2020-09-06 Sun 22:19]
  https://www.reenigne.org/blog/8086-microcode-disassembled/
-** The evolution of psychiatry                                                  :misc:
+** The evolution of psychiatry :misc:
  [2020-09-06 Sun 22:18]
  https://worksinprogress.co/issue/the-evolution-of-psychiatry/
-** Scheme immutable data structures                                             :scheme:
+** Scheme immutable data structures :scheme:
  [2020-09-06 Sun 22:14]
  https://github.com/kevinwortman/Scheme-immutable-data-structures
-** Faking Useful Refinement Types in Racket                                     :racket:
+** Faking Useful Refinement Types in Racket :racket:
  [2020-09-06 Sun 22:01]
  https://gmb.is/refinement-types
-** Using Multiple Dictionaries for Spellchecking in Emacs                       :emacs:
+** Using Multiple Dictionaries for Spellchecking in Emacs :emacs:
  [2020-09-06 Sun 09:25]
  https://irreal.org/blog/?p=9097
-** Another Thesaurus for Emacs                                                  :emacs:
+** Another Thesaurus for Emacs :emacs:
  [2020-09-06 Sun 09:21]
  https://irreal.org/blog/?p=9102
-** cl-flat-tree                                                                 :lisp:elfeed:
+** cl-flat-tree :lisp:elfeed:
  [2020-09-03 Thu 17:07]
  http://40ants.com/lisp-project-of-the-day/2020/08/0167-cl-flat-tree.html
-** Do a pile of work better                                                     :python:elfeed:
+** Do a pile of work better :python:elfeed:
  [2020-09-03 Thu 16:40]
  https://nedbatchelder.com//blog/202008/do_a_pile_of_work_better.html
-** Programming with Categories                                                  :haskell:
+** Programming with Categories :haskell:
  [2020-09-03 Thu 12:24]
  http://brendanfong.com/programmingcats.html
-** Lisp is Not an Acceptable Lisp                                               :lisp:
+** Lisp is Not an Acceptable Lisp :lisp:
  [2020-09-03 Thu 11:46]
  https://steve-yegge.blogspot.com/2006/04/lisp-is-not-acceptable-lisp.html?m=1
-** The algebra (and calculus!) of algebraic data types                          :haskell:
+** The algebra (and calculus!) of algebraic data types :haskell:
  [2020-09-02 Wed 09:48]
  https://codewords.recurse.com/issues/three/algebra-and-calculus-of-algebraic-data-types
-** An analysis and visualization platform for 'omics data                       :bioinformatics:
+** An analysis and visualization platform for 'omics data :bioinformatics:
  [2020-09-01 Tue 16:14]
  https://github.com/merenlab/anvio
-** Search in git                                                                :git:
+** Search in git :git:
  [2020-09-01 Tue 14:28]
  https://euandre.org/til/2020/08/16/search-in-git.html
-** chibi math stats                                                             :scheme:
+** chibi math stats :scheme:
  [2020-09-01 Tue 13:21]
  http://snow-fort.org/s/gmail.com/alexshinn/chibi/math/stats/0.1/index.html
-** A Common Lisp PostgreSQL programming interface                               :lisp:sql:
+** A Common Lisp PostgreSQL programming interface :lisp:sql:
  [2020-09-01 Tue 12:46]
  https://github.com/marijnh/Postmodern
-** C++ Core Guidelines                                                          :clang:
+** C++ Core Guidelines :clang:
  [2020-08-31 Mon 21:23]
  https://github.com/isocpp/CppCoreGuidelines
-** As above, so below: Bare metal Rust generics                                 :rust:
+** As above, so below: Bare metal Rust generics :rust:
  [2020-08-31 Mon 21:22]
  https://www.ecorax.net/as-above-so-below-2/
-** Optionality in the type systems of Julia and Rust                            :julia:rust:
+** Optionality in the type systems of Julia and Rust :julia:rust:
  [2020-08-31 Mon 16:40]
  https://andreaskroepelin.de/blog/sum_types/
-** sled theoretical performance guide                                           :misc:
+** sled theoretical performance guide :misc:
  [2020-08-31 Mon 16:36]
  https://sled.rs/perf.html
-** Fast reference to common SRFI                                                :scheme:
+** Fast reference to common SRFI :scheme:
  [2020-08-31 Mon 15:49]
  http://fmnt.info/blog/20190218_srfi.html
-** Darkart: Chez Scheme's Forign Library Interface                              :scheme:python:
+** Darkart: Chez Scheme's Forign Library Interface :scheme:python:
  [2020-08-31 Mon 15:46]
  https://github.com/guenchi/Darkart
-** Akku: Integration with Emacs and Geiser                                      :emacs:scheme:
+** Akku: Integration with Emacs and Geiser :emacs:scheme:
  [2020-08-31 Mon 15:10]
  https://gitlab.com/akkuscm/akku/-/wikis/Integration-with-Emacs-and-Geiser
 ** Clojure library that wraps Apache Spark
  [2020-08-31 Mon 09:23]
  https://github.com/zero-one-group/geni
-** Descriptive Stats with C++ and Boost                                         :clang:perl:
+** Descriptive Stats with C++ and Boost :clang:perl:
  [2020-08-30 Sun 21:43]
  https://www.nu42.com/2016/12/descriptive-stats-with-cpp-boost.html
-** StatsLib is a templated C++ library of statistical distribution functions    :clang:statistics:
+** StatsLib is a templated C++ library of statistical distribution functions :clang:statistics:
  [2020-08-30 Sun 21:37]
  https://github.com/kthohr/stats
-** C++ libraries for statistical computing                                      :clang:statistics:
+** C++ libraries for statistical computing :clang:statistics:
  [2020-08-30 Sun 21:29]
  https://stats.stackexchange.com/q/7358
-** ULPs Plots Reveal Math Function Accuracy                                     :maths:
+** ULPs Plots Reveal Math Function Accuracy :maths:
  [2020-08-30 Sun 20:50]
  https://blogs.mathworks.com/cleve/2017/01/23/ulps-plots-reveal-math-function-accurary/
 * Archives 2020
-** palmerpenguins for data exploration and visualization                        :rstats:
+** palmerpenguins for data exploration and visualization :rstats:
  [2020-08-30 Dim 12:19]
  https://github.com/allisonhorst/palmerpenguins
-** How to: pow(real, real) in x86                                               :clang:
+** How to: pow(real, real) in x86 :clang:
  [2020-08-30 Dim 12:18]
  https://stackoverflow.com/questions/4638473/how-to-powreal-real-in-x86/4638502#4638502
-** Deobfuscating code for fun and no profit round 2                             :clang:
+** Deobfuscating code for fun and no profit round 2 :clang:
  [2020-08-30 Dim 12:11]
  https://medium.com/@LainIwakura/deobfuscating-code-for-fun-and-no-profit-round-2-60d78b67ebce
-** UNIX Seventh Edition (PDP-11)                                                :unix:
+** UNIX Seventh Edition (PDP-11) :unix:
  [2020-08-30 Dim 12:09]
  http://a.papnet.eu/UNIX/v7/Installation
-** Guide to Rustc Development                                                   :rust:
+** Guide to Rustc Development :rust:
  [2020-08-30 Dim 11:59]
  https://rustc-dev-guide.rust-lang.org/
-** Vi, movement commands, efficiency, and me                                    :vim:
+** Vi, movement commands, efficiency, and me :vim:
  [2020-08-30 Dim 11:56]
  https://utcc.utoronto.ca/~cks/space/blog/unix/ViInefficientMovement
-** Filename extension for Scheme                                                :scheme:
+** Filename extension for Scheme :scheme:
  [2020-08-29 Sam 19:50]
  https://stackoverflow.com/a/36242004
-** Intel Intrinsics Guide                                                       :compiler:
+** Intel Intrinsics Guide :compiler:
  [2020-08-29 Sam 19:50]
  https://software.intel.com/sites/landingpage/IntrinsicsGuide/
-** When optimizations cross the border of sanity                                :compiler:apple:
+** When optimizations cross the border of sanity :compiler:apple:
  [2020-08-29 Sam 14:11]
  http://gruntthepeon.free.fr/blog/index.php/2018/12/12/79-when-optimizations-cross-the-border-of-sanity
-** What is the minimum supported SSE flag that can be enabled on macOS?         :compiler:apple:
+** What is the minimum supported SSE flag that can be enabled on macOS? :compiler:apple:
  [2020-08-29 Sam 14:02]
  https://stackoverflow.com/a/45921250
-** How does mtune actually work?                                                :compiler:
+** How does mtune actually work? :compiler:
  [2020-08-29 Sam 13:58]
  https://stackoverflow.com/q/44490331
-** Software optimization resources                                              :compiler:
+** Software optimization resources :compiler:
  [2020-08-29 Sam 13:58]
  https://agner.org/optimize/
-** How to generate Python manula in Info format                                 :python:emacs:
+** How to generate Python manula in Info format :python:emacs:
  [2020-08-29 Sam 13:41]
  https://stackoverflow.com/a/42739005
-** Download MacOS Mojave .APP, DMG, ISO, Bootable USB image                     :apple:
+** Download MacOS Mojave .APP, DMG, ISO, Bootable USB image :apple:
  [2020-08-29 Sam 12:29]
  https://macbold.com/download-macos-mojave-app-dmg-iso-bootable-usb-image-official-version/
-** Algebraic Structure and Protocols                                            :algorithms:
+** Algebraic Structure and Protocols :algorithms:
  [2020-08-29 Sam 09:20]
  https://www.fewbutripe.com/swift/math/algebra/2015/02/17/algebraic-structure-and-protocols.html
-** Morris's Algorithm for Approximate Counting                                  :algorithms:
+** Morris's Algorithm for Approximate Counting :algorithms:
  [2020-08-28 Ven 21:33]
  https://arpitbhayani.me/blogs/morris-counter
-** REPORTTIME in zsh                                                            :zsh:
+** REPORTTIME in zsh :zsh:
  [2020-08-28 Ven 21:21]
  https://nuclearsquid.com/writings/reporttime-in-zsh/
-** GitHub Markdown CSS demo                                                     :web:
+** GitHub Markdown CSS demo :web:
  [2020-08-28 Ven 21:15]
  https://sindresorhus.com/github-markdown-css/
-** Org-Docco                                                                    :org:
+** Org-Docco :org:
  [2020-08-28 Ven 10:39]
  https://eschulte.github.io/org-docco/org-docco.html
-** Principal Component Analysis                                                 :statistics:
+** Principal Component Analysis :statistics:
  [2020-08-24 Lun 20:59]
  https://leimao.github.io/article/Principal-Component-Analysis/
-** Cursive is a TUI (Text User Interface) library for rust                      :rust:
+** Cursive is a TUI (Text User Interface) library for rust :rust:
  [2020-08-24 Lun 20:58]
  https://github.com/gyscos/cursive
-** latexindent: Can't locate Log/Log4perl.pm                                    :tex:emacs:
+** latexindent: Can't locate Log/Log4perl.pm :tex:emacs:
  [2020-08-24 Lun 16:06]
  https://tex.stackexchange.com/questions/445521/latexindent-cant-locate-log-log4perl-pm-in-inc-you-may-need-to-install-the-l
-** Typesetting a Textbook                                                       :tex:
+** Typesetting a Textbook :tex:
  [2020-08-24 Lun 12:57]
  https://optics.byu.edu/clsfile
-** Useful Latex macros                                                          :tex:
+** Useful Latex macros :tex:
  [2020-08-24 Lun 12:54]
  http://jeffe.cs.illinois.edu/pubs/latex.html
-** Chance of short SHA1 hash collision at 7 character hash string               :misc:
+** Chance of short SHA1 hash collision at 7 character hash string :misc:
  [2020-08-24 Lun 10:36]
  https://github.com/source-foundry/font-v/issues/2
-** A book to use more the keyboard, less the mouse                              :cli:
+** A book to use more the keyboard, less the mouse :cli:
  [2020-08-24 Lun 09:57]
  https://themouseless.dev/
-** DSM-5 ASD diagnostic                                                         :misc:
+** DSM-5 ASD diagnostic :misc:
  [2020-08-23 Dim 20:13]
  https://www.iancommunity.org/diagnostic-criteria-autism
-** zsh options                                                                  :zsh:
+** zsh options :zsh:
  [2020-08-23 Dim 18:16]
  http://zsh.sourceforge.net/Doc/Release/Options.html#Options
-** Python, Scheme, C                                                            :misc:
+** Python, Scheme, C :misc:
  [2020-08-23 Sun 13:11]
  https://www.laurentbloch.net/MySpip3/Python-Scheme-C
-** Downloading YouTube Video using VLC                                          :cli:
+** Downloading YouTube Video using VLC :cli:
  [2020-08-23 Sun 10:16]
  https://www.bogotobogo.com/VideoStreaming/VLC/Downloading_YouTube_Video_using_VLC.php
-** moreutils                                                                    :cli:
+** moreutils :cli:
  [2020-08-22 Sam 17:52]
  https://joeyh.name/code/moreutils/
-** Setting Up an IRC Bouncer                                                    :irc:
+** Setting Up an IRC Bouncer :irc:
  [2020-08-22 Sam 17:50]
  https://sgfault.com/2018/07/28/irc-bouncer-setup.html
-** Vagrant Up and Running in 5 Minutes                                          :cli:
+** Vagrant Up and Running in 5 Minutes :cli:
  [2020-08-22 Sam 17:47]
  https://sgfault.com/2018/07/29/vagrant-in-five-mins.html
-** Exercices en Scheme                                                          :scheme:
+** Exercices en Scheme :scheme:
  [2020-08-22 Sam 17:42]
  https://pages.lip6.fr/Christian.Queinnec/Teaching/scheme/enonces.html
-** Literal Examples                                                             :org:
+** Literal Examples :org:
  [2020-08-22 Sam 16:37]
  https://orgmode.org/manual/Literal-Examples.html
-** Never leave IRC again with ZNC                                               :irc:
+** Never leave IRC again with ZNC :irc:
  [2020-08-22 Sam 13:37]
  https://fedoramagazine.org/never-leave-irc-znc/
-** Tips on Emacs Lisp programming                                               :emacs:
+** Tips on Emacs Lisp programming :emacs:
  [2020-08-22 Sam 13:34]
  http://nic.ferrier.me.uk/blog/2012_07/tips-and-tricks-for-emacslisp
-** Python Optimization Tricks                                                   :python:
+** Python Optimization Tricks :python:
  [2020-08-22 Sam 09:31]
  https://github.com/pawangeek/Python-Resources/blob/master/Cool-stuff/Python-Tricks.md
-** Which is faster in Python: x**.5 or math.sqrt(x)?                            :python:
+** Which is faster in Python: x**.5 or math.sqrt(x)? :python:
  [2020-08-22 Sam 09:29]
  https://stackoverflow.com/questions/327002/which-is-faster-in-python-x-5-or-math-sqrtx
-** genomic data processing and analysis                                         :bioinformatics:
+** genomic data processing and analysis :bioinformatics:
  [2020-08-21 Ven 19:38]
  https://github.com/simonhmartin/genomics_general
-** Game Programming Patterns                                                    :game:
+** Game Programming Patterns :game:
  [2020-08-21 Ven 19:37]
  https://gameprogrammingpatterns.com/contents.html
-** Algorithmes et structures de données                                         :algorithms:
+** Algorithmes et structures de données :algorithms:
  [2020-08-21 Ven 19:37]
  https://github.com/ocuisenaire/ASD1-notebooks
-** stylewarning/cl-permutation                                                  :lisp:
+** stylewarning/cl-permutation :lisp:
  [2020-08-21 Ven 19:36]
  https://github.com/stylewarning/cl-permutation
-** Permutations using recursion                                                 :lisp:
+** Permutations using recursion :lisp:
  [2020-08-21 Ven 19:35]
  http://www.lispology.com/show?1FZG
-** GCC x86 Performance Hints                                                    :compiler:
+** GCC x86 Performance Hints :compiler:
  [2020-08-21 Ven 19:26]
  https://software.intel.com/content/www/us/en/develop/blogs/gcc-x86-performance-hints.html
-** Chez Scheme as the Racket VM #HN                                             :racket:
+** Chez Scheme as the Racket VM #HN :racket:
  [2020-08-20 Jeu 14:24]
  https://news.ycombinator.com/item?id=13656397
-** Emacs In a Box                                                              :emacs:
+** Emacs In a Box :emacs:
 [2020-08-18 Tue 11:56]
 https://caiorss.github.io/Emacs-Elisp-Programming/
-** Emacs mini manual series                                                    :emacs:
+** Emacs mini manual series :emacs:
 [2020-08-18 Tue 09:22]
 https://tuhdo.github.io/
-** Chez SRFI (bis)                                                             :scheme:
+** Chez SRFI (bis) :scheme:
 [2020-08-18 Tue 09:16]
 https://github.com/fedeinthemix/chez-srfi
-** Chez SRFIs                                                                  :scheme:
+** Chez SRFIs :scheme:
 [2020-08-18 Tue 09:15]
 https://github.com/arcfide/chez-srfi
-** Getting started with Akku package manager for Scheme                        :scheme:
+** Getting started with Akku package manager for Scheme :scheme:
 [2020-08-18 Tue 09:12]
 https://www.travishinkelman.com/posts/getting-started-with-akku-package-manager-for-scheme/
-** Guide to MIT Scheme                                                         :scheme:
+** Guide to MIT Scheme :scheme:
 [2020-08-18 Tue 09:05]
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/tools/scheme/
-** Index of /~campbell                                                        :misc:
+** Index of /~campbell :misc:
 [2020-08-16 Dim 22:08]
 http://mumble.net/~campbell/
-** Beautifying Org Mode in Emacs                                              :org:
+** Beautifying Org Mode in Emacs :org:
 [2020-08-16 Dim 12:24]
 https://zzamboni.org/post/beautifying-org-mode-in-emacs/
-** Beautify Org mode                                                          :org:
+** Beautify Org mode :org:
 [2020-08-16 Dim 12:22]
 https://mstempl.netlify.app/post/beautify-org-mode/
-** A screencast series about Doom                                             :emacs:
+** A screencast series about Doom :emacs:
 [2020-08-16 Dim 12:15]
 https://zaiste.net/courses/emacs-doom/
-** Process Improvement Using Data                                             :rstats:
+** Process Improvement Using Data :rstats:
 [2020-08-16 Dim 12:13]
 https://learnche.org/pid/
-** matplotlib-backend-kitty                                                   :cli:python:
+** matplotlib-backend-kitty :cli:python:
 [2020-08-16 Dim 08:15]
 https://github.com/jktr/matplotlib-backend-kitty
-** termpdf.py: A graphical pdf (and epub and cbz) viewer                      :cli:
+** termpdf.py: A graphical pdf (and epub and cbz) viewer :cli:
 [2020-08-16 Dim 08:13]
 https://github.com/dsanson/termpdf.py
-** kitty.conf including nord color theme                                      :cli:
+** kitty.conf including nord color theme :cli:
 [2020-08-15 Sam 22:06]
 https://gist.github.com/marcusramberg/64010234c95a93d953e8c79fdaf94192
-** Table Styling with ATTR_HTML and ATTR_CSS                                  :org:
+** Table Styling with ATTR_HTML and ATTR_CSS :org:
 [2020-08-15 Sam 19:51]
 https://ox-hugo.scripter.co/test/posts/table-styling/
-** How to insert screenshots in Org documents on macOS                        :org:
+** How to insert screenshots in Org documents on macOS :org:
 [2020-08-14 Ven 22:18]
 https://zzamboni.org/post/how-to-insert-screenshots-in-org-documents-on-macos/
-** Emacs configuration with Org Mode                                          :emacs:
+** Emacs configuration with Org Mode :emacs:
 [2020-08-14 Ven 21:22]
 https://github.com/andreyorst/dotfiles/tree/master/.config/emacs
-** JuliaDB                                                                    :julia:
+** JuliaDB :julia:
 [2020-08-14 Ven 21:14]
 https://juliadata.github.io/JuliaDB.jl/latest/
-** Parallel Seam Carving                                                      :algorithms:
+** Parallel Seam Carving :algorithms:
 [2020-08-14 Ven 21:13]
 https://shwestrick.github.io/2020/07/29/seam-carve.html
-** Finger Trees                                                               :algorithms:
+** Finger Trees :algorithms:
 [2020-08-14 Ven 21:13]
 https://github.com/clojure/data.finger-tree
-** Office Drama on macOS                                                      :apple:
+** Office Drama on macOS :apple:
 [2020-08-14 Ven 21:11]
 https://objective-see.com/blog/blog_0x4B.html
-** Modern C for C++ Peeps                                                     :clang:
+** Modern C for C++ Peeps :clang:
 [2020-08-14 Ven 21:08]
 https://floooh.github.io/2019/09/27/modern-c-for-cpp-peeps.html
-** Lazy Elfeed                                                                :emacs:
+** Lazy Elfeed :emacs:
 [2020-08-13 Jeu 18:05]
 https://karthinks.com/blog/lazy-elfeed/
-** GenomicRanges and genomic Rle-objects for Python                           :python:bioinformatics:
+** GenomicRanges and genomic Rle-objects for Python :python:bioinformatics:
 [2020-08-13 Jeu 14:59]
 https://github.com/biocore-ntnu/pyranges
-** An optics (lenses, prisms, traversals, etc.) library for Racket            :racket:
+** An optics (lenses, prisms, traversals, etc.) library for Racket :racket:
 [2020-08-13 Jeu 11:14]
 https://github.com/jackfirth/glass
-** Single Page Applications using Rust                                        :rust:
+** Single Page Applications using Rust :rust:
 [2020-08-13 Jeu 11:12]
 http://www.sheshbabu.com/posts/rust-wasm-yew-single-page-application/
-** Make the less Command More Powerful                                        :cli:
+** Make the less Command More Powerful :cli:
 [2020-08-13 Jeu 11:12]
 https://www.topbug.net/blog/2016/09/27/make-gnu-less-more-powerful/
-** Building a BASIC Interpreter, '80s Style, Part 2                           :compiler:
+** Building a BASIC Interpreter, '80s Style, Part 2 :compiler:
 [2020-08-13 Jeu 11:12]
 https://able.bio/kerrishotts/building-a-basic-interpreter-80s-style-part-2--e91250f1
-** Let's Build a Compiler, by Jack Crenshaw                                   :compiler:
+** Let's Build a Compiler, by Jack Crenshaw :compiler:
 [2020-08-13 Jeu 11:09]
 https://compilers.iecc.com/crenshaw/
-** The Law Of Least Surprise Lattice For Emacs                                :emacs:
+** The Law Of Least Surprise Lattice For Emacs :emacs:
 [2020-08-13 Jeu 08:36]
 https://github.com/grettke/lolsmacs
-** Good Morning, Your Mac Keeps A Log Of All Your Downloads                   :apple:
+** Good Morning, Your Mac Keeps A Log Of All Your Downloads :apple:
 [2020-08-13 Jeu 08:34]
 https://www.macgasm.net/news/tips/good-morning-your-mac-keeps-a-log-of-all-your-downloads/
-** Les fiches à bébert                                                        :tex:
+** Les fiches à bébert :tex:
 [2020-08-09 Dim 18:16]
 http://www.lesfichesabebert.fr/index.html
-** Mathias’s sensible hacker defaults for macOS (dotfiles)                    :cli:
+** Mathias’s sensible hacker defaults for macOS (dotfiles) :cli:
 [2020-08-09 Dim 10:18]
 https://github.com/mathiasbynens/dotfiles
-** Mac keyboard shortcuts                                                      :apple:
+** Mac keyboard shortcuts :apple:
  [2020-08-07 Ven 23:23]
  https://support.apple.com/en-us/HT201236
-** A handy list of essential key bindings to commands in Emacs                 :emacs:vim:
+** A handy list of essential key bindings to commands in Emacs :emacs:vim:
  [2020-08-07 Ven 19:11]
  https://github.com/leeorengel/my-emacs-keybindings
-** From Vim to Emacs+Evil chaotic migration guide                              :emacs:vim:
+** From Vim to Emacs+Evil chaotic migration guide :emacs:vim:
  [2020-08-07 Ven 19:00]
  https://juanjoalvarez.net/es/detail/2014/sep/19/vim-emacsevil-chaotic-migration-guide/
-** squashing commits with rebase                                              :git:
+** squashing commits with rebase :git:
 [2020-08-06 Thu 09:39]
 http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html
-** Methods of Signing with GPG                                                :cli:
+** Methods of Signing with GPG :cli:
 [2020-08-05 Wed 09:46]
 https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e
-** A simple and extensible shell script for managing your todo.txt file       :cli:
+** A simple and extensible shell script for managing your todo.txt file :cli:
 [2020-08-04 Tue 16:08]
 https://github.com/todotxt/todo.txt-cli
-** Magit tutorial - Rebase                                                    :emacs:
+** Magit tutorial - Rebase :emacs:
 [2020-08-04 Tue 15:18]
 https://www.lvguowei.me/post/magit-rebase-2/
-** SIMD interface for SBCL                                                    :lisp:
+** SIMD interface for SBCL :lisp:
 [2020-08-04 Tue 15:11]
 https://github.com/marcoheisig/sb-simd
-** high performance code for parallel computers                               :lisp:
+** high performance code for parallel computers :lisp:
 [2020-08-04 Tue 15:10]
 https://github.com/marcoheisig/Petalisp
-** Adam Clipala's homepage                                                    :misc:
+** Adam Clipala's homepage :misc:
 [2020-08-04 Tue 10:28]
 http://www.schizomaniac.net/
-** Conal Elliott's homepage                                                   :haskell:
+** Conal Elliott's homepage :haskell:
 [2020-08-04 Tue 10:27]
 http://conal.net/
-** Moving around                                                              :vim:
+** Moving around :vim:
 [2020-08-04 Tue 10:20]
 https://vim.fandom.com/wiki/Moving_around
-** Nice bayesian simulations in R                                             :rstats:bayesian:
+** Nice bayesian simulations in R :rstats:bayesian:
 [2020-08-04 Tue 10:10]
 https://www.rdatagen.net/
-** zetteldeft                                                                 :emacs:
+** zetteldeft :emacs:
 [2020-08-04 Tue 09:45]
 https://www.eliasstorms.net/zetteldeft/zetteldeft.html#install
-** Tandem: A virtual office for remote teams                                  :misc:
+** Tandem: A virtual office for remote teams :misc:
 [2020-08-04 Tue 09:44]
 https://tandem.chat/
-** Apple Style Guide                                                          :apple:
+** Apple Style Guide :apple:
 [2020-08-04 Tue 09:39]
 https://help.apple.com/applestyleguide/#/apsg1eef9171
-** netromdk's Emacs config                                                    :emacs:
+** netromdk's Emacs config :emacs:
 [2020-08-04 Tue 09:33]
 https://github.com/netromdk/.emacs.d
-** Emacs and the Language Server Protocol                                     :emacs:
+** Emacs and the Language Server Protocol :emacs:
 [2020-08-04 Tue 08:58]
 https://www.mortens.dev/blog/emacs-and-the-language-server-protocol/index.html
-** WebAssembly 1.0                                                            :web:
+** WebAssembly 1.0 :web:
 [2020-08-04 Tue 08:57]
 https://webassembly.org/
-** WebAssembly                                                                :web:
+** WebAssembly :web:
 [2020-08-04 Tue 08:57]
 https://developer.mozilla.org/en-US/docs/WebAssembly
-** PostgreSQL beginner guide                                                  :database:
+** PostgreSQL beginner guide :database:
 [2020-08-04 Tue 08:57]
 https://knowledgepill.it/posts/postgresql-basics-guide/
-** Godot engine                                                               :game:
+** Godot engine :game:
 [2020-08-04 Tue 08:56]
 https://godotengine.org/
-** Clojurescript re-frame                                                     :web:clojure:
+** Clojurescript re-frame :web:clojure:
 [2020-08-04 Tue 08:55]
 https://github.com/day8/re-frame
-** Quit and Hide macOS Apps from the Command+Tab Interface                    :apple:
+** Quit and Hide macOS Apps from the Command+Tab Interface :apple:
 [2020-08-04 Tue 07:50]
 https://www.howtogeek.com/322054/quit-and-hide-macos-apps-from-the-commandtab-interface/
-** Animated floating graph nodes                                              :javascript:
+** Animated floating graph nodes :javascript:
 [2020-08-03 Mon 21:14]
 https://www.nayuki.io/page/animated-floating-graph-nodes
-** Web-first game engine                                                      :web:
+** Web-first game engine :web:
 [2020-08-03 Mon 21:14]
 https://playcanvas.com/
-** Designing a physics engine                                                 :misc:
+** Designing a physics engine :misc:
 [2020-08-03 Mon 21:13]
 https://blog.winter.dev/2020/designing-a-physics-engine/
-** Insert mode keybindings                                                    :vim:
+** Insert mode keybindings :vim:
 [2020-08-03 Mon 21:13]
 https://www.reddit.com/r/vim/comments/4w0lib/do_you_use_insert_mode_keybindings/
-** Open Tree of Life                                                          :misc:bioinformatics:
+** Open Tree of Life :misc:bioinformatics:
 [2020-08-03 Mon 21:12]
 https://tree.opentreeoflife.org/opentree/argus/ottol@155361/Podospora-pauciseta
-** Install FreeBSD 11 on MacBook                                              :unix:
+** Install FreeBSD 11 on MacBook :unix:
 [2020-08-03 Mon 21:09]
 https://forums.freebsd.org/threads/install-on-macbook.65873/
-** How to install NetBSD/amd64 current on MacBook                             :unix:
+** How to install NetBSD/amd64 current on MacBook :unix:
 [2020-08-03 Mon 21:08]
 https://wiki.netbsd.org/users/ryoon/how_to_install_netbsd_amd64_to_macbook_air_11_inch/
-** Create FreeBSD installation memstick on OS-X                               :unix:
+** Create FreeBSD installation memstick on OS-X :unix:
 [2020-08-03 Mon 21:08]
 https://people.freebsd.org/~seanc/freebsd/create-memstick-osx/
-** Dual Booting OS X and FreeBSD 9                                            :unix:
+** Dual Booting OS X and FreeBSD 9 :unix:
 [2020-08-03 Mon 21:05]
 https://www.glenbarber.us/2011/11/12/Dual-Booting-OS-X-and-FreeBSD-9.html
-** Streamlink – Ouvrir un stream Twitch ou Youtube dans VLC                   :misc:
+** Streamlink – Ouvrir un stream Twitch ou Youtube dans VLC :misc:
 [2020-08-03 Mon 21:00]
 https://korben.info/streamlink-ouvrir-stream-twitch-youtube-vlc.html
-** ix: command line pastebin                                                  :cli:
+** ix: command line pastebin :cli:
 [2020-08-03 Mon 19:57]
 http://ix.io/
-** A philosophical difference between Haskell and Lisp                        :haskell:lisp:
+** A philosophical difference between Haskell and Lisp :haskell:lisp:
 [2020-08-03 Mon 19:51]
 https://chrisdone.com/posts/haskell-lisp-philosophy-difference/
-** One line - Dark Mode using CSS                                             :web:
+** One line - Dark Mode using CSS :web:
 [2020-08-03 Mon 18:37]
 https://dev.to/akhilarjun/one-line-dark-mode-using-css-24li
-** Memory Ballooning in VirtualBox                                            :misc:
+** Memory Ballooning in VirtualBox :misc:
 [2020-08-02 Sun 22:04]
 http://www.virtualbox.org/manual/ch04.html#guestadd-balloon
-** How to Install and Dual-Boot Linux and macOS                               :unix:
+** How to Install and Dual-Boot Linux and macOS :unix:
 [2020-08-02 Sun 21:30]
 https://www.lifewire.com/dual-boot-linux-and-mac-os-4125733
-** Sélection d’un autre disque de démarrage                                   :apple:
+** Sélection d’un autre disque de démarrage :apple:
 [2020-08-02 Sun 21:29]
 https://support.apple.com/fr-fr/HT202796
-** Cryptanalytic Attacks on Pseudorandom Number Generators                    :cryptography:
+** Cryptanalytic Attacks on Pseudorandom Number Generators :cryptography:
 [2020-08-02 Sun 20:59]
 https://www.schneier.com/academic/archives/1998/01/cryptanalytic_attack.html
 ** Recommendation for Random Number Generation Using Deterministic Random Bit Generators :cryptography:
 [2020-08-02 Sun 20:58]
 https://csrc.nist.gov/publications/detail/sp/800-90a/archive/2012-01-23
-** Writing a file system from scratch in Rust                                 :rust:
+** Writing a file system from scratch in Rust :rust:
 [2020-07-28 Mar 21:16]
 https://blog.carlosgaldino.com/writing-a-file-system-from-scratch-in-rust.html
-** Various solutions for HackerRank (bis)                                     :misc:
+** Various solutions for HackerRank (bis) :misc:
 [2020-07-28 Mar 21:15]
 https://github.com/RodneyShag/HackerRank_solutions
-** Various solutions for HackerRank                                           :misc:
+** Various solutions for HackerRank :misc:
 [2020-07-28 Mar 21:15]
 https://github.com/srgnk/HackerRank
-** Book list                                                                  :misc:
+** Book list :misc:
 [2020-07-28 Mar 21:14]
 https://0x0.st/iwJL.txt
-** Doom Emacs Configuration                                                   :emacs:
+** Doom Emacs Configuration :emacs:
 [2020-07-28 Mar 21:14]
 https://tecosaur.github.io/emacs-config/config.html
-** Historical programming-language groups disappearing from Google            :lisp:
+** Historical programming-language groups disappearing from Google :lisp:
 [2020-07-28 Tue 20:55]
 https://lwn.net/Articles/827233/
-** Type hints cheat sheet                                                     :python:
+** Type hints cheat sheet :python:
 [2020-07-28 Tue 10:09]
 https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
-** Most positive bignum                                                       :lisp:
+** Most positive bignum :lisp:
 [2020-07-28 Tue 09:36]
 https://www.jwz.org/blog/2008/03/most-positive-bignum/
-** Is it possible to ditch OS X and install BSD on my 3rd Gen Macbook Pro     :apple:
+** Is it possible to ditch OS X and install BSD on my 3rd Gen Macbook Pro :apple:
 [2020-07-26 Sun 18:42]
 https://apple.stackexchange.com/questions/123512/is-it-possible-to-ditch-os-x-and-install-bsd-on-my-3rd-gen-macbook-pro
-** FreeBSD on a MacBook Pro                                                   :apple:
+** FreeBSD on a MacBook Pro :apple:
 [2020-07-26 Sun 18:42]
 https://news.ycombinator.com/item?id=13027506
-** A working guide to boosted regression trees                                :statistics:
+** A working guide to boosted regression trees :statistics:
 [2020-07-24 Fri 21:02]
 https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2656.2008.01390.x
-** Probability calibration in scikit-learn                                    :python:
+** Probability calibration in scikit-learn :python:
 [2020-07-24 Fri 20:56]
 https://scikit-learn.org/stable/modules/calibration.html
-** The @property Decorator in Python                                          :python:
+** The @property Decorator in Python :python:
 [2020-07-24 Fri 20:55]
 https://www.freecodecamp.org/news/python-property-decorator/
-** An Introduction to the Harrell"verse"                                      :rstats:
+** An Introduction to the Harrell"verse" :rstats:
 [2020-07-24 Fri 09:41]
 https://www.nicholas-ollberding.com/post/an-introduction-to-the-harrell-verse-predictive-modeling-using-the-hmisc-and-rms-packages/
-** Biomedical Statistics                                                      :rstats:
+** Biomedical Statistics :rstats:
 [2020-07-24 Fri 09:01]
 https://a-little-book-of-r-for-biomedical-statistics.readthedocs.io/en/latest/index.html
-** gccemacs                                                                   :emacs:
+** gccemacs :emacs:
 [2020-07-23 Thu 21:05]
 http://akrl.sdf.org/gccemacs.html
-** Primer design system                                                       :github:web:
+** Primer design system :github:web:
 [2020-07-23 Thu 08:55]
 https://primer.style/
-** The Data Visualisation Catalogue                                           :dataviz:
+** The Data Visualisation Catalogue :dataviz:
 [2020-07-22 Wed 21:46]
 https://datavizcatalogue.com/index.html
-** Apple memory management                                                    :apple:
+** Apple memory management :apple:
 [2020-07-22 Wed 21:11]
 https://developer.apple.com/library/archive/documentation/Performance/Conceptual/ManagingMemory/ManagingMemory.html
-** Luca Cambiaghi's private Doom config                                       :emacs:
+** Luca Cambiaghi's private Doom config :emacs:
 [2020-07-22 Wed 21:07]
 https://lccambiaghi.github.io/.doom.d/readme.html
-** Tufte Org Mode                                                             :emacs:org:
+** Tufte Org Mode :emacs:org:
 [2020-07-22 Wed 21:07]
 https://github.com/tsdye/tufte-org-mode
-** Scour is an SVG optimizer/cleaner                                          :python:
+** Scour is an SVG optimizer/cleaner :python:
 [2020-07-22 Wed 19:36]
 https://github.com/scour-project/scour
-** Simon Jackman’s Bayesian Model Examples in Stan                            :rstats:bayesian:
+** Simon Jackman’s Bayesian Model Examples in Stan :rstats:bayesian:
 [2020-07-22 Wed 19:25]
 https://jrnold.github.io/bugs-examples-in-stan/index.html
 ** finalfit: Quickly Create Elegant Regression Results Tables and Plots when Modelling :rstats:
 [2020-07-22 Wed 18:59]
 https://cran.r-project.org/web/packages/finalfit/
-** Developing R Packages with usethis and GitLab CI                           :rstats:
+** Developing R Packages with usethis and GitLab CI :rstats:
 [2020-07-22 Wed 08:15]
 https://blog.methodsconsultants.com/posts/developing-r-packages-with-usethis-and-gitlab-ci-part-iii/
-** A practical guide to Spacemacs                                             :emacs:
+** A practical guide to Spacemacs :emacs:
 [2020-07-21 Tue 21:13]
 https://practicalli.github.io/spacemacs/
-** Howard Abrams' dotfiles                                                    :emacs:
+** Howard Abrams' dotfiles :emacs:
 [2020-07-20 Mon 12:47]
 https://github.com/howardabrams/dot-files
-** Andersson Trees                                                            :algorithms:
+** Andersson Trees :algorithms:
 [2020-07-20 Mon 12:43]
 https://eternallyconfuzzled.com/andersson-trees-c-a-balanced-binary-search-tree-using-split-and-skew
-** Self-balancing Trees                                                       :algorithms:
+** Self-balancing Trees :algorithms:
 [2020-07-20 Mon 12:41]
 https://sigpipe.macromates.com/2009/self-balancing-trees/
-** Statistics for Applications                                                :statistics:
+** Statistics for Applications :statistics:
 [2020-07-20 Mon 12:41]
 https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/lecture-slides/
-** IHP is a modern batteries-included Web Framework                           :haskell:
+** IHP is a modern batteries-included Web Framework :haskell:
 [2020-07-20 Mon 12:37]
 https://ihp.digitallyinduced.com/
-** Code & Things: Stata, SAS code and random lectures.                        :stata:
+** Code & Things: Stata, SAS code and random lectures. :stata:
 [2020-07-17 Ven 21:24]
 https://coloradosph.cuanschutz.edu/education/departments/health-systems-management-policy/research/perraillon/code-things
-** A Note on Interpreting Multinomial Logit Coefficients                      :statistics:
+** A Note on Interpreting Multinomial Logit Coefficients :statistics:
 [2020-07-17 Ven 21:23]
 https://data.princeton.edu/wws509/stata/mlogit
-** Continuations by example                                                   :scheme:
+** Continuations by example :scheme:
 [2020-07-17 Fri 08:43]
 http://matt.might.net/articles/programming-with-continuations--exceptions-backtracking-search-threads-generators-coroutines/
-** Path To Beginnery in Functional Programming with Haskell                   :haskell:
+** Path To Beginnery in Functional Programming with Haskell :haskell:
 [2020-07-16 Thu 20:28]
 https://barrymoo.dev/blog/path-to-beginnery-in-functional-programming-with-haskell-1
-** PureScript by Example                                                      :purescript:
+** PureScript by Example :purescript:
 [2020-07-15 Wed 18:38]
 https://book.purescript.org/
-** Purescript vs. Haskell                                                     :purescript:haskell:
+** Purescript vs. Haskell :purescript:haskell:
 [2020-07-15 Wed 18:33]
 https://github.com/purescript/documentation/blob/master/language/Differences-from-Haskell.md
-** On python@3.8 via Homebrew                                                 :python:
+** On python@3.8 via Homebrew :python:
 [2020-07-15 Wed 12:18]
 https://stackoverflow.com/questions/62881878/reinstall-python-packages-after-homebrew-python3-8-update
-** Interesting dotfiles by Claudio Jolowicz                                   :misc:
+** Interesting dotfiles by Claudio Jolowicz :misc:
 [2020-07-15 Wed 10:56]
 https://github.com/cjolowicz/dotfiles
-** pipx: Install and Run Python Applications in Isolated Environments         :python:
+** pipx: Install and Run Python Applications in Isolated Environments :python:
 [2020-07-15 Wed 10:50]
 https://pypi.org/project/pipx/
-** Karabiner God Mode                                                         :apple:
+** Karabiner God Mode :apple:
 [2020-07-14 Tue 09:20]
 https://medium.com/@nikitavoloboev/karabiner-god-mode-7407a5ddc8f6
-** From Vim to Emacs+Evil chaotic migration guide                             :vim:emacs:
+** From Vim to Emacs+Evil chaotic migration guide :vim:emacs:
 [2020-07-14 Tue 08:22]
 https://juanjoalvarez.net/es/detail/2014/sep/19/vim-emacsevil-chaotic-migration-guide/
-** Evil guide                                                                 :emacs:
+** Evil guide :emacs:
 [2020-07-14 Tue 07:57]
 https://github.com/noctuid/evil-guide
-** Testing Firefox more efficiently with machine learning                     :misc:
+** Testing Firefox more efficiently with machine learning :misc:
 [2020-07-13 Mon 20:36]
 https://hacks.mozilla.org/2020/07/testing-firefox-more-efficiently-with-machine-learning/
-** Creating Randomness Without Math.random                                    :javascript:
+** Creating Randomness Without Math.random :javascript:
 [2020-07-13 Mon 18:29]
 https://healeycodes.com/creating-randomness/
-** Rust is Surprisingly Good as a Server Language                             :rust:
+** Rust is Surprisingly Good as a Server Language :rust:
 [2020-07-13 Mon 18:28]
 https://stu2b50.dev/posts/rust-is-surpris76171
-** Alexis King - “Effects for Less”                                           :haskell:
+** Alexis King - “Effects for Less” :haskell:
 [2020-07-12 Sun 20:38]
 https://www.youtube.com/watch?v=0jI-AlWEwYI
-** Polysemy: Mea Culpa                                                        :haskell:
+** Polysemy: Mea Culpa :haskell:
 [2020-07-12 Sun 20:38]
 https://reasonablypolymorphic.com/
-** Haskell by Example                                                         :haskell:
+** Haskell by Example :haskell:
 [2020-07-12 Sun 20:20]
 https://lotz84.github.io/haskellbyexample/
-** Tricking Haskell into being dynamic                                        :haskell:
+** Tricking Haskell into being dynamic :haskell:
 [2020-07-12 Sun 20:20]
 https://begriffs.com/posts/2013-08-16-tricking-haskell-into-being-dynamic.html
-** A Quick Tour of Haskell Syntax                                             :haskell:
+** A Quick Tour of Haskell Syntax :haskell:
 [2020-07-12 Sun 20:20]
 https://prajitr.github.io/quick-haskell-syntax/
-** Rust implementation of Tim Bray's topfew tool                              :rust:
+** Rust implementation of Tim Bray's topfew tool :rust:
 [2020-07-12 Sun 20:19]
 https://github.com/djc/topfew-rs
-** TypeScript vs. PureScript                                                  :typescript:
+** TypeScript vs. PureScript :typescript:
 [2020-07-10 Fri 17:28]
 https://blog.logrocket.com/typescript-vs-purescript-not-all-compilers-are-created-equal-c16dadaa7d3e/
-** Purescript: Haskell + Javascript                                           :haskell:
+** Purescript: Haskell + Javascript :haskell:
 [2020-07-10 Fri 17:28]
 https://mmhaskell.com/purescript
-** Scripting in Haskell and PureScript                                        :haskell:
+** Scripting in Haskell and PureScript :haskell:
 [2020-07-10 Fri 17:26]
 https://dev.to/riccardoodone/scripting-in-haskell-and-purescript-5cic
-** More monads in OCaml                                                       :ocaml:
+** More monads in OCaml :ocaml:
 [2020-07-10 Fri 17:23]
 http://blog.haberkucharsky.com/technology/2015/07/21/more-monads-in-ocaml.html
-** Introductions to Haskell                                                   :haskell:
+** Introductions to Haskell :haskell:
 [2020-07-10 Fri 17:21]
 https://wiki.haskell.org/Tutorials
-** Strings and Tries; Haskell Versus OCaml                                    :haskell:ocaml:
+** Strings and Tries; Haskell Versus OCaml :haskell:ocaml:
 [2020-07-10 Fri 17:20]
 https://thealmarty.com/2018/11/20/strings-and-tries-haskell-versus-ocaml/
-** Which of Haskell and OCaml is more practical?                              :haskell:ocaml:
+** Which of Haskell and OCaml is more practical? :haskell:ocaml:
 [2020-07-10 Fri 17:19]
 https://www.quora.com/Which-of-Haskell-and-OCaml-is-more-practical-For-example-in-which-aspect-will-each-play-a-key-role/answer/Tikhon-Jelvis
-** Curvature and Radius of Curvature                                          :maths:
+** Curvature and Radius of Curvature :maths:
 [2020-07-10 Fri 11:12]
 https://www.math24.net/curvature-radius/
-** Common Lisp Tutorial by Neil Munro                                         :lisp:
+** Common Lisp Tutorial by Neil Munro :lisp:
 [2020-07-10 Fri 11:12]
 https://www.youtube.com/watch?v=G726Wkqd2aQ&app=desktop
-** Comparative Genomics with R                                                :rstats:bioinformatics:
+** Comparative Genomics with R :rstats:bioinformatics:
 [2020-07-10 Fri 10:55]
 https://github.com/drostlab/orthologr
-** web forms handling library for Common Lisp                                 :lisp:
+** web forms handling library for Common Lisp :lisp:
 [2020-07-10 Fri 10:55]
 https://github.com/mmontone/cl-forms
-** Computational workflows for metagenomics tasks                             :bioinformatics:
+** Computational workflows for metagenomics tasks :bioinformatics:
 [2020-07-10 Fri 10:54]
 https://github.com/bhattlab/bhattlab_workflows
-** Emacs Color Themes by Jason Blevins                                        :emacs:
+** Emacs Color Themes by Jason Blevins :emacs:
 [2020-07-09 Thu 17:58]
 https://jblevins.org/projects/emacs-color-themes/
-** Git squash                                                                 :git:
+** Git squash :git:
 [2020-07-09 Thu 17:51]
 https://stackabuse.com/git-squash-multiple-commits-in-to-one-commit/
-** Changing a commit message                                                  :git:
+** Changing a commit message :git:
 [2020-07-09 Thu 17:15]
 https://docs.github.com/en/github/committing-changes-to-your-project/changing-a-commit-message
-** Curve curvature in numpy                                                   :python:
+** Curve curvature in numpy :python:
 [2020-07-09 Thu 11:42]
 https://stackoverflow.com/questions/28269379/curve-curvature-in-numpy
-** Google convention for Python docstring                                     :python:
+** Google convention for Python docstring :python:
 [2020-07-08 Wed 21:02]
 https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
-** Automatic support for ligatures like in emacs-mac #222                     :emacs:
+** Automatic support for ligatures like in emacs-mac #222 :emacs:
 [2020-07-08 Wed 10:31]
 https://github.com/d12frosted/homebrew-emacs-plus/issues/222
-** Invitation to Intermediate Julia                                           :julia:
+** Invitation to Intermediate Julia :julia:
 [2020-07-07 Tue 07:42]
 https://github.com/dpsanders/intermediate_julia
-** NetBSD Internals                                                           :unix:
+** NetBSD Internals :unix:
 [2020-07-07 Tue 07:40]
 https://www.netbsd.org/docs/internals/en/index.html
-** Getting Started in Data Analysis using Stata and R                         :rstats:stata:
+** Getting Started in Data Analysis using Stata and R :rstats:stata:
 [2020-07-06 Mon 12:54]
 https://dss.princeton.edu/training/
-** Nice website using a Gemini backend                                        :misc:
+** Nice website using a Gemini backend :misc:
 [2020-07-06 Mon 12:53]
 http://dctrud.sdf.org/
-** A Gentle Introduction to Non-determinism in Scheme                         :scheme:
+** A Gentle Introduction to Non-determinism in Scheme :scheme:
 [2020-07-06 Mon 12:36]
 https://ebzzry.io/en/amb/
-** Scripting in Common Lisp                                                   :lisp:
+** Scripting in Common Lisp :lisp:
 [2020-07-06 Mon 12:33]
 https://ebzzry.io/en/script-lisp/
-** Compiler Explorer                                                          :misc:
+** Compiler Explorer :misc:
 [2020-07-06 Mon 11:35]
 https://github.com/compiler-explorer/compiler-explorer
-** In built LSP is amazing                                                    :emacs:
+** In built LSP is amazing :emacs:
 [2020-07-04 Sat 10:33]
 https://www.reddit.com/r/neovim/comments/gxcbui/in_built_lsp_is_amazing/
-** Vim setup for LSP                                                          :vim:
+** Vim setup for LSP :vim:
 [2020-07-04 Sat 10:18]
 https://www.reddit.com/r/neovim/comments/grrxli/start_to_finish_example_of_setting_up_built_in/fs14ak8/
-** Markdown Writing Tricks                                                    :misc:
+** Markdown Writing Tricks :misc:
 [2020-07-03 Fri 19:34]
 https://jdhao.github.io/2020/06/01/markdown_writing_tricks/
-** A powerful, minimalist development environment                             :cli:vim:
+** A powerful, minimalist development environment :cli:vim:
 [2020-07-03 Fri 14:50]
 https://github.com/ctaylo21/jarvis
-** A guide to modern Web Development with (Neo)vim                            :vim:
+** A guide to modern Web Development with (Neo)vim :vim:
 [2020-07-03 Fri 14:47]
 https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/
-** Vim Anti-Patterns                                                          :vim:
+** Vim Anti-Patterns :vim:
 [2020-07-03 Fri 14:45]
 https://news.ycombinator.com/item?id=12643887
-** In Praise of the FZF Plugin for Vim                                        :vim:
+** In Praise of the FZF Plugin for Vim :vim:
 [2020-07-03 Fri 14:35]
 https://randre03.github.io/in_praise_of_fzf/
-** vim swoop                                                                  :vim:
+** vim swoop :vim:
 [2020-07-03 Fri 14:34]
 https://github.com/pelodelfuego/vim-swoop
-** vim tips and tricks                                                        :vim:
+** vim tips and tricks :vim:
 [2020-07-03 Fri 14:34]
 https://www.cs.swarthmore.edu/oldhelp/vim/home.html
-** Why you should be using fzf                                                :cli:
+** Why you should be using fzf :cli:
 [2020-07-03 Fri 14:24]
 https://www.freecodecamp.org/news/fzf-a-command-line-fuzzy-finder-missing-demo-a7de312403ff/
-** A Road to Common Lisp                                                      :lisp:
+** A Road to Common Lisp :lisp:
 [2020-07-03 Fri 14:24]
 https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/
-** ghcid for the win!                                                         :haskell:
+** ghcid for the win! :haskell:
 [2020-07-03 Fri 14:21]
 https://www.parsonsmatt.org/2018/05/19/ghcid_for_the_win.html
-** How To Create An IndieWeb Profile                                          :web:
+** How To Create An IndieWeb Profile :web:
 [2020-07-03 Fri 12:51]
 https://kevq.uk/how-to-create-an-indieweb-profile/
-** The world's most private search engine                                     :misc:
+** The world's most private search engine :misc:
 [2020-07-03 Fri 12:45]
 https://www.startpage.com/
-** Nice wallpaper                                                             :misc:
+** Nice wallpaper :misc:
 [2020-07-03 Fri 12:45]
 https://wallhaven.cc/w/zm6qmw
 ** How To Install and Configure Syncthing to Synchronize Directories on Ubuntu :misc:
 [2020-07-03 Fri 12:44]
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-syncthing-to-synchronize-directories-on-ubuntu-14-04
-** How To Synchronize Directories using Syncthing on Ubuntu                   :misc:
+** How To Synchronize Directories using Syncthing on Ubuntu :misc:
 [2020-07-03 Fri 12:44]
 https://linoxide.com/ubuntu-how-to/setup-syncthing-synchronize-directories-ubuntu-16-04/
-** The Vi Lovers Home Page                                                    :vim:
+** The Vi Lovers Home Page :vim:
 [2020-07-02 Thu 21:01]
 https://thomer.com/vi/vi.html
-** Bookmarking with org-mode                                                  :org:
+** Bookmarking with org-mode :org:
 [2020-07-02 Thu 20:47]
 https://dewaka.com/blog/2020/04/08/bookmarking-with-org-mode/
-** Introduction to MicroK8s                                                   :misc:
+** Introduction to MicroK8s :misc:
 [2020-07-01 Wed 20:46]
 https://microk8s.io/docs
-** Training Course on Galaxy for Bioinformatics tool developers               :bioinformatics:
+** Training Course on Galaxy for Bioinformatics tool developers :bioinformatics:
 [2020-07-01 Wed 14:28]
 https://crs4.github.io/Galaxy4Developers/lectures/05.get_galaxy_up_and_running/
-** Manhattan plot for genomic analysis                                        :rstats:bioinformatics:
+** Manhattan plot for genomic analysis :rstats:bioinformatics:
 [2020-07-01 Wed 14:00]
 https://github.com/YinLiLin/CMplot
-** Mastering JQ: Part 1                                                       :cli:
+** Mastering JQ: Part 1 :cli:
 [2020-07-01 Wed 13:55]
 https://codefaster.substack.com/p/mastering-jq-part-1-59c
 ** Is it possible to use an Apple Time Capsule just as a network attached backup drive and not a router? :apple:
 [2020-07-01 Wed 13:52]
 https://apple.stackexchange.com/questions/256405/is-it-possible-to-use-an-apple-time-capsule-just-as-a-network-attached-backup-dr#265394
-** zsh-interactive-cd                                                         :zsh:
+** zsh-interactive-cd :zsh:
 [2020-07-01 Wed 07:47]
 https://github.com/changyuheng/zsh-interactive-cd
-** tmux-fzf                                                                   :cli:
+** tmux-fzf :cli:
 [2020-07-01 Wed 07:09]
 https://github.com/sainnhe/tmux-fzf
-** A curated directory of 450+ Mac menu bar apps                              :apple:
+** A curated directory of 450+ Mac menu bar apps :apple:
 [2020-06-30 Tue 16:49]
 https://macmenubar.com/
-** A GitBook Example for Teaching                                             :misc:
+** A GitBook Example for Teaching :misc:
 [2020-06-28 Sun 18:44]
 https://cjvanlissa.github.io/gitbook-demo/
-** bookdown: Authoring Books and Technical Documents with R Markdown          :misc:
+** bookdown: Authoring Books and Technical Documents with R Markdown :misc:
 [2020-06-28 Sun 18:44]
 https://bookdown.org/yihui/bookdown/
-** Gitbook Plugin Index of Figures                                            :misc:
+** Gitbook Plugin Index of Figures :misc:
 [2020-06-28 Sun 18:43]
 https://github.com/geblanco/gitbook-plugin-index-of-figures
-** Cache Oblivious Algorithms                                                 :algorithms:
+** Cache Oblivious Algorithms :algorithms:
 [2020-06-28 Sun 09:11]
 https://jiahai-feng.github.io/posts/cache-oblivious-algorithms/
-** Apache Spark Tutorial: ML with PySpark                                     :statistics:python:
+** Apache Spark Tutorial: ML with PySpark :statistics:python:
 [2020-06-28 Sun 09:10]
 https://www.datacamp.com/community/tutorials/apache-spark-tutorial-machine-learning
-** Twitch Chat Downloader                                                     :misc:
+** Twitch Chat Downloader :misc:
 [2020-06-28 Sun 09:10]
 https://github.com/strager/Twitch-Chat-Downloader
-** An eclectic collection of convenience functions for you                    :julia:
+** An eclectic collection of convenience functions for you :julia:
 [2020-06-28 Sun 09:09]
 https://github.com/xiaodaigh/DataConvenience.jl
-** Fractal tree in p5.js                                                      :processing:
+** Fractal tree in p5.js :processing:
 [2020-06-28 Sun 09:08]
 https://editor.p5js.org/jcponce/full/Hhm0-7Exq
-** A nice urn problem                                                         :statistics:
+** A nice urn problem :statistics:
 [2020-06-28 Sun 09:08]
 https://www.cs.cmu.edu/~jlaurent/notes/pick-at-least-one.html
-** Training material for all kinds of transcriptomics analysis                :bioinformatics:
+** Training material for all kinds of transcriptomics analysis :bioinformatics:
 [2020-06-28 Sun 09:06]
 https://training.galaxyproject.org/training-material/topics/transcriptomics/
-** Publish GitBook to Your GitHub Pages                                       :misc:
+** Publish GitBook to Your GitHub Pages :misc:
 [2020-06-28 Sun 09:06]
 http://sangsoonam.github.io/2016/08/02/publish-gitbook-to-your-github-pages.html
-** Algorithms for sampling without replacement                                :algorithms:
+** Algorithms for sampling without replacement :algorithms:
 [2020-06-28 Sun 09:06]
 https://timvieira.github.io/blog/post/2019/09/16/algorithms-for-sampling-without-replacement/
-** Homoiconicity, Lisp, and Program Synthesis                                 :lisp:
+** Homoiconicity, Lisp, and Program Synthesis :lisp:
 [2020-06-28 Sun 09:05]
 https://blog.sigplan.org/2020/03/25/homoiconicity-lisp-and-program-synthesis/
-** Typed functional programming in TypeScript                                 :typescript:
+** Typed functional programming in TypeScript :typescript:
 [2020-06-28 Sun 08:36]
 https://github.com/gcanti/fp-ts
-** Biolisp: Lisp meets biology                                                :lisp:
+** Biolisp: Lisp meets biology :lisp:
 [2020-06-28 Sun 08:31]
 https://github.com/biolisp
-** Source Code Linking: Merging C Headers into Rust Modules                   :rust:clang:
+** Source Code Linking: Merging C Headers into Rust Modules :rust:clang:
 [2020-06-28 Sun 08:30]
 https://immunant.com/blog/2019/12/header_merging/
-** Terminals Are Sexy                                                         :cli:
+** Terminals Are Sexy :cli:
 [2020-06-28 Sun 08:30]
 https://terminalsare.sexy/
-** Datalib is a JavaScript data utility library                               :javascript:
+** Datalib is a JavaScript data utility library :javascript:
 [2020-06-28 Sun 08:11]
 http://vega.github.io/datalib/
-** How do i use matomo analytics without consent or cookie banner?            :web:
+** How do i use matomo analytics without consent or cookie banner? :web:
 [2020-06-28 Sun 08:03]
 https://matomo.org/faq/new-to-piwik/how-do-i-use-matomo-analytics-without-consent-or-cookie-banner/
-** Denis Roegel                                                               :misc:
+** Denis Roegel :misc:
 [2020-06-27 Sat 20:49]
 https://members.loria.fr/Roegel/publications.html
-** Statistics for laboratory scientists II                                    :statistics:
+** Statistics for laboratory scientists II :statistics:
 [2020-06-27 Sat 20:20]
 https://www.biostat.wisc.edu/~kbroman/teaching/labstat/fourth/
-** Deepmind's AlphaZero algorithm                                             :julia:
+** Deepmind's AlphaZero algorithm :julia:
 [2020-06-27 Sat 18:53]
 https://github.com/jonathan-laurent/AlphaZero.jl
-** Pandoc and GH actions                                                      :pandoc:git:
+** Pandoc and GH actions :pandoc:git:
 [2020-06-27 Sat 18:53]
 https://github.com/tdhopper/pandoc_resume/blob/master/.github/workflows/main.yml
-** R from NodeJS, the right way                                               :rstats:node:
+** R from NodeJS, the right way :rstats:node:
 [2020-06-27 Sat 18:52]
 https://github.com/ColinFay/hordes/
-** OpenGL Mathematics                                                         :misc:
+** OpenGL Mathematics :misc:
 [2020-06-27 Sat 18:45]
 https://glm.g-truc.net/0.9.9/index.html
-** Vim Cheat Sheet                                                            :vim:
+** Vim Cheat Sheet :vim:
 [2020-06-27 Sat 18:45]
 https://vim.rtorr.com/
-** Learn to speak vim                                                         :vim:
+** Learn to speak vim :vim:
 [2020-06-27 Sat 18:45]
 https://yanpritzker.com/learn-to-speak-vim-verbs-nouns-and-modifiers-d7bfed1f6b2d
-** Emacs colors                                                               :emacs:
+** Emacs colors :emacs:
 [2020-06-27 Sat 18:44]
 http://www.raebear.net/computers/emacs-colors/
-** Beautifying Org Mode in Emacs                                              :org:
+** Beautifying Org Mode in Emacs :org:
 [2020-06-27 Sat 18:44]
 https://zzamboni.org/post/beautifying-org-mode-in-emacs/
-** Yet Another Dotfile Repo                                                   :misc:
+** Yet Another Dotfile Repo :misc:
 [2020-06-27 Sat 18:44]
 https://github.com/skwp/dotfiles
-** Org-mode Tutorial / Cheat Sheet                                            :org:
+** Org-mode Tutorial / Cheat Sheet :org:
 [2020-06-27 Sat 18:43]
 https://emacsclub.github.io/html/org_tutorial.html
-** Minimal theme for Hugo                                                     :hugo:
+** Minimal theme for Hugo :hugo:
 [2020-06-27 Sat 10:37]
 https://themes.gohugo.io/theme/minimal/
-** How are Unix pipes implemented?                                            :unix:
+** How are Unix pipes implemented? :unix:
 [2020-06-26 Fri 20:37]
 https://medium.com/@mrpowers
-** Calva: Clojure & ClojureScript with Visual Studio Code                     :clojure:vscode:
+** Calva: Clojure & ClojureScript with Visual Studio Code :clojure:vscode:
 [2020-06-26 Fri 17:01]
 https://github.com/BetterThanTomorrow/calva
-** Working with Jupyter Notebooks in Visual Studio Code                       :vscode:python:
+** Working with Jupyter Notebooks in Visual Studio Code :vscode:python:
 [2020-06-26 Fri 16:59]
 https://code.visualstudio.com/docs/python/jupyter-support
-** Reordering and facetting for ggplot2                                       :rstats:ggplot:
+** Reordering and facetting for ggplot2 :rstats:ggplot:
 [2020-06-26 Fri 16:59]
 https://juliasilge.com/blog/reorder-within/
-** Data Structure Optimization for Functional Programs                        :scheme:
+** Data Structure Optimization for Functional Programs :scheme:
 [2020-06-26 Fri 16:49]
 https://github.com/panicz/master-thesis
-** Customizing a Theme for Emacs                                              :emacs:
+** Customizing a Theme for Emacs :emacs:
 [2020-06-26 Fri 12:17]
 https://joshrollinswrites.com/help-desk-head-desk/20200528/
-** Awesome Boxes                                                              :tex:
+** Awesome Boxes :tex:
 [2020-06-19 Fri 18:14]
 https://github.com/milouse/latex-awesomebox
-** asdf-vm: Manage multiple runtime versions with a single CLI tool           :cli:
+** asdf-vm: Manage multiple runtime versions with a single CLI tool :cli:
 [2020-06-19 Fri 18:01]
 https://etienne.depar.is/a-ecrit/switch-back-to-git.html
-** IPFS: A peer-to-peer hypermedia protocol                                   :misc:
+** IPFS: A peer-to-peer hypermedia protocol :misc:
 [2020-06-19 Fri 18:00]
 https://etienne.depar.is/a-ecrit/switch-back-to-git.html
-** How to split Git repositories into two                                     :git:
+** How to split Git repositories into two :git:
 [2020-06-18 Thu 10:27]
 https://www.endpoint.com/blog/2017/08/14/how-to-split-git-repositories-into-two
-** Creating and Hosting a Personal Site on GitHub                             :git:
+** Creating and Hosting a Personal Site on GitHub :git:
 [2020-06-18 Thu 09:44]
 http://jmcglone.com/guides/github-pages/
-** Typora and Pandoc : support captions for figures #379                      :pandoc:
+** Typora and Pandoc : support captions for figures #379 :pandoc:
 [2020-06-18 Thu 08:16]
 https://github.com/typora/typora-issues/issues/379
-** Renjin and R                                                               :rstats:
+** Renjin and R :rstats:
 [2020-06-17 Wed 21:10]
 https://github.com/applied-science/rdata
-** General-purpose connection pooling library                                 :misc:
+** General-purpose connection pooling library :misc:
 [2020-06-17 Wed 21:10]
 https://github.com/fukamachi/anypool?files=1
-** Tidymodels: tidy machine learning in R                                     :rstats:
+** Tidymodels: tidy machine learning in R :rstats:
 [2020-06-17 Wed 21:10]
 http://www.rebeccabarter.com/blog/2020-03-25_machine_learning/
-** deta: Functional Database Mapping                                          :racket:
+** deta: Functional Database Mapping :racket:
 [2020-06-17 Wed 21:09]
 https://deta.defn.io/
-** Spatial aggregation                                                        :statistics:
+** Spatial aggregation :statistics:
 [2020-06-17 Wed 21:09]
 https://www.jla-data.net/eng/spatial-aggregation/
-** Maximum Inscribed Circle and Largest Empty Circle in JTS                   :statistics:
+** Maximum Inscribed Circle and Largest Empty Circle in JTS :statistics:
 [2020-06-17 Wed 21:09]
 http://lin-ear-th-inking.blogspot.com/2020/04/maximum-inscribed-circle-and-largest.html?m=1
-** Projection predictive variable selection                                   :statistics:
+** Projection predictive variable selection :statistics:
 [2020-06-17 Wed 21:08]
 https://mc-stan.org/projpred/
-** My Rust 2020 ideas                                                         :rust:
+** My Rust 2020 ideas :rust:
 [2020-06-17 Wed 21:08]
 https://phaazon.net/blog/rust-2020-ideas
-** Fancy Little Lisp λs                                                       :lisp:
+** Fancy Little Lisp λs :lisp:
 [2020-06-17 Wed 21:07]
 https://lepisma.xyz/2017/12/20/fancy-lambdas.html
-** RE: st: graph export png on linux console                                  :stata:
+** RE: st: graph export png on linux console :stata:
 [2020-06-17 Wed 21:05]
 https://www.stata.com/statalist/archive/2004-03/msg00600.html
-** Iterate over all pairs of consecutive items in a list                      :python:
+** Iterate over all pairs of consecutive items in a list :python:
 [2020-06-17 Wed 21:04]
 https://stackoverflow.com/questions/21303224/iterate-over-all-pairs-of-consecutive-items-in-a-list
-** sdl2-examples:basic-test kills slime-repl on macOS #89                     :lisp:
+** sdl2-examples:basic-test kills slime-repl on macOS #89 :lisp:
 [2020-06-17 Wed 21:04]
 https://github.com/lispgames/cl-sdl2/issues/89
-** Customizing pandoc to generate beautiful pdfs from markdown                :pandoc:
+** Customizing pandoc to generate beautiful pdfs from markdown :pandoc:
 [2020-06-17 Wed 21:03]
 https://learnbyexample.github.io/tutorial/ebook-generation/customizing-pandoc/
-** Gene Set Enrichment Analysis (GSEA) User Guide                             :bioinformatics:
+** Gene Set Enrichment Analysis (GSEA) User Guide :bioinformatics:
 [2020-06-17 Wed 21:03]
 https://www.gsea-msigdb.org/gsea/doc/GSEAUserGuideFrame.html
-** StatsFunctionsNotes by JM White                                            :julia:
+** StatsFunctionsNotes by JM White :julia:
 [2020-06-17 Wed 21:02]
 https://github.com/johnmyleswhite/StatsFunctionsNotes
-** Radford Neale's Statistical Computation                                    :statistics:
+** Radford Neale's Statistical Computation :statistics:
 [2020-06-17 Wed 21:02]
 http://www.utstat.utoronto.ca/~radford/sta410.F15/
-** Basic Clojure affordances for Common Lisp                                  :clojure:
+** Basic Clojure affordances for Common Lisp :clojure:
 [2020-06-17 Wed 21:01]
 https://github.com/inaimathi/clj
-** A Lexical Analyzer Generator                                               :lisp:
+** A Lexical Analyzer Generator :lisp:
 [2020-06-17 Wed 20:55]
 https://github.com/rigetti/alexa/blob/master/README.md
-** Enhance vector multiplication support #103                                 :lisp:
+** Enhance vector multiplication support #103 :lisp:
 [2020-06-17 Wed 20:55]
 https://github.com/rigetti/magicl/pull/103
-** Programming Language Study–Lisp                                            :lisp:
+** Programming Language Study–Lisp :lisp:
 [2020-06-17 Wed 20:54]
 https://adamcross.blog/2020/05/07/programming-language-study-lisp-2/
-** Radical utilities                                                          :lisp:
+** Radical utilities :lisp:
 [2020-06-17 Wed 20:54]
 https://github.com/vseloved/rutils/blob/master/docs/tutorial.md
-** A modern and consistent Common Lisp string manipulation library            :lisp:
+** A modern and consistent Common Lisp string manipulation library :lisp:
 [2020-06-17 Wed 20:53]
 https://vindarel.github.io/cl-str/#/
 ** Data visualizations in Clojure and ClojureScript using Vega and Vega-lite  :clojure:
 [2020-06-17 Wed 20:48]
 https://github.com/metasoarous/oz
-** tidyquery                                                                  :rstats:
+** tidyquery :rstats:
 [2020-06-17 Wed 20:48]
 https://github.com/ianmcook/tidyquery/blob/master/README.md
-** Statistical Rethinking Week 5                                              :rstats:bayesian:
+** Statistical Rethinking Week 5 :rstats:bayesian:
 [2020-06-17 Wed 20:48]
 https://david-salazar.github.io/2020/05/15/statistical-rethinking-week-5-hmc-samples/
-** string utilities                                                           :lisp:
+** string utilities :lisp:
 [2020-06-17 Wed 20:47]
 https://github.com/fiddlerwoaroof/fwoar.lisputils/blob/master/string-utils/split.lisp
-** The End by Evan Martin                                                     :misc:
+** The End by Evan Martin :misc:
 [2020-06-17 Wed 20:47]
 http://neugierig.org/software/chromium/notes/2012/02/the-end.html
-** Eric C. Peterson's homepage                                                :misc:
+** Eric C. Peterson's homepage :misc:
 [2020-06-17 Wed 20:36]
 https://chromotopy.org/
-** Nicholas Carlini's homepage                                                :misc:
+** Nicholas Carlini's homepage :misc:
 [2020-06-17 Wed 20:36]
 https://nicholas.carlini.com/
-** Colin McLear Emacs config                                                  :emacs:
+** Colin McLear Emacs config :emacs:
 [2020-06-17 Wed 20:32]
 https://github.com/mclear-tools/dotemacs/blob/master/README.org
-** ox-leanpub: A Leanpub book exporter for Org-mode                           :org:
+** ox-leanpub: A Leanpub book exporter for Org-mode :org:
 [2020-06-17 Wed 20:31]
 https://github.com/zzamboni/ox-leanpub
-** zettel-mode                                                                :emacs:
+** zettel-mode :emacs:
 [2020-06-17 Wed 20:22]
 https://github.com/Vifon/zettel-mode
-** Managing figure size in Pandoc                                             :pandoc:
+** Managing figure size in Pandoc :pandoc:
 [2020-06-17 Wed 11:26]
 https://github.com/jgm/pandoc/issues/261
-** Emacs: prettier tab-line                                                   :emacs:
+** Emacs: prettier tab-line :emacs:
 [2020-06-16 Tue 20:41]
 http://amitp.blogspot.com/?m=1
-** neugierig.org: Tech Notes                                                  :misc:
+** neugierig.org: Tech Notes :misc:
 [2020-06-16 Tue 20:40]
 http://neugierig.org/software/blog/archive.html
-** Blog of the author of Conjure                                              :clojure:vim:
+** Blog of the author of Conjure :clojure:vim:
 [2020-06-16 Tue 20:37]
 https://oli.me.uk/
-** Pipenv: Python Development Workflow for Humans                             :python:
+** Pipenv: Python Development Workflow for Humans :python:
 [2020-06-16 Tue 20:36]
 https://pypi.org/project/pipenv/
-** Rewriting the heart of our sync engine                                     :misc:
+** Rewriting the heart of our sync engine :misc:
 [2020-06-16 Tue 20:35]
 https://dropbox.tech/infrastructure/rewriting-the-heart-of-our-sync-engine
-** Clustering Pollock                                                         :misc:
+** Clustering Pollock :misc:
 [2020-06-16 Tue 20:35]
 https://gist.github.com/aialenti/d51b830c07bb8ec53556ddae9c9ec352
-** :claw honing                                                               :lisp:
+** :claw honing :lisp:
 [2020-06-16 Tue 20:34]
 https://borodust.org/2020/06/12/claw-honing/
-** Bash scripting cheatsheet                                                  :zsh:
+** Bash scripting cheatsheet :zsh:
 [2020-06-16 Tue 20:25]
 https://devhints.io/bash
-** Using dates and times in Emacs org-mode                                    :emacs:
+** Using dates and times in Emacs org-mode :emacs:
 [2020-06-16 Tue 11:49]
 http://members.optusnet.com.au/~charles57/GTD/org_dates/
-** Richard Stanley's Twelvefold Way                                           :maths:
+** Richard Stanley's Twelvefold Way :maths:
 [2020-06-16 Tue 11:49]
 https://www.johndcook.com/TwelvefoldWay.pdf
-** ggdist: Visualizations of distributions and uncertainty                    :rstats:
+** ggdist: Visualizations of distributions and uncertainty :rstats:
 [2020-06-16 Tue 11:48]
 https://mjskay.github.io/ggdist/
-** Bayesian Methods for Hackers in Python                                     :python:bayesian:
+** Bayesian Methods for Hackers in Python :python:bayesian:
 [2020-06-16 Tue 11:48]
 https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers
-** Community Driven Samples for TypeScript                                    :typescript:
+** Community Driven Samples for TypeScript :typescript:
 [2020-06-16 Tue 11:48]
 https://github.com/microsoft/TypeScriptSamples
-** Controlling the terminal                                                   :lisp:
+** Controlling the terminal :lisp:
 [2020-06-16 Tue 11:47]
 https://turtleware.eu/posts/Controlling-the-terminal.html
-** IPython magic for parallel profiling                                       :python:
+** IPython magic for parallel profiling :python:
 [2020-06-16 Tue 11:47]
 https://github.com/jcrist/ptime
-** Extended documentation and model examples for rethinking R package         :rstats:bayesian:
+** Extended documentation and model examples for rethinking R package :rstats:bayesian:
 [2020-06-16 Tue 11:47]
 https://github.com/rmcelreath/rethinking_manual?files=1
-** Distance/Similarity between two matrices                                   :maths:
+** Distance/Similarity between two matrices :maths:
 [2020-06-16 Tue 11:46]
 https://math.stackexchange.com/questions/507742/distance-similarity-between-two-matrices
-** Getting Robinson-Foulds distances for a set of trees                       :phylogenetics:
+** Getting Robinson-Foulds distances for a set of trees :phylogenetics:
 [2020-06-16 Tue 11:46]
 http://blog.phytools.org/2013/09/getting-robinson-foulds-distances-for.html
-** Introduction to phylogenies in R                                           :phylogenetics:
+** Introduction to phylogenies in R :phylogenetics:
 [2020-06-16 Tue 11:45]
 http://www.phytools.org/Cordoba2017/ex/2/Intro-to-phylogenies.html
-** textlint integration with Flycheck                                         :emacs:
+** textlint integration with Flycheck :emacs:
 [2020-06-16 Tue 11:45]
 https://github.com/kisaragi-hiu/flycheck-textlint/blob/master/README.md
-** Practical Python Programming                                               :python:
+** Practical Python Programming :python:
 [2020-06-16 Tue 11:45]
 https://dabeaz-course.github.io/practical-python/
-** basic tmux settings everyone can agree on                                  :tmux:
+** basic tmux settings everyone can agree on :tmux:
 [2020-06-16 Tue 11:44]
 https://github.com/tmux-plugins/tmux-sensible
-** tmux Integration Best Practices                                            :tmux:
+** tmux Integration Best Practices :tmux:
 [2020-06-16 Tue 11:44]
 https://gitlab.com/gnachman/iterm2/-/wikis/tmux-Integration-Best-Practices
-** Keep Remote SSH Sessions and Processes running                             :cli:
+** Keep Remote SSH Sessions and Processes running :cli:
 [2020-06-16 Tue 11:43]
 https://www.tecmint.com/keep-remote-ssh-sessions-running-after-disconnection/
-** Join any server IP on Xbox One, Nintendo Switch, and PS4                   :misc:
+** Join any server IP on Xbox One, Nintendo Switch, and PS4 :misc:
 [2020-06-16 Tue 11:43]
 https://github.com/Pugmatt/BedrockConnect
-** Python example of building GLM, GBM and RF Binomial Model with H2O         :python:statistics:
+** Python example of building GLM, GBM and RF Binomial Model with H2O :python:statistics:
 [2020-06-16 Tue 11:42]
 https://aichamp.wordpress.com/2017/09/29/python-example-of-building-glm-gbm-and-random-forest-binomial-model-with-h2o/
-** Practical Techniques for Interpreting Machine Learning Models              :statistics:
+** Practical Techniques for Interpreting Machine Learning Models :statistics:
 [2020-06-16 Tue 11:42]
 https://facctconference.org/static/tutorials/hall_interpretable18.pdf
-** Phyllotaxis: Draw Flowers Using Mathematics                                :rstats:
+** Phyllotaxis: Draw Flowers Using Mathematics :rstats:
 [2020-06-16 Tue 11:42]
 https://www.datacamp.com/projects/62
-** lsp python High memory usage #832                                          :python:emacs:
+** lsp python High memory usage #832 :python:emacs:
 [2020-06-16 Tue 11:41]
 https://github.com/Microsoft/python-language-server/issues/832
-** Common Lisp Array Performance Benchmark                                    :lisp:
+** Common Lisp Array Performance Benchmark :lisp:
 [2020-06-16 Tue 11:41]
 https://github.com/svetlyak40wt/array-performance
-** Seth Brown oddments 2019                                                   :misc:
+** Seth Brown oddments 2019 :misc:
 [2020-06-16 Tue 11:40]
 https://gist.github.com/seth-brown/4da7a5b774c818acf8deddc4c910f890
-** tmux in practice: iTerm2 and tmux                                          :tmux:
+** tmux in practice: iTerm2 and tmux :tmux:
 [2020-06-16 Tue 11:39]
 https://www.freecodecamp.org/news/tmux-in-practice-iterm2-and-tmux-integration-7fb0991c6c01/
-** Mastodon plugin for Bitlbee                                                :irc:
+** Mastodon plugin for Bitlbee :irc:
 [2020-06-16 Tue 11:39]
 https://github.com/kensanata/bitlbee-mastodon
-** 256 (Xterm) colors                                                         :cli:
+** 256 (Xterm) colors :cli:
 [2020-06-16 Tue 11:38]
 https://jonasjacek.github.io/colors/
-** Port of Practical Common Lisp samples to Clojure                           :lisp:clojure:
+** Port of Practical Common Lisp samples to Clojure :lisp:clojure:
 [2020-06-16 Tue 11:37]
 https://github.com/stuarthalloway/practical-cl-clojure/
-** NIST Standard Reference Database                                           :statistics:
+** NIST Standard Reference Database :statistics:
 [2020-06-16 Tue 11:37]
 https://www.itl.nist.gov/div898/strd/
-** Assessing the Numerical Accuracy of SAS Software                           :statistics:
+** Assessing the Numerical Accuracy of SAS Software :statistics:
 [2020-06-16 Tue 11:37]
 https://support.sas.com/rnd/app/stat/papers/statisticalaccuracy.pdf
-** numerical accuracy problems with Excel                                     :statistics:
+** numerical accuracy problems with Excel :statistics:
 [2020-06-16 Tue 11:36]
 https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.102.9846
-** Notebook experience in your Clojure namespace                              :clojure:
+** Notebook experience in your Clojure namespace :clojure:
 [2020-06-16 Tue 11:36]
 https://github.com/scicloj/notespace/blob/master/README.md
-** core.matrix : Multi-dimensional array programming API for Clojure          :clojure:
+** core.matrix : Multi-dimensional array programming API for Clojure :clojure:
 [2020-06-16 Tue 11:36]
 https://github.com/mikera/core.matrix
-** The Mann-Whitney U Test                                                    :statistics:
+** The Mann-Whitney U Test :statistics:
 [2020-06-16 Tue 11:35]
 https://nickredfern.wordpress.com/2011/05/12/the-mann-whitney-u-test/
-** Probability that a DNA motif will occur in a random string                 :statistics:
+** Probability that a DNA motif will occur in a random string :statistics:
 [2020-06-16 Tue 11:35]
 https://github.com/feuerbach/motif-stats
-** Maze Algorithms                                                            :misc:
+** Maze Algorithms :misc:
 [2020-06-16 Tue 11:35]
 https://www.jamisbuck.org/mazes/
-** Emacs prettify-symbols-mode in Comments                                    :emacs:
+** Emacs prettify-symbols-mode in Comments :emacs:
 [2020-06-16 Tue 11:32]
 https://occasionallycogent.com/emacs_prettify_comments/index.html
-** Making the most of Cabal                                                   :haskell:
+** Making the most of Cabal :haskell:
 [2020-06-16 Tue 11:31]
 https://lukelau.me/haskell/posts/making-the-most-of-cabal/
-** discret 11, the french tv encryption of the 80's                           :misc:
+** discret 11, the french tv encryption of the 80's :misc:
 [2020-06-16 Tue 11:30]
 https://fabiensanglard.net/discret11/index.html
-** Compelling reasons to use emacs 27 or 28 right now?                        :emacs:
+** Compelling reasons to use emacs 27 or 28 right now? :emacs:
 [2020-06-16 Tue 11:30]
 https://www.reddit.com/r/emacs/comments/gy24n5/compelling_reasons_to_use_emacs_27_or_28_right_now/
-** Clojure Refactor from Ivy                                                  :clojure:emacs:
+** Clojure Refactor from Ivy :clojure:emacs:
 [2020-06-16 Tue 11:30]
 https://github.com/wandersoncferreira/cljr-ivy/blob/master/README.md
-** Parinfer                                                                   :emacs:
+** Parinfer :emacs:
 [2020-06-16 Tue 11:29]
 https://shaunlebron.github.io/parinfer/
-** Emacs Lisp Guide                                                           :emacs:
+** Emacs Lisp Guide :emacs:
 [2020-06-16 Tue 11:29]
 https://github.com/chrisdone/elisp-guide
-** Literate Configuration                                                     :emacs:org:
+** Literate Configuration :emacs:org:
 [2020-06-16 Tue 11:29]
 https://leanpub.com/lit-config/read#leanpub-auto-using-noweb-references-to-structure-your-code
-** Setting Up a ZNC IRC Bouncer to Use Tor                                    :irc:
+** Setting Up a ZNC IRC Bouncer to Use Tor :irc:
 [2020-06-16 Tue 11:28]
 https://tom.busby.ninja/setting-up-znc-IRC-bouncer-to-use-tor/
-** Lisp Games Wiki                                                            :lisp:
+** Lisp Games Wiki :lisp:
 [2020-06-16 Tue 11:28]
 https://github.com/lispgames/lispgames.github.io/wiki
-** Template Haskell and Stream-processing programs                            :haskell:
+** Template Haskell and Stream-processing programs :haskell:
 [2020-06-16 Tue 11:27]
 https://jmtd.net/log/template_haskell/streamgraph/
-** A Clojure babushka for the grey areas of Bash                              :clojure:
+** A Clojure babushka for the grey areas of Bash :clojure:
 [2020-06-16 Tue 11:27]
 https://github.com/borkdude/babashka
 ** Making IRC work like modern messengers using WeeChat, Pushbullet and more  :irc:
 [2020-06-16 Tue 11:26]
 https://iamkelv.in/blog/2017/08/weechat.html
-** Cours de maths/ocaml de Michel Quercia                                     :maths:
+** Cours de maths/ocaml de Michel Quercia :maths:
 [2020-06-15 Mon 17:37]
 http://michel.quercia.free.fr/
-** Data Wrangling with R                                                      :rstats:
+** Data Wrangling with R :rstats:
 [2020-06-15 Mon 09:57]
 https://cengel.github.io/R-data-wrangling/
-** Pomodoro workflow                                                          :emacs:
+** Pomodoro workflow :emacs:
 [2020-06-10 Wed 16:19]
 https://blog.viktomas.com/posts/my-workflow/#fn:1
-** Split comma-separated strings in a column into separate rows               :rstats:
+** Split comma-separated strings in a column into separate rows :rstats:
 [2020-06-10 Wed 10:26]
 https://stackoverflow.com/questions/13773770/split-comma-separated-strings-in-a-column-into-separate-rows
-** Twitch.tv chat plugin for the Textual IRC client                           :irc:
+** Twitch.tv chat plugin for the Textual IRC client :irc:
 [2020-06-10 Wed 07:24]
 https://github.com/sbine/TextualKappa
-** IRC main commands                                                          :irc:
+** IRC main commands :irc:
 [2020-06-05 Fri 10:22]
 https://gist.github.com/xero/2d6e4b061b4ecbeb9f99
-** Setting up Weechat                                                         :irc:
+** Setting up Weechat :irc:
 [2020-06-04 Thu 20:31]
 https://alexjj.com/blog/2016/setting-up-weechat/
-** Monter une passerelle de communication IRC                                 :irc:
+** Monter une passerelle de communication IRC :irc:
 [2020-06-04 Thu 18:00]
 https://dan.lousqui.fr/monter-une-passerelle-de-communication-irc-weechat-glowing-bear-bitlbee-fr.html
-** WeeChat configuration                                                      :irc:
+** WeeChat configuration :irc:
 [2020-06-04 Thu 17:50]
 https://gist.github.com/pascalpoitras/8406501
-** dot files, configuration, environment settings, etc.                       :misc:
+** dot files, configuration, environment settings, etc. :misc:
 [2020-06-04 Thu 17:48]
 https://github.com/megalithic/dotfiles
-** Racket libraries for scientific computing                                  :racket:
+** Racket libraries for scientific computing :racket:
 [2020-06-04 Thu 16:44]
 https://github.com/soegaard/sci
-** Matplotlib styles for scientific plotting                                  :python:
+** Matplotlib styles for scientific plotting :python:
 [2020-06-04 Thu 16:43]
 https://github.com/garrettj403/SciencePlots
-** textlint rule to check if all links are alive                              :misc:
+** textlint rule to check if all links are alive :misc:
 [2020-05-29 Fri 14:05]
 https://github.com/textlint-rule/textlint-rule-no-dead-link
-** Lazy elfeed                                                                 :emacs:
+** Lazy elfeed :emacs:
  [2020-05-28 Thu 17:27]
  https://karthinks.com/blog/lazy-elfeed/
-** solutions to SICP exercises (in scheme)                                     :scheme:
+** solutions to SICP exercises (in scheme) :scheme:
  [2020-05-28 Thu 17:26]
  https://github.com/karthink/sicp
-** holiday hacking swankr                                                      :lisp:rstats:
+** holiday hacking swankr :lisp:rstats:
  [2020-05-28 Thu 16:39]
  http://christophe.rhodes.io/notes/blog/feeds/lisp/
-** Dynamic title for Treemacs workspace                                        :emacs:
+** Dynamic title for Treemacs workspace :emacs:
  [2020-05-26 Tue 18:17]
  https://andreyorst.gitlab.io/posts/2020-05-01-dynamic-title-for-treemacs-workspace/
-** dotfiles for various programs                                               :shell:
+** dotfiles for various programs :shell:
  [2020-05-26 Tue 18:16]
  https://github.com/fiddlerwoaroof/dotfiles
-** Turing.jl : Bayesian inference with probabilistic programming               :julia:
+** Turing.jl : Bayesian inference with probabilistic programming :julia:
  [2020-05-26 Tue 18:16]
  https://turing.ml/dev/
-** Another Emacs config                                                        :emacs:
+** Another Emacs config :emacs:
  [2020-05-26 Tue 18:14]
  https://github.com/erwagasore/.emacs.d
-** Using Mathematica with Orgmode                                              :mathematica:org:
+** Using Mathematica with Orgmode :mathematica:org:
  [2020-05-26 Tue 18:14]
  https://rgoswami.me/posts/org-mathematica/
-** Monochrome emacs                                                            :emacs:
+** Monochrome emacs :emacs:
  [2020-05-26 Tue 18:14]
  https://github.com/jaredgorski/nothing.el/blob/master/README.md
-** emacs-vega-view                                                             :emacs:vega:
+** emacs-vega-view :emacs:vega:
  [2020-05-26 Tue 18:11]
  https://github.com/applied-science/emacs-vega-view/blob/c869defa3c0d9931e8eb4050dbaedb781160410b/README.md
-** Iceberg theme                                                               :emacs:
+** Iceberg theme :emacs:
  [2020-05-26 Tue 18:11]
  https://github.com/conao3/iceberg-theme.el/blob/9615307cbd37e698d6939a04128162ef893313cb/README.org
-** Flatland for Emacs                                                          :emacs:
+** Flatland for Emacs :emacs:
  [2020-05-26 Tue 18:11]
  https://github.com/gchp/flatland-emacs
-** Kattis problems                                                             :misc:
+** Kattis problems :misc:
  [2020-05-26 Tue 18:09]
  https://open.kattis.com/problems
-** Doom's tips and howtos                                                      :emacs:
+** Doom's tips and howtos :emacs:
  [2020-05-26 Tue 18:09]
  https://narra.co.za/doom-tips-and-howtos/
-** A life configuring Emacs                                                    :emacs:
+** A life configuring Emacs :emacs:
  [2020-05-26 Tue 18:08]
  https://github.com/alhassy/emacs.d
-** Build a Jekyll blog in minutes                                              :misc:
+** Build a Jekyll blog in minutes :misc:
  [2020-05-26 Tue 18:08]
  https://github.com/yyoncho/yyoncho.github.io
-** Yet another emacs config                                                    :emacs:
+** Yet another emacs config :emacs:
  [2020-05-26 Tue 18:08]
  https://github.com/netromdk/.emacs.d
-** Example of doom config                                                      :emacs:
+** Example of doom config :emacs:
  [2020-05-26 Tue 18:07]
  https://github.com/jethrokuan/dots/blob/master/.doom.d/config.el
-** Mann-Whitney and t-test ARE                                                 :statistics:
+** Mann-Whitney and t-test ARE :statistics:
  [2020-05-26 Tue 18:03]
  https://stats.stackexchange.com/questions/130562/why-is-the-asymptotic-relative-efficiency-of-the-wilcoxon-test-3-pi-compared/130914#130914
-** Tutorials on Topics in Julia Programming                                    :julia:
+** Tutorials on Topics in Julia Programming :julia:
  [2020-05-26 Tue 18:02]
  https://github.com/johnmyleswhite/julia_tutorials
-** Reading IMAP email in Emacs                                                 :emacs:
+** Reading IMAP email in Emacs :emacs:
  [2020-05-26 Tue 18:00]
  https://ict4g.net/adolfo/notes/emacs/reading-imap-mail-with-emacs.html
-** Book layout design                                                          :tex:
+** Book layout design :tex:
  [2020-05-26 Tue 18:00]
  http://octopusinvitro.tk/blog/code-and-tech/lab-guide-layout-with-latex/
-** Jorgen Schaefers Emacs Config                                               :emacs:
+** Jorgen Schaefers Emacs Config :emacs:
  [2020-05-26 Tue 17:58]
  https://www.emacswiki.org/emacs/JorgenSchaefersEmacsConfig
-** NIST Digital Library of Mathematical Functions                              :maths:
+** NIST Digital Library of Mathematical Functions :maths:
  [2020-05-26 Tue 17:57]
  https://dlmf.nist.gov/
-** Interactively view and subset phylogenetic trees                            :bioinformatics:rstats:
+** Interactively view and subset phylogenetic trees :bioinformatics:rstats:
  [2020-05-26 Tue 17:56]
  https://shiny.rstudio.com/gallery/phylo-tree-view-subset.html
-** Subsetting Phylogenetic Trees                                               :bioinformatics:rstats:
+** Subsetting Phylogenetic Trees :bioinformatics:rstats:
  [2020-05-26 Tue 17:56]
  https://tbradley1013.github.io/2018/06/19/subsetting-phylogenetic-trees/
-** The most useful git commands                                                :git:
+** The most useful git commands :git:
  [2020-05-25 Mon 18:36]
  https://orga.cat/posts/most-useful-git-commands
-** Happy Git and GitHub for the useR                                           :git:
+** Happy Git and GitHub for the useR :git:
  [2020-05-25 Mon 18:20]
  https://happygitwithr.com/
-** Common statistical tests are linear models                                  :statistics:rstats:
+** Common statistical tests are linear models :statistics:rstats:
  [2020-05-24 Sun 17:58]
  https://lindeloev.github.io/tests-as-linear/
-** Zippers And Clj                                                             :lisp:clojure:
+** Zippers And Clj :lisp:clojure:
  [2020-05-22 Fri 17:10]
  http://langnostic.inaimathi.ca/posts/zippers-and-clj
-** Organizing Notes With Refile                                                :org:
+** Organizing Notes With Refile :org:
  [2020-05-22 Fri 17:04]
  https://blog.aaronbieber.com/2017/03/19/organizing-notes-with-refile.html
-** Using Org Mode in Hugo                                                      :org:
+** Using Org Mode in Hugo :org:
  [2020-05-22 Fri 16:55]
  https://willschenk.com/articles/2019/using_org_mode_in_hugo/
-** Practical macros in Racket                                                  :racket:
+** Practical macros in Racket :racket:
  [2020-05-22 Fri 08:37]
  https://mullikine.github.io/posts/practical-macros-in-racket-and-how-to-work-with-them/
-** Doom Emacs Workflows                                                        :emacs:
+** Doom Emacs Workflows :emacs:
  [2020-05-20 Wed 09:54]
  https://noelwelsh.com/posts/2019-01-10-doom-emacs.html
-** Racket + Swift app                                                          :racket:
+** Racket + Swift app :racket:
  [2020-05-20 Mer 09:36]
  https://github.com/Bogdanp/remember
-** Vim codi: interactive scratchpad for hackers                                :vim:
+** Vim codi: interactive scratchpad for hackers :vim:
  [2020-05-20 Mer 09:34]
  https://github.com/metakirby5/codi.vim
-** Clocking time with Org-mode                                                 :org:
+** Clocking time with Org-mode :org:
  [2020-05-18 Mon 20:25]
  https://writequit.org/denver-emacs/presentations/2017-04-11-time-clocking-with-org.html
-** Benchmark of popular graph/network packages                                 :graphs:
+** Benchmark of popular graph/network packages :graphs:
  [2020-05-18 Mon 11:40]
  https://www.timlrx.com/2020/05/10/benchmark-of-popular-graph-network-packages-v2/
-** glmnet and naive elastic net solution                                       :statistics:
+** glmnet and naive elastic net solution :statistics:
  [2020-05-18 Mon 11:39]
  https://stats.stackexchange.com/questions/326427/why-does-glmnet-use-naive-elastic-net-from-the-zou-hastie-original-paper
-** Create executables with SBCL or CCL                                         :lisp:
+** Create executables with SBCL or CCL :lisp:
  [2020-05-18 Mon 11:39]
  https://www.xach.com/lisp/buildapp/
-** HD Wallets                                                                  :misc:
+** HD Wallets :misc:
  [2020-05-18 Mon 11:38]
  https://learnmeabitcoin.com/guide/hd-wallets
-** Starter repo for building interactive R courses                             :rstats:
+** Starter repo for building interactive R courses :rstats:
  [2020-05-18 Mon 11:37]
  https://github.com/ines/course-starter-r
-** ggplot2 extensions                                                          :rstats:
+** ggplot2 extensions :rstats:
  [2020-05-18 Mon 11:35]
  https://exts.ggplot2.tidyverse.org/
-** Using dask and napari to process & view large datasets                      :python:
+** Using dask and napari to process & view large datasets :python:
  [2020-05-18 Mon 11:34]
  https://napari.org/tutorials/applications/dask.html
-** Why I use R                                                                 :rstats:
+** Why I use R :rstats:
  [2020-05-18 Mon 11:32]
  https://shotwell.ca/posts/why_i_use_r/
-** Hacker's CRM – Emacs in the world of CRMs                                   :lisp:
+** Hacker's CRM – Emacs in the world of CRMs :lisp:
  [2020-05-18 Mon 11:32]
  https://github.com/40ants/hacrm
-** A framework for building Modern Web Apps in ClojureScript                   :clojure:
+** A framework for building Modern Web Apps in ClojureScript :clojure:
  [2020-05-18 Mon 11:31]
  https://day8.github.io/re-frame/re-frame/
-** Building interactive visualizations with React, D3, and TypeScript          :typescript:
+** Building interactive visualizations with React, D3, and TypeScript :typescript:
  [2020-05-18 Mon 11:31]
  https://blog.lucify.com/building-interactive-visualizations-with-react-d3-and-typescript-206c7172b0d2
-** Introducing TypeScript Library Starter Lite                                 :typescript:
+** Introducing TypeScript Library Starter Lite :typescript:
  [2020-05-18 Mon 11:30]
  https://blog.tonysneed.com/2017/09/15/introducing-typescript-library-starter-lite/
-** My Text Editor Journey: Vim, Spacemacs, Atom and Sublime Text               :emacs:
+** My Text Editor Journey: Vim, Spacemacs, Atom and Sublime Text :emacs:
  [2020-05-18 Mon 11:30]
  https://thume.ca/2017/03/04/my-text-editor-journey-vim-spacemacs-atom-and-sublime-text/
-** ADIOS2 for scalable parallel I/O                                            :hpc:
+** ADIOS2 for scalable parallel I/O :hpc:
  [2020-05-18 Mon 11:05]
  https://csmd.ornl.gov/software/adios2
-** Emacs as a Complete Computing Environment                                   :emacs:
+** Emacs as a Complete Computing Environment :emacs:
  [2020-05-18 Mon 10:07]
  http://doc.rix.si/cce/cce.html
-** Data.table vs. Rcpp                                                         :rstats:
+** Data.table vs. Rcpp :rstats:
  [2020-05-15 Fri 20:07]
  https://stackoverflow.com/questions/61800528/omitting-the-rows-of-a-data-frame-in-which-there-elements-are-the-same/61820131#61820131
-** Dplyr v1                                                                    :rstats:
+** Dplyr v1 :rstats:
  [2020-05-15 Fri 20:01]
  https://thinkr.fr/hey-quoi-de-neuf-dplyr-le-point-sur-la-v1/
-** Powerlevel10k Zsh theme                                                     :zsh:shell:
+** Powerlevel10k Zsh theme :zsh:shell:
  [2020-05-15 Fri 08:53]
  https://github.com/romkatv/powerlevel10k
-** Textplot R package                                                          :rstats:
+** Textplot R package :rstats:
  [2020-05-15 Fri 08:21]
  https://github.com/bnosac/textplot
-** Large SVDs Dask + CuPy + Zarr + Genomics                                    :python:
+** Large SVDs Dask + CuPy + Zarr + Genomics :python:
  [2020-05-14 Thu 18:01]
  https://blog.dask.org/2020/05/13/large-svds
-** Calendar and diary                                                          :emacs:
+** Calendar and diary :emacs:
  [2020-05-14 Thu 17:46]
  https://ftp.gnu.org/old-gnu/Manuals/emacs-20.7/html_chapter/emacs_33.html
-** Commands in the Agenda Buffer                                               :emacs:
+** Commands in the Agenda Buffer :emacs:
  [2020-05-14 Thu 17:46]
  https://orgmode.org/manual/Agenda-Commands.html#Agenda-Commands
-** evil-org-mode                                                               :emacs:
+** evil-org-mode :emacs:
  [2020-05-14 Thu 17:46]
  https://github.com/Somelauw/evil-org-mode
-** Plain TeX reference                                                         :tex:
+** Plain TeX reference :tex:
  [2020-05-14 Thu 17:45]
  https://nwalsh.com/tex/texhelp/Plain.html
-** Diary mode                                                                  :emacs:
+** Diary mode :emacs:
  [2020-05-14 Thu 17:45]
  https://www.emacswiki.org/emacs/DiaryMode
-** Packages that take advantage of the Fringe                                  :emacs:
+** Packages that take advantage of the Fringe :emacs:
  [2020-05-12 Tue 16:06]
  https://www.reddit.com/r/emacs/comments/9hufzz/packages_that_take_advantage_of_the_fringe/
-** Interesting dot files                                                       :unix:
+** Interesting dot files :unix:
  [2020-05-12 Tue 10:06]
  https://github.com/Who23/dots
-** Programming Fonts with Ligatures added                                      :misc:
+** Programming Fonts with Ligatures added :misc:
  [2020-05-12 Mar 08:06]
  https://github.com/ToxicFrog/Ligaturizer
-** Nice macOS desktop (see also https://is.gd/eeK3Qd)                          :apple:
+** Nice macOS desktop (see also https://is.gd/eeK3Qd) :apple:
  [2020-05-06 Wed 11:40]
  https://www.reddit.com/r/unixporn/comments/clyqna/chunkwm_my_palenight_macos_rice/
-** Tricky cases in C                                                           :clang:
+** Tricky cases in C :clang:
  [2020-05-06 Wed 08:41]
  http://fabiensanglard.net/c/
-** Books on algorithms                                                         :algorithms:
+** Books on algorithms :algorithms:
  [2020-05-06 Wed 08:39]
  http://fabiensanglard.net/algorithms_and_datastructures/index.php
-** A hands-on introduction to static code analysis                             :misc:
+** A hands-on introduction to static code analysis :misc:
  [2020-05-05 Tue 07:33]
  https://deepsource.io/blog/introduction-static-code-analysis/
-** Installing macOS on a separate APFS volume                                  :apple:
+** Installing macOS on a separate APFS volume :apple:
  [2020-05-04 Mon 20:22]
  https://support.apple.com/en-us/HT208891
-** How to Make Beautiful Tables in R                                           :rstats:
+** How to Make Beautiful Tables in R :rstats:
  [2020-05-04 Mon 20:21]
  https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/
-** RMarkdown for Scientists                                                    :rstats:
+** RMarkdown for Scientists :rstats:
  [2020-05-04 Mon 20:20]
  https://rmd4sci.njtierney.com/
-** Jon Atack Lisp rc files                                                     :emacs:lisp:
+** Jon Atack Lisp rc files :emacs:lisp:
  [2020-05-02 Sat 08:52]
  https://github.com/jonatack/dotfiles/blob/master/emacs
-** GNU Emacs configuration from Vifon                                          :emacs:
+** GNU Emacs configuration from Vifon :emacs:
  [2020-05-02 Sat 08:51]
  https://github.com/Vifon/emacs-config
-** Game of lige using CL and clinch                                            :lisp:
+** Game of lige using CL and clinch :lisp:
  [2020-05-02 Sat 08:51]
  http://love2d.org/
-** Lisp bindings for OpenGL                                                    :lisp:
+** Lisp bindings for OpenGL :lisp:
  [2020-05-02 Sat 08:50]
  http://love2d.org/
-** 2D games in Lua                                                             :misc:
+** 2D games in Lua :misc:
  [2020-05-02 Sat 08:50]
  http://love2d.org/
-** Meta-Circular Adventures in Functional Abstraction                          :haskell:
+** Meta-Circular Adventures in Functional Abstraction :haskell:
  [2020-05-01 Fri 20:24]
  https://hackerfall.com/story/challenging-clojure-in-common-lisp
-** 500_lang-lisp.el                                                            :lisp:
+** 500_lang-lisp.el :lisp:
  [2020-04-29 Mer 17:46]
  https://github.com/kaz-yos/emacs/blob/master/init.d/500_lang-lisp.el
-** Swank server for r7rs Schemes                                               :scheme:
+** Swank server for r7rs Schemes :scheme:
  [2020-04-29 Mer 17:44]
  https://github.com/ecraven/r7rs-swank
-** Dialog dataset from online books                                            :misc:
+** Dialog dataset from online books :misc:
  [2020-04-29 Wed 10:17]
  https://github.com/ricsinaruto/gutenberg-dialog
-** A textlint flycheck checker in Emacs                                        :emacs:
+** A textlint flycheck checker in Emacs :emacs:
  [2020-04-28 Tue 13:25]
  http://www.macs.hw.ac.uk/~rs46/posts/2018-12-29-textlint-flycheck.html
-** Doing Python Configuration Right                                            :python:
+** Doing Python Configuration Right :python:
  [2020-04-27 Mon 18:28]
  https://whalesalad.com/blog/doing-python-configuration-right
-** Computational Statistics in Python                                          :python:
+** Computational Statistics in Python :python:
  [2020-04-27 Mon 15:20]
  https://people.duke.edu/~ccc14/sta-663/
-** The less-familiar parts of Lisp for beginners                               :lisp:
+** The less-familiar parts of Lisp for beginners :lisp:
  [2020-04-27 Mon 15:11]
  https://blog.cneufeld.ca/2014/01/the-less-familiar-parts-of-lisp-for-beginners-define-symbol-macro/
-** Basis function approximation to Gaussian processes                          :bayesian:
+** Basis function approximation to Gaussian processes :bayesian:
  [2020-04-27 Mon 15:10]
  https://github.com/gabriuma/basis_functions_approach_to_GP
-** Running from the past                                                       :haskell:
+** Running from the past :haskell:
  [2020-04-27 Mon 15:09]
  http://blog.sigfpe.com/2018/10/running-from-past.html?m=1
-** Mumble, high quality voice chat application                                 :misc:
+** Mumble, high quality voice chat application :misc:
  [2020-04-27 Mon 14:38]
  https://www.mumble.info/
-** direnv – unclutter your .profile                                            :shell:
+** direnv – unclutter your .profile :shell:
  [2020-04-27 Mon 14:37]
  https://direnv.net/
-** Cox regression and tidymodels                                               :rstats:
+** Cox regression and tidymodels :rstats:
  [2020-04-26 Sun 17:57]
  https://github.com/tidymodels/planning/blob/master/survival-analysis/cox_notes_extra.Rmd
-** Prophet forecasting                                                         :econ:
+** Prophet forecasting :econ:
  [2020-04-26 Sun 17:56]
  https://facebook.github.io/prophet/
-** Shell productivity tips and tricks                                          :shell:
+** Shell productivity tips and tricks :shell:
  [2020-04-26 Sun 17:54]
  https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html
-** Anybody can write good bash                                                 :shell:
+** Anybody can write good bash :shell:
  [2020-04-26 Sun 17:54]
  https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort
-** Tools for curating, analyzing, and manipulating biological sequences        :bioinformatics:
+** Tools for curating, analyzing, and manipulating biological sequences :bioinformatics:
  [2020-04-23 Thu 15:49]
  https://www.rdocumentation.org/packages/DECIPHER/versions/2.0.2
-** B-trees algorithms                                                          :algorithms:
+** B-trees algorithms :algorithms:
  [2020-04-23 Thu 09:55]
  http://citeseerx.ist.psu.edu/search?q=B-tree+merge&submit.x=0&submit.y=0&sort=rlv&t=doc
-** Introduction to Computational Thinking with Julia                           :julia:
+** Introduction to Computational Thinking with Julia :julia:
  [2020-04-20 Mon 13:19]
  https://github.com/mitmath/6S083
-** Manpages for Scheme                                                         :scheme:
+** Manpages for Scheme :scheme:
  [2020-04-20 Mon 12:22]
  https://github.com/schemedoc/scheme-manpages
-** Starting to hack on SBCL                                                    :lisp:
+** Starting to hack on SBCL :lisp:
  [2020-04-20 Mon 10:49]
  https://pvk.ca/Blog/2013/04/13/starting-to-hack-on-sbcl/
-** A Possible New Backend for Rust                                             :rust:
+** A Possible New Backend for Rust :rust:
  [2020-04-20 Mon 10:43]
  https://jason-williams.co.uk/a-possible-new-backend-for-rust
-** What does this economist think of epidemiologists?                          :statistics:econ:
+** What does this economist think of epidemiologists? :statistics:econ:
  [2020-04-20 Mon 10:29]
  https://marginalrevolution.com/marginalrevolution/2020/04/what-does-this-economist-think-of-epidemiology.html
-** Cross Section Econometrics Syllabus                                         :econ:
+** Cross Section Econometrics Syllabus :econ:
  [2020-04-17 Fri 20:15]
  https://rlhick.people.wm.edu/stories/syllabus_econ407.html
-** Tensorflow with Custom Likelihood Functions                                 :python:
+** Tensorflow with Custom Likelihood Functions :python:
  [2020-04-17 Fri 20:14]
  https://rlhick.people.wm.edu/posts/custom-likes-tensorflow.html
-** A set of keybindings for evil-mode                                          :emacs:
+** A set of keybindings for evil-mode :emacs:
  [2020-04-15 Wed 23:24]
  https://github.com/emacs-evil/evil-collection
-** How To Take Smart Notes With Org-mode                                       :emacs:org:
+** How To Take Smart Notes With Org-mode :emacs:org:
  [2020-04-15 Wed 19:18]
  https://blog.jethro.dev/posts/how_to_take_smart_notes_org/
-** Dash: Virus Phylogenetic Tree                                               :bioinformatics:
+** Dash: Virus Phylogenetic Tree :bioinformatics:
  [2020-04-15 Wed 09:41]
  https://github.com/plotly/dash-sample-apps/tree/master/apps/dash-phylogeny
-** A collection of graph classification methods                                :graphs:
+** A collection of graph classification methods :graphs:
  [2020-04-12 Sun 21:02]
  https://github.com/benedekrozemberczki/awesome-graph-classification
-** So You Want to Be a (Compiler) Wizard                                       :misc:
+** So You Want to Be a (Compiler) Wizard :misc:
  [2020-04-12 Sun 20:55]
  https://belkadan.com/blog/2016/05/So-You-Want-To-Be-A-Compiler-Wizard/
-** Programming Language Theory                                                 :misc:
+** Programming Language Theory :misc:
  [2020-04-12 Sun 20:50]
  https://steshaw.org/plt/
-** Processing and Racket                                                       :racket:
+** Processing and Racket :racket:
  [2020-04-12 Sun 20:45]
  https://www.hive76.org/2013/06/01/processing-and-racket/
-** Probabilistic programming in Racket                                         :racket:
+** Probabilistic programming in Racket :racket:
  [2020-04-12 Sun 20:44]
  http://rmculpepper.github.io/gamble/
-** covdata package (interesting for ggplot)                                    :rstats:
+** covdata package (interesting for ggplot) :rstats:
  [2020-04-11 Sat 20:35]
  36:39: execution error: Erreur dans Safari : L’application n’est pas ouverte. (-600)
-** SIR model in Python                                                         :python:
+** SIR model in Python :python:
  [2020-04-11 Sat 09:59]
  https://johnlekberg.com/blog/2020-04-10-cli-infection.html
-** Clojure babushka                                                            :clojure:
+** Clojure babushka :clojure:
  [2020-04-10 Fri 19:27]
  https://github.com/borkdude/babashka
-** Great Looking Tables: gt                                                    :rstats:
+** Great Looking Tables: gt :rstats:
  [2020-04-10 Fri 19:26]
  https://blog.rstudio.com/2020/04/08/great-looking-tables-gt-0-2/
-** Time Series Forecasting Best Practices & Examples (Microsoft)               :statistics:
+** Time Series Forecasting Best Practices & Examples (Microsoft) :statistics:
  [2020-04-10 Fri 19:25]
  https://github.com/microsoft/forecasting
-** Today I learned (tip & tricks)                                              :misc:
+** Today I learned (tip & tricks) :misc:
  [2020-04-10 Fri 19:25]
  http://jonasbn.github.io/til/#itermapp
-** Inspectra is a tool for spectral comparison of graph topology               :python:graphs:
+** Inspectra is a tool for spectral comparison of graph topology :python:graphs:
  [2020-04-10 Fri 19:23]
  https://github.com/cancerregulome/inspectra
-** Scheme in FORTH in Julia                                                    :julia:scheme:
+** Scheme in FORTH in Julia :julia:scheme:
  [2020-04-09 Thu 20:08]
  https://github.com/tgvaughan/scheme.forth.jl
-** The Ten Rules for Data Modeling with DynamoDB                               :database:
+** The Ten Rules for Data Modeling with DynamoDB :database:
  [2020-04-08 Wed 19:58]
  https://www.trek10.com/blog/the-ten-rules-for-data-modeling-with-dynamodb
-** Using SIMD to aggregate billions of rows per second (on a laptop)           :database:
+** Using SIMD to aggregate billions of rows per second (on a laptop) :database:
  [2020-04-08 Wed 08:02]
  https://www.questdb.io/blog/2020/04/02/using-simd-to-aggregate-billions-of-rows-per-second
-** A humble guide to database schema design                                    :database:
+** A humble guide to database schema design :database:
  [2020-04-08 Wed 08:01]
  https://www.mikealche.com/software-development/a-humble-guide-to-database-schema-design
-** Duo is a collection of colour combinations                                  :misc:
+** Duo is a collection of colour combinations :misc:
  [2020-04-07 Tue 17:23]
  https://duo.alexpate.uk/
-** A general purpose community detection and network embedding library         :graphs:python:
+** A general purpose community detection and network embedding library :graphs:python:
  [2020-04-07 Tue 16:24]
  https://github.com/benedekrozemberczki/karatecluB
-** Code for modelling estimated deaths and cases for COVID19                   :statistics:
+** Code for modelling estimated deaths and cases for COVID19 :statistics:
  [2020-04-06 Mon 20:12]
  https://github.com/ImperialCollegeLondon/covid19model
-** org-protocol-capture-html                                                   :org:
+** org-protocol-capture-html :org:
  [2020-04-06 Mon 17:33]
  https://github.com/alphapapa/org-protocol-capture-html
-** Minecraft Harmony                                                           :misc:
+** Minecraft Harmony :misc:
  [2020-04-06 Mon 11:30]
  http://michaellynn.github.io/2020/03/28/minecraft-harmony/
-** Flask app by karpathy on COVID-19                                           :python:
+** Flask app by karpathy on COVID-19 :python:
  [2020-04-06 Mon 11:29]
  https://github.com/karpathy/covid-sanity
-** Template elements in Org                                                    :org:
+** Template elements in Org :org:
  [2020-04-03 Fri 10:48]
  https://orgmode.org/manual/Template-elements.html#Template-elements
-** Previewing LaTeX fragments                                                  :org:
+** Previewing LaTeX fragments :org:
  [2020-04-03 Fri 10:31]
  https://orgmode.org/manual/Previewing-LaTeX-fragments.html#Previewing-LaTeX-fragments
-** Python-3-Cheatsheet                                                         :python:
+** Python-3-Cheatsheet :python:
  [2020-04-02 Thu 09:10]
  https://yungnickyoung.github.io/Python-3-Cheatsheet/
-** Jami is free software for universal communication                           :misc:
+** Jami is free software for universal communication :misc:
  [2020-04-02 Thu 08:44]
  https://git.jami.net/savoirfairelinux/ring-project/wikis/home
-** How to SSH Properly                                                         :misc:
+** How to SSH Properly :misc:
  [2020-04-02 Thu 08:43]
  https://gravitational.com/blog/how-to-ssh-properly/
-** An Overview of Bayesian Inference                                           :bayesian:
+** An Overview of Bayesian Inference :bayesian:
  [2020-04-01 Wed 21:24]
  https://jaydaigle.net/blog/overview-of-bayesian-inference/
-** Restarts in Common Lisp                                                     :lisp:
+** Restarts in Common Lisp :lisp:
  [2020-04-01 Wed 20:15]
  https://sulami.github.io/posts/common-lisp-restarts/
-** How Dolt Stores Table Data                                                  :database:
+** How Dolt Stores Table Data :database:
  [2020-04-01 Wed 20:14]
  https://www.dolthub.com/blog/2020-04-01-how-dolt-stores-table-data/
-** Journaling with Org                                                         :org:
+** Journaling with Org :org:
  [2020-04-01 Wed 09:10]
  http://howardism.org/Technical/Emacs/journaling-org.html
-** Kubernetes IDE                                                              :misc:
+** Kubernetes IDE :misc:
  [2020-04-01 Wed 08:44]
  https://k8slens.dev/
-** Arthur Charpentier's course                                                 :statistics:
+** Arthur Charpentier's course :statistics:
  [2020-03-31 Tue 20:23]
  https://github.com/freakonometrics/STT5100
-** Stata kernel magics                                                         :stata:
+** Stata kernel magics :stata:
  [2020-03-31 Tue 20:23]
  https://github.com/kylebarron/stata_kernel/blob/master/docs/src/using_stata_kernel/magics.md
-** Mathematica vs. R                                                           :mathematica:rstats:
+** Mathematica vs. R :mathematica:rstats:
  [2020-03-31 Tue 20:22]
  https://github.com/antononcube/MathematicaVsR
-** Vim for VS Code users                                                       :vim:
+** Vim for VS Code users :vim:
  [2020-03-30 Mon 18:27]
  https://www.freecodecamp.org/news/vim-for-people-who-use-visual-studio-code/
-** Economics and geospatial analysis (IPython + Stata)                         :econ:
+** Economics and geospatial analysis (IPython + Stata) :econ:
  [2020-03-30 Mon 17:02]
  https://econgrowth.github.io/pages/Computation.html
-** Macroeconomics (Stata + IPython)                                            :python:econ:
+** Macroeconomics (Stata + IPython) :python:econ:
  [2020-03-30 Mon 17:01]
  https://macroeconomics.github.io/pages/Computation.html
-** Bob Jenkins' ISAAC-32 and ISAAC-64 algorithms, fast cryptographic RNGs      :cryptography:
+** Bob Jenkins' ISAAC-32 and ISAAC-64 algorithms, fast cryptographic RNGs :cryptography:
  [2020-03-24 Tue 17:30]
  https://github.com/thephoeron/cl-isaac
-** Optimized, pure Common Lisp linear-algebra library                          :lisp:
+** Optimized, pure Common Lisp linear-algebra library :lisp:
  [2020-03-24 Tue 17:28]
  https://github.com/nklein/gauss
-** Computational Statistics                                                    :statistics:
+** Computational Statistics :statistics:
  [2020-03-24 Tue 09:13]
  https://statweb.stanford.edu/~susan/courses/s227/
-** profile.do - useful startups?                                               :stata:
+** profile.do - useful startups? :stata:
  [2020-03-22 Sun 09:38]
  https://www.statalist.org/forums/forum/general-stata-discussion/general/1405778-profile-do-useful-startups
-** Generic start of a Stata .do file                                           :stata:
+** Generic start of a Stata .do file :stata:
  [2020-03-22 Sun 09:33]
  https://blog.uvm.edu/tbplante/2017/08/10/generic-start-of-stata-do-file/
-** pandoc-based layout workflow for scholarly journals                         :pandoc:
+** pandoc-based layout workflow for scholarly journals :pandoc:
  [2020-03-21 Sat 09:08]
  https://github.com/piero-g/markdown-workflow
-** Parametric Survival Distributions                                           :rstats:
+** Parametric Survival Distributions :rstats:
  [2020-03-19 Thu 09:17]
  https://github.com/zrmacc/Temporal
-** 300 free MIT-licensed high-quality SVG icons                                :misc:
+** 300 free MIT-licensed high-quality SVG icons :misc:
  [2020-03-19 Thu 09:14]
  https://github.com/tabler/tabler-icons
-** CHICKEN's numeric tower: part 5                                             :scheme:
+** CHICKEN's numeric tower: part 5 :scheme:
  [2020-03-12 Thu 16:14]
  https://www.more-magic.net/posts/numeric-tower-part-5.html
-** A (mostly) comprehensive guide to calling C from Scheme and vice versa      :scheme:clang:
+** A (mostly) comprehensive guide to calling C from Scheme and vice versa :scheme:clang:
  [2020-03-12 Thu 14:50]
  https://www.more-magic.net/posts/scheme-c-integration.html
-** Chicken Scheme, and FFI                                                     :scheme:
+** Chicken Scheme, and FFI :scheme:
  [2020-03-12 Thu 13:39]
  https://demonastery.org/2011/01/chicken-scheme-and-ffi/
-** MurmurHash2 (64bit) implementation                                          :rust:cryptography:
+** MurmurHash2 (64bit) implementation :rust:cryptography:
  [2020-03-12 Thu 12:28]
  https://github.com/badboy/murmurhash64-rs
-** SMHasher                                                                    :cryptography:
+** SMHasher :cryptography:
  [2020-03-12 Thu 12:17]
  https://github.com/aappleby/smhasher
-** Resources For Novel Coronavirus COVID-19                                    :mathematica:
+** Resources For Novel Coronavirus COVID-19 :mathematica:
  [2020-03-12 Thu 11:58]
  https://community.wolfram.com/groups/-/m/t/1872608
-** "Big Data" formats/techniques for informatics programming                   :bioinformatics:
+** "Big Data" formats/techniques for informatics programming :bioinformatics:
  [2020-03-11 Wed 15:58]
  https://github.com/molpopgen/BigDataFormats
-** Uncluttered Stata Graphs                                                    :stata:
+** Uncluttered Stata Graphs :stata:
  [2020-03-11 Wed 15:31]
  https://github.com/graykimbrough/uncluttered-stata-graphs/blob/master/examples/sample_labeled_uncluttered_graph.do
-** Pairwise sequence alignment in Biopython                                    :bioinformatics:python:
+** Pairwise sequence alignment in Biopython :bioinformatics:python:
  [2020-03-11 Wed 12:29]
  http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec:pairwise
-** Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE                    :misc:
+** Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE :misc:
  [2020-03-11 Wed 11:45]
  https://github.com/CSSEGISandData/COVID-19
-** Big alignments, do they make sense?                                         :bioinformatics:
+** Big alignments, do they make sense? :bioinformatics:
  [2020-03-11 Wed 11:35]
  https://www.drive5.com/muscle/manual/bigalignments.html
-** 5 lesser-known pandas tricks                                                :python:
+** 5 lesser-known pandas tricks :python:
  [2020-03-11 Wed 11:35]
  https://towardsdatascience.com/5-lesser-known-pandas-tricks-e8ab1dd21431
-** The Newick tree format                                                      :bioinformatics:
+** The Newick tree format :bioinformatics:
  [2020-03-11 Wed 10:57]
  http://evolution.genetics.washington.edu/phylip/newicktree.html
-** Multiple Sequence Alignment                                                 :bioinformatics:
+** Multiple Sequence Alignment :bioinformatics:
  [2020-03-11 Wed 10:48]
  https://www.ebi.ac.uk/Tools/msa/
-** Open Data Kit                                                               :misc:
+** Open Data Kit :misc:
  [2020-03-11 Wed 10:03]
  http://opendatakit.org/
-** Stata commands designed for Impact Evaluations                              :stata:
+** Stata commands designed for Impact Evaluations :stata:
  [2020-03-11 Wed 10:03]
  https://github.com/worldbank/ietoolkit
-** Rho is yet another array/dataframe package                                  :lisp:
+** Rho is yet another array/dataframe package :lisp:
  [2020-03-11 Wed 09:29]
  https://github.com/blindglobe/rho
-** Memory-Efficient Search Trees for Database Management Systems (PDF)         :database:
+** Memory-Efficient Search Trees for Database Management Systems (PDF) :database:
  [2020-03-11 Wed 09:00]
  http://reports-archive.adm.cs.cmu.edu/anon/2020/CMU-CS-20-101.pdf
-** A binary interface let Chez Scheme use Python, Lua, Ruby etc's library      :scheme:
+** A binary interface let Chez Scheme use Python, Lua, Ruby etc's library :scheme:
  [2020-03-10 Tue 16:14]
  https://guenchi.github.io/Darkart/
-** Scheme for scientific computing                                             :scheme:
+** Scheme for scientific computing :scheme:
  [2020-03-10 Tue 14:52]
  http://fmnt.info/blog/20181029_scheme.html
-** Python instead of Lisp                                                      :python:lisp:
+** Python instead of Lisp :python:lisp:
  [2020-03-10 Tue 11:36]
  https://www.tfeb.org/fragments/2016/06/09/python-instead-of-lisp/
-** Macros in Racket, part one                                                  :racket:
+** Macros in Racket, part one :racket:
  [2020-03-10 Tue 11:33]
  https://www.tfeb.org/fragments/2015/01/13/macros-in-racket-part-one/
-** Writing syntax-case Macros                                                  :racket:
+** Writing syntax-case Macros :racket:
  [2020-03-10 Tue 11:33]
  https://blog.racket-lang.org/2011/04/writing-syntax-case-macros.html
-** Suppressing Warnings in GCC and Clang                                       :clang:
+** Suppressing Warnings in GCC and Clang :clang:
  [2020-03-06 Fri 09:47]
  https://nelkinda.com/blog/suppress-warnings-in-gcc-and-clang/
-** Modern Regression with R                                                    :rstats:
+** Modern Regression with R :rstats:
  [2020-03-05 Thu 12:23]
  http://www.stat.cmu.edu/~cshalizi/mreg/15/
-** Single-Pass Online Statistics Algorithms                                    :numerical:
+** Single-Pass Online Statistics Algorithms :numerical:
  [2020-03-04 Wed 15:35]
  http://www.numericalexpert.com/articles/single_pass_stat/
-** The Britney Spears Problem                                                  :misc:
+** The Britney Spears Problem :misc:
  [2020-03-04 Wed 15:32]
  https://www.americanscientist.org/article/the-britney-spears-problem
-** Canonical Correlation Analysis in Detail                                    :statistics:
+** Canonical Correlation Analysis in Detail :statistics:
  [2020-03-04 Wed 15:26]
  https://gregorygundersen.com/blog/2018/07/17/cca/#2-scale-invariance
-** Simple command-line utility to convert CSV files to HTML table              :python:
+** Simple command-line utility to convert CSV files to HTML table :python:
  [2020-03-04 Wed 11:20]
  https://github.com/vividvilla/csvtotable
-** treespace: exploration of landscapes of phylogenetic trees                  :rstats:bioinformatics:
+** treespace: exploration of landscapes of phylogenetic trees :rstats:bioinformatics:
  [2020-03-03 Tue 16:25]
  https://thibautjombart.github.io/treespace/
-** Outbreak analytics                                                          :statistics:
+** Outbreak analytics :statistics:
  [2020-03-03 Tue 16:11]
  https://royalsocietypublishing.org/doi/10.1098/rstb.2018.0276
-** The Log-Sum-Exp Trick. See also https://stats.stackexchange.com/q/105602    :misc:
-   :PROPERTIES:
-   :ID:       0DE0C998-08ED-4471-88E3-42127C2F4B36
-   :END:
+** The Log-Sum-Exp Trick. See also https://stats.stackexchange.com/q/105602 :misc: :PROPERTIES: :ID: 0DE0C998-08ED-4471-88E3-42127C2F4B36 :END:
  [2020-03-03 Tue 13:33]
  https://gregorygundersen.com/blog/2020/02/09/log-sum-exp/
-** Compare tree topologies (Newick) using Python ete3                          :python:bioinformatics:
-   :PROPERTIES:
-   :ID:       57C6279E-6484-44AB-8F9B-D7A73A5C0F00
-   :END:
+** Compare tree topologies (Newick) using Python ete3 :python:bioinformatics: :PROPERTIES: :ID: 57C6279E-6484-44AB-8F9B-D7A73A5C0F00 :END:
  [2020-03-03 Tue 11:22]
  https://www.biostars.org/p/179195/
-** A minimalist Hugo theme for writers and bloggers                            :hugo:
-   :PROPERTIES:
-   :ID:       6F45FFF4-6D1B-4ED6-A16C-7B3334FA763A
-   :END:
+** A minimalist Hugo theme for writers and bloggers :hugo: :PROPERTIES: :ID: 6F45FFF4-6D1B-4ED6-A16C-7B3334FA763A :END:
  [2020-03-03 Tue 10:40]
  https://github.com/kimcc/hugo-theme-noteworthy
-** Postgres Explain Visualizer 2                                               :database:
-   :PROPERTIES:
-   :ID:       9D889D63-FFAC-4313-9B6B-D39BB0B88A0B
-   :END:
+** Postgres Explain Visualizer 2 :database: :PROPERTIES: :ID: 9D889D63-FFAC-4313-9B6B-D39BB0B88A0B :END:
  [2020-03-03 Tue 09:41]
  https://github.com/dalibo/pev2
-** Python/Django ED Questionnaire                                              :python:django:
-   :PROPERTIES:
-   :ID:       6F00AC3D-9090-4142-9C30-89D016DC11DE
-   :END:
+** Python/Django ED Questionnaire :python:django: :PROPERTIES: :ID: 6F00AC3D-9090-4142-9C30-89D016DC11DE :END:
  [2020-03-02 Mon 15:00]
  https://github.com/eldest-daughter/ed-questionnaire
-** Django survey creator                                                       :python:django:
-   :PROPERTIES:
-   :ID:       0F6BDBF6-7DCF-463D-BB7A-224FC7BF064F
-   :END:
+** Django survey creator :python:django: :PROPERTIES: :ID: 0F6BDBF6-7DCF-463D-BB7A-224FC7BF064F :END:
  [2020-03-02 Mon 14:48]
  https://github.com/Pierre-Sassoulas/django-survey
-** String match in sliding window                                              :algorithms:
-   :PROPERTIES:
-   :ID:       A3103D34-58C0-4E62-9EEE-D2A492548699
-   :END:
+** String match in sliding window :algorithms: :PROPERTIES: :ID: A3103D34-58C0-4E62-9EEE-D2A492548699 :END:
  [2020-02-28 Fri 14:09]
  https://stackoverflow.com/questions/15151628/string-match-in-sliding-window
-** Scheme Natural Language Toolkit                                             :racket:nlp:
-   :PROPERTIES:
-   :ID:       257E419D-5FB7-481E-A289-E1AB67D05F4A
-   :END:
+** Scheme Natural Language Toolkit :racket:nlp: :PROPERTIES: :ID: 257E419D-5FB7-481E-A289-E1AB67D05F4A :END:
  [2020-02-28 Fri 12:32]
  https://github.com/dcavar/SNLTK
-** Simple NLP toolkit for an undergraduate class in Racket                     :racket:nlp:
-   :PROPERTIES:
-   :ID:       78DADA44-797D-4BD2-A10C-859F44E8A79C
-   :END:
+** Simple NLP toolkit for an undergraduate class in Racket :racket:nlp: :PROPERTIES: :ID: 78DADA44-797D-4BD2-A10C-859F44E8A79C :END:
  [2020-02-28 Fri 12:25]
  https://github.com/wboag/Scheme-NLP
-** Practical Racket: Using a JSON REST API                                     :racket:
-   :PROPERTIES:
-   :ID:       47907AC0-7504-4364-902F-7894F1CC5CA9
-   :END:
+** Practical Racket: Using a JSON REST API :racket: :PROPERTIES: :ID: 47907AC0-7504-4364-902F-7894F1CC5CA9 :END:
  [2020-02-28 Fri 12:23]
  https://medium.com/chris-opperwall/practical-racket-using-a-json-rest-api-3d85eb11cc2d
-** Càdlàg                                                                      :maths:
-   :PROPERTIES:
-   :ID:       73EA278F-7F84-4282-AB15-654AD6E07462
-   :END:
+** Càdlàg :maths: :PROPERTIES: :ID: 73EA278F-7F84-4282-AB15-654AD6E07462 :END:
  [2020-02-28 Fri 11:07]
  https://en.wikipedia.org/wiki/C%C3%A0dl%C3%A0g
-** SHA1 and random IDs                                                         :algorithms:
-   :PROPERTIES:
-   :ID:       6130FA58-7300-4B80-977E-9B15A302CA8B
-   :END:
+** SHA1 and random IDs :algorithms: :PROPERTIES: :ID: 6130FA58-7300-4B80-977E-9B15A302CA8B :END:
  [2020-02-28 Fri 09:52]
  https://stackoverflow.com/questions/9407892/how-to-generate-random-sha1-hash-to-use-as-id-in-node-js/14869745#14869745
-** How many imputations do you need?                                           :statistics:
-   :PROPERTIES:
-   :ID:       660D28FD-062D-47D9-8925-8198468E2FCA
-   :END:
+** How many imputations do you need? :statistics: :PROPERTIES: :ID: 660D28FD-062D-47D9-8925-8198468E2FCA :END:
  [2020-02-27 Thu 13:57]
  https://statisticalhorizons.com/how-many-imputations
-** A Racket package for playing the TwixT board game                           :racket:
-   :PROPERTIES:
-   :ID:       1A7221B4-9C62-423D-B9B0-4C422DF7003E
-   :END:
+** A Racket package for playing the TwixT board game :racket: :PROPERTIES: :ID: 1A7221B4-9C62-423D-B9B0-4C422DF7003E :END:
  [2020-02-27 Thu 13:57]
  https://github.com/jackfirth/twixt
-** Examples using emacs org mode babel inline source code                      :emacs:org:
-   :PROPERTIES:
-   :ID:       B5BFEA18-96BF-4FD4-8211-66E4A6C7CBD7
-   :END:
+** Examples using emacs org mode babel inline source code :emacs:org: :PROPERTIES: :ID: B5BFEA18-96BF-4FD4-8211-66E4A6C7CBD7 :END:
  [2020-02-26 Wed 20:32]
  https://github.com/dfeich/org-babel-examples
-** Vim Cheat Sheet                                                             :vim:
-   :PROPERTIES:
-   :ID:       DDBB121E-2AD1-4DF8-AC05-7D9B82C3EFEF
-   :END:
+** Vim Cheat Sheet :vim: :PROPERTIES: :ID: DDBB121E-2AD1-4DF8-AC05-7D9B82C3EFEF :END:
  [2020-02-26 Wed 14:40]
  https://vim.rtorr.com/
-** Numpy-style docstring                                                       :python:numpy:
-   :PROPERTIES:
-   :ID:       30765F41-AACB-4AFE-9E46-9F57D595C720
-   :END:
+** Numpy-style docstring :python:numpy: :PROPERTIES: :ID: 30765F41-AACB-4AFE-9E46-9F57D595C720 :END:
  [2020-02-26 Wed 13:25]
  https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard
-** Likelihood of a tree                                                        :bioinformatics:
-   :PROPERTIES:
-   :ID:       6F686781-FED4-44A2-AF29-00433C0978CC
-   :END:
+** Likelihood of a tree :bioinformatics: :PROPERTIES: :ID: 6F686781-FED4-44A2-AF29-00433C0978CC :END:
  [2020-02-26 Wed 11:33]
  https://www.cs.rice.edu/~ogilvie/comp571/2019/11/27/likelihood-of-a-tree.html
-** Tree comparisons                                                            :bioinformatics:
-   :PROPERTIES:
-   :ID:       2F00A3B8-05ED-46EB-A85B-A7072BA5DFDD
-   :END:
+** Tree comparisons :bioinformatics: :PROPERTIES: :ID: 2F00A3B8-05ED-46EB-A85B-A7072BA5DFDD :END:
  [2020-02-26 Wed 11:12]
  https://www.cs.rice.edu/~ogilvie/comp571/2018/10/18/tree-metrics.html
-** Rainbowing a set of pictures                                                :rstats:
-   :PROPERTIES:
-   :ID:       B530FEAB-E0B4-4B3F-9D20-F114E3D46622
-   :END:
+** Rainbowing a set of pictures :rstats: :PROPERTIES: :ID: B530FEAB-E0B4-4B3F-9D20-F114E3D46622 :END:
  [2020-02-25 Tue 13:42]
  https://masalmon.eu/2018/01/07/rainbowing/
-** Create fractal trees using R                                                :rstats:
-   :PROPERTIES:
-   :ID:       5BC10AC4-EC0E-4FF3-9AF8-7E3E686DAC93
-   :END:
+** Create fractal trees using R :rstats: :PROPERTIES: :ID: 5BC10AC4-EC0E-4FF3-9AF8-7E3E686DAC93 :END:
  [2020-02-25 Tue 13:33]
  https://github.com/andrie/fractaltree/
-** Modern, functional Common Lisp: Myths and best practices                    :lisp:
-   :PROPERTIES:
-   :ID:       0D4FF9F8-7E89-40C2-8352-452C1826D07B
-   :END:
+** Modern, functional Common Lisp: Myths and best practices :lisp: :PROPERTIES: :ID: 0D4FF9F8-7E89-40C2-8352-452C1826D07B :END:
  [2020-02-25 Tue 13:15]
  https://ambrevar.xyz/modern-common-lisp/index.html
-** align genomic features with phylogenetic tree                               :bioinformatics:
-   :PROPERTIES:
-   :ID:       1B204FC5-6F4E-4CFD-9828-428726554E45
-   :END:
+** align genomic features with phylogenetic tree :bioinformatics: :PROPERTIES: :ID: 1B204FC5-6F4E-4CFD-9828-428726554E45 :END:
  [2020-02-24 Mon 15:37]
  http://guangchuangyu.github.io/2016/11/align-genomic-features-with-phylogenetic-tree/
-** Creating Cyclic Data in Racket                                              :racket:
-   :PROPERTIES:
-   :ID:       E79C5669-07E7-47E6-8786-CCBAA25CD47A
-   :END:
+** Creating Cyclic Data in Racket :racket: :PROPERTIES: :ID: E79C5669-07E7-47E6-8786-CCBAA25CD47A :END:
  [2020-02-24 Mon 15:17]
  http://jeapostrophe.github.io/2013-12-02-sharish-post.html
-** Sequence simulator                                                          :bioinformatics:
-   :PROPERTIES:
-   :ID:       48871E92-339B-4EFA-ADB7-6A2CF74F2A81
-   :END:
+** Sequence simulator :bioinformatics: :PROPERTIES: :ID: 48871E92-339B-4EFA-ADB7-6A2CF74F2A81 :END:
  [2020-02-24 Mon 13:43]
  https://github.com/rambaut/Seq-Gen
-** bootstrap supports in large phylogenies                                     :bioinformatics:
-   :PROPERTIES:
-   :ID:       10447636-FC95-4A82-81D6-344215719956
-   :END:
+** bootstrap supports in large phylogenies :bioinformatics: :PROPERTIES: :ID: 10447636-FC95-4A82-81D6-344215719956 :END:
  [2020-02-24 Mon 13:35]
  https://github.com/evolbioinfo/booster
-** E Ink color theme for Emacs                                                 :emacs:
-   :PROPERTIES:
-   :ID:       026180F8-8D5C-4BBD-9FB3-67D04A4B4FD7
-   :END:
+** E Ink color theme for Emacs :emacs: :PROPERTIES: :ID: 026180F8-8D5C-4BBD-9FB3-67D04A4B4FD7 :END:
  [2020-02-21 Fri 14:57]
  https://github.com/maio/eink-emacs
-** Neovim Clojure(Script) tooling over prepl                                   :vim:clojure:
-   :PROPERTIES:
-   :ID:       D79DFA03-3C80-49C5-B43B-27D64A27DAF3
-   :END:
+** Neovim Clojure(Script) tooling over prepl :vim:clojure: :PROPERTIES: :ID: D79DFA03-3C80-49C5-B43B-27D64A27DAF3 :END:
  [2020-02-21 Fri 14:21]
  https://github.com/Olical/conjure
-** Genome Interval Arithmetic in R                                             :bioinformatics:rstats:
-   :PROPERTIES:
-   :ID:       35D28502-8EA2-4989-A40B-A7EA40222137
-   :END:
+** Genome Interval Arithmetic in R :bioinformatics:rstats: :PROPERTIES: :ID: 35D28502-8EA2-4989-A40B-A7EA40222137 :END:
  [2020-02-21 Fri 12:30]
  https://github.com/KlausVigo/valr
-** Embedded database in Rust                                                   :database:rust:
-   :PROPERTIES:
-   :ID:       17C2D2AA-4E8D-4B97-BA4B-2AB640CD81EC
-   :END:
+** Embedded database in Rust :database:rust: :PROPERTIES: :ID: 17C2D2AA-4E8D-4B97-BA4B-2AB640CD81EC :END:
  [2020-02-21 Fri 11:19]
  https://github.com/spacejam/sled
-** Bayesian Phylogenetic Analysis                                              :bioinformatics:bayesian:
-   :PROPERTIES:
-   :ID:       0D8FC7D8-584D-4F03-A9B2-774E12E21431
-   :END:
+** Bayesian Phylogenetic Analysis :bioinformatics:bayesian: :PROPERTIES: :ID: 0D8FC7D8-584D-4F03-A9B2-774E12E21431 :END:
  [2020-02-13 Thu 14:09]
  http://www.cbs.dtu.dk/dtucourse/cookbooks/gorm/27615/bayes1.php
-** Tutorial on Bayesian phylogenetic analysis                                  :bioinformatics:bayesian:
-   :PROPERTIES:
-   :ID:       13DF1278-79D9-4E54-8245-51C4E9C1BC5E
-   :END:
+** Tutorial on Bayesian phylogenetic analysis :bioinformatics:bayesian: :PROPERTIES: :ID: 13DF1278-79D9-4E54-8245-51C4E9C1BC5E :END:
  [2020-02-13 Thu 14:05]
  https://github.com/thednainus/Bayesian_tutorial
-** Competitive Programming snippets                                            :algorithms:
-   :PROPERTIES:
-   :ID:       AD3C22FE-4D30-4FEC-A741-F97F41D79FAA
-   :END:
+** Competitive Programming snippets :algorithms: :PROPERTIES: :ID: AD3C22FE-4D30-4FEC-A741-F97F41D79FAA :END:
  [2020-02-12 Wed 11:30]
  https://github.com/sei40kr/competitive-programming-snippets/tree/4c59790fefa8d717f9c3d6bdeb9b4bfd3e039cbc
-** M-EMACS, a customized full-featured GNU Emacs configuration                 :emacs:
-   :PROPERTIES:
-   :ID:       E2DEE741-03B3-415C-9871-6780AD835617
-   :END:
+** M-EMACS, a customized full-featured GNU Emacs configuration :emacs: :PROPERTIES: :ID: E2DEE741-03B3-415C-9871-6780AD835617 :END:
  [2020-02-11 Tue 11:03]
  https://github.com/MatthewZMD/.emacs.d
-** Is a Dataframe Just a Table?                                                :statistics:
-   :PROPERTIES:
-   :ID:       505CEBB3-FB55-4FE0-AC6B-4754B237E880
-   :END:
+** Is a Dataframe Just a Table? :statistics: :PROPERTIES: :ID: 505CEBB3-FB55-4FE0-AC6B-4754B237E880 :END:
  [2020-02-11 Tue 10:30]
  https://plateau-workshop.org/assets/papers-2019/10.pdf
-** Automatic parallelization with @jit                                         :python:
-   :PROPERTIES:
-   :ID:       27DB6CA9-DCC4-438E-B007-CEB22CB9F943
-   :END:
+** Automatic parallelization with @jit :python: :PROPERTIES: :ID: 27DB6CA9-DCC4-438E-B007-CEB22CB9F943 :END:
  [2020-02-10 Mon 16:17]
  http://numba.pydata.org/numba-doc/latest/user/parallel.html#numba-parallel
-** Les enchères en temps réel (RTB), un système complexe                       :misc:
-   :PROPERTIES:
-   :ID:       0FBE2F94-66BF-45FB-BB39-C28A92118F18
-   :END:
+** Les enchères en temps réel (RTB), un système complexe :misc: :PROPERTIES: :ID: 0FBE2F94-66BF-45FB-BB39-C28A92118F18 :END:
  [2020-02-07 Fri 15:41]
  missing value
-** Introduction to numerical analysis                                          :numerical:
-   :PROPERTIES:
-   :ID:       350B543D-6BF2-4D12-B9E8-8380DD8928CA
-   :END:
+** Introduction to numerical analysis :numerical: :PROPERTIES: :ID: 350B543D-6BF2-4D12-B9E8-8380DD8928CA :END:
  [2020-02-07 Fri 13:51]
  https://github.com/mitmath/18330
-** Steiner trees                                                               :python:
-   :PROPERTIES:
-   :ID:       BB2DB7A8-DA2C-4171-9759-FF89D9724469
-   :END:
+** Steiner trees :python: :PROPERTIES: :ID: BB2DB7A8-DA2C-4171-9759-FF89D9724469 :END:
  [2020-02-07 Fri 11:18]
  https://gis.stackexchange.com/questions/307336/generating-steiner-tree-using-network-x-in-python
-** Shortest path and networkx                                                  :python:graphs:
-   :PROPERTIES:
-   :ID:       20B4ADD5-76BA-4B3D-AE08-C55BEE7E78A0
-   :END:
+** Shortest path and networkx :python:graphs: :PROPERTIES: :ID: 20B4ADD5-76BA-4B3D-AE08-C55BEE7E78A0 :END:
  [2020-02-07 Fri 11:16]
  http://cxhernandez.com/tutorials/networks/2015/03/29/shortest-path.html
-** Lessons From The History Of Attacks On Secure Hash Functions                :cryptography:
-   :PROPERTIES:
-   :ID:       A0F86983-044A-49B3-9D22-C56DD7CDF1F0
-   :END:
+** Lessons From The History Of Attacks On Secure Hash Functions :cryptography: :PROPERTIES: :ID: A0F86983-044A-49B3-9D22-C56DD7CDF1F0 :END:
  [2020-02-07 Fri 11:07]
  https://electriccoin.co/blog/lessons-from-the-history-of-attacks-on-secure-hash-functions/
-** Network analysis in Python                                                  :python:graphs:
-   :PROPERTIES:
-   :ID:       3EB7245A-91F9-44DD-A537-D67B9696B363
-   :END:
+** Network analysis in Python :python:graphs: :PROPERTIES: :ID: 3EB7245A-91F9-44DD-A537-D67B9696B363 :END:
  [2020-02-05 Wed 14:34]
  https://github.com/wblakecannon/DataCamp/tree/master/21-network-analysis-in-python-(part-1)
-** Numpy group_by and set-operations                                           :python:numpy:
-   :PROPERTIES:
-   :ID:       CB0654F2-3B00-46EB-8F34-7112213DB8F5
-   :END:
+** Numpy group_by and set-operations :python:numpy: :PROPERTIES: :ID: CB0654F2-3B00-46EB-8F34-7112213DB8F5 :END:
  [2020-02-05 Wed 14:14]
  https://github.com/EelcoHoogendoorn/Numpy_arraysetops_EP
-** Docker implemented in around 100 lines of bash.                             :docker:
-   :PROPERTIES:
-   :ID:       C9E45947-38C1-4202-A943-A2AE77343600
-   :END:
+** Docker implemented in around 100 lines of bash. :docker: :PROPERTIES: :ID: C9E45947-38C1-4202-A943-A2AE77343600 :END:
  [2020-02-05 Wed 09:12]
  https://github.com/p8952/bocker/blob/master/README.md
-** Using Emacs and Org Mode                                                    :emacs:org:
-   :PROPERTIES:
-   :ID:       24470BB4-4CC5-479B-95EF-9320F6B29EB9
-   :END:
+** Using Emacs and Org Mode :emacs:org: :PROPERTIES: :ID: 24470BB4-4CC5-479B-95EF-9320F6B29EB9 :END:
  [2020-02-04 Tue 17:13]
  https://edom.github.io/emacs.html
-** LightGBM                                                                    :ml:
-   :PROPERTIES:
-   :ID:       04273433-C2AE-41B0-AA49-2A1EED54231E
-   :END:
+** LightGBM :ml: :PROPERTIES: :ID: 04273433-C2AE-41B0-AA49-2A1EED54231E :END:
  [2020-02-04 Tue 14:10]
  https://github.com/Microsoft/LightGBM
-** Phylogenetic trees in Mathematica                                           :bioinformatics:mathematica:
-   :PROPERTIES:
-   :ID:       DBDBAB28-B4F7-4638-BEDA-78FCF72B9066
-   :END:
+** Phylogenetic trees in Mathematica :bioinformatics:mathematica: :PROPERTIES: :ID: DBDBAB28-B4F7-4638-BEDA-78FCF72B9066 :END:
  [2020-02-04 Tue 13:54]
  https://mathematica.stackexchange.com/questions/126496/how-to-work-with-phylogenetic-trees
-** NULL Values in SQL Queries                                                  :sql:
-   :PROPERTIES:
-   :ID:       8A466E33-4D68-4965-AAA3-11EAD24DC62D
-   :END:
+** NULL Values in SQL Queries :sql: :PROPERTIES: :ID: 8A466E33-4D68-4965-AAA3-11EAD24DC62D :END:
  [2020-02-04 Tue 10:29]
  https://mitchum.blog/null-values-in-sql-queries/
-** Access your device's terminal from anywhere via the web                     :misc:
-   :PROPERTIES:
-   :ID:       6E08324D-2D63-46A9-B7DB-C3FE41302E74
-   :END:
+** Access your device's terminal from anywhere via the web :misc: :PROPERTIES: :ID: 6E08324D-2D63-46A9-B7DB-C3FE41302E74 :END:
  [2020-02-04 Tue 10:28]
  https://github.com/zhaojh329/rtty
-** Pathfinding Demystified                                                     :graphs:
-   :PROPERTIES:
-   :ID:       6CF77F05-75F5-49DD-B11D-6D7EDCA746B8
-   :END:
+** Pathfinding Demystified :graphs: :PROPERTIES: :ID: 6CF77F05-75F5-49DD-B11D-6D7EDCA746B8 :END:
  [2020-02-04 Tue 10:26]
  https://gabrielgambetta.com/generic-search.html
-** Python package supporting heavy functional programming through currying     :python:
-   :PROPERTIES:
-   :ID:       D0C3F993-A330-40F1-9394-03C7864C2F66
-   :END:
+** Python package supporting heavy functional programming through currying :python: :PROPERTIES: :ID: D0C3F993-A330-40F1-9394-03C7864C2F66 :END:
  [2020-02-03 Lun 17:09]
  https://github.com/jackfirth/pyramda
-** Racket package template ready for Github                                    :racket:
-   :PROPERTIES:
-   :ID:       CCEF9AE6-2809-4C44-B6DC-5FF3F4092407
-   :END:
+** Racket package template ready for Github :racket: :PROPERTIES: :ID: CCEF9AE6-2809-4C44-B6DC-5FF3F4092407 :END:
  [2020-02-03 Lun 17:08]
  https://github.com/jackfirth/racket-package-template
-** Looping in Scheme                                                           :scheme:
-   :PROPERTIES:
-   :ID:       BE97043C-BDC4-4994-9944-3FF1C346580D
-   :END:
+** Looping in Scheme :scheme: :PROPERTIES: :ID: BE97043C-BDC4-4994-9944-3FF1C346580D :END:
  [2020-01-31 Fri 07:59]
  36:39: execution error: Non autorisé à envoyer des événements Apple à Safari. (-1743)
-** One-Hour Package (#rstats)                                                  :rstats:
-   :PROPERTIES:
-   :ID:       AEE93FCE-BE48-4FBA-9F4E-058545705573
-   :END:
+** One-Hour Package (#rstats) :rstats: :PROPERTIES: :ID: AEE93FCE-BE48-4FBA-9F4E-058545705573 :END:
  [2020-01-30 Jeu 14:55]
  https://enpiar.com/2017/08/11/one-hour-package/
-** Columnar File Performance Check-in: Parquet, Feather, and FST               :python:rstats:
-   :PROPERTIES:
-   :ID:       1F6577DC-F546-4C5A-8F8F-F52AC9487116
-   :END:
+** Columnar File Performance Check-in: Parquet, Feather, and FST :python:rstats: :PROPERTIES: :ID: 1F6577DC-F546-4C5A-8F8F-F52AC9487116 :END:
  [2020-01-30 Jeu 14:52]
  https://ursalabs.org/blog/2019-10-columnar-perf/
-** Introducing Apache Arrow Flight: A Framework for Fast Data Transport        :arrow:
-   :PROPERTIES:
-   :ID:       EFF072B8-5A33-477F-B051-537957FFBBF7
-   :END:
+** Introducing Apache Arrow Flight: A Framework for Fast Data Transport :arrow: :PROPERTIES: :ID: EFF072B8-5A33-477F-B051-537957FFBBF7 :END:
  [2020-01-30 Jeu 14:51]
  https://arrow.apache.org/blog/2019/10/13/introducing-arrow-flight/
-** Speeding up R and Apache Spark using Apache Arrow                           :arrow:rstats:
-   :PROPERTIES:
-   :ID:       08C771B1-B476-4E70-AFBB-138A9623C926
-   :END:
+** Speeding up R and Apache Spark using Apache Arrow :arrow:rstats: :PROPERTIES: :ID: 08C771B1-B476-4E70-AFBB-138A9623C926 :END:
  [2020-01-30 Jeu 14:21]
  https://arrow.apache.org/blog/2019/01/25/r-spark-improvements/
-** Command-line Tools can be 235x Faster than your Hadoop Cluster              :hadoop:cli:
-   :PROPERTIES:
-   :ID:       7541AC54-C5A8-41A9-85B6-F00095112B5C
-   :END:
+** Command-line Tools can be 235x Faster than your Hadoop Cluster :hadoop:cli: :PROPERTIES: :ID: 7541AC54-C5A8-41A9-85B6-F00095112B5C :END:
  [2020-01-30 Jeu 10:37]
  https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html
-** Sorting algorithms in C                                                     :algorithms:clang:
-   :PROPERTIES:
-   :ID:       A8D76A87-94B4-4FFE-8246-68D6C6B508C8
-   :END:
+** Sorting algorithms in C :algorithms:clang: :PROPERTIES: :ID: A8D76A87-94B4-4FFE-8246-68D6C6B508C8 :END:
  [2020-01-30 Jeu 10:36]
  https://github.com/ismdeep/sort-algos-c
-** Find number of times a string occurs as a subsequence in given string       :algorithms:
-   :PROPERTIES:
-   :ID:       493B5663-7E90-4FAF-A87F-61427CA99C53
-   :END:
+** Find number of times a string occurs as a subsequence in given string :algorithms: :PROPERTIES: :ID: 493B5663-7E90-4FAF-A87F-61427CA99C53 :END:
  [2020-01-29 Mer 16:46]
  https://www.geeksforgeeks.org/find-number-times-string-occurs-given-string/
-** Introduction to Random Strings                                              :algorithms:
-   :PROPERTIES:
-   :ID:       226229C8-AA3A-4E58-8DF2-7E0AA03EA6F6
-   :END:
+** Introduction to Random Strings :algorithms: :PROPERTIES: :ID: 226229C8-AA3A-4E58-8DF2-7E0AA03EA6F6 :END:
  [2020-01-29 Mer 13:30]
  https://saradoesbioinformatics.blogspot.com/2016/07/introduction-to-random-strings.html
-** Chaos Game Representation of a genetic sequence                             :bioinformatics:
-   :PROPERTIES:
-   :ID:       2A35A1B7-2D43-49A0-BB83-D904EE73D4F4
-   :END:
+** Chaos Game Representation of a genetic sequence :bioinformatics: :PROPERTIES: :ID: 2A35A1B7-2D43-49A0-BB83-D904EE73D4F4 :END:
  [2020-01-29 Mer 12:29]
  https://towardsdatascience.com/chaos-game-representation-of-a-genetic-sequence-4681f1a67e14
-** Standard prelude for Scheme (Programming Praxis)                            :scheme:
-   :PROPERTIES:
-   :ID:       6B2D0823-A44D-476F-B1C6-5A0FC05BF2C1
-   :END:
+** Standard prelude for Scheme (Programming Praxis) :scheme: :PROPERTIES: :ID: 6B2D0823-A44D-476F-B1C6-5A0FC05BF2C1 :END:
  [2020-01-28 Mar 16:00]
  https://programmingpraxis.com/contents/standard-prelude/
-** Standard Prelude for Haskell 98                                             :haskell:
-   :PROPERTIES:
-   :ID:       6DB5C512-10F1-4355-99F3-3EE28B06A817
-   :END:
+** Standard Prelude for Haskell 98 :haskell: :PROPERTIES: :ID: 6DB5C512-10F1-4355-99F3-3EE28B06A817 :END:
  [2020-01-28 Mar 15:59]
  https://www.haskell.org/onlinereport/standard-prelude.html
-** Utilities for Gene Ontology enrichment analysis (C + Python)                :bioinformatics:
-   :PROPERTIES:
-   :ID:       9B33D3BD-496F-47D8-9AAD-BB6E25343016
-   :END:
+** Utilities for Gene Ontology enrichment analysis (C + Python) :bioinformatics: :PROPERTIES: :ID: 9B33D3BD-496F-47D8-9AAD-BB6E25343016 :END:
  [2020-01-28 Mar 10:36]
  https://github.com/thecodingdoc/GOUtil
-** Toolkit for genome assembly (feat. P. anserina)                             :bioinformatics:
-   :PROPERTIES:
-   :ID:       76C17EBB-8A9E-4448-8A3B-F4F41058A2B5
-   :END:
+** Toolkit for genome assembly (feat. P. anserina) :bioinformatics: :PROPERTIES: :ID: 76C17EBB-8A9E-4448-8A3B-F4F41058A2B5 :END:
  [2020-01-27 Lun 16:54]
  https://blobtoolkit.genomehubs.org/
-** Fun with Forms (Django)                                                     :python:django:
-   :PROPERTIES:
-   :ID:       3ADBE1C7-5874-4DC8-97A6-AF750C75DBD4
-   :END:
+** Fun with Forms (Django) :python:django: :PROPERTIES: :ID: 3ADBE1C7-5874-4DC8-97A6-AF750C75DBD4 :END:
  [2020-01-27 Lun 16:21]
  https://www.tangowithdjango.com/book/chapters/forms.html
-** GO Enrichment Analysis (using Galaxy)                                       :bioinformatics:
-   :PROPERTIES:
-   :ID:       75E88F4A-D506-4B9F-BFEF-6BE8787756CE
-   :END:
+** GO Enrichment Analysis (using Galaxy) :bioinformatics: :PROPERTIES: :ID: 75E88F4A-D506-4B9F-BFEF-6BE8787756CE :END:
  [2020-01-27 Lun 12:58]
  https://galaxyproject.github.io/training-material/topics/transcriptomics/tutorials/goenrichment/tutorial.html
-** Probability of finding a particular sequence of base pairs                  :bioinformatics:
-   :PROPERTIES:
-   :ID:       86ADA7BD-F71C-453A-93FF-159AF5FB4DD4
-   :END:
+** Probability of finding a particular sequence of base pairs :bioinformatics: :PROPERTIES: :ID: 86ADA7BD-F71C-453A-93FF-159AF5FB4DD4 :END:
  [2020-01-23 Jeu 15:40]
  https://stats.stackexchange.com/questions/26988/probability-of-finding-a-particular-sequence-of-base-pairs
-** Probability Of Finding A Dna Sequence In A Window                           :bioinformatics:
-   :PROPERTIES:
-   :ID:       A7575339-593A-4FE3-8D48-D84300D204D4
-   :END:
+** Probability Of Finding A Dna Sequence In A Window :bioinformatics: :PROPERTIES: :ID: A7575339-593A-4FE3-8D48-D84300D204D4 :END:
  [2020-01-23 Jeu 15:21]
  https://www.biostars.org/p/69354/
-** Why are you changing gc-cons-threshold?                                     :emacs:
-   :PROPERTIES:
-   :ID:       B13887B6-7F5B-4116-8378-202DCC5854C9
-   :END:
+** Why are you changing gc-cons-threshold? :emacs: :PROPERTIES: :ID: B13887B6-7F5B-4116-8378-202DCC5854C9 :END:
  [2020-01-22 Mer 15:12]
  http://bling.github.io/blog/2016/01/18/why-are-you-changing-gc-cons-threshold/
-** UnicodeMath: A Nearly Plain-Text Encoding of Mathematics                    :maths:misc:
-   :PROPERTIES:
-   :ID:       A30565D3-2507-4AE3-B4FC-67779A0EC3C6
-   :END:
+** UnicodeMath: A Nearly Plain-Text Encoding of Mathematics :maths:misc: :PROPERTIES: :ID: A30565D3-2507-4AE3-B4FC-67779A0EC3C6 :END:
  [2020-01-22 Mer 14:47]
  https://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.1.pdf
-** Ten Little Algorithms, Part 1: Russian Peasant Multiplication               :algorithms:
-   :PROPERTIES:
-   :ID:       7AE793C9-B2E6-4908-ABA8-3AA0E0771B6D
-   :END:
+** Ten Little Algorithms, Part 1: Russian Peasant Multiplication :algorithms: :PROPERTIES: :ID: 7AE793C9-B2E6-4908-ABA8-3AA0E0771B6D :END:
  [2020-01-22 Mer 12:43]
  https://www.embeddedrelated.com/showarticle/760.php
-** Arithmetic articles, problems, and puzzles                                  :maths:
-   :PROPERTIES:
-   :ID:       3EC09A4B-FEB2-421D-A588-ABAC95A3433E
-   :END:
+** Arithmetic articles, problems, and puzzles :maths: :PROPERTIES: :ID: 3EC09A4B-FEB2-421D-A588-ABAC95A3433E :END:
  [2020-01-22 Mer 11:31]
  https://www.cut-the-knot.org/arithmetic.shtml
-** Le tutoriel Python                                                          :python:
-   :PROPERTIES:
-   :ID:       B96CF16C-0212-4F4F-B588-BD7781B2A545
-   :END:
+** Le tutoriel Python :python: :PROPERTIES: :ID: B96CF16C-0212-4F4F-B588-BD7781B2A545 :END:
  [2020-01-22 Mer 09:13]
  https://docs.python.org/fr/3/tutorial/index.html
-** Global alignment and alignment extension                                    :bioinformatics:
-   :PROPERTIES:
-   :ID:       3078CF97-6EE7-4C99-92C9-6498911DBD9A
-   :END:
+** Global alignment and alignment extension :bioinformatics: :PROPERTIES: :ID: 3078CF97-6EE7-4C99-92C9-6498911DBD9A :END:
  [2020-01-21 Mar 16:47]
  https://github.com/lh3/ksw2
-** Cleanup virtualfish env after Homebrew upgrade                              :python:cli:
-   :PROPERTIES:
-   :ID:       40099253-F7FF-4B62-9FDB-22A8D4F4C758
-   :END:
+** Cleanup virtualfish env after Homebrew upgrade :python:cli: :PROPERTIES: :ID: 40099253-F7FF-4B62-9FDB-22A8D4F4C758 :END:
  [2020-01-21 Mar 15:06]
  https://stackoverflow.com/questions/23233252/broken-references-in-virtualenvs
-** Rope (data structure)                                                       :algorithms:
-   :PROPERTIES:
-   :ID:       4D2A9DDA-434B-4827-BDC6-F7E742D14DBA
-   :END:
+** Rope (data structure) :algorithms: :PROPERTIES: :ID: 4D2A9DDA-434B-4827-BDC6-F7E742D14DBA :END:
  [2020-01-21 Mar 13:56]
  https://en.wikipedia.org/wiki/Rope_(data_structure)
-** A Definition of Closures                                                    :lisp:
-   :PROPERTIES:
-   :ID:       9BC47136-8BFF-4F54-8B5B-87042FD14A01
-   :END:
+** A Definition of Closures :lisp: :PROPERTIES: :ID: 9BC47136-8BFF-4F54-8B5B-87042FD14A01 :END:
  [2020-01-21 Mar 13:51]
  http://gafter.blogspot.com/2007/01/definition-of-closures.html
-** UNIX Syscalls                                                               :unix:
-   :PROPERTIES:
-   :ID:       DEE9E033-30EC-411C-9B37-D7AA3D232C13
-   :END:
+** UNIX Syscalls :unix: :PROPERTIES: :ID: DEE9E033-30EC-411C-9B37-D7AA3D232C13 :END:
  [2020-01-21 Mar 13:00]
  http://fungi-db.herokuapp.com/view/956
-** Obfuscated Vim code                                                         :vim:
-   :PROPERTIES:
-   :ID:       D24E671E-3AFB-4C3B-9AF7-26FB100F1E17
-   :END:
+** Obfuscated Vim code :vim: :PROPERTIES: :ID: D24E671E-3AFB-4C3B-9AF7-26FB100F1E17 :END:
  [2020-01-21 Mar 12:29]
  https://www.linusakesson.net/programming/vim/index.php
-** Fun with .Rprofile and customizing R startup                                :rstats:
-   :PROPERTIES:
-   :ID:       566F5F08-B411-4BEF-B49A-C1DA051F77A3
-   :END:
+** Fun with .Rprofile and customizing R startup :rstats: :PROPERTIES: :ID: 566F5F08-B411-4BEF-B49A-C1DA051F77A3 :END:
  [2020-01-21 Mar 11:57]
  https://www.r-bloggers.com/fun-with-rprofile-and-customizing-r-startup/
-** Nice org config for Doom Emacs                                              :emacs:
-   :PROPERTIES:
-   :ID:       86F7E323-8CA4-4CC2-BBB2-4C684CCC18D0
-   :END:
+** Nice org config for Doom Emacs :emacs: :PROPERTIES: :ID: 86F7E323-8CA4-4CC2-BBB2-4C684CCC18D0 :END:
  [2020-01-21 Mar 09:50]
  https://github.com/nmartin84/.doom.d
-** xsv for indexing, slicing, analyzing, splitting and joining CSV files.      :misc:
-   :PROPERTIES:
-   :ID:       BE4EBCDE-87CE-48E6-9DA9-28A7E2DB062D
-   :END:
+** xsv for indexing, slicing, analyzing, splitting and joining CSV files. :misc: :PROPERTIES: :ID: BE4EBCDE-87CE-48E6-9DA9-28A7E2DB062D :END:
  [2020-01-20 Lun 14:27]
  https://github.com/BurntSushi/xsv
-** Why is quicksort better than other sorting algorithms in practice?          :algorithms:
-   :PROPERTIES:
-   :ID:       F6AB06B2-AC16-433E-8C0E-0E38F095BED3
-   :END:
+** Why is quicksort better than other sorting algorithms in practice? :algorithms: :PROPERTIES: :ID: F6AB06B2-AC16-433E-8C0E-0E38F095BED3 :END:
  [2020-01-20 Lun 14:23]
  https://cs.stackexchange.com/questions/3/why-is-quicksort-better-than-other-sorting-algorithms-in-practice
-** Ergolib to make programming in Common Lisp easier.                          :lisp:
+** Ergolib to make programming in Common Lisp easier. :lisp:
  [2020-01-20 Lun 12:28]
  https://github.com/rongarret/ergolib
-** Lisping at JPL                                                              :lisp:
+** Lisping at JPL :lisp:
  [2020-01-20 Lun 12:26]
  http://flownet.com/gat/jpl-lisp.html
-** R7RS SRFI implementations                                                   :scheme:
-   :PROPERTIES:
-   :ID:       99259404-1186-4D3B-900B-31A0B1DD2214
-   :END:
+** R7RS SRFI implementations :scheme: :PROPERTIES: :ID: 99259404-1186-4D3B-900B-31A0B1DD2214 :END:
  [2020-01-17 Ven 09:55]
  https://github.com/TaylanUB/scheme-srfis
-** New C standard online                                                       :clang:
-   :PROPERTIES:
-   :ID:       AF334E61-74CF-4EC4-8C51-3D47778C5720
-   :END:
+** New C standard online :clang: :PROPERTIES: :ID: AF334E61-74CF-4EC4-8C51-3D47778C5720 :END:
  [2020-01-16 Jeu 14:03]
  http://c0x.coding-guidelines.com/
-** A new algorithm for finding a visual center of a polygon                    :algorithms:
-   :PROPERTIES:
-   :ID:       065D983B-B7AD-442A-9BFE-035D0163B1E4
-   :END:
+** A new algorithm for finding a visual center of a polygon :algorithms: :PROPERTIES: :ID: 065D983B-B7AD-442A-9BFE-035D0163B1E4 :END:
  [2020-01-15 Mer 16:44]
  https://blog.mapbox.com/a-new-algorithm-for-finding-a-visual-center-of-a-polygon-7c77e6492fbc
-** OpenGL Setup in macOS                                                       :misc:
-   :PROPERTIES:
-   :ID:       92787029-EAEF-4601-B3A6-350C402A229B
-   :END:
+** OpenGL Setup in macOS :misc: :PROPERTIES: :ID: 92787029-EAEF-4601-B3A6-350C402A229B :END:
  [2020-01-15 Mer 15:48]
  https://giovanni.codes/opengl-setup-in-macos/
-** Using OpenGL with Common Lisp                                               :lisp:
-   :PROPERTIES:
-   :ID:       5C70E4EF-31ED-412C-A4AB-17D4F8C33304
-   :END:
+** Using OpenGL with Common Lisp :lisp: :PROPERTIES: :ID: 5C70E4EF-31ED-412C-A4AB-17D4F8C33304 :END:
  [2020-01-15 Mer 15:47]
  https://markbrown778.wordpress.com/2013/04/14/using-opengl-with-common-lisp-and-macos-x/
-** PyOxidizer is a utility for producing binaries that embed Python            :python:
-   :PROPERTIES:
-   :ID:       98B97236-C191-459B-B33E-C272ED776925
-   :END:
+** PyOxidizer is a utility for producing binaries that embed Python :python: :PROPERTIES: :ID: 98B97236-C191-459B-B33E-C272ED776925 :END:
  [2020-01-14 Mar 15:40]
  https://github.com/indygreg/PyOxidizer
-** Why I Keep a Research Blog                                                  :misc:
-   :PROPERTIES:
-   :ID:       AB0432DE-F04D-40E9-9356-8DC480EA5B5A
-   :END:
+** Why I Keep a Research Blog :misc: :PROPERTIES: :ID: AB0432DE-F04D-40E9-9356-8DC480EA5B5A :END:
  [2020-01-13 Lun 16:09]
  http://gregorygundersen.com/blog/2020/01/12/why-research-blog/
-** Heap in Lisp                                                                :lisp:
-   :PROPERTIES:
-   :ID:       597DF12D-8CCC-479E-8D02-2C66C9147E06
-   :END:
+** Heap in Lisp :lisp: :PROPERTIES: :ID: 597DF12D-8CCC-479E-8D02-2C66C9147E06 :END:
  [2020-01-10 Ven 19:44]
  http://gms.freeshell.org/lisp-heap/heap.txt
-** List of terms relating to algorithms and data structures                    :algorithms:
-   :PROPERTIES:
-   :ID:       A707DBDC-12C6-490F-B1BA-3363F79D77E3
-   :END:
+** List of terms relating to algorithms and data structures :algorithms: :PROPERTIES: :ID: A707DBDC-12C6-490F-B1BA-3363F79D77E3 :END:
  [2020-01-10 Ven 14:14]
  https://en.m.wikipedia.org/wiki/List_of_terms_relating_to_algorithms_and_data_structures
-** Graph structures in C                                                       :graphs:clang:
-   :PROPERTIES:
-   :ID:       1880D01C-3DED-411D-82E1-90ECD80199D0
-   :END:
+** Graph structures in C :graphs:clang: :PROPERTIES: :ID: 1880D01C-3DED-411D-82E1-90ECD80199D0 :END:
  [2020-01-10 Ven 14:08]
  https://www.techiedelight.com/implement-graph-data-structure-c/
-** Parallel Processing in Python                                               :python:
-   :PROPERTIES:
-   :ID:       0B8A54E0-3287-48ED-94F0-25DCB730A5E0
-   :END:
+** Parallel Processing in Python :python: :PROPERTIES: :ID: 0B8A54E0-3287-48ED-94F0-25DCB730A5E0 :END:
  [2020-01-09 Jeu 14:22]
  https://stackabuse.com/parallel-processing-in-python/
-** Data science for economists                                                 :econ:
-   :PROPERTIES:
-   :ID:       DDACF1F5-448A-4C1B-A366-B3363DA1CF3E
-   :END:
+** Data science for economists :econ: :PROPERTIES: :ID: DDACF1F5-448A-4C1B-A366-B3363DA1CF3E :END:
  [2020-01-09 Jeu 10:35]
  https://github.com/uo-ec607/lectures
-** Parallel programming using R                                                :rstats:
-   :PROPERTIES:
-   :ID:       EBD078FF-4EAD-4FCB-A480-205C497BAEFA
-   :END:
+** Parallel programming using R :rstats: :PROPERTIES: :ID: EBD078FF-4EAD-4FCB-A480-205C497BAEFA :END:
  [2020-01-09 Jeu 10:33]
  https://raw.githack.com/uo-ec607/lectures/master/12-parallel/12-parallel.html#beware_resource_competition
-** Scientific computing with Rust                                              :rust:
-   :PROPERTIES:
-   :ID:       C6A81828-DD6F-44D7-9DAF-D045E59AA5AF
-   :END:
+** Scientific computing with Rust :rust: :PROPERTIES: :ID: C6A81828-DD6F-44D7-9DAF-D045E59AA5AF :END:
  [2020-01-08 Mer 14:27]
  https://rust-sci.github.io/
-** Rust crates for numerical simulation                                        :rust:numerical:
-   :PROPERTIES:
-   :ID:       C870B658-9B7B-4A21-B991-DBCB46C3E273
-   :END:
+** Rust crates for numerical simulation :rust:numerical: :PROPERTIES: :ID: C870B658-9B7B-4A21-B991-DBCB46C3E273 :END:
  [2020-01-08 Mer 14:25]
  https://rustsim.org/
-** Convert .py to .exe                                                         :python:cli:
-   :PROPERTIES:
-   :ID:       B7147882-7981-4B8A-87B2-EDE9EC8D3989
-   :END:
+** Convert .py to .exe :python:cli: :PROPERTIES: :ID: B7147882-7981-4B8A-87B2-EDE9EC8D3989 :END:
  [2020-01-08 Mer 12:02]
  https://nitratine.net/blog/post/convert-py-to-exe/
-** ZSH higher order functions                                                  :cli:
-   :PROPERTIES:
-   :ID:       401DF046-A368-42AA-883E-8E8C02173CFE
-   :END:
+** ZSH higher order functions :cli: :PROPERTIES: :ID: 401DF046-A368-42AA-883E-8E8C02173CFE :END:
  [2020-01-07 Mar 14:34]
  https://github.com/yogsototh/zsh_functional
-** Gamma function                                                                     :statistics:
-   :PROPERTIES:
-   :ID:       0323F358-24F3-48C3-ADF9-0E119DDE694F
-   :END:
+** Gamma function :statistics: :PROPERTIES: :ID: 0323F358-24F3-48C3-ADF9-0E119DDE694F :END:
  [2020-01-07 Mar 08:09]
  https://probabilityandstats.wordpress.com/2017/08/20/the-gamma-function/
-** Cryptographic libraries for R6RS Scheme                                     :cryptography:scheme:
-   :PROPERTIES:
-   :ID:       F29F5FF0-6820-4A0F-86FA-D9F6C856DD2F
-   :END:
+** Cryptographic libraries for R6RS Scheme :cryptography:scheme: :PROPERTIES: :ID: F29F5FF0-6820-4A0F-86FA-D9F6C856DD2F :END:
  [2020-01-06 Lun 11:46]
  https://github.com/weinholt/industria
-** Algebric data types and unordered effects                                   :haskell:
-   :PROPERTIES:
-   :ID:       08EDD394-A676-4550-96D3-443B2F87640E
-   :END:
+** Algebric data types and unordered effects :haskell: :PROPERTIES: :ID: 08EDD394-A676-4550-96D3-443B2F87640E :END:
  [2020-01-06 Lun 11:24]
  https://www.reddit.com/r/haskell/comments/ej8fme/unordered_effects/fd00mk2/
-** Why do Racket hash literals (i.e. #hash()) automatically quote              :racket:
-   :PROPERTIES:
-   :ID:       6C09B3DB-725D-4F96-862B-9B0C23D16E79
-   :END:
+** Why do Racket hash literals (i.e. #hash()) automatically quote :racket: :PROPERTIES: :ID: 6C09B3DB-725D-4F96-862B-9B0C23D16E79 :END:
  [2020-01-06 Lun 11:22]
  https://www.reddit.com/r/Racket/comments/ehwz0j/why_do_racket_hash_literals_ie_hash_automatically/fcmb1e5/?context=3
-** Neighbour sensing model for fungi growth                                    :bioinformatics:
+** Neighbour sensing model for fungi growth :bioinformatics:
  [2019-12-18 Wed 12:07]
  http://www.davidmoore.org.uk/CyberWEB/Cyber04.htm
-** Generative Hyphae Growth Algorithm                                          :algorithms:
+** Generative Hyphae Growth Algorithm :algorithms:
  [2019-12-18 Wed 12:01]
  https://github.com/shaanappel/generative-hyphae-3d
-** Hyphal branching using Processing                                           :processing:
+** Hyphal branching using Processing :processing:
  [2019-12-18 Wed 11:13]
  http://www.iaacblog.com/programs/introduction-processing-hyphal-branching/
-** Xylem and hyphae network                                                    :bioinformatics:
+** Xylem and hyphae network :bioinformatics:
  [2019-12-18 Wed 11:10]
  https://n-e-r-v-o-u-s.com/blog/?p=1218
-** Let's Write an LLVM Specializer for Python!                                 :python:llvm:
+** Let's Write an LLVM Specializer for Python! :python:llvm:
  [2019-12-18 Wed 10:58]
  http://dev.stephendiehl.com/numpile/
-** Implementing a JIT Compiled Language with Haskell and LLVM                  :haskell:llvm:
+** Implementing a JIT Compiled Language with Haskell and LLVM :haskell:llvm:
  [2019-12-18 Wed 10:56]
  http://www.stephendiehl.com/llvm/
-** Step-by-Step Guide to Implement Machine Learning                            :ml:
+** Step-by-Step Guide to Implement Machine Learning :ml:
  [2019-12-17 Tue 08:30]
  https://www.codeproject.com/Articles/5061034/Step-by-Step-Guide-to-Implement-Machine-Learning-6
-** The Racket Foreign-Function Interface                                       :racket:
+** The Racket Foreign-Function Interface :racket:
  [2019-12-16 Mon 16:23]
  http://www.cs.grinnell.edu/~rebelsky/Glimmer/Summer2012/RacketFFI/tutorial.html
-** Tutorial: Using Racket’s FFI (3 parts)                                      :racket:
+** Tutorial: Using Racket’s FFI (3 parts) :racket:
  [2019-12-16 Mon 15:59]
  http://prl.ccs.neu.edu/blog/2016/06/27/tutorial-using-racket-s-ffi/
-** Tutorial: Using Racket’s FFI                                                :racket:
+** Tutorial: Using Racket’s FFI :racket:
  [2019-12-16 Mon 13:51]
  https://prl.ccs.neu.edu/blog/2016/06/27/tutorial-using-racket-s-ffi/
-** A (mostly) comprehensive guide to calling C from Scheme and vice versa      :scheme:clang:
+** A (mostly) comprehensive guide to calling C from Scheme and vice versa :scheme:clang:
  [2019-12-16 Mon 13:49]
  https://www.more-magic.net/posts/scheme-c-integration.html
-** Dash Bio is a suite of bioinformatics components                            :plotly:
+** Dash Bio is a suite of bioinformatics components :plotly:
  [2019-12-13 Fri 10:42]
  https://github.com/plotly/dash-bio
-** Heroku buildpack for R                                                      :heroku:rstats:
+** Heroku buildpack for R :heroku:rstats:
  [2019-12-13 Fri 10:41]
  https://github.com/virtualstaticvoid/heroku-buildpack-r/tree/heroku-16
-** No Pain - No Gain: Using Clojure for Web Apps                               :clojure:
+** No Pain - No Gain: Using Clojure for Web Apps :clojure:
  [2019-12-12 Thu 18:02]
  https://github.com/tbsschroeder/using-clojure-for-web-apps
-** Functional Data Structures in Typed Racket                                  :racket:
+** Functional Data Structures in Typed Racket :racket:
  [2019-12-11 Wed 14:45]
  https://docs.racket-lang.org/functional-data-structures/index.html
-** Scheme/Racket course                                                        :racket:scheme:
+** Scheme/Racket course :racket:scheme:
  [2019-12-11 Wed 12:32]
  https://courses.cs.washington.edu/courses/cse341/18sp/racket/
-** Microbenchmark in Racket                                                    :racket:
+** Microbenchmark in Racket :racket:
  [2019-12-10 Tue 19:39]
  https://www.travishinkelman.com/post/microbenchmarking-in-r-and-racket/
-** Racket and docstrings using at-exp                                          :racket:
+** Racket and docstrings using at-exp :racket:
  [2019-12-10 Tue 16:09]
  https://stackoverflow.com/questions/58981544/docstrings-in-racket
-** Challenge: find Twitter memes with suffix arrays                            :algorithms:
+** Challenge: find Twitter memes with suffix arrays :algorithms:
  [2019-12-09 Mon 14:54]
  https://jvns.ca/blog/twitter-memes-challenge/
-** Pharmaceutical Modeling and Simulation for NL Mixed Effects using Julia     :julia:statistics:
+** Pharmaceutical Modeling and Simulation for NL Mixed Effects using Julia :julia:statistics:
  [2019-12-09 Mon 10:30]
  https://github.com/PumasAI/Pumas.jl
-** Templates Django                                                            :python:django:
+** Templates Django :python:django:
  [2019-12-05 Thu 20:09]
  https://tutorial.djangogirls.org/fr/template_extending/
-** Django Photo Gallery Sample                                                 :python:django:
+** Django Photo Gallery Sample :python:django:
  [2019-12-04 Wed 13:37]
  https://github.com/VelinGeorgiev/django-photo-gallery
-** Useful tips & tricks for R (and more)                                       :rstats:
+** Useful tips & tricks for R (and more) :rstats:
  [2019-12-04 Wed 13:20]
  https://github.com/hbc/knowledgebase/blob/master/r/R-tips-and-tricks.md
-** Genome browser tracks using Python                                          :bioinformatics:python:
+** Genome browser tracks using Python :bioinformatics:python:
  [2019-12-03 Tue 15:19]
  https://pythonawesome.com/python-module-to-plot-beautiful-and-highly-customizable-genome-browser-tracks/
-** Coupled events with Shiny and Plotly in R                                   :rstats:shiny:
+** Coupled events with Shiny and Plotly in R :rstats:shiny:
  [2019-11-28 Thu 16:23]
  https://plot.ly/r/shiny-coupled-events/
-** Visualizing Algorithms                                                      :algorithms:
+** Visualizing Algorithms :algorithms:
  [2019-11-27 Wed 12:52]
  https://bost.ocks.org/mike/algorithms/
-** Docker Cleanup Commands                                                     :docker:
+** Docker Cleanup Commands :docker:
  [2019-11-26 Tue 10:41]
  https://www.calazan.com/docker-cleanup-commands/
-** Neat Rust Tricks: Passing Rust Closures to C                                :rust:
+** Neat Rust Tricks: Passing Rust Closures to C :rust:
  [2019-11-26 Tue 10:32]
  https://blog.seantheprogrammer.com/neat-rust-tricks-passing-rust-closures-to-c
-** Scheme and Fibonacci                                                        :scheme:
+** Scheme and Fibonacci :scheme:
  [2019-11-25 Mon 10:51]
  https://www.reddit.com/r/scheme/comments/114jaj/nth_fibonacci_numbers_with_the_golden_ratioracket/
-** How to Override CSS Styles in Jekyll                                        :misc:
+** How to Override CSS Styles in Jekyll :misc:
  [2019-11-20 Wed 16:56]
  alias: Expected at most 2 args, got 3
  https://tomkadwill.com/2017/12/16/how-to-override-css-styles-in-jekyll.html
-** Fundamentals of Machine Learning Course at DSR                              :ml:
+** Fundamentals of Machine Learning Course at DSR :ml:
  [2019-11-20 Wed 12:53]
  https://github.com/dvgodoy/ML_Fundamentals
-** Advanced Python                                                             :python:
+** Advanced Python :python:
  [2019-11-20 Wed 12:45]
  https://github.com/krother/advanced_python
-** Lot of useful config for neovim/zsh/tmux                                    :vim:tmux:
+** Lot of useful config for neovim/zsh/tmux :vim:tmux:
  [2019-11-19 Tue 15:34]
  https://github.com/iamrecursion/dotfiles
-** LSP for (neo)vim                                                            :vim:
+** LSP for (neo)vim :vim:
  [2019-11-19 Tue 14:20]
  https://github.com/neoclide
-** Fisher–Yates shuffle                                                        :statistics:
+** Fisher–Yates shuffle :statistics:
  [2019-11-19 Tue 13:15]
  https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
-** DendroPy Phylogenetic Computing Library                                     :bioinformatics:
+** DendroPy Phylogenetic Computing Library :bioinformatics:
  [2019-11-19 Tue 12:26]
  https://dendropy.org/
-** Flask and Apache WSGI                                                       :python:flask:
+** Flask and Apache WSGI :python:flask:
  [2019-11-19 Tue 12:12]
  https://www.bogotobogo.com/python/Flask/Python_Flask_HelloWorld_App_with_Apache_WSGI_Ubuntu14.php
-** Configurer un webservice Python Flask sur Apache HTTPD                      :python:flask:
+** Configurer un webservice Python Flask sur Apache HTTPD :python:flask:
  [2019-11-19 Tue 12:11]
  https://www.security-helpzone.com/2017/07/03/apache-httpd-configurer-mod_wsgi-pour-utiliser-python-3-flask/
-** Recognizing graphs from images                                              :graphs:
+** Recognizing graphs from images :graphs:
  [2019-11-19 Tue 12:02]
  https://www.yworks.com/blog/projects-optical-graph-recognition
-** Changes the current Ruby                                                    :ruby:
+** Changes the current Ruby :ruby:
  [2019-11-18 Mon 11:01]
  https://github.com/postmodern/chruby
-** Comparative Genomics with R                                                 :bioinformatics:rstats:
+** Comparative Genomics with R :bioinformatics:rstats:
  [2019-11-18 Mon 10:38]
  https://hajkd.github.io/orthologr/index.html
-** Introduction to mlr3                                                        :rstats:ml:
+** Introduction to mlr3 :rstats:ml:
  [2019-11-18 Mon 10:23]
  https://github.com/mlr-org/mlr3book
-** Programming For Biology 2019                                                :bioinformatics:
+** Programming For Biology 2019 :bioinformatics:
 [2019-11-13 Wed 13:02]
 https://github.com/prog4biol/pfb2019
-** Programming Talks                                                           :misc:
+** Programming Talks :misc:
 [2019-11-07 Jeu 14:29]
 https://github.com/hellerve/programming-talks#hackett
-** A systematic review of health effects of electronic cigarettes              :misc:
+** A systematic review of health effects of electronic cigarettes :misc:
 [2019-11-07 Jeu 14:16]
 https://www.who.int/tobacco/industry/product_regulation/BackgroundPapersENDS3_4November-.pdf
-** Making a Simple Website with Flask                                          :python:flask:
+** Making a Simple Website with Flask :python:flask:
 [2019-11-05 Tue 13:21]
 http://oliverelliott.org/article/computing/notes_labsite/
-** AWS for Bioinformatics                                                      :bioinformatics:
+** AWS for Bioinformatics :bioinformatics:
 [2019-11-05 Tue 13:18]
 http://oliverelliott.org/article/computing/tut_bio_aws_2/
-** scatterplot between a pair of 2 consecutive pseudo random numbers           :maths:
+** scatterplot between a pair of 2 consecutive pseudo random numbers :maths:
 [2019-11-04 Mon 10:33]
 https://stats.stackexchange.com/questions/433029/which-is-the-meaning-of-scatterplot-between-a-pair-of-2-consecutive-pseudo-rando/434151#434151
-** Remote Desktop Roundup: TeamViewer vs. Splashtop vs. Windows RDP            :misc:
+** Remote Desktop Roundup: TeamViewer vs. Splashtop vs. Windows RDP :misc:
 [2019-10-30 Wed 11:24]
 https://www.howtogeek.com/257655/remote-desktop-roundup-teamviewer-vs.-splashtop-vs.-windows-rdp/
-** How to Lock Down TeamViewer for More Secure Remote Access                   :misc:
+** How to Lock Down TeamViewer for More Secure Remote Access :misc:
 [2019-10-30 Wed 11:19]
 https://www.howtogeek.com/257376/how-to-lock-down-teamviewer-for-more-secure-remote-access/
-** How secure is TeamViewer for simple remote support?                         :misc:
+** How secure is TeamViewer for simple remote support? :misc:
 [2019-10-30 Wed 11:15]
 https://security.stackexchange.com/questions/12152/how-secure-is-teamviewer-for-simple-remote-support
-** Complete list of zsh themes                                                 :cli:
+** Complete list of zsh themes :cli:
 [2019-10-30 Wed 10:15]
 https://zshthem.es/all/
-** Owl Numerical System                                                        :ocaml:
+** Owl Numerical System :ocaml:
 [2019-10-30 Wed 09:38]
 https://ocaml.xyz/chapter/index.html
-** Stupid Unix Tricks                                                          :unix:cli:
+** Stupid Unix Tricks :unix:cli:
 [2019-10-17 Thu 17:06]
 https://sneak.berlin/20191011/stupid-unix-tricks/
-** How to secure remote access to a Linux server (without SSH keys)            :misc:
+** How to secure remote access to a Linux server (without SSH keys) :misc:
 [2019-10-17 Thu 17:04]
 https://medium.com/@chrislange/how-to-secure-remote-access-to-a-linux-server-without-ssh-keys-61a1aa099cfc
-** Creating a Permanent SSH Tunnel Back to Your Mac at Home                    :misc:
+** Creating a Permanent SSH Tunnel Back to Your Mac at Home :misc:
 [2019-10-16 Wed 12:04]
 https://tyler.io/creating-a-permanent-ssh-tunnel-back-to-your-mac-at-home/
-** Master Git (part 1)                                                         :git:
+** Master Git (part 1) :git:
 [2019-10-15 Tue 10:49]
 http://artemstar.com/2017/03/26/git/
-** How to Install and Dual Boot Linux and Mac OS                               :misc:
+** How to Install and Dual Boot Linux and Mac OS :misc:
 [2019-10-15 Tue 08:53]
 https://www.lifewire.com/dual-boot-linux-and-mac-os-4125733
-** How to Install Ubuntu on a MacBook Pro                                      :misc:
+** How to Install Ubuntu on a MacBook Pro :misc:
 [2019-10-15 Tue 08:51]
 https://laptop.ninja/how-to-install-ubuntu-on-a-macbook-pro/
-** tmux in practice: iTerm2 and tmux                                           :tmux:cli:
+** tmux in practice: iTerm2 and tmux :tmux:cli:
 [2019-10-14 Mon 16:56]
 https://www.freecodecamp.org/news/tmux-in-practice-iterm2-and-tmux-integration-7fb0991c6c01/
-** Tmux Cheat Sheet & Quick Reference                                          :tmux:
+** Tmux Cheat Sheet & Quick Reference :tmux:
 [2019-10-14 Mon 16:45]
 https://tmuxcheatsheet.com/
-** SSH and tmux                                                                :tmux:
+** SSH and tmux :tmux:
 [2019-10-14 Mon 15:22]
 https://github.com/ernestk-git/data-scientist-ish/wiki/ssh-tmux?source=post_page---------------------------
-** Using virtualenv with fish shell                                            :python:cli:
+** Using virtualenv with fish shell :python:cli:
 [2019-10-09 Wed 14:59]
 https://riptutorial.com/python/example/9956/using-virtualenv-with-fish-shell
-** Teaching Materials for genome assembly and mapping                          :bioinformatics:
+** Teaching Materials for genome assembly and mapping :bioinformatics:
 [2019-10-09 Wed 13:44]
 http://www.langmead-lab.org/teaching-materials/
-** bcbio-nextgen                                                               :bioinformatics:
+** bcbio-nextgen :bioinformatics:
 [2019-10-08 Tue 15:44]
 https://bcbio-nextgen.readthedocs.io/en/latest/contents/introduction.html
-** Suffix arrays: How to compute them fast with Python                         :algorithms:python:
+** Suffix arrays: How to compute them fast with Python :algorithms:python:
 [2019-10-08 Tue 15:25]
 https://louisabraham.github.io/notebooks/suffix_arrays.html
-** Accurate design of in vitro experiments -- Why does it matter?              :bioinformatics:
+** Accurate design of in vitro experiments -- Why does it matter? :bioinformatics:
 [2019-10-08 Tue 11:46]
 https://paasp.net/accurate-design-of-in-vitro-experiments-why-does-it-matter/
-** Introduction to RNA-Seq using high-performance computing                    :bioinformatics:
+** Introduction to RNA-Seq using high-performance computing :bioinformatics:
 [2019-10-08 Tue 10:03]
 https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon/schedule/
-** Lectures for Mathematics 361 (feat. Number Theory)                          :maths:numtheo:
+** Lectures for Mathematics 361 (feat. Number Theory) :maths:numtheo:
 [2019-10-07 Mon 10:35]
 http://people.reed.edu/~jerry/361/lectures/lec.html
-** Hidden features of Python [closed]                                          :python:
+** Hidden features of Python [closed] :python:
 [2019-10-07 Mon 10:09]
 https://stackoverflow.com/questions/101268/hidden-features-of-python
-** Automatic parallelization with @jit                                         :python:
+** Automatic parallelization with @jit :python:
 [2019-10-04 Fri 14:44]
 http://numba.pydata.org/numba-doc/latest/user/parallel.html#explicit-parallel-loops
-** Nice tutorial on genome assembly                                            :bioinformatics:
+** Nice tutorial on genome assembly :bioinformatics:
 [2019-10-02 Wed 14:17]
 https://homolog.us/Tutorials/book4/p2.1.html
-** More on pipe operators in R                                                 :rstats:
+** More on pipe operators in R :rstats:
 [2019-10-02 Wed 13:42]
 https://www.datacamp.com/community/tutorials/pipe-r-tutorial
 * Archives 2019
