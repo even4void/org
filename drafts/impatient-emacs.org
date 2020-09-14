@@ -3,11 +3,13 @@
 #+DATE:     Février 2020
 #+LANGUAGE: fr
 
-* TODO [3/4]                                                                    :noexport:
+* TODO [3/5] :noexport:
 - [X] Update to focus on Doom Emacs
 - [X] Harmoniser les captures d'écran (thème Nord et terminal)
-- [ ] Typical workflow (copy/paste the evil way, search, project, etc.)
 - [X] § Mouvements de base : terminer principaux raccourcis de mouvement en mode insertion/Emacs
+- [ ] Typical workflow (copy/paste the evil way, search, project, etc.), see below
+- [ ] [[http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/][Absolute Beginner's Guide to Emacs]], [[https://tecosaur.github.io/emacs-config/config.html][Doom Emacs Configuration]], [[https://noelwelsh.com/posts/2019-01-10-doom-emacs.html][Doom Emacs Workflows]]
+
 
 * Emacs en quelques mots
 

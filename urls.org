@@ -1,4 +1,16 @@
 * Inbox
+** Blogging With R and ggplot2 in Org :org:rstats:
+ [2020-09-14 Mon 16:35]
+ https://two-wrongs.com/blogging-with-r-and-ggplot2-in-org.html
+** TeX plain macros (various) :tex:
+ [2020-09-14 Mon 15:54]
+ https://ctan.tetaneutral.net/macros/plain/contrib/
+** Algorithmique et bioinformatique :algorithms:bioinformatics:
+ [2020-09-14 Mon 15:46]
+ http://zoonek2.free.fr/UNIX/49_bioinfo/Cours.html
+** macOS Version Big Sur Update :apple:
+ [2020-09-14 Mon 14:45]
+ https://scriptingosx.com/2020/09/macos-version-big-sur-update/
 ** Git Magic :git:
  [2020-09-14 Mon 10:28]
  https://crypto.stanford.edu/~blynn/gitmagic/

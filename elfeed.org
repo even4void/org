@@ -326,6 +326,7 @@
 *** [[https://tech.tonyballantyne.com/feed/][Tony Ballantyne Tech]]                                                     :emacs:python:
 *** [[http://leahneukirchen.org/trivium/index.atom][Trivium]]                                                                  :misc:diary:
 *** [[https://twobithistory.org/feed.xml][Two-Bit History]]                                                          :unix:misc:
+*** [[https://two-wrongs.com/feed][Two Wrongs]]                                                               :emacs:unix:haskell:
 *** [[https://tyler.io/feed/][tyler.io]]                                                                 :apple:
 *** [[https://underjord.io/feed.xml][Underjord]]                                                                :misc:
 *** [[https://usesthis.com/feed.atom][Uses This]]                                                                :news:

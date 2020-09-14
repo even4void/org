@@ -101,6 +101,19 @@ URL: https://home.adelphi.edu/~siegfried/cs270/notes.html
 
 * Misc
 
+** Haskell
+
+*Tutorials:*
+
+- [ ] [[https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems][H-99: Ninety-Nine Haskell Problems]]
+- [ ] [[https://en.wikibooks.org/wiki/Haskell][Haskell wikibook]]
+- [ ] Dr. Erik Meijer, [[https://channel9.msdn.com/Series/C9-Lectures-Erik-Meijer-Functional-Programming-Fundamentals][Functional Programming Fundamentals]]
+- [ ] [[https://wiki.haskell.org/Haskell_Tutorial_for_C_Programmers][Haskell Tutorial for C Programmers]]
+- [ ] [[https://crypto.stanford.edu/~blynn/haskell/][Haskell Fan Site]]
+- [ ] [[http://www.cse.chalmers.se/~rjmh/tutorials.html][Tutorial Papers in Functional Programming]]
+- [ ] [[https://wiki.haskell.org/Why_Haskell_matters][Why Haskell matters]]
+- [ ] [[https://wiki.haskell.org/Hitchhikers_guide_to_Haskell][Hitchhikers guide to Haskell]]
+
 ** Common Lisp
 
 - =consp= is not a convenient function to use to check whether something "is a list"; better to use =listp=, which combines =consp= and =null= (Source: https://eli.thegreenplace.net/2016/common-lisps-consp-and-listp-in-clojure/).
