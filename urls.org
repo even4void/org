@@ -1,4 +1,31 @@
 * Inbox
+** Git Magic :git:
+ [2020-09-14 Mon 10:28]
+ https://crypto.stanford.edu/~blynn/gitmagic/
+** cl-tutorials :lisp:
+ [2020-09-14 Mon 09:58]
+ https://github.com/nmunro/cl-tutorials
+** Writing at the Command Line :cli:pandoc:
+ [2020-09-14 Mon 09:51]
+ https://github.com/jez/talks/tree/master/slides/writing-cli
+** Vim as an IDE :vim:
+ [2020-09-14 Mon 09:47]
+ https://github.com/jez/vim-as-an-ide
+** Doneburn: A light theme for Emacs based on Zenburn :emacs:
+ [2020-09-14 Mon 09:35]
+ https://github.com/manuel-uberti/doneburn-theme
+** Emacs Lisp Development Tips with John Wiegley :emacs:
+ [2020-09-13 Sun 21:53]
+ https://www.youtube.com/watch?v=QRBcm6jFJ3Q
+** STT5100 Modèles Linéaires Appliqués (Automne 2020) :statistics:
+ [2020-09-13 Sun 21:40]
+ https://github.com/freakonometrics/STT5100/
+** Share a tmux session :tmux:
+ [2020-09-10 Thu 14:22]
+ http://planspace.org/20200902-share_a_tmux_session/
+** Async Views in Django 3.1 :python:
+ [2020-09-10 Thu 14:20]
+ https://testdriven.io/blog/django-async-views/
 ** Notes on making scatterplots in matplotlib and seaborn :python:
  [2020-09-10 Thu 14:04]
  https://andrewpwheeler.com/2020/09/04/notes-on-making-scatterplots-in-matplotlib-and-seaborn/
