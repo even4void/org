@@ -708,3 +708,21 @@ Key idea : Two features of functional languages in particular, higher-order func
 #+BEGIN_QUOTE
 Functional programmers argue that there are great material benefits — that a functional programmer is an order of magnitude more productive than his or her conventional counterpart, because functional programs are an order of magnitude shorter. Yet why should this be? The only faintly plausible reason one can suggest on the basis of these “advantages” is that conventional programs consist of 90% assignment statements, and in functional programs these can be omitted! This is plainly ridiculous. If omitting assignment statements brought such enormous benefits then Fortran programmers would have been doing it for twenty years. It is a logical impossibility to make a language more powerful by omitting features, no matter how bad they may be.
 #+END_QUOTE
+** Une introduction agréable au langage haskell 98 ([[papers:hudak-2007-une-haskel.pdf][hudak-2007-une-haskel]])
+Very interesting discussion around Haskell typing system (section II). Right (e.g., list append) and left (e.g., function application) associativity are tricky.
+
+#+BEGIN_SRC haskell
+inc :: Integer -> Integer
+inc n = n+1
+
+add :: Integer -> Integer -> Integer
+add x y = x + y
+#+END_SRC
+
+In the above exmaple, the redefinition of =inc= as =inc = add 1= is an example of partial application of a curried function. Here is a more complex example:
+
+#+BEGIN_SRC haskell
+map :: (a->b) -> [a] -> [b]
+map f [] = []
+map f (x :xs) = f x : map f xs
+#+END_SRC

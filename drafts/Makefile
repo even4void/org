@@ -1,4 +1,4 @@
-# Time-stamp: <2020-08-25 08:43:30 chl>
+# Time-stamp: <2020-09-15 12:17:33 chl>
 #
 # General purpose Makefile to compile all documents in my Org directory.
 #
@@ -25,3 +25,4 @@ veryclean:
 	latexmk -C
 	-rm *.tex~
 	-rm *.{bbl,synctex.gz}
+	rm *.pdf
