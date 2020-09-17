@@ -4,6 +4,8 @@
 
 This SRFI extends Bawden-style arrays by adding storage-class object, array currying and permuting, as well as an interval and a mapping that has that interval as its domain, which allows for generalized and specialized arrays.
 
+This approach differs from [[https://srfi.schemers.org/srfi-164/srfi-164.html][SRFI-164]] where arrays are seen as extension of generalized vectors (with additional support for [[https://www.gnu.org/software/kawa/Ranges.html][Kawa ranges]]).
+
 #+BEGIN_QUOTE
 The most peculiar thing to me about this discussion of arrays for Scheme is
 the seemingly widespread notion that arrays should be somehow identified
