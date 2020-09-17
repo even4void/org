@@ -2,9 +2,7 @@
 #+AUTHOR: chl
 #+DATE:   2020
 
-* Reading notes
-
-Internal links (PDFs and other Org files) will likely not work outside this computer.
+* Reading notes[fn::Internal links (PDFs and other Org files) will likely not work outside this computer.]
 
 ** A common-sense guide to data structures and algorithms ([[papers:wengrow-2017-common-sense.pdf][wengrow-2017-common-sense]])
 Short but interesting textbook on general programming principles. It features a mix of Python and JavaScript to illustrate major sorting algorithms, big O notation, etc. Available as EPUB locally.
@@ -730,3 +728,5 @@ map f [] = []
 map f (x :xs) = f x : map f xs
 #+END_SRC
 
+-----
+#+INCLUDE: "./archived/papers-work.org" :minlevel 1
