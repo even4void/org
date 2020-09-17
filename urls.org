@@ -1,4 +1,31 @@
 * Inbox
+** Amortized Analysis Examples :algorithms:
+ [2020-09-17 Thu 11:15]
+ https://www.cs.cornell.edu/courses/cs3110/2013sp/supplemental/recitations/rec21.html
+** Functional Programming in OCaml :ocaml:
+ [2020-09-17 Thu 11:14]
+ https://www.cs.cornell.edu/courses/cs3110/2020fa/textbook/
+** Org ad hoc code, quick hacks and workarounds :emacs:org:
+ [2020-09-16 Wed 14:48]
+ https://thomasf.github.io/solarized-css/test/org-hacks.html
+** Julia from an R user perspective :julia:rstats:
+ [2020-09-16 Wed 14:42]
+ https://mdneuzerling.com/post/first-impressions-of-julia-from-an-r-user/
+** MIT Scheme Graphics :scheme:
+ [2020-09-16 Wed 14:38]
+ https://www.gnu.org/software/mit-scheme/documentation/stable/mit-scheme-ref/Graphics.html#Graphics
+** Configuring Emacs a C/C++ IDE :emacs:clang:
+ [2020-09-16 Wed 14:33]
+ https://emacs-lsp.github.io/lsp-mode/tutorials/CPP-guide/
+** Sattolo's algorithm :algorithms:python:
+ [2020-09-16 Wed 14:00]
+ https://danluu.com/sattolo/
+** Write You A Scheme, Version 2 :lisp:haskell:
+ [2020-09-15 Tue 15:55]
+ https://wespiser.com/writings/wyas/home.html
+** A report on stack script: the how and why... :haskell:
+ [2020-09-15 Tue 15:50]
+ https://wespiser.com/posts/2020-02-02-Command-Line-Haskell.html
 ** Searching for RH Counterexamples — Adding a Database :python:maths:elfeed:
  [2020-09-15 Tue 15:06]
  https://jeremykun.com/2020/09/11/searching-for-rh-counterexamples-adding-a-database/

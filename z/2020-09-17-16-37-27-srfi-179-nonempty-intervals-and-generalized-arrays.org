@@ -1,0 +1,32 @@
+* SRFI 179: Nonempty Intervals and Generalized Arrays
+
+#+FILETAGS: :scheme:
+
+This SRFI extends Bawden-style arrays by adding storage-class object, array currying and permuting, as well as an interval and a mapping that has that interval as its domain, which allows for generalized and specialized arrays.
+
+#+BEGIN_QUOTE
+The most peculiar thing to me about this discussion of arrays for Scheme is
+the seemingly widespread notion that arrays should be somehow identified
+with vectors that contain vectors. (One common corollary of this belief
+seems to be that if you don't have native arrays, you -have- to use vectors
+of vectors -- which is inefficient.)
+
+Well, let me point out that the difference between a vector and an array is
+really just some arithmetic performed on the indices. If I'm writing a
+program that does a lot of manipulating of 4x4 matrices, I can do as well
+as any native array implementation by using 16 element vectors, and writing
+
+(vector-ref M (+ (* 4 i) j))
+
+instead of
+
+(array-ref M i j)
+
+If I write my loops so that, in fact, I process the elements of the matrix
+in the order that they are layed out in the vector, then a good compiler
+should be able to do just as well is it could if I used native arrays.
+
+--- [[https://groups.google.com/g/comp.lang.scheme/c/7nkx58Kv6RI/m/a5hdsduFL2wJ][Alan Bawden]]
+#+END_QUOTE
+
+Source: [[https://srfi.schemers.org/srfi-179/srfi-179.html][SRFI 179]]

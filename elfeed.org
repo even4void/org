@@ -42,6 +42,7 @@
 *** [[https://lisptips.com/rss][Common Lisp Tips]]                                                         :lisp:
 *** [[https://lispnews.wordpress.com/feed/][Common Lisp Weekly News]]                                                  :lisp:news:
 *** [[https://lemire.me/blog/feed/][Daniel Lemire's blog]]                                                     :compiler:clang:
+*** [[https://danluu.com/atom.xml][danluu]]                                                                   :algorithms:compiler:
 *** [[https://www.darkchestnut.com/feed.xml][Dark Chestnut]]                                                            :lisp:
 *** [[http://stuartsierra.com/feed][Digital Digressions by Stuart Sierra]]                                     :clojure:
 *** [[https://dmerej.info/blog/index.xml][dmerej's blog]]                                                            :python:
@@ -112,7 +113,7 @@
 *** [[http://gigasquidsoftware.com/atom.xml][Squid's Blog]]                                                             :clojure:
 *** [[https://stopa.io/feed.rss][Stepan Parunashvili]]                                                      :javascript:lisp:
 *** [[http://www.stephendiehl.com/feed.rss][Stephen Diehl]]                                                            :haskell:
-*** [[http://feeds2.feedburner.com/stevelosh][Steve Losh]]		 :lisp:vim:
+*** [[http://feeds2.feedburner.com/stevelosh][Steve Losh]]                                                               :lisp:vim:
 *** [[https://stjepang.github.io/feed.xml][Stjepan’s blog]]                                                           :rust:
 *** [[https://www.strchr.com/?feed=/][strchr.com updates]]                                                       :misc:
 *** [[http://neugierig.org/software/blog/atom.xml][Tech Notes]]                                                               :javascript:typescript:
@@ -120,7 +121,7 @@
 *** [[https://tapoueh.org/index.xml][The Art of PostgreSQL]]                                                    :postgres:
 *** [[https://alex-hhh.github.io/feeds/all.rss.xml][The Blog of Alex Harsányi: The Blog of Alex Harsányi]]                     :racket:
 *** [[https://floooh.github.com/feed.xml][The Brain Dump]]                                                           :clang:
-*** [[https://blog.aaronbieber.com/posts/index.xml][The Chronicle]]                                                            :emacs
+*** [[https://blog.aaronbieber.com/posts/index.xml][The Chronicle]]                                                            :emacs:
 *** [[http://blog.cleancoder.com/atom.xml][The Clean Code Blog]]                                                      :clojure:
 *** [[http://calculist.org/feed.xml][The Little Calculist]]                                                     :rust:
 *** [[https://blog.plover.com/index.rss][The Universe of Discourse]]                                                :haskell:recreational:
@@ -134,6 +135,7 @@
 *** [[https://blog.veitheller.de/feed.rss][Veit's Blog]]                                                              :scheme:
 *** [[https://www.jimhester.com/post/index.xml][Videos / Posts on Jim Hester]]                                             :rstats:
 *** [[https://weinholt.se/feed.xml][weinholt.se]]                                                              :scheme:
+*** [[https://wespiser.com/feed.rss][wespiser]]                                                                 :haskell:julia:lisp:
 *** [[https://williamyaoh.com/feed.atom][William Yao's Haskell Musings]]                                            :haskell:
 *** [[http://www.linusakesson.net/rssfeed.php][www.linusakesson.net]]                                                     :compiler:
 *** [[https://yarmo.eu/rss/all][Yarmo's blog and notes]]                                                   :misc:
