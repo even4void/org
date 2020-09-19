@@ -1,10 +1,12 @@
-# Time-stamp: <2020-09-15 12:17:33 chl>
+# Time-stamp: <2020-09-19 19:00:33 chl>
 #
 # General purpose Makefile to compile all documents in my Org directory.
 #
 # Requires: (in current working directory)
 # - 'eval.el':    Org stuff for first PDF target
 # - 'macros.tex': TeX stuff for second PDF target
+#
+# NOTE: Don't remove plain TeX files since we also store some files there.
 .PHONY: all clean veryclean
 
 all: pdf

@@ -27,7 +27,8 @@ Whenever we want to write down something, we press =i= or =a= to enter Insert mo
 #+NAME:      tab:mode1
 #+LABEL:     tab:mode1
 #+ATTR_HTML: :border 2 :rules all :frame border :width 100%
-#+CAPTION:   Switching between normal and Insert modes
+#+CAPTION:   Switching between Normal and Insert modes
+|---------+------------------------------------------------------------------|
 |---------+------------------------------------------------------------------|
 | Keys    | Description                                                      |
 |---------+------------------------------------------------------------------|

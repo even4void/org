@@ -1,6 +1,7 @@
 * Feeds                                                                        :elfeed:
 ** Mute                                                                       :mute:
 *** [[https://aliquote.org/index.xml][aliquot]]                                                                 :aliquote:
+*** [[https://annoying.technology/index.xml][Annoying Technology]]                                                      :apple:
 *** [[https://danielmiessler.com/feed/][Daniel Miessler]]                                                          :misc:
 *** [[https://daringfireball.net/feeds/main][Daring Fireball]]                                                          :generative:
 *** [[http://www.madore.org/~david/weblog/weblog.rss][David Madore's WebLog]]                                                    :misc:
@@ -232,7 +233,6 @@
 *** [[https://alistapart.com/main/feed/][A List Apart: The Full Feed]]                                              :news:
 *** [[https://alexschroeder.ch/wiki/feed/full/][Alex Schroeder: Diary]]                                                    :diary:
 *** [[https://leancrew.com/all-this/feed/][And now it’s all this]]                                                    :apple:
-*** [[https://annoying.technology/index.xml][Annoying Technology]]                                                      :apple:
 *** [[https://begriffs.com/atom.xml][begriffs.com]]                                                             :sql:vim:
 *** [[https://werd.io/content/posts/?_t=rss][Ben Werdmüller]]                                                           :misc:
 *** [[https://ma.ttias.be/blog/index.xml][Blog archive by Mattias Geniar on ma.ttias.be]]                            :unix:php:
