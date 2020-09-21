@@ -1,0 +1,68 @@
+\usecolortheme[named=black]{structure}
+\definecolor{DarkSlateGrey}{HTML}{2f4f4f}
+\definecolor{SlateGrey}{HTML}{708090}
+\definecolor{SandyBrown}{HTML}{f4a460}
+\definecolor{FireBrick}{HTML}{b22222}
+\definecolor{RoyalBlue}{HTML}{4169e1}
+\definecolor{DarkOrange}{HTML}{ff8c00}
+\definecolor{White}{HTML}{ffffff}
+\usepackage{bera}
+\usepackage{url}
+\usepackage[font={color=DarkSlateGrey,small}]{caption}
+\usepackage{icomma}
+\usepackage{manfnt}
+\usepackage{array}
+\usepackage{tcolorbox}
+\usepackage{textcomp}
+\usepackage{csquotes}
+\MakeOuterQuote{"}
+\usepackage{ragged2e}
+\justifying
+
+\author{Christophe Lalanne \\ {\tt <}\url{chl@aliquote.org}{\tt >}}
+
+\setbeamertemplate{navigation symbols}{}
+
+\makeatletter
+\setbeamertemplate{title page}[default][left,colsep=-4bp]
+\def\verbatim@nolig@list{}
+\makeatother
+
+\setbeamercolor{frametitle}{bg=SlateGrey,fg=White}
+\setbeamercolor{alerted text}{fg=SandyBrown}
+\setbeamerfont{alerted text}{series=\bfseries}
+\setbeamerfont{quote}{shape=\upshape,family=\sffamily}
+\setbeamertemplate{itemize items}{\scalebox{1.4}{\raisebox{-.25ex}{\text{\textbullet}}}}
+\addtobeamertemplate{block begin}{}{\justifying\small\sffamily}
+\captionsetup[figure]{labelformat=empty}
+\captionsetup[table]{labelformat=empty}
+\captionsetup[lstlisting]{labelformat=empty}
+
+\renewcommand{\textbf}{\alert}
+\definecolor{low}{named}{FireBrick}
+\definecolor{high}{named}{RoyalBlue}
+\newtcbox{\texthigh}{nobeforeafter,colframe=high!15!white,colback=high!5!white,boxrule=0.5pt,arc=4pt,
+  boxsep=0pt,left=2pt,right=2pt,top=2pt,bottom=2pt,tcbox raise base}
+\newtcbox{\textlow}{nobeforeafter,colframe=low!15!white,colback=low!5!white,boxrule=0.5pt,arc=4pt,
+  boxsep=0pt,left=2pt,right=2pt,top=2pt,bottom=2pt,tcbox raise base}
+\newcommand{\mathhigh}[1]{\textcolor{high}{#1}}
+\newcommand{\mathlow}[1]{\textcolor{low}{#1}}
+\newcommand{\high}[1]{\textcolor{DarkOrange}{#1}}
+
+\newcommand{\goto}[2]{\quad\hyperlink{#1}{\beamerbutton{#2}}}
+\renewcommand{\footnoterule}{%
+  \kern -3pt
+  {\color{LightSlateGrey}\hrule width \textwidth height .25pt}
+  \kern 2.5pt
+}
+\renewcommand{\footnotesize}{\scriptsize}
+
+% https://tex.stackexchange.com/a/312302
+\newcommand{\dnote}[1]{%
+    \noindent
+    \begin{tabular}{@{}m{0.13\textwidth}@{}m{0.87\textwidth}@{}}%
+        \large\textdbend &#1%
+    \end{tabular}%
+    \par
+}
+

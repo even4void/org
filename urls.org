@@ -1,4 +1,25 @@
 * Inbox
+** Code from screencasts of #tidytuesday :rstats:
+ [2020-09-21 Mon 12:30]
+ https://github.com/dgrtwo/data-screencasts/tree/master/screencast-annotations
+** The compositor is evil :misc:
+ [2020-09-21 Mon 12:24]
+ https://raphlinus.github.io/ui/graphics/2020/09/13/compositor-is-evil.html
+** How I Start: Rust :rust:
+ [2020-09-21 Mon 12:15]
+ https://christine.website/blog/how-i-start-rust-2020-03-15
+** Random number generation in (Emacs) LISP :emacs:
+ [2020-09-21 Mon 12:14]
+ https://groups.google.com/g/gnu.emacs.help/c/K5WVNAa2E24
+** Python’s Innards: Introduction :python:
+ [2020-09-21 Mon 12:12]
+ https://tech.blog.aknin.name/2010/04/02/pythons-innards-introduction/
+** Functional Vectors for Scheme :scheme:
+ [2020-09-21 Mon 12:10]
+ https://github.com/ijp/fectors
+** The Book of Why, by Pearl and Mackenzie :readings:
+ [2020-09-20 Sun 20:53]
+ http://planspace.org/20200917-book_of_why/
 ** Amortized Analysis Examples :algorithms:
  [2020-09-17 Thu 11:15]
  https://www.cs.cornell.edu/courses/cs3110/2013sp/supplemental/recitations/rec21.html

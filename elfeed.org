@@ -15,6 +15,7 @@
 *** [[https://martinfowler.com/feed.atom][Martin Fowler]]                                                            :misc:
 *** [[https://mjtsai.com/blog/feed/][Michael Tsai]]                                                             :apple:news:
 *** [[http://planet.lisp.org/rss20.xml][Planet Lisp]]                                                              :lisp:news:
+*** [[https://groups.google.com/forum/feed/r-sig-mac/topics/rss.xml?num=15][R Special Interest Group on Mac Development]]                              :rstats:apple:
 *** [[https://serokell.io/blog.rss.xml][Serokell Blog]]                                                            :haskell:news:
 *** [[https://simonwillison.net/atom/everything/][Simon Willison's Weblog]]                                                  :sql:
 *** [[https://multithreaded.stitchfix.com/feed.xml][Stitch Fix Technology – Multithreaded]]                                    :misc:
@@ -39,6 +40,7 @@
 *** [[http://chris.eidhof.nl//index.xml][Chris Eidhof]]                                                             :apple:
 *** [[https://chris-martin.org/rss.xml][Chris Martin]]                                                             :haskell:
 *** [[https://chrispenner.ca/atom.xml][Chris Penner]]                                                             :haskell:python:
+*** [[https://christine.website/blog.rss][Christine Dodrill]]                                                        :rust:emacs:
 *** [[http://40ants.com/lisp-project-of-the-day/rss.xml][Common Lisp Project of the Day]]                                           :lisp:
 *** [[https://lisptips.com/rss][Common Lisp Tips]]                                                         :lisp:
 *** [[https://lispnews.wordpress.com/feed/][Common Lisp Weekly News]]                                                  :lisp:news:
@@ -85,6 +87,7 @@
 *** [[https://lukeplant.me.uk/blog/atom/index.xml][Luke Plant's home page]]                                                   :elm:python:
 *** [[https://blog.poisson.chat/rss.xml][Lysxia's blog]]                                                            :haskell:clang:
 *** [[https://macwright.org/rss.xml][macwright.com]]                                                            :javascript:
+*** [[http://malisper.me/category/postgres/feed/][malisper.me]]                                                              :postgres:
 *** [[http://blog.markwatson.com/feeds/posts/default][Mark Watson's artificial intelligence and machine learning blog]]          :lisp:scheme:clojure:
 *** [[https://martinheinz.dev/rss/][Martin Heinz's Blog]]                                                      :python:postgres:
 *** [[https://martin-thoma.com/feeds/index.xml][Martin Thoma]]                                                             :python:
@@ -208,8 +211,7 @@
 *** [[http://sumsar.net/atom.xml][Publishable Stuff]]                                                        :bayesian:
 *** [[https://f.briatte.org/r/rss][R / Notes]]                                                                :rstats:
 *** [[https://feeds.feedburner.com/RPsychologist][R Psychologist RSS feed (last 10 posts)]]                                  :rstats:
-*** [[https://groups.google.com/forum/feed/r-sig-mac/topics/rss.xml?num=15][R Special Interest Group on Mac Development]]                              :rstats:apple:
-*** [[https://ryxcommar.com/feed/][r y x, r]]                                                                 :python:ml:
+*** [[https://ryxcommar.com/feed/][r y x, r]] :python:ml:
 *** [[http://radfordneal.wordpress.com/feed/][Radford Neal's blog]]                                                      :rstats:
 *** [[https://reconlearn.org/index.xml][reconlearn.org]]                                                           :ml:
 *** [[http://feeds.feedburner.com/ProfessorRobJHyndman][Rob J Hyndman]]                                                            :rstats:

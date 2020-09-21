@@ -1,0 +1,38 @@
+#+TITLE:  Beamer test
+#+SUBTITLE: Subtitle goes here
+#+DATE:   Septembre 2020
+#+OPTIONS: H:2 toc:t num:t
+#+LATEX_CLASS: beamer
+#+BEAMER_HEADER: \input{./_assets/macros}
+
+* This is the first structural section
+
+** Frame 1
+*** Thanks to Eric Fraga                                           :B_block:
+    :PROPERTIES:
+    :BEAMER_COL: 0.48
+    :BEAMER_ENV: block
+    :END:
+    for the first viable Beamer setup in Org
+*** Thanks to everyone else                                        :B_block:
+    :PROPERTIES:
+    :BEAMER_COL: 0.48
+    :BEAMER_ACT: <2->
+    :BEAMER_ENV: block
+    :END:
+for contributing to the discussion
+**** This will be formatted as a beamer note                       :B_note:
+     :PROPERTIES:
+     :BEAMER_env: note
+     :END:
+
+** Frame 2 (where we will not use columns)
+*** Request
+Please *test* this stuff!
+
+** Frame 3 (where we will not use columns)
+
+#+BEGIN_SRC R
+x <- rnorm(100)
+summary(x)
+#+END_SRC
