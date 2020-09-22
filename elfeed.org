@@ -2,6 +2,7 @@
 ** Mute                                                                       :mute:
 *** [[https://aliquote.org/index.xml][aliquot]]                                                                 :aliquote:
 *** [[https://annoying.technology/index.xml][Annoying Technology]]                                                      :apple:
+*** [[https://v5.chriskrycho.com/feed.xml][Chris Krycho]]                                                             :misc:
 *** [[https://danielmiessler.com/feed/][Daniel Miessler]]                                                          :misc:
 *** [[https://daringfireball.net/feeds/main][Daring Fireball]]                                                          :generative:
 *** [[http://www.madore.org/~david/weblog/weblog.rss][David Madore's WebLog]]                                                    :misc:
@@ -248,8 +249,7 @@
 *** [[http://cxhernandez.com/feed.xml][Carlos Xavier Hernández]]                                                  :dataviz:
 *** [[https://changelog.com/posts/feed][Changelog]]                                                                :news:
 *** [[http://www.cpdiehl.org/atom.xml][Chris Diehl]]                                                              :misc:
-*** [[https://v5.chriskrycho.com/feed.xml][Chris Krycho]]                                                             :misc:
-*** [[http://corte.si/rss.xml][corte.si]]                                                                 :infosec:
+*** [[http://corte.si/rss.xml][corte.si]] :infosec:
 *** [[https://dan.lousqui.fr/all.rss.xml][Dan Lousqui]]                                                              :infosec:
 *** [[https://danluu.com/atom.xml][Dan Luu]]                                                                  :unix:misc:
 *** [[http://www.defmacro.org/feed.xml][defmacro]]                                                                 :rstats:lisp:
@@ -341,6 +341,7 @@
 *** [[http://feeds.feedburner.com/WalkingRandomly][Walking Randomly]]                                                         :misc:
 *** [[https://sandymaguire.me/feed.rss][We Can Solve This]]                                                        :misc:
 *** [[https://willschenk.com/feed.xml][Will Schenk]]                                                              :misc:
+*** [[https://www.naut.ca/blog/rss/index.rss][Yoon's Blog]]                                                              :apple:unix:
 *** [[https://zanshin.net/atom.xml][Zanshin.net - Technology and Life]]                                        :apple:
 *** [[https://etienne.depar.is/feeds/index.xml][Étienne Deparis]]                                                          :python:misc:
 ** Web                                                                        :web:

@@ -1,4 +1,25 @@
 * Inbox
+** Compiler explorer :compiler:
+ [2020-09-22 Tue 12:03]
+ https://godbolt.org/
+** Hyperfine: A command-line benchmarking tool :cli:
+ [2020-09-22 Tue 10:11]
+ https://github.com/sharkdp/hyperfine
+** TL;DR Rust :rust:
+ [2020-09-22 Tue 09:51]
+ https://christine.website/blog/TLDR-rust-2020-09-19
+** Binder global minor mode to mimic Scrivener sidebar :emacs:
+ [2020-09-22 Tue 09:46]
+ https://github.com/rnkn/binder
+** Self-Hosting Part 5: Finale :apple:
+ [2020-09-22 Tue 08:24]
+ https://www.naut.ca/blog/2020/05/05/self-hosting-series-part-5-finale/
+** Latex book template :tex:
+ [2020-09-22 Tue 08:06]
+ https://www.ctan.org/tex-archive/macros/latex/contrib/classicthesis/
+** Clustering sequences into OTUs using q2-vsearch :bioinformatics:
+ [2020-09-21 Mon 16:21]
+ https://docs.qiime2.org/2020.8/tutorials/otu-clustering/
 ** Code from screencasts of #tidytuesday :rstats:
  [2020-09-21 Mon 12:30]
  https://github.com/dgrtwo/data-screencasts/tree/master/screencast-annotations
