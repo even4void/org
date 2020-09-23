@@ -1,4 +1,13 @@
 * Inbox
+** What are the most beautiful LISP macros that you know? :lisp:
+ [2020-09-23 Wed 11:06]
+ https://www.quora.com/What-are-the-most-beautiful-LISP-macros-that-you-know/answer/Panicz-Godek
+** Fisher-Yates shuffle in Scheme :scheme:
+ [2020-09-23 Wed 10:26]
+ https://codereview.stackexchange.com/questions/81775/fisher-yates-shuffle-in-scheme
+** ISLR-python :statistics:python:
+ [2020-09-23 Wed 10:22]
+ https://github.com/JWarmenhoven/ISLR-python
 ** Compiler explorer :compiler:
  [2020-09-22 Tue 12:03]
  https://godbolt.org/

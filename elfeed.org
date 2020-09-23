@@ -51,6 +51,7 @@
 *** [[http://stuartsierra.com/feed][Digital Digressions by Stuart Sierra]]                                     :clojure:
 *** [[https://dmerej.info/blog/index.xml][dmerej's blog]]                                                            :python:
 *** [[http://can3p.github.io/atom.xml][Dmitry Petrov]]                                                            :lisp:
+*** [[https://eighty-twenty.org/index.atom][Eighty-twenty]]                                                            :racket:lisp:
 *** [[https://eli.thegreenplace.net/feeds/all.atom.xml][Eli Bendersky's website]]                                                  :go:python:clojure:
 *** [[https://emacsninja.com/feed.atom][Emacs Ninja]]                                                              :emacs:lisp:clojure:
 *** [[https://blog.regehr.org/feed][Embedded in Academia]]                                                     :compiler:clang:
@@ -310,6 +311,7 @@
 *** [[https://rambo.codes/feed.xml][Rambo Codes]]                                                              :apple:
 *** [[https://raphlinus.github.io/feed.xml][Raph Levien’s blog]]                                                       :gamedev:
 *** [[http://morrick.me/feed][Riccardo Mori]]                                                            :apple:
+*** [[https://blog.robenkleene.com/feed/atom/][Roben Kleene]]                                                             :apple:vim:
 *** [[https://feeds.feedburner.com/robinsloan][Robin's blog]]                                                             :misc:diary:
 *** [[http://blog.rongarret.info/feeds/posts/default][Rondam Ramblings]]                                                         :misc:
 *** [[https://www.schneier.com/blog/atom.xml][Schneier on Security]]                                                     :infosec:
