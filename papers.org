@@ -140,7 +140,7 @@ For CS folks, the third chapter provides a gentle primer to biology.
 
 See also [[http://www.cs.hunter.cuny.edu/~saad/courses/bioinf/][Bioinformatics Algorithms]], by Saad Mneimneh, which offers solutions to selected exercises from each chapter.
 
-** Analytic combinatorics for bioinformatics i: seeding methods ([[papers:filion-2017-analy-combin.pdf][filion-2017-analy-combin]])
+** Analytic combinatorics for bioinformatics I: seeding methods ([[papers:filion-2017-analy-combin.pdf][filion-2017-analy-combin]])
 :PROPERTIES:
 :Custom_ID: filion-2017-analy-combin
 :END:
@@ -1052,7 +1052,7 @@ Topology "includes the study of what the connected components of a space are, bu
 
 *TODO:* Draw some connections with Category Theory.
 
-** A scheme concurrency library ([[papers:kato-2017-schem.pdf][kato-2017-schem]])
+** A Scheme concurrency library ([[papers:kato-2017-schem.pdf][kato-2017-schem]])
  :PROPERTIES:
  :Custom_ID: kato-2017-schem
  :END:
@@ -1088,3 +1088,46 @@ This article led me to revisit Lispstat, the Lisp-related code found on UCLA ser
 There was no real follow-up in terms of a new language design, JIT compiler or alternative to R. On the one hand, Tony Rossini worked on a [[https://github.com/blindglobe/common-lisp-stat][reimplementation]] of LispStat in Common Lisp but the development has staled quickly. On the other hand, there was already Clojure (first with Incanter, then with third-party libs) and later Julia came out, and they took the lead on modern software for numerical and statistical computing.
 
 See also: [[https://news.ycombinator.com/item?id=14795992][reddit thread]].
+
+** False discovery rates: a new deal ([[papers:stephens-2017-false.pdf][stephens-2017-false]])
+ :PROPERTIES:
+ :Custom_ID: stephens-2017-false
+ :END:
+Unlike traditional FDR computation, the author suggest to use effect size and its standard error as input to the local FDR[fn::The local FDR is the probability, given the observed data, that effect /j/ would be a false discovery, if we were to declare it a discovery.] computation, which yields interval estimates (credible regions) for each effect in addition to measures of significance.
+
+Gelman's type S errors are handled using the local false sign rate, following Tukey recommendation to answer the question "is the evidence strong enough to support a belief that the observed difference has the correct sign?" rather than "are the effects different?".
+
+See also: R package [[https://github.com/stephens999/ashr][ashr]].
+
+** Teaching stats for data science ([[papers:kaplan-2017-teach.pdf][kaplan-2017-teach]])
+ :PROPERTIES:
+ :Custom_ID: kaplan-2017-teach
+ :END:
+This article provides a nice overview of key concepts to teach to people interested in Data Science. Not sure the term coined so long ago (Cleveland, 2001) but over-emphasized in recent years will last, but that's another story.
+
+#+BEGIN_QUOTE
+The operations to be applied each reflect a different part of the process of statistical thinking: modeling is about constructing a description from data, effect size is about summarizing that description, bootstrapping addresses the issue of precision, and cross-validation informs choices about what explanatory variables or model architectures should be used.
+#+END_QUOTE
+
+See also [[papers:donoho-2017-years-data-scien.pdf][donoho-2017-years-data-scien]] and [[https://aliquote.org/post/50-years-data-science/]].
+
+** Using functions for easier programming ([[papers:savage-2018-using-funct.pdf][savage-2018-using-funct]])
+ :PROPERTIES:
+ :Custom_ID: savage-2018-using-funct
+ :END:
+Short review (mostly citations by known programmers or language developers, e.g. Simon Peyton Jones) of the advantage of functional programing over imperative or OO approaches (which mostly resolves around object state and mutability).
+
+** Best practices for scientific computing ([[papers:wilson-2014-best-pract.pdf][wilson-2014-best-pract]])
+ :PROPERTIES:
+ :Custom_ID: wilson-2014-best-pract
+ :END:
+Summary of best practices, from the [[https://software-carpentry.org/][Software Carpentry team]]:
+
+1. Write programs for people, not computers.
+2. Let the computer do the work.
+3. Make incremental changes.
+4. Don’t repeat yourself (or others).
+5. Plan for mistakes.
+6. Optimize software only after it works correctly.
+7. Document design and purpose, not mechanics.
+8. Collaborate.

@@ -1,4 +1,13 @@
 * Inbox
+** Beating Up on Qsort :compiler:clang:
+ [2020-09-24 Thu 13:56]
+ https://travisdowns.github.io/blog/2019/05/22/sorting.html
+** Pseudo random number generators :statistics:
+ [2020-09-24 Thu 13:53]
+ https://agner.org/random/
+** Some of git internals :git:
+ [2020-09-24 Thu 10:08]
+ https://yurichev.com/blog/git/
 ** Computing multiple hash values in parallel with AVX2 :clang:
  [2020-09-23 Wed 16:23]
  https://www.snellman.net/blog/archive/2017-03-19-parallel-hashing-with-avx2/

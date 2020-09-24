@@ -145,6 +145,7 @@
 *** [[https://williamyaoh.com/feed.atom][William Yao's Haskell Musings]]                                            :haskell:
 *** [[http://www.linusakesson.net/rssfeed.php][www.linusakesson.net]]                                                     :compiler:
 *** [[https://yarmo.eu/rss/all][Yarmo's blog and notes]]                                                   :misc:
+*** [[https://yurichev.com/news/rss.xml][Dennis Yourichev]]                                                         :compiler:clang:maths:
 *** [[https://lispblog.xach.com/rss][Zach Beane Common Lisp]]                                                   :lisp:
 *** [[https://tymoon.eu/api/reader/atom][妖怪世捨て人]]                                                             :gamedev:
 ** Editors                                                                    :editors:
