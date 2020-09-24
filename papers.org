@@ -54,7 +54,7 @@ Basic overview of number theory and related algorithms, with several exercises a
 See also:
 - Margaret M. Fleck. [[http://mfleck.cs.illinois.edu/building-blocks/][Building Blocks for Theoretical Computer Science]]. Version 1.3 (January 2013)
 - Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. [[https://courses.csail.mit.edu/6.042/spring18/][Mathematics for Computer Science]]. June 2018 revision
-- Pat Morin. [[http://opendatastructures.org/][Open Data Structures]]. Edition 0.1Gβ (January 2016)
+- Pat Morin. [[http://opendatastructures.org/][Open Data Structures]]. Edition 0.1Gb (January 2016)
 - Don Sheehy. [[https://donsheehy.github.io/datastructures/][A Course in Data Structures and Object-Oriented Design]]. February 2019 or later revision
 
 *Russian (Peasant) multiplication*
@@ -364,13 +364,13 @@ See also [[https://worace.works/2016/05/24/hash-array-mapped-tries/][Hash Array 
 :Custom_ID: clinger-1988-implem-strat-contin
 :END:
 Continuations (=call/cc= in Scheme) are generally used to manipulate the flow of control in a program, which means that they are close to =GOTO= statements in imperative languages.
-See [[https://www.scheme.com/tspl3/further.html#./further:h3][§3.3. Continuations]] of TSPL3 and [[https://docs.racket-lang.org/reference/cont.html][§10.4 Continuations]] of the Racket Reference guide.
+See [[https://www.scheme.com/tspl3/further.html#./further:h3][3.3. Continuations]] of TSPL3 and [[https://docs.racket-lang.org/reference/cont.html][10.4 Continuations]] of the Racket Reference guide.
 
 ** Improving Palliative Care with Deep Learning ([[papers:avati-2017-improv-palliat.pdf][avati-2017-improv-palliat]])
 :PROPERTIES:
 :Custom_ID: avati-2017-improv-palliat
 :END:
-See Frank Harrell's [[http://www.fharrell.com/post/medml/](blog post]].
+See Frank Harrell's [[http://www.fharrell.com/post/medml/][blog post]].
 
 #+BEGIN_QUOTE
 As with any retrospective study not based on an inception cohort with a well-defined “time zero”, it is tricky to define a time zero and somewhat easy to have survival bias and other sampling biases sneak into the analysis. The ML algorithm required division of patients into “positive” and “negative” cases, something not required by regression models. “Positive” cases must have at least 12 months of previous data in the health system, weeding out patients who died quickly. “Negative” cases must have been alive for at least 12 months from the prediction date. It is also not clear how variable censoring times were handled. In standard statistical model, patients entering the system just before the data analysis have short follow-up and are right-censored early, but still contribute some information.
@@ -509,8 +509,8 @@ Multitasking parallel algorithm, in 3 stages: This algorithm automatically divid
 
 See also:
 
-- [[https://observablehq.com/@mbostock/the-delaunays-dual][The Delaunay’s Dual]] and [[https://github.com/d3/d3-delaunay][d3-delaunay]]
-- [[https://observablehq.com/@mbostock/lloyds-algorithm][Lloyd’s Algorithm]]
+- [[https://observablehq.com/@mbostock/the-delaunays-dual][The Delaunay's Dual]] and [[https://github.com/d3/d3-delaunay][d3-delaunay]]
+- [[https://observablehq.com/@mbostock/lloyds-algorithm][Lloyd's Algorithm]]
 - [[https://bl.ocks.org/mbostock/4341156][Delaunay Triangulation]]
 - [[https://bl.ocks.org/mbostock/cd52a201d7694eb9d890][Voronoi Topology]]
 - [[https://isaacguan.github.io/2017/12/22/Implementation-of-Voronoi-Diagram-and-Delaunay-Triangulation/][Implementation of Voronoi Diagram and Delaunay Triangulation]]
@@ -570,10 +570,11 @@ Note that parallel execution requires stream-aware RNGs (p.7).
 :PROPERTIES:
 :Custom_ID: clauset-2009-power
 :END:
-1. Estimate the parameters xmin and α of the power-law model using the methods described in Section 3.
+1. Estimate the parameters xmin and $\alpha$ of the power-law model using the methods described in Section 3.
 2. Calculate the goodness-of-fit between the data and the power law using the method described in Section 4. If the resulting p-value is greater than 0.1 the power law is a plausible hypothesis for the data, otherwise it is rejected.
 3. Compare the power law with alternative hypotheses via a likelihood ratio test, as described in Section 5. For each alternative, if the calculated likelihood ratio is significantly different from zero, then its sign indicates whether the alternative is favored over the power-law model or not.
- ** Automl-zero: evolving machine learning algorithms from scratch ([[papers:real-2020-autom-zero.pdf][real-2020-autom-zero]])
+
+** Automl-zero: evolving machine learning algorithms from scratch ([[papers:real-2020-autom-zero.pdf][real-2020-autom-zero]])
 :PROPERTIES:
 :Custom_ID: real-2020-autom-zero
 :END:
@@ -693,7 +694,7 @@ Stata is instead tested using an automated procedure that involves running 1,064
 
 Mostly about the internal process of certification /per se/ rather than scientific computing, except maybe p. 40 ff when the author discuss the problem of false precision: Double precision floating point numbers are stored using 64 bits. Coprocessors, however, use 80 bits, providing extra guard bits to improve accuracy. On the coprocessor, calculations are made using 80 bits and are then handed back to the CPU rounded to 64 bits.
 
-According to [[papers:altman-2004-numer-issues.pdf][altman-2004-numer-issues]], Stata is quite good. For instance, Stata v6 correctly returned the certified values for the π-digits problem.
+According to [[papers:altman-2004-numer-issues.pdf][altman-2004-numer-issues]], Stata is quite good. For instance, Stata v6 correctly returned the certified values for the Pi-digits problem.
 
 ** Targeted Maximum Likelihood Learning ([[papers:laan-2006-target-maxim.pdf][laan-2006-target-maxim]])
 :PROPERTIES:
@@ -728,7 +729,7 @@ Write clearly -- don't be too clever.
 
 A related advice is "write clearly -- don't sacrifice clarity for 'efficiency'."
 
-An n-by-n matrix has n^{2} elements, which means n^{2} assignments for its initialization. Multiplying two such matrices or solving n linear equations of n unknowns require on the order of n^{3} operations. If n ≥ 10, the time required to initialize a matrix is not important. What if n < 10? (Hint: I/O operations are more time consuming than arithmetic.)
+An n-by-n matrix has n^{2} elements, which means n^{2} assignments for its initialization. Multiplying two such matrices or solving n linear equations of n unknowns require on the order of n^{3} operations. If n >= 10, the time required to initialize a matrix is not important. What if n < 10? (Hint: I/O operations are more time consuming than arithmetic.)
 
 All rules are listed at the end (pp. 159-161).
 
@@ -812,7 +813,7 @@ See also the R package [[https://cran.r-project.org/web/packages/TDA/index.html]
 :END:
 There are many Coppersmith-based attacks, but this mostly resolves around the case where public exponent /e/ is small or when partial knowledge of the secret key is available:
 
-- *Small decryption exponent /e/:* so far the best known attack recovers /e/ if it is less than N^.292. This uses a bivariate version of Coppersmith that lacks a rigorous proof of correctness, but seems to work well in practice. Important open questions are whether /e/ < N^1/2−ε is attackable (the conjecture is that it should be), and whether there are rigorously provable variants of Coppersmith for bivariate or multivariate polynomials.
+- *Small decryption exponent /e/:* so far the best known attack recovers /e/ if it is less than N^.292. This uses a bivariate version of Coppersmith that lacks a rigorous proof of correctness, but seems to work well in practice. Important open questions are whether /e/ < N^1/2-e is attackable (the conjecture is that it should be), and whether there are rigorously provable variants of Coppersmith for bivariate or multivariate polynomials.
 - *Partial secret key exposure:* when certain bits of /e/ or the factors /p/, /q/ of /N/ are exposed, it is often possible to recover them completely.
 
 ** Using reference models in variable selection ([[papers:pavone-2020-using.pdf][pavone-2020-using]])
@@ -846,7 +847,7 @@ Category Theory used to reshape and reformulate problems within pure mathematics
 
 Two central themes:
 
-- functorial semantics: C → D ≈ interpretation of C within D; syntax (grammar in NLP) refers to rules for putting things together and semantics (meaning) refers to the meaning of those things.
+- functorial semantics: C → D ~ interpretation of C within D; syntax (grammar in NLP) refers to rules for putting things together and semantics (meaning) refers to the meaning of those things.
 - compositionality
 
 ** Why Rust? ([[papers:blandy-2015-why-rust.pdf][blandy-2015-why-rust]])
@@ -927,7 +928,7 @@ Recall what Frank Harrell advocates for logistic regression (n=96 to assess the 
 A simple way to do this is to calculate the sample size needed to precisely estimate (within a small margin of error) the intercept in a model when no predictors are included (the null model).
 #+END_QUOTE
 
-This yields the following estimate (when aiming at computing a precise estimate of the overall outcome risk): With a binary outcome that occurs in half of individuals, a sample size of at least 385 people is needed to target a confidence interval of 0.45 to 0.55 for the overall outcome proportion, and thus an error of at most 0.05 around the true value of 0.5. To achieve the same margin of error with outcome proportions of 0.1 and 0.2, at least 139 and 246 participants, respectively, are required. For time-to-event outcomes, a key time point needs to be identified, along with the anticipated outcome event rate. For example, with an anticipated event rate of 10 per 100 person years of the entire follow-up, the sample size must include a total of 2366 person years of follow-up to ensure an expected margin of error of ≤0.05 in the estimate of a 10 year outcome probability of 0.63, such that the expected confidence interval is 0.58 to 0.68. See Fig. 1 and Box 1.
+This yields the following estimate (when aiming at computing a precise estimate of the overall outcome risk): With a binary outcome that occurs in half of individuals, a sample size of at least 385 people is needed to target a confidence interval of 0.45 to 0.55 for the overall outcome proportion, and thus an error of at most 0.05 around the true value of 0.5. To achieve the same margin of error with outcome proportions of 0.1 and 0.2, at least 139 and 246 participants, respectively, are required. For time-to-event outcomes, a key time point needs to be identified, along with the anticipated outcome event rate. For example, with an anticipated event rate of 10 per 100 person years of the entire follow-up, the sample size must include a total of 2366 person years of follow-up to ensure an expected margin of error less than 0.05 in the estimate of a 10 year outcome probability of 0.63, such that the expected confidence interval is 0.58 to 0.68. See Fig. 1 and Box 1.
 
 ** On the design of text editors ([[papers:rougier-2020-desig-text-editor.pdf][rougier-2020-desig-text-editor]])
 :PROPERTIES:
@@ -946,7 +947,7 @@ Key idea : Two features of functional languages in particular, higher-order func
 Functional programmers argue that there are great material benefits — that a functional programmer is an order of magnitude more productive than his or her conventional counterpart, because functional programs are an order of magnitude shorter. Yet why should this be? The only faintly plausible reason one can suggest on the basis of these “advantages” is that conventional programs consist of 90% assignment statements, and in functional programs these can be omitted! This is plainly ridiculous. If omitting assignment statements brought such enormous benefits then Fortran programmers would have been doing it for twenty years. It is a logical impossibility to make a language more powerful by omitting features, no matter how bad they may be.
 #+END_QUOTE
 
-** Une introduction agréable au langage haskell 98 ([[papers:hudak-2007-une-haskel.pdf][hudak-2007-une-haskel]])
+** Une introduction agreable au langage haskell 98 ([[papers:hudak-2007-une-haskel.pdf][hudak-2007-une-haskel]])
 :PROPERTIES:
 :Custom_ID: hudak-2007-une-haskel
 :END:
@@ -1045,7 +1046,7 @@ Later it has been supplnated by =dplyr=, and later on by a combination of =dplyr
 point clouds = finite sets of points (representing finite and possibly noisy samples taken from a geometric object) with an associated distance function. The concept of metrics and coordinates are often ill-defined in a biological context (e.g. BLAST scores).
 
 #+BEGIN_QUOTE
-One method of clustering a point cloud is the so-called single linkage clustering, in which a graph is constructed whose vertex set is the set of points in the cloud, and where two such points are connected by an edge if their distance is ≤ ε, where ε is a parameter. Some work in clustering theory has been done in trying to determine the optimal choice of ε, but it is now well understood that it is much more informative to maintain the entire dendrogram of the set, which provides a summary of the behavior of clustering under all possible values of the parameter ε at once. It is therefore pro- ductive to develop other mechanisms in which the behavior of invariants or construction under a change of parameters can be effectively summarized.
+One method of clustering a point cloud is the so-called single linkage clustering, in which a graph is constructed whose vertex set is the set of points in the cloud, and where two such points are connected by an edge if their distance is <= e, where e is a parameter. Some work in clustering theory has been done in trying to determine the optimal choice of e, but it is now well understood that it is much more informative to maintain the entire dendrogram of the set, which provides a summary of the behavior of clustering under all possible values of the parameter e at once. It is therefore productive to develop other mechanisms in which the behavior of invariants or construction under a change of parameters can be effectively summarized.
 #+END_QUOTE
 
 Topology "includes the study of what the connected components of a space are, but more generally it is the study of connectivity information, which includes the classification of loops and higher dimensional surfaces within the space."
