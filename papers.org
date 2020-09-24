@@ -973,3 +973,118 @@ map f (x :xs) = f x : map f xs
 :Custom_ID: figueroa-2021-which-haskel
 :END:
 The authors use the Hasckage central package and =.cabal= files to study how many packages rely on the [[https://wiki.haskell.org/Monad_Transformer_Library][Monad Transformers Library]] (as imported or provided modules, or as dependencies), which monads are currently in use, and whether alternative implementation of monads are used. Regarding the use of MTL, results show that there are close to 10,000 packages involving at least 1 monad, and the most frequence monad are =State=, =Reader= and =Trans=.
+
+** Functional data structures for typed racket ([[papers:prashanth-2010-funct-data.pdf][prashanth-2010-funct-data]])
+ :PROPERTIES:
+ :Custom_ID: prashanth-2010-funct-data
+ :END:
+Example of builtin functional data structure in Scheme: the linked list. Remember that lists are usually mutable in Scheme. Other efficient data structures proposed by @okasaki-1996-purel-funct or @bagwell-2001-ideal-hash-trees are available in Haskell or Clojure. The authors describe several higher-order data structure implemented in Typed Racket: queue, deque, heaps, extensions on lists (random access, streams, hash, etc.).
+
+See also:
+
+Phil Bagwell. Fast Functional Lists, Hash-Lists, Deques and Variable Length Arrays. In Implementation of Functional Languages, 14th In- ternational Workshop, 2002.
+
+** Evolution of emacs lisp ([[papers:monnier-2020-evolut-emacs-lisp.pdf][monnier-2020-evolut-emacs-lisp]])
+ :PROPERTIES:
+ :Custom_ID: monnier-2020-evolut-emacs-lisp
+ :END:
+History: TECO < Emacs (EINE, then ZWEI) < Multics Emacs < Unix (Gosling, then Unipress) Emacs < GNU Emacs, then its fork, Lucid Emacs (later XEmacs). Emacs 13 (1985, Richard Stallman) -> Emacs 26.1 (2018, John Wiegley and Eli Zaretskii).
+
+** The Zipper ([[papers:huet-1997-zipper.pdf][huet-1997-zipper]])
+ :PROPERTIES:
+ :Custom_ID: huet-1997-zipper
+ :END:
+On the use of destructive operations in data structures. Basic idea: the tree is turned inside-out like a returned glove, pointers from the root to the current position being reversed in a path structure. The current location holds both the downward current subtree and the upward path. All navigation and modification primitives operate on the location structure. Going up and down in the structure is analogous to closing and opening a zipper in a piece of clothing, whence the name.
+
+Complete Ocaml implementation is provided.
+
+#+BEGIN_QUOTE
+Efficient destructive algorithms on binary trees may be programmed with these completely applicative primitives, which all use constant time, since they all reduce to local pointer manipulation.
+#+END_QUOTE
+
+** Tidy Data ([[papers:wickham-2014-tidy-data.pdf][wickham-2014-tidy-data]])
+ :PROPERTIES:
+ :Custom_ID: wickham-2014-tidy-data
+ :END:
+The core idea of a tidy dataset is that "each variable is a column, each observation is a row, and each type of observational unit is a table". This should sound familiar to people used to SQL, [[https://en.wikipedia.org/wiki/Database_normalization][database normalization]], and [[https://en.wikipedia.org/wiki/Online_analytical_processing][OLAP]] principles.
+
+This idea became the baiss of the [[https://tidyr.tidyverse.org/][tidyr]] package, superseding the =reshape2= package (used to switch from wide to long format, and the converse), and closely related to the tibble or tribble concept of a data table (which is different from what offer standard data frames or the [[https://rdatatable.gitlab.io/data.table][data.table]] package).
+
+** The split-apply-combine strategy for data analysis ([[papers:wickham-2011-split-apply.pdf][wickham-2011-split-apply]])
+ :PROPERTIES:
+ :Custom_ID: wickham-2011-split-apply
+ :END:
+It was a nice paper at the time, and I used it a lot to illustrate ideas related to data management and data cleansing.
+
+The [[http://had.co.nz/plyr/][plyr]][fn::Now [[https://plyr.io/][plyr]] refers to simple, accessible and customisable media player] package was great, with some idiosyncratic notation for arguments (e.g., =.data=). It allowed to return multple values which was possible but trickier with =Hmisc= and unlikely to be useful with =tapply= or =aggregate=.
+
+#+BEGIN_QUOTE
+(...) break up a big problem into manageable pieces, operate on each piece independently and then put all the pieces back together.
+#+END_QUOTE
+
+
+Base R versus =plyr=:
+
+#+BEGIN_SRC R
+## base
+spl = with(crabs, split(BD, sp))
+apl = lapply(spl, mean)
+cbn = rbind(x = apl)
+cbn
+## plyr
+plyr::ddply(data = crabs, .(sp), summarize, x = mean(BD))
+## plyr::ddply(crabs, "sp", summarize, x = mean(BD))
+#+END_SRC=
+
+Later it has been supplnated by =dplyr=, and later on by a combination of =dplyr= + =tidyr=, and what has now become the "tidyverse" (=dplyr= + =tidyr= + =forcats= + whatever).
+
+** Topology and data ([[papers:carlsson-2009-topol-data.pdf][carlsson-2009-topol-data]])
+ :PROPERTIES:
+ :Custom_ID: carlsson-2009-topol-data
+ :END:
+point clouds = finite sets of points (representing finite and possibly noisy samples taken from a geometric object) with an associated distance function. The concept of metrics and coordinates are often ill-defined in a biological context (e.g. BLAST scores).
+
+#+BEGIN_QUOTE
+One method of clustering a point cloud is the so-called single linkage clustering, in which a graph is constructed whose vertex set is the set of points in the cloud, and where two such points are connected by an edge if their distance is ≤ ε, where ε is a parameter. Some work in clustering theory has been done in trying to determine the optimal choice of ε, but it is now well understood that it is much more informative to maintain the entire dendrogram of the set, which provides a summary of the behavior of clustering under all possible values of the parameter ε at once. It is therefore pro- ductive to develop other mechanisms in which the behavior of invariants or construction under a change of parameters can be effectively summarized.
+#+END_QUOTE
+
+Topology "includes the study of what the connected components of a space are, but more generally it is the study of connectivity information, which includes the classification of loops and higher dimensional surfaces within the space."
+
+*TODO:* Draw some connections with Category Theory.
+
+** A scheme concurrency library ([[papers:kato-2017-schem.pdf][kato-2017-schem]])
+ :PROPERTIES:
+ :Custom_ID: kato-2017-schem
+ :END:
+Description of a concurrent library built on top of [[https://srfi.schemers.org/srfi-18/srfi-18.html][SRFI-18]].
+Implementation of (1) shared queue as a record cith usual queue structure fields (mutex and condition variable), and (2) thread pool as a container which holds specified number of threads which never stop until stop operation is explicitly invoked.
+
+** A Literate Program ([[papers:bentley-1986-liter-progr.pdf][bentley-1986-liter-progr]])
+ :PROPERTIES:
+ :Custom_ID: bentley-1986-liter-progr
+ :END:
+The famous paper where Jon Bentley devised a short Unix pipeline while Don Knuth wrote a full-length web program to solve the following task: Given a text file and an integer k, print the k most common words in the file (and the number of their occurrences) in decreasing frequency.
+
+#+BEGIN_SRC shell
+tr -cs A-Za-z' ' | tr A-Z a-z | sort | uniq -c | sort -rn | sed ${1}q
+#+END_SRC
+
+** Strong Inference ([[papers:platt-1964-stron-infer.pdf][platt-1964-stron-infer]])
+ :PROPERTIES:
+ :Custom_ID: platt-1964-stron-infer
+ :END:
+Canonical paper where Platt argues for the need of devising alternative hypothesis and reliable experiment (with alternative possible outcomes) instead of focusing on a single hypothesis to avoid confirmation biais. This is mostly a scientific method of thinking, not a statistical framework, but in a certain sense the likelihood paradigm is probably the best framework for that purpose as it allows to [[https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.2041-210X.2010.00063.x][compare alternative models]].
+
+** On Abandoning Xlisp-Stat ([[papers:de-2005-aband-xlisp-stat.pdf][de-2005-aband-xlisp-stat]])
+ :PROPERTIES:
+ :Custom_ID: de-2005-aband-xlisp-stat
+ :END:
+This article led me to revisit Lispstat, the Lisp-related code found on UCLA servers (especially the ones written by Jan de Leeuw in the 80s), and my interest in Lisp-based statistical packages grew up with Ross Ihaka's paper (@ihaka-2008-back-futur).
+
+** Back to the future: lisp as a base for a statistical computing system ([[papers:ihaka-2008-back-futur.pdf][ihaka-2008-back-futur]])
+ :PROPERTIES:
+ :Custom_ID: ihaka-2008-back-futur
+ :END:
+There was no real follow-up in terms of a new language design, JIT compiler or alternative to R. On the one hand, Tony Rossini worked on a [[https://github.com/blindglobe/common-lisp-stat][reimplementation]] of LispStat in Common Lisp but the development has staled quickly. On the other hand, there was already Clojure (first with Incanter, then with third-party libs) and later Julia came out, and they took the lead on modern software for numerical and statistical computing.
+
+See also: [[https://news.ycombinator.com/item?id=14795992][reddit thread]].

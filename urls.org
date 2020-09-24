@@ -1,4 +1,16 @@
 * Inbox
+** Computing multiple hash values in parallel with AVX2 :clang:
+ [2020-09-23 Wed 16:23]
+ https://www.snellman.net/blog/archive/2017-03-19-parallel-hashing-with-avx2/
+** Why PS4 downloads are so slow :misc:
+ [2020-09-23 Wed 16:22]
+ https://www.snellman.net/blog/archive/2017-08-19-slow-ps4-downloads/
+** libstephen is a C library that provides a number of basic tools for C programming :clang:
+ [2020-09-23 Wed 15:01]
+ https://github.com/brenns10/libstephen
+** plotnine is an implementation of a grammar of graphics in Python :python:
+ [2020-09-23 Wed 14:55]
+ https://plotnine.readthedocs.io/en/stable/
 ** What are the most beautiful LISP macros that you know? :lisp:
  [2020-09-23 Wed 11:06]
  https://www.quora.com/What-are-the-most-beautiful-LISP-macros-that-you-know/answer/Panicz-Godek

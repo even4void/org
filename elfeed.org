@@ -30,7 +30,7 @@
 *** [[https://blog.klipse.tech//feed.xml][An interactive journey into functional programming ]]                      :clojure:
 *** [[https://rushter.com/blog/feed/][Artem Golubin]]                                                            :python:
 *** [[https://brandur.org/articles.atom][Articles - brandur.org]]                                                   :rust:postgres:
-*** [[https://beepb00p.xyz/rss.xml][beepb00p]]                                                                 :python:emacs:
+*** [[https://beepb00p.xyz/rss.xml][beepb00p]] :python:emacs:
 *** [[https://milesmcbain.xyz/rss/][Before I Sleep]]                                                           :rstats:
 *** [[http://bitemyapp.com/atom.xml][bitemyapp]]                                                                :haskell:
 *** [[https://bitemyapp.com/rss.xml][bitemyapp.com]]                                                            :haskell:
