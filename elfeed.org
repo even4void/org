@@ -273,6 +273,7 @@
 *** [[https://feeds.feedburner.com/JakeMccrarysMusings][Jake McCrary]]                                                             :unix:misc:
 *** [[https://occasionallycogent.com/feed.xml][James Cash's blog]]                                                        :emacs:misc:
 *** [[https://jrsinclair.com/index.rss][James Sinclair]]                                                           :misc:
+*** [[https://jpmens.net/atom.xml][Jan-Piet Mens]]                                                            :unix:apple:
 *** [[https://www.jefftk.com/news.rss][Jeff Kaufman's Writing]]                                                   :misc:
 *** [[https://jmtd.net/log/index.atom][Jonathan Dowland's Weblog]]                                                :misc:
 *** [[https://joshbradley.me/index.xml][Josh Bradley]]                                                             :misc:
