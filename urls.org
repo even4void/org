@@ -1,4 +1,16 @@
 * Inbox
+** Create an amazing Rust GitHub project in no time :rust:
+ [2020-09-29 Tue 15:36]
+ https://www.marcoieni.com/2020/09/create-an-amazing-rust-github-project-in-no-time/
+** Running numbers :python:
+ [2020-09-29 Tue 14:59]
+ https://leancrew.com/all-this/2020/09/running-numbers/
+** PCA with Malahanobis distance :statistics:
+ [2020-09-29 Tue 14:52]
+ https://freakonometrics.hypotheses.org/61377
+** Vim: you don't need NERDtree or (maybe) netrw :vim:
+ [2020-09-29 Tue 14:11]
+ https://shapeshed.com/vim-netrw/
 ** Beating Up on Qsort :compiler:clang:
  [2020-09-24 Thu 13:56]
  https://travisdowns.github.io/blog/2019/05/22/sorting.html
