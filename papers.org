@@ -1132,3 +1132,43 @@ Summary of best practices, from the [[https://software-carpentry.org/][Software 
 6. Optimize software only after it works correctly.
 7. Document design and purpose, not mechanics.
 8. Collaborate.
+
+** A systematic review shows no performance benefit of machine learning over logistic regression for clinical prediction models ([[papers:christodoulou-2019.pdf][christodoulou-2019]])
+ :PROPERTIES:
+ :Custom_ID: christodoulou-2019
+ :END:
+Meta-analysis results:
+
+We included 71 of 927 studies. The median sample size was 1,250 (range 72e3,994,872), with 19 predictors considered (range 5-563) and eight events per predictor (range 0.3-6,697). The most common ML methods were classification trees, random forests, artificial neural networks, and support vector machines. In 48 (68%) studies, we observed potential bias in the validation procedures. Sixty-four (90%) studies used the area under the receiver operating characteristic curve (AUC) to assess discrimination. Calibration was not addressed in 56 (79%) studies. We identified 282 comparisons between an LR and ML model (AUC range, 0.52-0.99). For 145 comparisons at low risk of bias, the difference in logit(AUC) between LR and ML was 0.00 (95% confidence interval, -0.18 to 0.18). For 137 comparisons at high risk of bias, logit(AUC) was 0.34 (0.20-0.47) higher for ML.
+
+** Pseudo-random number generators for vector processors and multicore processors ([[papers:fog-2015-pseud-random.pdf][fog-2015-pseud-random]])
+ :PROPERTIES:
+ :Custom_ID: fog-2015-pseud-random
+ :END:
+Discussion on the use of vector processing and multithreading for PRNGs.
+
+Vector size limited to 256 bits with AVX2; limitation of GPUs: each strem has access to only a small amount of RAM memory.
+
+Parallel generation of pseudo-random numbers in independent streams: Provided the seeding procedure is sufficiently random, the probability that any if the subsequences are overlapping is defined as:
+
+$$ p \approx 1 - (1-k\ell/\rho)^{k=1} \approx k^2\ell/\rho, $$
+
+where $\rho$ is the total cycle length. It it is sufficiently long, then $p$ will be small. For the Mersenne Twister MT19937, $\rho = 2^19937-1$, $k=1000$ and $\ell=10^10$, such that $p = 2\cdot 10^{-5986}$.
+
+Requirements for good generators:
+
+1. The generator should pass experimental tests for randomness.
+2. The cycle length should be so high that the risk of overlapping subsequences is negligible, but not so high that the state buffer uses
+an excessive amount of data cache.
+3. Good equidistribution, as determined by theoretical or experimental methods (L’Ecuyer, 1994).
+4. Good diffusion. This is obtained if each bit in the state buffer depends on multiple bits in the previous state (Panneton, L'Ecuyer and Matsumoto, 2006). Diffusion is closely related to the concept of bifurcation in chaos theory (Fog, 2001; Černák, 1996). A good diffusion means highly chaotic behavior, which is a desirable property for a PRNG.
+5. The shortest feedback path should be long enough to fit the largest available vector register. However, a long feedback path means poor diffusion. Therefore, the shortest feedback path should not be longer than necessary.
+6. The modulus $m$ should be a power of 2 to avoid quantization effects and rounding errors.
+7. The generator should be reasonably fast.
+8. It should be possible to generate independent streams from multiple instances of the generator.
+
+** Search and clustering orders of magnitude faster than blast ([[papers:edgar-2010-searc-blast.pdf][edgar-2010-searc-blast]])
+ :PROPERTIES:
+ :Custom_ID: edgar-2010-searc-blast
+ :END:
+Found this reference on the [[https://github.com/torognes/vsearch][vsearch]] Github page. The vsearch program has an option to perform sequence clustering like USEARCH, which shall compete with [[http://weizhongli-lab.org/cd-hit/][CD-HIT]]. Not tested yet.

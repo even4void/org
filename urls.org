@@ -1,4 +1,7 @@
 * Inbox
+** Building apps with {shinipsum} and {golem} :rstats:
+ [2020-09-30 Wed 13:06]
+ https://www.brodrigues.co/blog/2020-09-27-golemdemo/
 ** Create an amazing Rust GitHub project in no time :rust:
  [2020-09-29 Tue 15:36]
  https://www.marcoieni.com/2020/09/create-an-amazing-rust-github-project-in-no-time/
