@@ -1,4 +1,10 @@
 * Inbox
+** ibuffer changed my life :emacs:
+ [2020-10-01 Thu 11:06]
+ https://tech.tonyballantyne.com/emacs/ibuffer-changed-my-life/
+** Setup Emacs as an SQL Database client :emacs:
+ [2020-10-01 Thu 10:32]
+ https://truongtx.me/2014/08/23/setup-emacs-as-an-sql-database-client
 ** Building apps with {shinipsum} and {golem} :rstats:
  [2020-09-30 Wed 13:06]
  https://www.brodrigues.co/blog/2020-09-27-golemdemo/
