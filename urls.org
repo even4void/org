@@ -1,4 +1,7 @@
 * Inbox
+** The Statistics Software Signal :statistics:
+ [2020-10-01 Thu 21:53]
+ https://seanjtaylor.com/2013/01/03/the-statistics-software-signal.html
 ** ibuffer changed my life :emacs:
  [2020-10-01 Thu 11:06]
  https://tech.tonyballantyne.com/emacs/ibuffer-changed-my-life/
