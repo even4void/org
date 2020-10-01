@@ -983,7 +983,7 @@ Example of builtin functional data structure in Scheme: the linked list. Remembe
 
 See also:
 
-Phil Bagwell. Fast Functional Lists, Hash-Lists, Deques and Variable Length Arrays. In Implementation of Functional Languages, 14th In- ternational Workshop, 2002.
+Phil Bagwell. Fast Functional Lists, Hash-Lists, Deques and Variable Length Arrays. In Implementation of Functional Languages, 14th International Workshop, 2002.
 
 ** Evolution of emacs lisp ([[papers:monnier-2020-evolut-emacs-lisp.pdf][monnier-2020-evolut-emacs-lisp]])
  :PROPERTIES:
@@ -1161,7 +1161,7 @@ Requirements for good generators:
 2. The cycle length should be so high that the risk of overlapping subsequences is negligible, but not so high that the state buffer uses
 an excessive amount of data cache.
 3. Good equidistribution, as determined by theoretical or experimental methods (L’Ecuyer, 1994).
-4. Good diffusion. This is obtained if each bit in the state buffer depends on multiple bits in the previous state (Panneton, L'Ecuyer and Matsumoto, 2006). Diffusion is closely related to the concept of bifurcation in chaos theory (Fog, 2001; Černák, 1996). A good diffusion means highly chaotic behavior, which is a desirable property for a PRNG.
+4. Good diffusion. This is obtained if each bit in the state buffer depends on multiple bits in the previous state (Panneton, L'Ecuyer and Matsumoto, 2006). Diffusion is closely related to the concept of bifurcation in chaos theory (Fog, 2001; Cernak, 1996). A good diffusion means highly chaotic behavior, which is a desirable property for a PRNG.
 5. The shortest feedback path should be long enough to fit the largest available vector register. However, a long feedback path means poor diffusion. Therefore, the shortest feedback path should not be longer than necessary.
 6. The modulus $m$ should be a power of 2 to avoid quantization effects and rounding errors.
 7. The generator should be reasonably fast.
@@ -1172,3 +1172,65 @@ an excessive amount of data cache.
  :Custom_ID: edgar-2010-searc-blast
  :END:
 Found this reference on the [[https://github.com/torognes/vsearch][vsearch]] Github page. The vsearch program has an option to perform sequence clustering like USEARCH, which shall compete with [[http://weizhongli-lab.org/cd-hit/][CD-HIT]]. Not tested yet.
+
+** Boba: authoring and visualizing multiverse analyses ([[papers:liu-2020-boba.pdf][liu-2020-boba]])
+ :PROPERTIES:
+ :Custom_ID: liu-2020-boba
+ :END:
+Github: [[https://github.com/uwdata/boba]]
+
+Multiverse analysis is an approach to data analysis in which all "reasonable" analytic decisions are evaluated in parallel and interpreted collectively, in order to foster robustness and transparency. Not to be confused with R's "tidyverse" or Julia's [[https://www.queryverse.org][Queryverse]]. Uncertainty plots (e.g., Fig. 5 and 7) are close to what Matthew Kay devised [[https://github.com/mjskay/uncertainty-examples][some years ago]]. The plotting UI also supports faceting and brushing. The sensitivity of each decision is assessed using a non-parametric K-S test.
+
+Of note, there's also some interesting stuff on the Stata side, see e.g. [[papers:young-2015-model-uncer-robus.pdf][young-2015-model-uncer-robus]].
+
+** Effective ways to build and evaluate individual survival distributions ([[papers:haider-2020-effec-ways.pdf][haider-2020-effec-ways]])
+ :PROPERTIES:
+ :Custom_ID: haider-2020-effec-ways
+ :END:
+I came across this paper after reading one of Andrew Wheeler's post: [[https://andrewpwheeler.com/2020/09/26/discrete-time-survival-models-in-python/][Discrete time survival models in python]].
+
+Individual survival distribution (ISD) are different from standard models in that they only provide relative survival measures or single-time point probability value (e.g., Gail model), whereas we are interested in calibrated probabilities.
+
+Existing ISD models: Kalbfleisch-Prentice extensions of the Cox model, elastic net Cox, Accelerated Failure Time model, Random Survival Forest model with Kaplan-Meier extensions, Multi-task Logistic Regression. Evaluation of these type of models usually rely on Concordance, 1-Calibration, Brier score, L1-loss, or D-calibration, which uses the entire distribution of estimated survival probabilities. Here D-calibration stands for distribution calibration, and it ought to address the following question: Should the patient believe the predictions implied by the survival curve? (p. 17)
+
+** A history of Clojure ([[papers:hickey-2020-histor-clojur.pdf][hickey-2020-histor-clojur]])
+ :PROPERTIES:
+ :Custom_ID: hickey-2020-histor-clojur
+ :END:
+#+BEGIN_QUOTE
+Clojure is a Lisp, but what does that mean? Lisp is a fascinating set of ideas, a family of languages without a monotonic lineage [Steele and Gabriel 1996]. There are some shared characteristics, all of which I considered positive attributes to retain for Clojure: code is data; independent read/print; small core; runtime tangibility; the REPL; and extreme flexibility.
+#+END_QUOTE
+
+Clojure 1.0: 2009 -- Clojure 1.10: 2018.
+
+Chapter 3 highlights a number of design choices (e.g. no tail recursion, Bagwell tries, map and RDF).
+
+** Vim for humans ([[papers:jousse-2017-vim-human.pdf][jousse-2017-vim-human]])
+ :PROPERTIES:
+ :Custom_ID: jousse-2017-vim-human
+ :END:
+Not much new material here, compared to other books on Neovim (e.g., [[papers:neil-2018-moder-vim.pdf][neil-2018-moder-vim]]). This is basically a detailed account of his own config.
+
+Github: [[https://github.com/vjousse/vim-for-humans-book]]
+
+** We need both exploratory and confirmatory ([[papers:tukey-1980-we-need.pdf][tukey-1980-we-need]])
+ :PROPERTIES:
+ :Custom_ID: tukey-1980-we-need
+ :END:
+I use this reference a lot when teaching as it emphasizes the interplay between exploratory data analysis and model building. Finding the question is often more important than finding the answer.
+
+** What's Wrong With Bonferroni Adjustments ([[papers:perneger-1998-whats-wrong.pdf][perneger-1998-whats-wrong]])
+ :PROPERTIES:
+ :Custom_ID: perneger-1998-whats-wrong
+ :END:
+A good reference for epidemiological studies where we don't necessarily want to adjust for multiple comparisons when testing a pre-specified set of hypotheses. Adjustments are appropriate when the same test is repeated in many subsamples, e.g., a stratified analysis without any a priori hypothesis regarding difference in the primary association measure between the subgroups. Another case in point is when searching for significant associations without pre-established hypotheses.
+
+** The mythos of model interpretability ([[papers:lipton-2018-mythos-model-inter.pdf][lipton-2018-mythos-model-inter]])
+ :PROPERTIES:
+ :Custom_ID: lipton-2018-mythos-model-inter
+ :END:
+The author discusses the problem of interpretation in the light of supervised learning, since real-world objectives are difficult to encode as simple mathematical functions (which could be encoded as an objective function). Moreover, causal relationships are hard to uncover using ML black-box models.
+
+#+BEGIN_QUOTE
+When choosing between linear and deep models, you must often make a tradeoff between algorithmic transparency and decomposability. This is because deep neural networks tend to operate on raw or lightly processed features. So, if nothing else, the features are intuitively meaningful, and post hoc reasoning is sensible. To get comparable performance, however, linear models often must operate on heavily hand-engineered features.
+#+END_QUOTE
