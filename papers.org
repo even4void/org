@@ -1037,7 +1037,7 @@ plyr::ddply(data = crabs, .(sp), summarize, x = mean(BD))
 ## plyr::ddply(crabs, "sp", summarize, x = mean(BD))
 #+END_SRC=
 
-Later it has been supplnated by =dplyr=, and later on by a combination of =dplyr= + =tidyr=, and what has now become the "tidyverse" (=dplyr= + =tidyr= + =forcats= + whatever).
+Later it has been supplanted by =dplyr=, and later on by a combination of =dplyr= + =tidyr=, and what has now become the "tidyverse" (=dplyr= + =tidyr= + =forcats= + whatever).
 
 ** Topology and data ([[papers:carlsson-2009-topol-data.pdf][carlsson-2009-topol-data]])
  :PROPERTIES:
