@@ -1,4 +1,10 @@
 * Inbox
+** Irssi tricks: navigating around :cli:
+ [2020-10-03 Sat 11:08]
+ https://joost.vunderink.net/blog/2011/12/02/irssi-tricks-navigating-around/
+** Vanderbilt Biostatistics Datasets :statistics:
+ [2020-10-03 Sat 09:33]
+ https://hbiostat.org/data/
 ** The Statistics Software Signal :statistics:
  [2020-10-01 Thu 21:53]
  https://seanjtaylor.com/2013/01/03/the-statistics-software-signal.html

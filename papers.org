@@ -1,6 +1,10 @@
 #+TITLE:  Random reading notes
 #+AUTHOR: chl
-#+DATE:   2020
+#+DATE:   2018--2020
+
+# Just add archived stuff here since it can't be added at the bottom of the file,
+# unless we change the way new material is appended in the main file. This also means
+# that the intro text is located in the file below.
 
 #+INCLUDE: "./archived/papers-work.org" :minlevel 1
 

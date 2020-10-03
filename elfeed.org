@@ -251,7 +251,7 @@
 *** [[http://cxhernandez.com/feed.xml][Carlos Xavier Hernández]]                                                  :dataviz:
 *** [[https://changelog.com/posts/feed][Changelog]]                                                                :news:
 *** [[http://www.cpdiehl.org/atom.xml][Chris Diehl]]                                                              :misc:
-*** [[http://corte.si/rss.xml][corte.si]] :infosec:
+*** [[http://corte.si/rss.xml][corte.si]]                                                                 :infosec:
 *** [[https://dan.lousqui.fr/all.rss.xml][Dan Lousqui]]                                                              :infosec:
 *** [[https://danluu.com/atom.xml][Dan Luu]]                                                                  :unix:misc:
 *** [[http://www.defmacro.org/feed.xml][defmacro]]                                                                 :rstats:lisp:
@@ -261,6 +261,7 @@
 *** [[http://dustycloud.org/blog/index.xml][DustyCloud Brainstorms]]                                                   :gamedev:
 *** [[http://eagereyes.org/rss.xml][eagereyes]]                                                                :dataviz:
 *** [[https://www.evanjones.ca/index.rss][Evan Jones - Software Engineer | Computer Scientist]]                      :misc:
+*** [[https://explog.in/rss.xml][ExpLog]]                                                                   :emacs:apple:
 *** [[https://fangpenlin.com/feed.xml][Fang-Pen's coding note]]                                                   :misc:
 *** [[https://www.sacrideo.us/rss/][Fastidious Elegance]]                                                      :misc:
 *** [[http://stefanoborini.com/feed.xml][Fly, Crash, Raise Exception]]                                              :clang:python:
