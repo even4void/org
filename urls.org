@@ -1,4 +1,28 @@
 * Inbox
+** asdf, Manage multiple runtime versions :cli:
+ [2020-10-05 Mon 12:29]
+ https://github.com/asdf-vm/asdf
+** Python Generator Expressions :python:
+ [2020-10-05 Mon 11:47]
+ https://unchitta.com/blog/2020/05/python-generator-expression/
+** MIT Probabilistic Computing Project :misc:
+ [2020-10-05 Mon 11:05]
+ http://probcomp.csail.mit.edu/
+** Suffix Tree Construction :algorithms:
+ [2020-10-05 Mon 10:34]
+ https://sandipanweb.wordpress.com/2017/05/10/suffix-tree-construction-and-the-longest-repeated-substring-problem-in-python/
+** HTTP post files :misc:
+ [2020-10-04 Sun 09:20]
+ https://0x0.st/
+** Rust Starter Kit 2020 :rust:
+ [2020-10-03 Sat 19:55]
+ https://wiki.alopex.li/RustStarterKit2020
+** igel, A machine learning tool :python:statistics:
+ [2020-10-03 Sat 19:54]
+ https://github.com/nidhaloff/igel
+** Report meeting (ox exporter) :emacs:
+ [2020-10-03 Sat 17:36]
+ https://github.com/DarkBuffalo/ox-report
 ** Irssi tricks: navigating around :cli:
  [2020-10-03 Sat 11:08]
  https://joost.vunderink.net/blog/2011/12/02/irssi-tricks-navigating-around/

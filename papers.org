@@ -1238,3 +1238,13 @@ The author discusses the problem of interpretation in the light of supervised le
 #+BEGIN_QUOTE
 When choosing between linear and deep models, you must often make a tradeoff between algorithmic transparency and decomposability. This is because deep neural networks tend to operate on raw or lightly processed features. So, if nothing else, the features are intuitively meaningful, and post hoc reasoning is sensible. To get comparable performance, however, linear models often must operate on heavily hand-engineered features.
 #+END_QUOTE
+
+** Cubic splines to model relationships between continuous variables and outcomes: a guide for clinicians ([[papers:gauthier-2020-cubic.pdf][gauthier-2020-cubic]])
+ :PROPERTIES:
+ :Custom_ID: gauthier-2020-cubic
+ :END:
+Usually 5 knots or less are okay (say, 5th, 25th, 50th, 75th and 95th percentiles). Compared to classic polynomial curve fitting, the restricted cubic spline curve is linear before the first knot and after the last knot. Using k knots, we have k components: a constant, a linear component, and k-2 cubic components, that is:
+
+$$g(y) = \beta_0 + \beta_1 x + \sum_{i=2}^{k-1} \beta_i C_i(x).$$
+
+See =rms::rcs= from Frank Harrell's R package.
