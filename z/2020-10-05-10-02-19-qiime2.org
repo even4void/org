@@ -2,7 +2,7 @@
 
 #+FILETAGS: :bioinformatics:
 
-Although it is oriented toward the analysis of microbiomes, it might still be relevant for fungi metabarcoding. The workflow and associated tools are almost identical: demultiplexing, read pairs merging, primer removal (=cutadapt=), sequence clustering (=vsearch=), OTU clustering, taxonoxmy assignment. The last step is performed using either a reference database or an ML classifier ([[https://docs.qiime2.org/2020.8/plugins/available/feature-classifier/classify-sklearn/][scikit-learn]], which apparently is a Naive Baes classifier; see Optimizing taxonomic classification of marker-gene amplicon sequences with QIIME 2’s q2-feature-classifier plugin. [[https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0470-z][Microbiome]] 6: 90 (2018)).
+Although it is oriented toward the analysis of microbiomes, it might still be relevant for fungi metabarcoding. The workflow and associated tools are almost identical: demultiplexing, read pairs merging, primer removal (=cutadapt=), sequence clustering (=vsearch=), OTU clustering (apparently, it does rely on [[https://github.com/torognes/swarm][swarm]]), taxonoxmy assignment. The last step is performed using either a reference database or an ML classifier ([[https://docs.qiime2.org/2020.8/plugins/available/feature-classifier/classify-sklearn/][scikit-learn]], which apparently is a Naive Bayes classifier; see Optimizing taxonomic classification of marker-gene amplicon sequences with QIIME 2’s q2-feature-classifier plugin. [[https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-018-0470-z][Microbiome]] 6: 90 (2018)).
 
 See also the [[https://www.arb-silva.de/][SILVA]] project (no fungi of interest, though).
 

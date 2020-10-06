@@ -1,4 +1,7 @@
 * Inbox
+** Darling is a translation layer that lets you run macOS software on Linux :apple:
+ [2020-10-05 Mon 15:17]
+ https://www.darlinghq.org/
 ** asdf, Manage multiple runtime versions :cli:
  [2020-10-05 Mon 12:29]
  https://github.com/asdf-vm/asdf
