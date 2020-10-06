@@ -6,34 +6,37 @@
 # unless we change the way new material is appended in the main file. This also means
 # that the intro text is located in the file below.
 
-#+INCLUDE: "./archived/papers-work.org" :minlevel 1
+# #+INCLUDE: "./archived/papers-work.org" :minlevel 1
+# -----
 
------
-
-* Reading notes
+* Computer science, databases, statistics[fn::Internal links (PDFs and other Org files) will likely not work outside this computer.]
 
 ** A common-sense guide to data structures and algorithms ([[papers:wengrow-2017-common-sense.pdf][wengrow-2017-common-sense]])
 :PROPERTIES:
 :Custom_ID: wengrow-2017-common-sense
 :END:
+#+LATEX: \marginnote{\fullcite{wengrow-2017-common-sense}}
 Short but interesting textbook on general programming principles. It features a mix of Python and JavaScript to illustrate major sorting algorithms, big O notation, etc. Available as EPUB locally.
 
 ** A Flexible Parametric Accelerated Failure Time Model ([[papers:crowther-2020-flexib-param.pdf][crowther-2020-flexib-param]])
 :PROPERTIES:
 :Custom_ID: crowther-2020-flexib-param
 :END:
+#+LATEX: \marginnote{\fullcite{crowther-2020-flexib-param}}
 Accelerated Failure Time (AFT) models as an alternative to classical PH models. Under the AFT model, the effect of covariates act to accelerate or decelerate the time to event of interest. Time-dependent acceleration factors, as well as time-dependent covariates (e.g. delayed entry) are also allowed. Stata and R packages available, as well as [[https://github.com/CamDavidsonPilon/lifelines-replications][Python]] code.
 
 ** A statistical analysis of probabilistic counting algorithms ([[papers:clifford-2010-statis-analy.pdf][clifford-2010-statis-analy]])
 :PROPERTIES:
 :Custom_ID: clifford-2010-statis-analy
 :END:
+#+LATEX: \marginnote{\fullcite{clifford-2010-statis-analy}}
 See also [[papers:ertl-2017-new-hyper.pdf][ertl-2017-new-hyper]] and [[https://github.com/evanmiller/SlowerLogLog][SlowerLogLog]] by Evan Miller.
 
 ** Agile Data Science ([[papers:jurney-2014-agile-data-scien.pdf][jurney-2014-agile-data-scien]])
 :PROPERTIES:
 :Custom_ID: jurney-2014-agile-data-scien
 :END:
+#+LATEX: \marginnote{\fullcite{jurney-2014-agile-data-scien}}
 Keywords: scalability, NoSQL (Hadoop and MongoDB), cloud computing, big data, data intuition
 Interesting use of personal email data:
 
@@ -49,12 +52,14 @@ See also [[https://www.oreilly.com/ideas/a-manifesto-for-agile-data-science][A m
 :PROPERTIES:
 :Custom_ID: soicher-2004-algor-mathem
 :END:
+#+LATEX: \marginnote{\fullcite{soicher-2004-algor-mathem}}
 Basic overview of number theory and related algorithms, with several exercises and tips at the end.
 
 ** Algorithms ([[papers:erickson-2018-algor.pdf][erickson-2018-algor]])
 :PROPERTIES:
 :Custom_ID: erickson-2018-algor
 :END:
+#+LATEX: \marginnote{\fullcite{erickson-2018-algor}}
 See also:
 - Margaret M. Fleck. [[http://mfleck.cs.illinois.edu/building-blocks/][Building Blocks for Theoretical Computer Science]]. Version 1.3 (January 2013)
 - Eric Lehman, F. Thomson Leighton, and Albert R. Meyer. [[https://courses.csail.mit.edu/6.042/spring18/][Mathematics for Computer Science]]. June 2018 revision
@@ -116,6 +121,7 @@ Quick translation in Scheme (FIXME):
 :PROPERTIES:
 :Custom_ID: cormen-2013-algor-unloc
 :END:
+#+LATEX: \marginnote{\fullcite{cormen-2013-algor-unloc}}
 #+BEGIN_QUOTE
 We want two things from a computer algorithm: given an input to a problem, it should always produce a correct solution to the problem, and it should use com- putational resources efficiently while doing so.
 #+END_QUOTE
@@ -128,12 +134,14 @@ We want two things from a computer algorithm: given an input to a problem, it sh
 :PROPERTIES:
 :Custom_ID: ghuloum-2006-increm-approac
 :END:
+#+LATEX: \marginnote{\fullcite{ghuloum-2006-increm-approac}}
 Found by following Thorsten Ball's progress (on Twitter) on his approach to build a [[https://github.com/mrnugget/scheme_x86][Scheme compiler]] from scratch.
 
 ** An introduction to bioinformatics algorithms ([[papers:jones-2004-introd-bioin-algor.pdf][jones-2004-introd-bioin-algor]])
 :PROPERTIES:
 :Custom_ID: jones-2004-introd-bioin-algor
 :END:
+#+LATEX: \marginnote{\fullcite{jones-2004-introd-bioin-algor}}
 The authors make use of simplified pseudo-code for all the algorithms discussed in this book -- on the basis that the target audience are biologists. I found it nice, as it is heavily inspired from Python syntax (significant indentation is fine for reading purpose, IMHO). The introductory chapter on computer science (CS) is pretty basic stuff that can be found in any introductory textbook (chapter 2): algorithmic complexity, recursive versus iterative approach, type of algorithms (brute force, branch-and-bound, greedy approach, dynamic programming, divide-and-conquer, machine learning, randomized algorithms), and NP-completeness. It is intended for biologists.
 
 #+BEGIN_QUOTE
@@ -148,12 +156,14 @@ See also [[http://www.cs.hunter.cuny.edu/~saad/courses/bioinf/][Bioinformatics A
 :PROPERTIES:
 :Custom_ID: filion-2017-analy-combin
 :END:
+#+LATEX: \marginnote{\fullcite{filion-2017-analy-combin}}
 See also [[https://www.biorxiv.org/content/10.1101/619155v2][Calibrating seed-based alignment heuristics with Sesame]], and [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1468433/][Choosing the best heuristic for seeded alignment of DNA sequences]].
 
 ** Applied Data Science ([[papers:langmore-2012-applied-data-scien.pdf][langmore-2012-applied-data-scien]])
 :PROPERTIES:
 :Custom_ID: langmore-2012-applied-data-scien
 :END:
+#+LATEX: \marginnote{\fullcite{langmore-2012-applied-data-scien}}
 Nice applied textbook on "data science" using Unix tools and Python. This is the first time I saw linear regression introduced using Bayesian formalism, then regularization. Lasso penalization is discussed in the case of LOgistic regression. There's also an interesting chapter on high-performance Python (p. 106 ff.).
 
 See also [[https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11239][Data science: An action plan for expanding the technical areas of the field of statistics]], by Cleveland:
@@ -169,6 +179,7 @@ See also [[https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11239][Data scie
 :PROPERTIES:
 :Custom_ID: dorie-2018-autom
 :END:
+#+LATEX: \marginnote{\fullcite{dorie-2018-autom}}
 Focus on semi-parametric and nonparametric causal inference methodology, with a particular emphasis on the comparison between 30 different approaches through the "[[https://docs.google.com/document/d/1p5xdeJVY5GdBC2ar_3wVjaboph0PemXulnMD5OojOCI/edit][causal inference data analysis competition]]", hosted during the [[http://jenniferhill7.wixsite.com/acic-2016][2016 Atlantic Causal Inference Conference Competition]].
 
 Some caveats when assessing causal inference methods: (1) few methods compared and unfair comparisons, (2) testing grounds not calibrated to "real life", and (3) file drawer effect. The later ressembles what is commonly impacting meta-analytical studies. It reminds me of a critic of machine elarning algorithms that are always developed and calibrated on exiting data sets, like those available on UCI, with reference to existing benchmarks---hence inducing a confirmation bias---and that would probably perform poorly on real life data (I didn't find the reference). See also this online article, [[https://www.mckinsey.com/business-functions/risk/our-insights/controlling-machine-learning-algorithms-and-their-biases][Controlling machine-learning algorithms and their biases]], by Tobias Baer and Vishnu Kamalnath, regarding human biases.
@@ -192,6 +203,7 @@ Unless $\beta_2 = 0$, $\mathbb E(\hat\beta_1) = \beta_1 + \beta_2\left(\frac{\su
 :PROPERTIES:
 :Custom_ID: chang-2006-bigtab
 :END:
+#+LATEX: \marginnote{\fullcite{chang-2006-bigtab}}
 #+BEGIN_QUOTE
 Bigtable does not support a full relational data model; instead, it provides clients with a simple data model that supports dynamic control over data layout and format, and allows clients to reason about the locality properties of the data represented in the underlying storage. Data is indexed using row and column names that can be arbitrary strings. Bigtable also treats data as uninterpreted strings, although clients often serialize various forms of structured and semi-structured data into these strings. Clients can control the locality of their data through careful choices in their schemas. Finally, Bigtable schema parameters let clients dynamically control whether to serve data out of memory or from disk.
 #+END_QUOTE
@@ -200,6 +212,7 @@ Bigtable does not support a full relational data model; instead, it provides cli
 :PROPERTIES:
 :Custom_ID: buffalo-2015-bioin-data-skill
 :END:
+#+LATEX: \marginnote{\fullcite{buffalo-2015-bioin-data-skill}}
 - [[https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?][Sequence Read Archive]]
 - forensic bioinformatics ([[https://projecteuclid.org/euclid.aoas/1267453942][Baggerly and Coombes 2009]])
 
@@ -207,18 +220,21 @@ Bigtable does not support a full relational data model; instead, it provides cli
 :PROPERTIES:
 :Custom_ID: diciccio-1996-boots-confid-inter
 :END:
+#+LATEX: \marginnote{\fullcite{diciccio-1996-boots-confid-inter}}
 Four bootstrap confidence interval procedures: BCa, bootstrap-t, ABC and calibration. See the [[https://cran.r-project.org/package=bootstrap][bootstrap]] R package for ABC and =boot::abc.ci= for calibrated ABC.
 
 ** Bootstrap Confidence Levels For Phylogenetic Trees ([[papers:efron-1996-boots-confid.pdf][efron-1996-boots-confid]])
 :PROPERTIES:
 :Custom_ID: efron-1996-boots-confid
 :END:
+#+LATEX: \marginnote{\fullcite{efron-1996-boots-confid}}
 One of the many applied papers on the bootstrap by Efron, based on the original work of Felsenstein (see also [[file:~/Documents/papers/felsenstein-2004-infer-phylog.pdf][felsenstein-2004-infer-phylog]]). The aim of bootstrap resampling in phylogenetic reconstruction is to assess the confidence for each clad, based on the proportion of bootstrap trees showing that same clade. In this context, the notion of agreement refers to the topology of the trees and not to the length of its arms. The rationale underlying the bootstrap confidence values depends on a simple multinomial probability model, although a bivariate normal model could also be used (parametric bootstrap).
 
 ** Bootstrap Methods for Standard Errors, Confidence Intervals, and Other Measures of Statistical Accuracy ([[papers:efron-1986-boots-method.pdf][efron-1986-boots-method]])
 :PROPERTIES:
 :Custom_ID: efron-1986-boots-method
 :END:
+#+LATEX: \marginnote{\fullcite{efron-1986-boots-method}}
 From the Stata Manual [R] on "bootstrap": [[~/Documents/papers/efron-1986-boots-method.pdf][efron-1986-boots-method]] describe an alternative to Satterthwaite’s approximation that estimates the ASL by bootstrapping the statistic from the test of equal means. Their idea is to recenter the two samples to the combined sample mean so that the data now conform to the null hypothesis but that the variances within the samples remain unchanged.
 
 #+NAME: auto
@@ -241,15 +257,17 @@ See also [[~/Documents/papers/hesterberg-2014-what-teach.pdf][hesterberg-2014-wh
 :PROPERTIES:
 :Custom_ID: tsamardinos-2017-boots-out
 :END:
+#+LATEX: \marginnote{\fullcite{tsamardinos-2017-boots-out}}
 Bootstrap Bias Corrected CV = bootstrap the whole process of selecting the best-performing configuration on the out-of-sample predictions of each configuration, without additional training of models. Computationally more efficient, smaller variance and bias compared to nested CV.
 
 ** Clojure Data Analysis Cookbook ([[papers:rochester-2013-clojur-data.pdf][rochester-2013-clojur-data]])
 :PROPERTIES:
 :Custom_ID: rochester-2013-clojur-data
 :END:
+#+LATEX: \marginnote{\fullcite{rochester-2013-clojur-data}}
 A book from the Packt Publishing group.
 
-Actually, this is the first book by [[http://www.ericrochester.com][Eric Rochester]]. The second covers more advanced techniques and was published one year later: cite:rochester-2014-master-clojur. The [[https://github.com/erochest/clj-data-analysis][site for the book]] includes data used throughout the book, nothing more, but be aware there are a lot of datasets.
+Actually, this is the first book by [[http://www.ericrochester.com][Eric Rochester]]. The second covers more advanced techniques and was published one year later: [[papers:rochester-2014-master-clojur.pdf][rochester-2014-master-clojur]]. The [[https://github.com/erochest/clj-data-analysis][site for the book]] includes data used throughout the book, nothing more, but be aware there are a lot of datasets.
 
 #+BEGIN_QUOTE
 This book is for programmers or data scientists who are familiar with Clojure and want to use it in their data analysis processes.
@@ -261,6 +279,7 @@ The first chapter describes various ways to import data (flat files, local datab
 :PROPERTIES:
 :Custom_ID: higginbotham-2015-clojur-brave-true
 :END:
+#+LATEX: \marginnote{\fullcite{higginbotham-2015-clojur-brave-true}}
 The book was published on [[http://leanpub.com/clojure-for-the-brave-and-true][Leanpub]] a while ago but it is not for sale anymore. I don't remember where I got a PDF version of the book, but there is also a website, [[https://www.braveclojure.com][Brave Clojure]], where the book can be read online for free.
 
 The first chapters are all about setting up a working environment for writing Clojure code, and it happens to be Emacs + [[https://cider.readthedocs.org/][Cider]]. The Clojure version currently used in the book is 1.6 (alpha3), with Leiningen as the build tool for Clojure projects (+ Clojure 1.5.1 for =lein repl=).
@@ -271,24 +290,21 @@ Overall, the presentation is clear although it remains a bit rough (I mean like 
 :PROPERTIES:
 :Custom_ID: laaksonen-2017-compet-progr-handb
 :END:
+#+LATEX: \marginnote{\fullcite{laaksonen-2017-compet-progr-handb}}
 When I first came across this textbook, the title reminded me of [[~/Sites/aliquote/content/post/imposter-handbook.md][The Imposter Handbook]]. Unlike [[papers:conery-2016-impos-handb.pdf][conery-2016-impos-hand]], it has more running code, and in a decent language (C++ 11). I wrote a little [[~/git/scratch/python/competitive.py][transcript]] in Python 3.x and wrote a [[~/Sites/aliquote/Content/post/the-competitive-programmer-s-handbook.md][review]] on aliquote.org.
-
-** Concrete abstractions: an introduction to computer science using scheme ([[papers:hailperin-1999-concr-abstr.pdf][hailperin-1999-concr-abstr]])
-:PROPERTIES:
-:Custom_ID: hailperin-1999-concr-abstr
-:END:
-TODO Post a review on [[http://aliquote.org]].
 
 ** Dancing Links ([[papers:knuth-2000-dancin-links.pdf][knuth-2000-dancin-links]])
 :PROPERTIES:
 :Custom_ID: knuth-2000-dancin-links
 :END:
+#+LATEX: \marginnote{\fullcite{knuth-2000-dancin-links}}
 [[https://dancing-links.herokuapp.com]]
 
 ** Data Wrangling with Python ([[papers:kazil-2016-data-wrang-python.pdf][kazil-2016-data-wrang-python]])
 :PROPERTIES:
 :Custom_ID: kazil-2016-data-wrang-python
 :END:
+#+LATEX: \marginnote{\fullcite{kazil-2016-data-wrang-python}}
 Relatively self-paced introduction to Python data structures and programming. In order to motivate the reader, the authors said they would understand the following three lines by the end of chapter 2, and I believe this should be true even for people who know close to nothing to programming.
 
 #+BEGIN_SRC python
@@ -305,12 +321,14 @@ You just learned how to program. Programming is not about memorizing everything;
 :PROPERTIES:
 :Custom_ID: kleppmann-2016-desig-data
 :END:
+#+LATEX: \marginnote{\fullcite{kleppmann-2016-desig-data}}
 Review by [[https://henrikwarne.com/2019/07/27/book-review-designing-data-intensive-applications/][Henrik Warne]].
 
 ** From the help desk: some bootstrapping techniques ([[papers:poi-2004-from-help-desk.pdf][poi-2004-from-help-desk]])
 :PROPERTIES:
 :Custom_ID: poi-2004-from-help-desk
 :END:
+#+LATEX: \marginnote{\fullcite{poi-2004-from-help-desk}}
 Hypothesis test based on bootstrap resampling:
 
 #+BEGIN_SRC R
@@ -332,12 +350,14 @@ See also [[papers:efron-1986-boots-method.pdf][efron-1986-boots-method]].
 :PROPERTIES:
 :Custom_ID: kim-2019-graph-hisat
 :END:
+#+LATEX: \marginnote{\fullcite{kim-2019-graph-hisat}}
 [[https://ccb.jhu.edu/software/hisat2/index.shtml][HISAT2]] is the successor of TopHat2. What's new? HISAT2 can align both DNA and RNA sequences using a graph Ferragina Manzini index. This graph-based alignment approach enables much higher alignment sensitivity and accuracy than standard, linear reference-based alignment approaches, especially for highly polymorphic genomic regions.
 
 ** Haskell Programming from First Principles ([[papers:allen-2016-haskel-progr.pdf][allen-2016-haskel-progr]])
 :PROPERTIES:
 :Custom_ID: allen-2016-haskel-progr
 :END:
+#+LATEX: \marginnote{\fullcite{allen-2016-haskel-progr}}
 One of the best book I read about Haskell so far, and on functional programming more generally.
 
 A short remark about typography: this book is typesetted using LaTeX; however, the verbatim and math elements appear a bit too small in my view.
@@ -346,6 +366,7 @@ A short remark about typography: this book is typesetted using LaTeX; however, t
 :PROPERTIES:
 :Custom_ID: hippel-2016-how
 :END:
+#+LATEX: \marginnote{\fullcite{hippel-2016-how}}
 See also [[https://statisticalhorizons.com/how-many-imputations]].
 
 1. First, carry out a pilot analysis. Impute the data using a convenient number of imputations. (20 imputations is a reasonable default, if it doesn’t take too long.) Estimate the FMI by analyzing the imputed data.
@@ -355,18 +376,21 @@ See also [[https://statisticalhorizons.com/how-many-imputations]].
 :PROPERTIES:
 :Custom_ID: bagwell-2001-ideal-hash-trees
 :END:
+#+LATEX: \marginnote{\fullcite{bagwell-2001-ideal-hash-trees}}
 See also [[https://worace.works/2016/05/24/hash-array-mapped-tries/][Hash Array Mapped Tries]] and Bodil Stokke's talk, [[http://github.bodil.lol/bagwell/][Meeting with Remarkable Trees]].
 
 ** Immutability Changes Everything ([[papers:helland-2015-immut-chang-every.pdf][helland-2015-immut-chang-every]])
 :PROPERTIES:
 :Custom_ID: helland-2015-immut-chang-every
 :END:
+#+LATEX: \marginnote{\fullcite{helland-2015-immut-chang-every}}
 /Append-only computing/: The truth is the log. The database is a cache of a subset of the log.
 
 ** Implementation strategies for continuations ([[papers:clinger-1988-implem-strat-contin.pdf][clinger-1988-implem-strat-contin]])
 :PROPERTIES:
 :Custom_ID: clinger-1988-implem-strat-contin
 :END:
+#+LATEX: \marginnote{\fullcite{clinger-1988-implem-strat-contin}}
 Continuations (=call/cc= in Scheme) are generally used to manipulate the flow of control in a program, which means that they are close to =GOTO= statements in imperative languages.
 See [[https://www.scheme.com/tspl3/further.html#./further:h3][3.3. Continuations]] of TSPL3 and [[https://docs.racket-lang.org/reference/cont.html][10.4 Continuations]] of the Racket Reference guide.
 
@@ -374,6 +398,7 @@ See [[https://www.scheme.com/tspl3/further.html#./further:h3][3.3. Continuations
 :PROPERTIES:
 :Custom_ID: avati-2017-improv-palliat
 :END:
+#+LATEX: \marginnote{\fullcite{avati-2017-improv-palliat}}
 See Frank Harrell's [[http://www.fharrell.com/post/medml/][blog post]].
 
 #+BEGIN_QUOTE
@@ -384,12 +409,14 @@ As with any retrospective study not based on an inception cohort with a well-def
 :PROPERTIES:
 :Custom_ID: meier-2015-livin-clojur
 :END:
+#+LATEX: \marginnote{\fullcite{meier-2015-livin-clojur}}
 See also [[https://howistart.org/posts/clojure/1/index.html][How I start]].
 
 ** Loving Common Lisp ([[papers:watson-2016-lovin-common-lisp.pdf][watson-2016-lovin-common-lisp]])
 :PROPERTIES:
 :Custom_ID: watson-2016-lovin-common-lisp
 :END:
+#+LATEX: \marginnote{\fullcite{watson-2016-lovin-common-lisp}}
 On [[https://github.com/mark-watson/loving-common-lisp][Github]] (depends on [[https://github.com/mmaul/clml][clml]]), cloned locally in [[~/git/sandbox]].
 
 There are still some proof-reading lacking here and there but overall it is quite readable. The very first part of the book is all about data types in Common Lisp. All examples are illustrated using SBCL.
@@ -461,6 +488,7 @@ The rest of the book describes some application of web and network programming u
 :PROPERTIES:
 :Custom_ID: raschka-2020-machin-learn-python
 :END:
+#+LATEX: \marginnote{\fullcite{raschka-2020-machin-learn-python}}
 Interesting review of current data stack in Python. The first part focus on scikit-learn and [[https://github.com/scikit-learn-contrib][contrib]], "classical ML" approaches, including boosting machines (LightGBM), and distributed computing using [[https://ml.dask.org][Dask-ML]]. Little is said about H2O and the Sparkling Water Spark-adapter, though. [[https://www.automl.org][AutoML]] libraries include: [[https://www.cs.ubc.ca/labs/beta/Projects/autoweka/][Auto-Weka]], [[https://automl.github.io/auto-sklearn/master/][Auto-sklearn]], [[https://epistasislab.github.io/tpot/][TPOT]], [[http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html][H20-AutoML]], [[https://autokeras.com][AutoKeras]].
 
 See also [[papers:he-2020-autom.pdf][he-2020-autom]].
@@ -469,12 +497,14 @@ See also [[papers:he-2020-autom.pdf][he-2020-autom]].
 :PROPERTIES:
 :Custom_ID: bueno-2013-matur-optim
 :END:
+#+LATEX: \marginnote{\fullcite{bueno-2013-matur-optim}}
 [[file:~/Sites/aliquote/content/post/mature-optimization-handbook.md][Review]] published on aliquote.org.
 
 ** Models in biology: 'accurate descriptions of our pathetic thinking' ([[papers:gunawardena-2014-model.pdf][gunawardena-2014-model]])
 :PROPERTIES:
 :Custom_ID: gunawardena-2014-model
 :END:
+#+LATEX: \marginnote{\fullcite{gunawardena-2014-model}}
 Emphasizes the role of forward modeling, especially with respect to causality.
 
 #+BEGIN_QUOTE
@@ -485,6 +515,7 @@ Mathematical models come in a variety of flavors, depending on whether the state
 :PROPERTIES:
 :Custom_ID: neil-2018-moder-vim
 :END:
+#+LATEX: \marginnote{\fullcite{neil-2018-moder-vim}}
 This is mostly about Neovim, but there are many references to Vim; sort of, what's available in Neovim that has been incorporated in Vim, except for package management. The author describes the builtin plugin system (no need for pathogen or vim-plug), the FZF plugin (instead of Ctrl-P) --- I have no interest in semantic organization of files in a project (=tpope/vim-projectionist=), how to use the quickfix list (with tmux adapter), and the builtin terminal emulator (there's no insert mode, instead it's called "terminal mode"; use =C-\ C-n= to toggle between Terminal and Normal mode). I didn't read the chpater about sessions because I don't need them, but overall I like this book a lot: the style is clear and concise and the examples are well put. The appendix provides interesting discussion regarding Language Server Protocol in Vim. There's also a brief discussion on the future of Vim 8 (and Neovim).
 
 #+BEGIN_QUOTE
@@ -503,12 +534,14 @@ Useful packages and config for Lisp editing:
 :PROPERTIES:
 :Custom_ID: ertl-2017-new-hyper
 :END:
+#+LATEX: \marginnote{\fullcite{ertl-2017-new-hyper}}
 See also [[https://github.com/evanmiller/SlowerLogLog][SlowerLogLog]] by Evan Miller.
 
 ** Novel parallel algorithm for constructing Delaunay triangulation based on a twofold-divide-and-conquer scheme ([[papers:wu-2014-novel-delaun.pdf][wu-2014-novel-delaun]])
 :PROPERTIES:
 :Custom_ID: wu-2014-novel-delaun
 :END:
+#+LATEX: \marginnote{\fullcite{wu-2014-novel-delaun}}
 Multitasking parallel algorithm, in 3 stages: This algorithm automatically divides the planar point set into several non-overlapping subsets along the x-axis and y-axis directions alternately, according to the number of points and their spatial distribution. Next, the Guibas–Stolfi divide-and-conquer algorithm is applied to construct Delaunay sub- triangulations in each subset. Finally, the sub-triangulations are merged based on the binary tree.
 
 See also:
@@ -523,6 +556,7 @@ See also:
 :PROPERTIES:
 :Custom_ID: altman-2004-numer-issues
 :END:
+#+LATEX: \marginnote{\fullcite{altman-2004-numer-issues}}
 Although it is probably a bit outdated by now, I like to refer to this book when it comes to summarize how important dedicated statistical packages are compared to, say, MS Excel (which used a single-pass formula for computing the SD of a series of values). More to the point, statistical software dedicated to survey analysis provide better estimates than more general package, except perhaps Stata which has good [[https://www.stata.com/meeting/snasug08/kolenikov_snasug08.pdf][estimators of variance]] for complex surveys.
 
 Sources of inaccuracy in statistical computation: bugs, computer arithmetic, randomized algorithms, approximation and heuristic algorithms, local search algorithms. About computer arithmetic, specifically:
@@ -545,6 +579,7 @@ Illustration: $i = 1000000000 + 2 - 0.1 - 1000000000$.
 :PROPERTIES:
 :Custom_ID: sturmfels-2007-open-probl
 :END:
+#+LATEX: \marginnote{\fullcite{sturmfels-2007-open-probl}}
 Open problems at the intersection between interactions between algebraic geometry and computational statistics. E.g., Graphical Models with Hidden Variables:
 Our first question concerns three-dimensional contingency tables $(p_{ijk})$ whose indices $i, j, k$ range over a set of four elements, such as the set ${A, C, G, T}$ of DNA bases. Consider the variety of 4×4×4-tables of tensor rank at most 4. There are certain known polynomials of degree at most nine which vanish on this variety. Do they suffice to cut out the variety?
 
@@ -554,6 +589,7 @@ See also: [[papers:pistone-2001-algeb-statis.pdf][pistone-2001-algeb-statis]], [
 :PROPERTIES:
 :Custom_ID: lechner-2014-orthol-detec
 :END:
+#+LATEX: \marginnote{\fullcite{lechner-2014-orthol-detec}}
 - orthology is not a transitive relation so that the problem is different from clustering an input gene set.
 - the authors focus on avoiding false positive orthology assignments within the phylogenetic range of the reported orthologous groups, while tolerating recent in-paralogs (speciation preceding duplication) as unavoidable contamination
 
@@ -561,12 +597,14 @@ See also: [[papers:pistone-2001-algeb-statis.pdf][pistone-2001-algeb-statis]], [
 :PROPERTIES:
 :Custom_ID: vandewiele-2020-overl-optim
 :END:
+#+LATEX: \marginnote{\fullcite{vandewiele-2020-overl-optim}}
 Methodological bias = applying over-sampling before partitioning the data into mutually exclusive training and testing sets. Other biased approaches: apply cross-validation on a subset of data subsampled from the original dataset (increases the variance of the obtained results and does not address class imbalance). Carrying out over-sampling before splitting into training and testing sets might leak information from the original testing samples to the artificially generated training samples, leading to overly optimistic validation scores. It is therefore of key importance to carry out the over-sampling after selecting a training and testing set.
 
-** Parallel computing with r: a brief review ([[papers:eddelbuettel-2019-paral-comput.pdf][eddelbuettel-2019-paral-comput]])
+** Parallel computing with R: a brief review ([[papers:eddelbuettel-2019-paral-comput.pdf][eddelbuettel-2019-paral-comput]])
 :PROPERTIES:
 :Custom_ID: eddelbuettel-2019-paral-comput
 :END:
+#+LATEX: \marginnote{\fullcite{eddelbuettel-2019-paral-comput}}
 Standard HPC stilla round, but it is nowadays overshadowed by cloud computing; Haddop, Spark; deep learning. Bengtsson's =future= package offers a nice abstraction to local and remote parallelism options. A key aspect of concurrency is the /task-switching cost/. Single instruction multiple data (SIMD) and the AVX-512 instruction sets are another example of CPU- and compiler-centric parallel instructions. OpenMP remains a key technology for parallel execution of compiled code.
 Note that parallel execution requires stream-aware RNGs (p.7).
 
@@ -574,6 +612,7 @@ Note that parallel execution requires stream-aware RNGs (p.7).
 :PROPERTIES:
 :Custom_ID: clauset-2009-power
 :END:
+#+LATEX: \marginnote{\fullcite{clauset-2009-power}}
 1. Estimate the parameters xmin and $\alpha$ of the power-law model using the methods described in Section 3.
 2. Calculate the goodness-of-fit between the data and the power law using the method described in Section 4. If the resulting p-value is greater than 0.1 the power law is a plausible hypothesis for the data, otherwise it is rejected.
 3. Compare the power law with alternative hypotheses via a likelihood ratio test, as described in Section 5. For each alternative, if the calculated likelihood ratio is significantly different from zero, then its sign indicates whether the alternative is favored over the power-law model or not.
@@ -582,6 +621,7 @@ Note that parallel execution requires stream-aware RNGs (p.7).
 :PROPERTIES:
 :Custom_ID: real-2020-autom-zero
 :END:
+#+LATEX: \marginnote{\fullcite{real-2020-autom-zero}}
 Github: [[https://github.com/google-research/google-research/tree/master/automl_zero]]
 
 See also [[~/Documents/papers/he-2020-autom.pdf][he-2020-autom]].
@@ -590,6 +630,7 @@ See also [[~/Documents/papers/he-2020-autom.pdf][he-2020-autom]].
 :PROPERTIES:
 :Custom_ID: efron-2020-predic-estim-attrib
 :END:
+#+LATEX: \marginnote{\fullcite{efron-2020-predic-estim-attrib}}
 This article deals with the controversy around prediction versus explanation in statistics and machine learning communities, as a sequel of [[papers:breiman-2001-statis-model.pdf][breiman-2001-statis-model]]. How do the pure prediction algorithms relate to traditional regression methods? In traditional approaches to regression modeling a description of the underlying scientific truth (the “surface”) is formulated, along with a model of the errors that obscure direct observation ("surface plus noise formulation"). On the contrary pure prediction algorithms focus on prediction, to the neglect of estimation and attribution. The idea of boosting is, for example, to have many weak learners that combine effectively to yield low error rate while traditional methods focus on strong individual predictors.
 
 Interesting note on GWAS analysis: Instead of performing a traditional attribution analysis with p = 106 predictors, the GWAS procedure performed 106 analyses with p = 1 and then used a second layer of inference to interpret the results of the first layer. See also comment on local false discovery rate.
@@ -598,18 +639,21 @@ Interesting note on GWAS analysis: Instead of performing a traditional attributi
 :PROPERTIES:
 :Custom_ID: au-2018-random-fores
 :END:
+#+LATEX: \marginnote{\fullcite{au-2018-random-fores}}
 This paper discusses the case of how best to handle catgeorical predictors in RF, in particular the 'absent level' problem, i.e. the case of the indeterminacy over how to handle an observation that has reached a categorical split which was determined when the observation in question’s level was absent during training.
 
 ** Reaching python from racket ([[papers:ramos-2014-reach-python-racket.pdf][ramos-2014-reach-python-racket]])
 :PROPERTIES:
 :Custom_ID: ramos-2014-reach-python-racket
 :END:
+#+LATEX: \marginnote{\fullcite{ramos-2014-reach-python-racket}}
 Via [[https://racket-news.com/2019/09/racket-news-issue-15.html][Racket News #15]]. See also [[https://news.ycombinator.com/item?id=20392448][Racket is an acceptable Python]].
 
 ** Reconciling modern machine learning practice and the bias-variance trade-off ([[papers:belkin-2019-recon.pdf][belkin-2019-recon]])
 :PROPERTIES:
 :Custom_ID: belkin-2019-recon
 :END:
+#+LATEX: \marginnote{\fullcite{belkin-2019-recon}}
 Interesting article on the bias-variance tradeoff in the context of recent ML workflows (NNs, deep learning, etc.). The authors discussed the "unified performance curve" and present compelling evidence that increasing model capacity beyond the point of interpolation results in improved performance in several use cases.
 
 Maybe see [[papers:murphy-2012-machin-learn.pdf][murphy-2012-machin-learn]].
@@ -618,6 +662,7 @@ Maybe see [[papers:murphy-2012-machin-learn.pdf][murphy-2012-machin-learn]].
 :PROPERTIES:
 :Custom_ID: neal-2015-repres-numer
 :END:
+#+LATEX: \marginnote{\fullcite{neal-2015-repres-numer}}
 Every number with up to seven significant decimal digits maps to a distinct 32-bit single precision value, with no information loss. However, when these single precision values are converted to 64-bit double precision in the standard (hardware-supported) way and then used in arithmetic operations, the results are in general not the same as if a 64-bit floating-point representation had been used. The problem is that the standard conversion by extending the mantissa of a single precision number with zeros does not produce the correct double precision representation of a number, such as 0.1, whose binary expansion is non-terminating. As an alternative we might consider using decimal floating point but floating point division operation required to convert from a decimal floating point representation is quite slow.
 
 Cowlishaw, M. F. (2003) “Decimal Floating-Point: Algorism for Computers”, in Proceedings of the 16th IEEE Symposium on Computer Arithmetic.
@@ -626,6 +671,7 @@ Cowlishaw, M. F. (2003) “Decimal Floating-Point: Algorism for Computers”, in
 :PROPERTIES:
 :Custom_ID: efron-2003-secon-thoug-boots
 :END:
+#+LATEX: \marginnote{\fullcite{efron-2003-secon-thoug-boots}}
 Plug-in principle: travel from the real world to the bootstrap world simply by plugging in a point estimate $\hat P$ for $P$. This is the only inference step. There may be a problem with the miscentering of the $\hat\sigma^*$ values, as exemplified by the "dilatation phenomenon", like with [[https://en.wikipedia.org/wiki/James–Stein_estimator][Stein's estimation]]. Second-order (bootstrap t and BCA) accuracy suggested that the bootstrap could provide good approximate confidence intervals, better than the standard $\hat\theta \pm z_{\alpha}\hat\sigma$.
 
 #+BEGIN_QUOTE
@@ -638,6 +684,7 @@ Illustration with phylogenetic trees: "the tree is a statistic, admittedly a com
 :PROPERTIES:
 :Custom_ID: danjou-2018-serious-python
 :END:
+#+LATEX: \marginnote{\fullcite{danjou-2018-serious-python}}
 Nice book to understand the underside of Python, especially regarding package import and path management. Note that this will not teach you Python programming, but it will certainly be helpful to better understand Python, think about design patterns, and how to develop your own projects. Each chapter provides a discussion of important topics in project development, and a brief interview by core developers is provided at the end. Note that some chapters are very specific of some aspects of Python programming, or PL more generally. For instance, chapter 4 deals with timestamp and the importance of timezone.
 
 I learned a few things about packaging, and in particular the number of modules that were developed before =pip=, namely (in chronological order): =distutils=, =setuptools=, =distribute=, =distutils2=, =packaging=, and =distlib=. The latter may eventually replace =setuptools=.
@@ -646,6 +693,7 @@ I learned a few things about packaging, and in particular the number of modules 
 :PROPERTIES:
 :Custom_ID: rose-2001-sick
 :END:
+#+LATEX: \marginnote{\fullcite{rose-2001-sick}}
 A good question to ask is "Why did this patient get this disease at this time?", since it also implies that we care about why it happened and whether it could have been prevented. The individual-centered approach leads to the use of RR, but this approach to the search of causes has to assume heterogeneity of exposure within the study population.
 
 #+BEGIN_QUOTE
@@ -656,6 +704,7 @@ If everyone smoked 20 cigarettes a day, then clinical, case-control and cohort s
 :PROPERTIES:
 :Custom_ID: greenland-2016-spars-data-bias
 :END:
+#+LATEX: \marginnote{\fullcite{greenland-2016-spars-data-bias}}
 When the data lack adequate case numbers for some combination of risk factor and outcome levels, the resulting estimates of the regression coefficients can have bias away from the null, hence the term "sparse data bias" because it is not limited to small samples.
 
 *Causes:*
@@ -678,12 +727,14 @@ Penalization produces the most accurate estimates given the information in the p
 :PROPERTIES:
 :Custom_ID: chen-2003-statis-comput-datab
 :END:
+#+LATEX: \marginnote{\fullcite{chen-2003-statis-comput-datab}}
 Old stuff but interesting ideas (part of them are now materialized in the dplyr/dbi packages) like performing the data-intensive but algorithmically less sophisticated operations in the database and send back the results to the statistical package which is responsible for the algorithmic flow. The software design includes a CORBA architecture coupled to [[https://www.csm.ornl.gov/pvm/][PVM]] for managing parallel computations.
 
 ** Statistical methods need software: a view of statistical computing ([[papers:ripley-2002-statis-method.pdf][ripley-2002-statis-method]])
 :PROPERTIES:
 :Custom_ID: ripley-2002-statis-method
 :END:
+#+LATEX: \marginnote{\fullcite{ripley-2002-statis-method}}
 #+BEGIN_QUOTE
 Let’s not kid ourselves: the most widely used piece of software for statistics is Excel.
 #+END_QUOTE
@@ -692,6 +743,7 @@ Let’s not kid ourselves: the most widely used piece of software for statistics
 :PROPERTIES:
 :Custom_ID: gould-2001-statis-softw-certif
 :END:
+#+LATEX: \marginnote{\fullcite{gould-2001-statis-softw-certif}}
 #+BEGIN_QUOTE
 Stata is instead tested using an automated procedure that involves running 1,064 do-files containing 158,391 lines that cause Stata to execute 38,343,139 commands and produces just over 16 megabytes (473,859 lines) of output.
 #+END_QUOTE
@@ -704,12 +756,14 @@ According to [[papers:altman-2004-numer-issues.pdf][altman-2004-numer-issues]], 
 :PROPERTIES:
 :Custom_ID: laan-2006-target-maxim
 :END:
+#+LATEX: \marginnote{\fullcite{laan-2006-target-maxim}}
 See [[papers:koenker-2016-tmle.pdf][koenker-2016-tmle]] for a good tutorial, as well as this slide deck for Stata: [[https://www.stata.com/meeting/uk17/slides/uk17_Luque-Fernandez.pdf][Ensemble Learning Targeted Maximum Likelihood Estimation for Stata Users]].
 
 ** Ten quick tips for machine learning in computational biology ([[papers:chicco-2017-ten-quick.pdf][chicco-2017-ten-quick]])
 :PROPERTIES:
 :Custom_ID: chicco-2017-ten-quick
 :END:
+#+LATEX: \marginnote{\fullcite{chicco-2017-ten-quick}}
 1. Check and arrange your input dataset properly
 2. Split your input dataset into three independent subsets (training set, validation set, test set), and use the test set only once you complete training and optimization phases
 3. Frame your biological problem into the right algorithm category
@@ -725,6 +779,7 @@ See [[papers:koenker-2016-tmle.pdf][koenker-2016-tmle]] for a good tutorial, as 
 :PROPERTIES:
 :Custom_ID: kernighan-1978-elemen-progr-style
 :END:
+#+LATEX: \marginnote{\fullcite{kernighan-1978-elemen-progr-style}}
 Nice introductory example to build an identity matrix in Fortran, which however would read much better using simple imperative code.
 
 #+BEGIN_QUOTE
@@ -741,6 +796,7 @@ All rules are listed at the end (pp. 159-161).
 :PROPERTIES:
 :Custom_ID: conery-2016-impos-handb
 :END:
+#+LATEX: \marginnote{\fullcite{conery-2016-impos-handb}}
 - [[file:~/Sites/aliquote/content/post/imposter-handbook.md][review]] published on aliquote.org
 - [[https://github.com/imposters-handbook/sample-code][Source code on Github]] (JS, C#, Bash, SQL)
 
@@ -748,6 +804,7 @@ All rules are listed at the end (pp. 159-161).
 :PROPERTIES:
 :Custom_ID: friedman-1995-littl-schem
 :END:
+#+LATEX: \marginnote{\fullcite{friedman-1995-littl-schem}}
 Beautiful book, very different from SICP in that it focus on basic building blocks (=car=, =cdr=, =cons=, =eq?=, etc.) and use a very pragmatic approach to understanding the structuration and interpretation of forms and s-expr. The penultimate goal of this book (4th ed., after the original /Little Lisper/) is to learn to think in a functional way. The ten commandments are worth keeping in mind for that very specific purpose:
 
 1. When recurring on a list of atoms, =lat=, ask two questions about it: =(null? lat)= and =else=. When recurring on a number, =n=, ask two questions about it: =(zero? n)= and =else=. When recurring on a list of s-expr, =l=, ask three questions about it: =(null? l)=, =(atom? (car l))=, and =else=.
@@ -767,9 +824,9 @@ Beautiful book, very different from SICP in that it focus on basic building bloc
 :PROPERTIES:
 :Custom_ID: gosset-1908-probab-error-mean
 :END:
+#+LATEX: \marginnote{\fullcite{gosset-1908-probab-error-mean}}
 Extra R code (Frank Harrell, [[papers:harrell-2017-biost-biomed-resear.pdf][harrell-2017-biost-biomed-resear]])
 
-#+NAME: datasets::sleepstudy
 #+BEGIN_SRC R
 drug1 = c(0.7, -1.6, -0.2, -1.2, -0.1, 3.4, 3.7, 0.8, 0, 2)
 drug2 = c(1.9, 0.8, 1.1, 0.1, -0.1, 4.4, 5.5, 1.6, 4.6, 3.4)
@@ -789,6 +846,7 @@ xlab('') + ylab('Extra Hours of Sleep') + coord_flip()
 :PROPERTIES:
 :Custom_ID: wicherts-2017-weak-spots
 :END:
+#+LATEX: \marginnote{\fullcite{wicherts-2017-weak-spots}}
 Objectives: demonstrate that the pluridisciplinar crisis in science can mainly be accounted for by observer bias, publication bias, misuse of degrees of freedom in statistical analysis of data combined to low statistical power, and errors in the reporting of results.
 
 Up to 90% of positive results reported in psychology or psychiatry.
@@ -801,12 +859,14 @@ Ioannidis's work on reproductibility and misuse of statistical hypothesis testin
 :PROPERTIES:
 :Custom_ID: pearl-2018-theor-imped
 :END:
+#+LATEX: \marginnote{\fullcite{pearl-2018-theor-imped}}
 Seven tasks which are beyond reach of current machine learning systems (vs. structural causal models) and examples of tasks ML would fail to solve: (1) How effective is a given treatment in preventing a disease?, (2) Was it the new tax break that caused our sales to go up?, (3) What is the annual health-care costs attributed to obesity?, (4) Can hiring records prove an employer guilty of sex discrimination?, (5) I am about to quit my gob, but should I?
 
 ** Topological Data Analysis ([[papers:wasserman-2016-topol-data-analy.pdf][wasserman-2016-topol-data-analy]])
 :PROPERTIES:
 :Custom_ID: wasserman-2016-topol-data-analy
 :END:
+#+LATEX: \marginnote{\fullcite{wasserman-2016-topol-data-analy}}
 Topological data analysis = finding structure in data, i.e., clustering, manifold estimation, nonlinear dimension reduction, mode estimation, ridge estimation and [[https://en.wikipedia.org/wiki/Persistent_homology][persistent homology]]. The latter is often what people understand when we talk about topological data analysis. The author extends the notion a bit, but does not discuss shape manifolds. There is another field that deals with the topological and geometric structure of data: computational geometry. The main difference is that in TDA we treat the data as random points whereas in computational geometry the data are usually seen as fixed.
 
 See also the R package [[https://cran.r-project.org/web/packages/TDA/index.html][TDA]].
@@ -815,6 +875,7 @@ See also the R package [[https://cran.r-project.org/web/packages/TDA/index.html]
 :PROPERTIES:
 :Custom_ID: boneh-2002-twent-years
 :END:
+#+LATEX: \marginnote{\fullcite{boneh-2002-twent-years}}
 There are many Coppersmith-based attacks, but this mostly resolves around the case where public exponent /e/ is small or when partial knowledge of the secret key is available:
 
 - *Small decryption exponent /e/:* so far the best known attack recovers /e/ if it is less than N^.292. This uses a bivariate version of Coppersmith that lacks a rigorous proof of correctness, but seems to work well in practice. Important open questions are whether /e/ < N^1/2-e is attackable (the conjecture is that it should be), and whether there are rigorously provable variants of Coppersmith for bivariate or multivariate polynomials.
@@ -824,12 +885,14 @@ There are many Coppersmith-based attacks, but this mostly resolves around the ca
 :PROPERTIES:
 :Custom_ID: pavone-2020-using
 :END:
+#+LATEX: \marginnote{\fullcite{pavone-2020-using}}
 A reference model is used to mimic the data-generating process, under the assumption of an M-complete framework whereby such a model reflects our beliefs about the future data in the best possible way and has passed model checking and criticism. When using a bayesian reference model, the idea is to project its predictive distribution to a reduced model leading to projection predictive variable selection approach. See also [[http://mc-stan.org/projpred]]. Side note: Now I know that what I've been using 8 years ago for variable selection using rerandomization or bootstrap may be called something like "Bootstrap inclusion frequencies" (see Fig. 1).
 
 ** What is a statistical model ([[papers:mccullagh-2002-what-statis-model.pdf][mccullagh-2002-what-statis-model]])
 :PROPERTIES:
 :Custom_ID: mccullagh-2002-what-statis-model
 :END:
+#+LATEX: \marginnote{\fullcite{mccullagh-2002-what-statis-model}}
 From [[https://www.johndcook.com/blog/2018/04/14/categorical-data-analysis/][John D Cook's blog]].
 
 The author suggests that "most authors do not offer a precise mathematical definition of a statistical model", and gives 12 examples of ill-posed statitsical models from an inferential perspective.
@@ -844,6 +907,7 @@ The thesis of this paper is that the logic of every statistical model is founded
 :PROPERTIES:
 :Custom_ID: bradley-2018-what-categ-theor
 :END:
+#+LATEX: \marginnote{\fullcite{bradley-2018-what-categ-theor}}
 - [[https://www.math3ma.com][Main blog]]
 - Level: graduate student
 
@@ -858,6 +922,7 @@ Two central themes:
 :PROPERTIES:
 :Custom_ID: blandy-2015-why-rust
 :END:
+#+LATEX: \marginnote{\fullcite{blandy-2015-why-rust}}
 Rust, like Python, JS or Ruby, is a type safe language with immutable variables by default, but it also allows the use of ~unsafe~ code and ~mut~ able variables. Moreover, "Rust’s particular form of type safety guarantees that concurrent code is free of data races, catching any misuse of mutexes or other synchronization primitives at compile time, and permitting a much less adversarial stance towards exploiting parallelism." In addition, Rust guarantees memory safety through three key promises: no null pointer dereferences, no dangling pointers and no buffer overruns.
 
 Rust offers a flexible macro system (not covered in this short review); see the [[https://doc.rust-lang.org/1.7.0/book/macros.html][official documentation]] or the [[https://rustbyexample.com/macros.html][Rust by Example]]. There are also /generic/ types and functions, like C++ templates, except that in Rust we must specifiy the type of the argument ~T~ (~Ord~ in the example below):
@@ -918,12 +983,14 @@ Some additional pointers:
 :PROPERTIES:
 :Custom_ID: antoniotti-2020-why-you
 :END:
+#+LATEX: \marginnote{\fullcite{antoniotti-2020-why-you}}
 See also this [[http://within-parens.blogspot.com/2020/03/why-you-cannot-yet-portably-write.html][blog post]].
 
 ** Calculating the sample size required for developing a clinical prediction model ([[papers:riley-2020-calcul.pdf][riley-2020-calcul]])
 :PROPERTIES:
 :Custom_ID: riley-2020-calcul
 :END:
+#+LATEX: \marginnote{\fullcite{riley-2020-calcul}}
 Fine distinction between the 10 EPV and 10 EPP rules of thumb: it's important to consider the total number of predictor parameters considered and not variables (which may have several associated $\beta$ parameters) or parameters included in the final model. The very inconsistent recommendations about EPP suggest that it is actually context specific and depends not only on the number of events relative to the number of candidate predictor parameters but also on the total number of participants, the outcome proportion (incidence) in the study population, and the expected predictive performance of the model.
 
 Recall what Frank Harrell advocates for logistic regression (n=96 to assess the intercept only):
@@ -938,6 +1005,7 @@ This yields the following estimate (when aiming at computing a precise estimate 
 :PROPERTIES:
 :Custom_ID: rougier-2020-desig-text-editor
 :END:
+#+LATEX: \marginnote{\fullcite{rougier-2020-desig-text-editor}}
 [[https://github.com/rougier/elegant-emacs][Elegant Emacs]] available on Github.
 Nice discussion about the use and abuse of syntax highlighting ("Christmas tree effect"). Figure 4 reminds me of code snippets I found on Vincent Zoonekynd's website but which are no longer available apparently.
 
@@ -945,6 +1013,7 @@ Nice discussion about the use and abuse of syntax highlighting ("Christmas tree 
 :PROPERTIES:
 :Custom_ID: hughes-1990-why-funct
 :END:
+#+LATEX: \marginnote{\fullcite{hughes-1990-why-funct}}
 Key idea : Two features of functional languages in particular, higher-order functions and lazy evaluation, can contribute significantly to modularity. As an example of higher-order function, the author provides extensive illustration of the use of =foldr= to compute the sum, or any other mathematical constructs, of the elements of an arbitrary list. Trees and the Newton-Raphson algorithm are also discussed in the context of gluing functions together, i.e. =(g . f)=, as well as other numerical algorithms (differentiation and integration). Finally, the tic-tac-toe game is used to demonstrate how dynamic programs can benefit from lazy evaluation.
 
 #+BEGIN_QUOTE
@@ -955,6 +1024,7 @@ Functional programmers argue that there are great material benefits — that a f
 :PROPERTIES:
 :Custom_ID: hudak-2007-une-haskel
 :END:
+#+LATEX: \marginnote{\fullcite{hudak-2007-une-haskel}}
 Very interesting discussion around Haskell typing system (section II). Right (e.g., list append) and left (e.g., function application) associativity are tricky.
 
 #+BEGIN_SRC haskell
@@ -977,28 +1047,32 @@ map f (x :xs) = f x : map f xs
 :PROPERTIES:
 :Custom_ID: figueroa-2021-which-haskel
 :END:
+#+LATEX: \marginnote{\fullcite{figueroa-2021-which-haskel}}
 The authors use the Hasckage central package and =.cabal= files to study how many packages rely on the [[https://wiki.haskell.org/Monad_Transformer_Library][Monad Transformers Library]] (as imported or provided modules, or as dependencies), which monads are currently in use, and whether alternative implementation of monads are used. Regarding the use of MTL, results show that there are close to 10,000 packages involving at least 1 monad, and the most frequence monad are =State=, =Reader= and =Trans=.
 
 ** Functional data structures for typed racket ([[papers:prashanth-2010-funct-data.pdf][prashanth-2010-funct-data]])
- :PROPERTIES:
- :Custom_ID: prashanth-2010-funct-data
- :END:
-Example of builtin functional data structure in Scheme: the linked list. Remember that lists are usually mutable in Scheme. Other efficient data structures proposed by @okasaki-1996-purel-funct or @bagwell-2001-ideal-hash-trees are available in Haskell or Clojure. The authors describe several higher-order data structure implemented in Typed Racket: queue, deque, heaps, extensions on lists (random access, streams, hash, etc.).
+:PROPERTIES:
+:Custom_ID: prashanth-2010-funct-data
+:END:
+#+LATEX: \marginnote{\fullcite{prashanth-2010-funct-data}}
+Example of builtin functional data structure in Scheme: the linked list. Remember that lists are usually mutable in Scheme. Other efficient data structures proposed by [[papers:okasaki-1996-purel-funct.pdf][okasaki-1996-purel-funct]] or [[papers:bagwell-2001-ideal-hash-trees.pdf][bagwell-2001-ideal-hash-trees]] are available in Haskell or Clojure. The authors describe several higher-order data structure implemented in Typed Racket: queue, deque, heaps, extensions on lists (random access, streams, hash, etc.).
 
 See also:
 
 Phil Bagwell. Fast Functional Lists, Hash-Lists, Deques and Variable Length Arrays. In Implementation of Functional Languages, 14th International Workshop, 2002.
 
 ** Evolution of emacs lisp ([[papers:monnier-2020-evolut-emacs-lisp.pdf][monnier-2020-evolut-emacs-lisp]])
- :PROPERTIES:
- :Custom_ID: monnier-2020-evolut-emacs-lisp
- :END:
+:PROPERTIES:
+:Custom_ID: monnier-2020-evolut-emacs-lisp
+:END:
+#+LATEX: \marginnote{\fullcite{monnier-2020-evolut-emacs-lisp}}
 History: TECO < Emacs (EINE, then ZWEI) < Multics Emacs < Unix (Gosling, then Unipress) Emacs < GNU Emacs, then its fork, Lucid Emacs (later XEmacs). Emacs 13 (1985, Richard Stallman) -> Emacs 26.1 (2018, John Wiegley and Eli Zaretskii).
 
 ** The Zipper ([[papers:huet-1997-zipper.pdf][huet-1997-zipper]])
- :PROPERTIES:
- :Custom_ID: huet-1997-zipper
- :END:
+:PROPERTIES:
+:Custom_ID: huet-1997-zipper
+:END:
+#+LATEX: \marginnote{\fullcite{huet-1997-zipper}}
 On the use of destructive operations in data structures. Basic idea: the tree is turned inside-out like a returned glove, pointers from the root to the current position being reversed in a path structure. The current location holds both the downward current subtree and the upward path. All navigation and modification primitives operate on the location structure. Going up and down in the structure is analogous to closing and opening a zipper in a piece of clothing, whence the name.
 
 Complete Ocaml implementation is provided.
@@ -1008,17 +1082,19 @@ Efficient destructive algorithms on binary trees may be programmed with these co
 #+END_QUOTE
 
 ** Tidy Data ([[papers:wickham-2014-tidy-data.pdf][wickham-2014-tidy-data]])
- :PROPERTIES:
- :Custom_ID: wickham-2014-tidy-data
- :END:
+:PROPERTIES:
+:Custom_ID: wickham-2014-tidy-data
+:END:
+#+LATEX: \marginnote{\fullcite{wickham-2014-tidy-data}}
 The core idea of a tidy dataset is that "each variable is a column, each observation is a row, and each type of observational unit is a table". This should sound familiar to people used to SQL, [[https://en.wikipedia.org/wiki/Database_normalization][database normalization]], and [[https://en.wikipedia.org/wiki/Online_analytical_processing][OLAP]] principles.
 
 This idea became the baiss of the [[https://tidyr.tidyverse.org/][tidyr]] package, superseding the =reshape2= package (used to switch from wide to long format, and the converse), and closely related to the tibble or tribble concept of a data table (which is different from what offer standard data frames or the [[https://rdatatable.gitlab.io/data.table][data.table]] package).
 
 ** The split-apply-combine strategy for data analysis ([[papers:wickham-2011-split-apply.pdf][wickham-2011-split-apply]])
- :PROPERTIES:
- :Custom_ID: wickham-2011-split-apply
- :END:
+:PROPERTIES:
+:Custom_ID: wickham-2011-split-apply
+:END:
+#+LATEX: \marginnote{\fullcite{wickham-2011-split-apply}}
 It was a nice paper at the time, and I used it a lot to illustrate ideas related to data management and data cleansing.
 
 The [[http://had.co.nz/plyr/][plyr]][fn::Now [[https://plyr.io/][plyr]] refers to simple, accessible and customisable media player] package was great, with some idiosyncratic notation for arguments (e.g., =.data=). It allowed to return multple values which was possible but trickier with =Hmisc= and unlikely to be useful with =tapply= or =aggregate=.
@@ -1044,9 +1120,10 @@ plyr::ddply(data = crabs, .(sp), summarize, x = mean(BD))
 Later it has been supplanted by =dplyr=, and later on by a combination of =dplyr= + =tidyr=, and what has now become the "tidyverse" (=dplyr= + =tidyr= + =forcats= + whatever).
 
 ** Topology and data ([[papers:carlsson-2009-topol-data.pdf][carlsson-2009-topol-data]])
- :PROPERTIES:
- :Custom_ID: carlsson-2009-topol-data
- :END:
+:PROPERTIES:
+:Custom_ID: carlsson-2009-topol-data
+:END:
+#+LATEX: \marginnote{\fullcite{carlsson-2009-topol-data}}
 point clouds = finite sets of points (representing finite and possibly noisy samples taken from a geometric object) with an associated distance function. The concept of metrics and coordinates are often ill-defined in a biological context (e.g. BLAST scores).
 
 #+BEGIN_QUOTE
@@ -1058,16 +1135,18 @@ Topology "includes the study of what the connected components of a space are, bu
 *TODO:* Draw some connections with Category Theory.
 
 ** A Scheme concurrency library ([[papers:kato-2017-schem.pdf][kato-2017-schem]])
- :PROPERTIES:
- :Custom_ID: kato-2017-schem
- :END:
+:PROPERTIES:
+:Custom_ID: kato-2017-schem
+:END:
+#+LATEX: \marginnote{\fullcite{kato-2017-schem}}
 Description of a concurrent library built on top of [[https://srfi.schemers.org/srfi-18/srfi-18.html][SRFI-18]].
 Implementation of (1) shared queue as a record cith usual queue structure fields (mutex and condition variable), and (2) thread pool as a container which holds specified number of threads which never stop until stop operation is explicitly invoked.
 
 ** A Literate Program ([[papers:bentley-1986-liter-progr.pdf][bentley-1986-liter-progr]])
- :PROPERTIES:
- :Custom_ID: bentley-1986-liter-progr
- :END:
+:PROPERTIES:
+:Custom_ID: bentley-1986-liter-progr
+:END:
+#+LATEX: \marginnote{\fullcite{bentley-1986-liter-progr}}
 The famous paper where Jon Bentley devised a short Unix pipeline while Don Knuth wrote a full-length web program to solve the following task: Given a text file and an integer k, print the k most common words in the file (and the number of their occurrences) in decreasing frequency.
 
 #+BEGIN_SRC shell
@@ -1075,29 +1154,33 @@ tr -cs A-Za-z' ' | tr A-Z a-z | sort | uniq -c | sort -rn | sed ${1}q
 #+END_SRC
 
 ** Strong Inference ([[papers:platt-1964-stron-infer.pdf][platt-1964-stron-infer]])
- :PROPERTIES:
- :Custom_ID: platt-1964-stron-infer
- :END:
+:PROPERTIES:
+:Custom_ID: platt-1964-stron-infer
+:END:
+#+LATEX: \marginnote{\fullcite{platt-1964-stron-infer}}
 Canonical paper where Platt argues for the need of devising alternative hypothesis and reliable experiment (with alternative possible outcomes) instead of focusing on a single hypothesis to avoid confirmation biais. This is mostly a scientific method of thinking, not a statistical framework, but in a certain sense the likelihood paradigm is probably the best framework for that purpose as it allows to [[https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.2041-210X.2010.00063.x][compare alternative models]].
 
 ** On Abandoning Xlisp-Stat ([[papers:de-2005-aband-xlisp-stat.pdf][de-2005-aband-xlisp-stat]])
- :PROPERTIES:
- :Custom_ID: de-2005-aband-xlisp-stat
- :END:
+:PROPERTIES:
+:Custom_ID: de-2005-aband-xlisp-stat
+:END:
+#+LATEX: \marginnote{\fullcite{de-2005-aband-xlisp-stat}}
 This article led me to revisit Lispstat, the Lisp-related code found on UCLA servers (especially the ones written by Jan de Leeuw in the 80s), and my interest in Lisp-based statistical packages grew up with Ross Ihaka's paper (@ihaka-2008-back-futur).
 
 ** Back to the future: lisp as a base for a statistical computing system ([[papers:ihaka-2008-back-futur.pdf][ihaka-2008-back-futur]])
- :PROPERTIES:
- :Custom_ID: ihaka-2008-back-futur
- :END:
+:PROPERTIES:
+:Custom_ID: ihaka-2008-back-futur
+:END:
+#+LATEX: \marginnote{\fullcite{ihaka-2008-back-futur}}
 There was no real follow-up in terms of a new language design, JIT compiler or alternative to R. On the one hand, Tony Rossini worked on a [[https://github.com/blindglobe/common-lisp-stat][reimplementation]] of LispStat in Common Lisp but the development has staled quickly. On the other hand, there was already Clojure (first with Incanter, then with third-party libs) and later Julia came out, and they took the lead on modern software for numerical and statistical computing.
 
 See also: [[https://news.ycombinator.com/item?id=14795992][reddit thread]].
 
 ** False discovery rates: a new deal ([[papers:stephens-2017-false.pdf][stephens-2017-false]])
- :PROPERTIES:
- :Custom_ID: stephens-2017-false
- :END:
+:PROPERTIES:
+:Custom_ID: stephens-2017-false
+:END:
+#+LATEX: \marginnote{\fullcite{stephens-2017-false}}
 Unlike traditional FDR computation, the author suggest to use effect size and its standard error as input to the local FDR[fn::The local FDR is the probability, given the observed data, that effect /j/ would be a false discovery, if we were to declare it a discovery.] computation, which yields interval estimates (credible regions) for each effect in addition to measures of significance.
 
 Gelman's type S errors are handled using the local false sign rate, following Tukey recommendation to answer the question "is the evidence strong enough to support a belief that the observed difference has the correct sign?" rather than "are the effects different?".
@@ -1105,9 +1188,10 @@ Gelman's type S errors are handled using the local false sign rate, following Tu
 See also: R package [[https://github.com/stephens999/ashr][ashr]].
 
 ** Teaching stats for data science ([[papers:kaplan-2017-teach.pdf][kaplan-2017-teach]])
- :PROPERTIES:
- :Custom_ID: kaplan-2017-teach
- :END:
+:PROPERTIES:
+:Custom_ID: kaplan-2017-teach
+:END:
+#+LATEX: \marginnote{\fullcite{kaplan-2017-teach}}
 This article provides a nice overview of key concepts to teach to people interested in Data Science. Not sure the term coined so long ago (Cleveland, 2001) but over-emphasized in recent years will last, but that's another story.
 
 #+BEGIN_QUOTE
@@ -1117,15 +1201,17 @@ The operations to be applied each reflect a different part of the process of sta
 See also [[papers:donoho-2017-years-data-scien.pdf][donoho-2017-years-data-scien]] and [[https://aliquote.org/post/50-years-data-science/]].
 
 ** Using functions for easier programming ([[papers:savage-2018-using-funct.pdf][savage-2018-using-funct]])
- :PROPERTIES:
- :Custom_ID: savage-2018-using-funct
- :END:
+:PROPERTIES:
+:Custom_ID: savage-2018-using-funct
+:END:
+#+LATEX: \marginnote{\fullcite{savage-2018-using-funct}}
 Short review (mostly citations by known programmers or language developers, e.g. Simon Peyton Jones) of the advantage of functional programing over imperative or OO approaches (which mostly resolves around object state and mutability).
 
 ** Best practices for scientific computing ([[papers:wilson-2014-best-pract.pdf][wilson-2014-best-pract]])
- :PROPERTIES:
- :Custom_ID: wilson-2014-best-pract
- :END:
+:PROPERTIES:
+:Custom_ID: wilson-2014-best-pract
+:END:
+#+LATEX: \marginnote{\fullcite{wilson-2014-best-pract}}
 Summary of best practices, from the [[https://software-carpentry.org/][Software Carpentry team]]:
 
 1. Write programs for people, not computers.
@@ -1138,17 +1224,19 @@ Summary of best practices, from the [[https://software-carpentry.org/][Software 
 8. Collaborate.
 
 ** A systematic review shows no performance benefit of machine learning over logistic regression for clinical prediction models ([[papers:christodoulou-2019.pdf][christodoulou-2019]])
- :PROPERTIES:
- :Custom_ID: christodoulou-2019
- :END:
+:PROPERTIES:
+:Custom_ID: christodoulou-2019
+:END:
+#+LATEX: \marginnote{\fullcite{christodoulou-2019}}
 Meta-analysis results:
 
 We included 71 of 927 studies. The median sample size was 1,250 (range 72e3,994,872), with 19 predictors considered (range 5-563) and eight events per predictor (range 0.3-6,697). The most common ML methods were classification trees, random forests, artificial neural networks, and support vector machines. In 48 (68%) studies, we observed potential bias in the validation procedures. Sixty-four (90%) studies used the area under the receiver operating characteristic curve (AUC) to assess discrimination. Calibration was not addressed in 56 (79%) studies. We identified 282 comparisons between an LR and ML model (AUC range, 0.52-0.99). For 145 comparisons at low risk of bias, the difference in logit(AUC) between LR and ML was 0.00 (95% confidence interval, -0.18 to 0.18). For 137 comparisons at high risk of bias, logit(AUC) was 0.34 (0.20-0.47) higher for ML.
 
 ** Pseudo-random number generators for vector processors and multicore processors ([[papers:fog-2015-pseud-random.pdf][fog-2015-pseud-random]])
- :PROPERTIES:
- :Custom_ID: fog-2015-pseud-random
- :END:
+:PROPERTIES:
+:Custom_ID: fog-2015-pseud-random
+:END:
+#+LATEX: \marginnote{\fullcite{fog-2015-pseud-random}}
 Discussion on the use of vector processing and multithreading for PRNGs.
 
 Vector size limited to 256 bits with AVX2; limitation of GPUs: each strem has access to only a small amount of RAM memory.
@@ -1172,15 +1260,17 @@ an excessive amount of data cache.
 8. It should be possible to generate independent streams from multiple instances of the generator.
 
 ** Search and clustering orders of magnitude faster than blast ([[papers:edgar-2010-searc-blast.pdf][edgar-2010-searc-blast]])
- :PROPERTIES:
- :Custom_ID: edgar-2010-searc-blast
- :END:
+:PROPERTIES:
+:Custom_ID: edgar-2010-searc-blast
+:END:
+#+LATEX: \marginnote{\fullcite{edgar-2010-searc-blast}}
 Found this reference on the [[https://github.com/torognes/vsearch][vsearch]] Github page. The vsearch program has an option to perform sequence clustering like USEARCH, which shall compete with [[http://weizhongli-lab.org/cd-hit/][CD-HIT]]. Not tested yet.
 
 ** Boba: authoring and visualizing multiverse analyses ([[papers:liu-2020-boba.pdf][liu-2020-boba]])
- :PROPERTIES:
- :Custom_ID: liu-2020-boba
- :END:
+:PROPERTIES:
+:Custom_ID: liu-2020-boba
+:END:
+#+LATEX: \marginnote{\fullcite{liu-2020-boba}}
 Github: [[https://github.com/uwdata/boba]]
 
 Multiverse analysis is an approach to data analysis in which all "reasonable" analytic decisions are evaluated in parallel and interpreted collectively, in order to foster robustness and transparency. Not to be confused with R's "tidyverse" or Julia's [[https://www.queryverse.org][Queryverse]]. Uncertainty plots (e.g., Fig. 5 and 7) are close to what Matthew Kay devised [[https://github.com/mjskay/uncertainty-examples][some years ago]]. The plotting UI also supports faceting and brushing. The sensitivity of each decision is assessed using a non-parametric K-S test.
@@ -1188,9 +1278,10 @@ Multiverse analysis is an approach to data analysis in which all "reasonable" an
 Of note, there's also some interesting stuff on the Stata side, see e.g. [[papers:young-2015-model-uncer-robus.pdf][young-2015-model-uncer-robus]].
 
 ** Effective ways to build and evaluate individual survival distributions ([[papers:haider-2020-effec-ways.pdf][haider-2020-effec-ways]])
- :PROPERTIES:
- :Custom_ID: haider-2020-effec-ways
- :END:
+:PROPERTIES:
+:Custom_ID: haider-2020-effec-ways
+:END:
+#+LATEX: \marginnote{\fullcite{haider-2020-effec-ways}}
 I came across this paper after reading one of Andrew Wheeler's post: [[https://andrewpwheeler.com/2020/09/26/discrete-time-survival-models-in-python/][Discrete time survival models in python]].
 
 Individual survival distribution (ISD) are different from standard models in that they only provide relative survival measures or single-time point probability value (e.g., Gail model), whereas we are interested in calibrated probabilities.
@@ -1198,9 +1289,10 @@ Individual survival distribution (ISD) are different from standard models in tha
 Existing ISD models: Kalbfleisch-Prentice extensions of the Cox model, elastic net Cox, Accelerated Failure Time model, Random Survival Forest model with Kaplan-Meier extensions, Multi-task Logistic Regression. Evaluation of these type of models usually rely on Concordance, 1-Calibration, Brier score, L1-loss, or D-calibration, which uses the entire distribution of estimated survival probabilities. Here D-calibration stands for distribution calibration, and it ought to address the following question: Should the patient believe the predictions implied by the survival curve? (p. 17)
 
 ** A history of Clojure ([[papers:hickey-2020-histor-clojur.pdf][hickey-2020-histor-clojur]])
- :PROPERTIES:
- :Custom_ID: hickey-2020-histor-clojur
- :END:
+:PROPERTIES:
+:Custom_ID: hickey-2020-histor-clojur
+:END:
+#+LATEX: \marginnote{\fullcite{hickey-2020-histor-clojur}}
 #+BEGIN_QUOTE
 Clojure is a Lisp, but what does that mean? Lisp is a fascinating set of ideas, a family of languages without a monotonic lineage [Steele and Gabriel 1996]. There are some shared characteristics, all of which I considered positive attributes to retain for Clojure: code is data; independent read/print; small core; runtime tangibility; the REPL; and extreme flexibility.
 #+END_QUOTE
@@ -1210,29 +1302,33 @@ Clojure 1.0: 2009 -- Clojure 1.10: 2018.
 Chapter 3 highlights a number of design choices (e.g. no tail recursion, Bagwell tries, map and RDF).
 
 ** Vim for humans ([[papers:jousse-2017-vim-human.pdf][jousse-2017-vim-human]])
- :PROPERTIES:
- :Custom_ID: jousse-2017-vim-human
- :END:
+:PROPERTIES:
+:Custom_ID: jousse-2017-vim-human
+:END:
+#+LATEX: \marginnote{\fullcite{jousse-2017-vim-human}}
 Not much new material here, compared to other books on Neovim (e.g., [[papers:neil-2018-moder-vim.pdf][neil-2018-moder-vim]]). This is basically a detailed account of his own config.
 
 Github: [[https://github.com/vjousse/vim-for-humans-book]]
 
 ** We need both exploratory and confirmatory ([[papers:tukey-1980-we-need.pdf][tukey-1980-we-need]])
- :PROPERTIES:
- :Custom_ID: tukey-1980-we-need
- :END:
+:PROPERTIES:
+:Custom_ID: tukey-1980-we-need
+:END:
+#+LATEX: \marginnote{\fullcite{tukey-1980-we-need}}
 I use this reference a lot when teaching as it emphasizes the interplay between exploratory data analysis and model building. Finding the question is often more important than finding the answer.
 
 ** What's Wrong With Bonferroni Adjustments ([[papers:perneger-1998-whats-wrong.pdf][perneger-1998-whats-wrong]])
- :PROPERTIES:
- :Custom_ID: perneger-1998-whats-wrong
- :END:
+:PROPERTIES:
+:Custom_ID: perneger-1998-whats-wrong
+:END:
+#+LATEX: \marginnote{\fullcite{perneger-1998-whats-wrong}}
 A good reference for epidemiological studies where we don't necessarily want to adjust for multiple comparisons when testing a pre-specified set of hypotheses. Adjustments are appropriate when the same test is repeated in many subsamples, e.g., a stratified analysis without any a priori hypothesis regarding difference in the primary association measure between the subgroups. Another case in point is when searching for significant associations without pre-established hypotheses.
 
 ** The mythos of model interpretability ([[papers:lipton-2018-mythos-model-inter.pdf][lipton-2018-mythos-model-inter]])
- :PROPERTIES:
- :Custom_ID: lipton-2018-mythos-model-inter
- :END:
+:PROPERTIES:
+:Custom_ID: lipton-2018-mythos-model-inter
+:END:
+#+LATEX: \marginnote{\fullcite{lipton-2018-mythos-model-inter}}
 The author discusses the problem of interpretation in the light of supervised learning, since real-world objectives are difficult to encode as simple mathematical functions (which could be encoded as an objective function). Moreover, causal relationships are hard to uncover using ML black-box models.
 
 #+BEGIN_QUOTE
@@ -1240,11 +1336,29 @@ When choosing between linear and deep models, you must often make a tradeoff bet
 #+END_QUOTE
 
 ** Cubic splines to model relationships between continuous variables and outcomes: a guide for clinicians ([[papers:gauthier-2020-cubic.pdf][gauthier-2020-cubic]])
- :PROPERTIES:
- :Custom_ID: gauthier-2020-cubic
- :END:
+:PROPERTIES:
+:Custom_ID: gauthier-2020-cubic
+:END:
+#+LATEX: \marginnote{\fullcite{gauthier-2020-cubic}}
 Usually 5 knots or less are okay (say, 5th, 25th, 50th, 75th and 95th percentiles). Compared to classic polynomial curve fitting, the restricted cubic spline curve is linear before the first knot and after the last knot. Using k knots, we have k components: a constant, a linear component, and k-2 cubic components, that is:
 
 $$g(y) = \beta_0 + \beta_1 x + \sum_{i=2}^{k-1} \beta_i C_i(x).$$
 
 See =rms::rcs= from Frank Harrell's R package.
+
+** Probabilistic data analysis with probabilistic programming ([[papers:saad-2016-probab-data.pdf][saad-2016-probab-data]])
+:PROPERTIES:
+:Custom_ID: saad-2016-probab-data
+:END:
+#+LATEX: \marginnote{\fullcite{saad-2016-probab-data}}
+Composable generative population models (CGPMs) = a computational abstraction that extends directed graphical models and can be used to describe and compose a broad class of probabilistic data analysis techniques.
+
+Work related to [[http://probcomp.csail.mit.edu/software/bayesdb/][BayesDB]] and the MIT [[http://probcomp.csail.mit.edu/][probcomp]] project.
+
+** Tutorial on good lisp programming style ([[papers:norvig-1993-tutor-good.pdf][norvig-1993-tutor-good]])
+:PROPERTIES:
+:Custom_ID: norvig-1993-tutor-good
+:END:
+#+LATEX: \marginnote{\fullcite{norvig-1993-tutor-good}}
+See also Taylor Campbell's [[https://mumble.net/~campbell/scheme/style.txt][Lisp Style Rules]].
+
