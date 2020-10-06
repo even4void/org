@@ -1,4 +1,7 @@
 * Inbox
+** Configuring Git Large File Storage :git:
+ [2020-10-06 Tue 15:00]
+ https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/configuring-git-large-file-storage
 ** Darling is a translation layer that lets you run macOS software on Linux :apple:
  [2020-10-05 Mon 15:17]
  https://www.darlinghq.org/
