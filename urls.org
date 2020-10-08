@@ -1,4 +1,28 @@
 * Inbox
+** Swift Algorithms :misc:
+ [2020-10-08 Thu 14:38]
+ https://swift.org/blog/swift-algorithms/
+** How to find out if a matrix is singular? :misc:
+ [2020-10-08 Thu 14:37]
+ https://stackoverflow.com/q/13145948/420055
+** Complete collection of my PGF/TikZ figures :tex:
+ [2020-10-08 Thu 14:08]
+ https://github.com/PetarV-/TikZ
+** Learn Haskell by Mark Karpov :haskell:
+ [2020-10-08 Thu 13:48]
+ https://markkarpov.com/learn-haskell.html
+** Emacs configuration file :emacs:
+ [2020-10-08 Thu 12:43]
+ https://github.com/larstvei/dot-emacs
+** A simple mode-line configuration for Emacs :emacs:
+ [2020-10-08 Thu 12:39]
+ https://github.com/gexplorer/simple-modeline
+** Dynamic Languages are Static Languages :misc:
+ [2020-10-08 Thu 12:32]
+ https://existentialtype.wordpress.com/2011/03/19/dynamic-languages-are-static-languages/
+** Loopy :clojure:
+ [2020-10-08 Thu 11:23]
+ http://blog.cleancoder.com/uncle-bob/2020/09/30/loopy.html
 ** Configuring Git Large File Storage :git:
  [2020-10-06 Tue 15:00]
  https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/configuring-git-large-file-storage

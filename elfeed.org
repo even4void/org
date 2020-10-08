@@ -90,6 +90,7 @@
 *** [[https://blog.poisson.chat/rss.xml][Lysxia's blog]]                                                            :haskell:clang:
 *** [[https://macwright.org/rss.xml][macwright.com]]                                                            :javascript:
 *** [[http://malisper.me/category/postgres/feed/][malisper.me]]                                                              :postgres:
+*** [[https://markkarpov.com/feed.atom][Mark Karpov]]                                                              :lisp:haskell:
 *** [[http://blog.markwatson.com/feeds/posts/default][Mark Watson's artificial intelligence and machine learning blog]]          :lisp:scheme:clojure:
 *** [[https://martinheinz.dev/rss/][Martin Heinz's Blog]]                                                      :python:postgres:
 *** [[https://martin-thoma.com/feeds/index.xml][Martin Thoma]]                                                             :python:
@@ -159,6 +160,7 @@
 *** [[https://www.gonsie.com/blorg/feed.xml][Elsa Gonsiorowski]]                                                        :emacs:
 *** [[http://sachachua.com/blog/category/emacs/feed/][Emacs - Sacha Chua]]                                                       :emacs:news:
 *** [[https://emacsair.me/feed.xml][Emacsair]]                                                                 :emacs:
+*** [[https://emacspeak.blogspot.com/feeds/posts/default][emacspeak]]                                                                :emacs:
 *** [[http://www.howardism.org/index.xml][Howardism]]                                                                :emacs:
 *** [[http://irreal.org/blog/?feed=rss2][Irreal]]                                                                   :emacs:apple:
 *** [[https://jherrlin.github.io/index.xml][jherrlin]]                                                                 :emacs:
@@ -169,6 +171,7 @@
 *** [[http://pragmaticemacs.com/feed/][Pragmatic Emacs]]                                                          :emacs:
 *** [[https://joshrollinswrites.com/index.xml][The Art of Not Asking Why]]                                                :emacs:org:
 *** [[https://with-emacs.com/rss.xml][with-emacs]]                                                               :emacs:
+*** [[https://ag91.github.io/blog/][Where parallels cross]]                                                    :emacs:
 *** [[https://christiantietze.de/feed.atom][Worklog of Christian Tietze]]                                              :emacs:apple:
 *** [[http://www.mycpu.org/feed.xml][Yet Another Technical Blog]]                                               :emacs:clang:compiler:
 ** Maths                                                                      :maths:

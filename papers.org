@@ -1914,3 +1914,59 @@ Some additional pointers:
 :END:
 #+LATEX: \marginnote{\fullcite{antoniotti-2020-why-you}}
 See also this [[http://within-parens.blogspot.com/2020/03/why-you-cannot-yet-portably-write.html][blog post]].
+
+** Handling time varying confounding in observational research ([[papers:mansournia-2017-handl-time.pdf][mansournia-2017-handl-time]])
+:PROPERTIES:
+:Custom_ID: mansournia-2017-handl-time
+:END:
+#+LATEX: \marginnnote{\fullcite{mansournia-2017-handl-time}}
+Time dependent Cox regression, random effects models, or generalised estimating equations provide biased effect estimates in the case of time varying confounding affected by previous exposure. For instance, there's a risk of over-adjustment, which occurs as a result of blocking the effect of past exposure on outcome, mediated through later confounders, and which leads to a downward bias. Another case is selection (i.e., collider stratification) bias, happens when inappropriately adjusting for a time varying confounder that may share a common cause with the outcome. As an alternative, the authors recommend using:
+
+- inverse-probability-of-treatment weighting, where we create a pseudo-cohort, within which the time varying confounders are not associated with future exposure;
+- the parametric G formula, which allows to simulate the values of confounders, exposure, and outcome that would have been observed in a hypothetical study where every participant received the exposure regimen of interest;
+- G estimation, which adjusts for time varying confounders by separately examining the association between exposure and the counterfactual outcome under no exposure during the follow-up (ie, the outcome that would have been observed under no exposure during the follow-up) at each visit and only adjusting for the values of time varying confounders in the previous visits.
+
+** Mathematics for programmers ([[papers:yurichev-2020-mathem-progr.pdf][yurichev-2020-mathem-progr]])
+:PROPERTIES:
+:Custom_ID: yurichev-2020-mathem-progr
+:END:
+#+LATEX: \marginnnote{\fullcite{yurichev-2020-mathem-progr}}
+The first chapter on number theory is interesting as it illustrates many topic using plain language most of the time. I like some of the illustrations, like the one for prime numbers (i.e., balls that cannot be arranged as a rectangle). Same for the simplified RSA algorithm discussed in section 1.4, which relies on Euler’s totient function and a decrypting exponent using multiplicative modulo inverse:
+
+#+BEGIN_SRC mathematica
+p = Prime[RandomInteger[50]]
+q = Prime[RandomInteger[50]]
+n = p*q
+e = 17
+encrypted = Mod[123^e, n]
+totient = (p - 1)*(q - 1)
+d = PowerMod[e, -1, totient] (* Check that Mod[e*d, totient] == 1 *)
+Mod[encrypted^d, n]
+#+END_SRC
+
+On modular arithmetic, the author notes that using the remainder of division of rand() result by 10 yields non-uniform random numbers, e.g., =Counts[Map[Mod[#, 3] &, Range[0, 16^^8000 - 1]]]=, which is known as the "modulo bias."
+
+Reversible linear congruential generator = multiply the state by modular multiplicative inverse of 214013, if we consider the following implementation of =rand()=:
+
+#+BEGIN_SRC c
+uint32_t state;
+uint32_t rand() {
+    state=state*214013+2531011;
+    return (state>>16)&0x7FFF;
+};
+#+END_SRC
+
+The section on random text strings found right in the middle of compressed data (e.g. Linux kernel or movie database) is very interesting. I even learned that the time until a consecutive sequence of ones in a random bit sequence is $(p^{-n}−1)/(1−p)$, where p is probability of each event and n is number of consecutive events.
+
+#+BEGIN_QUOTE
+This is quite interesting thing to think about: 1TB of compressed data with maximal entropy has all possible 5-byte chains, but the data is encoded not in chains itself, but in the order of chains (no matter of compression algorithm, etc).
+#+END_QUOTE
+
+I still have some chapters to read, but this is definitely a good read, even if this is more of an applied textbook, with few selected topics and no overall learning goal, IMO. The content covered is good, the code snippets are sound, and the examples are original and entertaining.
+
+** Generatingfunctionology ([[papers:wilf-1994-gene-func.pdf][wilf-1994-gene-func]])
+:PROPERTIES:
+:Custom_ID: wilf-1994-gene-func
+:END:
+#+LATEX: \marginnnote{\fullcite{wilf-1994-gene-func}}
+This book is all about generating functions and their uses in discrete mathematics.
