@@ -8,6 +8,17 @@
 ** [[https://36-750.github.io][Statistical Computing]]
 ** [[https://see.stanford.edu/Course/CS107][CS107 - Programming Paradigms]] ([[https://github.com/sergeynikiforov/CS107][Github]])
 
+* OpenBSD/Linux
+** https://www.lifewire.com/dual-boot-linux-and-mac-os-4125733
+** https://www.gabsoftware.com/tutorials/tutorial-how-to-install-openbsd-6-1-step-by-step/
+** https://news.ycombinator.com/item?id=10896978
+** https://www.tumfatig.net/20200923/a-simple-shell-status-bar-for-cwm/
+** https://www.infofuge.com/how-to-install-ubuntu-on-huawei-matebook-x-pro/
+** https://www.reddit.com/r/MatebookXPro/comments/a1xwe7/linux_on_the_matebook_x_pro_a_review/
+** https://www.reddit.com/r/MatebookXPro/comments/gbip1r/ubuntu_2004_on_matebook_x_pro_2020_review/
+** https://github.com/umyemri/notes/blob/master/openbsd.md
+** https://functionallyparanoid.com/2015/11/27/hidpi/
+
 * Bookmarks to file
 ** How to use matrix.org and vector.im as an IRC client
 [2020-06-16 Tue 11:19]

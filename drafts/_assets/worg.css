@@ -117,6 +117,25 @@
     font-size: 14px;
   }
 
+  #bibliography table {
+    border: none;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+
+  #bibliography table tr:hover {
+    background-color: white;
+  }
+
+  #bibliography table tbody td {
+    font-size: 1em;
+  }
+
+  #bibliography table tr:last-child {
+    border-bottom: none;
+  }
+
   code {
     font-family: Droid Sans Mono, Monaco, Consolas, "Lucida Console", monospace;
     font-size: 0.9em;
@@ -206,8 +225,9 @@
   #postamble {
     font-size: 75%;
     line-height: 10pt;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 0.2em;
     z-index: -1000;
   }

@@ -13,10 +13,6 @@
   (1+Transpose@x)
 #+END_SRC
 
-#+RESULTS:
-| 2 | 3 | 4 | 5 | 8 |
-| 5 | 5 | 7 | 9 | 1 |
-
 
 * R Notebook
 
@@ -26,53 +22,9 @@ options(asciiType = "org")
 ascii(summary(ToothGrowth))
 #+END_SRC
 
-#+RESULTS:
-#+begin_src org
-|   | len           | supp  | dose          |
-|---+---------------+-------+---------------|
-| 1 | Min.   : 4.20 | OJ:30 | Min.   :0.500 |
-| 2 | 1st Qu.:13.07 | VC:30 | 1st Qu.:0.500 |
-| 3 | Median :19.25 |       | Median :1.000 |
-| 4 | Mean   :18.81 |       | Mean   :1.167 |
-| 5 | 3rd Qu.:25.27 |       | 3rd Qu.:2.000 |
-| 6 | Max.   :33.90 |       | Max.   :2.000 |
-#+end_src
-
 #+BEGIN_SRC R :exports results :results output
 Hmisc::describe(ToothGrowth)
 #+END_SRC
-
-#+RESULTS:
-#+begin_example
-ToothGrowth
-
- 3  Variables      60  Observations
-----------------------------------------------------------------------------------------------------
-len
-       n  missing distinct     Info     Mean      Gmd      .05      .10      .25      .50      .75
-      60        0       43    0.999    18.81    8.839     6.37     8.11    13.07    19.25    25.27
-     .90      .95
-   27.30    29.57
-
-lowest :  4.2  5.2  5.8  6.4  7.0, highest: 29.4 29.5 30.9 32.5 33.9
-----------------------------------------------------------------------------------------------------
-supp
-       n  missing distinct
-      60        0        2
-
-Value       OJ  VC
-Frequency   30  30
-Proportion 0.5 0.5
-----------------------------------------------------------------------------------------------------
-dose
-       n  missing distinct     Info     Mean      Gmd
-      60        0        3    0.889    1.167    0.678
-
-Value        0.5   1.0   2.0
-Frequency     20    20    20
-Proportion 0.333 0.333 0.333
-----------------------------------------------------------------------------------------------------
-#+end_example
 
 #+BEGIN_SRC R :results output
 library(dplyr)
@@ -81,27 +33,6 @@ ToothGrowth %>%
   group_by(supp) %>%
   skimr::skim()
 #+END_SRC
-
-#+RESULTS:
-#+begin_example
-── Data Summary ────────────────────────
-                           Values
-Name                       Piped data
-Number of rows             60
-Number of columns          3
-_______________________
-Column type frequency:
-  numeric                  2
-________________________
-Group variables            supp
-
-── Variable type: numeric ──────────────────────────────────────────────────────────────────────────
-  skim_variable supp  n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100 hist
-1 len           OJ            0             1 20.7  6.61    8.2  15.5  22.7  25.7  30.9 ▅▃▅▇▆
-2 len           VC            0             1 17.0  8.27    4.2  11.2  16.5  23.1  33.9 ▇▇▇▇▃
-3 dose          OJ            0             1  1.17 0.634   0.5   0.5   1     2     2   ▇▇▁▁▇
-4 dose          VC            0             1  1.17 0.634   0.5   0.5   1     2     2   ▇▇▁▁▇
-#+end_example
 
 #+BEGIN_SRC R :results output html
 library(tidyverse)
@@ -120,9 +51,6 @@ ToothGrowth %>%
 (+ 1 3)
 #+END_SRC
 
-#+RESULTS:
-: 4
-
 #+BEGIN_SRC emacs-lisp -n -r
   (save-excursion                 (ref:sc)
      (goto-char (point-min))      (ref:jump)
@@ -137,6 +65,13 @@ webuse lbw
 list in 1/2
 list in 1/5
 #+END_SRC
+
+#+BEGIN_SRC jupyter-stata :session *sta* :results output
+webuse lbw
+list in 1/2
+list in 1/5
+#+END_SRC
+
 
 * Python Notebook
 

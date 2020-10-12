@@ -1970,3 +1970,41 @@ I still have some chapters to read, but this is definitely a good read, even if 
 :END:
 #+LATEX: \marginnnote{\fullcite{wilf-1994-gene-func}}
 This book is all about generating functions and their uses in discrete mathematics.
+
+** Structural models for binary repeated measures: linking modern longitudinal structural equation models to conventional categorical data analysis for matched pairs ([[papers:newsom-2017-struc-model.pdf][newsom-2017-struc-model]])
+:PROPERTIES:
+:Custom_ID: newsom-2017-struc-model
+:END:
+#+LATEX: \marginnnote{\fullcite{newsom-2017-struc-model}}
+Extension of the generalized SEM framework (Muthen and coll.) to the comparison of proportions over two time points, which can be conceived as an extension to repeated measures ANOVA --- which can be shown to be equivalent from a latent modeling perspective to a model with a single gain score computed from two measurements, y2 – y1, a model with two correlated measured variables, a simple latent growth curve model, or a simple latent difference score model.
+
+** Time for a change: a tutorial for comparing multiple classifiers through bayesian analysis ([[papers:benavoli-2017-time-chang.pdf][benavoli-2017-time-chang]])
+:PROPERTIES:
+:Custom_ID: benavoli-2017-time-chang
+:END:
+#+LATEX: \marginnnote{\fullcite{benavoli-2017-time-chang}}
+The authors dicuss alternative to the classical NHST framework for assessing statistical significance of classifier results, e.g. classification accuracy after k-fold cross-validation. The frequentist approach is carried out using a modified version of Student t-test, that take into account the correlation ($\rho$) due to the overlapping training sets:
+
+$$t(x,\mu) = \frac{\bar x - \mu}{\sqrt{\hat\sigma^2\left( \frac{1}{n} + \frac{\rho}{1-\rho} \right)}}.$$
+
+Critics against the NHST framework: (not restricted to ML reasearch)
+
+- a statistically significant difference is completely different from a practically significant difference;
+- two methods that are not statistically significantly different are not necessarily equivalent.
+
+Moreover, this approach does not help to answer the question of interest: What is the probability that the performance of two classifiers is different (or equal)?
+
+** Sample size calculation for time-averaged differences in the presence of missing data ([[papers:zhang-2012-sampl-size.pdf][zhang-2012-sampl-size]])
+:PROPERTIES:
+:Custom_ID: zhang-2012-sampl-size
+:END:
+#+LATEX: \marginnnote{\fullcite{zhang-2012-sampl-size}}
+Extension of Diggle and coll. work to account for missingness when computing sample size required in time-averaged difference using GEE.
+
+Let $\sigma_2^2$ be the variance of the GEE estimator for $\beta_2$. Given type I error $\alpha$, power $1 – \gamma$, and the true value of time-averaged difference $\beta_2$, the required sample size is:
+
+$$n = \frac{\sigma_2^2\left( z_{1-\alpha/2} + z_{1-\gamma} \right)^2}{\beta_2^2}.$$
+
+In the presence of missing data, the closed-form formula becomes:
+
+$$n = \frac{\sigma^2\nu\left( z_{1-\alpha/2} + z_{1-\gamma} \right)^2}{\beta_2^2\lambda^2\sigma_r^2}.$$

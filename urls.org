@@ -1,4 +1,10 @@
 * Inbox
+** Simulating Machines in Clojure :clojure:
+ [2020-10-11 Sun 14:40]
+ https://stopa.io/post/255
+** Non-symbols as keyword arguments :lisp:
+ [2020-10-11 Sun 14:33]
+ https://lispblog.xach.com/post/631322365781065728
 ** Swift Algorithms :misc:
  [2020-10-08 Thu 14:38]
  https://swift.org/blog/swift-algorithms/
