@@ -1,4 +1,10 @@
 * Inbox
+** Non-Breaking Hyphen :misc:
+ [2020-10-13 Tue 09:37]
+ https://programmingpraxis.com/2020/10/02/non-breaking-hyphen/
+** Django template (survey) :python:
+ [2020-10-13 Tue 09:33]
+ https://mattsegal.dev/django-survey-project.html
 ** Simulating Machines in Clojure :clojure:
  [2020-10-11 Sun 14:40]
  https://stopa.io/post/255
