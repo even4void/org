@@ -1,4 +1,7 @@
 * Inbox
+** Play Emacs like an instrument :emacs:
+ [2020-10-13 Tue 21:13]
+ https://www.youtube.com/watch?v=gfZDwYeBlO4
 ** Non-Breaking Hyphen :misc:
  [2020-10-13 Tue 09:37]
  https://programmingpraxis.com/2020/10/02/non-breaking-hyphen/

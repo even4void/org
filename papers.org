@@ -2008,3 +2008,55 @@ $$n = \frac{\sigma_2^2\left( z_{1-\alpha/2} + z_{1-\gamma} \right)^2}{\beta_2^2}
 In the presence of missing data, the closed-form formula becomes:
 
 $$n = \frac{\sigma^2\nu\left( z_{1-\alpha/2} + z_{1-\gamma} \right)^2}{\beta_2^2\lambda^2\sigma_r^2}.$$
+
+** Visual statistics: use R! ([[papers:shipunov-2019-visual-statis.pdf][shipunov-2019-visual-statis]])
+:PROPERTIES:
+:Custom_ID: shipunov-2019-visual-statis
+:END:
+#+LATEX: \marginnnote{\fullcite{shipunov-2019-visual-statis}}
+Review on [[https://aliquote.org/post/visual-statistics-use-r/][aliquote.org]].
+
+** A brief history of Stata on its 20th anniversary ([[papers:cox-2005-stata.pdf][cox-2005-stata]])
+:PROPERTIES:
+:Custom_ID: cox-2005-stata
+:END:
+#+LATEX: \marginnnote{\fullcite{cox-2005-stata}}
+Stata 1.0 only had 44 commands and was mainly dedicated to regression analysis. Stata Corporation was created at College Station (Texas) in Aug. 1993. Stata 3.0 and later versions were mostly focused on adding tools to the regression package and developing MLE functions. Stata Users Group meetings began in 1995, and the main site was launched in 1996. Stata 6 introduced several feature, including the ability to fetch dataset from the web directly. The Stata Journal was launched in 2001, as a sequel of STB. A new graphics system was introduced in Stata 8.
+
+#+BEGIN_QUOTE
+Despite modern user interfaces, the heart of Stata remains the command language. Whatever is done via menus or dialogs is, ideally, echoed as a command. The over- whelming emphasis on a command language follows from a firm belief that statistical analysis cannot be reduced to a small series of standard tasks. In particular, smarter statistical users, especially those near the cutting edge of research in many fields, do not want the statistical equivalent of a burger bar, with choice from a fixed menu, however appealing the individual dishes may seem to some tastes.
+#+END_QUOTE
+
+** A brief history of s ([[papers:becker-1994-brief-histor-s.pdf][becker-1994-brief-histor-s]])
+:PROPERTIES:
+:Custom_ID: becker-1994-brief-histor-s
+:END:
+#+LATEX: \marginnnote{\fullcite{becker-1994-brief-histor-s}}
+Development of the S language started in 1975 at Bell Lab, after years of using Statistical Computing Subtroutines (SCS) implemented in Fortran. The motivation was to have an interactive language to use those routines without the hassle of Fortran coding, especially I/O operations.
+
+#+BEGIN_QUOTE
+we wanted to be able to interact with our data, using Exploratory Data Analysis (Tukey, 1971) techniques. In addition, commercial statistical software usually didn’t compute what we wanted and was not set up to be modified.
+#+END_QUOTE
+
+S concepts:
+
+- The basic data structures would be vectors and a hierarchical structure, a combination of vectors and/or other such structures (Chambers, 1978)
+- One of the most powerful operations in S was the subscripting operator. Subscripting was handled specially for arrays, with multiple subscripts allowed, one for each dimension for the vector structure. Early S structures were made up of named components; they were treated specially, with the =$= operator selecting components from structures and functions for creating and modifying structures.
+- S began with several notions about data. The most common side effect in S is accomplished by the assignment function; it gives a name to an S object and causes it to be stored. This storage is persistent --- it lasts across S sessions.
+
+History: 1981 Brown book (Unix and DEC PDP-11 machines, C language and pipes), 1984 Brown book (diffusion, after license AT&T), 1988 Blue book (New S, primarily in C), 1991 White book (statistical models implemented in S directly).
+
+See also [[papers:cox-2005-stata.pdf][cox-2005-stata]].
+
+** On the comparison of several mean values: an alternative approach ([[papers:welch-1951-compar-sever.pdf][welch-1951-compar-sever]])
+:PROPERTIES:
+:Custom_ID: welch-1951-compar-sever
+:END:
+#+LATEX: \marginnnote{\fullcite{welch-1951-compar-sever}}
+In R, see =oneway.test=. In Stata one may resort on =fstar= or =wtest= (on SSC). (Welch's t-test denominator is the same as that returned by =regress= with the =robust= option).
+
+See also Brown-Forsythe ANOVA, which relies on a different denominator (instead of dividing by the mean square of the error, the mean square is adjusted using the observed variances of each group).
+
+Graeme D. Ruxton. The unequal variance t-test is an underused alternative to Student's t-test and the Mann–Whitney U test. [[https://academic.oup.com/beheco/article/17/4/688/215960#FD4di][Behavioral Ecology]] 2006 17(4):688-690
+
+For the case of two-way ANOVAs, see: Howell, D. C. (2013).Statistical Methods for Psychology. Belmont, CA: Wadsworth Cengage Learning. Usually, we can fit separate one-way ANOVA and use Welch correction, followed by post hoc Games-Howell tests.
