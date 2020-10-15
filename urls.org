@@ -1,4 +1,10 @@
 * Inbox
+** Must We Randomize Our Experiment? :statistics:
+ [2020-10-15 Thu 21:03]
+ https://williamghunter.net/george-box-articles/must-we-randomize-our-experiment
+** APS 240: Data Analysis and Statistics with R :rstats:
+ [2020-10-15 Thu 20:28]
+ https://dzchilds.github.io/stats-for-bio/index.html
 ** Using stata_kernel and Emacs Orgmode for reproducible research goodness :emacs:stata:
  [2020-10-15 Thu 14:00]
  https://rlhick.people.wm.edu/posts/stata_kernel_emacs.html
