@@ -1,4 +1,31 @@
 * Inbox
+** Using stata_kernel and Emacs Orgmode for reproducible research goodness :emacs:stata:
+ [2020-10-15 Thu 14:00]
+ https://rlhick.people.wm.edu/posts/stata_kernel_emacs.html
+** Comparison of three methods for estimating rates of adverse events and rates of preventable adverse events in acute care hospitals :statistics:
+ [2020-10-15 Thu 13:58]
+ https://www.bmj.com/rapid-response/2011/11/02/comparison-paired-proportions
+** Grawity dotfiles :cli:
+ [2020-10-15 Thu 13:58]
+ https://github.com/grawity/dotfiles
+** PEP 638 -- Syntactic Macros :python:
+ [2020-10-15 Thu 13:57]
+ https://www.python.org/dev/peps/pep-0638/
+** Improving your python: using pylint and flake8 in emacs :emacs:
+ [2020-10-15 Thu 13:56]
+ https://blog.ironboundsoftware.com/2016/12/05/improving-your-python-pylint-and-flake8-emacs/
+** Collection of books of all kinds from all categories :misc:
+ [2020-10-15 Thu 13:54]
+ https://github.com/redcode-labs/Library
+** Understanding Gradient Boosting Tree for Binary Classification :statistics:
+ [2020-10-15 Thu 13:53]
+ https://zpz.github.io/blog/gradient-boosting-tree-for-binary-classification/
+** Comparison of Strategies for Validating Binary Logistic Regression Models :rstats:
+ [2020-10-15 Thu 13:46]
+ https://hbiostat.org/doc/simval.html
+** LDM: My Favorite ARM Instruction :compiler:
+ [2020-10-15 Thu 13:44]
+ https://keleshev.com/ldm-my-favorite-arm-instruction/
 ** Play Emacs like an instrument :emacs:
  [2020-10-13 Tue 21:13]
  https://www.youtube.com/watch?v=gfZDwYeBlO4
