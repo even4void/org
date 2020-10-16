@@ -1,4 +1,7 @@
 * Inbox
+** Randomized complete block ANOVA :rstats:
+ [2020-10-16 Fri 10:37]
+ https://www.flutterbys.com.au/stats/tut/tut9.3a.html
 ** Must We Randomize Our Experiment? :statistics:
  [2020-10-15 Thu 21:03]
  https://williamghunter.net/george-box-articles/must-we-randomize-our-experiment
