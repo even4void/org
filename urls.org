@@ -1,4 +1,10 @@
 * Inbox
+** How to move a folder from one repo to another and keep its commit history :github:
+ [2020-10-20 Tue 12:21]
+ https://gist.github.com/HatHeadNinja/932465716534ab6523d58c4f20fa6f51
+** Morphisms of Computational Constructs :misc:
+ [2020-10-19 Mon 12:41]
+ https://github.com/prathyvsh/morphisms-of-computational-structures
 ** Randomized complete block ANOVA :rstats:
  [2020-10-16 Fri 10:37]
  https://www.flutterbys.com.au/stats/tut/tut9.3a.html
