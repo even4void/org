@@ -1,4 +1,7 @@
 * Inbox
+** Confidence intervals for GLMs :rstats:
+ [2020-10-20 Tue 19:37]
+ https://fromthebottomoftheheap.net/2018/12/10/confidence-intervals-for-glms/
 ** How to move a folder from one repo to another and keep its commit history :github:
  [2020-10-20 Tue 12:21]
  https://gist.github.com/HatHeadNinja/932465716534ab6523d58c4f20fa6f51
