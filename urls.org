@@ -1,4 +1,16 @@
 * Inbox
+** The finger memory of incremental search, or switching to swiper :emacs:
+ [2020-11-04 Wed 12:29]
+ https://alexschroeder.ch/wiki/2020-10-23_The_finger_memory_of_incremental_search,_or_switching_to_swiper
+** How I'm able to take notes in mathematics lectures using LaTeX and Vim :vim:
+ [2020-11-04 Wed 12:08]
+ https://castel.dev/post/lecture-notes-1/
+** Viterbi algorithm :bioinformatics:
+ [2020-11-03 Tue 12:09]
+ http://www.cs.rice.edu/~ogilvie/comp571/2020/10/22/viterbi-algorithm.html
+** Fast Inverse Square Root :misc:
+ [2020-11-03 Tue 09:50]
+ https://timmmm.github.io/fast-inverse-square-root/
 ** Confidence intervals for GLMs :rstats:
  [2020-10-20 Tue 19:37]
  https://fromthebottomoftheheap.net/2018/12/10/confidence-intervals-for-glms/
