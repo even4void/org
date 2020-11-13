@@ -1,4 +1,13 @@
 * Inbox
+** Linux command-line one-liners :cli:
+ [2020-11-12 Thu 18:48]
+ https://www.commandlinefu.com/commands/browse
+** Predictive modeling :rstats:
+ [2020-11-10 Tue 18:46]
+ https://bookdown.org/egarpor/PM-UC3M/
+** Type system for R :rstats:
+ [2020-11-04 Wed 19:54]
+ https://moodymudskipper.github.io/typed/
 ** The finger memory of incremental search, or switching to swiper :emacs:
  [2020-11-04 Wed 12:29]
  https://alexschroeder.ch/wiki/2020-10-23_The_finger_memory_of_incremental_search,_or_switching_to_swiper
