@@ -1,4 +1,13 @@
 * Inbox
+** CS 181: Machine Learning (2020) :statistics:
+ [2020-11-18 Wed 20:10]
+ https://harvard-ml-courses.github.io/cs181-web/
+** Git is simply too hard :git:
+ [2020-11-17 Tue 17:14]
+ https://changelog.com/posts/git-is-simply-too-hard
+** psql command line tutorial and cheat sheet :sql:
+ [2020-11-17 Tue 08:44]
+ https://tomcam.github.io/postgres/
 ** Linux command-line one-liners :cli:
  [2020-11-12 Thu 18:48]
  https://www.commandlinefu.com/commands/browse
