@@ -1,4 +1,7 @@
 * Inbox
+** Sane Visual Studio Code :misc:
+ [2020-11-20 Fri 18:45]
+ https://www.datagubbe.se/vsc/
 ** CS 181: Machine Learning (2020) :statistics:
  [2020-11-18 Wed 20:10]
  https://harvard-ml-courses.github.io/cs181-web/
