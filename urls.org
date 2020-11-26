@@ -1,4 +1,25 @@
 * Inbox
+** Multi-State Markov and Hidden Markov Models in Continuous Time :rstats:
+ [2020-11-26 Thu 08:46]
+ https://cran.r-project.org/web/packages/msm/index.html
+** Using R and lme/lmer to fit different two- and three-level longitudinal models :rstats:
+ [2020-11-26 Thu 08:46]
+ https://rpsychologist.com/r-guide-longitudinal-lme-lmer
+** Probability-based pattern recognition and statistical framework for randomization :statistics:
+ [2020-11-26 Thu 08:43]
+ https://academic.oup.com/bioinformatics/article/23/17/2210/260201
+** On the Probability of Pattern Matching in Nonaligned DNA Sequences :bioinformatics:
+ [2020-11-26 Thu 08:43]
+ https://link.springer.com/chapter/10.1007/978-1-4612-1578-3_13
+** Probability of finding a common sub-sequence of at least 'k' nucleotides :bioinformatics:
+ [2020-11-26 Thu 08:42]
+ https://www.biostars.org/p/249573/
+** Statistics handout for Agresti CDA :rstats:
+ [2020-11-22 Sun 20:31]
+ http://www.stat.umn.edu/geyer/5421/slides/
+** Non-metric multidimensional scaling :statistics:
+ [2020-11-22 Sun 09:40]
+ https://mb3is.megx.net/gustame/dissimilarity-based-methods/nmds
 ** Sane Visual Studio Code :misc:
  [2020-11-20 Fri 18:45]
  https://www.datagubbe.se/vsc/
