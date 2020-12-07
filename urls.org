@@ -1,4 +1,10 @@
 * Inbox
+** Confidence intervals around proportions :statistics:
+ [2020-12-03 Thu 14:52]
+ https://andrewpwheeler.com/2020/11/30/confidence-intervals-around-proportions/
+** Topology and labelled graphs :misc:
+ [2020-12-03 Thu 14:47]
+ https://bastian.rieck.me/blog/posts/2020/topology_graphs/
 ** Multi-State Markov and Hidden Markov Models in Continuous Time :rstats:
  [2020-11-26 Thu 08:46]
  https://cran.r-project.org/web/packages/msm/index.html
