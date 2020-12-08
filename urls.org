@@ -1,4 +1,43 @@
 * Inbox
+** A modern mutt setup :cli:
+ [2020-12-08 Tue 16:05]
+ https://wiki.installgentoo.com/wiki/A_modern_mutt_setup
+** Build A Unified Shiny Portal With Login Page :rstats:
+ [2020-12-08 Tue 16:05]
+ https://6chaoran.github.io/data-story/visualization/build-a-unified-shiny-portal-with-login-page/
+** /home/daviwil/.dotfiles :cli:
+ [2020-12-08 Tue 16:04]
+ https://github.com/daviwil/dotfiles
+** Simple image vectorization :misc:
+ [2020-12-08 Tue 16:02]
+ https://wordsandbuttons.online/simple_image_vectorization.html
+** stata-scheme-modern :stata:
+ [2020-12-08 Tue 16:00]
+ https://github.com/mdroste/stata-scheme-modern
+** Marc Brooker's blog :misc:
+ [2020-12-08 Tue 15:59]
+ https://brooker.co.za/blog/
+** Examples of mixed-effects models in R :rstats:
+ [2020-12-08 Tue 15:58]
+ http://users.stat.umn.edu/~rend0020/Teaching/EPSY8282-2011Spring/index.html
+** The distribution of hash function outputs :misc:
+ [2020-12-08 Tue 15:57]
+ https://michiel.buddingh.eu/distribution-of-hash-values
+** Markov Chain Monte carlo sampling :statistics:
+ [2020-12-08 Tue 15:51]
+ https://www.tweag.io/blog/2019-10-25-mcmc-intro1/
+** The Hazards of Period Specific and Weighted Hazard Ratios :statistics:
+ [2020-12-08 Tue 15:50]
+ https://www.tandfonline.com/doi/full/10.1080/19466315.2020.1825522?af=R&journalCode=usbr20
+** Simpson's paradox in psychological science: a practical guide :statistics:
+ [2020-12-08 Tue 15:50]
+ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3740239/
+** Likelihood ratio test, Wald test, and score test :statistics:
+ [2020-12-08 Tue 15:49]
+ https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faqhow-are-the-likelihood-ratio-wald-and-lagrange-multiplier-score-tests-different-andor-similar/
+** Linked lists, pointer tricks and good taste :clang:
+ [2020-12-08 Tue 15:48]
+ https://github.com/mkirchner/linked-list-good-taste
 ** A Logarithm Too Clever by Half :misc:
  [2020-12-08 Tue 11:45]
  https://people.eecs.berkeley.edu/~wkahan/LOG10HAF.TXT
