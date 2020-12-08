@@ -1,4 +1,7 @@
 * Inbox
+** A Logarithm Too Clever by Half :misc:
+ [2020-12-08 Tue 11:45]
+ https://people.eecs.berkeley.edu/~wkahan/LOG10HAF.TXT
 ** Confidence intervals around proportions :statistics:
  [2020-12-03 Thu 14:52]
  https://andrewpwheeler.com/2020/11/30/confidence-intervals-around-proportions/
