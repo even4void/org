@@ -1,4 +1,16 @@
 * Inbox
+** Statistical Methods for Machine Learning :statistics:
+ [2020-12-10 Thu 12:31]
+ http://www.stat.cmu.edu/%7Elarry/=sml/
+** A Programmer’s Intuition for Matrix Multiplication :maths:
+ [2020-12-10 Thu 12:30]
+ https://betterexplained.com/articles/matrix-multiplication/
+** Open-source creative-coding framework for Rust :rust:
+ [2020-12-10 Thu 12:28]
+ https://nannou.cc/
+** Plotting methods for phylogenies & comparative data in R :rstats:
+ [2020-12-10 Thu 12:28]
+ http://phytools.org/Cordoba2017/ex/15/Plotting-methods.html
 ** A modern mutt setup :cli:
  [2020-12-08 Tue 16:05]
  https://wiki.installgentoo.com/wiki/A_modern_mutt_setup
