@@ -1,4 +1,10 @@
 * Inbox
+** Visualizing and Annotating Phylogenetic Trees with R+ggtree :rstats:
+ [2020-12-10 Thu 20:30]
+ https://4va.github.io/biodatasci/r-ggtree.html
+** Phylogenetic trees in R using ggtree :rstats:
+ [2020-12-10 Thu 20:29]
+ https://www.molecularecologist.com/2017/02/phylogenetic-trees-in-r-using-ggtree/
 ** Statistical Methods for Machine Learning :statistics:
  [2020-12-10 Thu 12:31]
  http://www.stat.cmu.edu/%7Elarry/=sml/
