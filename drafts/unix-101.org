@@ -1,0 +1,18 @@
+#+TITLE: Unix/Linux : les bases
+#+AUTHOR: chl
+#+DATE: Mars 2021
+#+LANGUAGE: fr
+
+Voici une petite introduction à l'usage de la ligne de commande sous environnement Unix/Linux.
+
+* Les systèmes Unix/Linux
+
+TODO
+
+* Quelques utilitaires
+
+Lorsque l'on souhaite convertir un fichier d'un encodage à un autre, l'utilitaire =iconv= se révèle très pratique. Par exemple, pour transformer un fichier encodé en format Latin 1 en format UTF-8, on utilisera la formulation suivante :
+
+#+BEGIN_EXAMPLE
+iconv -f ISO-8859-1 -t UTF-8 < in.txt > out.txt
+#+END_EXAMPLE
